@@ -1,0 +1,123 @@
+Received: from SN6PR06MB4544.namprd06.prod.outlook.com (2603:10b6:805:98::11)
+ by CY4PR0601MB3604.namprd06.prod.outlook.com with HTTPS; Thu, 24 Feb 2022
+ 22:09:58 +0000
+Received: from BYAPR06MB4055.namprd06.prod.outlook.com (2603:10b6:a02:81::30)
+ by SN6PR06MB4544.namprd06.prod.outlook.com (2603:10b6:805:98::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4995.16; Thu, 24 Feb
+ 2022 22:09:29 +0000
+Received: from BYAPR06MB4055.namprd06.prod.outlook.com
+ ([fe80::7953:d70a:6ad9:bdf5]) by BYAPR06MB4055.namprd06.prod.outlook.com
+ ([fe80::7953:d70a:6ad9:bdf5%3]) with mapi id 15.20.5017.022; Thu, 24 Feb 2022
+ 22:09:29 +0000
+From: ARIELLE BROOKE ROKHSAR <rokhsar@wisc.edu>
+Subject: WORK FROM HOME 
+Thread-Topic: WORK FROM HOME 
+Thread-Index: AQHYKcp0vT2OlDDDkUqRCZlB3qVbEw==
+Date: Thu, 24 Feb 2022 22:09:27 +0000
+Message-ID:
+	<BYAPR06MB4055DE40DE3A4A73929CF3B1D03D9@BYAPR06MB4055.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: BYAPR06MB4055.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	fb707df5-d182-4a97-e926-08d9f7e2542d
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-exchange-transport-endtoendlatency: 00:00:30.8337116
+x-ms-traffictypediagnostic: SN6PR06MB4544:EE_
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-network-message-id:
+	fb707df5-d182-4a97-e926-08d9f7e2542d
+x-ms-exchange-transport-crosstenantheadersstamped: SN6PR06MB4544
+x-ms-office365-filtering-correlation-id: fb707df5-d182-4a97-e926-08d9f7e2542d
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:BYAPR06MB4055.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 24 Feb 2022 22:09:27.3320 (UTC)
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	3vHp4jGFdscKQK1C35kMitY9GCuQc+bzaJwAESV6ncRucVcwWLGEb/cB1WoTJtyPeXN7GNjJnIm7GXW8BMfx2A==
+x-ms-exchange-processed-by-bccfoldering: 15.20.4995.029
+x-ms-exchange-crosstenant-authsource: BYAPR06MB4055.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ld-processed: 2ca68321-0eda-4908-88b2-424a8cb4b0f9,ExtFwd,ExtAddr
+suggested_attachment_session_id: 99f2d7e0-8ac6-8c97-d4f5-0515cad880c2
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	QQISAM1reAKx/zofqJIe2RXgmNTwkwcCcna9Zs8bmaR9w4hL3ol0ZCnx63U3xPicoTREwwyy1LZCMuJoaaHR6iMgnn5K6k6fxMCP1/EY7rraLZohVsReoUL/2X2n2u4bNymXuY1Bpw2StI1UgpKz38JLAitkN/zenye262scNKPXj7TicgQ1i1m4VcuIHBurD+b9JYN6b57QN9m0IwmrM7MvtDuz5Fs9Ecf2ArakhSnsS48iKB9FvLAhPI3on5G2XYZdtDA0TALXv6wA865+u46RBeWu4MsxJ/bSsj1e5ojXME21kvRhXDK2kJR87LPt8+qi2tD1xX1jiPGTI7cClX814Vf75nTNu4PHug/29k3qzw+W63cXWZSEGDtv4EOJM9E16ZmOPDnAx2aUvXQ1YNSvi78m8ZB7h3jWi41hjgHDb5+FVK5wlqKnL2yuCYD/UJI/kuN9cvCmvrixvnVXJEQaNsI0CLSh5u3DzpirPbgaPqmV25er9F5iX8SepFm5z3Zey2OU6Aqe9fScZaY+TW3Iun2KylGway6HFOzoJdedvw9mNs0NWudwMlXOEq9LfVvx7Kah7sawEFn1z2T1o+jlefIq5s4eGMf/IZBLgQPGWL1sX8P+DNS/gl/4YIEME/BETkAIa+/z57T1UYqTqnEwv5v8okzJCLkYtshCM4OKX4dMa/ufXT1mENetVARFVf0BycbPgetxUrY0s/JV6Ly766zQulpuJSrjSnEebbs=
+Content-Type: multipart/alternative;
+	boundary="_000_BYAPR06MB4055DE40DE3A4A73929CF3B1D03D9BYAPR06MB4055namp_"
+MIME-Version: 1.0
+
+--_000_BYAPR06MB4055DE40DE3A4A73929CF3B1D03D9BYAPR06MB4055namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+An administrative assistant to perform various administrative tasks like ma=
+king or receiving payment and sending gifts, keeping record and processing =
+paperwork when necessary with a good weekly pay is needed,  please find the=
+ position and some basic information below.
+
+Position: Personal Assistant
+Type: Part-Time Job
+Pay:$500weekly
+Hours: Average of 11hrs weekly
+
+This position will be home-based and it's a flexible part time job, you can=
+ be working from home, School or any location.
+CLICK HERE TO APPLY<https://docs.google.com/forms/d/1oxTzl70mj38FHpWeXqmqv8=
+e8Es6mNUQeblWIkxUNBM0/edit>
+
+
+--_000_BYAPR06MB4055DE40DE3A4A73929CF3B1D03D9BYAPR06MB4055namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"background-color:rgb(255, 255, 255);margin:0px;outline:0px;m=
+in-height:280px">An administrative assistant to perform various administrat=
+ive tasks like making or receiving payment and sending gifts, keeping recor=
+d and processing paperwork when necessary
+ with a good weekly pay is needed, &nbsp;please find the position and some =
+basic information below.</span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<div style=3D"background-color:rgb(255, 255, 255);margin:0px;min-height:280=
+px"><br>
+Position: Personal Assistant<br>
+Type: Part-Time Job<br>
+Pay:$500weekly<br>
+Hours: Average of 11hrs weekly<br>
+<br>
+This position will be home-based and it's a flexible part time job, you can=
+ be working from home, School or any location.<br>
+<a href=3D"https://docs.google.com/forms/d/1oxTzl70mj38FHpWeXqmqv8e8Es6mNUQ=
+eblWIkxUNBM0/edit" rel=3D"noopener noreferrer" target=3D"_blank" data-safer=
+edirecturl=3D"https://www.google.com/url?q=3Dhttps://docs.google.com/forms/=
+d/1oxTzl70mj38FHpWeXqmqv8e8Es6mNUQeblWIkxUNBM0/edit&amp;source=3Dgmail&amp;=
+ust=3D1645826595937000&amp;usg=3DAOvVaw2ISkgOlsw0UL5aqNEvy_6G" style=3D"col=
+or:rgb(17, 85, 204);margin:0px">CLICK
+ HERE TO APPLY</a></div>
+<br>
+</div>
+</body>
+</html>
+
+--_000_BYAPR06MB4055DE40DE3A4A73929CF3B1D03D9BYAPR06MB4055namp_--

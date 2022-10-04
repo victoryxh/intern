@@ -1,0 +1,187 @@
+Received: from SN7PR06MB7152.namprd06.prod.outlook.com (2603:10b6:806:108::14)
+ by DM5PR06MB2475.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 03:21:20 +0000
+Received: from DM3PR12CA0075.namprd12.prod.outlook.com (2603:10b6:0:57::19) by
+ SN7PR06MB7152.namprd06.prod.outlook.com (2603:10b6:806:108::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.19; Sun, 15 Aug
+ 2021 03:21:19 +0000
+Received: from DM6NAM11FT031.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:0:57:cafe::fa) by DM3PR12CA0075.outlook.office365.com
+ (2603:10b6:0:57::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sun, 15 Aug 2021 03:21:19 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ DM6NAM11FT031.mail.protection.outlook.com (10.13.172.203) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sun, 15 Aug 2021 03:21:19 +0000
+Received: from mail1.bemta23.messagelabs.com ([67.219.246.1])
+ by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXV02YNC2NH7F00@smtp8.wiscmail.wisc.edu> for
+ mhshank@wisc.edu; Sat, 14 Aug 2021 22:21:18 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= REPLYTO_FROM_DIFF_ADDY 0.1,
+ SUBJ_1WORD 0.1, HTML_00_01 0.05, HTML_00_10 0.05, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_400_499 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0,
+ FROM_SAME_AS_TO_DOMAIN 0, KNOWN_MTA_TFX 0, NO_URI_HTTPS 0,
+ PHISH_TRUSTED_RDNS 0, SENDER_NO_AUTH 0, SINGLE_URI_IN_BODY 0, SPF_PASS 0,
+ SXL_IP_TFX_WM 0, WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0,
+ __ANY_URI 0, __BODY_NO_MAILTO 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0,
+ __CT_TEXT_PLAIN 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_COMMON 0,
+ __FRAUD_REPLY 0, __FROM_DOMAIN_IN_RCPT 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FUR_RDNS_MESSAGELABS 0, __HAS_FROM 0,
+ __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_XOIP 0, __HEADER_ORDER_FROM 0,
+ __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MIME_VERSION 0,
+ __NO_HTML_TAG_RAW 0, __RCVD_FROM_DOMAIN 0, __SANE_MSGID 0,
+ __SEXTORTION_MALWARE 0, __SINGLE_URI_TEXT 0, __
+X-Wisc-Doma: csilverat@diaf-ecu.gob.ec,diaf-ecu.gob.ec
+X-Wisc-Env-From-B64: Y3NpbHZlcmF0QGRpYWYtZWN1LmdvYi5lYw==
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.31515,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.23.5840001,
+ SenderIP=[67.219.246.1]
+X-Spam-Score:
+Return-Path: csilverat@diaf-ecu.gob.ec
+Received: from [100.112.0.142]
+ (using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384 (256 bits))
+	by server-1.bemta.az-b.us-east-1.aws.symcld.net id C6/5D-20749-A2888116; Sun,
+ 15 Aug 2021 03:21:14 +0000
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFlrJJsWRWlGSWpSXmKPExsVyIvMFk65Wh0S
+ iwbUlYhaLXl9htri66RmbxbqubYwWh29tZLT4Mv8+q8WHPYdZLQ623GCyuHKpmcVi9ucTrBY3
+ 73NbfPv8kc3i7/nDTBY/p/5gt5jz6S2jxZW9s9ktDu39ympxpsXL4tvMe6wWp+dzWfR2b2V1E
+ PE40RrkcX/3SnaPY8v2M3vM3HSKxWPnrLvsHq079rF5PO45w+axcds0Jo8/S3cwenxfO4HdY9
+ 2DD6webZ9Ps3tsXTWbxeP6kgPsHrNmHWbyeHbwMkuAQBRrZl5SfkUCa8a/Xz2MBVMYK2bffsT
+ YwFjZxcjFISQwnVGiuekUaxcjJ5BzmFFi1U1HuMTrY6sYuxg5OCQE9CW+thRDxIFq/kz7wgjh
+ LGeU6G6dAtbNLKAncWPqFDYQm1dAUOLkzCcsEHFtiWULXzODDGIWUJP42lUCEhYW4JboPvGXH
+ SQsIqAlsXx1CEiYDWjK4/+bwSayCKhKNMxeCFYiJCAr0bElDWK4vcSS3nPsExgFZiHZOwvJ3l
+ lI9s5C2LuAkWUVo2lSUWZ6RkluYmaOrqGBga6hoZGuka6xpV5ilW6SXmmxbmpicYmuoV5iebF
+ ecWVuck6KXl5qySZGYFpIKWBS38F4+fUHvUOMkhxMSqK8G86KJArxJeWnVGYkFmfEF5XmpBYf
+ YtTj4BC4cPbhJ0aBKx8+NTFJseTl56UqSfBmtEokCgkWpaanVqRl5gDTGEyDBAePkggvfztQm
+ re4IDG3ODMdInWK0ZXj7pO5i5g57oHJ/s3zgOTGoyBywqzFi5iFwGZLifMKgDQLgDRnlObBjY
+ al4EuMslLCvIwMDAxCPAWpRbmZJajyrxjFORiVhHmzQabwZOaVwF3wCug4JqDj1lmLghxXkoi
+ Qkmpg0ij81iHKuKSg527nvaWK9WV/thrOLw1wrvu6+/2mFXN7J36dFxC6kS3G7GbH6X8/yvmX
+ SUwOv25Tea6iqdPoz+y0VqGbthx+R207S+OLWJe2yTp0XFIT3WIjfvF4MmvL3v6r9to8k/7YP
+ b/yVF70+5lHEdUydxLiPi+Lmm2dHLQ2/N7Zjcu6xb9fNLy3eeumq7caDtgKaTzz4f3/mMWsJj
+ 4y2TK6Vkx5/tSTqZpfKvj6W6Vkzgfs25X5lkEqwzv/c8ti5skLfnF8WVgqtvj7n5rPf4MVpr5
+ SEWIUCb4az/r7Ifeu6udpYgFBaS4vGN++3M7kFrZGcjbjfwc+XaaZFo2FXbci7+pzdiRmbZRQ
+ YinOSDTUYi4qTgQAN86eXzwEAAA=
+X-Env-Sender: csilverat@diaf-ecu.gob.ec
+X-Msg-Ref: server-12.tower-390.messagelabs.com!1628997673!72300!1
+X-Originating-IP: [200.105.232.2]
+X-SYMC-ESS-Client-Auth: outbound-route-from=fail
+X-StarScan-Received:
+X-StarScan-Version: 9.81.3; banners=diaf-ecu.gob.ec,-,-
+X-VirusChecked: Checked
+Received: (qmail 15111 invoked from network); 15 Aug 2021 03:21:14 -0000
+Received: from mail.diaf-ecu.gob.ec (HELO correo.diaf-ecu.gob.ec)
+ (200.105.232.2) by server-12.tower-390.messagelabs.com with
+ ECDHE-RSA-AES256-GCM-SHA384 encrypted SMTP; 15 Aug 2021 03:21:14 -0000
+Received: from localhost (localhost [127.0.0.1])	by correo.diaf-ecu.gob.ec
+ (Postfix) with ESMTP id 60E672D156E;	Sat, 14 Aug 2021 22:21:13 -0500 (-05)
+Received: from correo.diaf-ecu.gob.ec ([127.0.0.1])
+	by localhost (correo.diaf-ecu.gob.ec [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id ZpzdZkdr72WN; Sat, 14 Aug 2021 22:21:13 -0500 (-05)
+Received: from localhost (localhost [127.0.0.1])	by correo.diaf-ecu.gob.ec
+ (Postfix) with ESMTP id 271732DAB66;	Sat, 14 Aug 2021 22:21:13 -0500 (-05)
+X-Virus-Scanned: amavisd-new at diaf-ecu.gob.ec
+Received: from correo.diaf-ecu.gob.ec ([127.0.0.1])
+	by localhost (correo.diaf-ecu.gob.ec [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id Z_UZaAWKdqHV; Sat, 14 Aug 2021 22:21:13 -0500 (-05)
+Received: from reverse-dns.chicago (unknown [213.234.214.156])
+	by correo.diaf-ecu.gob.ec (Postfix) with ESMTPSA id C12752D156E;	Sat,
+ 14 Aug 2021 22:20:57 -0500 (-05)
+Content-type: text/plain; charset=iso-8859-1
+Content-transfer-encoding: quoted-printable
+Content-description: Mail message body
+Subject: Re
+To: Recipients <csilverat@diaf-ecu.gob.ec>
+From: Chao Huang <csilverat@diaf-ecu.gob.ec>
+Date: Sat, 14 Aug 2021 22:20:40 -0500
+Reply-to: lika-shing@asia.com
+Message-id: <20210815032057.C12752D156E@correo.diaf-ecu.gob.ec>
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 03:21:19.3794
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b488fc0d-bbcf-41e7-099a-08d95f9bbfe7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT031.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b488fc0d-bbcf-41e7-099a-08d95f9bbfe7
+X-MS-TrafficTypeDiagnostic: SN7PR06MB7152:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=451
+X-MS-Oob-TLC-OOBClassifiers: OLM:7691;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp8.wiscmail.wisc.edu;PTR:wmmta5.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 03:21:19.2855
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b488fc0d-bbcf-41e7-099a-08d95f9bbfe7
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT031.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN7PR06MB7152
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.9469063
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?KtrQwleAcT4V3A9M/dZdXHXoQoqSG8cAxkMJtjhz4z3PeQwOe5nYizZeXs?=
+ =?iso-8859-1?Q?lfNcuXTd2NdGtL22d4IpGRRyRGE7VjZ6BAELLwsZx7euXAUpmhb7dXXu+f?=
+ =?iso-8859-1?Q?V8vBy0PLgy2sEwFyBed475nIVBYqv2ekWIO5hT75NR0LXD++IWP4yRNDJ6?=
+ =?iso-8859-1?Q?QE0bO5KGUwNFZNmr+6ypu3OnKnyWx8uWL8afzU0vKjDBpnWEc7MbuK91mw?=
+ =?iso-8859-1?Q?/p5Q/qOYbl0s+Qs/JW91byaUfHCZvBX/M7D40XBvljvi1YB6aggir3MFoy?=
+ =?iso-8859-1?Q?rQOb5W8dDHC6XFZa9JpcvmSed72kn6FEjUghQS7BzF8OCOIZx9H9tUeueb?=
+ =?iso-8859-1?Q?hqnGndcgN4mV0mJ88bi9Od/k82IG4hSU7kji3oeVVGWwM/w7z5BAT6xvcN?=
+ =?iso-8859-1?Q?v4aubFxOBHUQjGtl6ez6xh4hTCdy1hOp1EbmoyADHRb0jE5CT5HMLyubxT?=
+ =?iso-8859-1?Q?QtxoP0W+n3U45Zr5KVOvJqogA9MLKadPoV23zDTDOGeATwZ28pYRkFJJ5V?=
+ =?iso-8859-1?Q?YtfYQEXLKnrlB5WqDfJoYWDVxLLJ2wRWK+TjIQM9adbMyWZfv8uoDNFFBU?=
+ =?iso-8859-1?Q?tImCeoLKmoe7AacOP3mqSGcyb/Vrfri6KDNXXeIgyiMT3Vle3i5gwrUxLi?=
+ =?iso-8859-1?Q?n0itU3H8xQ9GQkWxISvKP0E7S67h9Kht8WhtZHPPpPigVa8OQ/KTH2FuMB?=
+ =?iso-8859-1?Q?2hjbVAbfh5uuPkB+dWBmwQ7t5ydWUPWocn3sFPdd6iWzqfpcnq1eUna4P7?=
+ =?iso-8859-1?Q?INcQ1g7N8J4FQ7I9pJ02EfssMaWUa86nh6aHu5L8q3j40KzND79tuT/BLk?=
+ =?iso-8859-1?Q?UnikbCKXAEqJSN527hkKvob2ITiHOL0WM05QligXGok+tRUF6VffRj23n+?=
+ =?iso-8859-1?Q?K8qQICdp8VCi7qQsurFYNjZy8tg23+6k9+CVT4XM8Onac0x0LBo/lwre7K?=
+ =?iso-8859-1?Q?oD8RXBl4VIxpW0kubD5GxLxDNYdgRL90FlJjz7hUQSvPTsr0HBq6eohRlB?=
+ =?iso-8859-1?Q?XI50A0Cne+7FnIg0YjZB7Y/52rSE0ucDhdrILu5ZAdmz08CKXFy7VwfT/h?=
+ =?iso-8859-1?Q?clgnlMrwLYRDmrDiTIsyzW/+AlPEGRahdprG1aMg/VLd9ZBRRgxiVKrhjq?=
+ =?iso-8859-1?Q?yESbXxUqXLKZvB5NmMu87kO8X1EoRnisXLz6mefkQ50G7OzdOuImf9gHB4?=
+ =?iso-8859-1?Q?oH67NWF8sLrlTgHCch63P9c/BjG/QuYBuiZCMli3Jo3RHVJYqii0zECMrq?=
+ =?iso-8859-1?Q?XNWWtugciwNxqmYN3T8SvDXhqetnm957kf2KIXj1RZDW68/y+ghqZAN8Bh?=
+ =?iso-8859-1?Q?8fJGS+u4g6JmqV+iW3ri8wzq4MYnpRJ4ouagRPGvLKgnU4r3DxLunH6zqM?=
+ =?iso-8859-1?Q?3CiHNlmIgxU0Zm63glMUTdm3LxEFfT9c5qYrtMut7CKxIJuJZ+UrEjxfkn?=
+ =?iso-8859-1?Q?YZXbVc103bz8ChHK0qSWa2VAgyIJHide8sp0LNOJLPGOiZVASQ643fzErY?=
+ =?iso-8859-1?Q?ZhsrC6Ytz0PsERzKs4GmXWspxvzefpZMAlXJh+fwlHvME+8AmTYdk2bLTQ?=
+ =?iso-8859-1?Q?j42c4yB1MtWdWUYwuquH8ZQ+DIHMomZuhDRpfGLRZYLqUUA1kzesXovpfJ?=
+ =?iso-8859-1?Q?t4p6kC+laAh+1DugpE14vQyUwpTdYJ8PX7WtLcRuy/pamwgaOljidEHURv?=
+ =?iso-8859-1?Q?aGTAFs1CvU7GSMrPDLS2APdZ/FY+rZYqTwM7X2CTqv0+YdRbn8dAwzg32i?=
+ =?iso-8859-1?Q?5jAe/riQG/ofS185SQXkJo7PTNQhuwl7rsiP8DUQUzbLYX2F9VZWvdQycZ?=
+ =?iso-8859-1?Q?3z7ATMij1Yj+6YV4R0+9Y/xsNK9mEFFf3y3Uyhp3MUrAqCXyvjsSqytuNk?=
+ =?iso-8859-1?Q?SS4/p2ehfNodojNmroEJZbLnrjDCRKKSo0Awe3/oJCxNaVfRCml3t4whF/?=
+ =?iso-8859-1?Q?c0MqjbtvtgHRvy62qEaisqp2Igp/1pfAT0CVvUucabfjcFpjrSdRWRgsC3?=
+ =?iso-8859-1?Q?w7EXdiledNVIR/8GeFM0vgk+qRZ7sPAI0A2WMWmF4GingRGRzz/grKoFmj?=
+ =?iso-8859-1?Q?B7lMq+7bB8KY?=
+MIME-Version: 1.0
+
+Due to Corona Virus (COVID-19) pandemic outbreak; Mr. Li Ka-shing has picke=
+d you for a Grant.
+
+Kindly reply for more details.
+
+Thanks,
+Chao Huang
+
+______________________________________________________________________
+This email has been scanned by the Symantec Email Security.cloud service.
+For more information please visit http://www.symanteccloud.com
+______________________________________________________________________

@@ -1,0 +1,170 @@
+Received: from DM6PR06MB6649.namprd06.prod.outlook.com (::1) by
+ CY4PR06MB2774.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 19:28:32
+ +0000
+Received: from BN8PR06MB5474.namprd06.prod.outlook.com (2603:10b6:408:67::22)
+ by DM6PR06MB6649.namprd06.prod.outlook.com (2603:10b6:5:25b::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.16; Mon, 15 Aug
+ 2022 19:28:07 +0000
+Received: from BN8PR06MB5474.namprd06.prod.outlook.com
+ ([fe80::74d2:bd9d:e035:24df]) by BN8PR06MB5474.namprd06.prod.outlook.com
+ ([fe80::74d2:bd9d:e035:24df%3]) with mapi id 15.20.5525.011; Mon, 15 Aug 2022
+ 19:28:07 +0000
+From: Abby Eddy <ameddy2@wisc.edu>
+Subject: School Email Verification
+Thread-Topic: School Email Verification
+Thread-Index: AQHYsNo+oW/ySJ4090CciyS5OLm+7w==
+Date: Mon, 15 Aug 2022 19:28:03 +0000
+Message-ID:
+	<BN8PR06MB5474D7EA1F08FBF36E99C3F98C689@BN8PR06MB5474.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: BN8PR06MB5474.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	0d613d41-fcea-4703-1719-08da7ef446cd
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 0d613d41-fcea-4703-1719-08da7ef446cd
+x-ms-traffictypediagnostic: DM6PR06MB6649:EE_
+x-ms-exchange-transport-crosstenantheadersstamped: DM6PR06MB6649
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=wisc.edu;
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:BN8PR06MB5474.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 15 Aug 2022 19:28:03.7719 (UTC)
+x-ms-exchange-crosstenant-network-message-id:
+	0d613d41-fcea-4703-1719-08da7ef446cd
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-authsource: BN8PR06MB5474.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-transport-endtoendlatency: 00:00:28.4436328
+x-ms-exchange-processed-by-bccfoldering: 15.20.5504.027
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	cSKKXGiKYKMCTea9PU6EdoFHrpz7fF7omRqTCN2J7sqbj2bjug9H/i6Eun6/lX7E78h/edB4Fr6+A3dE+p9IxgtFlf6SXwcseDk+jjB/gHVwgI8QIi0ksc2yBBfbw+MoL0tZEGkxlnBrhf0Si7gBqy/xM06JSwGwLlAeJ5E/0c3ixD1oj23226NaOQ37MzLZ0/UlVvxvm7Z4gBCRSjQeF+m2hWvbEa9UECKf9XxMxow1oPMGCDfdvhgnyQc23HyjxP/6oXoPlWDZaHlr2SN91Di8BNm3QZwLSbvR/w71XZLkcImKdem43zZhFr/V2GLzqc+Apf2SvSz9gijkfgwXdMybcp4ClJBci6BJMQmxSddl7rzhGYNHCwim3N94z4KCkU/eVpC9L6JNw/D/NRCW8F3Yq/htRH+IsZuNSzvkBoiHtmqmCldxaizVf8gvwN/bitK3BrW4iAobKzAArLK9wpbVlzyZwykeO8PhBgLE3h3LH6KVaK5E38MpxcjD6+x+CIMkuWKMVkrjajC4dh/E3QhnCmmS+pnEyqYKCJaD9eSvq/sNowqcpuYSIZul6hmiYMsLJ40LvA5EHort7ZKBZsqQgBg34IkTm58IdHgTritHhXHA/47+sQ5jIAoyPrT23Lt/Q0aiihcJ5M2PZc51peYyw+fgnh6OpOajcOZPhUQ6F5qyxM8BhxCcNfl7zdXpzX/T/vPPYZfkjTrcyAkw6NlOg4aXY9Ll3tbdY7/R2RXJLPutEift9DBxZ7QSWqcvAvXm9A0ld44RsZPqn4BV0qJevm5KPFrRopjT3JtaCr0=
+X-Microsoft-Antispam-ZAP-Message-Info:
+	=?iso-8859-1?Q?CEl8RLnm1hKdfh0zbCAtJP15APB5HT6orfbHcXZvGqtR+jiQrrWIsqg8+f?=
+ =?iso-8859-1?Q?/FB2dUgRfWIH3qkXvjiElQA6Y2m5q9kKcrsUjZVK8zFJkN0zWfbcOgj4V/?=
+ =?iso-8859-1?Q?LdWsIjX8YGseRHp+gZZUYQpp9M6dwDuZU9HTVKrLq6QgmQ+KwK93HaKEJt?=
+ =?iso-8859-1?Q?CQo7DklxMtNEIgDVvJowpuSxkr+k5go0ppkq0xVvCpYygOSIjQbD6re6jO?=
+ =?iso-8859-1?Q?36xUpsm0/ipitmwSS9/1YBRFhhxMZ8Geh3q0m5IwWvrpwOJbWlnFIjYVY0?=
+ =?iso-8859-1?Q?iODcDSzWWuvy6QyS76kT3ZCTjONR+tsobqOf4WuNI4AJ0dxYBG1dyWMI7e?=
+ =?iso-8859-1?Q?wRDhIDOj0KJB5gsRoex9929ZYCuT2ZEjzhdlNZVa8zaNAfZfQ0HyZYsmZu?=
+ =?iso-8859-1?Q?EZoghEHMF12znkEcPXSWTB720xdX6WMcAwEgSEXhRps++jVstzkfPaX+QV?=
+ =?iso-8859-1?Q?uhnBCXQEe1DreOo48xUYdkSTEzi1p9l1/amXI0fwVXp3Ih+T1Arjf9pMyb?=
+ =?iso-8859-1?Q?esWuLdkXaX6LF/Qp2O8xJ0pobVYCBxaGLxxaCmjGuXtcCkyyN1IX/S1GVo?=
+ =?iso-8859-1?Q?l1/7tAkPZ/PVN0Ffd7rTX8vbRQdxlco9aFHZMtKWjD450GAfJI9F28CeoS?=
+ =?iso-8859-1?Q?sqxbyur6MyOJnH4HLXxrirZCzuqxd8yRROs2pgI+q8ti5y8MVxBSGfXREu?=
+ =?iso-8859-1?Q?+N8cAtDhW31ziKUviqmV/cTNA/aV8w=3D=3D=0D=0Aav+HKt12FOzf+UZm?=
+ =?iso-8859-1?Q?11mHYlM+4tal6BE3Vgp1zXEqlRnin+/s+bNvsOpU2xBOM6myrjrxPbCXn5?=
+ =?iso-8859-1?Q?1G1l+E6Ky66atCp8p97E/RWr+DVl1BfJc+CRxWwZ3ZsBEtmu/ewyel2mE2?=
+ =?iso-8859-1?Q?V+bHkpxahveS+7bCsG6l3cptgudWatEQLlXEQuFmpSbgQ5o2JEKhzRHE5J?=
+ =?iso-8859-1?Q?+gxgNp4G9qoNmyVyoASENcCLrZwMJE/oDYzKJSwe00XYDiYUjqMSxt+5BE?=
+ =?iso-8859-1?Q?QzJEo1uhcFqhWdXE3X5Dd2sQ+yflKbeJjtsOIj0IryNlsDd3kZ1ThBgGfT?=
+ =?iso-8859-1?Q?hTLTREqGbFi15GoBZXZKl5XB5TJPaLiDnH6F4hos4A9roV+JrkQyfWDhWi?=
+ =?iso-8859-1?Q?CseXP9JPfZeBIbzbg9V3PP2IWUk70prbyii1dGyOp58pikorsP/wNRMVrD?=
+ =?iso-8859-1?Q?AcXSmPlVBkZLICPrdEL2vWhRSkWil3CKhX8MPxKGPd3oaGI2nlVO/bRMpN?=
+ =?iso-8859-1?Q?CIDPnbUoxdRagnfgtDuWoQncrQd9qzTbhd2SctdxQF5P0MP0yO06P2gq+H?=
+ =?iso-8859-1?Q?22QNfzxslUNSE2PFYJpMcofJQe/Q6tUxiAIx6KPZH/BmGRfCk9bFCwNCzp?=
+ =?iso-8859-1?Q?jLpdpOIeltUZf9vPpyUOFIFLOok8lovrG5oJqVZHh+U+fmY3FEjnGiQCR7?=
+ =?iso-8859-1?Q?/ByainuPE1+Q/GUxFSp5DQK9n3KO8QjWryGVAzJq/q4M+Qf8INnhqm5uDJ?=
+ =?iso-8859-1?Q?4UtoqY6ch2fqTw=3D=3D=0D=0A6sW4f0BamjcN2vhBSV1jxYiPJHEHKdUX?=
+ =?iso-8859-1?Q?wwU6pt/yBsgYTBqSn9B5fyPHjt5hPGIATaIGWhb7WJlkmZFKmgDEQDbzw9?=
+ =?iso-8859-1?Q?J9BlWQW5azJh7xgTHY8CsmnD/9uKawIzKQYtiLXQMqSPZ3ZHG+x6OmEZXV?=
+ =?iso-8859-1?Q?+RZhRCBb2x72WRsi795ZehpBFhpwOmv+Uxp6elOKlUdNfEbRtHJwb1esj+?=
+ =?iso-8859-1?Q?xUzE15d1Im2kgu/La4oXtXPLKG08yDgdW0U+Jp60cf5V66o0DZBYfjHVKV?=
+ =?iso-8859-1?Q?mw9gdL2kZ1H86u90WURDvPo9GOHfHpXQuiuvdZxgw5+8dcHMJWNLkk/T7v?=
+ =?iso-8859-1?Q?rXC7jn/roXl9q1op2DfmOqZXOp5FT0Xe3WdH2qQApEsduFIEQNA5WZVs3Q?=
+ =?iso-8859-1?Q?cdakzaqRh4r5e6sD8Aqzr+r8XDIt3yI7KiMxE5S1LtPYb6rHaZbjJPQHk/?=
+ =?iso-8859-1?Q?2czvs65sy7VMJWcTO3/ukjUPV7QxU5knOertH5cMYSbSRy+8XNrorvMWE6?=
+ =?iso-8859-1?Q?FemW1QiFq658jqK54mbkIR5SkjiGtIxYmFzYi9802nM0wwGdmUGgI8esLU?=
+ =?iso-8859-1?Q?7bXLejWLDv56YajkYJMOtmCOKUYe7/DdWemk6KIj4sXXsKzZBeg8xZNXGW?=
+ =?iso-8859-1?Q?DcjGgztFO6oNilANjMTadpMHjRIw3jb3Zhj81t0KEZ1Vo8iXB9kAfceXdl?=
+ =?iso-8859-1?Q?ALRNAJigwqexTHGee9YYRgdgdMbM9SP4YPxdFNeT3su1+xB2Lyv3vMag?=
+ =?iso-8859-1?Q?=3D=3D=0D=0AWacZor+XuugIKlw9/0RTynYO64wHjEKGqBK7+NQJZ9KsoF?=
+ =?iso-8859-1?Q?w/4f58LbEwf1beGtkRWLNMXnUI9Tfw2sl/1cVC+/UowHwRXjjPGyY+FXW1?=
+ =?iso-8859-1?Q?vIOhtv7sZnEE5/jIG0jy49h9QY2mp6hb8seW3X2enoNWJnQe3V9mgsGp7w?=
+ =?iso-8859-1?Q?t8gemKZLkBDGkI3rYNzW4O3JCT5o4oNasQAp2leJEe0/FFiQpC37VABFrF?=
+ =?iso-8859-1?Q?Z7wvcc3Y1Myn1kRSE4dv8MshcFwozbxx7us5WdS8LuGlZKv8jPRNtzIhnI?=
+ =?iso-8859-1?Q?4qO+jUQlH+5yis3XYowZkHAOujVIM0HjC+7XX67MYKZdFj3kUCkcdwR9Ee?=
+ =?iso-8859-1?Q?EZOoaHGQbjP2zJFs5OJUoLlJSIXOVa8EWj2Ja1W1xGh8zuGIvO08jBE0t6?=
+ =?iso-8859-1?Q?SGHlflL5IZ9vnhuVX0vpfwmeUckq0RkRDdVZDd1p3tVyi+gHfb0Cp7S10F?=
+ =?iso-8859-1?Q?2WTU8UPQIX5fTljAnYOwJtI5eblAsOItTQ3nMyxZ2UnJKVORTCUsuoU2jP?=
+ =?iso-8859-1?Q?kYFra4njI9Wzz296zhWKOn7xGppoXS/EnXoANoZNlzYZwvTgs9NuJwYCN2?=
+ =?iso-8859-1?Q?EzWwsDul3aEw+BSahUbRKBSKnSrc5vRRCHxS4PjLOs59r2B3GQCss1coVi?=
+ =?iso-8859-1?Q?EBrfNo76v0hOglzfg5Cat1fQ9UcbBvOCfGJZwOKQ2f2w7gGAf3wtsVZOaa?=
+ =?iso-8859-1?Q?VZDiqjjsR1rPh9UmCYJHx32eyn0kaFc+6MBdiJkXUg=3D=3D=0D=0AUSsX?=
+ =?iso-8859-1?Q?oYsKeLzkk34e3jzpM/JEdtPDRs5qide+rYXooy96KZx2PjfaarUf1eWyP+?=
+ =?iso-8859-1?Q?ZQgamPpnPgRX2QFthbGKzI6gcoZxP1XOV0Q0HQMbh3wqhctzb4KHfozxWA?=
+ =?iso-8859-1?Q?YQiHH8H12wuRmMr1kcnzvAlvaTxSjakf09JaJwEpO9FldsmJsuiLG08ZSI?=
+ =?iso-8859-1?Q?nURhRiKiM3gnv4wZ41RZEMli7c4rsqy5Ae4b/Q23Bbinm3QF1e9Q7kALd+?=
+ =?iso-8859-1?Q?MPYHzHdFsdX5YWXxQl+Gc2BNtk6+jsuLzqNhTQ9ELZNlAoUA2iZOOX7fD5?=
+ =?iso-8859-1?Q?r1gra6EMUY7Tnusv9MhlChcLIRrnytlwiTGG3sy40xBm4vkZ71UiEum2X5?=
+ =?iso-8859-1?Q?dotFNkuCDH+Y3nYy4uv/RBPjgr9Gr1xXRf8MRXRnrJCpe15btzfu23+ZkX?=
+ =?iso-8859-1?Q?jm3lA1u24jucrak105pwaKNVa9ep++ECRDqlb733B1qpGwci2vWGcDx+9I?=
+ =?iso-8859-1?Q?PZG/F93q5tbcygE6/LCkhiRA9zzoC781/JcJVjz2fQeatKS8r5jy7rQ/st?=
+ =?iso-8859-1?Q?zJPiEXfAH8aB77X5xwzQWQWs1Bz1vG8tQ3egHyEG0WOZG9y4asK2bzU9yZ?=
+ =?iso-8859-1?Q?E3XHfCrpNcntwcQxk6YumW1jcs5XIQHWx+/S5wKOQqvUA7tuGgWx/TaIQ3?=
+ =?iso-8859-1?Q?GBw/sqHERB88UMxEmfJTdC6kJy602VWtdeajlbsPqUH7jmD2iXauS14yyV?=
+ =?iso-8859-1?Q?OWrAg2+HWbmCr5aEZzQnKKkw+g=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BN8PR06MB5474D7EA1F08FBF36E99C3F98C689BN8PR06MB5474namp_"
+MIME-Version: 1.0
+
+--_000_BN8PR06MB5474D7EA1F08FBF36E99C3F98C689BN8PR06MB5474namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+This email is to notify all students and staff that we will be carrying out=
+ email validation exercises. We will need you to confirm that your email is=
+ still in use, please  CLICK HERE<https://forms.gle/Jouv7g18PPcGxgtn8> now =
+to keep your account activeOrder from University Of Wisconsin-Madison
+
+--_000_BN8PR06MB5474D7EA1F08FBF36E99C3F98C689BN8PR06MB5474namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<span style=3D"font-size: 12pt; margin: 0px; color: black; background-color=
+: rgb(255, 255, 255);"><span style=3D"font-size: small; font-family: Arial,=
+ Helvetica, sans-serif; margin: 0px; color: rgb(34, 34, 34); background-col=
+or: white;">This email is to notify
+ all students and staff that we will be carrying out email validation exerc=
+ises. We will need you to confirm that your email is still in use, please &=
+nbsp;</span><font face=3D"Arial, Helvetica, sans-serif" size=3D"2"><a href=
+=3D"https://forms.gle/Jouv7g18PPcGxgtn8" title=3D"https://forms.gle/Jouv7g1=
+8PPcGxgtn8" style=3D"margin:0px">CLICK
+ HERE</a></font><span style=3D"font-size: small; font-family: Arial, Helvet=
+ica, sans-serif; margin: 0px; color: rgb(34, 34, 34); background-color: whi=
+te;"><span style=3D"margin:0px"></span>&nbsp;now to keep your account activ=
+e</span></span><span style=3D"font-size: 12pt; margin: 0px; color: black; b=
+ackground-color: rgb(255, 255, 255);"><span style=3D"font-size: small; font=
+-family: Arial, Helvetica, sans-serif; margin: 0px; color: rgb(34, 34, 34);=
+ background-color: white;">Order
+ from&nbsp;</span><span style=3D"font-weight: 700; font-size: 14px; font-fa=
+mily: Roboto, Arial, sans-serif; margin: 0px; color: rgb(95, 99, 104);">Uni=
+versity Of Wisconsin-Madison</span></span><br>
+</div>
+</body>
+</html>
+
+--_000_BN8PR06MB5474D7EA1F08FBF36E99C3F98C689BN8PR06MB5474namp_--

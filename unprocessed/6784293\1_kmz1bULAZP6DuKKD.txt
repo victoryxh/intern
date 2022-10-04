@@ -1,0 +1,199 @@
+Received: from BN8PR06MB5649.namprd06.prod.outlook.com (::1) by
+ BN8PR06MB5716.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 19:30:15
+ +0000
+Received: from BN8PR06MB5474.namprd06.prod.outlook.com (2603:10b6:408:67::22)
+ by BN8PR06MB5649.namprd06.prod.outlook.com (2603:10b6:408:47::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.14; Mon, 15 Aug
+ 2022 19:27:21 +0000
+Received: from BN8PR06MB5474.namprd06.prod.outlook.com
+ ([fe80::74d2:bd9d:e035:24df]) by BN8PR06MB5474.namprd06.prod.outlook.com
+ ([fe80::74d2:bd9d:e035:24df%3]) with mapi id 15.20.5525.011; Mon, 15 Aug 2022
+ 19:27:21 +0000
+From: Abby Eddy <ameddy2@wisc.edu>
+Subject: School Approved Job Offer!!!
+Thread-Topic: School Approved Job Offer!!!
+Thread-Index: AQHYsNuDjbStZGpAJUucNklqzulz+A==
+Date: Mon, 15 Aug 2022 19:26:53 +0000
+Message-ID:
+	<BN8PR06MB5474BD32E0E03D492019D17A8C689@BN8PR06MB5474.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: BN8PR06MB5474.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	744c4cf7-9ccd-4f1e-83e1-08da7ef42b62
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=wisc.edu;
+x-ms-office365-filtering-correlation-id: 744c4cf7-9ccd-4f1e-83e1-08da7ef42b62
+x-ms-traffictypediagnostic: BN8PR06MB5649:EE_
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:BN8PR06MB5474.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-network-message-id:
+	744c4cf7-9ccd-4f1e-83e1-08da7ef42b62
+x-ms-exchange-crosstenant-originalarrivaltime: 15 Aug 2022 19:26:53.3703 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-transport-crosstenantheadersstamped: BN8PR06MB5649
+x-ms-exchange-transport-endtoendlatency: 00:03:22.5401077
+x-ms-exchange-processed-by-bccfoldering: 15.20.5504.028
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	OCpcfJzi657BlDTmvyFApTMEAVeMSxQitsx9+latZVWyd/EpQM+eN5KfygQjoelmsSiFnrR5enPq/o+HAfSkFg==
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: BN8PR06MB5474.namprd06.prod.outlook.com
+x-ld-processed: 2ca68321-0eda-4908-88b2-424a8cb4b0f9,ExtFwd,ExtAddr
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	QdiXwGge9bd8T8mJFFFcmBiGKx8kS4LriGXpwikoiPUEEioD+O/279R6vybqVFSRBtEqEWmP6GMIMUxWWHxgIGTnv9SvXy5Pvl1n0NZwILpR1KlMfa+ZaS6A3IvIO4IxwroGuQHhrK9Z6bSC4uKZHWfdnW7UcDlzPnLs1A5n8uABi4iUkcYaXVtuIhG7El24ZjAl34gfVDRaIse6/c2nCDTEt32fl6rHsvX+NUTZBnzv2xlEaPlXquJk765wELB8Z0YZPD2JE2x8pegvmq2e+KDeJy5k0gqhd1r10aFg3v/zQQ8pfSdZjVz/Ej4p6vURj344d/zVQEWFZvOEks3Ei3rSGt8f4uNlQnieeYHxU7M7qNU/E0+EoGP/HFHPiy6x2PPXJWjpDA831I14lX6IRgn97vmJxWU3IbbrRXb5q8rTKfaLXMMD+NO4WAaZk52d5wKlbQJHjJYOUdVEOZyFBqb5zOrWYP/wMJpppQJ+o3q3zme2n+DQnmT8MUp2lv3ejYnujNBemlKoL6Y0PDdZ9CYiLlbiebOXiMczEXxOeuwqzKTlikWbQWtN5HePu230t31CFwwWC32jwoCqVzQgG3p62/9JxOBS/USkjy3RUFsUC07LxwDpmJBz0E0qLREIBsAoKQ2hG3xQV4NjrUd7BTnPLk/d1n9+P9iu+dXFtsFc96GsxRzog+ahEZ9xUxKHMHcqvncfStzn6ACip4bI60eyT7EIrXFCvB9K98mkonWxJatRPrJ7ZlXkCjjhieNeE8aPDXvG4xKnOxwzOoYB/zOB5dq5NR3q0u2zNuKk9CahBch53Q85qmaVLbtmYUuq
+Content-Type: multipart/alternative;
+	boundary="_000_BN8PR06MB5474BD32E0E03D492019D17A8C689BN8PR06MB5474namp_"
+MIME-Version: 1.0
+
+--_000_BN8PR06MB5474BD32E0E03D492019D17A8C689BN8PR06MB5474namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Personal Assistant Service
+
+
+
+All Email recipients of  University Of Wisconsin-Madison are encouraged to =
+be a part of this amazing offer.  This is a part time job that will not aff=
+ect your present employment or study at the campus & you'll be working from=
+ home. It=92s fun, rewarding, and flexible.
+
+2-3 hours daily
+
+Four Hundred Dollars ($400)
+
+Part-Time Job
+
+
+
+ To apply, Be sure to visit the link below.
+
+Apply Here<https://forms.gle/7wDXaaJ38Yc4jhno7><https://docs.google.com/for=
+ms/d/e/1FAIpQLSfk8_XFnb2qWbaaBnORCYmfKR11uwds8CPiUZufjVevaljy-Q/viewform?us=
+p=3Dsf_link>
+
+
+
+--_000_BN8PR06MB5474BD32E0E03D492019D17A8C689BN8PR06MB5474namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<table width=3D"100%" style=3D"text-align: left; margin: 0px; border-spacin=
+g: 0px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" style=3D"font-family:&quot;Google Sans&quot;, Roboto, Ro=
+botoDraft, Helvetica, Arial, sans-serif;margin:0px;padding:5px 10px;border-=
+collapse:collapse">
+<div style=3D"border:0px none;line-height:25px;margin:0px">
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+<span style=3D"border:0px none;margin:0px">Personal&nbsp;<span style=3D"mar=
+gin:0px">Assistant</span>&nbsp;Service</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+&nbsp;</p>
+<p dir=3D"auto" style=3D"margin:0px"><span style=3D"border:0px none;font-fa=
+mily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin=
+:0px">All Email recipients of&nbsp;&nbsp;</span><span style=3D"border:0px n=
+one;margin:0px"><font color=3D"#4d5156" style=3D""><span style=3D"font-size=
+:11pt;line-height:normal;margin:0px"><b>University
+ Of Wisconsin-Madison</b></span>&nbsp;</font></span><span style=3D"font-fam=
+ily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:=
+0px">are encouraged to be a part of this amazing&nbsp;</span><span style=3D=
+"border:0px none;font-family:&quot;Times New Roman&quot;, Times, Baskervill=
+e, Georgia, serif;margin:0px">offer</span><span style=3D"font-family:&quot;=
+Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">.&nbs=
+p;&nbsp;This
+ is a part time&nbsp;</span><span style=3D"border:0px none;font-family:&quo=
+t;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">job=
+</span><span style=3D"font-family:&quot;Times New Roman&quot;, Times, Baske=
+rville, Georgia, serif;margin:0px">&nbsp;that will not affect your
+ present employment or study at the campus &amp; you'll be working from hom=
+e. It=92s fun, rewarding, and flexible.&nbsp;</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+<span style=3D"margin:0px">2-3 hours daily&nbsp;</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+Four Hundred Dollars ($400)</p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+<span style=3D"margin:0px">Part-Time Job</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+&nbsp;</p>
+<p style=3D"text-align: center; font-family: &quot;Times New Roman&quot;, T=
+imes, Baskerville, Georgia, serif; font-size: 17px; margin: 0px; color: rgb=
+(19, 19, 19);">
+<span style=3D"border:0px none;margin:0px">&nbsp;To apply, Be sure to visit=
+ the link below. &nbsp;</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" style=3D"text-align: left; margin: 0px; border-spacin=
+g: 0px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" align=3D"center" style=3D"font-family:&quot;Google Sans&=
+quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;margin:0px;padding=
+:20px;border-collapse:collapse">
+<table style=3D"margin: 0px; border: 0px none; display: inline-block; borde=
+r-radius: 5px; background-color: rgb(36, 160, 237);">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td align=3D"center" style=3D"margin:0px;padding:12px;border-collapse:colla=
+pse"><span style=3D"border: 0px none; font-size: 24px; line-height: 24px; f=
+ont-family: &quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif=
+; margin: 0px; color: rgb(255, 255, 255);"><font><span style=3D"margin:0px;=
+display:inline-block"><a href=3D"https://forms.gle/7wDXaaJ38Yc4jhno7" title=
+=3D"https://forms.gle/7wDXaaJ38Yc4jhno7" style=3D"margin:0px">Apply&nbsp;He=
+re</a></span></font><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLSfk=
+8_XFnb2qWbaaBnORCYmfKR11uwds8CPiUZufjVevaljy-Q/viewform?usp=3Dsf_link" targ=
+et=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-=
+saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://docs.google.com/f=
+orms/d/e/1FAIpQLSfk8_XFnb2qWbaaBnORCYmfKR11uwds8CPiUZufjVevaljy-Q/viewform?=
+usp%3Dsf_link&amp;source=3Dgmail&amp;ust=3D1660634102464000&amp;usg=3DAOvVa=
+w3SZZRVcujjA176BsSPrXEC" data-linkindex=3D"0" style=3D"margin: 0px; color: =
+rgb(17, 85, 204);"></a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br class=3D"Apple-interchange-newline">
+<br>
+</div>
+</body>
+</html>
+
+--_000_BN8PR06MB5474BD32E0E03D492019D17A8C689BN8PR06MB5474namp_--

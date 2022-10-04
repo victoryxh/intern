@@ -1,0 +1,448 @@
+Received: from CY4PR06MB3094.namprd06.prod.outlook.com (2603:10b6:910:58::36)
+ by DS7PR06MB6871.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 22:58:28 +0000
+Received: from BN9PR03CA0025.namprd03.prod.outlook.com (2603:10b6:408:fa::30)
+ by CY4PR06MB3094.namprd06.prod.outlook.com (2603:10b6:910:58::36) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.22; Sun, 15 Aug
+ 2021 22:58:27 +0000
+Received: from BN8NAM11FT025.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:fa:cafe::c5) by BN9PR03CA0025.outlook.office365.com
+ (2603:10b6:408:fa::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sun, 15 Aug 2021 22:58:27 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ BN8NAM11FT025.mail.protection.outlook.com (10.13.177.136) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 22:58:26 +0000
+Received: from server5.emergencyemail.org ([184.172.24.162])
+ by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with SMTP id <0QXW04NCCL5CG190@smtp8.wiscmail.wisc.edu> for
+ kjackson9@wisc.edu; Sun, 15 Aug 2021 17:58:25 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=14%, Hits= PRIORITY_NO_NAME 0.716,
+ CS_LIST_UNSUB 0.5, HTML_90_100 0.1, FROM_NAME_ONE_WORD 0.05,
+ BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_10000_PLUS 0, DATE_TZ_NA 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_TEXT_NO_URI 0, INVALID_MSGID_NO_FQDN 0, KNOWN_MSGID 0,
+ KNOWN_MTA_TFX 0, LIST_HEADER 0, PRECEDENCE_HEADER 0, SENDER_NO_AUTH 0,
+ SPF_PASS 0, SXL_IP_TFX_WM 0, __ANY_URI 0, __BAT_BOUNDARY 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_LIST_HEADER 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0,
+ __HAS_X_PRIORITY 0, __HEADER_ORDER_FROM 0, __HREF_LABEL_IMG 0,
+ __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_BOLD 0,
+ __HTML_HREF_TAG_X2 0, __HTML_TAG_CENTER 0, __HTML_TAG_DIV 0,
+ __HTML_TAG_IMG_X2 0, __HTML_TAG_TABLE 0, __HTTPS_URI 0, __HTTP_IMAGE_TAG 0,
+ __IMG_THEN_TEX
+X-Wisc-Doma: weather@emergencyemail.org,emergencyemail.org
+X-Wisc-Env-From-B64: d2VhdGhlckBlbWVyZ2VuY3llbWFpbC5vcmc=
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.224816,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840001,
+ SenderIP=[184.172.24.162]
+X-Wisc-DKIM-Verify:
+ weather@emergencyemail.org,emergencyemail.org!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; q=dns/txt;
+ d=emergencyemail.org; s=key1;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=sOikczP/ek9uys36IjkMNQMJytKR/xskHYh12Kgu6DU=;
+ b=nV4Vm0MoFX/pqxTW5JO5AoG3kOLQrWCiRgg5eke/pcOAv6NHSx4xmJQN6yR0o58iht78
+ ajYLWYpEbXQKW1wDlaG0j3/VhbcbPgyAN1rcft+bOXO1zNgawWI5ez1F8ZFjClWcs7S0wj
+ D3YBkUMGn//hnA5sHCp8OuwPtUm4XhX48=
+Date: Sun, 15 Aug 2021 18:53:10 -0400
+Message-id: <94E1353D8C34D85DE0EE27B01B4991079106D9F6@SERVER5>
+Content-type: multipart/alternative;
+ boundary=------------090008070102080704020907
+Precedence: bulk
+X-Effector: 52810796 tib PMFORECAST
+List-Unsubscribe: <mailto:unsubscribe-weather-forecast-pm@emergencyemail.org>
+From: "Emergencyemail.org" <weather@emergencyemail.org>
+To: kjackson9@wisc.edu
+Subject: Your 7 Day Forecast  for 8/15/2021
+Return-Path: weather@emergencyemail.org
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 22:58:27.0020
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 726732fe-3b77-4bff-fae1-08d96040313e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT025.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 726732fe-3b77-4bff-fae1-08d96040313e
+X-MS-TrafficTypeDiagnostic: CY4PR06MB3094:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=softpass reason=201
+X-MS-Oob-TLC-OOBClassifiers: OLM:7691;
+X-Microsoft-Antispam: BCL:4;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp8.wiscmail.wisc.edu;PTR:wmmta5.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 22:58:26.8870
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 726732fe-3b77-4bff-fae1-08d96040313e
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT025.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR06MB3094
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6405070
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?eZk6P2K6yCMmG2WpffenD8GBaJY2lvCpo1TCcYvz9xT/ZA/WAvaiBMTpc8?=
+ =?iso-8859-1?Q?/baFSnZFFoXcgszKbcaDhZBFJ1/JG4wlJJz3epX6zq8zL2Q5g5LvX9myBg?=
+ =?iso-8859-1?Q?ge+Wd5wBH3KTEW+TByGomnC3MzueHxeIzFTo/etTiwIJh42TOtJMmENmhY?=
+ =?iso-8859-1?Q?1PF+6nmLWqgyslVXkumTHV0bDSPPsty8DfOceEdq/ML35Z37VJRI4gY+Q7?=
+ =?iso-8859-1?Q?pW2v3N6JMXo0kvBfurIf0d1FiuAYsGxjErmKfO01kmJHJSxUY/GgwWK2T3?=
+ =?iso-8859-1?Q?DxCnVe6OBk9ClV6luYj5KGkNyFbratvNnbRCC/+gJkgNniORejPwXJWtXa?=
+ =?iso-8859-1?Q?JcWo6zVa951tsMTJXmFclj2l/A82IIe5fgoI+O4ev4jvkzuZHwEpLYtoTz?=
+ =?iso-8859-1?Q?HK6F80rAQWLwtQKWBeKsz8Hp5MU1iPweXeq9PmAhGaqV7XI4xc5xL0+puv?=
+ =?iso-8859-1?Q?y9/GGXeClAa1uKHRr+c0ExpSPzli9I+DIDeJ/XA2E3ax5SVTKaZ6+yw8B+?=
+ =?iso-8859-1?Q?XqgwrqsVQyHJLBHv+UUm6P7fLuwsdhESdtuPochXgP2eQTscM/G4QQ1OIm?=
+ =?iso-8859-1?Q?iBvYnjY1OiZi62iDL1g08XuPGgW9OyUSMd2dCXhHAON08v3SQ5+cWT8wO8?=
+ =?iso-8859-1?Q?kPDmrlgBoMV5bKeUyj5y72qScPOcDk/YAxXgezcBAbp/9BrbTY9oye6jW6?=
+ =?iso-8859-1?Q?2HylbSl+Xt79YJxfQkf8aHpuMULDuBgALZDFcuGW0eSjrIDPO2oABsRaSP?=
+ =?iso-8859-1?Q?VwZoGwXZuw9K9SPt/Ca0QVAI4BI0JGsJYaGVcNCwunw4IuCbOgx1xVLHll?=
+ =?iso-8859-1?Q?r8Dn8/6OiRYL5UJBJ8lwXpSMB70zGoik0FljrMRoI5fDPMImbl1YCdg7Rv?=
+ =?iso-8859-1?Q?FvJnHhZYTs9bOpe6JefoAwRB65sr943EbKSHMKfz3C7xze6bxRycHPEipG?=
+ =?iso-8859-1?Q?bS1VO66Ia3FBPTZY9rshJxoovSgJc39e4nbxL8Gh8VjWVhO1APN6ylplP1?=
+ =?iso-8859-1?Q?6tiPTDIrvFKgUmU5a1c12csHqKAelh7XmuJTOIhD8s5yX7b4WZnzGFx1R0?=
+ =?iso-8859-1?Q?mz9Qg1VmcwDTpM0N9bMcY12d2CGS8PNfEJ3GO70ViNLPcTBaH7Sym3ym9d?=
+ =?iso-8859-1?Q?eXDAjzNwSmbxQyAfXaldPBYwRPw7orib6muql20UzQ7RQnaKl7qxH7ONRn?=
+ =?iso-8859-1?Q?toyM0Ul66segrnTcB4syE9uOpF6rsgRKtOa4sVwo8GCD7ybIZat3RJE9NA?=
+ =?iso-8859-1?Q?HY1k8hOnaSRqHXcclhnQrEhbuglTO6oLtWpO5FJ+8Kcbo+amU2Txkj6T7v?=
+ =?iso-8859-1?Q?Pg3KIS49bo0tkRc540Pq5fyixjkCWLCnsFaLh7R8cDsTEq7NccTny2RsS3?=
+ =?iso-8859-1?Q?Lwy0VNWu7/CT0C+JmAxO3kxDqfk0b6O8Hz0goyE1DvzDvSHTq7dsV4HZ0l?=
+ =?iso-8859-1?Q?y6WoPwTjWsEMFL+i4QPGSJJv0O3To/z0oHJ+p53kcLYJnnawvHGhoVdi9M?=
+ =?iso-8859-1?Q?UAVYa2lVWuJ06knD/TsZR/xq6I/avKbX7wY0hRtjZOAw3ll7uVk/O0oU7k?=
+ =?iso-8859-1?Q?C/4/TsATNRE+l2oeSajCExMg8kpE+bb0td/GrApNfTdyx9cy3Kp4iO/8bT?=
+ =?iso-8859-1?Q?kt/+cIA9lfcsETFIEQgC0we+4wJiqQjcf8RvuoEDn26vhMfeJN6zFzNlgO?=
+ =?iso-8859-1?Q?ZSEb0THuXoYBBnBAJmuEjQnbf+M/fn+MjHctYxKVC1EJhZuCkDrDLKYzmA?=
+ =?iso-8859-1?Q?8MtpNe0OgIO9F06rdAfpyKa+8vtjScJPEkbET+8nDZK0ZZc+kqaJKQVC+K?=
+ =?iso-8859-1?Q?o9UT+cZvwXisKOfIXOVYf2wt1EaMDQ1dxRjnVG3Oesx/SoScQu3ohfngj1?=
+ =?iso-8859-1?Q?UNCzpn72kEfhZlwTwIuK7iR9VI/x7yH/PTDV6bYh67LYCkKQ0Qp6Lq5i2V?=
+ =?iso-8859-1?Q?8Ei0wK0I7MAasu6P85zHONycdiG6Fuyi90vGVIm3KgM/QlrZjdVHqY6Dzu?=
+ =?iso-8859-1?Q?p/rkgs+ZNdd2xJ4RKmtFq/cs3AmA/CGJZEqVOM6T9JP+SFSZiEnTzOAGrm?=
+ =?iso-8859-1?Q?6LYqXQmOA4XJ77VKFlqY/+I1Ps3KRdqMOImzzPTRwZvfxkv63jjYgSel5n?=
+ =?iso-8859-1?Q?EGA5diLcqitwoN80fP29Za+3F/721fN+PwNlQY21qdddMg+GCpUwiLMtss?=
+ =?iso-8859-1?Q?QnymAIVS121BskvcKlsgwnnC?=
+MIME-Version: 1.0
+
+--------------090008070102080704020907
+Content-Type: text/plain; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Severe Weather Alert Service Daily Forecast
+Today's date is 8/15/2021 3:46:40 PM.  Content located at these links was last updated on 8/15/2021 3:46:40 PM Eastern
+
+Your CURRENT Conditions - Local Weather Situation ...
+https://www.emergencyemail.org/weather/us/WI/55079.asp?ref=femoia&day=Sunday
+
+Your FORECAST Today & 10 Day - Local Weather Situation ...
+https://www.emergencyemail.org/wx/us/WI/55079.asp?ref=femoia&day=Sunday
+
+National Severe Weather Map
+https://www.emergencyemail.org/weathermapWANG3.asp?ref=femoia
+
+*** BREAKING NEWS: NY's new governor says mask mandates for schoolchildren are necessary step
+https://www.emergencyemail.org/newsemergency/anmviewer.asp?a=25998&z=71U.S. appeals court sets quick schedule to consider COVID-19 eviction ban&ref=femoia
+
+Item 2: Sunday Threat and Terrorism News
+https://www.emergencyemail.org/threats/
+
+Item 3: Severe Weather Stories
+https://www.emergencyemail.org/weathernews/
+
+THE EMERGENCY EMAIL & WIRELESS NETWORK
+https://www.EmergencyEmail.org
+
+
+
+
+This service is being provided FREE to our subscribers.
+-------------------------------------------------------------------------
+Use the following link to unsubscribe ONLY to PM Edition of the Local Weather Forecast Report. You can still receive severe alerts and the PM Forecast and can unsubscribe to them separately.
+https://www.EmergencyEmail.org/ForecastPMUnsub.asp?subguid=5BA325D42C51B
+
+
+Alerting Services Provided by:
+Enotem, Inc., P. O. Box 1446
+Orange Park, FL 32067-1446
+--------------090008070102080704020907
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 10;">
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Weather Forecast from emergencyemail.org</title>
+</head>
+<body bgcolor="#f6f6f6" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; -webkit-font-smoothing: antialiased; height: 100%; -webkit-text-size-adjust: none; width: 100% !important; margin: 0; padding: 0;">
+
+<!-- body -->
+<table class="body-wrap" bgcolor="#f6f6f6" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: 100%; margin: 0; padding: 0px;"><tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;"></td>
+    <td class="container" bgcolor="#ffffff" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; clear: both !important; display: block !important; max-width: 600px !important; Margin: 0 auto; padding: 0px; border: 1px solid #f0f0f0;">
+
+      <!-- content -->
+      <div class="content" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; display: block; max-width: 600px; margin: 0 auto; padding: 0;">
+      <table style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: 100%; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+
+
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;"> 
+Severe Weather Alert Service</p>
+
+            <h2 style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 28px; line-height: 1.2em; color: #000000; font-weight: 300; margin: 10px 0 10px; padding: 0;">
+			Updated PM Forecast</h2>
+
+
+
+            <!-- button -->
+            <table class="btn-primary" cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: auto !important; Margin: 0 0 10px; padding: 0;">
+            
+            <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; line-height: 1.6em; border-radius: 25px; text-align: center; vertical-align: top; background: #348eda; margin: 0; padding: 0;" align="center" bgcolor="#348eda" valign="top">
+                  &nbsp;<a href="https://www.emergencyemail.org/wx/us/WI/55079.asp?day=Sunday&utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 120%; line-height: 2; color: #ffffff; border-radius: 25px; display: inline-block; cursor: pointer; font-weight: bold; text-decoration: none; background: #348eda; margin: 0; padding: 0; border-color: #348eda; border-style: solid; border-width: 10px 20px;">Your 
+					Updated Forecast</a>&nbsp; 
+                </td>
+                 </tr>
+
+              </table>
+<!-- /button -->
+
+<p>
+<a style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;" href="https://www.emergencyemail.org/weathernews/?utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B">
+Severe Weather Stories</a>
+</p>
+
+
+
+          <!-- button -->
+            <table class="btn-primary" cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: auto !important; Margin: 0 0 10px; padding: 0;">
+            
+            <tbody><tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; line-height: 1.6em; border-radius: 25px; text-align: center; vertical-align: top; background: #cc0000; margin: 0; padding: 0;" align="center" bgcolor="#cc0000" valign="top">
+                  &nbsp;<a href="https://www.emergencyemail.org/" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 120%; line-height: 2; color: #ffffff; border-radius: 25px; display: inline-block; cursor: pointer; font-weight: bold; text-decoration: none; background: #cc0000; margin: 0; padding: 0; border-color: #cc0000; border-style: solid; border-width: 12px 20px;"> 
+					BREAKING NEWS</a>&nbsp; 
+                </td>
+                 </tr>
+
+              </tbody></table>
+<!-- /button -->
+
+
+
+
+<br>
+<table border="0" cellpadding="0" cellspacing="0" >
+<tr>
+<td colspan="2">
+<a href="http://li.emergencyemail.org/click?s=723857&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=default" rel="nofollow">
+<img src="http://li.emergencyemail.org/imp?s=723857&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=default" border="0" width="100%" style="width: 100%; max-width: 600px !important;"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="left">
+<a style="display: block; max-width: 116px;  max-height: 15px;" href="http://li.emergencyemail.org/click?s=723858&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=static" rel="nofollow">
+<img src="http://li.emergencyemail.org/imp?s=723858&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=static" border="0"/>
+</a>
+</td>
+<td align="right"><a style="display: block; max-width: 19px;  max-height: 15px;" href="http://li.emergencyemail.org/click?s=723860&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=static" rel="nofollow"><img src="http://li.emergencyemail.org/imp?s=723860&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=static" border="0"/>
+</a>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+            <!-- button -->
+            <table class="btn-primary" cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: auto !important; Margin: 0 0 10px; padding: 0;">
+            
+            <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; line-height: 1.6em; border-radius: 25px; text-align: center; vertical-align: top; background: #348eda; margin: 0; padding: 0;" align="center" bgcolor="#348eda" valign="top">
+                  &nbsp;<a href="https://www.emergencyemail.org/weather/us/WI/55079.asp?day=Sunday&utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 120%; line-height: 2; color: #ffffff; border-radius: 25px; display: inline-block; cursor: pointer; font-weight: bold; text-decoration: none; background: #348eda; margin: 0; padding: 0; border-color: #348eda; border-style: solid; border-width: 10px 20px;">Your 
+					CURRENT Conditions</a>&nbsp; 
+                </td>
+                 </tr>
+
+              </table>
+<!-- /button -->
+
+
+<p>
+<a style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 160%; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;" href="https://www.emergencyemail.org/wx/us/WI/55079.asp?day=Sunday&utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B">
+Forecast Today &amp; 7 Day</a>
+</p>
+
+
+<p>
+<a style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;" href="https://www.emergencyemail.org/weathermapWANG3.asp?utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B">
+National Severe Weather Map</a>
+</p>
+
+<p>
+<a style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;" href="https://www.emergencyemail.org/newsemergency/anmviewer.asp?a=25998&z=71U.S. appeals court sets quick schedule to consider COVID-19 eviction ban&utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B">
+*** BREAKING NEWS: NY's new governor says mask mandates for schoolchildren are necessary step</a>
+</p>
+
+
+<p>
+<a style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; font-weight: normal; margin: 0 0 10px; padding: 0;" href="https://www.emergencyemail.org/threats/?utm_medium=email&utm_source=eewn&utm_campaign=Weather-Forecast-PM-li-8/15/2021&cid=52810796&uid=5BA325D42C51B" >
+Sunday Threat and Terrorism News</a>
+</p>
+
+
+
+
+
+
+<table class="btn-primary" cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: auto !important; Margin: 0 0 10px; padding: 0;">
+<tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; line-height: 1.6em; text-align: center; vertical-align: top; margin: 0; padding: 0;" align="center"  valign="top">
+<p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 2; color: #000000;  display: inline-block; cursor: pointer; font-weight: bold; text-decoration: none;  margin: 0; padding: 0;">
+This service is provided at no cost to our subscribers.
+</p>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </td>
+        </tr></table>
+</div>
+      <!-- /content -->
+      
+    </td>
+    <td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;"></td>
+  </tr></table>
+  
+<!-- /body -->
+
+<!-- footer -->
+
+<table class="footer-wrap" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; clear: both !important; width: 100%; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+&nbsp;</td>
+    <td class="container" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; clear: both !important; display: block !important; max-width: 600px !important; margin: 0 auto; padding: 0;">
+      
+
+      <!-- content -->
+
+      <div class="content" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; display: block; max-width: 600px; margin: 0 auto; padding: 0;">
+        <table style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; width: 100%; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+<td align="center" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;">
+              
+              <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.6em; color: #666666; font-weight: normal; margin: 0 0 10px; padding: 0;">
+              
+              <a href="https://www.emergencyemail.org">THE EMERGENCY EMAIL &amp; 
+				WIRELESS NETWORK</a>
+              </p>
+              
+                       <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.1em; color: #666666; font-weight: normal; margin: 0 0 10px; padding: 0;">
+Customer Service Department | Enotem, Inc. <br> P. O. Box 1446 | Orange Park, FL 
+32067-1446
+
+</p>
+
+                     <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6em; color: #666666; font-weight: normal; margin: 0 0 10px; padding: 0;">
+
+Alert services include severe weather, health, product safety and weather forecast updates.<br>
+<br>
+Use the following link to unsubscribe only to the PM Weather Forecast.
+Your Severe Weather alert and other alert services will not be affected. 
+<br>
+<a href="https://www.EmergencyEmail.org/ForecastPMUnsub.asp?subguid=5BA325D42C51B">Unsubscribe</a><br>
+</p>
+              
+  
+              
+            </td>
+          </tr></table>
+</div>
+      <!-- /content -->
+      
+    </td>
+    <td style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.6em; margin: 0; padding: 0;"></td>
+  </tr></table>
+<!-- /footer -->
+
+
+
+
+
+<img src="https://www.emergencyemail.org/images/px.gif?cn=Weather-Alerts-8/15/2021&cid=52810796&uid=5BA325D42C51B"  width="0" height="0"> 
+<img src="https://www.google-analytics.com/collect?v=1&tid=UA-9914736-1&cid=52810796&t=event&ec=email&ea=open&cs=eewn&cm=email&cn=Weather-Forecast-PM-li-8/15/2021"> 
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="40" height="6">
+<tbody>
+<tr>
+<td>
+<img src="http://li.emergencyemail.org/imp?s=125838100&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=pixel" width="2" height="6" border="0" />
+</td>
+<td>
+<img src="http://li.emergencyemail.org/imp?s=125838101&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=pixel" width="2" height="6" border="0" />
+</td>
+<td><img src="http://li.emergencyemail.org/imp?s=125838102&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=pixel" width="2" height="6" border="0" />
+</td>
+<td><img src="http://li.emergencyemail.org/imp?s=125838103&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=pixel" width="2" height="6" border="0" />
+</td>
+<td><img src="http://li.emergencyemail.org/imp?s=125838104&li=eewn&m=da4470010d00e8271cdf0d51849cb268&p=WeatherForecastPMli8152021&stpe=pixel" width="2" height="6" border="0" />
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</body>
+</html>
+
+
+
+
+--------------090008070102080704020907--

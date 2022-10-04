@@ -1,0 +1,289 @@
+Received: from SN6PR06MB4413.namprd06.prod.outlook.com (2603:10b6:805:a3::18)
+ by DM5PR06MB3356.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 14:53:17 +0000
+Received: from MWHPR02CA0003.namprd02.prod.outlook.com (2603:10b6:300:4b::13)
+ by SN6PR06MB4413.namprd06.prod.outlook.com (2603:10b6:805:a3::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13; Sat, 14 Aug
+ 2021 14:53:16 +0000
+Received: from CO1NAM11FT040.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:4b:cafe::e7) by MWHPR02CA0003.outlook.office365.com
+ (2603:10b6:300:4b::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sat, 14 Aug 2021 14:53:16 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ CO1NAM11FT040.mail.protection.outlook.com (10.13.174.140) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sat, 14 Aug 2021 14:53:15 +0000
+Received: from o26.ptr9494.kimblegroup.com ([167.89.0.211])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU04Y2F40NT5C0@smtp5.wiscmail.wisc.edu> for
+ rwwiseman@wisc.edu; Sat, 14 Aug 2021 09:53:12 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=12%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_90_100 0.1, MIME_LOWER_CASE 0.05, BODYTEXTH_SIZE_3000_MORE 0,
+ BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, LEGITIMATE_SIGNS 0,
+ LINK_TO_IMAGE 0, SPF_PASS 0, SXL_IP_TFX_ESP 0, URI_WITH_PATH_ONLY 0,
+ WEBMAIL_SOURCE 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CT 0,
+ __CTE 0, __CTYPE_HTML 0, __CTYPE_IS_HTML 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_MSGID 0, __HEADER_ORDER_FROM 0, __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0,
+ __HTML_HREF_TAG_X2 0, __HTML_TAG_DIV 0, __HTML_TAG_IMG_X2 0,
+ __HTML_TAG_TABLE 0, __HTTPS_URI 0, __HTTP_IMAGE_TAG 0, __IMG_THEN_TEXT 0,
+ __MIME_HTML 0, __MIME_HTML_ONLY 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0,
+ __MIME_VERSION 0, __MULTIPLE_URI_HTML 0, __MULTIPLE_URI_TEXT 0,
+ __PHISH_SPEAR_HTTP_RECEIVED 0, __RCVD_FROM_DOMAIN 0, __SANE_MSGID 0,
+ __SENDGRID_MSGID 0
+X-Wisc-Doma:
+ bounces+8261552-f1db-rwwiseman=wisc.edu@em4656.kimblegroup.com,kimblegroup.com
+X-Wisc-Env-From-B64:
+ Ym91bmNlcys4MjYxNTUyLWYxZGItcnd3aXNlbWFuPXdpc2MuZWR1QGVtNDY1Ni5raW1ibGVncm91
+ cC5jb20=
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.144515,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.14.5840000,
+ SenderIP=[167.89.0.211]
+X-Wisc-DKIM-Verify:
+ bounces+8261552-f1db-rwwiseman=wisc.edu@em4656.kimblegroup.com,kimblegroup.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kimblegroup.com;
+	h=content-transfer-encoding:content-type:from:mime-version:subject:to;	s=0012;
+ bh=dMHGEZEbrFwzg0pAFdhnnP7S09JSoT6RnmVK/zfp+IQ=;
+	b=ceBOdUuL+FxbEjMnIV+rgd8aA4Sby1b7InvS73sT1oV615EppvgVENdTsyCH4/mgVInw
+	Ff9m0Kf+/tX2P46H7XiKMUWKyU7Il3noPLvk1sNGY+VAjs+oIB/63Bjfk+EWtc124bTem3
+	ACBmzkaeRdp9Grp1fmkTEgPWGgg199fCQ=
+Received: by filterdrecv-7888f4b4b4-pt9ph with SMTP id
+ filterdrecv-7888f4b4b4-pt9ph-1-6117D8D7-68 2021-08-14 14:53:11.800197296 +0000
+ UTC m=+60529.876210082
+Received: from ODI2MTU1Mg (unknown)	by ismtpd0177p1mdw1.sendgrid.net (SG)
+	with HTTP	id 01cfb2p8RAmqD93rBivcWQ	Sat, 14 Aug 2021 14:53:11.794 +0000 (UTC)
+Content-transfer-encoding: quoted-printable
+Content-type: text/html; charset=us-ascii
+Date: Sat, 14 Aug 2021 14:53:11 +0000 (UTC)
+From: Kimble Group <kimble@kimblegroup.com>
+Message-id: <01cfb2p8RAmqD93rBivcWQ@ismtpd0177p1mdw1.sendgrid.net>
+Subject: Associate Research Scientist at Pearson (ID: 69634557)
+X-SG-EID:
+ =?us-ascii?Q?NfH1TcQMplibGQlJcesa7GdZmkoPXdt9+jGJJ8eoV6+avwWuNyMHzgExkgyCSc?=
+ =?us-ascii?Q?grbFrSr14gnfr8org3WkPY34Z0xlS6j7XZPOJkO?=
+ =?us-ascii?Q?6xEo3TqWcZI63HASuljJ7109m7H30wt5cX4Z9tr?=
+ =?us-ascii?Q?BTz8GVtMnLB5kdtOlchIkyCcYrIvz1Tg3iCU8eO?=
+ =?us-ascii?Q?3vFB8TI4T333ZefgpBR8L8jxaRFOQb3803ljJlX?=
+ =?us-ascii?Q?yRmaJvp9oIIJA+qNrMFrJmL=2FwzboK+mK2lBJvc?=
+X-SG-ID:
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FJcDzyJyu4AHEuK4Sv4nd?=
+ =?us-ascii?Q?F+he8PASUdYGA6iV8lB917F5FfrNZ6iW3V9huH1?=
+ =?us-ascii?Q?W2nMTlgzAHNSurA3uiMPe7w=2F5+bhbXRVwfDGkeB?=
+ =?us-ascii?Q?IU9FRxqXae2TAAv4aRdP1aVMeG6I4uXkKJ7PCpU?=
+ =?us-ascii?Q?lSxK0u0Lq9pmZ?=
+To: rwwiseman@wisc.edu
+X-Entity-ID: w7W+gYDXf7VeHoOnShI/dA==
+Return-Path: bounces+8261552-f1db-rwwiseman=wisc.edu@em4656.kimblegroup.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 14:53:16.1659
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ bfe80e1a-4ca8-4967-2846-08d95f333f6c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: bfe80e1a-4ca8-4967-2846-08d95f333f6c
+X-MS-TrafficTypeDiagnostic: SN6PR06MB4413:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-Microsoft-Antispam: BCL:1;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 14:53:15.9740
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: bfe80e1a-4ca8-4967-2846-08d95f333f6c
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR06MB4413
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0786101
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?rRq8ByUdKCpZxlj9GvNMqlCEiuBZrPsZO/FnAepMNkWyNKiL5sU5y2sbdEVt?=
+ =?us-ascii?Q?don5e9DRrlb5P8/fZW3gyxpwU95wDCeUx6mZS/psVLpq0M1CN5ANTlM4D2wn?=
+ =?us-ascii?Q?tLLKUzqqv2EoTtDufeqvL6KyZKcGi4i0IAz1HH5MHBfz5PIH5mTst/0QRO0K?=
+ =?us-ascii?Q?tuaXUCeuNC3JxeBHEyggdTKyz2+a0y4HQLi86VqZgxtH48R8Ec7QRDDpwKtr?=
+ =?us-ascii?Q?nktTYZnO4V+HstCRJdgyIkOagKmh6E5idt/ld/YvpsrRpeXv7Bkl2CBM+b3R?=
+ =?us-ascii?Q?wtloqtOFSjVZpBqOPglMVEiJi7kO810Ln75YsZNb0icv+39Sg+oSZfbL8Bzq?=
+ =?us-ascii?Q?h5yuHRnm1PriAEQ673NPqyiZNpi0hyKrXYfjSMAa81l9ot8x17BOkvwzdShm?=
+ =?us-ascii?Q?F2n9IxSobIHsrVs+1p9rQmkXrZ61da/98W1jSyzkV3XQSUFPUFgO/c8oB+Zw?=
+ =?us-ascii?Q?+eR9x3sW+ZAtRCrodQpPb834pGFpLMW+MOWSwdFsL8hqq6D6AgxecSPi2XJD?=
+ =?us-ascii?Q?Dk1+sMVVY5NvSnEkf8zvjMhMWEp1sOskdBdYZPa4LdoaC9EpJaXcvu5r1KO8?=
+ =?us-ascii?Q?wEpOMoyNLvHWEq0Idf69yEqX1RU3OXjF4JzB28iYGsjtALpI1hJbKGWz31rJ?=
+ =?us-ascii?Q?/PQ8nUu667dtdxCNISsxK7aLilAMAlEgXFsEKYHZP1hW0CHaB5plEJ1tc6Pl?=
+ =?us-ascii?Q?WbTF73Pdhd/5322Cennh4JNAoJ8NUwNbYMaaRgQbZgZHEh7//G+5+vndq0et?=
+ =?us-ascii?Q?cfnfrRulbkPGQj0xuWrYyKjCGZN4D6/OdQx6X2ctlSTIEWNH0ixuNIytEXWl?=
+ =?us-ascii?Q?fuEBROxeTlzvoxvY5xSYrhN4jfa8krAXA6W9IrGqU5ykCNNzq7x9Q4NRbYu8?=
+ =?us-ascii?Q?yVEoEO0f/IjxWq5BSP/RnCOISThf7xDKmBUyZLAzrcuWmvMCfNCxRmhrs90R?=
+ =?us-ascii?Q?/rZFPjiEsXFv9a5o4st4yO2A3hRZfNPTPHNnwDfN6IOeo3rxEstLrsForZNu?=
+ =?us-ascii?Q?sHl6H5V3e2SAH2DAs53RPBiSqHTgk6Bfnbj39q+MwB6lQJMsljZHpfL7UgLh?=
+ =?us-ascii?Q?iooERylHT/SXc5ZcLqnDTH56f6mff0ZHd24vhsQWav2TOCku0g4+oD5RNylq?=
+ =?us-ascii?Q?CgqF/rqc46cEBn55Zn1YObXlICHes6iragTWm2801AxuRFm/lLlbMhZJ33Ra?=
+ =?us-ascii?Q?EeleKilYiLru8n6sAwFqF97WXdGh/gnm1VBHQ2/JElGoXa7b2Uh4mfcw2r7u?=
+ =?us-ascii?Q?nguO8Q385u0RZZQfq0zGeYk5ZSR0iQuBris4G3B9VyEObYorGxDwaEplDL75?=
+ =?us-ascii?Q?D6p3gCrPEgA13g8UHSmIoHPDhrXk6XMY5s3S9IHHvp3kVtV3pNc5VCZJ9Bd0?=
+ =?us-ascii?Q?6wftx/OwlF0fyYruYkp9YIso1xCgTqJmPPiLZX9ch72g7U5pvyOc1K1x0FgW?=
+ =?us-ascii?Q?dsRNIvJUTnQs43g/QHhGOESy+u0xmnJp0v/N3OLUm7gSKafyrkA4EemCMbRb?=
+ =?us-ascii?Q?TooIXf2IA0C6rlRR0+lDzvJfF5l8jx7Qa1GHslNCPI5QdUDnoDuIew9BR2kP?=
+ =?us-ascii?Q?b9fTwfZKNRsVPIfKjXil5In9QPQbwaUTz84Pc+WxrMZpRNK7LOkyt0NKagd1?=
+ =?us-ascii?Q?ptpFil5YOI+O43e41giIfCDYJnBTd1D8WtYcwDuq8dM7E9s8UBk1id+kkNwO?=
+ =?us-ascii?Q?F+Rx4kwhnkG1OBTxjQCZomVgYJg277LI1cr90fpMHMXnCMxtvDdZ1pERsuiq?=
+ =?us-ascii?Q?6neRb/6/8dNtqlL4XXj84YKYkW0icRvzal9NZD/XW0xiIWdlJ3Z0m349x85F?=
+ =?us-ascii?Q?TlnJ0czs4YKE4zsdi5rgbqAfTDG56RxjCURcILkO+H17VKnCyHVPxzwq1B6T?=
+ =?us-ascii?Q?03aeRN9hBiSUFfjm+kjE39CZUMQzfJYjv83vNlyppzruj+KKg45TFEesHQvn?=
+ =?us-ascii?Q?lvM9y9537UqMPBi/SkDcj9jBkPrmIqQMWgMlXePS9lqUjmKsomqIHUcdnY0l?=
+ =?us-ascii?Q?fjWmtywsl28BNYH7CP0xckdqhwceNuHpwzvSzjeuKPp1zIlkrGk6ufJNRgNJ?=
+ =?us-ascii?Q?TM3QHKSl/7j43fnkGpUJSTARbiHrQySKKO7Z1CiyKl3ngZ0/j5apndl1nYvX?=
+ =?us-ascii?Q?865PiwVYEbkkuDf29DHThcL2yof/oht/6oVgVBj+8oaHOk/WxNyBUmS7HIhz?=
+ =?us-ascii?Q?xTRGpi/vqK0Q2LFYTLuIXxhOy8/RWJy7rg5EDPnls10QIa/afeeTvwxY7oS0?=
+ =?us-ascii?Q?WslpVwPB/CTyjNkAPahQ?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+> <title>Title</title> </head> <body style=3D"background:#f3f5f6 0 0 no-rep=
+eat padding-box;font-family:Arial;font-size:14px;font-weight:initial;color:=
+#777"> <div style=3D"height:30px"></div> <div style=3D"min-width:375px;max-=
+width:610px;margin-left:auto;margin-right:auto"> <div style=3D"background:#=
+fff;border:1px solid #f3f5f6;border-radius:35px;margin:0 20px 30px 20px"> <=
+div class=3D"header" style=3D"background:#1c9ad6 0 0 no-repeat padding-box;=
+border:1px solid #f3f5f6;border-radius:35px 35px 0 0;height:100px"> <img sr=
+c=3D"https://duke-web-servers-resumes.s3.amazonaws.com/kimblegroup/2020-10/=
+KG_logo_long_white_534x120.png" style=3D"margin-left:28px;margin-top:28px;h=
+eight:41px" alt=3D"Kimble Group"> </div> <div style=3D"margin:20px 20px 0 3=
+0px"> <div> <span style=3D"opacity:.9;text-align:left;font:normal normal no=
+rmal 15px/18px Arial;letter-spacing:0;color:#000">Hi Roger,</span> </div> <=
+div style=3D"opacity:.9;margin:16px 0 0 0"> <span style=3D"text-align:left;=
+font:normal normal normal 15px/18px Arial;letter-spacing:0;color:#000">Pear=
+son has an opening for a </span> <a href=3D"https://smail.kimblegroup.com/l=
+s/click?upn=3DuGfW32Id4r8vaZ2OCw7kG6vOGHocqaVJxW4ndcyFMJPcnrF6zyNPe7Jd1j02-=
+2BiYyRmIvuD-2Bzx0IGFw3I246sWOrmDIXrih1UElJR8imErlhNebAXeRXMtHcTxQ6PL6ze2XdK=
+fv3GYr-2BCVtm8Xllh05oLSl2my-2BzVRhPF8SOFbGSQaEEd2DxVW-2F0iyJQsO-2BQ22Nt-2B9=
+bCBaQ-2B4ahZZSfXeCBH1-2BJBRWw-2FsMWET5-2Fwx1kS8lsnHvpAHprLOJHhkjaR-2BVCdjWZ=
+iaqHQaJ6VPImmqqByd03srzhISwOCl8H5qqlQBeUagpRKikW-2F-2BsSrpWmRO2L4qTef1Hloow=
+HI0VM66N2EGoEgN3N6f-2Bcdv6L3IEzsx58UJNo2qRZGL9I3yyrpcz-2B3rXIZpwHrehcKWY796=
+q7vb-2BT02lVqC54otVuaZjJY45127llkJsS851h5xKrmoNcoQiG6xB5LbH1A2XpAlMzRvQ-2BK=
+6aWeblAToOzZMzhr4ngvhS1avg8twJ2DYvM6Uxjktgoj6osmmthNUXrOsoekh4-2BZINHucnTdF=
+w7rwskcelmb0DvbhQLSehKJarX3qzCt2L-2Blf3WMitHtF-2Bwl-2FIlt6oRXWlZqYMnJe1VtqQ=
+zb4Gu6kEqR5Oxp28VqQVewy1SXvDPaoIwX1l0tltTaJIdxAiJZ6peLjQlmP-2FIyYUMWF6gueC-=
+2BnvYeOejA8qiqxquBm-2FvCss1H5ADlppf7QDOlm5Kckgd6d4jvBB2gILkeuvQoFCPpemCGbBJ=
+fwEjeGzQmYeGlWTTfvS-2FDhCYDdD3lUST8IDAzUUwZtFDaKDRRM-3D6r1l_uWKok8IoyDghhkD=
+AFb8PtTOSbQUnOkmtFKUlJoIUrjKk8e56KyrAlCGd4QMATWAKnCURZ34-2F7rLBLcVcCDCCyxPC=
+2UG2qAAwRilfFkvVdRJPIxdZhvDc6IN8OH3Ad06A893lKQSz8nwp-2BixVTAEOd9gGveRBPqn2q=
+0ZWQBf-2Fn7uP2lqOzjmU0QCD-2FBigCe6450xIht0m7Kb4bFpt3VInHiLvvDB0wUrGw5lZDGu5=
+N77pHUhkkgsQkU9TWjzPfWHSliY0y6I9efuFUQAWZZCgcsOLjRIQQKCq0Agb9IdgSGqBTIGQfEu=
+PXjuLsvCnr9QPyQTDgOGmwOdDApZtUZKgAS9tIr4lMnckQOElN8GLQoI-3D" style=3D"text-=
+decoration:none;font:normal normal bold 15px/18px Arial;letter-spacing:0;co=
+lor:#1c9ad6">Associate Research Scientist</a> <span style=3D"text-align:lef=
+t;font:normal normal normal 15px/18px Arial;letter-spacing:0;color:#000"> i=
+n their Madison, WI location. We thought you might be interested in this op=
+portunity. To explore this further you'll find more details and the applica=
+tion instructions on the job details page below.</span> </div> </div> <div =
+style=3D"height:2px;background:#f3f5f6 0 0 no-repeat padding-box;opacity:1;=
+margin:20px 0"></div> <div style=3D"margin:20px 20px 0 30px"> <a href=3D"ht=
+tps://smail.kimblegroup.com/ls/click?upn=3DuGfW32Id4r8vaZ2OCw7kG6vOGHocqaVJ=
+xW4ndcyFMJPcnrF6zyNPe7Jd1j02-2BiYyRmIvuD-2Bzx0IGFw3I246sWOrmDIXrih1UElJR8im=
+ErlhNebAXeRXMtHcTxQ6PL6ze2XdKfv3GYr-2BCVtm8Xllh05oLSl2my-2BzVRhPF8SOFbGSQaE=
+Ed2DxVW-2F0iyJQsO-2BQ22Nt-2B9bCBaQ-2B4ahZZSfXeCBH1-2BJBRWw-2FsMWET5-2Fwx1kS=
+8lsnHvpAHprLOJHhkjaR-2BVCdjWZiaqHQaJ6VPImmqqByd03srzhISwOCl8H5qqlQBeUagpRKi=
+kW-2F-2BsSrpWmRO2L4qTef1HloowHI0VM66N2EGoEgN3N6f-2Bcdv6L3IEzsx58UJNo2qRZGL9=
+I3yyrpcz-2B3rXIZpwHrehcKWY796q7vb-2BT02lVqC54otVuaZjJY45127llkJsS851h5xKrmo=
+NcoQiG6xB5LbH1A2XpAlMzRvQ-2BK6aWeblAToOzZMzhr4ngvhS1avg8twJ2DYvM6Uxjktgoj6o=
+smmthNUXrOsoekh4-2BZINHucnTdFw7rwskcelmb0DvbhQLSehKJarX3qzCt2L-2Blf3WMitHtF=
+-2Bwl-2FIlt6oRXWlZqYMnJe1VtqQzb4Gu6kEqR5Oxp28VqQVewy1SXvDPaoIwX1l0tltTaJIdx=
+AiJZ6peLjQlmP-2FIyYUMWF6gueC-2BnvYeOejA8qiqxquBm-2FvCss1H5ADlppf7QDOlm5Kckg=
+d6d4jvBB2gILkeuvQoFCPpemCGbBJfwEjeGzQmYeGlWTTfvS-2FDhCYDdD3lUST8IDAzUUwZtFD=
+aKDRRM-3Djg4Z_uWKok8IoyDghhkDAFb8PtTOSbQUnOkmtFKUlJoIUrjKk8e56KyrAlCGd4QMAT=
+WAKnCURZ34-2F7rLBLcVcCDCCyxPC2UG2qAAwRilfFkvVdRJPIxdZhvDc6IN8OH3Ad06A893lKQ=
+Sz8nwp-2BixVTAEOd9gGveRBPqn2q0ZWQBf-2Fn7uP2lqOzjmU0QCD-2FBigCe6450xIht0m7Kb=
+4bFpt3VInHlIGTeYOEHdLNIsaiKNAXjIh-2F8zWIgTD4FWpXIbUdY7AQsT7ikclVTAF7X3gyAjn=
+j7pAQYTolaYouYJnQK3aysiGIwhsAkEJoKFb3QUjVW3NQxxNCDZpIOTTanBahJpVHaoM52rLj3K=
+1Aj1akZ8pE4c-3D" style=3D"text-decoration:none;display:block;text-align:lef=
+t;font:normal normal bold 20px/23px Arial;color:#1c9ad6">Associate Research=
+ Scientist</a> <div style=3D"margin-top:10px;display:inline-block"> <div cl=
+ass=3D"company" style=3D"display:inline"> <div class=3D"image-container" st=
+yle=3D"display:inline-block;vertical-align:middle"> <img src=3D"https://duk=
+e-web-servers-resumes.s3.amazonaws.com/kimblegroup/2020-10/KG_company_16x16=
+.png" style=3D"display:inline-block;width:16px;height:16px;opacity:.9;margi=
+n-top:2px" alt=3D"company"> </div> <div class=3D"text-container" style=3D"m=
+argin-left:5px;margin-top:1px;display:inline-block;vertical-align:middle"> =
+<span style=3D"text-align:left;font:normal normal normal 15px/18px Arial;co=
+lor:#000;opacity:.9">Pearson</span> </div> </div> <div class=3D"location" s=
+tyle=3D"display:inline;margin-left:20px"> <div class=3D"image-container" st=
+yle=3D"display:inline-block;vertical-align:middle"> <img src=3D"https://duk=
+e-web-servers-resumes.s3.amazonaws.com/kimblegroup/2020-10/KG_location_16x1=
+6.png" style=3D"display:inline-block;width:16px;height:16px;opacity:.9;marg=
+in-top:2px" alt=3D"company"> </div> <div class=3D"text-container" style=3D"=
+margin-left:5px;margin-top:1px;display:inline-block;vertical-align:middle">=
+ <span style=3D"text-align:left;font:normal normal normal 15px/18px Arial;c=
+olor:#000;opacity:.9">Madison, WI</span> </div> </div> </div> <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-top:10px;paddin=
+g-bottom:2px;margin-left:3px" width=3D"100%"> <tbody> </tbody> </table> </d=
+iv> <div style=3D"height:2px;background:#f3f5f6 0 0 no-repeat padding-box;o=
+pacity:1;margin:20px 0"></div> <div style=3D"margin:20px 20px 0 30px;opacit=
+y:.9"> <span style=3D"text-align:left;font:normal normal normal 15px/18px A=
+rial;letter-spacing:0;color:#000">If this position does not match your care=
+er goals, please let us know which types of roles you would be interested i=
+n </span> <a href=3D"https://smail.kimblegroup.com/ls/click?upn=3DuGfW32Id4=
+r8vaZ2OCw7kG6vOGHocqaVJxW4ndcyFMJORmepc3J-2FE-2FM3ejsLbYfUxQPLO-2BYbgpB7DP-=
+2FsL8GHpt5bkjebktCod2N7Cx-2B02gaSAvp7CWyMxHbXd0Xmde32K5QWuXrrtM5a5CzhJ4V8r-=
+2FA-3D-3DZYk9_uWKok8IoyDghhkDAFb8PtTOSbQUnOkmtFKUlJoIUrjKk8e56KyrAlCGd4QMAT=
+WAKnCURZ34-2F7rLBLcVcCDCCyxPC2UG2qAAwRilfFkvVdRJPIxdZhvDc6IN8OH3Ad06A893lKQ=
+Sz8nwp-2BixVTAEOd9gGveRBPqn2q0ZWQBf-2Fn7uP2lqOzjmU0QCD-2FBigCe6450xIht0m7Kb=
+4bFpt3VInHohjgYZ4A-2F2FyTpoMIxY2ZluAfqXkH2tByKkNe3W-2FE5mw3zsakFnhmlETlIeI9=
+nLzhJtnJIbl0xqWNBbvyEuMQWYW1NNoOw-2Fj2c8pRugHJI3IA3QL03TNjnV5NXJRJHKScwj1wY=
+SV-2F47ZoKEkL4-2BQ80-3D" style=3D"text-decoration:none;font:normal normal b=
+old 15px/18px Arial;letter-spacing:0;color:#1c9ad6">here</a> <span style=3D=
+"text-align:left;font:normal normal normal 15px/18px Arial;letter-spacing:0=
+;color:#000">.</span> </div> <div style=3D"height:30px"></div> </div> </div=
+> <div style=3D"margin:20px 60px 30px 30px;opacity:.9"> <p style=3D"text-al=
+ign:center;font:normal normal normal 15px/18px Arial;letter-spacing:0;color=
+:#666"> Looking to <a href=3D"https://smail.kimblegroup.com/ls/click?upn=3D=
+uGfW32Id4r8vaZ2OCw7kGwFOFbarUKwRUnzCPF8iPBnB-2F2ms2cD5Y8o8wEtFAVKM36eJl8hIo=
+UHKGQ2o4soBcvABwl8NixmoxbEoLHtM-2BHM-3DwUuf_uWKok8IoyDghhkDAFb8PtTOSbQUnOkm=
+tFKUlJoIUrjKk8e56KyrAlCGd4QMATWAKnCURZ34-2F7rLBLcVcCDCCyxPC2UG2qAAwRilfFkvV=
+dRJPIxdZhvDc6IN8OH3Ad06A893lKQSz8nwp-2BixVTAEOd9gGveRBPqn2q0ZWQBf-2Fn7uP2lq=
+OzjmU0QCD-2FBigCe6450xIht0m7Kb4bFpt3VInHnR5isaVfrhIbvK5xLi4gBevaG-2BmDvca5i=
+kP3xlIl8SKCL29dusp7-2Fpgl9o3SaMOHUjAkZQIruJktlIe41cKpABNCLesJm8rz5dLzJl-2F6=
+Ab1rlKYJ7q27RA8mXTnid-2BDDMOgQKH1HSnQAyKh9rJGDpg-3D" style=3D"text-decorati=
+on:none;text-align:center;font:normal normal normal 15px/18px Arial;color:#=
+1c9ad6">hire someone great</a>? <br><br> Houston | New York | Los Angeles |=
+ Seattle | Atlanta <br> 2450 Louisiana St. Suite 400-437, Houston, TX 77006=
+ <br><br> Click <a href=3D"https://smail.kimblegroup.com/ls/click?upn=3DuGf=
+W32Id4r8vaZ2OCw7kG6vOGHocqaVJxW4ndcyFMJNfoRDo2n-2BNa8podluIJTtZQYiTQvD1M5Q9=
+jDTGxmgeaglf8y0HUXSIZZUyNq4YJgVjjei7RZeKwdIABEbH6MkidjxAiTLa7sLCgwWPdQKQVe0=
+A1OwxrE7Ca2MqJukebcyD8w149NQCne-2FS2nUa3wVsUuyM_uWKok8IoyDghhkDAFb8PtTOSbQU=
+nOkmtFKUlJoIUrjKk8e56KyrAlCGd4QMATWAKnCURZ34-2F7rLBLcVcCDCCyxPC2UG2qAAwRilf=
+FkvVdRJPIxdZhvDc6IN8OH3Ad06A893lKQSz8nwp-2BixVTAEOd9gGveRBPqn2q0ZWQBf-2Fn7u=
+P2lqOzjmU0QCD-2FBigCe6450xIht0m7Kb4bFpt3VInHnGVoFYvjBY6qIDfUriW08to-2BuA9UG=
+JzTxMlIhxiPvkTCO861bjb9VhCJp0AjowCPMTrDPb8NgDzV9mBlxex1dLeMYOI2C4sNqA05kvFS=
+fbPQgwguVobtGDRBTNlXBhdmRO-2BU5dmezCnulg2gAMcxIo-3D">unsubscribe</a> to sto=
+p receiving these emails </p> </div>  <img src=3D"https://smail.kimblegroup=
+.com/wf/open?upn=3DSiXCL0Lax2OTvWCjZbYzKVqR5-2FwdIYpYyqont9Ic8S9f29wyzGxAKT=
+dCduhqhMZdYm0tYbrPXKbE6BFRY0-2BfrWniu319yEq5rjIo20VD-2Fyy1fgMljaz5p4jM32nRM=
+zLyVMcEBkRwaTd-2FOkr91ezEnU8GN8qXKQuRx1q-2B5b19eFQEWBYJHWBrfkVQXRak-2BBM7MO=
+-2B-2Fgd1EFm7lZBolDHZWlTyYu7Wf2Pcg0AEMiFJK2hngoJc1THd8q9BJ9kocseJ-2B5n-2F0l=
+GyTJZ5ameSBr12aRZ41L8RazTbKvKkiR7-2FLDvvzwHdXmOUQNGRLAV32Bic5Hg81-2Bcj3lLkB=
+AD-2FciSU7iTw7QBB7YO3DpdZ-2BrT7R6A8-3D" alt=3D"" width=3D"1" height=3D"1" b=
+order=3D"0" style=3D"height:1px !important;width:1px !important;border-widt=
+h:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-ri=
+ght:0 !important;margin-left:0 !important;padding-top:0 !important;padding-=
+bottom:0 !important;padding-right:0 !important;padding-left:0 !important;">=
+</body> </html>

@@ -1,0 +1,146 @@
+Received: from CH2PR06MB6520.namprd06.prod.outlook.com (2603:10b6:610:8b::24)
+ by MW4PR06MB8441.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 19:36:16 +0000
+Received: from BN8PR04CA0001.namprd04.prod.outlook.com (2603:10b6:408:70::14)
+ by CH2PR06MB6520.namprd06.prod.outlook.com (2603:10b6:610:8b::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16; Fri, 13 Aug
+ 2021 19:36:16 +0000
+Received: from BN8NAM11FT028.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:70:cafe::b8) by BN8PR04CA0001.outlook.office365.com
+ (2603:10b6:408:70::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13 via Frontend
+ Transport; Fri, 13 Aug 2021 19:36:15 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ BN8NAM11FT028.mail.protection.outlook.com (10.13.176.225) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Fri, 13 Aug 2021 19:36:14 +0000
+Received: from servers.com ([45.137.22.93]) by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTP id <0QXS001M6MGCQC00@smtp4.wiscmail.wisc.edu> for
+ stevea@ssec.wisc.edu; Fri, 13 Aug 2021 14:36:14 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=16%, Hits= CTYPE_JUST_HTML 0.848,
+ FRAUD_FROM_REPLY 0.5, FROM_NAME_ALLCAPS 0.1, HTML_70_90 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, SUBJ_1WORD 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODY_SIZE_1200_1299 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0,
+ BODY_SIZE_7000_LESS 0, NO_CTA_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0,
+ SPF_SOFTFAIL 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CSHC_NS_B_FN_FA 0, __CT 0, __CTE 0, __CTYPE_HTML 0, __CTYPE_IS_HTML 0,
+ __FRAUD_COMMON 0, __FRAUD_HIREME 0, __FRAUD_REPLY 0, __FRAUD_SUBJ_ALLCAPS 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HEADER_ORDER_FROM 0, __HTML_FONT_BLUE 0, __MIME_HTML 0,
+ __MIME_HTML_ONLY 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0, __MIME_VERSION 0,
+ __RCVD_FROM_DOMAIN 0, __SANE_MSGID 0, __SUBJECT_ALLCAPS 0, __SUBJECT_NOLC 0,
+ __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_MAILTO 0,
+ __URI_NO_WWW 0, _
+X-Wisc-Doma: secureserver@servers.com,servers.com
+X-Wisc-Env-From-B64: c2VjdXJlc2VydmVyQHNlcnZlcnMuY29t
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.192415,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840001,
+ SenderIP=[45.137.22.93]
+X-Spam-Score: *
+Reply-to: lopez.rios@udttld.com
+From: RIOS LOPEZ <secureserver@servers.com>
+To: stevea@ssec.wisc.edu
+Subject: PROPOSAL
+Date: Fri, 13 Aug 2021 21:36:11 +0200
+Message-id: <20210813213611.52585F8B259478E6@servers.com>
+Content-type: text/html; charset=iso-8859-1
+Content-transfer-encoding: quoted-printable
+Return-Path: secureserver@servers.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 19:36:14.9574
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 188c8424-287b-4094-64f3-08d95e919d28
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT028.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 188c8424-287b-4094-64f3-08d95e919d28
+X-MS-TrafficTypeDiagnostic: CH2PR06MB6520:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=451
+X-MS-Oob-TLC-OOBClassifiers: OLM:2657;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 19:36:14.8435
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 188c8424-287b-4094-64f3-08d95e919d28
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT028.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR06MB6520
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9525836
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4373.031
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?OBOKmpsro2ynEfaJJnc4K6kZXCBy6to2bmHXR4wRcuK1x+zt2EQwxaXeej?=
+ =?iso-8859-1?Q?ClacsWQfpR2ighCLlS/yj76gkPgdiu/3ErpOeilbgBtlpHFTxCN8F5p0vG?=
+ =?iso-8859-1?Q?30RlBact4BMkRs3zpBMKrAJH46CjeleMNCL8S3cTak45DPxyGWHsOBoD3T?=
+ =?iso-8859-1?Q?kycoOxiTt9dZ/WWB7ovLguUsFDLN7RzBbvVGuYflOe7LJRY2ZN3BG0oXzH?=
+ =?iso-8859-1?Q?PzZpPZ+BAlIxoHn4RpPgXNaRl/1DZjWMR3LYkgsG8azNKLpTirWCvsBdBQ?=
+ =?iso-8859-1?Q?vMyLpBIjMu2wppWFr2e0RtncWxwyhtzx3g2rHgC0XUvoY2N2AWQgRSl1Sa?=
+ =?iso-8859-1?Q?dT126luEe7//AUKWPStnVhuZEdPBoBDbcrZeyjp18LEv6K+0zPlqNo6OJu?=
+ =?iso-8859-1?Q?yzU8INJfipCktOovanuyeRi/EuYuDPFIQmnu53fQgL1u4UErrILu6nJBGd?=
+ =?iso-8859-1?Q?qrfBCaSQ5tgo1BA86sbZLrV6ii+dY4tGcvfKFkJtad77XZ9cStITDjh15f?=
+ =?iso-8859-1?Q?S8KWUi1Yfii2uF7l7j6VvSLlR9WIKF2r/0t51acl6/ZAP1knpuPIycYGyc?=
+ =?iso-8859-1?Q?e8WwFAexIgoH/ari/DL2rUgTmLwzBrxSjvi5B76dpk9oBUtQ/7/ferQrF5?=
+ =?iso-8859-1?Q?04lY+PZh6/oT2lUI9my3xG+uNX4BJIbIi1ikyZV4/wcn6RpClmNYE0IId8?=
+ =?iso-8859-1?Q?32PwKnYnlX4rRyryUnbIQtPNHMIzWc2zzio50lhRlRsqknc/MqFgx7H8S/?=
+ =?iso-8859-1?Q?cYI80F8RXpDHK3ENUErfmVZDxrhAOuVdSCJg1v4nPZY6cshSvLnlYwsfdL?=
+ =?iso-8859-1?Q?3dTPx6oIllrhuK3FA2ilX3PPQrOO7/uyDn9byaLmn0AOg5hB5tTynpLwgZ?=
+ =?iso-8859-1?Q?mlbmvuwRCl3tlRk8QS9wT9JiGqiQb4qAdbzcFP8sS+i0AWUab5GxySk+20?=
+ =?iso-8859-1?Q?cSNkhImF1U+mfnp4fJASFU6ttoR/mBIDNUPXFcJdW4yjXzeZatoDgnu+CX?=
+ =?iso-8859-1?Q?8eKr593ciP9jbXAu+PC29ZeC0yNlE6iPfOgXBYeQfUJOTvs0wsv/Q6nniK?=
+ =?iso-8859-1?Q?wKSwYJWW7M4vZgMUpk3MfU8pXvIGEsnk9sYDT4DJYHJrsWFnKydjxTev2L?=
+ =?iso-8859-1?Q?Yp5pLU8u8V2iX34uI99pJDqajyRfMOzHN13MAwsmZz2MYbINnBcVExe4b9?=
+ =?iso-8859-1?Q?mSUu/VJgG7ar1evCWKsOQBV9ZkAfGIsBLlp2T2bArHeSYoilPkrVAUrUgg?=
+ =?iso-8859-1?Q?P/zIyEfcEWS709f0ceVjQTkx8GUD2lCLv4l/qYMs2IY79RBoeJqWd9c6nc?=
+ =?iso-8859-1?Q?xlOI4bCFQZY9aW9Q5jipfgxpfZ4CDJcFUmyv62qfHFB3asQTqJiJaai6aI?=
+ =?iso-8859-1?Q?ybiMeLbA7yPIsA6MRlhQFcO7hSRWSfso8+l7KapHc3jVNHTB+Ctwv9bMnR?=
+ =?iso-8859-1?Q?VZsR7jDgL2SnF+ZVUwQKC2YFRCIRM5NrTffc6R0YV76T44LyIPQnbJxG5/?=
+ =?iso-8859-1?Q?O3LbIb6YeCHUZm2vHxiLb8ImK87nzuSpChvC64Ee5xNM8u4FOgJ4Kshc9j?=
+ =?iso-8859-1?Q?jYv8EzefEtgzoynnnaBpENZzcm8hT6ERysgICXFoXbOoM2riGlopYvkwsc?=
+ =?iso-8859-1?Q?LgiV6GAlqgX51I3r9tYbLFmze3wSF0zs/rXMBKD5dd0mLY6O7JC+Vo6e60?=
+ =?iso-8859-1?Q?0T+qRKZrS5GiUw+dG6C+ir+0UyKRE8TKiNuFFcfw0FeKDMSKxe72O2uO87?=
+ =?iso-8859-1?Q?CbVDxn8RC3sVAcS8+0sEahUfdF7H1aBQTYzb5I2qW6L5fd1euKkoodPgx/?=
+ =?iso-8859-1?Q?K2DHMlJ7ePCAKAiA+X+onA9Kd9+cg8nAhls02yXlhfPvrI8zzba56jGmkO?=
+ =?iso-8859-1?Q?HPrGPLmsYYMWWjXtSBdddQaOuPJ8UC6w0HTqFdL61+5z968pk/ZHu306B9?=
+ =?iso-8859-1?Q?2X8dx7UhKvM2uW8N7boqeehFgg+dQhWDl+d6O7gh/QqqoonjLbt55I+qhx?=
+ =?iso-8859-1?Q?Ak3V8uWSSaJrGEDjJf6xw7OFCBAQ=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17037"></head>
+<body style=3D"MARGIN: 0.5em">
+<p style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial"=
+><br>&nbsp;</p>
+<p><font size=3D"4"><b><i>Dear Friend<font color=3D"#222222" face=3D"Arial"=
+>stevea</font>&nbsp;&nbsp;</i></b></font></p><font size=3D"4"><b><i>
+<p><br>I am a bank manager here in Mexico.</p>
+<p>I have a confidencial financial offer that can benefit both of us.</p>
+<p>Kindly reply me for more details</p>
+<p>Yours Sincerely</p></i></b></font>
+<p><font size=3D"4"><b><i>RIOS&nbsp;</i></b></font><b style=3D"FONT-SIZE: l=
+arge"><i><font size=3D"5">LOPEZ</font></i></b></p>
+<p><font size=3D"4"><b><i><font color=3D"#0000ff">lopez.rios@udttld.com</fo=
+nt></i></b></font></p></body></html>

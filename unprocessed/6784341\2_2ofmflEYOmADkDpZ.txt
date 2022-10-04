@@ -1,0 +1,143 @@
+Received: from DM6PR06MB4698.namprd06.prod.outlook.com (::1) by
+ BYAPR06MB3942.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 18:30:55
+ +0000
+Received: from BN6PR06MB3074.namprd06.prod.outlook.com (2603:10b6:405:3f::32)
+ by DM6PR06MB4698.namprd06.prod.outlook.com (2603:10b6:5:11::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.14; Mon, 15 Aug
+ 2022 18:30:45 +0000
+Received: from BN6PR06MB3074.namprd06.prod.outlook.com
+ ([fe80::85cc:4aae:63d9:2b5d]) by BN6PR06MB3074.namprd06.prod.outlook.com
+ ([fe80::85cc:4aae:63d9:2b5d%7]) with mapi id 15.20.5504.025; Mon, 15 Aug 2022
+ 18:30:45 +0000
+From: FEI SMITH <fsmith2@wisc.edu>
+To: FEI SMITH <fsmith2@wisc.edu>
+Subject: Re: Email Confirmation
+Thread-Topic: Email Confirmation
+Thread-Index: AQHYrflsxi8gt7F6n062GD2l46VpA62wThfR
+Date: Mon, 15 Aug 2022 18:30:43 +0000
+Message-ID:
+	<BN6PR06MB3074A96AE12DE050275B280791689@BN6PR06MB3074.namprd06.prod.outlook.com>
+References:
+	<BN6PR06MB3074F6725928E558858848C191679@BN6PR06MB3074.namprd06.prod.outlook.com>
+In-Reply-To:
+	<BN6PR06MB3074F6725928E558858848C191679@BN6PR06MB3074.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: BN6PR06MB3074.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	3ae75c42-27ea-429d-231c-08da7eec4345
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 3ae75c42-27ea-429d-231c-08da7eec4345
+x-ms-traffictypediagnostic: DM6PR06MB4698:EE_
+x-ld-processed: 2ca68321-0eda-4908-88b2-424a8cb4b0f9,ExtFwd,ExtAddr
+x-ms-exchange-transport-crosstenantheadersstamped: DM6PR06MB4698
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=wisc.edu;
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:BN6PR06MB3074.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 15 Aug 2022 18:30:43.2020 (UTC)
+x-ms-exchange-crosstenant-network-message-id:
+	3ae75c42-27ea-429d-231c-08da7eec4345
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-authsource: BN6PR06MB3074.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-transport-endtoendlatency: 00:00:12.4192725
+x-ms-exchange-processed-by-bccfoldering: 15.20.5504.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?/xtcTA5fiDBclvQm2eaTg11TiyhxtmC8eqiyKFiG5YDleH7fAM4o3RtNj99P?=
+ =?us-ascii?Q?m2tCZ/vbSaG5/Gf+WFzTQq4+6Jrz9FdR7XA12Z8MijAWZwG9RA9/t/AFOD1U?=
+ =?us-ascii?Q?WYMYi9kk4bdmGtlVF5QtwSGoiPowcmwJZgdeYWacEyZYXyu40XuT4GRti4Ki?=
+ =?us-ascii?Q?z3fzI4hJxjmCvpDpByJzyEAzAU33RjU5JQjp7y8n8Bs6uopdcXtOXOV9+Ou1?=
+ =?us-ascii?Q?Z1i1wj3Zh26gz5EuM3Mrlwnxdvmu4cAx7XA7/hJmpIUaR+1NHuUZ83zaekL6?=
+ =?us-ascii?Q?VArc0EVWQH7l8SErkzFL4FDmM2S3YYaaTzqYId+CAVVlGxSaBLD1yOYaMjgM?=
+ =?us-ascii?Q?iWNI7yeptRs2Qcd/o7sNKUlo5H24p154mtD/u4AUgRkzX173qM3xe9sZa9ZU?=
+ =?us-ascii?Q?J11+n6tIQTkByFoxqaDQBNsVv2NP98L0tmUgloHedD4VyBBaCMIptQGlrp2U?=
+ =?us-ascii?Q?ZT/hgS1BXvLp21uUqBwzbX5iGab0UodzlhlOTxcHIr+8nVP/3ZPgtGkUHK52?=
+ =?us-ascii?Q?jb5vfPOjGRwATmks3xKYmj8JxIzPtlXVGglw0tADlarYL51C+usr7X7B9yiI?=
+ =?us-ascii?Q?mlgx+/d1GvRP+A3WLeBLLPG/YKFy8OEgm8sY2ozPsFy5IwLgA7C5A5HwHA7C?=
+ =?us-ascii?Q?HZsVjSNIY9ZGa4Rq7KxiqMJd9jvs8ErNiGDF2Bau5IXgXrU6QeWJMXJ/49kE?=
+ =?us-ascii?Q?HqeL1qKYsivLfFAxi605nUK9iihWnUx4yIZJyMfHR3rEDG8csD8K4jX3tORg?=
+ =?us-ascii?Q?P8w+gOU/n8XvG+s9ucdaqUdOTVBujSwlZuX6bv7VWCCKYL4m39rGl/M+Zii6?=
+ =?us-ascii?Q?S0nsB+xmqHNPAGLBDNp7bqBGDcO1QKjE3GnwK473bxEsKIrF6GElsgruXUj8?=
+ =?us-ascii?Q?pIa1n7BeuN4aKfsXUj+cNo9mc29cgufRjCDJSzElVsaoAAPkfLYLcBqvstHM?=
+ =?us-ascii?Q?DNnigfL1nG5Prp2oyt6KGNc0sF+5FoO2jzd3isd2qjRzSNK0Mc5ijIeNeEai?=
+ =?us-ascii?Q?sZ56hTjrfQl9D5hZ2nEU12yxAEWHON9gTIuEVDFp5T6ok9TyXDTBlk/VLZPj?=
+ =?us-ascii?Q?Q/aiuV38DnESOPo/8QYJE0g3cffsriXpaDUtCsSP0ara1nFjCn483wQ5Hd5I?=
+ =?us-ascii?Q?q1lMovV93qdROERIfBhwE+JKchInYZCmhdzslTjV/0v9WMhZAUAFNcoUkzGV?=
+ =?us-ascii?Q?8gefHKO7tJ4094qVfAgshHnyQ0riF/H6GXC6w6ZiUPilsRBFfMVtgZofe4o?=
+ =?us-ascii?Q?=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BN6PR06MB3074A96AE12DE050275B280791689BN6PR06MB3074namp_"
+MIME-Version: 1.0
+
+--_000_BN6PR06MB3074A96AE12DE050275B280791689BN6PR06MB3074namp_
+Content-Type: text/plain; charset="us-ascii"
+
+DO NOT CLICK.
+
+My account was hacked, and the link above will cause yours to be too.
+________________________________
+From: FEI SMITH
+Sent: Thursday, August 11, 2022 10:15 PM
+Subject: Email Confirmation
+
+This email is to notify all students and staff that we will be carrying out email validation exercises. We will need you to confirm that your email is still in use, please  CLICK HERE<https://forms.gle/u7UK4kaBvwYWiRDdA>  now to keep your account active
+Order from University Of Wisconsin-Madison
+
+--_000_BN6PR06MB3074A96AE12DE050275B280791689BN6PR06MB3074namp_
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<style type="text/css" style="display:none;"> P {margin-top:0;margin-bottom:0;} </style>
+</head>
+<body dir="ltr">
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" class="elementToProof">
+DO NOT CLICK.</div>
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" class="elementToProof">
+<br>
+</div>
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" class="elementToProof">
+My account was hacked, and the link above will cause yours to be too.</div>
+<div id="appendonsend"></div>
+<hr style="display:inline-block;width:98%" tabindex="-1">
+<div id="divRplyFwdMsg" dir="ltr"><font face="Calibri, sans-serif" style="font-size:11pt" color="#000000"><b>From:</b> FEI SMITH<br>
+<b>Sent:</b> Thursday, August 11, 2022 10:15 PM<br>
+<b>Subject:</b> Email Confirmation</font>
+<div>&nbsp;</div>
+</div>
+<style type="text/css" style="display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir="ltr">
+<div class="x_elementToProof" style="font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<span style="color:rgb(34,34,34); font-family:Arial,Helvetica,sans-serif; font-size:small; background-color:rgb(255,255,255); display:inline!important">This email is to notify all students and staff that we will be carrying out email validation exercises. We
+ will need you to confirm that your email is still in use, please &nbsp;</span><a href="https://forms.gle/u7UK4kaBvwYWiRDdA" target="_blank" style="color:rgb(17,85,204); font-family:Arial,Helvetica,sans-serif; font-size:small">CLICK HERE</a><span style="color:rgb(34,34,34); font-family:Arial,Helvetica,sans-serif; font-size:small; background-color:rgb(255,255,255); display:inline!important"><span>&nbsp;</span>&nbsp;now
+ to keep your account active</span><br style="color:rgb(34,34,34); font-family:Arial,Helvetica,sans-serif; font-size:small">
+</div>
+<div class="x_elementToProof" style="font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<span style="color:rgb(34,34,34); font-family:Arial,Helvetica,sans-serif; font-size:small; background-color:rgb(255,255,255); display:inline!important">Order from&nbsp;</span><span style="color:rgb(95,99,104); font-family:Roboto,arial,sans-serif; font-size:14px; font-weight:700">University
+ Of Wisconsin-Madison</span><br>
+</div>
+</div>
+</body>
+</html>
+
+--_000_BN6PR06MB3074A96AE12DE050275B280791689BN6PR06MB3074namp_--

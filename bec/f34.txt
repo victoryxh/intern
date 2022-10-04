@@ -1,0 +1,173 @@
+Received: from MWHPR0601MB3707.namprd06.prod.outlook.com
+ (2603:10b6:301:77::11) by CY4PR06MB2918.namprd06.prod.outlook.com with HTTPS;
+ Sat, 4 Sep 2021 16:18:53 +0000
+Received: from BN8PR07CA0022.namprd07.prod.outlook.com (2603:10b6:408:ac::35)
+ by MWHPR0601MB3707.namprd06.prod.outlook.com (2603:10b6:301:77::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4478.19; Sat, 4 Sep
+ 2021 16:18:51 +0000
+Received: from BN8NAM11FT045.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:ac:cafe::25) by BN8PR07CA0022.outlook.office365.com
+ (2603:10b6:408:ac::35) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4478.17 via Frontend
+ Transport; Sat, 4 Sep 2021 16:18:51 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ BN8NAM11FT045.mail.protection.outlook.com (10.13.177.47) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4478.19 via Frontend Transport; Sat, 4 Sep 2021 16:18:51 +0000
+Received: from mail-wr1-f45.google.com ([209.85.221.45])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QYX02LER3ZAD730@smtp6.wiscmail.wisc.edu> for
+ fmcfarland@wisc.edu; Sat, 04 Sep 2021 11:18:47 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Chris Kucharik," <chairdivision5@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=13%, Hits= SXL_IP_PROXY_RCVD 0.5,
+ SXL_IP_SPAM_RCVD 0.5, SUBJ_MISSING 0.1, HTML_00_01 0.05, HTML_00_10 0.05,
+ MIME_LOWER_CASE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0,
+ BODY_SIZE_1000_LESS 0, BODY_SIZE_100_199 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ KNOWN_MSGID 0, KNOWN_MTA_TFX 0, NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0,
+ NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0,
+ SXL_IP_TFX_WM 0, WEBMAIL_SOURCE 0, __BODY_NO_MAILTO 0, __CT 0, __CTE 0,
+ __CT_TEXT_PLAIN 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0,
+ __DQ_NEG_IP 0, __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NAME_NOT_IN_BODY 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_MSGID 0,
+ __HAS_X_MAILER 0, __HELO_GMAIL 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0,
+ __MIME_TEXT_P1 0, __MIME_VERSION 0, __MSGID_APPLEMAIL 0, __NO_HTML_TAG_RAW
+X-Wisc-Doma: chairdivision5@gmail.com,gmail.com
+X-Wisc-Env-From-B64: Y2hhaXJkaXZpc2lvbjVAZ21haWwuY29t
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.9.4.160616,
+ AntiVirus-Engine: 5.85.0, AntiVirus-Data: 2021.9.3.5850002,
+ SenderIP=[209.85.221.45]
+X-Wisc-DKIM-Verify:
+ chairdivision5@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score: *
+Received: by mail-wr1-f45.google.com with SMTP id n5so3128695wro.12 for
+ <fmcfarland@wisc.edu>; Sat, 04 Sep 2021 09:18:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;
+ h=content-transfer-encoding:from:mime-version:date:message-id:to;
+ bh=BUEwAUGge+hvGP4h0fhijLdPlyabtekSEPTvRZ7ouG4=;
+ b=GElEi0ffHSA7/t2pmT0IeyhavRjsR5eMBISobNYDtbb0AzDW+mbzbVXGOyJ0G2hDD3
+ I10g4U4th2ZZY9Ps9y3VoCshBkYGd4ylRW4Zc/q+niI/J8x93S0XyDF0jGO670VqPbri
+ ffRL1PqlIe8CzGRgUev3sEuJLNNdqbvTnrFPhwL/2OhP0IWCwB0coX1vodrqF1TZFl/8
+ o9vaaHgItgWZ1FkYCQJ8SPTUTNdriMjFzctE+npFjfLbECDPCYxCZLk292YX5zF5ZpfR
+ OqhwPHIn0RU3+GqkjImeLsl8e58bMUkpwSAwppyhMTO003EFaW0+uby6k8vQOFuDn+vu
+ lfBw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:content-transfer-encoding:from:mime-version:date
+ :message-id:to;        bh=BUEwAUGge+hvGP4h0fhijLdPlyabtekSEPTvRZ7ouG4=;
+ b=KnkGEgMpwkMK/2R6b2m2grq3NqZlFajSGBzesNITxuk7xI+SOoXXk3U3xUoSgYH8BR
+ wZoPHfWeKhi+zz6AxqiieDt5Wt2WTFmP2JJG4DxLbA7FXgGgnL5kTVKzyh29EhuQX++K
+ RhgjuTsFoB9CucCBVRoUv6Cg7VKzLpkVhPNWg/RAv1e979l03XCH1EjKwuiCXIqOB6Ti
+ WZA3R8MWPqaT3Br1MeLcJE9CySd1wSCETg9MomjoZtPWxgEpW6Dcc2w4PACBs2tFC46T
+ paGkK5I+fnhO7+fAUCzFyz/P5SGpeA8dW6Q9/AFZ4tVMlLymtOWIK1tFYZn+q4fJGFAt
+ ThWg==
+X-Gm-Message-State: AOAM531ythISpPdfdgoNefBZ5YABdbQDcfLjI0JRwm2oywKtq6U0Outa
+	jR7XJfSV9quErGXAid+msinF6x2+OqPkbg==
+X-Google-Smtp-Source:
+ ABdhPJwRSKugIktGOn0fu3z6p+jzx/FjEBpw6PbBWK9gbMErM+7PVKBPWJjA7G5rJt08CvQRUICAbg==
+X-Received: by 2002:adf:b347:: with SMTP id k7mr4439866wrd.239.1630772325931;
+ Sat, 04 Sep 2021 09:18:45 -0700 (PDT)
+Return-Path: chairdivision5@gmail.com
+Received: from [10.8.21.83] ([102.89.3.132]) by smtp.gmail.com with ESMTPSA id
+ a5sm2376158wmm.44.2021.09.04.09.18.45 for <fmcfarland@wisc.edu>
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Sat,
+ 04 Sep 2021 09:18:45 -0700 (PDT)
+Content-type: text/plain; charset=us-ascii
+Content-transfer-encoding: 7bit
+Date: Sat, 04 Sep 2021 17:18:44 +0100
+Message-id: <738BDB4C-F4FC-4BA3-8D7F-7353832B2227@gmail.com>
+To: fmcfarland@wisc.edu
+X-Mailer: iPhone Mail (18A393)
+From: chairdivision5@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Sep 2021 16:18:51.7586
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4c174fe1-d396-48df-2bc4-08d96fbfaf26
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT045.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 4c174fe1-d396-48df-2bc4-08d96fbfaf26
+X-MS-TrafficTypeDiagnostic: MWHPR0601MB3707:
+X-LD-Processed: 2ca68321-0eda-4908-88b2-424a8cb4b0f9,ExtFwd
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1923;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ForwardingLoop:
+ ForwardingHandled;2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Sep 2021 16:18:51.6387
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4c174fe1-d396-48df-2bc4-08d96fbfaf26
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT045.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR0601MB3707
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6939285
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4478.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?dYxGbFUJ7ZvpiWTgYfity2nHyP6aNLb/x7+zVthiZ3NiPwYjJNmg8CzLD/mL?=
+ =?us-ascii?Q?vymzr6xKhKd12lc0i2yCBoyBG8aw/3R5UozUgdGXIABOzFCbDbF9E/LI/nNW?=
+ =?us-ascii?Q?JPjFnzIiN6JO8HgOa7DUk2CVYUMuXNEyH50/gpPBUbo7LojnP64QAL67La3w?=
+ =?us-ascii?Q?CCcOJ0FU3yZxWziNneSWEWMX9FoBZ+9wLEKDtMKaqNJzpxPsNIcwJ5t2tB8V?=
+ =?us-ascii?Q?5fe8d5Y719Nv92FKYV68I/O+4WCXuH7IGoSHK9AqfYZpV+HJxVmsJMCV0Gef?=
+ =?us-ascii?Q?/rJ4KedRSc6psddJIrza7eDEkVSUzC1p7LalPZGIGY4+cyugURPDr5WyyGy0?=
+ =?us-ascii?Q?d8VzRFrZbj0HcnNbSu8VJ3bs4I6/yO4/hg7s5vyYm8e62WcaeR9t7SMnGTO2?=
+ =?us-ascii?Q?v9NjnhGNL57j0CGYv9b9yl3n7RiSx+JrRh8DTrOf7BpNHXjOe4AFPu6TJlpj?=
+ =?us-ascii?Q?agtwdIDzZ4q3JkW5H1p9Vt4g023ii9MKy68dEhfCxj18L5OG9SP7HqJwerYM?=
+ =?us-ascii?Q?PlDebEZPx0CgslolOUxGUZRsa9tjTCWKe3CWexS3I8QVe56gL6tKihDkZZE6?=
+ =?us-ascii?Q?XNsd924xbcvguxFB0Xzxp4m2iG+ks4ptWXfi6rcUA36Ds5dOF3fc+CWT2Qga?=
+ =?us-ascii?Q?eqxv6H2PgHDWAYdC0ISgASElP9RPuBrQXUUrnO82nXnYAHMUEs92/gSlhcta?=
+ =?us-ascii?Q?9BocL/hvHMfsrGeDQ8AssJTyBrvNB8m2hpmEGCbCoUipiv4DhlVH6WZw3slT?=
+ =?us-ascii?Q?Tpasua47G5AosVOZloZ7ePEb60GaG7fmiqVkbQ6eHmTomXJyVciSXBPXlwBy?=
+ =?us-ascii?Q?ds/Rluf2lFm2MckCqlF/9Cdcw8a4Vualg2Hv2HMfwoT2cYec4L8WOAwuPxhN?=
+ =?us-ascii?Q?AbZhVTfCrOYhxymH6lkTmae1FboHUnVfN6+REKbakQs3oNzxU8d0JLqZRV/Q?=
+ =?us-ascii?Q?8/+qCYdQAVmNb0SkRIG529SbFElwI67hZbAr8SpNNWS/6IM79ywJOL3jjmnY?=
+ =?us-ascii?Q?akyFJekEkUWmXl+XnGGlXWpw9gGVCTiQQzb5cj/h2lgeOi03I+DYoduhlEta?=
+ =?us-ascii?Q?IGiJzSCzb1eDlmoAMXB9vbnh4/pxcQ5oaN0+4HMaa3HmqaZ7+PqQLw4SIqkP?=
+ =?us-ascii?Q?n6Cu1A/qUESghEu4mDqqiZzFyVQDjt3UJqZ0L9Y088e5vNTzZYa6RJPfElBN?=
+ =?us-ascii?Q?43Bgzkgb3E0UOGXbE5UKfttZasPwTHRAUct6lXaJ40RpVTb9UfpnievGsGF5?=
+ =?us-ascii?Q?ACU7qQu7NWJ0+pAx6opdUPh2z9uwFrjup7GPG/cLtdrAiPDSgsfXqWwYzh7t?=
+ =?us-ascii?Q?JGiRCog5GAW9g+PVJsO4NhlWIbI1wSZtEalZum7Nf/gxG/f+qFoSXytHjtri?=
+ =?us-ascii?Q?eV7lqfN5+S0E2vBRDG2h0uNkZwn3kBSAt9sqTEnqzlCnJ+8JCUa81gF/I+Tm?=
+ =?us-ascii?Q?OC2snnlfgRZWTGS5gKASTjBcQ2NugjapN0V0w0dQlgJFCEfwv/upx9Ibtqn0?=
+ =?us-ascii?Q?R/kfxwDq+GeW0uD25mMKUNck1+FOjYGV4AD3fBk3ClYHa96dUwZxOvUmz2Ei?=
+ =?us-ascii?Q?YTpidz/hlzzB9WguENBuabM5Xr4s/azXdxaugMV55Tv0py+dPJ3QnYBI5DYl?=
+ =?us-ascii?Q?UTUXVdb7lk5nM1GDch3uofmw0JPSozpc7z21xsEMwxUQax0MSmn9cKMhDhnh?=
+ =?us-ascii?Q?HwkXgr93zvEq/4vHrxTptzzWhgjqqys6sCaoLvYi1BsHbST8Jkd4Oyi+DDyC?=
+ =?us-ascii?Q?IG+z+4zeQWyuuih6t20YU2Pd5ZsCqN1Eie4m69tNbmhOhwOmRzXc3OwTAtMH?=
+ =?us-ascii?Q?lOz9eouxoMCi2pw5LTkeKgQyVeWTqT9Qxqp1yUxF0QPLTYi9N8JvR4tRD629?=
+ =?us-ascii?Q?n0Zx0tVobKP5oP1YIe4CW/F5oY0LRCkY1YKLlgZdGJGmtSHaXIZABj93xder?=
+ =?us-ascii?Q?r+34xBxC63pJZa5c51pQmLdZk0xPc+Nqpy4adPgamQjsDktlv+TJHB8xJqEG?=
+ =?us-ascii?Q?RZI2gdb0RXw2kZdTs1JxPVshyF4X5pL2w+4ktkoyregP1nUG/U2NoFx0xX8h?=
+ =?us-ascii?Q?mibyL4Dw4uEhr6HJV0KetdAiNVfgdPcu10d6QztTmk9tvJg3fNns3kmaXelm?=
+ =?us-ascii?Q?ICCz/+HuPfQZ3NHsRz5mCL74QZEJ3xyN0Q=3D=3D?=
+MIME-Version: 1.0
+
+Available cell phone number?
+
+Best Regardsz,
+
+Chris Kucharik, Professor, Chair
+
+University of Wisconsin-Madison

@@ -1,0 +1,128 @@
+Received: from DM6PR06MB4905.namprd06.prod.outlook.com (2603:10b6:5:5a::33) by
+ DM5PR06MB3498.namprd06.prod.outlook.com with HTTPS; Thu, 24 Feb 2022 09:00:32
+ +0000
+Received: from CH2PR06MB6629.namprd06.prod.outlook.com (2603:10b6:610:8d::20)
+ by DM6PR06MB4905.namprd06.prod.outlook.com (2603:10b6:5:5a::33) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4995.24; Thu, 24 Feb
+ 2022 09:00:07 +0000
+Received: from CH2PR06MB6629.namprd06.prod.outlook.com
+ ([fe80::b1c4:f382:3229:9afd]) by CH2PR06MB6629.namprd06.prod.outlook.com
+ ([fe80::b1c4:f382:3229:9afd%4]) with mapi id 15.20.5017.022; Thu, 24 Feb 2022
+ 09:00:06 +0000
+From: AIMAN SYEDA <asyeda2@wisc.edu>
+Subject: Employment@wisc.edu
+Thread-Topic: Employment@wisc.edu
+Thread-Index: AQHYKVzT6ZF6jomo1k6sR0P/I+BEqw==
+Date: Thu, 24 Feb 2022 09:00:05 +0000
+Message-ID:
+	<CH2PR06MB6629C440EDACFC72E640CA15973D9@CH2PR06MB6629.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: CH2PR06MB6629.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	76d4f4f8-5c61-46b9-59e8-08d9f7740dcf
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 76d4f4f8-5c61-46b9-59e8-08d9f7740dcf
+x-ms-traffictypediagnostic: DM6PR06MB4905:EE_
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-network-message-id:
+	76d4f4f8-5c61-46b9-59e8-08d9f7740dcf
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	ecpRux933+cWcQsjUlocFRrhORCy3oaw+/4lgFTn1cKT3pXdJyQG5bz8NYucnoH13YqRMKaWfhp6cRIRqRlZEQ==
+x-ms-exchange-transport-crosstenantheadersstamped: DM6PR06MB4905
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:CH2PR06MB6629.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 24 Feb 2022 09:00:05.8022 (UTC)
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: CH2PR06MB6629.namprd06.prod.outlook.com
+suggested_attachment_session_id: 943749a1-e7e6-cc71-013c-dc9e6d7b18d6
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	vpVP/K9xium4OLU7xj+urrpDgHeuSA4++r+eqOy6kuEJlpa/xK6/BzhMQ57nWhEa0bp3TC7z7qcZnP5Khq6LYZBY600p4guht0J40eADXpY8S38YXWa+y5P8AOTIiojARsYYWjNcFllowljFJLmuRwKYtBqhffuj9nao6Ov2iIOhioX/fKEIxN0vDC4jVIdZwKGUFtsOnkuydW3aKQHq4QeYHiMjKEMIL+OTooPDTOH3RC8DWB7sNoHht54mTfp9ve2i0rKzOjvIeeyV1td9Len1yNerxjPd4Urq4NFsgXfkj/vXtnOgv2cPO8rvfp3frZbOWYroXtpp1Gfc1Ysogr76cX3HHk4qENZGiMbCVNu8o7qL168KECYtHizBbquLiBh90ej+RaaPznG6Me9ZR7nUi/I1WuccYKFA+5U5h2KKTV8hwk8Zs6Y5tZlJnZ0fCp0cUet7TAkvSDKlYplYbsIbSKZETAHu0xCes3/lZGMY5NwCY613MPsiQeZ/G30evl2JMcDM9Ffz1PP1w3Ez74dJyPfTYNOJjxR96fpIDO5i2U221ovZ+c49khhL0IAO5SgmGPIKV71YuXMuJa75YAAdEoXHeA4Pl33mACavMCkBEicDqCNfzFZTh9PRmmGpy1RJfv/d5qwoCwwerMY6NxwbA/8EybJoqAyjktzrA/jW1DcurtsNO8U/RQ/p98xuL3B3qGOy82AFXDckNgIB0ib7nqi/UKvLz2oG+JOzrXY=
+Content-Type: multipart/alternative;
+	boundary="_000_CH2PR06MB6629C440EDACFC72E640CA15973D9CH2PR06MB6629namp_"
+MIME-Version: 1.0
+
+--_000_CH2PR06MB6629C440EDACFC72E640CA15973D9CH2PR06MB6629namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+During this time that we are in, working from home would be great. Therefor=
+e, you have been offered a campus employment office Job Opportunity at the =
+convenience of your home or school, which serves as a gateway to pay all ex=
+penses incurred on campus. This opportunity should be done at leisure takin=
+g at most 1 hr. /day,2-3 times a week and earn $450 Weekly. It is a Flexibl=
+e Opportunity where you will determine your working time. All the tasks are=
+ work from home/on campus job, you do not need to travel, you do not need t=
+o have a car to get started.  You can be in any location and work from your=
+ home/school...  Click Here<https://docs.google.com/forms/d/e/1FAIpQLSdZZcr=
+hMGFNNYcMsX9E-AEb-NuC7IzdmO9bWk4v_9R5mBRN2Q/viewform>  or send your resume =
+to stevenwood00009@gmail.com<mailto:stevenwood00009@gmail.com> for Job Deta=
+ils
+
+FLEXIBLE HOURS. Must be organized and attentive to details.
+
+NOTE WELL: DO NOT "double-submit"   APPLICATION.
+
+Thank you
+
+--_000_CH2PR06MB6629C440EDACFC72E640CA15973D9CH2PR06MB6629namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span>During this time that we are in, working from home would be great. Th=
+erefore, you have been offered a campus employment office Job Opportunity a=
+t the convenience of your home or school, which serves as a gateway to pay =
+all expenses incurred on campus.
+ This opportunity should be done at leisure taking at most 1 hr. /day,2-3 t=
+imes a week and earn $450 Weekly. It is a Flexible Opportunity where you wi=
+ll determine your working time. All the tasks are work from home/on campus =
+job, you do not need to travel,
+ you do not need to have a car to get started.&nbsp; You can be in any loca=
+tion and work from your home/school...</span><span style=3D"color:rgb(34, 3=
+4, 34);font-family:Arial, Helvetica, sans-serif;font-size:small;background-=
+color:rgb(255, 255, 255);display:inline !important">&nbsp;<span>&nbsp;</spa=
+n></span><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLSdZZcrhMGFNNYc=
+MsX9E-AEb-NuC7IzdmO9bWk4v_9R5mBRN2Q/viewform" target=3D"_blank" data-safere=
+directurl=3D"https://www.google.com/url?q=3Dhttps://docs.google.com/forms/d=
+/e/1FAIpQLSdZZcrhMGFNNYcMsX9E-AEb-NuC7IzdmO9bWk4v_9R5mBRN2Q/viewform&amp;so=
+urce=3Dgmail&amp;ust=3D1645777116775000&amp;usg=3DAOvVaw0PsF2lVd6Sj0b8LEPXV=
+WTh" style=3D"color:rgb(17, 85, 204);margin:0px">Click
+ Here</a><span>&nbsp; or send your resume to<span>&nbsp;</span><a href=3D"m=
+ailto:stevenwood00009@gmail.com" target=3D"_blank" style=3D"color:rgb(17, 8=
+5, 204)">stevenwood00009@gmail.com</a><span>&nbsp;</span>for Job Details</s=
+pan><br>
+<br>
+<span>FLEXIBLE HOURS. Must be organized and attentive to details.</span><br=
+>
+<br>
+<span>NOTE WELL: DO NOT &quot;double-submit&quot; &nbsp; APPLICATION.</span=
+><br>
+<br>
+<span>Thank you</span><br>
+</div>
+</body>
+</html>
+
+--_000_CH2PR06MB6629C440EDACFC72E640CA15973D9CH2PR06MB6629namp_--

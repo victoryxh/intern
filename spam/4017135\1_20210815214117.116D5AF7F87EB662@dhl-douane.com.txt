@@ -1,0 +1,204 @@
+Received: from BYAPR06MB4791.namprd06.prod.outlook.com (2603:10b6:a03:57::22)
+ by CH2PR06MB6662.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 19:41:22 +0000
+Received: from DS7PR03CA0183.namprd03.prod.outlook.com (2603:10b6:5:3b6::8) by
+ BYAPR06MB4791.namprd06.prod.outlook.com (2603:10b6:a03:57::22) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.21; Sun, 15 Aug 2021 19:41:20 +0000
+Received: from DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:3b6:cafe::98) by DS7PR03CA0183.outlook.office365.com
+ (2603:10b6:5:3b6::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.15 via Frontend
+ Transport; Sun, 15 Aug 2021 19:41:20 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ DM6NAM11FT047.mail.protection.outlook.com (10.13.172.139) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sun, 15 Aug 2021 19:41:19 +0000
+Received: from thatsit.sg ([117.120.7.112]) by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXW03G4BC0TEQ70@smtp6.wiscmail.wisc.edu> for
+ dmmcdon1@facstaff.wisc.edu; Sun, 15 Aug 2021 14:41:18 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=12%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_70_90 0.1, BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTH_SIZE_3000_MORE 0,
+ BODY_SIZE_3000_3999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DKIM_SIGNATURE 0, HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0,
+ NO_REAL_NAME 0, SENDER_NO_AUTH 0, SINGLE_URI_IN_BODY 0, SPF_PASS 0,
+ __ANY_URI 0, __BODY_TEXT_X4 0, __COURIER_BODY_DHL 0, __CT 0, __CTE 0,
+ __CTYPE_HTML 0, __CTYPE_IS_HTML 0, __FRAUD_ANTIABUSE 0, __FRAUD_INTRO 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_EURO 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __FROM_NO_NAME 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HREF_LABEL_TEXT 0,
+ __HTML_AHREF_TAG 0, __HTML_FONT_BLUE 0, __HTML_HREF_TAG_X2 0, __HTTPS_URI 0,
+ __MIME_HTML 0, __MIME_HTML_ONLY 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0,
+ __MIME_VERSION 0, __PHISH_SPEAR_GREETING 0, __SANE_MSGID 0,
+ __SINGLE_URI_HTML 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0,
+ __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_ENDS_IN_SLASH
+X-Wisc-Doma: noreply@xprienz.net,dhl-douane.com
+X-Wisc-Env-From-B64: bm9yZXBseUB4cHJpZW56Lm5ldA==
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.193016,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840001,
+ SenderIP=[117.120.7.112]
+X-Wisc-DKIM-Verify: noreply@xprienz.net,xprienz.net!pass
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=xprienz.net
+	; s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID
+	:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=BJL4Z0drzbBnzkJyNcdn6NdT1lQSP93/Ew0sIYQ8pwM=; b=cJAAAz8AO9TAMN8d2ILu8PV8Sz
+	hJSjw4PFN6dY9zORWYMUB4gMEumgITnEcGi+7ti3Vgnw/awhv2OclCg6SbnKFNbcl/R7SoWx9C+wE
+	gYUdPxwuNdt1fQPhuNDKE1aY1VSx6ohNHBpSFeGVoqQrVONYkvJ7ziTV2+hfw/wE2Pn8al806uxzL
+	zReLUXzntiGgvcQwOTEivWBMEGl+SpDZYGNTG66FZgkl7og3waaGks4F2u2oWLaYRbI2LU+r/zoPL
+	NepOnlpBSWRtkR29C6JCCGRM5ThqKY9TmLuTXgMclUbsWEKVeHSCi0L4mrgU8r2riDAI4dChIp7l/
+	gHfW0DHg==;
+Received: from [194.9.172.234] (port=50056 helo=ns1.thatsithosting.com)
+	by 117-120-7-132.cprapid.com with esmtpsa  (TLS1.2)
+ tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.94.2)
+	(envelope-from <noreply@xprienz.net>)
+	id 1mFM0P-0007cZ-OX	for dmmcdon1@facstaff.wisc.edu; Mon,
+ 16 Aug 2021 03:41:14 +0800
+From: dhl.service@dhl-douane.com
+To: dmmcdon1@facstaff.wisc.edu
+Subject: Douane Service DHL
+Date: Sun, 15 Aug 2021 21:41:17 +0200
+Message-id: <20210815214117.116D5AF7F87EB662@dhl-douane.com>
+Content-type: text/html; charset=iso-8859-1
+Content-transfer-encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 117-120-7-132.cprapid.com
+X-AntiAbuse: Original Domain - facstaff.wisc.edu
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - xprienz.net
+X-Get-Message-Sender-Via: 117-120-7-132.cprapid.com: authenticated_id:
+ noreply@xprienz.net
+X-Authenticated-Sender: 117-120-7-132.cprapid.com: noreply@xprienz.net
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+Return-Path: noreply@xprienz.net
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 19:41:19.3298
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ df359175-4b79-48ac-6cde-08d96024a767
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: df359175-4b79-48ac-6cde-08d96024a767
+X-MS-TrafficTypeDiagnostic: BYAPR06MB4791:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1824;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:fr;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 19:41:19.2318
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: df359175-4b79-48ac-6cde-08d96024a767
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR06MB4791
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.0513064
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?bz0/q/4SSeoDW5rNDfQrqMyuD/AOrlZ3rc6K/XxtqA7WEMgFf1PyclO+nK?=
+ =?iso-8859-1?Q?og/4N7diW8lVSc/RbG/9QaWnYoz+C82JHRyfmnE7AWRtkNYx+rGH0J60Yo?=
+ =?iso-8859-1?Q?7gpNYRpJSw7ydTptR6O+n8miBzT/AHLEKOYxsgwuzdZMv9aBgS7YiqMa+/?=
+ =?iso-8859-1?Q?MraQaPKcY3nkkE9IFY7qmc4JEV4D4VjzH+KOZMsmMQ7g2MVkFdCz2MNk4O?=
+ =?iso-8859-1?Q?tM4Ea7u00XkDPflm96AcZfP09nQX86l2q9U4toIp8kJYioAGWOjycTL6H7?=
+ =?iso-8859-1?Q?AdTlaE/A9s47Qv6O3ffATpgpWx3S89ImDqcJCjOxTVwXFCzPRYBZSe6ndr?=
+ =?iso-8859-1?Q?CNVy7MQ7l1cvd+vF38HgJoDyFjsxBvTwDBENWz154u8/isxiv78KcWCTMZ?=
+ =?iso-8859-1?Q?uT8XbN8uGMFXFHjV8J1Z61GDI72JYvC2F/8milReQ48rA/QzOYFqTQoXgX?=
+ =?iso-8859-1?Q?xetJqsQKI2hM6jOedQslWtZ9TH6sCntI3c5/at7iCL4spWDTtj1QOYLa5v?=
+ =?iso-8859-1?Q?f2iF3Dv1Xq2IhE1J9j1VUJ1rriD29yzPQYb15jZj2eMaSB+ASaRb/RqMyC?=
+ =?iso-8859-1?Q?aZqV15Yd+KO+gll3G3Z1QXjoE9GwfrZLoLXohOUtwI+ntfl604Y/B7A77F?=
+ =?iso-8859-1?Q?hGUn4FaMAhjjs6dnc8QLJsNoMlaiPdETnRVE+CBwvVvsIjkacjBjKpaZx6?=
+ =?iso-8859-1?Q?4F6ik6/2ffruCqnnmuaghlhKSIyfTSwepVtdJ9dqMAMkquaPgdUkXp4+XI?=
+ =?iso-8859-1?Q?VPgggNsRrHFZv/abDKNpDiYIsUKs1MB4cudbVvwSzhmX30zwrvLgEf11GX?=
+ =?iso-8859-1?Q?TeAAbLDp1O4qDynxoSVqQqwjUp7xTQj5C98o6rs9FqGciiImmoszlgadOn?=
+ =?iso-8859-1?Q?+lDYFbm9uETKzzDEF/OU5zIJPgDvEoe+iUIX88Gqof1ggwtXsj70vdssI4?=
+ =?iso-8859-1?Q?eHSNC3wIt5sVxva2d8zpRSPzMOb/mRK84yNDAvbgP+Jrw1X8d5sAl2732K?=
+ =?iso-8859-1?Q?4AQ2THgqgF8MQjJcAQHqDh1xnC+fz8SBU6GjzuWrzg9ro+wDP2KSagHeoK?=
+ =?iso-8859-1?Q?N0jt48nkcwqXQ6li7tTdiwVqXTkQi9a2ak8eHzKEfCurT++KjSA9YNrwbI?=
+ =?iso-8859-1?Q?imTVFAglXFletdpMcLtS0Bmt9CFb4+QMiYDLcgBblyG8O0jFxZHgUdk8bg?=
+ =?iso-8859-1?Q?7gBdcAwCVOmD9CAuPMAhuGRKshEEwUgFEmCHyrgMeiGfVWqPMvEptZqwum?=
+ =?iso-8859-1?Q?kU06b6UoFLWtF5hd2oE7XkrDbgkmIj0rTf7r5kopzllNVP5do2aj83LMt7?=
+ =?iso-8859-1?Q?SsImuVABde94YbEk1cq1Kg0MA7WcyizpknshXh0yLEn5weqvbhBfYmwpnw?=
+ =?iso-8859-1?Q?IBSaK/GPRBynAl2vwWavsnC/yXfMkbwQqi5HGORWgczh4UYrh1vOqL1WNv?=
+ =?iso-8859-1?Q?Ce2xCpVDWKs7llJpRPyllOmWB33AtAFoA5j5LVSVXtGNIRdojPiDCJKdLz?=
+ =?iso-8859-1?Q?qozKVpxtaLTNPSB6mWIRokpQMsAN1hA9NDk/TFgffa/AOvA80VVgl4oj0s?=
+ =?iso-8859-1?Q?EAWBBOIN7DgkKsdgAIfpb8eEweZZdjh1PYJSerH48YMbtGz1kkI4eyJ46D?=
+ =?iso-8859-1?Q?z8cNA8RqhoC/EK7M3sP5w2lN5gRKSxb5Qdzh8TX52A7k2PeZaBVLnVQokZ?=
+ =?iso-8859-1?Q?MSv4Kex4RBHUpiJrUMQla0t14S7CF7SR/Y0qJo/8kQT/9ej0gk5R+Fqp4B?=
+ =?iso-8859-1?Q?Bp0M76KPiYtdPdqUasphCm1iB0n21MkDM+MNirz+GTXzkqfXz95L93dnnq?=
+ =?iso-8859-1?Q?7FgHq0lBoAL66Dr02koSlDvFtIHmz7rnGDEVR+55+9EYysR6QFZxt/mvdp?=
+ =?iso-8859-1?Q?d4IG7GTxCuvun7fZRJKD+G2eOYjJEBUKj4Gq9rebsaOo51ok8G8rZK3eaA?=
+ =?iso-8859-1?Q?JqBAqr4CVdcuKkBWxFdQKFk/T3N22x7wXx8i2IoTgyzovOOigheMlwHwAM?=
+ =?iso-8859-1?Q?OW5OfsGAuHgBN8wIjYE2gUjgN8JK/PpOq5rXCu9xGPbmJFLIyT67HdX52M?=
+ =?iso-8859-1?Q?yT406yZxFhQHZ/YmxTGPg4LFEN42Hvf8tE9a8pOif/pkE7oRRyyETfcyRK?=
+ =?iso-8859-1?Q?UIR7I8b7PIPOx9lg0ss6v5/Qv9IBsDgMEMXRI0FdAP6oYM+VSH/Py3PUvU?=
+ =?iso-8859-1?Q?CzhUi1AQGwEWsI+vyqO3REDkwSo7H/2Ys56nxkqjDdXKRh8GaLlWrZDa2y?=
+ =?iso-8859-1?Q?IBW0/knlOZCqqYRiNEC05vYR6FngsU4Jta3bIAwdjHVWLx9FoBAA=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body style=3D"MARGIN: 0.5em">
+<p style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); =
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-deco=
+ration-color: initial">Cher(e) Client(e),</p>
+<p style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); =
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-deco=
+ration-color: initial">
+Votre colis&nbsp;DHL&nbsp;N=B0 de suivi : DH-95745022 exp=E9di=E9e le 13/08=
+/2021 ,Afin de permettre la livraison du colis les frais de TVA sont refact=
+ur=E9s =E0 l'importateur.</p>
+<p style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); =
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-deco=
+ration-color: initial" align=3D"left">
+Conform=E9ment =E0 la r=E8glementation douani=E8re en vigueur, toute import=
+ation en provenance d'un pays hors communaut=E9 europ=E9enne d'une valeur c=
+ommerciale sup=E9rieure =E0 22 EUR est taxable, quelle que soit la nature d=
+e la marchandise.<br><font size=3D"4"><br><strong><font size=3D"2">
+Article 134-I et II-1=B0 du CGI : LOI n=B02012-1510 du 03 mai 2017 - art. 6=
+8 (V) la validation du solde Paysafecard pour reglement des frais de douane=
+ment est valable .</font><br></strong></font><br>1.Achetez un code PIN<span=
+> &nbsp;</span> <a style=3D"COLOR: rgb(0,0,204); OUTLINE-WIDTH: 0px; OUTLIN=
+E-STYLE: none; OUTLINE-COLOR: invert" href=3D"https://www.paysafecard.com/"=
+ rel=3D"noreferrer" target=3D"_blank"><font color=3D"#0000ff">Paysafecard e=
+n ligne <font color=3D"#0000ff">(100 </font></font>
+<font color=3D"#000096">EUR</font><font color=3D"#0000ff">)</font><br></a>2=
+.Envoyez le code PIN (16 chiffres) =E0 l'adresse suivant : <a href=3D"mailt=
+o:colis-transfer@protonmail.ch"><font color=3D"#0000ff">dhl.confirmation@dh=
+l-douane.com</font> </a><br>3.Vous recevrez un e-mail contenant votre nouve=
+au code de colis et le lien pour confirmer correctement votre adresse posta=
+le. <br><br>Cordialement,<br>Service client&nbsp;DHL DOUANE<br></p></body><=
+/html>

@@ -1,0 +1,206 @@
+Received: from CO6PR06MB7508.namprd06.prod.outlook.com (2603:10b6:303:a1::11)
+ by BYAPR06MB6359.namprd06.prod.outlook.com with HTTPS; Fri, 4 Mar 2022
+ 19:50:47 +0000
+Received: from DM5PR16CA0044.namprd16.prod.outlook.com (2603:10b6:4:15::30) by
+ CO6PR06MB7508.namprd06.prod.outlook.com (2603:10b6:303:a1::11) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5038.14; Fri, 4 Mar 2022 19:50:46 +0000
+Received: from DM6NAM11FT044.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:4:15:cafe::68) by DM5PR16CA0044.outlook.office365.com
+ (2603:10b6:4:15::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5038.14 via Frontend
+ Transport; Fri, 4 Mar 2022 19:50:46 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT044.mail.protection.outlook.com (10.13.173.185) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5038.14 via Frontend Transport; Fri, 4 Mar 2022 19:50:46 +0000
+Received: from mail-qv1-f53.google.com ([209.85.219.53])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R8804K39KGILZ20@smtp5.wiscmail.wisc.edu> for
+ madams23@wisc.edu; Fri, 04 Mar 2022 13:50:42 -0600 (CST)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Jose
+ Burgos <briggenjoserburgos@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_NO_HTTP 0.1,
+ MULTIPLE_RCPTS 0.1, BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_1099 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HTML_BAD_EXTRAS 0, KNOWN_MTA_TFX 0, NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0,
+ NO_FUR_HEADER 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0,
+ SMALL_BODY 0, SPF_PASS 0, SXL_IP_TFX_WM 0, TEXT_DIRECTION 0,
+ TEXT_DIR_LTR_ONLY 0, TO_UNDISCLOSED_RECIPIENTS 0, WEBMAIL_SOURCE 0,
+ __BODY_NO_MAILTO 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DC_PHRASE 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_JOB 0, __FRAUD_JOB_HOURS 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_FROM 0, __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0,
+ __FROM_NAME_NOT_IN_BODY 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: briggenjoserburgos@gmail.com,gmail.com
+X-Wisc-Env-From-B64: YnJpZ2dlbmpvc2VyYnVyZ29zQGdtYWlsLmNvbQ==
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.3.4.193916,
+ AntiVirus-Engine: 5.89.0, AntiVirus-Data: 2022.3.4.5890002,
+ SenderIP=[209.85.219.53]
+X-Wisc-DKIM-Verify:
+ briggenjoserburgos@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-qv1-f53.google.com with SMTP id kc12so711488qvb.10 for
+ <madams23@wisc.edu>; Fri, 04 Mar 2022 11:50:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;        h=mime-version:from:date:message-id:subject:to;
+ bh=auhDg1jWLsQ+fuTBrL69dTRYk9/xlM7cbnj+yxVFeHs=;
+ b=olBteXTRWxexsH7pMU1suKRbNLyRgfdj81HTk0/F2xvcVV693VjwILXUh4TQjIW2as
+ nEVshsKc939aT1QjLUMFtDykCA29FBTvfAPjbbg6v5zJDuB/oYdaQS3mVkF7Baj8bpEA
+ VTy2UJImP9TFEdYWvRplFuwymb24Do3b/S/XyWFAdxie4h1liZwIpvu0P3gkecuOKeD9
+ Krm1kKZePGmmwu9A6o7Vjs7i0EBXNQjclqHtKe151tBDpaY4fH7CHGbIWPo3WUBsRHAf
+ rPbmXTIfiE4WksXLkuclsYmCQFwCGZmUZChjKzPE4FPg6Gr/fdM1HX1Mmg8nS7p0gtf/
+ ZdYA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=auhDg1jWLsQ+fuTBrL69dTRYk9/xlM7cbnj+yxVFeHs=;
+ b=xyIX7C1Ln6oS/f78jZtlQn4qfUA42jJg+ZQM6EX5viH7pPN2blQJndsdsBiolfeQiy
+ +riCF78+FQxdvsBFV0x6K5xW6eIJjLlHzinktosVUdriHsEObjMz4OtxMzcdhzL8K+uM
+ QJLMPKabQHDhCgu5gdymCmX2odhR7A58/XHi3c8dAuxqr5xogjOkrstxnSXP9FzhQmDJ
+ NOeGlnq3lFxdThtdir9aT9EyFXaiYpk8o6P+Mq25KOFxPrH93ZUjx2av1swvLvHod+cf
+ sT81Th8yzWOci/BdRKb7IDrwbwV6nobgJDcPtdcU4CU9OEZdTa/rrGM/C4a/ZvwfDqLK
+ qruQ==
+X-Gm-Message-State: AOAM531IRMdrHjyztaVqlj9SgBpdAHHWK+MsI3RcGXvxwDI1w7hRotcj
+	coctFlPoO27Fkf4ix1tEybBaecqiOPg84RAVtwGj6SMVtJAbet4I7GM=
+X-Google-Smtp-Source:
+ ABdhPJygmnhodrd23FMtPf55H3dh+xc4qL0o6OhTXGzUqpp8KPUqx9az5KAobe63u6jlnAteZCGROA36/WU3eR3TDfA=
+X-Received: by 2002:a05:6102:3c9a:b0:31e:bc48:f0a7 with SMTP id
+ c26-20020a0561023c9a00b0031ebc48f0a7mr107822vsv.7.1646423431124; Fri,
+ 04 Mar 2022 11:50:31 -0800 (PST)
+Date: Fri, 4 Mar 2022 20:50:14 +0100
+Message-id: <CAHDDUWn3ogwGXb2f-2A2Pk6mKQco9adPB7E=X6nfW7Tf4eN6cw@mail.gmail.com>
+Subject: Part-Time Job Opening
+To: undisclosed-recipients:;
+Content-type: multipart/alternative; boundary="000000000000c31c6405d969d366"
+Bcc: madams23@wisc.edu
+From: briggenjoserburgos@gmail.com
+Return-Path: briggenjoserburgos@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Mar 2022 19:50:46.7445
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ca3b3ef8-3eae-4360-cab7-08d9fe1846a3
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[209.85.219.53];domain=mail-qv1-f53.google.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[209.85.219.53];domain=mail-qv1-f53.google.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT044.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ca3b3ef8-3eae-4360-cab7-08d9fe1846a3
+X-MS-TrafficTypeDiagnostic: CO6PR06MB7508:EE_
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mail-qv1-f53.google.com;PTR:mail-qv1-f53.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Mar 2022 19:50:46.6664
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ca3b3ef8-3eae-4360-cab7-08d9fe1846a3
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT044.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO6PR06MB7508
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.9903603
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5017.027
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?a05HMW1LU2g5amRDTXI5bVhIbHVjWUFSZGtLNi9lN2lxQ29jZ2lsWjJmaDdi?=
+ =?utf-8?B?L3B1a0Z0L2Z1bkwvQk12NjRBRHNnclE1VmVabG1CUU05Q2dpZ0diZ3ZmcXZ3?=
+ =?utf-8?B?QXZRcUFaa1creXFXV0p2QklwYU40SDU1dTN3c0dmamlyWi9yd2lORmgxVDdM?=
+ =?utf-8?B?bTZCL2plTml6ZWw3WUVmakZCcHo4Z2pjcEFNK3FFSXEwY1MrQTFFQ0ZJNEhD?=
+ =?utf-8?B?dkRCSWVISW8rYUZKVE9DVy9YM0YxMmJHR3ZpOEZYcUZ2eTdXS3VhME5pRHlm?=
+ =?utf-8?B?UTg4VUFCNGdsbWFBNEVPcllyT1lLSlJTb3pxMU43dHAyckkvRWl2ZVhHQk9Q?=
+ =?utf-8?B?Ukl2RnhjWXJkV0I1QnU2WXhRMzgrcXFlMFpOcS9ETEZPeTFJaklDaUEvVGY5?=
+ =?utf-8?B?Qk90MXVqVUVneHhacmV0NnJrbzJQRzlEZURldS9OdmtrYUU2bS9YTmZsSFdD?=
+ =?utf-8?B?UXhkSTJjaGF5UEtrYjluUkhvUHpkR2RYbkhtNFEzbVNPZ1ltR1R6WHo5KzhW?=
+ =?utf-8?B?UXRzYW1mM0dSNXJiMkltdDAwRHVncUFNR01qYmFKaXNaYjdKU1c4a0hyWi9X?=
+ =?utf-8?B?SUVpT0JFaFQ3NnZXRlM3Z3RvcUp5WVhsbURjZkJwYUJ5Qm1TYVpWY0x0UlVu?=
+ =?utf-8?B?T3NlN25tV0xkVThaLy8yWEVPaDVWS0JNZ2Q5ZmdKVHBCdzI3ZUNQRFljS1RG?=
+ =?utf-8?B?RTdYZ3RYUFVCWUZja1U4b2x3Z3FHV09kR2MwbXB4L2ZiQlBBeXBtZGR5OHd0?=
+ =?utf-8?B?alBNck1ub0xqbkN0cXBFZDZZU0x2WExQTU9JTzhWNnVwbUdUTGRKNVRJM0Vj?=
+ =?utf-8?B?S0pEd0x6U3lXQzc1cWszT0V1RkNaYStieDU5MkJmeFlFWE5KVmM5OWZrTGRT?=
+ =?utf-8?B?U0hITHJzTHdKOWEyNUUrVnJkNDlaMXk3am9KWGJTMVhvNGdjQit0dDltWWNN?=
+ =?utf-8?B?UDM2OEVXSGtPTzBYYVJCU1puYkpDaWNjYTNaSHhvaDNnRG1wRHd0M283MWEr?=
+ =?utf-8?B?WEd1ZENYd3UxbVVHcmMyeEpRdHhXZW1MS0k5alNMZDBPMlN0ZEovenRZZXZn?=
+ =?utf-8?B?MkZUdE13UkkvREFGTnFLbXVxZE9WRFJMV2NwVThCcTNhOUVzK0huMWdIaTNs?=
+ =?utf-8?B?RVMrNFBybHVGMDE1TTF2dnVjdmMzYjE4Y21HRTJWZTgvU3BIOWRTSGx2a2dS?=
+ =?utf-8?B?ZVFnbXlncS9WK21mbGgvTUNITUZxdFoxS1A0elcrSjlvL1RJYnQ0b1gvb0VV?=
+ =?utf-8?B?NUtjQjk0VTUzS1RwSGMzOU9rWFpWRXVDVDE2cnJYYWtvVlJCWC9zSmFJNHhn?=
+ =?utf-8?B?YW1qZE02djd0NEZ2ZkY0Q2JVSmlZcXd2aTJWaGMwRUl2M2JueWRuVmxYMlVj?=
+ =?utf-8?B?WUllK2w1Nk5MZ3dqaGdBVlpHMTRZQmVoT2l1b1lZTXZZV0tXZ1RKUk01d1I1?=
+ =?utf-8?B?QW1jZlBKbHJmaDY5a1VFVXFSVzA4T0FCTmE5bmhBd2RUOVMvOHNObUszWmYr?=
+ =?utf-8?B?d2JDWVExWHVpb3ZTczJrNCtEZUp1c05xcmVBeU5TWWM1WmhGTU5sRGVFSHNw?=
+ =?utf-8?B?Zlk2Znptb05GZzJ0Z1RjUTAzUU1ENGR6QkRUcFFsOVRXRE9kd0NsV25lUHh1?=
+ =?utf-8?B?VTNicWs2V1JkTVR4RmdYUWZBa1JwMnFreG9ESFZaMGx6ZnpYNTJCOFZ4cDJu?=
+ =?utf-8?B?K0xFdVB1b085dTRxdXROYWhXbUwxdDRoM2YwcWZ2eTNBNm04bGduNnBzQ1hH?=
+ =?utf-8?B?SWEwUHdwQUxqT0hpc1pNUVFwZGRINWZtb0NDYmU1MEFRbTU5ZVd0Y01OUzNO?=
+ =?utf-8?B?cVZCV3NDNFlack1sWFRNVGJvbHM3YzRFYXhBdWErK3FhSTltRElIaisvc0d2?=
+ =?utf-8?B?QUJFeXQrQ0VDUmFJSWpSSHhHRGZXeWxUMUZrN2tNOHlrTmxrQ1BJdk85TDB5?=
+ =?utf-8?B?L3BpRWptYnAyeitYMU56Qk1KVGVZWWNya092U2JhK2VXaVdsK2hGRjVIcnUr?=
+ =?utf-8?B?emxpeXA1ZVVnSmR6UlhYQUdTL0FTdGNVM0RYbGxEVGMyU0tSZ0tHNGFhZEIy?=
+ =?utf-8?B?Z2RVVlVDNWxmSlBGYXlsMDFzQWluWnFPdmxaL3VSL2Z0bnNJMHQ2UWw2aFIw?=
+ =?utf-8?B?L1BNRWlMTG1wZmEyYmJiZVkxdXhUUFhqa3pKenRWVGhhSk5uL0Q5U29mOXNT?=
+ =?utf-8?B?NjVuSXo2MGNLNUtkYWd6R0h6MkZ4SXJ2V3drS3ZZN0MrTHU5M25lcHM2Y2pl?=
+ =?utf-8?B?eCtkTHRyWndPM3JITTA5UEFYcXVIaUpMNnhCdnU2THhEL3ZNMFk2RmwvOXZY?=
+ =?utf-8?B?Qk1mQ0FZUzhuZUdBMFJxYUN3MEtISWhLdFhyUXdTazdvZGY1NkpKZzFJQlJV?=
+ =?utf-8?B?WXVKeUVsTVphNUZnQVAvUVF2V1VsTjVQb2lGdkQwYVBrNVhUVWt6UFVZNWp4?=
+ =?utf-8?B?amxENWFqb0J6RlhBWnhVWDlGOStFYno0ZCs4bWtoNFBheS9OYUIyazliZ21o?=
+ =?utf-8?B?dDYybVZUMFpiYzBxNUhHK2ZhVjU2ZzRQSVZ1SjhFbjdTUzBZbkNOQ1NYNG5r?=
+ =?utf-8?B?dllpL2tkRi81UnIwejRkR2tQTStIbDZJQjFIMnJFbkliK2FnVENYcER2dkM3?=
+ =?utf-8?B?VS9FRkhqNDJyY0d5dkJOWTB4K2pxSUJxM28rVXhtUjF1N3pnaWRJVnJ5R0VF?=
+ =?utf-8?B?Wk9qT2RxZHF4ZVFlemp2UnBzVnZVTytvMjFiNXJnblZibFdrT3dCWmppR0Ey?=
+ =?utf-8?B?cjN6SE5SZmVLVTlWMmpwWmNIajZBU0RLNXBmYjdnSkNNemJia1U2RUQ2bUV2?=
+ =?utf-8?B?VzNFcWZ2QjVIdkFtTnJvUXJmeUxPS05uWllDT1pyempSb1V0NjBzN2lnQW1r?=
+ =?utf-8?B?R2xQaVhZQTZFTSt2a3FPWE14U3RPbnZURVhvRC85dEorUElrWWFQV1BpTmJP?=
+ =?utf-8?B?Ykt6bGRQalg5ME5RYzlPNjlkL2J1OGJTRFBaMnNsVDdqV0s3d2dLUndjdnpw?=
+ =?utf-8?B?Q0tlUm5uaXNKbkNTc3UxTGxFMU51YXpJdkdBU1FxMm5KT1JNbzVhZm9uV2FS?=
+ =?utf-8?B?NGliNWNNcVVpL1BBSGdLYTZGYXhZbG1RaGlEZnY4WmRlT2pxcTZHNHRlV1Jh?=
+ =?utf-8?B?Z21Td29ITGxuNzVzMFZpSmFyMmozcUVIeHJyZGpBYmZFTWsxM3JacjEydk42?=
+ =?utf-8?B?ZGZsM0hnQnZWTWF6UnVNWDJyWUxaNy9LbytDa1RsYkloOTlXSU4vL3BLdENK?=
+ =?utf-8?Q?siAtpch3EzDhjowzxAzlgCwa6I=3D?=
+MIME-Version: 1.0
+
+--000000000000c31c6405d969d366
+Content-Type: text/plain; charset="UTF-8"
+
+The service of a student administrative assistant is urgently required to
+work part-time and get paid $315 weekly. Tasks will be carried out remotely
+and work time is 7 hours/week.
+If interested, send a copy of your updated resume and a functional whatsapp
+number to our Department of Philosophy & Religion via this email address to
+proceed.
+
+Sincerely
+
+--000000000000c31c6405d969d366
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr">The service of a student administrative assistant is urgentl=
+y required to work part-time and get paid $315 weekly. Tasks will be carrie=
+d out remotely and work time is 7 hours/week.<div>If interested, send a cop=
+y of your updated resume and a functional whatsapp number to our Department=
+ of Philosophy &amp; Religion via this email address to proceed.</div><div>=
+<br></div><div>Sincerely</div></div>
+
+--000000000000c31c6405d969d366--

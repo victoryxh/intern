@@ -1,0 +1,2536 @@
+Received: from PH0PR06MB8080.namprd06.prod.outlook.com (2603:10b6:510:cb::21)
+ by DM6PR06MB4922.namprd06.prod.outlook.com with HTTPS; Fri, 12 Aug 2022
+ 22:23:53 +0000
+Received: from BN9PR03CA0794.namprd03.prod.outlook.com (2603:10b6:408:13f::19)
+ by PH0PR06MB8080.namprd06.prod.outlook.com (2603:10b6:510:cb::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.11; Fri, 12 Aug
+ 2022 22:23:51 +0000
+Received: from BN8NAM11FT033.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:13f:cafe::43) by BN9PR03CA0794.outlook.office365.com
+ (2603:10b6:408:13f::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.16 via Frontend
+ Transport; Fri, 12 Aug 2022 22:23:51 +0000
+Authentication-Results: spf=pass (sender IP is 172.246.16.95)
+ smtp.mailfrom=news.medentx.com; dkim=fail (signature did not verify)
+ header.d=news.medentx.com;dmarc=fail action=none
+ header.from=medentrx.com;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of news.medentx.com
+ designates 172.246.16.95 as permitted sender)
+ receiver=protection.outlook.com; client-ip=172.246.16.95;
+ helo=news.medentx.com; pr=C
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ BN8NAM11FT033.mail.protection.outlook.com (10.13.177.149) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5525.11 via Frontend Transport; Fri, 12 Aug 2022 22:23:51 +0000
+Received: from news.medentx.com ([172.246.16.95]) by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.16.20220118 64bit (built Jan 18
+ 2022)) with ESMTPS id <0RGI02L8CWVOZF50@smtp8.wiscmail.wisc.edu> for
+ mjgruber@wisc.edu; Fri, 12 Aug 2022 17:23:49 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= REPLYTO_FROM_DIFF_ADDY 0.1,
+ HTML_00_01 0.05, HTML_00_10 0.05, SUPERLONG_LINE 0.05,
+ BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0, BODY_SIZE_100K_PLUS 0,
+ BODY_SIZE_25K_PLUS 0, BODY_SIZE_500K_PLUS 0, BODY_SIZE_50K_PLUS 0,
+ BODY_SIZE_75K_PLUS 0, DKIM_SIGNATURE 0, LIST_HEADER 0, NO_FUR_HEADER 0,
+ NO_URI_HTTPS 0, PRECEDENCE_HEADER 0, SENDER_NO_AUTH 0, SPF_PASS 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __CP_URI_IN_BODY 0,
+ __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0,
+ __HAS_LIST_HEADER 0, __HAS_LIST_ID 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HAS_X_MAILER 0, __HEADER_ORDER_FROM 0,
+ __INT_PROD_MOTORBIKE 0, __LEGIT_LIST_HEADER 0, __MIME_HTML 0, __MIME_TEXT_H 0,
+ __MIME_TEXT_H1 0, __MIME_TEXT_H2 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0,
+ __MIME_TEXT_P2 0, __MIME_VERS
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: noreply@news.medentx.com,medentrx.com
+X-Wisc-Env-From-B64: bm9yZXBseUBuZXdzLm1lZGVudHguY29t
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.8.12.221821,
+ AntiVirus-Engine: 5.92.0, AntiVirus-Data: 2022.8.12.5920001,
+ SenderIP=[172.246.16.95]
+X-Wisc-DKIM-Verify: noreply@news.medentx.com,news.medentx.com!pass
+X-Spam-Score:
+DKIM-Signature: a=rsa-sha256; bh=BKl3oOmOzmlofa5dG+kiKPKxkrYiOiKdHdNuJJ0XpDc=;
+ c=relaxed/relaxed; d=news.medentx.com;
+ h=to:cc:from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:sender:x-sib-id:x-mailin-client:x-mailin-campaign:feedback-id;
+ q=dns/txt; s=mail; t=1660343027; v=1;
+ b=vBThoy1DssyUogKzozsKpJNTulp+zZ6SUOQyTThaB8Z9JnWu7ptNPzE3BPukulswpTUxmQMV
+ mhLO10jWO913Xkgq+uYv4aGHZlp4bviGHJb10kHA8gyIOBB11ouFm+VkaCzYK1z6B2bqboE2ipl
+ b1Enwy7SB57noK2B9SXBUnOg=
+To: <mjgruber@wisc.edu>
+Subject: Health Care Products - Summer Sale
+Content-type: multipart/alternative; boundary="-------?=_78922-5441619205293"
+Date: Fri, 12 Aug 2022 22:23:47 +0000
+Feedback-ID: 172.246.16.95:4604737_198:4604737:Sendinblue
+From: "Tim (Medentrx)" <hello@medentrx.com>
+List-Id: NDYwNDczNy04ODUxMy0xMQ==
+ <NDYwNDczNy04ODUxMy0xMQ==.list-id.news.medentx.com>
+List-Unsubscribe:
+ <mailto:unsubscribe@news.medentx.com?subject=unsub-a6guls39cokvj&body=a6guls39cokvj>,
+ <https://r.news.medentx.com/mk/un/li/GOqOueBjLc4AxF25olv3x3sa2cbvh6BeyixPDGLYiua3Zd_l2FmOq15kwzDcKHSYoi4IYefSdo_POVXHN-xU_puAV6brkxxCwY5Pvhi8qRqb2hoxRUnvQvBdEfMqznGyhx3TNIWDi01vCo0URL2jQ9qyfotlf4s>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Message-id: <202212082223.a6guls39cokvj@news.medentx.com>
+Precedence: bulk
+Reply-to: reply@medentrx.com
+X-Csa-Complaints: csa-complaints@eco.de
+X-Mailer: Sendinblue
+X-Mailin-Campaign: 198
+X-Mailin-Client: 4604737
+X-sib-id:
+ 1JPuU-Nz_dFFblBzg2AVSV_PcpRZ_xVpMH1-ljmOuCm-owXUBG-ZtFEFNpsvW13pKb_vpgvVxgI_J76wHDLenZhc53dA_a0zyQcYAl2XakMqYGXvfQ2bsLK8QViQI_GAF5w9QC16yZMogVpQXX9EQMt3532DJRQN_JEZ9cZoCF0irb3LHG9Z2Pe_BdkskPfwXuCMx1K749Slh2EVZPxCR6BdJ_Zp
+Return-Path: noreply@news.medentx.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Aug 2022 22:23:51.3959
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b4a6ab19-bcc3-4c0a-2034-08da7cb155a0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[172.246.16.95];domain=news.medentx.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[172.246.16.95];domain=news.medentx.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT033.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b4a6ab19-bcc3-4c0a-2034-08da7cb155a0
+X-MS-TrafficTypeDiagnostic: PH0PR06MB8080:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:FR;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:news.medentx.com;PTR:news.medentx.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Aug 2022 22:23:51.3022
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b4a6ab19-bcc3-4c0a-2034-08da7cb155a0
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT033.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB8080
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8247651
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5504.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NGdWbUJjc0pacEF3VWhOVURNRlcydkdLZUZ5K2JsWWJ6RVFjR25LVGpjbUV5?=
+ =?utf-8?B?QktTYmZMOGh0TmVRUDg1QlEyVjhIVHRiK3VjWDJBMWNiUEc0clp5K3h5N20w?=
+ =?utf-8?B?WGJ5QTlwTm5vMEVmQ2pzSnhVVWhLdzd4SDJTck8vcEFoQ0lFZEgrWDFoZGdi?=
+ =?utf-8?B?c1VNTWJDdVVMTkozWjhFVzRCRk85cSsxRy93Vi9nNk13YlYvcElJV0I1VE8y?=
+ =?utf-8?B?TmJtVzd2ay9jcmt0QklHQTdGcXFZYWhJNFV2NlhhZjNOam5iZkhJYTlaaE0v?=
+ =?utf-8?B?WWxWK2hiSDBCekhyU2pDMU9FTmQvUFRwcXRzajRDald3eFg2VDhTMHR4Njk1?=
+ =?utf-8?B?YUQyOXZIdE5oazZYM0tRYStVSUVhTFhhRFFaV3RWUGNPRUtmL3FtbnJzc0NS?=
+ =?utf-8?B?MmFSOG00WWV4Qmp2NkRTMnNwaXVNd0d0eTR5OVBwbCtHclRsdGVOSWczQUp4?=
+ =?utf-8?B?WlNWVnoxSC9IWi8yd21jNTY3ays0TFNkak54cXhxaS9VTEl2b1JsVFVLWmJt?=
+ =?utf-8?B?QVBid1NZT0VZWXQ5ZEVNcFA3dUVUYWtIY0NOV3Z5RzBBd05CTTRLOHp5TWdv?=
+ =?utf-8?B?bEw0U1JnbkhEVlJDL0JPcTNPV2VydXZ3OTcvcUZkTGlDZFVXdnBQazJSblNW?=
+ =?utf-8?B?bWZPWXptY0QxSU1HSllGRTQvVmJ4TzQ1dWtJNTNyWER4YzFmVWJJeGYwSTlk?=
+ =?utf-8?B?NnlHenZpWHF6bGxkR0c5cG1JTVBmRThmaTkyY0tudWV3NWZ2WTRrMWdJZ1hS?=
+ =?utf-8?B?RGtpRHQybFJ1RmxGNVA5amZwN05LWndXNFRjcHVXZEE5dWZEUG5tcUJ1U1o5?=
+ =?utf-8?B?ZjFQaTJJc2V5RWNOZVUraGlqZ2MrL3JvbjQ2aDR1dEhnOERleDdXWVBGNG9p?=
+ =?utf-8?B?SXR3MDhUTEdWNkpzdGNSWHQ5bHBJbCs0WllyNWJFWHJpLzJHeDFGQmQ4dzZJ?=
+ =?utf-8?B?U2RXMU9TT2NrUU1zYjNVWVhDU21VWGFnckpKUmFpYzRXQm80cG0zVlg1a1Bw?=
+ =?utf-8?B?cUJhVEhST2ZUV1VnNU03eUozdnNEaEpid1ZMTElla2gzV0w5ck5pVzQ4c01s?=
+ =?utf-8?B?aDNXVFRha2ZKRHlabFVBMFE5Z2RiUVZsVUM2U3FWV1BHY0ZOTHIyNlJBQlBr?=
+ =?utf-8?B?WVZ6WERrSmtCQVl3VTQzT2JzWTgwUk9DdStoOURmQlhQcjlHVUltZVpDQThB?=
+ =?utf-8?B?TDU2ZW43QStBWUVCdExlMWoyZXFkWjcxazBRaTF5YXVQQ3BSOWlkK1pLbDY3?=
+ =?utf-8?B?MjBWM3d3QTFjWXdWWFdYWm1OTFVvOFB6MjVvT0s3S1gycDJjL0RESFRKeXhj?=
+ =?utf-8?B?dnl2Rml0RlZnY29keTZkQk1OK2lJVndycEFBaVA0YThDeDdPZ0J2RW9WTDh0?=
+ =?utf-8?B?amRIM3ozZ2R6T1lyTzdEaGZuTS9iQnMyUDVTUlZTdWZaS050TTFpY3V3ZFo0?=
+ =?utf-8?B?VnUxbGFCYmZwdTBhdTNKd3pRMVZlQXRoVlRLUVdFREFxY25nam1WTFc3d2xU?=
+ =?utf-8?B?RTBzNWlWUjRaZDA3TUNjVWtzZTZEeWo4RG5uOWVmOXlnckRzb1NGRDUvaGtD?=
+ =?utf-8?B?R0VBbHZZUjB5S0tjMVlvWkhrSVUyaUphT3FGNFRTMHh4Um9ydkJJTVVKQlNz?=
+ =?utf-8?B?ald1TGxoOVBxZTQwZVp4cjNaMzNJZ3hDdTVxY0J4Sm5XeU1mTW9RMGNTTEww?=
+ =?utf-8?B?ekZvY0ZIQnE3bksvVHpxc2JENlIwL2xpeEpmYzBVaEQzay9iK3Juc1RTblV0?=
+ =?utf-8?B?T2ZCTjhpbHl0MDI5T2x1Z1h3SzJPT0laSWhwMVNXd0ViMU1BN1JuVENoaWll?=
+ =?utf-8?B?clp0Zm41YVRRdGJrOE9oVGhDamM4UVRBaDVOSkpialBMYXN1MkRaVDczS2N4?=
+ =?utf-8?B?d1FmWDU4N0xSTnZ1eUw2TDgrZ24wV2lzYVlDRmh2N2pBT0J4OEFCU2FlNTFU?=
+ =?utf-8?B?SmJJZDVjV1VJMWpPUk9GeXQ4VEtTODRsMlRtSDl3enlubzZwZnJYUkZWVThj?=
+ =?utf-8?B?cDNpN3RFNWZ0b0tEeFpOS2gvOC9yM0UydWJXbTdKVEc0bkRuVEdWQWl1QUhF?=
+ =?utf-8?B?L0N4US8zK1lsOVpVWkpIMWE1VFJubWt1ck94SmJrMUtEaU0vbHRLdXBBdjJJ?=
+ =?utf-8?B?dEsrVEhYL1ZlczlTT3RoWWMxS0VHdGFpcFpWbHJrWWJpeUNNMnRsdjJhOUJN?=
+ =?utf-8?B?MGlrTHVWZGZnaTFId0VINThXaytBR0Q4S2s0UGYyY1RYejU0cUovU3pMRFpJ?=
+ =?utf-8?B?a1J1UG5wN3g5SFdqUllVWkwxVE9sbkdDUWpzcGdTNDFOMk1GM1ZJL0YvMHlO?=
+ =?utf-8?B?MHJOTnhFNUpXTDVoMTd5TjlQbXZ6RXdmL0l6QzI3Qit1SHlzeC91dWVRcHR0?=
+ =?utf-8?B?dnk3Rnh6WkVtRFY0aFVzcUFCZDBDZk1wd09Ua1kzR054K1QxdUU0azdWalRZ?=
+ =?utf-8?B?UkZWVU5Tc2V3SUZsYW5wTjFrejFJbUF0cFNrZUl0WHFtclFRTmZJQklnZHcy?=
+ =?utf-8?B?TEFISzdtNisxS3BIMGpZbEUwV1NqdlU3bWFGdnFYWTFtcU5GQVJmU29wVGk4?=
+ =?utf-8?B?K2s5U3N5M1pvaU43d3g2YUVPVVpZekJrdGRkc0NSL05uNjc0d0lTektrY1hr?=
+ =?utf-8?B?WGQ4ZjR4VGhQZGpyczNkM2hKbVNSZStDeXlpOGZsUEE5blJiYnRQdVpFcVI2?=
+ =?utf-8?B?T0pyYUNHMVlwRXRHNzBtcWU5VC9FUVVmWTJUN0lkbmFrRmRmMGIxd3pqS3lP?=
+ =?utf-8?B?YndSd2x2WGtQVTNPM0t2WXh6Q3VRZ3RLZU9kTlhWcFBJdWFFKytkSkFaYVFw?=
+ =?utf-8?B?YkZPTjhXdmlmU0l0ckw3M0tXeUtVQ1g1eHMrQzRsclBjQkVwaDhYVEMrb1do?=
+ =?utf-8?B?K1hYSDdGMHEzTmw5a1lJUXlUYi9DWElUaXBmdU10ZFZVWWVKbmNRVWlTMHV5?=
+ =?utf-8?B?UlFaNzRJY3hNdkV2S2dkcHgwZUliSloxN1pESm1QaURKczB1UE5XWUZEQ1pD?=
+ =?utf-8?B?b3BtdThEV2xIdkdoQVFCMXJPU0RmdnM3Yy8vVUNNbnJUMnRodmxmd0RnOFdr?=
+ =?utf-8?B?MWJYY2J5UktIWnF2MEVVL2c1MlZldnRpaUE3Yk9PV1JIdmJMTGVTU1V6ZUI5?=
+ =?utf-8?B?dXFYVXEvdG5JRlVYWTU5bWJOeUFHU0xrQ1VURjYwaVF3a29kWUlzWll1OXdz?=
+ =?utf-8?B?ZGJ3RSsyVEJ5Q3prTEMyd0FER0MrY3lBRENlc1drelNZZzhheE5qdmI5Unhq?=
+ =?utf-8?B?NjJxQnRKTmxvWjYwcDNLL1N6MWF6cFZpc2dVZlFtVTV1OGc4Nk9YZURySHp0?=
+ =?utf-8?B?UTI5WmcyUVhsMUhFdU1ubHpmNnVhQndseXdBTGV1VzRwa1F3V3VCWnZCbi9p?=
+ =?utf-8?B?bEFIZEFxclhtQkw0QytZbDlxM25jZHBRZWthSGJEU2ppMjV1R0RNS2o3NEIz?=
+ =?utf-8?B?bFhXOHQ3aEQ2U3QrTDFtSUp5ckt4NUhVS252bXg3UzlpSG8zVFlvK2dIVnps?=
+ =?utf-8?B?T3d2d0EvUklpQXlYNS9BbHErODdkWURIc05OYmc3SjI0QitIM1puM2gzbE00?=
+ =?utf-8?B?azR6KzdPK3pzK2toYlNteXhxVmxCaDFxVjFYVDAvb0pYUzI4MWxsUTVhSDB6?=
+ =?utf-8?B?ZVRXRmFoN25Qam84NHlnSFdNN1U5aDhjNGZ4SUNBNWpzQ0FRdlVNWmVmc3Nh?=
+ =?utf-8?B?dXJpbzZpMk91UT09?=
+MIME-Version: 1.0
+
+---------?=_78922-5441619205293
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+[Medical](https://r.news.medentx.com/mk/cl/f/A4JR29zajCM_lqEPSwmeA9ZWHpTU6G=
+dVbNTSaqrLB2lXmLD_kyczy_T2jzFxndXw7qrE6PgUuZJBcqEuB1Y2focTTPjoirpWVRUUTXS7L=
+dK-s3WEYrEgbZIP-mlMQ2_IJnEGwzmwwqSDIuCwqqEDzk2duhCV8u1xhvOYHj4b5UfAzfyhWswK=
+0yzCTuyAPkjFx7n37sJX3LIyjJH37Mx8fqqRbb5KLG-ZXKO9Qw0FLe7KaabfLGwS19RDrUBS5Mk=
+QbNfNuDXZwI471cZ3PcNdJd99D6Tayv9eJp6u4WyxiLuyfRan8eSkkQ9ivj9jKHX0IyyS5s07yS=
+U)
+
+[Dental](https://r.news.medentx.com/mk/cl/f/aroe_3EZ6uB8eaxqypnHYux_vPrKpGf=
+YAxvfy6bYLpIV8dUn7BSLnPj2f2PRYtqzC37scZvHjxUOlQGmIzrYW5GknKW9GUGkRVzos3eS1B=
+qhTJq6w5PwUTvSqjrJonz9ekwT4XrqhYMfBD3ReIRdgqg057bJN0hj5_avbAdvnGExkbwR9j3Wt=
+Gy_W09MSGDj7j0iCU9gVjPbJTogtDfCbaSXmcTH9ZkrLq4TGF4KMLFMZbkxw2cVKAIikILEh-DZ=
+yZVT59kb6VwYMF9abKqYmUKZbz6AptsB7LQb78d6FYMGwxn9OzsxuNDPcUTLocDGyRIRU68)
+
+[Veterinary](https://r.news.medentx.com/mk/cl/f/nKa6Odl2Nb-8oOpp3tSldABm1ai=
+uIRFDevo3uxiqBEfn5qpG-1MkUGEOpMYI9MBFXHTSgD4b3roy3pUA_5tjRQEnchTjQFaU3Rwekq=
+4pEcYJCefrhDMWxdeo2RYa2pdDRWWgOXw54HkwAcL6wjmsn6Y_WUjN7fS06GFSWDkZyN-cA6_qz=
+9WkirVs70_BPhntAMpl5PqFMyJjwxAeYg-vmEwwmE9Xvi2Xa_4MdiV1PQM1VAgkb4oqty9Ed2fE=
+Ag2XF8SegYuhSp_VP-GtrnGH3AOHXVfMrYJYlO05pEg0Lm7qtG4oGjRipeLq8A95Ws4pWjPoIYw=
+HCPV88Ymg)
+
+[Scrubs](https://r.news.medentx.com/mk/cl/f/5_QvekoCe3CUXLwk3ykMd6aZQVFnACk=
+x-qQJDfoBqV4EhmCbnIFMsEE0H0ThTw9Jnn-phM-i8KhgdBMib9XvPzzsfmk3Eimkojoi24Qbpt=
+ya7SjlajGCmjjxNNShaMdLAUiKWVpvDgdmzYpRwOisMlwLXfKXdEYyLMwvx97EZqOVN_mc0IIhU=
+_J0g8QEwP8YLTTxGEU-1yfmlaC3h7dxeERO-s8vf95ZUGNjL7ABq1BtGa3K4o46eaulSGF6-vwx=
+dmPS2RjEWJhypjJL-4Irh-7a-P_5zTsTyVF6oVp1ptRkJIqV9-BgJ4qkIrwhI4MEoj42ZO7BiQY=
+XKEo)
+
+Summer Sale!
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+
+Your online health care products marketplace is here!
+Offering you thousands of products to choose from at the best price.
+
+$24.90
+
+
+Mark3 Ultrasonic Bio Enyzmatic Tablets
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/wG9K-GZru0tEWHH673exW_mMG=
+9TqS-nycLomM9PvGJH3ngl3Yig0f6WRw7-7quRAJloqtedzqvNXoQ0IuBOImWkpxypwl1RJs7y8=
+q63zfAm2QECIPm4eS5xZhM69-d2e4JbJvPf_fbG7SV7NXOqL3_ceopiGK1igkEAWKVhHkbV9gpw=
+6b9macA7dqFMnxfgRtLkmcwioD88fPh9YLlVKV8pqn0MTpEU8qH26_CAI9plyRbSzqMLoQly3tf=
+SeAI2ufGwmg84vGi10SWb7MBfqr6unA75mGU6lTbJcjQFwMnj7QvPYq4dK7zevnxFcwmo6enPkM=
+y0JLHVWRwEJ43UwMU61nCGcw1pt56ciApVOc2wsBYBgr64wehy08MAx85uURE1JS9YJWQNkamkM=
+Ni-gp6iZyZfvX2Ve7q7LDEjZv1q9oWZDs8kERStNmrL2l8rnxSGugC55Ec8UptmnxdccjlATnby=
+yQ2nORJwLMK4f3yp9eu-Ke91frGOCh26d88pVrOxhnSUNOmfYBVzYStbR11nM4DwsmMTPj75Ow7=
+TGac23FprDVgd-Y8qH3RMmHg6r2Xr68FsJnw6SdSYYxxHP_YakD0IOOkxG27GwszglNbR_XDbD1=
+vl9waNehcT4hO8T)
+
+$100.10
+
+
+Neomem Resorbable Collagen Membrane
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/VkA7yAfUsgfPirIICuvNRbcVR=
+htoy0y1PrNlZNplGW4urjtlYm_wtp6QB5PWLuPt1TQqY4ln9qy7s_qXnXIxswYoxThOGGCspilS=
+oIvw_SElOkjVob_TVFtI950jzTMHGzyHuuktf9-n5H16gjv95mi72dPrLwGlpb1vGKwG6AYxBmz=
+JNNUs7memAn_Ga_Acir9PvNLs5iEvscm9z3TLy_SSbkKnD_stE0BwD2JdviLX3M8qUvYhrReCPX=
+9F_Pav1f_kg7WO9PtctjVaqlx4RsPgKUMAGIU_bgytVvUm7mkyC4MHbs4RFVv00x59qe1QV0ry0=
+ajB78fwALfAwU5DLM-O0SA8t9Ye380SoSouIAxDQrzN-2tuw5uGgH9j8w31-r17JhTaoqF7rl5p=
+ilumM3eQybloaeU-KjnoqCZ-OooLrYRv7wnGjuS8G5aCpDqz_LNuc2u9ACaT_iqv0b20-1KhS7V=
+EaxovrplHbLT43Oj3sqUVLoROClslni6xqpqlL111H2seL5aeMpF8h4XLHorFh9L7DecjFWxSTp=
+wz3Fh9EHcuuczNqmpBOgk5O3MYrelJYwcEhaVmm8MceKxTPAmDPbWqIXeVfWp8N1JhdldWli-Oo=
+Hg)
+
+$57.40
+
+
+Raptos Allograft Bone Granules Jar
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/cZ5LGi0qlvYKB_ul7gkdtltiB=
+9rG8O7JrRJLOXVtmNlSRVARoFJZUULZNpkDCDCcj0-mkjjTFhLTJ19BUPMGgxWs0nNdLGjlh0vH=
+DDdrUR5FqGaWjleVS6N0XG-a_QWrC_Bp32rLcNNCy5udZplnZmlmvjFQ9MZ3wu0X6_P35OLaY1I=
+7fE_J-QUxWM4EOYxzY4KfNKHaqMRawqUbRPI6uTrrrHEqNA7IU9PGoqg11QVr1wepJo3PLiOgC3=
+WC0S6z-pi6SIEtyG9UMf3Rh4ALvNJ2g0vHISibEi5i92QlspNT5Xm_6SxpW7b8aW_-Sle-l_W03=
+rRIOpNjypFvJ0K9EB5EohNZM14cbyOfGcpBzWIMdXXbQCLw1PCYePfOTy-JShjNVyEefcRoQwnB=
+RoMkzwwb-uTjBtYlesUQmS2gVCDgNMRsXIDCsidjmrI69Dy9lusMryUYQ1SQ2gi8Y30gfu9d6x7=
+yyGwFO5AiaHSjn3XKDxroT5FyEpM1vCZWJUsqEwad7paIqoiy9gjaM2eo6XlpZqLGiPOH_LZtuE=
+bTva3apl9t9X2ogJgw1sI0EK8-aBNJ3qZ9sL36dURc54R3fT4vmZK1PEi9rs-qLugfTHC30DeE2=
+os6WDulzw)
+
+$259.50=20
+
+Impregum Penta Medium Body Polyether Impression
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/QailImArPWSXM6CO-1AYW9IHT=
+eR_OEZ1ZE17bKSTgBPBv4K42UGT2NZzOa5pNEGd6UIj1RIDk5qLswgQBvgMcD_1aOENBRuiDoaY=
+qkmiztze8vQbp5eYeBDuMKM3x2-27APNS1_WuN0o2zjx1drMTD-AAOK8U0x_oYgM0ZB196mfxrB=
+Qqg-1SRqdph5GDL2dAi-AM4ZmfSHVj2GMRjcKHvMzc-wyQDWTjAoXmm8aqUw9-PZ0O6_sDPvfxq=
+sznRUOh2MeUwJIine45AdzwsPGl3uhW2hcpfBW-hyGaIJ3AwksaGhtdm6rQOkKeFQ5kKq6ZY7gt=
+6Rkm7_02TFzY8wwGDIfXulZLNRoAt4wO5sAxpHQ0cNbhmI4BxWe2ew42lgJBJjrCntBygbQnz6l=
+433-ODOOcJj26pziNh3IPcuyaZ2QuKGis3j12SpYmai0Ckqzz62kahPQlldA90S1NOPRJG0c2U0=
+JASEfq0tOce-l_bBt6SvvvCIlL8_ia-h4Oz-SLMoHKq9YZLXBF9QK_DrMRoH96ibm5UNUPmQGUJ=
+lzCHvRDN8X2qERwQZF-Xu9bv-gbS5TPOScQTYls2yqB2ocJw7Hlqf1bebmUFzDhlRXDKb8hV0tJ=
+ZlRiNyKpnIUZLg) $10.99
+
+
+CaviWipes XL Disinfecting Wipes
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/qp7fQEzFB2q_kDC4Brd2VTL8P=
+5w4fRcRQzpsN2dLE1vhbVNPDKoEdunUCJa2JxGtNCWds2B733iRc6tgKyCrZsfdYTM1lfJdeBgv=
+J-1emGaQCey03BCEX1vNClx3QlwPrxc4Ht0oIkvW6usaj-phw3jM1xOeQChg3VcO9XmLUCGif8b=
+jpoloLKH5TecyAxl2caD6ExJFZCepIjipuvwyJK_EyrxzoJ-0S1EHFBw7TTa7SNFyncezBH61eq=
+nB2HhQsCW3XlojPZSZO_C8wloXyZZQey_UgUbvJrh02d4gU9A9qVeUWfIMV3Dp2R_0LhDLBPyfX=
+FhIKrzBbOoAtuj9vkvlhN6dxsp6BpZSNPXUGpU5eQhyNNsQyTfue9Fnm6MKAtptFoqZeS94Nm5m=
+nPGNgqu7LVHwwom4BoaB75M33zbMZKnMciFB_NQoWRyLKn6wPJpq4moRo99QpcP_-b5PDqVrKqK=
+Lo-PdJALDnZCCPLaSwh9CahCQWn_XSQWCjezAAlVSNTj2Ml6cpT7m0pjBQeXEeHqHDAw_apEZck=
+SnkYqfa86FAmqqeZ-q7YV3iLYydUMZek-XfqnLVOgi8hK8lSwGUi5olsla2kLLFx4-vhiRPO1Ik=
+5uvS-oLIg)
+
+$25.80=20
+
+RELI PRO Absorbable Plain Gut Suture Sterile
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/QVmNqA1_QgbA1zYiWaEHui4vn=
+qZiLZ_nY53JdlmUfaafrm1y1cgknurjap2hcEQJcT3YECk6lNL2vAAax5s541guzNHYhPd37fx_=
+AaAVRYot3CIjbZekS69MZlf7b0L8qvp7tffV7nEf2_DYyBX7i59EkcU55a_-YIVzt1aBqoX3lW7=
+jvbw9OV_zbCeFTH9cP2dNqcSS8y6uqDpARHPt5JqeD8Pi_XAtmLFPjjrj7MS-FEE42R4NPAoVad=
+eIzJGK8rYsh8XjVIP1fyzqFRHdgPRXS3AMadLgYeDyYWNl6CJ8FVajFLlXgYoXbYe5wlkzzCyh6=
+oLqWOKhONF1LU268tDUbaho2Wiais9WLfA5_fg0m3TGN5ldTHEHV8BH7dgD0hEqDVUApteWL7MX=
+qHzUvlJU56-Bx_0dqaw2pAMrRqwCm1rIl5XrDJg9FUbWzg0oBaAlo2f5wUVhgQWjxcaRa_2rrBT=
+Wnqg_5xdHUxdX6I-6lzZVlVu3qoDUaRoJJ0piZFiDjnTOpudGU_RBip5aXPKYKNkAn3VtU00kKU=
+ZCdyw2gCGhThWyZaPhEKRT6gaW1yorJswZoa2WkOQ9F3pPFngJfG7bwExrjb5TPn6-x9op0Rafm=
+TatOeI)
+
+$180.00
+
+Transbond XT Light Cure Ortho Adhesive Refill
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/oclzJhhMXlA3j-zDoSiwmpJra=
+u1n2MpIoZzx7Pge1XIp9ofQ5cuMtH7IEbR4GlwGgzY2Qc6RcxofELtltroMEA4snIUD3CkT8b8d=
+lstUmJPNfM2Q0ssqlTclk3ohtFJW8JEjI4QI8rFtjmIqvxnZ28qHiPYUCYZMhVSvcQqt36Xy6U0=
+PhDe7eqBWB24_KHJx62Dp4xd3B_jO_8Ty-Z7pSmlxysAwJwFZDLyZMZVCOdDuxoH7HJK7e8qm2V=
+lWoI0knjwhegwAdcK4UnSRv65AWvhizaYnN7wihBKKV1jUcICY6sJmbMAzYytUxV3Eer_NcKcYs=
+_pUojE3xKve4gRTqmq72W68WIvnW3M1q_Y-YRtUfOoGUbg9EsMcabdzGvmTwp3vffYacTprtnza=
+0PZK2DepwHF2HNjMVHvJiCv-JbpicDSN2s8vk_s_hm5_OCw98Xivy8_gWWy3vzVs0W9GevfaHhr=
+YjA7OJg77aGNp82M9jcu03O3Y6GCvfPcAx8vAHdrhHXsn0sHQrijrOTqttbLmyDWDNDlN2_Y0pi=
+0zUR_eYos0KnH4lFe9uKGks3gdoTV6vXHGtbooJ3YH6__g_RBxCVjWCQD2E9WJ_wcI9pkDqEKKd=
+Yy1it4LNgxk)
+
+$80.99
+
+
+Alcohol Prep Pads Sterile Large
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/xoaSYrVwviSi032ApajvjB6xI=
+OTZQKU_HdWsvdZs1zMyrPyJTg_q2RmOmE6-ViY_clZGelDVrKVD8H9X64vgGFPEQf8iFsRwkwou=
+u7R6Ajtvx8tkRiVi6YADsxfhq7sUKso9bAgLxacDnTMGc_fT7UkB-D9N5RODganztmDrEaFDkUw=
+-n8f4LS6l8R5adukMRV6jWcHcxAIi0iHh-w1wKTYwrMjraZ3HCzZPhJBF-ES0aflSZslgPF1e8T=
+gud1Av9y6cpdMJxSjIel993rgPjpHMX7R2wasa5ZHckC6mshNwzPCK7Q-dLxSQRKWr4oza-iXpr=
+kUPAHi0zAFQHTX3lLGGsUnKmoh8tbKSj_gmd--DQs-GZAxoJRqQI2sNqfn-vLo9ug9KWqUXtvrc=
+mytvkUXvlNIwYAU7pSDacvKFj-s) $19.78
+Basics by allheart Unisex 41" Lab Coat
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/N8KCvUjxvGmAqXzzBtwlmkI0i=
+ZG0SKHUfcrmwMZHSn9ITDOuWck9Hh5X8aI81y5JJ9wkztNPapyhfOzW-mBEqDXgSMl-HEcfNlW7=
+dq_Ph8RQUK3NA7mVxAe7ykJYJF2-LdJBC-gd8Nyo1ZWNmTF9LMvI2PR2s1RLqlDuV2iIrnYp9M4=
+zranGttpAKmVp8mvUszloRFgEdC0xBM_Jp0-9k0r0qaLgSIR55c6JGMfpLTuufIEc6vmMY4Jpva=
+81j9ajhsn-hyPOOpMNpr9JvxqFPNyS8JZWnXcle9bQ105kHKRzR3zVhVajkt9Fowsx_T7LD2rHp=
+Qd8KbZlN1t0nvNsPT8zpC-VF_jrYzkNCJSPpSzR_CyvhdGUmrOuGmj84umjZKLdFcd2MGRSHb6x=
+I-r560upqr2vRAvbnYOfiukMwjmCl0FQ-sPAaXpegLxhtVAAq_wKj9QBUzK9nyR2DDxha5U1fUG=
+8Ti4XJs_mG5-X0J2DCMS55hGtcWIR8U-YJmgrkD1vBtQHCh2B_N4dF0h1dbPwSAZ5YkbylHqzme=
+tMaSCiQmRXs-C3EKiXoZWEFfvmtliZ9bFSBFBq_XYnXvpO856rgyqoCtud_PeZvA6K6FtRlKIQY=
+CBiTrzLEuTBD3KHzhIcoE33VNgtw1gqg2vGnOikZHCHU0rtLB5cUCQTIBi3QX4Ttw)
+
+$1.49=20
+Disposable Blue Isolation Knit Cuff Gowns
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/EWje14HkXzmxzZGM8TJQLoaPv=
+GMKENOkbOw2M2IEox6j_i77kJWEq5b58eb_rHR3C9xgB_iBJqolKf6un8CytTGQaSKd6w4LCQUg=
+TUZ2eYH-JzSSi0v4nDzE_BQ1_8PmkDIpL67lOuKIaUg5adaEWpdKMOs1BJt7yPZRar2aCViEafy=
+uo7JDh-ghjK9pMb1Xeqls2Sgt4GktJJxDQ5QCXA5FNFWxL7VpNz9zXCSxicjk6HRc70uxc-N2pc=
+P0xleyM0EOfLaN4gZ0jDu9HreHXNoKv8Zsz5WSYGNU6ELj66kN45aUHZXHThuxL67Oz0oWUaeJ5=
+h_pM4dyFK-oAg9Vj2AE8awN_xdnPPAT6BY-7EWXqxn-WXKxRSTjL5Xamq4R)
+
+$5.95 Earloop Face Masks Level 2=C2=A0
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/IRx52UTyIRhx2cXLQedV1wZDn=
+yrtv0-7PAAypt_VXuEY2EbbasazZxta91QVUY25hoVL-yguBiQnlFvSqzh9YmmT7szNk8lPylg4=
+2Hjgh2owCQ7ie_G4dF8Fd5UA2FWO0TEH7j_jlz81JmrnftyLhrLFSoD1IkJjuVfhEjWDBCidCra=
+ez_1pouCRPebB8MzDTl3Q0LvsBVRDHHriWRLtsN0lYOgwqLnABkWb2E422nAEX4C7iesNjzUA_l=
+4rRLLyJwmbYm31xaNtinSDnhIWiM0dyyRYgADkr4EVzEOz4PXuajoMxuwlpAN0vuAWgntnRQCUw=
+Avhxjx16z9Si0hBFczFSsFF_UfCvAPj)
+
+$5.95 Light Weight Powder Free Nitrile Examination Gloves [Add to cart ](ht=
+tps://r.news.medentx.com/mk/cl/f/Haej9HAIW3hnNob9vLPFxogOmzSiGig4EaWGPml4uK=
+nEAnJB3QlqVYT0C-OBxikC0tuGVyCnDbLf37rueKaARzkPXYcVz39863QIv7Qdqyh2QjOZrR-Qu=
+4NhZiBCZ4kwiXdHXWjrPbyinxRWOgqAeiJaU_tHcVLAnqz7CZ6H0CVWjntG7cDAv-giGwuUMwg6=
+XzlGdJUWOzD5alAWwv9bJATr2gPFZyTcGyDaEMeBYRi4l7_uxoZFSmqxa6CV_GKum3khGddyLwm=
+RB3Dcp_OZZDiS_ZVCl4S-OBQeDR-U2Q5PmL3Jphu0xQYWF6pasLyUu3oZC6soj0TvoyiJped4v1=
+NZ6qBsMjjh0WhvYHOoCg-56V79kO9Jgwty41rjsg)
+
+Hercules Foldable Lightweight Electric Battery Mobility Wheelchair Motorize=
+d Travel Safe
+---------------------------------------------------------------------------=
+-------------
+
+Hercules Lite EX Powerful Dual Motor Foldable Medical Electric Mobility Whe=
+elchair, Supports up to 285 lbs - Weight 75 lbs by Bangeran
+
+$999.00
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/44BttWUt6HHZAMj4icAQkzDYi=
+NJMGK8BpHTrGrJsIsXeDo-4yZFU6He37QLOHSHZIRyFKtLv0CzOr91J6-Bg7eQw2sXngtcfHjRu=
+NxVzKA-NNTErXmZzmxThEWI8wnSMnzb8QdWc3oK2u5YzFNS0hPIvOYKOflayI0xoykD6Qp4fNa_=
+nDJan1-uPbI3z6D1c_ELWHjOvuBx3bdDtuztoJ3oyPPF_NJkLM1bvoa3r9Iyo3f-VxEb5RHxPhx=
+hX2dN-CbDwZVIgkcgWDq82RNXup95jPZT33vp6P7zW1PCxanOdGNXVlbZJW0Q5ExhxYP4RMKyyT=
+drg3OL0U6B4DYsLEgzsa7S-pgxNmQmARfxtZ9YR3YMKKSRKoXVkjc9_M0iHuM_Fh2CzeK5GI8Tf=
+nAAOzbgsdx45g4v5vhgtBzD4StCmayLrPEm16c0D3QP2HlwVIWnfYdbNaWZnmeoVfqKu_DdUY5_=
+zPMkZ8ta5Q_5X7FMghkZOcuX33wSdxSauNyRqpz9PTHU2aXISt34MNvCwavb2jPrLxOtTEwZR-6=
+T4URlsxXp6OXwgbfs-i5AZvjHLJQeNH0AzflKisx4Z73E8PZIvruaOdi2S4YREoEWBdS4nQwDjB=
+gsfqPA)
+
+###Avante Premio E250 Electric Hospital Bed
+$3,569.22
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/SLAgwtft0rj7iuGah0LfHXhuV=
+oL4atUGWQC3ax1Qh1GjjjpR5v-clQ3k6qmWZYhUJOybfvimOGOSXqJYV2HM6xVjqbTDDsB2rh4q=
+FF_o3mcGOpCToXme-v-h-bCKubZh5yXRTUN3oQSdTob9MoQ97U8W0HInUQ7BbkfCds07bH9rgPV=
+85nGBHh8A8OCdVotzvq55ZvlSLP0TJepCtu8r1LiNfuyoH0fmHcZKw7nqIUioMZAJSOT9ddBb6m=
+t0lKD7dcBfW5T_GmrohQXRh1ajzN4lHLAvyKq3Q0a56h3QZbZ78qAzNqAlc9YpdH6L97YMYCnIq=
+ehyVm8SpqzcIsfge5HcylMSbRit-40aE8RPdpUkikA)
+
+###Canine Dog Skeleton Model Small Size
+
+
+$99.00
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/Lbt6Stvi-HREB7eY8QTBsqRMc=
+Se37AHafQi4Q-2wGGMFkUVNWMI7S-2sBKK9sQjCsizXbDdzg9MBnL_U5bixgKYBYa9JLACkDNLo=
+ne81TfpiHq9FF5BAb6vmvyIIY6b3G0iy3QZ_61UrPcFMc1V4i3teJ17LLM7NqRrCOizwfphxRtj=
+WSbxwxve96Eqy05dM1h-XYMb9R3b79A6w32C2517gpf6uWOf9WkCbjBHf_goUW_RNSgJgWEHIb3=
+4tGkiIxOR-XhWf6a8TTFkg-ue_Ahl6dMtPDOcOX3ULM_WqIbSFCessHR75k8B7L6GGvNtToxk1D=
+5j9b06WnA)
+
+$46.50=20
+
+Filtek Z250 XT Nano Hybrid
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/IC6sWleLN39BFvSlLn2G-7kMD=
+_Z9iZpRS6sdAPdAjDoRELnP4GcE9wVonpJGA2_VWQV6G_OAgX8kQBP9V3TGpYkDOZuVCPkdDIek=
+Kul9D4KxBuhW1PwDgxlv3Gp1VWJXW6OFIt0djw9ITd53qwyPgnImTY0aFcguerVLO7oSbDswEDK=
+1YMGFq76CoOuDO5N6d33vs-gJNbvVuXnUd--f2oPGK6PCKM5AwMEOl-OlScZ_yf8HRyYWd8Okwy=
+T65ybRqgGumS4H6rlLOpMzmaGZZ8J42ZnnPHlm7bShkg2RIgMx-4rQ98fTJN4KwtN6eYE1x_39S=
+lFAorjielSwlr6KiGZYJHaY7bOdWeD5Zyae50DDSo4UJEZqspE4U8bABEaOST1fBTDGjfDccinc=
+Kwbn_Ev1gToCWAibiCNg4IdiDxGIkgX6m2eqGMSEkchjWgOmCk9mmpoLr_-M4-jU3RYxmams1qa=
+x1wmoWprA40UkQ15tNe5qfsUjIG3-JZNwrX5Kpyu-w_DF7vb3wQ5e8AAUJW-2hSO5B0wrflHvP8=
+IBJ8IBhNa_YeKZWqmFRkPaBCZkkMbp3Fw7jO6msvzEi3bzS2o0l2PT8-nx0ST9b9gcg8fk5qf8f=
+g)
+
+$115.49=20
+
+CaviCide1 Disinfectant
+1 Gallon x 4 Pack
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/JhrPevBg306eUcnFsjZ_vgCWy=
+-fYzzJb-kA-yvNcWAAAaQ7Ildrj11m3ZdTgCF7yUDEyiQdBWMj0ByUc9vQgcEX6VMLp2oyia8Wj=
+D9kitB4JsCdbk2vPXD-xYrQgyZnlxHg-rMV4AnuifbtxdEXFy25ELWBVnYVZ9LZN_vC_Be6Q8TV=
+tmr_i4HcIfU1reOAzjRVvsZX-Ilee7E_dCdEC-tZS4R3R8FtMaaYMRJuFVPP2olfq7mbGhkybFs=
+351DxN-DkiR2OaTbmeJZZK4k6Hfpxatval4pd-Ac8JfUC_l9alyd_1aBUeGvvJs3nnXdhllkVX8=
+J5LWLg6zKsEifoxFLNsZRzsroErw285kQY-I4ASeYiTzvKH-_MqQdsa8OcfopOBKU9bOWWkgVNM=
+2p4YwdRJb8wXm0jRs830pgJphtf8R91Q3nre2JkUgXxceB_KO-wEgO-X4SJlH1jCvleB7TtQCss=
+Cb9OYE93Qb3fGJxzYE06TwtihXdeQI_6Gpe048RPl54BjayexscYoePkED11CmguL7sKwFwBApE=
+DXmWJT8gPX7MNuytQPyv0_O9qFk5CwvLuwI0KOIpRuyAZzQWlkyN6JobS4efN-b7ohDMaDzrPKh=
+qRi)
+
+$10.98=20
+
+
+Elate by Allheart Unisex V Neck Solid Scrub Top
+
+
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/hhJTOgCDpdGzi5Ge8csk8xtAF=
+EN-Rl5pxZLnH40j9SwaBSy_ubl1vNK6sMG5uZhDrPtcmiUzythl7sxV6FH5zB0joAAqAGYkLkI-=
+qdHOBuQRLuo_D8NF4iM4T0ZOtuTSqTnXIwv9DbuYIFD-y3n_nYOI5a_u4vvNSfJ3sHsid69Cgqp=
+eUdnleQAggA96ORt61fY86E7K78n37XOeb0LmLs_J1lVDR5URofqd0cp5r4EncALIdPGuDDg9HX=
+ct3vVoTeutHJugwjljr8DLX9CEAFlc3z3HxV_16dl4-0vlcrV3AzjwpBgcNu_6GBtZ1l08UPlp3=
+xvyqkr0CwqtdZEamfODqz6zwu1wWgP5vkGLbBDuZ6tuQ3bA)
+
+$54.95
+
+
+Cook Waite Lidocaine HCl 2% Epinephrine=20
+[Add to cart ](https://r.news.medentx.com/mk/cl/f/h2paa8lIV1pXJ8j6qzbAiWTiy=
+uAKqrW_iiwJNroQjmukQR2Gd57k7eyz--inkxlfl4-jVqbIp9Hkfo0DskCX4El7seZaa-gILw77=
+z-RoAtB5JPOFiqH2NreXB3okITtmsPiZxgjQBwtaHU-axu8-hg5lbNELiUA0ZA5FueVVL5CDgS8=
+2xJ6W-hIImg3a7CtZfbDXb2oupzX5DsNLg7fvUuH7Zu0jNIcOeeVS6rTCNNG-PLpBk1_h0hFohT=
+gKILmINXP8QIYdZmB3xb_C61V-J-7BA9hp4OQ_41LWIqJTpToQMF0EjDq6UCAKgbnR1fohVa_N4=
+SPqymPs9IfKGrRw6WvSNOs8KdUEe_xV8AsIsBz8P1HuK4xRzg) ####FREE Delivery
+
+Free standard delivery on certain Items
+
+####100% Money back
+
+Within 10 days from receiving items
+
+####24h Support
+
+24 Hours customer support
+
+###Let's get social
+
+
+You've received this email because you opted-in to receive newsletters from=
+ us or our affiliates
+
+You can [unsubscribe](https://r.news.medentx.com/mk/cl/f/z-VRSLF7O7tAzuyekV=
+HoQFFEnaQYf2ZkQh2UG7-SdGEOUTgEOuMOZ1L4ojjPzKqbh7j1mMlvMAzqeGY_FxmCEkdyOhD1f=
+IgnCmB-GHqphnoLoqvN7DtHV9pUyzCnLGiOyrWLRqeM7gyo4Q20iubEBorK2kaF9PQPyTItkAPN=
+bIMrP7R7LG_JNXWpJeyz6U7mD_XrdnfbX-JTaBqlIuoWAVwlNT-stNUyuxLhzIvv3hnDjMh-XJC=
+Xi9A4G7cyUQNFJ-XON0_7RUAJ7OXKrT9Byjq4) from these emails by clicking on the=
+ link at the bottom of the page=20
+2009 W Holt Ave Pomona, CA 91768
+
+
+---------?=_78922-5441619205293
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" style=
+=3D"width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padd=
+ing:0;Margin:0"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"> <=
+meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewport">=
+ <meta name=3D"x-apple-disable-message-reformatting"> <meta http-equiv=3D"X=
+-UA-Compatible" content=3D"IE=3Dedge"> <meta content=3D"telephone=3Dno" nam=
+e=3D"format-detection"> <title>Summer Sale 2_Final</title><!--[if (mso 16)]=
+> <style type=3D"text/css"> a {text-decoration: none;} </style> <![endif]--=
+><!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![en=
+dif]--><!--[if gte mso 9]> <xml> <o:OfficeDocumentSettings> <o:AllowPNG></o=
+:AllowPNG> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings=
+> </xml> <![endif]--> <style type=3D"text/css">.rollover div{font-size:0;}#=
+outlook a{padding:0;}.ExternalClass{width:100%;}.ExternalClass,.ExternalCla=
+ss p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalCla=
+ss div{line-height:100%;}.es-button{mso-style-priority:100!important;text-d=
+ecoration:none!important;}a[x-apple-data-detectors]{color:inherit!important=
+;text-decoration:none!important;font-size:inherit!important;font-family:inh=
+erit!important;font-weight:inherit!important;line-height:inherit!important;=
+}.es-desk-hidden{display:none;float:left;overflow:hidden;width:0;max-height=
+:0;line-height:0;mso-hide:all;}[data-ogsb] .es-button{border-width:0!import=
+ant;padding:0px 5px 2px 5px!important;}.es-button-border:hover a.es-button,=
+ .es-button-border:hover button.es-button{background:#dbdbdb!important;bord=
+er-color:#dbdbdb!important;}.es-button-border:hover{background:#dbdbdb!impo=
+rtant;border-color:#dbdbdb #dbdbdb #4c4c4c #dbdbdb!important;}[data-ogsb] .=
+es-button.es-button-1{padding:0px 5px 5px!important;}td .es-button-border:h=
+over a.es-button-2{background:#dbdbdb!important;border-color:#dbdbdb!import=
+ant;}td .es-button-border-3:hover{background:#dbdbdb!important;}td .es-butt=
+on-border:hover a.es-button-4{background:#c1c1c1!important;border-color:#c1=
+c1c1!important;}td .es-button-border-5:hover{background:#c1c1c1!important;}=
+@media only screen and (max-width:600px){p, ul li, ol li, a{line-height:150=
+%!important}h1, h2, h3, h1 a, h2 a, h3 a{line-height:120%!important}h1{font=
+-size:30px!important;text-align:center}h2{font-size:26px!important;text-ali=
+gn:center}h3{font-size:20px!important;text-align:center}.es-header-body h1 =
+a, .es-content-body h1 a, .es-footer-body h1 a{font-size:30px!important}.es=
+-header-body h2 a, .es-content-body h2 a, .es-footer-body h2 a{font-size:26=
+px!important}.es-header-body h3 a, .es-content-body h3 a, .es-footer-body h=
+3 a{font-size:20px!important}.es-menu td a{font-size:16px!important}.es-hea=
+der-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a=
+{font-size:16px!important}.es-content-body p, .es-content-body ul li, .es-c=
+ontent-body ol li, .es-content-body a{font-size:16px!important}.es-footer-b=
+ody p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a{font=
+-size:16px!important}.es-infoblock p, .es-infoblock ul li, .es-infoblock ol=
+ li, .es-infoblock a{font-size:12px!important}*[class=3D"gmail-fix"]{displa=
+y:none!important}.es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .es-m-txt-c h=
+3{text-align:center!important}.es-m-txt-r, .es-m-txt-r h1, .es-m-txt-r h2, =
+.es-m-txt-r h3{text-align:right!important}.es-m-txt-l, .es-m-txt-l h1, .es-=
+m-txt-l h2, .es-m-txt-l h3{text-align:left!important}.es-m-txt-r img, .es-m=
+-txt-c img, .es-m-txt-l img{display:inline!important}.es-button-border{disp=
+lay:block!important}a.es-button, button.es-button{font-size:18px!important;=
+display:block!important;border-left-width:0px!important;border-right-width:=
+0px!important}.es-btn-fw{border-width:10px 0px!important;text-align:center!=
+important}.es-adaptive table, .es-btn-fw, .es-btn-fw-brdr, .es-left, .es-ri=
+ght{width:100%!important}.es-content table, .es-header table, .es-footer ta=
+ble, .es-content, .es-footer, .es-header{width:100%!important;max-width:600=
+px!important}.es-adapt-td{display:block!important;width:100%!important}.ada=
+pt-img{width:100%!important;height:auto!important}.es-m-p0{padding:0!import=
+ant}.es-m-p0r{padding-right:0!important}.es-m-p0l{padding-left:0!important}=
+.es-m-p0t{padding-top:0!important}.es-m-p0b{padding-bottom:0!important}.es-=
+m-p20b{padding-bottom:20px!important}.es-mobile-hidden, .es-hidden{display:=
+none!important}tr.es-desk-hidden, td.es-desk-hidden, table.es-desk-hidden{w=
+idth:auto!important;overflow:visible!important;float:none!important;max-hei=
+ght:inherit!important;line-height:inherit!important}tr.es-desk-hidden{displ=
+ay:table-row!important}table.es-desk-hidden{display:table!important}td.es-d=
+esk-menu-hidden{display:table-cell!important}.es-menu td{width:1%!important=
+}table.es-table-not-adapt, .esd-block-html table{width:auto!important}table=
+.es-social{display:inline-block!important}table.es-social td{display:inline=
+-block!important}.es-m-p5{padding:5px!important}.es-m-p5t{padding-top:5px!i=
+mportant}.es-m-p5b{padding-bottom:5px!important}.es-m-p5r{padding-right:5px=
+!important}.es-m-p5l{padding-left:5px!important}.es-m-p10{padding:10px!impo=
+rtant}.es-m-p10t{padding-top:10px!important}.es-m-p10b{padding-bottom:10px!=
+important}.es-m-p10r{padding-right:10px!important}.es-m-p10l{padding-left:1=
+0px!important}.es-m-p15{padding:15px!important}.es-m-p15t{padding-top:15px!=
+important}.es-m-p15b{padding-bottom:15px!important}.es-m-p15r{padding-right=
+:15px!important}.es-m-p15l{padding-left:15px!important}.es-m-p20{padding:20=
+px!important}.es-m-p20t{padding-top:20px!important}.es-m-p20r{padding-right=
+:20px!important}.es-m-p20l{padding-left:20px!important}.es-m-p25{padding:25=
+px!important}.es-m-p25t{padding-top:25px!important}.es-m-p25b{padding-botto=
+m:25px!important}.es-m-p25r{padding-right:25px!important}.es-m-p25l{padding=
+-left:25px!important}.es-m-p30{padding:30px!important}.es-m-p30t{padding-to=
+p:30px!important}.es-m-p30b{padding-bottom:30px!important}.es-m-p30r{paddin=
+g-right:30px!important}.es-m-p30l{padding-left:30px!important}.es-m-p35{pad=
+ding:35px!important}.es-m-p35t{padding-top:35px!important}.es-m-p35b{paddin=
+g-bottom:35px!important}.es-m-p35r{padding-right:35px!important}.es-m-p35l{=
+padding-left:35px!important}.es-m-p40{padding:40px!important}.es-m-p40t{pad=
+ding-top:40px!important}.es-m-p40b{padding-bottom:40px!important}.es-m-p40r=
+{padding-right:40px!important}.es-m-p40l{padding-left:40px!important}.es-de=
+sk-hidden{display:table-row!important;width:auto!important;overflow:visible=
+!important;max-height:inherit!important}.h-auto{height:auto!important}}</st=
+yle> </head> <body style=3D"width:100%;-webkit-text-size-adjust:100%;-ms-te=
+xt-size-adjust:100%;font-family:verdana, geneva, sans-serif;padding:0;Margi=
+n:0"> <table cellpadding=3D"0" border=3D"0" cellspacing=3D"0" style=3D" mso=
+-hide:all;display:none"><tr><td>Your online health care products marketplac=
+e is here! Thousands of products to choose from at the best price.</td></tr=
+></table> <div align=3D"center" style=3D"color:#727272;font-size:10px">If y=
+ou are not able to see this mail, click <a style=3D"color:#01a4c6" target=
+=3D"_blank" href=3D"https://r.news.medentx.com/mk/mr/CtH3TWdFoHlw50WR-9QE-x=
+qT9m9r8NA7vLWwxj6M6RXmNoUzRwBXU1y3b3fE9_aWvJy_LCf4iX0PiIUkeGwhvWi5chTGOG11U=
+zL5q4TvVttkLSDMlevzbA8wwlJR4X4GbQ">here</a></div> <div class=3D"es-wrapper-=
+color" style=3D"background-color:#F6F6F6"><!--[if gte mso 9]> <v:background=
+ xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t"> <v:fill type=3D"tile=
+" color=3D"#f6f6f6"></v:fill> </v:background> <![endif]--> <table class=3D"=
+es-wrapper" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"mso=
+-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spac=
+ing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;=
+background-position:center top;background-color:#F6F6F6"> <tbody><tr style=
+=3D"border-collapse:collapse"> <td valign=3D"top" style=3D"padding:0;Margin=
+:0"> <table class=3D"es-header" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-colla=
+pse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;ba=
+ckground-color:transparent;background-repeat:repeat;background-position:cen=
+ter top"> <tbody><tr style=3D"border-collapse:collapse"> <td class=3D"es-ad=
+aptive" align=3D"center" style=3D"padding:0;Margin:0"> <table class=3D"es-h=
+eader-body" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f6f6f6" align=
+=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-colla=
+pse:collapse;border-spacing:0px;background-color:transparent;width:600px"> =
+<tbody><tr style=3D"border-collapse:collapse"> <td style=3D"Margin:0;paddin=
+g-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px;backgro=
+und-color:#f6f6f6" bgcolor=3D"#f6f6f6" align=3D"left"> <table width=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"mso-table-lspace:0pt;mso-tab=
+le-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr styl=
+e=3D"border-collapse:collapse"> <td valign=3D"top" align=3D"center" style=
+=3D"padding:0;Margin:0;width:580px"> <table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso=
+-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr =
+style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0=
+;Margin:0;font-size:0px"><a href=3D"https://r.news.medentx.com/mk/cl/f/8wy5=
+07BRcK8AwHJCj1bau_oTaIF52dRSGhoFQFKl9iDONtSiEaSIx_jL5lWnsARPFGn1-2-4tAO7aFn=
+cwoyWyT8YdS7l4wjMkyaMAkelwR39rVd1SkJkr2bm8i086e8WUv2HKGJjHjKIdx74dUnqAnctdW=
+WeHJ-JVC3MZhFyS5bXCHFwDXECNd40vQLeE6UmvUkL3u2OSZcwOFkUqyzOS083cpw875Ieihx_u=
+YfL4WbrL8ZQTistPyDTQagHF68m_3sQUDLJMCZd3P-NT1eUho-Oa2OO4yymmzrK4-r1" target=
+=3D"_blank" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:non=
+e;mso-line-height-rule:exactly;text-decoration:underline;color:#CCCCCC;font=
+-size:14px" sib_link_id=3D"0"><img src=3D"https://img.news.medentx.com/im/4=
+604737/d719c4509f1cea86521f0dc478ea31f6ef2c93019fe749321ca25c080888a762.png=
+?e=3DE76c0fqQbETMcYeS4352uuHgKFrP9rAqE_wnW1azSb0_wc_Vdq7lZBhi_DMABlUjJgfj4J=
+-CtffghCM0QxKVWCdIQq3Y_BEvcKlyMFKSMsxUtbwG2DEr1GQMo9KeronfkHPhZ7uHtxRTB9ZjG=
+rLmwGboEkbebxQAmy7EVZ4Ct9mJb2Y8lwL7PkyrsoS0BEGtejc7aIUAyWGJGZwLLMwK23bvzMxV=
+gYtlHjJ5AWK3ZuRVXigLvE-86ljKnL7CbHkH5AWdC1PZQHt-p0VEAIo-U6awF95h_l8" alt=3D=
+"Medentrx, Inc" title=3D"Medentrx, Inc" style=3D"display:block;border:0;out=
+line:none;text-decoration:none;-ms-interpolation-mode:bicubic" width=3D"580=
+" sib_img_id=3D"0"></a></td> </tr> </tbody></table></td> </tr> </tbody></ta=
+ble></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"left" =
+style=3D"padding:0;Margin:0;padding-top:10px;padding-bottom:10px"> <table w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"mso-table-lspace=
+:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <tb=
+ody><tr style=3D"border-collapse:collapse"> <td valign=3D"top" align=3D"cen=
+ter" style=3D"padding:0;Margin:0;width:600px"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" bgcolor=3D"#ddeaf0" style=3D"mso-table-lspace=
+:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;backg=
+round-color:#ddeaf0" role=3D"presentation"> <tbody><tr style=3D"border-coll=
+apse:collapse"> <td style=3D"padding:0;Margin:0"> <table class=3D"es-menu" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px"> <tbody><tr class=3D"links" style=3D"border-collapse:col=
+lapse"> <td style=3D"Margin:0;padding-left:5px;padding-right:5px;padding-to=
+p:10px;padding-bottom:10px;border:0" width=3D"25.00%" bgcolor=3D"transparen=
+t" align=3D"center"><a target=3D"_blank" style=3D"-webkit-text-size-adjust:=
+none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration=
+:none;display:block;font-family:verdana, geneva, sans-serif;color:#333333;f=
+ont-size:16px;font-weight:bold" href=3D"https://r.news.medentx.com/mk/cl/f/=
+A4JR29zajCM_lqEPSwmeA9ZWHpTU6GdVbNTSaqrLB2lXmLD_kyczy_T2jzFxndXw7qrE6PgUuZJ=
+BcqEuB1Y2focTTPjoirpWVRUUTXS7LdK-s3WEYrEgbZIP-mlMQ2_IJnEGwzmwwqSDIuCwqqEDzk=
+2duhCV8u1xhvOYHj4b5UfAzfyhWswK0yzCTuyAPkjFx7n37sJX3LIyjJH37Mx8fqqRbb5KLG-ZX=
+KO9Qw0FLe7KaabfLGwS19RDrUBS5MkQbNfNuDXZwI471cZ3PcNdJd99D6Tayv9eJp6u4WyxiLuy=
+fRan8eSkkQ9ivj9jKHX0IyyS5s07ySU" sib_link_id=3D"1">Medical</a></td> <td sty=
+le=3D"Margin:0;padding-left:5px;padding-right:5px;padding-top:10px;padding-=
+bottom:10px;border:0" width=3D"25.00%" bgcolor=3D"transparent" align=3D"cen=
+ter"><a target=3D"_blank" style=3D"-webkit-text-size-adjust:none;-ms-text-s=
+ize-adjust:none;mso-line-height-rule:exactly;text-decoration:none;display:b=
+lock;font-family:verdana, geneva, sans-serif;color:#333333;font-size:16px;f=
+ont-weight:bold" href=3D"https://r.news.medentx.com/mk/cl/f/aroe_3EZ6uB8eax=
+qypnHYux_vPrKpGfYAxvfy6bYLpIV8dUn7BSLnPj2f2PRYtqzC37scZvHjxUOlQGmIzrYW5GknK=
+W9GUGkRVzos3eS1BqhTJq6w5PwUTvSqjrJonz9ekwT4XrqhYMfBD3ReIRdgqg057bJN0hj5_avb=
+AdvnGExkbwR9j3WtGy_W09MSGDj7j0iCU9gVjPbJTogtDfCbaSXmcTH9ZkrLq4TGF4KMLFMZbkx=
+w2cVKAIikILEh-DZyZVT59kb6VwYMF9abKqYmUKZbz6AptsB7LQb78d6FYMGwxn9OzsxuNDPcUT=
+LocDGyRIRU68" sib_link_id=3D"2">Dental</a></td> <td style=3D"Margin:0;paddi=
+ng-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;border:0=
+" width=3D"25.00%" bgcolor=3D"transparent" align=3D"center"><a target=3D"_b=
+lank" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-=
+line-height-rule:exactly;text-decoration:none;display:block;font-family:ver=
+dana, geneva, sans-serif;color:#333333;font-size:16px;font-weight:bold" hre=
+f=3D"https://r.news.medentx.com/mk/cl/f/nKa6Odl2Nb-8oOpp3tSldABm1aiuIRFDevo=
+3uxiqBEfn5qpG-1MkUGEOpMYI9MBFXHTSgD4b3roy3pUA_5tjRQEnchTjQFaU3Rwekq4pEcYJCe=
+frhDMWxdeo2RYa2pdDRWWgOXw54HkwAcL6wjmsn6Y_WUjN7fS06GFSWDkZyN-cA6_qz9WkirVs7=
+0_BPhntAMpl5PqFMyJjwxAeYg-vmEwwmE9Xvi2Xa_4MdiV1PQM1VAgkb4oqty9Ed2fEAg2XF8Se=
+gYuhSp_VP-GtrnGH3AOHXVfMrYJYlO05pEg0Lm7qtG4oGjRipeLq8A95Ws4pWjPoIYwHCPV88Ym=
+g" sib_link_id=3D"3">Veterinary</a></td> <td style=3D"Margin:0;padding-left=
+:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;border:0" width=
+=3D"25.00%" bgcolor=3D"transparent" align=3D"center"><a target=3D"_blank" s=
+tyle=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-he=
+ight-rule:exactly;text-decoration:none;display:block;font-family:verdana, g=
+eneva, sans-serif;color:#333333;font-size:16px;font-weight:bold" href=3D"ht=
+tps://r.news.medentx.com/mk/cl/f/5_QvekoCe3CUXLwk3ykMd6aZQVFnACkx-qQJDfoBqV=
+4EhmCbnIFMsEE0H0ThTw9Jnn-phM-i8KhgdBMib9XvPzzsfmk3Eimkojoi24Qbptya7SjlajGCm=
+jjxNNShaMdLAUiKWVpvDgdmzYpRwOisMlwLXfKXdEYyLMwvx97EZqOVN_mc0IIhU_J0g8QEwP8Y=
+LTTxGEU-1yfmlaC3h7dxeERO-s8vf95ZUGNjL7ABq1BtGa3K4o46eaulSGF6-vwxdmPS2RjEWJh=
+ypjJL-4Irh-7a-P_5zTsTyVF6oVp1ptRkJIqV9-BgJ4qkIrwhI4MEoj42ZO7BiQYXKEo" sib_l=
+ink_id=3D"4">Scrubs</a></td> </tr> </tbody></table></td> </tr> </tbody></ta=
+ble></td> </tr> </tbody></table></td> </tr> </tbody></table></td> </tr> </t=
+body></table> <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"=
+0" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;bord=
+er-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width=
+:100%"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D"center"=
+ style=3D"padding:0;Margin:0"> <table class=3D"es-content-body" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#f6f6f6" align=3D"center" style=3D"mso-=
+table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spaci=
+ng:0px;background-color:#f6f6f6;width:600px"> <tbody><tr style=3D"border-co=
+llapse:collapse"> <td align=3D"left" style=3D"padding:0;Margin:0"> <table w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"mso-table-lspace=
+:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <tb=
+ody><tr style=3D"border-collapse:collapse"> <td valign=3D"top" align=3D"cen=
+ter" style=3D"padding:0;Margin:0;width:600px"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" role=3D"presentation" style=3D"mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <=
+tbody><tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D=
+"padding:0;Margin:0;font-size:0px"><a target=3D"_blank" href=3D"https://r.n=
+ews.medentx.com/mk/cl/f/o5_zulAIGyEnmDVNNPLKHhEOQOwdWRSYyPZ7AH5_jZuGQK2gcq0=
+Al9xQ4jARqFlPbtf12CnaFKyuiGERXvNKNJIGQqSpT3Rn6Jti2C68TTcttlecnOzLPP4SPNaEZ2=
+HiTeKgb21J4oITRvOdzH8A8qq-XLj55T5_U68BitLd0d1wlXYTwfYWlRlN43wM1-fd-u3Fi_Y6q=
+bzZ2zcmnzLcAe2VMYH3EvHIb_wKFhi3CgCaii9bu1eCJLx504QsugPl3K6OGlmq0HepqYbjnIsO=
+BzyyxDXvnswWKCNKnVnq" style=3D"-webkit-text-size-adjust:none;-ms-text-size-=
+adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#3=
+33333;font-size:14px" sib_link_id=3D"5"><img class=3D"adapt-img" src=3D"htt=
+ps://img.news.medentx.com/im/4604737/0fc4ab93135188614d4361685ad3ae45aa8dfc=
+d1105b6370e2b3fe559c7619fc.jpg?e=3Deqp53XnN5ptSA7ou4twbJkff-DjMpR2CDW_KMS76=
+1dVk-1SQU26Br2E7RvjIWGHg2C40TFZ4vO12FKcDH1cjtS21iezllcEU3HBGBprrCyUmozv-ieZ=
+eFO6rOtfnMRawW16kAlAsuqZ1HKSChqieLxM8Z1wliVwrYmOtTi0rMYif2GfMZcsCnfQtQFTv_T=
+vKB7TnRFsR0EFRwjYrYL5FmTvY3oXm1pCVCIalVSuSr_ypYXe_YiupMM95AA" alt=3D"Medent=
+rx, Inc" style=3D"display:block;border:0;outline:none;text-decoration:none;=
+-ms-interpolation-mode:bicubic" width=3D"600" title=3D"Medentrx, Inc" sib_i=
+mg_id=3D"1"></a></td> </tr> </tbody></table></td> </tr> <tr style=3D"border=
+-collapse:collapse"> <td valign=3D"top" align=3D"center" style=3D"padding:0=
+;Margin:0;width:600px"> <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace=
+:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr style=3D"bord=
+er-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0"><h=
+1 style=3D"Margin:0;line-height:48px;mso-line-height-rule:exactly;font-fami=
+ly:georgia, times, 'times new roman', serif;font-size:40px;font-style:norma=
+l;font-weight:normal;color:#e42521">Summer Sale!</h1></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" class=3D"es-m-p20r es-m=
+-p20l" style=3D"Margin:0;padding-top:10px;padding-bottom:10px;padding-left:=
+40px;padding-right:40px"><p style=3D"Margin:0;-webkit-text-size-adjust:none=
+;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:georgia=
+, times, 'times new roman', serif;line-height:24px;color:#333333;font-size:=
+16px">Your online health care products marketplace is here!<br>Offering you=
+ thousands of products to choose from at the best price.</p></td> </tr> </t=
+body></table></td> </tr> </tbody></table></td> </tr> </tbody></table></td> =
+</tr> </tbody></table> <table class=3D"es-content" cellspacing=3D"0" cellpa=
+dding=3D"0" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace=
+:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !import=
+ant;width:100%"> <tbody><tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:0;Margin:0"> <table class=3D"es-content-body" =
+style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse=
+;border-spacing:0px;background-color:#f6f6f6;width:600px" cellspacing=3D"0"=
+ cellpadding=3D"0" bgcolor=3D"#f6f6f6" align=3D"center"> <tbody><tr style=
+=3D"border-collapse:collapse"> <td align=3D"left" style=3D"padding:0;Margin=
+:0;padding-top:5px;padding-bottom:5px"><!--[if mso]><table style=3D"width:6=
+00px" cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"width:153px"><![=
+endif]--> <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collap=
+se:collapse;border-spacing:0px;float:left"> <tbody><tr style=3D"border-coll=
+apse:collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"padding:0=
+;Margin:0;width:138px"> <table style=3D"mso-table-lspace:0pt;mso-table-rspa=
+ce:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ddeaf0=
+" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ddeaf0" ro=
+le=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse"> <td ali=
+gn=3D"center" style=3D"padding:0;Margin:0;padding-left:5px;padding-bottom:2=
+0px;padding-top:25px;font-size:0px"><a target=3D"_blank" href=3D"https://r.=
+news.medentx.com/mk/cl/f/wG9K-GZru0tEWHH673exW_mMG9TqS-nycLomM9PvGJH3ngl3Yi=
+g0f6WRw7-7quRAJloqtedzqvNXoQ0IuBOImWkpxypwl1RJs7y8q63zfAm2QECIPm4eS5xZhM69-=
+d2e4JbJvPf_fbG7SV7NXOqL3_ceopiGK1igkEAWKVhHkbV9gpw6b9macA7dqFMnxfgRtLkmcwio=
+D88fPh9YLlVKV8pqn0MTpEU8qH26_CAI9plyRbSzqMLoQly3tfSeAI2ufGwmg84vGi10SWb7MBf=
+qr6unA75mGU6lTbJcjQFwMnj7QvPYq4dK7zevnxFcwmo6enPkMy0JLHVWRwEJ43UwMU61nCGcw1=
+pt56ciApVOc2wsBYBgr64wehy08MAx85uURE1JS9YJWQNkamkMNi-gp6iZyZfvX2Ve7q7LDEjZv=
+1q9oWZDs8kERStNmrL2l8rnxSGugC55Ec8UptmnxdccjlATnbyyQ2nORJwLMK4f3yp9eu-Ke91f=
+rGOCh26d88pVrOxhnSUNOmfYBVzYStbR11nM4DwsmMTPj75Ow7TGac23FprDVgd-Y8qH3RMmHg6=
+r2Xr68FsJnw6SdSYYxxHP_YakD0IOOkxG27GwszglNbR_XDbD1vl9waNehcT4hO8T" style=3D=
+"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;text-decoration:underline;color:#333333;font-size:14px" sib_link=
+_id=3D"6"><img class=3D"adapt-img" src=3D"https://img.news.medentx.com/im/4=
+604737/93155129647512d27a0af278a6a7ced7ab56b2c98a167e2f8ee34c022f9fed2f.png=
+?e=3DT1cj9zje1GxnF6nQlX0bP9TRKx54DovmYgoUqtekv6Wvy1MSdZhnlbVGFUxVthItfzyX7r=
+rPGaBPDAFy3ZQ6KBsNxLiosrShQ80OWVmoqP1ajue0kqpM3RX3Y5bcGrxm98Nn3oU_OD5WcVRer=
+TK1A5fZL_V4Qmip9Rq-k9d0vhhlskM7dKSnW2JolKbp7frlcAQ_B2CBAWW-ossRwc_aIwLf76of=
+_KA6ORXB97ddK8RkmXe6wFGpYGGFAoo-oPaQWMItttMXAA" alt=3D"Mark3 Ultrasonic Bio=
+ Enyzmatic Tablets" title=3D"Mark3 Ultrasonic Bio Enyzmatic Tablets" style=
+=3D"display:block;border:0;outline:none;text-decoration:none;-ms-interpolat=
+ion-mode:bicubic" height=3D"133" sib_img_id=3D"2"></a></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Marg=
+in:0;padding-top:5px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-m=
+s-text-size-adjust:none;mso-line-height-rule:exactly;font-family:verdana, g=
+eneva, sans-serif;line-height:27px;color:#333333;font-size:18px">$24.90</p>=
+</td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" st=
+yle=3D"padding:0;Margin:0;padding-top:15px;padding-bottom:25px"><p style=3D=
+"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-=
+height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:17p=
+x;color:#333333;font-size:14px"><span class=3D"product-name">Mark3 Ultrason=
+ic Bio Enyzmatic Tablets</span></p></td> </tr> <tr style=3D"border-collapse=
+:collapse"> <td align=3D"center" style=3D"Margin:0;padding-bottom:10px;padd=
+ing-left:10px;padding-right:10px;padding-top:20px"><!--[if mso]><a href=3D"=
+https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;=
+pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;search_perform=
+ed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3DMark3+Ultrasonic&amp;dispatch=3Dpr=
+oducts.search&amp;security_hash=3Decb4944f29dcbbff79ddd2b4dd619ae4&amp;utm_=
+source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_mediu=
+m=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schem=
+as-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esd=
+evvmlbutton=3D"" href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&=
+amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywor=
+ds=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3DMark3+Ult=
+rasonic&amp;dispatch=3Dproducts.search&amp;security_hash=3Decb4944f29dcbbff=
+79ddd2b4dd619ae4&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Su=
+mmer_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:mid=
+dle; width:96px" arcsize=3D"0%" strokecolor=3D"#333333" strokeweight=3D"2px=
+" fillcolor=3D"#dbdbdb"> <w:anchorlock></w:anchorlock> <center style=3D"col=
+or:#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D""=
+ "sans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9=
+px;=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <=
+![endif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-border-5 =
+es-button-border" style=3D"border-style:solid;border-color:transparent tran=
+sparent #333333;background:#dbdbdb;border-width:2px;display:inline-block;bo=
+rder-radius:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medentx.=
+com/mk/cl/f/hwdeuWtDu_NFL8JrmnIYGTPDBgi7piwBFcvoYyJGJrQvvRRTIk7V5zihn23wjPn=
+ARgT9zSf8GcPnXxOz11QMummHJyLjm3xvpMGFcotghzYCOozi7RlwfUW1v-1VOlFhDb2ifmSYCJ=
+XeUFgarBsYdZXU6sjINRD08cTbMwlO9ScXGqWBtraDCKxszcl6gRdnqeELLsx6QgK2KyGcift2q=
+wJy7lLXB3naP1FRr9gL0WwHJKAIg-LHZMAmB9r72gvkoYMPoBSwUYPQ2DFZbrdZqDGMTdrvKp-o=
+d2YAnc_ncH89AjDYlZRZACOrCJ6tOALg10Me8Rv0-uHQoYYRZgnDqW-A_dl7H8IJ4FQUMey5pJw=
+xAtPqOtSkdM5IyfAJYbUsJa91YpzNxTXthaKqDfEva0nEeLav_K_HzMNlpBJNsvxPld24lJ_Z4U=
+2S0EcqemKISe_A5kdympe_OnXhQjpRpfGXgK2ulFm-BJDvsQsMpzk-HEaHsXR9oSlCZLBbJKD5f=
+jdGvhbXCS6Jj6dscQqGdRphOjFhTT0qXXuMoJTBwld_Wml9A_Uhp6-2nUIn9AnJHqRCIBXH5XnD=
+tNN8gFc-vtWU9px_g7RAcCNHJYK7a2xKHMx4n4pPxKYpBQdlNOxx" class=3D"es-button es=
+-button-4" target=3D"_blank" style=3D"mso-style-priority:100 !important;tex=
+t-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;m=
+so-line-height-rule:exactly;color:#333333;font-size:16px;border-style:solid=
+;border-color:#dbdbdb;border-width:0px 5px 5px;display:inline-block;backgro=
+und:#dbdbdb;border-radius:0px;font-family:arial, 'helvetica neue', helvetic=
+a, sans-serif;font-weight:normal;font-style:normal;line-height:19px;width:a=
+uto;text-align:center" sib_link_id=3D"7">Add to cart </a></span><!--<![endi=
+f]--></td> </tr> </tbody></table></td> <td class=3D"es-hidden" style=3D"pad=
+ding:0;Margin:0;width:15px"></td> </tr> </tbody></table><!--[if mso]></td><=
+td style=3D"width:154px"><![endif]--> <table class=3D"es-left" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"left" style=3D"mso-table-lspace:0pt;mso-t=
+able-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left"> <t=
+body><tr style=3D"border-collapse:collapse"> <td class=3D"es-m-p20b" align=
+=3D"center" style=3D"padding:0;Margin:0;width:139px"> <table style=3D"mso-t=
+able-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacin=
+g:0px;background-color:#e4cade" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" bgcolor=3D"#e4cade" role=3D"presentation"> <tbody><tr style=3D"bord=
+er-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;pad=
+ding-top:30px;padding-bottom:30px;font-size:0px"><a target=3D"_blank" href=
+=3D"https://r.news.medentx.com/mk/cl/f/VkA7yAfUsgfPirIICuvNRbcVRhtoy0y1PrNl=
+ZNplGW4urjtlYm_wtp6QB5PWLuPt1TQqY4ln9qy7s_qXnXIxswYoxThOGGCspilSoIvw_SElOkj=
+Vob_TVFtI950jzTMHGzyHuuktf9-n5H16gjv95mi72dPrLwGlpb1vGKwG6AYxBmzJNNUs7memAn=
+_Ga_Acir9PvNLs5iEvscm9z3TLy_SSbkKnD_stE0BwD2JdviLX3M8qUvYhrReCPX9F_Pav1f_kg=
+7WO9PtctjVaqlx4RsPgKUMAGIU_bgytVvUm7mkyC4MHbs4RFVv00x59qe1QV0ry0ajB78fwALfA=
+wU5DLM-O0SA8t9Ye380SoSouIAxDQrzN-2tuw5uGgH9j8w31-r17JhTaoqF7rl5pilumM3eQybl=
+oaeU-KjnoqCZ-OooLrYRv7wnGjuS8G5aCpDqz_LNuc2u9ACaT_iqv0b20-1KhS7VEaxovrplHbL=
+T43Oj3sqUVLoROClslni6xqpqlL111H2seL5aeMpF8h4XLHorFh9L7DecjFWxSTpwz3Fh9EHcuu=
+czNqmpBOgk5O3MYrelJYwcEhaVmm8MceKxTPAmDPbWqIXeVfWp8N1JhdldWli-OoHg" style=
+=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height=
+-rule:exactly;text-decoration:underline;color:#333333;font-size:14px" sib_l=
+ink_id=3D"8"><img class=3D"adapt-img" src=3D"https://img.news.medentx.com/i=
+m/4604737/9765f8a69ea5dddcb09919a4a8987553c8894e0f4f7ae270ccaeb2c9077464c7.=
+png?e=3DKU2yMuEYbSFL1o-C3Le00rdJeyyLHX51QtPUZjIpt_2Hx8d3SiTuU9jYdxmSl2MKBY2=
+ADCWA5hLhodN3YxC3X9nvnW_4_JJEBgOyH_3tjn0vzfMSAsKih2_Z4Is_mTf9t0aSW6vaFX5BjF=
+4sU9YI-YyXTRo2arCs7wwWFuQMGE6nT70kOavSe37W_mBSIsjIddlh36W6spqBICO7qlpzFHV23=
+y8nY8i0zt1BPAqmQtBOutMFtrg3J8lBmwW2e04b6iw2Zixb0XdxXV0" alt=3D"Neomem Resor=
+bable Collagen Membrane" title=3D"Neomem Resorbable Collagen Membrane" styl=
+e=3D"display:block;border:0;outline:none;text-decoration:none;-ms-interpola=
+tion-mode:bicubic" height=3D"98" sib_img_id=3D"3"></a></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Marg=
+in:0;padding-bottom:10px;padding-top:25px"><p style=3D"Margin:0;-webkit-tex=
+t-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;f=
+ont-family:verdana, geneva, sans-serif;line-height:27px;color:#333333;font-=
+size:18px">$<span class=3D"price">100.10</span></p></td> </tr> <tr style=3D=
+"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:=
+0"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:=
+none;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;l=
+ine-height:21px;color:#333333;font-size:14px">Neomem Resorbable Collagen Me=
+mbrane</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"=
+center" style=3D"Margin:0;padding-bottom:10px;padding-left:10px;padding-rig=
+ht:10px;padding-top:15px"><!--[if mso]><a href=3D"https://medentrx.com/?mat=
+ch=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&=
+amp;pname=3DY&amp;pkeywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;=
+sl=3Den&amp;q=3Dmembrane&amp;dispatch=3Dproducts.search&amp;security_hash=
+=3Df02149801e03eb2055fa0a8c91286fd2&amp;utm_source=3Dsendinblue&amp;utm_cam=
+paign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hi=
+dden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=
+=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" href=3D"http=
+s://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;psho=
+rt=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;search_performed=
+=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dmembrane&amp;dispatch=3Dproducts.sea=
+rch&amp;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&amp;utm_source=3Ds=
+endinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail"=
+ style=3D"height:24px; v-text-anchor:middle; width:96px" arcsize=3D"0%" str=
+okecolor=3D"#666666" strokeweight=3D"2px" fillcolor=3D"#f6f6f6"> <w:anchorl=
+ock></w:anchorlock> <center style=3D"color:#333333; font-family:arial, " he=
+lvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font-size:9px;=
+=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-raise:1px"=3D"">=
+Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !mso]><!-- --><=
+span class=3D"msohide es-button-border-3 es-button-border" style=3D"border-=
+style:solid;border-color:#f6f6f6 #f6f6f6 #666666;background:#f6f6f6;border-=
+width:2px;display:inline-block;border-radius:0px;width:auto;mso-hide:all"><=
+a href=3D"https://r.news.medentx.com/mk/cl/f/-Dk9WdKyi6v4urt8arYr-8Wx9xyVa8=
+l-A4asWB4IFA9YBiCM6tH1L0avWMzS1E_fGXLPku4Jz6PJiH3fA-KiOaSmzJjq4xfryPf7dHphP=
+vBIfFiv2XY4L0na1QH1_i71bMZ60SkuvRvPg5sZdZ-vxnjoYdpBJCG1Nu46Vk2kv1WiJzxjrbfb=
+NKyBZxaUuHW5TiL1z59JP1HzegZdFxiznZ79FGmlteas1rDVdyvbCWQqW7GVaZcg9Vg3btIuDyl=
+zUEQsXofvLPJ059hldvH8HQFJHLETZdyv7t5tV9rcr5iArDn-RLVLkbOsXjo8Ll6iPS_xBod2E9=
+QJA_i31-raeARMr4l8CfOw1sLlbt4l6BfoyJtLaT9CIWznCwKHRN-R869EYQz-yMb4FphVIAGVZ=
+jaUlUgHoPFRpqs4_ARSqGrbUIWtPCRAX3uPkz9GPjqBmrR1sHx2DC_jU_vCzz7P0qGpLaH2PfTE=
+8VfhTx18xOD5UGBOCna825cwDconplBSFIVSKcWz4Apr9EoNApHpBuUyOV5MMEvyP6CQMCPqw38=
+VTiKOn1kVvZB2vvB9DwaXBKZ7tNVSKiW0h73b6QxdWSQsuooPL8Cj5Fboc-0js1i8UY0YKq4" c=
+lass=3D"es-button es-button-1" target=3D"_blank" style=3D"mso-style-priorit=
+y:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-tex=
+t-size-adjust:none;mso-line-height-rule:exactly;color:#333333;font-size:16p=
+x;border-style:solid;border-color:#F6F6F6;border-width:0px 5px 5px;display:=
+inline-block;background:#F6F6F6;border-radius:0px;font-family:arial, 'helve=
+tica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line=
+-height:19px;width:auto;text-align:center" sib_link_id=3D"9">Add to cart </=
+a></span><!--<![endif]--></td> </tr> </tbody></table></td> <td class=3D"es-=
+hidden" style=3D"padding:0;Margin:0;width:15px"></td> </tr> </tbody></table=
+><!--[if mso]></td><td style=3D"width:139px"><![endif]--> <table class=3D"e=
+s-left" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" style=3D"mso-tab=
+le-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:=
+0px;float:left"> <tbody><tr style=3D"border-collapse:collapse"> <td class=
+=3D"es-m-p20b" align=3D"center" style=3D"padding:0;Margin:0;width:139px"> <=
+table style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:co=
+llapse;border-spacing:0px;background-color:#ddeaf0" width=3D"100%" cellspac=
+ing=3D"0" cellpadding=3D"0" bgcolor=3D"#ddeaf0" role=3D"presentation"> <tbo=
+dy><tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"Ma=
+rgin:0;padding-bottom:5px;padding-left:5px;padding-right:5px;padding-top:10=
+px;font-size:0px"><a target=3D"_blank" href=3D"https://r.news.medentx.com/m=
+k/cl/f/cZ5LGi0qlvYKB_ul7gkdtltiB9rG8O7JrRJLOXVtmNlSRVARoFJZUULZNpkDCDCcj0-m=
+kjjTFhLTJ19BUPMGgxWs0nNdLGjlh0vHDDdrUR5FqGaWjleVS6N0XG-a_QWrC_Bp32rLcNNCy5u=
+dZplnZmlmvjFQ9MZ3wu0X6_P35OLaY1I7fE_J-QUxWM4EOYxzY4KfNKHaqMRawqUbRPI6uTrrrH=
+EqNA7IU9PGoqg11QVr1wepJo3PLiOgC3WC0S6z-pi6SIEtyG9UMf3Rh4ALvNJ2g0vHISibEi5i9=
+2QlspNT5Xm_6SxpW7b8aW_-Sle-l_W03rRIOpNjypFvJ0K9EB5EohNZM14cbyOfGcpBzWIMdXXb=
+QCLw1PCYePfOTy-JShjNVyEefcRoQwnBRoMkzwwb-uTjBtYlesUQmS2gVCDgNMRsXIDCsidjmrI=
+69Dy9lusMryUYQ1SQ2gi8Y30gfu9d6x7yyGwFO5AiaHSjn3XKDxroT5FyEpM1vCZWJUsqEwad7p=
+aIqoiy9gjaM2eo6XlpZqLGiPOH_LZtuEbTva3apl9t9X2ogJgw1sI0EK8-aBNJ3qZ9sL36dURc5=
+4R3fT4vmZK1PEi9rs-qLugfTHC30DeE2os6WDulzw" style=3D"-webkit-text-size-adjus=
+t:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decorati=
+on:underline;color:#333333;font-size:14px" sib_link_id=3D"10"><img class=3D=
+"adapt-img" src=3D"https://img.news.medentx.com/im/4604737/dd7aa899eb4f0e37=
+44a6e307c4b14ef704b3deb5b4776ae90376d1f3690c993f.png?e=3DMOjFSAAje1Pmsa3G9e=
+JgC9lJ347wmYSwHx5ojEhYfFXqqsul54jiSXxomCAeGfT3PJaBsdo5Cm64l11FLQAV9jPFuB6WA=
+k3pJbz2Ixy5V7B-WYnZMzoleM5blDNzEIDg4jeHMAbuAHGYL6henQC7xFzycZZ-uQarO5a-Dqa4=
+KIe-C5VSivETdU4V8VPJkafEQbnqbWg9uinty0lqaye4ShEPoj73deLnmUzm3KjaP2ixvpNmOLW=
+Z3lxAWj1u6Idrhc-OqryZHydHxBf9R30hr-K57Q" alt=3D"Raptos Allograft Bone Granu=
+les Jar" title=3D"Raptos Allograft Bone Granules Jar" style=3D"display:bloc=
+k;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic=
+" width=3D"129" sib_img_id=3D"4"></a></td> </tr> <tr style=3D"border-collap=
+se:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-bott=
+om:10px;padding-top:40px"><p style=3D"Margin:0;-webkit-text-size-adjust:non=
+e;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:verdan=
+a, geneva, sans-serif;line-height:27px;color:#333333;font-size:18px">$57.40=
+</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center=
+" style=3D"padding:0;Margin:0;padding-top:10px;padding-bottom:35px"><p styl=
+e=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-l=
+ine-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height=
+:17px;color:#333333;font-size:14px"><span class=3D"product-name">Raptos All=
+ograft Bone Granules Jar</span></p></td> </tr> <tr style=3D"border-collapse=
+:collapse"> <td align=3D"center" style=3D"Margin:0;padding-bottom:10px;padd=
+ing-left:10px;padding-right:10px;padding-top:25px"><!--[if mso]><a href=3D"=
+https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;=
+pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;search_perform=
+ed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dbone+graft&amp;dispatch=3Dproducts=
+.search&amp;security_hash=3Decb4944f29dcbbff79ddd2b4dd619ae4&amp;utm_source=
+=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Dem=
+ail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-mic=
+rosoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esdevvmlb=
+utton=3D"" href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pc=
+ode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY=
+&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dbone+graft&amp;=
+dispatch=3Dproducts.search&amp;security_hash=3Decb4944f29dcbbff79ddd2b4dd61=
+9ae4&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&=
+amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:middle; width:9=
+6px" arcsize=3D"0%" strokecolor=3D"#333333" strokeweight=3D"2px" fillcolor=
+=3D"#dbdbdb"> <w:anchorlock></w:anchorlock> <center style=3D"color:#333333;=
+ font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-seri=
+f";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" ms=
+o-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <![endif]-->=
+<!--[if !mso]><!-- --><span class=3D"msohide es-button-border-5 es-button-b=
+order" style=3D"border-style:solid;border-color:transparent transparent #33=
+3333;background:#dbdbdb;border-width:2px;display:inline-block;border-radius=
+:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f=
+/9y7BicnLeVFgLqVcW5A3Y5TTY26N8pge4NWf1zIvQ72FClqRV6He8ZcB_t-pc4yHFk9yGPaW8Z=
+ISNFjq85m30956mBgZIbxkAkYIURguUH7pr6YraRAq5Moa20yFZnWY1kKpKB8BvHzWJMlQmBaN3=
+wSPa_UrrhLsf-MIPOG49S019GUA3PXsXVJaw0Vsk-Nfo7fTWAFpAOcBpCoM4coT9m48N0fxn4-n=
+qt-jHA8kOH0DfSw4cGcbKGIq7YpF4XriTy125PXkqEsIgwKkNDQS7LCzLTnfrNODQ5u8elb7Ley=
+GR09xUnULLEgMvkOYB_pWDILPX19vMvLgs6dVTbCeROexJoPcn_0MTjHKyRo92IpZhvwx5eXOfp=
+o0kSPhTEyGpK5KwjN5SyP7hIec9pc7aWrMDYpYTMKqp6az8s4ncsmEuSO4e8xmkZp_-J0qcfhnK=
+80xbOPcelYNHJVyrVi-6HzWdeIQOBunmYD-gcn3pYHuroKa_mp7sIUig0DQcWzlxgEB3W8009Io=
+-x94ttk0TVeVPLe91iqzNW35_xkB8eYo2N8zePsDhbB4yTQ4pvFP5SgqUjK8RBVDLO6emfIszEj=
+1A3uHTyAJCPPje_lPAQygESPiV5cabDRtdQ" class=3D"es-button es-button-4" target=
+=3D"_blank" style=3D"mso-style-priority:100 !important;text-decoration:none=
+;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;color:#333333;font-size:16px;border-style:solid;border-color:#db=
+dbdb;border-width:0px 5px 5px;display:inline-block;background:#dbdbdb;borde=
+r-radius:0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;fon=
+t-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:ce=
+nter" sib_link_id=3D"11">Add to cart </a></span><!--<![endif]--></td> </tr>=
+ </tbody></table></td> </tr> </tbody></table><!--[if mso]></td><td style=3D=
+"width:15px"></td><td style=3D"width:139px"><![endif]--> <table class=3D"es=
+-right" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" style=3D"mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing=
+:0px;float:right"> <tbody><tr style=3D"border-collapse:collapse"> <td class=
+=3D"es-m-p20b" align=3D"center" style=3D"padding:0;Margin:0;width:139px"> <=
+table style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:co=
+llapse;border-spacing:0px;background-color:#e4cade;border-color:transparent=
+" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#e4cade" ro=
+le=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse"> <td ali=
+gn=3D"center" style=3D"padding:0;Margin:0;padding-top:35px;padding-bottom:3=
+5px;font-size:0px"><a target=3D"_blank" href=3D"https://r.news.medentx.com/=
+mk/cl/f/QailImArPWSXM6CO-1AYW9IHTeR_OEZ1ZE17bKSTgBPBv4K42UGT2NZzOa5pNEGd6UI=
+j1RIDk5qLswgQBvgMcD_1aOENBRuiDoaYqkmiztze8vQbp5eYeBDuMKM3x2-27APNS1_WuN0o2z=
+jx1drMTD-AAOK8U0x_oYgM0ZB196mfxrBQqg-1SRqdph5GDL2dAi-AM4ZmfSHVj2GMRjcKHvMzc=
+-wyQDWTjAoXmm8aqUw9-PZ0O6_sDPvfxqsznRUOh2MeUwJIine45AdzwsPGl3uhW2hcpfBW-hyG=
+aIJ3AwksaGhtdm6rQOkKeFQ5kKq6ZY7gt6Rkm7_02TFzY8wwGDIfXulZLNRoAt4wO5sAxpHQ0cN=
+bhmI4BxWe2ew42lgJBJjrCntBygbQnz6l433-ODOOcJj26pziNh3IPcuyaZ2QuKGis3j12SpYma=
+i0Ckqzz62kahPQlldA90S1NOPRJG0c2U0JASEfq0tOce-l_bBt6SvvvCIlL8_ia-h4Oz-SLMoHK=
+q9YZLXBF9QK_DrMRoH96ibm5UNUPmQGUJlzCHvRDN8X2qERwQZF-Xu9bv-gbS5TPOScQTYls2yq=
+B2ocJw7Hlqf1bebmUFzDhlRXDKb8hV0tJZlRiNyKpnIUZLg" style=3D"-webkit-text-size=
+-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-de=
+coration:underline;color:#333333;font-size:14px" sib_link_id=3D"12"><img cl=
+ass=3D"adapt-img" src=3D"https://img.news.medentx.com/im/4604737/346238a782=
+48045dc07b70326864475c532a73d29045a5021ead348de9bc9c03.png?e=3D9-3_GiOLzcx5=
+oSEJkv1foM8Od_62D04kdIkKHKYEpKIUEIHDu43sU5i7b8Ei2sc5_K3yvkBRBjQOeQHE07jIJlK=
+QOfd8ArMipr1r2rQ1grv2AyR9dea5iU6X00OtrFU7BKRubZXW3AsmGLuV2sV9091qMtofKTlP6u=
+ZoDzk3YQ-1bFjx7kjiGRbYTe24eK_9Lusxs2l0EoZMbiAqUEYya979vgDYAJAVmGjR2sEojtbFH=
+ga4a5hJVRhTWOCMtY4-R_JqfbfDqv4" alt=3D"Impregum Penta Medium Body Polyether=
+ Impression Material Refill" title=3D"Impregum Penta Medium Body Polyether =
+Impression Material Refill" style=3D"display:block;border:0;outline:none;te=
+xt-decoration:none;-ms-interpolation-mode:bicubic" width=3D"139" sib_img_id=
+=3D"5"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D=
+"center" style=3D"padding:0;Margin:0;padding-bottom:5px;padding-top:25px"><=
+p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none=
+;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-=
+height:27px;color:#333333;font-size:18px">$259.50</p></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"Margin:0;paddi=
+ng-left:5px;padding-right:5px;padding-top:10px;padding-bottom:15px"><p styl=
+e=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-l=
+ine-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-height=
+:17px;color:#333333;font-size:14px"><span class=3D"product-name" style=3D"l=
+ine-height:120%">Impregum Penta Medium Body Polyether Impression</span></p>=
+</td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" st=
+yle=3D"Margin:0;padding-bottom:10px;padding-left:10px;padding-right:10px;pa=
+dding-top:15px"><!--[if mso]><a href=3D"https://medentrx.com/?match=3Dall&a=
+mp;subcats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=
+=3DY&amp;pkeywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&a=
+mp;q=3DImpregum+Penta&amp;dispatch=3Dproducts.search&amp;security_hash=3Df0=
+2149801e03eb2055fa0a8c91286fd2&amp;utm_source=3Dsendinblue&amp;utm_campaign=
+=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hidden=
+=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"ur=
+n:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" href=3D"https://me=
+dentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY=
+&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;search_performed=3DY=C2=
+=A4cy=3DUSD&amp;sl=3Den&amp;q=3DImpregum+Penta&amp;dispatch=3Dproducts.sear=
+ch&amp;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&amp;utm_source=3Dse=
+ndinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" =
+style=3D"height:24px; v-text-anchor:middle; width:96px" arcsize=3D"0%" stro=
+kecolor=3D"#666666" strokeweight=3D"2px" fillcolor=3D"#f6f6f6"> <w:anchorlo=
+ck></w:anchorlock> <center style=3D"color:#333333; font-family:arial, " hel=
+vetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font-size:9px;=
+=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-raise:1px"=3D"">=
+Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !mso]><!-- --><=
+span class=3D"msohide es-button-border-3 es-button-border" style=3D"border-=
+style:solid;border-color:#f6f6f6 #f6f6f6 #666666;background:#f6f6f6;border-=
+width:2px;display:inline-block;border-radius:0px;width:auto;mso-hide:all"><=
+a href=3D"https://r.news.medentx.com/mk/cl/f/AHZWHXpl2m-uCbVfazlZghVAIv21vt=
+8eHoh4O2wsWHAuqgi1Wo_G0v_kGNGdVI1E500p-udGPwwsmxG6E47ocCYsycdX4HFko17_pI6bK=
+HOzZh5M1X19kEdC0oyXKiVOFMO2fXevWMC9oBrHXQRyyBGQNKO1InMsTKR099q2lIQehJnK-Zj0=
+DEzWW68ADu1WlHD59CWLzBm-A5DQEnBvoCVo_dTTPfM8idaE3_L02UKTReTsw8Ip1FAvSabOMJM=
+5Y90KINAAcTyIGc5tyaika_goSNirwwkDnMO_Y5IWIpAATPCrBYCEx95i1IkH4BxasW7kBmWJda=
+Usm4x-gJTSItXqRoA86CG7jksRR88U5ffyd-PynL9DzoZzSy_NGo4dwmN64yHO5U20gH4z69wRO=
+SqMPl8Ou5t5NvWv5Arnp-755BFFl4p25yZ2o8hMm3Te8PQNFxISc3YYDNBWlY2PiVDPlutug33U=
+QxBqW1S5AHKPdyaH5o6WnpLBlqKXEUoo_FvwWHFNFIeXMalUbhVTKpQeyK-aIeLNJq9kjfVBl-F=
+-_XmE4GyA8lI85DiUd4kmLebJUfYzBxMslMagK8hC0KCW42CXk3Ox--7-VeJhdyoEi5ZFdh5Eft=
+f9jb4st7M" class=3D"es-button es-button-2" target=3D"_blank" style=3D"mso-s=
+tyle-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:=
+none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#333333;f=
+ont-size:16px;border-style:solid;border-color:#F6F6F6;border-width:0px 5px =
+5px;display:inline-block;background:#F6F6F6;border-radius:0px;font-family:a=
+rial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style=
+:normal;line-height:19px;width:auto;text-align:center" sib_link_id=3D"13">A=
+dd to cart </a></span><!--<![endif]--></td> </tr> </tbody></table></td> </t=
+r> </tbody></table><!--[if mso]></td></tr></table><![endif]--></td> </tr> <=
+tr style=3D"border-collapse:collapse"> <td align=3D"left" style=3D"padding:=
+0;Margin:0;padding-top:5px;padding-bottom:5px"><!--[if mso]><table style=3D=
+"width:600px" cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"width:15=
+3px"><![endif]--> <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;borde=
+r-collapse:collapse;border-spacing:0px;float:left"> <tbody><tr style=3D"bor=
+der-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"p=
+adding:0;Margin:0;width:138px"> <table style=3D"mso-table-lspace:0pt;mso-ta=
+ble-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color=
+:#ddeaf0;border-color:transparent" width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" bgcolor=3D"#ddeaf0" role=3D"presentation"> <tbody><tr style=3D"b=
+order-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;=
+font-size:0px"><a target=3D"_blank" href=3D"https://r.news.medentx.com/mk/c=
+l/f/qp7fQEzFB2q_kDC4Brd2VTL8P5w4fRcRQzpsN2dLE1vhbVNPDKoEdunUCJa2JxGtNCWds2B=
+733iRc6tgKyCrZsfdYTM1lfJdeBgvJ-1emGaQCey03BCEX1vNClx3QlwPrxc4Ht0oIkvW6usaj-=
+phw3jM1xOeQChg3VcO9XmLUCGif8bjpoloLKH5TecyAxl2caD6ExJFZCepIjipuvwyJK_Eyrxzo=
+J-0S1EHFBw7TTa7SNFyncezBH61eqnB2HhQsCW3XlojPZSZO_C8wloXyZZQey_UgUbvJrh02d4g=
+U9A9qVeUWfIMV3Dp2R_0LhDLBPyfXFhIKrzBbOoAtuj9vkvlhN6dxsp6BpZSNPXUGpU5eQhyNNs=
+QyTfue9Fnm6MKAtptFoqZeS94Nm5mnPGNgqu7LVHwwom4BoaB75M33zbMZKnMciFB_NQoWRyLKn=
+6wPJpq4moRo99QpcP_-b5PDqVrKqKLo-PdJALDnZCCPLaSwh9CahCQWn_XSQWCjezAAlVSNTj2M=
+l6cpT7m0pjBQeXEeHqHDAw_apEZckSnkYqfa86FAmqqeZ-q7YV3iLYydUMZek-XfqnLVOgi8hK8=
+lSwGUi5olsla2kLLFx4-vhiRPO1Ik5uvS-oLIg" style=3D"-webkit-text-size-adjust:n=
+one;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:=
+underline;color:#333333;font-size:14px" sib_link_id=3D"14"><img class=3D"ad=
+apt-img" src=3D"https://img.news.medentx.com/im/4604737/3f615de16e52cd14482=
+2747651e735649a70e96298d3fd38d8b375e09db3f24f.png?e=3DS5SX_aB-E6Mdv6G1jmzAL=
+02pdEzVdMIicIKliGeN_PqSamJ7oAau-Pm29ij1zpEqf011Aem7cW0kcUDiNZf_dHFCKS7Plu2k=
+HlmlrTG2WT3vShhJHaug7SdybIjG270UBHg-G8npNxlt6nbtryZLo-YBtkF-xr7ZeUBj_EY2SV3=
+rxS0Zkpd9PtlYGr3tXCaIOigPOGhRJbfuOXZQAwQown9MZDOIpJCMGJZP5c4smABjykMR7-OAyS=
+osAv4f--HvWvaIdlN5ElXx" alt=3D"CaviWipes XL Disinfecting Wipes" title=3D"Ca=
+viWipes XL Disinfecting Wipes" height=3D"170" style=3D"display:block;border=
+:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" sib_im=
+g_id=3D"6"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td alig=
+n=3D"center" style=3D"padding:0;Margin:0;padding-top:10px"><p style=3D"Marg=
+in:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-heigh=
+t-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:27px;col=
+or:#333333;font-size:18px">$<span class=3D"price">10.99</span></p></td> </t=
+r> <tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"pa=
+dding:0;Margin:0;padding-bottom:10px;padding-top:20px"><p style=3D"Margin:0=
+;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;font-family:verdana, geneva, sans-serif;line-height:17px;color:#=
+333333;font-size:14px"><span class=3D"product-name" style=3D"line-height:12=
+0%">CaviWipes XL Disinfecting Wipes</span></p></td> </tr> <tr style=3D"bord=
+er-collapse:collapse"> <td align=3D"center" style=3D"Margin:0;padding-botto=
+m:10px;padding-left:15px;padding-right:15px;padding-top:30px"><!--[if mso]>=
+<a href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from=
+_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;sea=
+rch_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dcavi+wipes&amp;dispatch=
+=3Dproducts.search&amp;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&amp=
+;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_=
+medium=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word=
+" esdevvmlbutton=3D"" href=3D"https://medentrx.com/?match=3Dall&amp;subcats=
+=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pk=
+eywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dcavi=
++wipes&amp;dispatch=3Dproducts.search&amp;security_hash=3Df02149801e03eb205=
+5fa0a8c91286fd2&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Sum=
+mer_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:midd=
+le; width:96px" arcsize=3D"0%" strokecolor=3D"#666666" strokeweight=3D"2px"=
+ fillcolor=3D"#dbdbdb"> <w:anchorlock></w:anchorlock> <center style=3D"colo=
+r:#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" =
+"sans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9p=
+x;=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <!=
+[endif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-border-5 e=
+s-button-border" style=3D"border-style:solid;border-color:#f6f6f6 #f6f6f6 #=
+666666;background:#dbdbdb;border-width:2px;display:inline-block;border-radi=
+us:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl=
+/f/-a2FR_WIwrmYQg6ppb5cIyXkc6V9jSRGR3MS-dfwLPz14_xr3BStrSM7ZiijTozKG3Xje_zu=
+pTrxsInB3reRnBbz0kOUT7c1nURQz8K4-zvz1ID2f5MzOGWG0cz1bTPvPIBp6lIQB87Opvr6fuW=
+XHUlEdEEfdTniElAbRmYjcYNOY3RXUPack90m3AfuVDuceiXoH-D3ZDDyC3PQLaBb7GUy_ohjny=
+h0veNd-wPvr-9MwfNpOog67HmFDd4IAdsmgB1_STJBTz0bNXgXHFrfirfuMbFv9r2e20ArtBF5X=
+1QeWY6ghRexRGnZsfeE3SVogb2ilnbjziuJf9CRGKs8tzWlYE6iQC9igmoZcPKjQKoOSNlV_qzD=
+qecLgRKBgnuunkIS-BlsvyGkfOQhMPpE5ot2GQ-EC5k2fGMW_O7LVQWL9ZqQsw3LZUY_Vf6OWRo=
+S5k4F5QJRcodRqKSgrdvUgcyDXeFnRDPYrPYT5LsE_m2voMdEvLRB1tV3kKSYVtKawj6bfkAjRJ=
+PK9-MjFOCpwgzjamD81mXp_hfPLjLdtoWXcsQFatPQBDZ6fMjtJpO0ZtFYMLg8M-fxkHeNaN4xm=
+8P6r2nON4m4RG9DWtoeEa8cAyyXQYQUGGJ5Jg" class=3D"es-button es-button-4" targ=
+et=3D"_blank" style=3D"mso-style-priority:100 !important;text-decoration:no=
+ne;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-=
+rule:exactly;color:#333333;font-size:16px;border-style:solid;border-color:#=
+dbdbdb;border-width:0px 5px 5px;display:inline-block;background:#dbdbdb;bor=
+der-radius:0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;f=
+ont-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:=
+center" sib_link_id=3D"15">Add to cart </a></span><!--<![endif]--></td> </t=
+r> </tbody></table></td> <td class=3D"es-hidden" style=3D"padding:0;Margin:=
+0;width:15px"></td> </tr> </tbody></table><!--[if mso]></td><td style=3D"wi=
+dth:154px"><![endif]--> <table class=3D"es-left" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt=
+;border-collapse:collapse;border-spacing:0px;float:left"> <tbody><tr style=
+=3D"border-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"center" sty=
+le=3D"padding:0;Margin:0;width:139px"> <table style=3D"mso-table-lspace:0pt=
+;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;backgroun=
+d-color:#e4cade" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=
+=3D"#e4cade" role=3D"presentation"> <tbody><tr style=3D"border-collapse:col=
+lapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-top:20px;p=
+adding-bottom:35px;font-size:0px"><a target=3D"_blank" href=3D"https://r.ne=
+ws.medentx.com/mk/cl/f/QVmNqA1_QgbA1zYiWaEHui4vnqZiLZ_nY53JdlmUfaafrm1y1cgk=
+nurjap2hcEQJcT3YECk6lNL2vAAax5s541guzNHYhPd37fx_AaAVRYot3CIjbZekS69MZlf7b0L=
+8qvp7tffV7nEf2_DYyBX7i59EkcU55a_-YIVzt1aBqoX3lW7jvbw9OV_zbCeFTH9cP2dNqcSS8y=
+6uqDpARHPt5JqeD8Pi_XAtmLFPjjrj7MS-FEE42R4NPAoVadeIzJGK8rYsh8XjVIP1fyzqFRHdg=
+PRXS3AMadLgYeDyYWNl6CJ8FVajFLlXgYoXbYe5wlkzzCyh6oLqWOKhONF1LU268tDUbaho2Wia=
+is9WLfA5_fg0m3TGN5ldTHEHV8BH7dgD0hEqDVUApteWL7MXqHzUvlJU56-Bx_0dqaw2pAMrRqw=
+Cm1rIl5XrDJg9FUbWzg0oBaAlo2f5wUVhgQWjxcaRa_2rrBTWnqg_5xdHUxdX6I-6lzZVlVu3qo=
+DUaRoJJ0piZFiDjnTOpudGU_RBip5aXPKYKNkAn3VtU00kKUZCdyw2gCGhThWyZaPhEKRT6gaW1=
+yorJswZoa2WkOQ9F3pPFngJfG7bwExrjb5TPn6-x9op0RafmTatOeI" style=3D"-webkit-te=
+xt-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;=
+text-decoration:underline;color:#333333;font-size:14px" sib_link_id=3D"16">=
+<img class=3D"adapt-img" src=3D"https://img.news.medentx.com/im/4604737/2f8=
+50aedd8d9504e497286a4288cc6869e646489c95ae7f85c59db89c70acc7b.png?e=3DnNIE9=
+IOLNDC4iAYwcz6dK8opEWGB1g-oMO8xy8C5z5a_4nCxYM9rMyjm__mdjH3AB-qW7HqtyYh86lHE=
+q5x6vgbVHkEJSPiszuJPXPkGL0IEZIDV6hjmIEkPZEmnmfLgw20bznF8n-HGurXx3e_C4ueiG7E=
+r6Kw4uvelTnAPmclXJf7ZSvlUQ8HjjBH4U-7I2hfsUyY_IlG12vuoQNFAGGOgA6uyfFKiwkUXAa=
+KsoWSJncmWLFRADF86mVGcEJZNFIf2wuC3hWaM" alt=3D"RELI PRO Absorbable Plain Gu=
+t Suture Sterile" title=3D"RELI PRO Absorbable Plain Gut Suture Sterile" st=
+yle=3D"display:block;border:0;outline:none;text-decoration:none;-ms-interpo=
+lation-mode:bicubic" height=3D"116" sib_img_id=3D"7"></a></td> </tr> <tr st=
+yle=3D"border-collapse:collapse"> <td align=3D"center" style=3D"Margin:0;pa=
+dding-bottom:5px;padding-top:10px;padding-left:10px;padding-right:10px"><p =
+style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;m=
+so-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-he=
+ight:27px;color:#000000;font-size:18px">$<span class=3D"price">25.80</span>=
+</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center=
+" style=3D"padding:0;Margin:0;padding-left:10px;padding-right:10px;padding-=
+top:15px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-=
+adjust:none;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-=
+serif;line-height:17px;color:#000000;font-size:14px">RELI PRO Absorbable Pl=
+ain Gut Suture Sterile</p></td> </tr> <tr style=3D"border-collapse:collapse=
+"> <td align=3D"center" style=3D"Margin:0;padding-top:5px;padding-bottom:10=
+px;padding-left:10px;padding-right:10px"><!--[if mso]><a href=3D"https://me=
+dentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY=
+&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;search_performed=3DY=C2=
+=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dreli+pro&amp;dispatch=3Dproducts.search&amp=
+;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&amp;utm_source=3Dsendinbl=
+ue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=
+=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:=
+vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" =
+href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=
+=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;searc=
+h_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dreli+pro&amp;dispatch=3Dp=
+roducts.search&amp;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&amp;utm=
+_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medi=
+um=3Demail" style=3D"height:24px; v-text-anchor:middle; width:96px" arcsize=
+=3D"0%" strokecolor=3D"#666666" strokeweight=3D"2px" fillcolor=3D"#f6f6f6">=
+ <w:anchorlock></w:anchorlock> <center style=3D"color:#333333; font-family:=
+arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font=
+-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-raise:=
+1px"=3D"">Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !mso]=
+><!-- --><span class=3D"msohide es-button-border-3 es-button-border" style=
+=3D"border-style:solid;border-color:#f6f6f6 #f6f6f6 #666666;background:#f6f=
+6f6;border-width:2px;display:inline-block;border-radius:0px;width:auto;mso-=
+hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f/isiBGA3NK65Yprlo19Y=
+aQ7o80msgyv8wU2FhSApg6LRyJYu7MHaT1YJP9ndV5HqB840vZpC1UpJcx4D_fjogrFaIWxk2bL=
+Yrd-XPA_9A4rXWdhAKA3-aQwk4RkWMyEiRShXuPLohT_C3kQf-GtS8Gim7mVEg66OKUE1psI5BT=
+2p26giX6-l1gTFJI7h0F5P4SN2cFulzZcma0bSSVmU91MQgpT3ahn99BM_NexbwLIKijS-Sjn7z=
+ojIgSyHchMId1LfeYFLFGMaPP-zJMCUbdSajozwVmWdABtxZo45ExIln8JT4je0SApv6PWsEyjn=
+BQs9y2FwD47sqduG1pEILkr7n16lsDZH8c9FeHGrvuf-9r5fRzxoDJC9WIjBMQ0SXVBJVWuCuHH=
+rETKn-vU2t9ErJqAGP3GqDZQfDEVJXXn9y4-goNhoUsGfet2dWQfi-AOJ0GQ-w2Wk8XPphLQth_=
+1ENo3pYu6UIg5Dh3UHXeoW27rTt-0BA7ghkj7uDTt6k4zNhGbJRjFgQom8Uobt04zGLAAYz6US8=
+zV2mt9LrGDDr_Yh5qwOBhcnGw95uPrFPx6A3mYeCP1tJrRSia4qLBuY8Gew9pADJ8vDQ8gs-dgH=
+QfoEPZW61Fg8" class=3D"es-button es-button-1" target=3D"_blank" style=3D"ms=
+o-style-priority:100 !important;text-decoration:none;-webkit-text-size-adju=
+st:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#33333=
+3;font-size:16px;border-style:solid;border-color:#F6F6F6;border-width:0px 5=
+px 5px;display:inline-block;background:#F6F6F6;border-radius:0px;font-famil=
+y:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-st=
+yle:normal;line-height:19px;width:auto;text-align:center" sib_link_id=3D"17=
+">Add to cart </a></span><!--<![endif]--></td> </tr> </tbody></table></td> =
+<td class=3D"es-hidden" style=3D"padding:0;Margin:0;width:15px"></td> </tr>=
+ </tbody></table><!--[if mso]></td><td style=3D"width:139px"><![endif]--> <=
+table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" =
+style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse=
+;border-spacing:0px;float:left"> <tbody><tr style=3D"border-collapse:collap=
+se"> <td class=3D"es-m-p20b" align=3D"center" style=3D"padding:0;Margin:0;w=
+idth:139px"> <table style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;bord=
+er-collapse:collapse;border-spacing:0px;background-color:#ddeaf0" width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ddeaf0" role=3D"prese=
+ntation"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D"cente=
+r" style=3D"padding:0;Margin:0;padding-bottom:15px;padding-top:25px;font-si=
+ze:0px"><a target=3D"_blank" href=3D"https://r.news.medentx.com/mk/cl/f/ocl=
+zJhhMXlA3j-zDoSiwmpJrau1n2MpIoZzx7Pge1XIp9ofQ5cuMtH7IEbR4GlwGgzY2Qc6RcxofEL=
+tltroMEA4snIUD3CkT8b8dlstUmJPNfM2Q0ssqlTclk3ohtFJW8JEjI4QI8rFtjmIqvxnZ28qHi=
+PYUCYZMhVSvcQqt36Xy6U0PhDe7eqBWB24_KHJx62Dp4xd3B_jO_8Ty-Z7pSmlxysAwJwFZDLyZ=
+MZVCOdDuxoH7HJK7e8qm2VlWoI0knjwhegwAdcK4UnSRv65AWvhizaYnN7wihBKKV1jUcICY6sJ=
+mbMAzYytUxV3Eer_NcKcYs_pUojE3xKve4gRTqmq72W68WIvnW3M1q_Y-YRtUfOoGUbg9EsMcab=
+dzGvmTwp3vffYacTprtnza0PZK2DepwHF2HNjMVHvJiCv-JbpicDSN2s8vk_s_hm5_OCw98Xivy=
+8_gWWy3vzVs0W9GevfaHhrYjA7OJg77aGNp82M9jcu03O3Y6GCvfPcAx8vAHdrhHXsn0sHQrijr=
+OTqttbLmyDWDNDlN2_Y0pi0zUR_eYos0KnH4lFe9uKGks3gdoTV6vXHGtbooJ3YH6__g_RBxCVj=
+WCQD2E9WJ_wcI9pkDqEKKdYy1it4LNgxk" style=3D"-webkit-text-size-adjust:none;-=
+ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:under=
+line;color:#333333;font-size:14px" sib_link_id=3D"18"><img class=3D"adapt-i=
+mg" src=3D"https://img.news.medentx.com/im/4604737/25ed107d8ade044348f74737=
+fb6f8793e00ef514e2ecdf4e797d27dc74eab381.png?e=3DW0q8uul7PPWeJdgsYeEXF92kJp=
+Vz4ToUa5BFHcP5rItWTqx1h1MrpeJoghwAHQifSF4kM3cnlFiDbJi2BVmq6rLtK_IFIiTKJ9NT8=
+t6uRCcUX6SZa0x4aAa7H7ZSlxhS4bIvTaUGTQVTjaTP7WdZtV-WNf4gnL9wVm400jts_e4OqIcm=
+Hn9LH00LVgydur7IKo5_Cno23z_wd2FWzotD3dEgZJkWASE6httKlICK8IY9dCqk0CwSvV3iomF=
+a0TLDBNUhD2cN4-aL" alt=3D"Search results" title=3D"Search results" style=3D=
+"display:block;border:0;outline:none;text-decoration:none;-ms-interpolation=
+-mode:bicubic" width=3D"139" sib_img_id=3D"8"></a></td> </tr> <tr style=3D"=
+border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0=
+;padding-top:10px;padding-bottom:15px"><p style=3D"Margin:0;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-=
+family:verdana, geneva, sans-serif;line-height:27px;color:#000000;font-size=
+:18px">$<span class=3D"price">180.00</span></p></td> </tr> <tr style=3D"bor=
+der-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;pa=
+dding-top:5px;padding-left:10px;padding-right:10px"><p style=3D"Margin:0;-w=
+ebkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:=
+exactly;font-family:verdana, geneva, sans-serif;line-height:17px;color:#000=
+000;font-size:14px">Transbond XT Light Cure Ortho Adhesive Refill</p></td> =
+</tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D=
+"Margin:0;padding-bottom:10px;padding-left:10px;padding-right:10px;padding-=
+top:25px"><!--[if mso]><a href=3D"https://medentrx.com/?match=3Dall&amp;sub=
+cats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&am=
+p;pkeywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3D=
+Transbond+XT&amp;dispatch=3Dproducts.search&amp;security_hash=3Decb4944f29d=
+cbbff79ddd2b4dd619ae4&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedent=
+rx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hidden=3D""> <v:=
+roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-=
+microsoft-com:office:word" esdevvmlbutton=3D"" href=3D"https://medentrx.com=
+/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=
+=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD=
+&amp;sl=3Den&amp;q=3DTransbond+XT&amp;dispatch=3Dproducts.search&amp;securi=
+ty_hash=3Decb4944f29dcbbff79ddd2b4dd619ae4&amp;utm_source=3Dsendinblue&amp;=
+utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" style=3D"heig=
+ht:24px; v-text-anchor:middle; width:96px" arcsize=3D"0%" strokecolor=3D"#6=
+66666" strokeweight=3D"2px" fillcolor=3D"#dbdbdb"> <w:anchorlock></w:anchor=
+lock> <center style=3D"color:#333333; font-family:arial, " helvetica=3D"" n=
+eue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font-size:9px;=3D"" font-weig=
+ht:400;=3D"" line-height:9px;=3D"" mso-text-raise:1px"=3D"">Add to cart</ce=
+nter> </v:roundrect></a> <![endif]--><!--[if !mso]><!-- --><span class=3D"m=
+sohide es-button-border-5 es-button-border" style=3D"border-style:solid;bor=
+der-color:#f6f6f6 #f6f6f6 #666666;background:#dbdbdb;border-width:2px;displ=
+ay:inline-block;border-radius:0px;width:auto;mso-hide:all"><a href=3D"https=
+://r.news.medentx.com/mk/cl/f/6c7WZLp0-s6IdsEYkO4XCiNK3KKLWyrjweANxqc9Z9HwK=
+T_nx98zPMEHYHHiU7Cubh0vzWhW_oD_8LuiuTgVOKD5KeiaoNqQxbOD1OaAYk8cLWlRPyCycNR6=
+h0EhweJJxs0ZXz3Oe5T2Gth0fKbDHkHmc9D4gyALOGrEtJsm59224wVf1n-1eK_xvD59bPix557=
+xWaohEt4BWB7PmsqGxQryB7sNNaRVLl6TX2f-qQROgMj5XnIdWSUxXlCKeUreYSY_JCASykNtbC=
+H5r3IqYf6eVCtiuBajmGD7rg-5tdb1bKL_vSus1bOsB4RCfyHJCa5HZ1ownvVnLQ2jH6fW1gzxX=
+untQmDyro5x2GfoEa6w9_xTpcMqdkVmI5HoGRbJ2kFDxbfvqZgWER_jJRDIimuB_9Wi-TObDwFp=
+xeNMHtA8S57djFDGzcmyXTzT2C5FFI-82Pq0XU8FNNocGafWt-dcJJ60dNyh2QvrI4qWzv6Cg9Y=
+GC-yoJlz4-dxzU3htsFF6DHPcvCauyEY1SxorQWSso_6J8tXhsfqBe5IX3gwJqlATZv03czWx3g=
+6nWt3xQ7PJz6-Bh1oGnKZ6XivXKm61v8G72KGbJ8XJXo-0Abiy8insV8mL44NKr0vt" class=
+=3D"es-button es-button-1" target=3D"_blank" style=3D"mso-style-priority:10=
+0 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-si=
+ze-adjust:none;mso-line-height-rule:exactly;color:#333333;font-size:16px;bo=
+rder-style:solid;border-color:#dbdbdb;border-width:0px 5px 5px;display:inli=
+ne-block;background:#dbdbdb;border-radius:0px;font-family:arial, 'helvetica=
+ neue', helvetica, sans-serif;font-weight:normal;font-style:normal;line-hei=
+ght:19px;width:auto;text-align:center" sib_link_id=3D"19">Add to cart </a><=
+/span><!--<![endif]--></td> </tr> </tbody></table></td> </tr> </tbody></tab=
+le><!--[if mso]></td><td style=3D"width:15px"></td><td style=3D"width:139px=
+"><![endif]--> <table class=3D"es-right" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"right" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border=
+-collapse:collapse;border-spacing:0px;float:right"> <tbody><tr style=3D"bor=
+der-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"p=
+adding:0;Margin:0;width:139px"> <table width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" bgcolor=3D"#e4cade" style=3D"mso-table-lspace:0pt;mso-table-=
+rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#e4=
+cade" role=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse">=
+ <td align=3D"center" style=3D"Margin:0;padding-left:5px;padding-right:5px;=
+padding-bottom:20px;padding-top:40px;font-size:0px"><a target=3D"_blank" hr=
+ef=3D"https://r.news.medentx.com/mk/cl/f/xoaSYrVwviSi032ApajvjB6xIOTZQKU_Hd=
+WsvdZs1zMyrPyJTg_q2RmOmE6-ViY_clZGelDVrKVD8H9X64vgGFPEQf8iFsRwkwouu7R6Ajtvx=
+8tkRiVi6YADsxfhq7sUKso9bAgLxacDnTMGc_fT7UkB-D9N5RODganztmDrEaFDkUw-n8f4LS6l=
+8R5adukMRV6jWcHcxAIi0iHh-w1wKTYwrMjraZ3HCzZPhJBF-ES0aflSZslgPF1e8Tgud1Av9y6=
+cpdMJxSjIel993rgPjpHMX7R2wasa5ZHckC6mshNwzPCK7Q-dLxSQRKWr4oza-iXprkUPAHi0zA=
+FQHTX3lLGGsUnKmoh8tbKSj_gmd--DQs-GZAxoJRqQI2sNqfn-vLo9ug9KWqUXtvrcmytvkUXvl=
+NIwYAU7pSDacvKFj-s" style=3D"-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;text-decoration:underline;color:#333=
+333;font-size:14px" sib_link_id=3D"20"><img class=3D"adapt-img" src=3D"http=
+s://img.news.medentx.com/im/4604737/0593f2cd070ba16fd268d536e9723f1a484af7b=
+5b7750d45fbee40f4fe4390d2.png?e=3DtVu2nXpFEyFgkHhneCfYyX1BbRw30KA_eQOO09q8W=
+3MRPOBILNRLp9NxG1NYHem1r0QiyTxGWqLgMWnfKrVlTuLIZGGzWywermhRSZm9tn6XqlVls6RP=
+1cSoasK98Ze55IK70NfOGlgcuCEazuf8bFYvWL9EXKYfF7zRXmN_I9UavNt_6X2DZk50NlqxZvf=
+xo8XD6WE0tnCRqJX_JTQdkzJkiscj8WmbZY4kmx_RcjqQ40kUE-O4-Nh5EMr66RcmWj7c8gEnx2=
+TFtRg" alt=3D"Alcohol Prep Pads Sterile Large" title=3D"Alcohol Prep Pads S=
+terile Large" style=3D"display:block;border:0;outline:none;text-decoration:=
+none;-ms-interpolation-mode:bicubic" width=3D"129" sib_img_id=3D"9"></a></t=
+d> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" style=
+=3D"padding:0;Margin:0;padding-bottom:10px;padding-top:30px"><p style=3D"Ma=
+rgin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-hei=
+ght-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:27px;c=
+olor:#333333;font-size:18px">$80.99</p></td> </tr> <tr style=3D"border-coll=
+apse:collapse"> <td align=3D"center" style=3D"Margin:0;padding-left:5px;pad=
+ding-right:5px;padding-top:10px;padding-bottom:15px"><p style=3D"Margin:0;-=
+webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule=
+:exactly;font-family:verdana, geneva, sans-serif;line-height:17px;color:#33=
+3333;font-size:14px"><span class=3D"product-name">Alcohol Prep Pads Sterile=
+ Large</span></p></td> </tr> <tr style=3D"border-collapse:collapse"> <td al=
+ign=3D"center" style=3D"Margin:0;padding-bottom:10px;padding-left:10px;padd=
+ing-right:10px;padding-top:20px"><!--[if mso]><a href=3D"https://medentrx.c=
+om/patient-exam-gown-mckesson-one-size-fits-most-teal-disposable-clone-1131=
+04/?vendor_id=3D85&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_=
+Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hidden=3D""> <v:rou=
+ndrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-mic=
+rosoft-com:office:word" esdevvmlbutton=3D"" href=3D"https://medentrx.com/pa=
+tient-exam-gown-mckesson-one-size-fits-most-teal-disposable-clone-113104/?v=
+endor_id=3D85&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summe=
+r_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:middle=
+; width:96px" arcsize=3D"0%" strokecolor=3D"#333333" strokeweight=3D"2px" f=
+illcolor=3D"#f6f6f6"> <w:anchorlock></w:anchorlock> <center style=3D"color:=
+#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "s=
+ans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=
+=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <![e=
+ndif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-border-3 es-=
+button-border" style=3D"border-style:solid;border-color:transparent transpa=
+rent #333333;background:#f6f6f6;border-width:2px;display:inline-block;borde=
+r-radius:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com=
+/mk/cl/f/D81GBjPZoJ3lEShqXAqRxEImobtcJmHUv1kkxZN2zpvV6UlJinelAfQK7B1qhTsacq=
+a-CrrXJ7LmIstBaU_Jjs_U4unbnHvCcPTa6qrnO1TmdEZri6x1rqhiOJl5w-W5epZKkmAXRk_zd=
+QYEwZuaanjAqELTFBdj39WMz-gSdkUWAznFRjdgEhu2NCaX8XcgpNNEZ8GOhJutyyP4MIvBulbE=
+Ao1JnElzcxjSyR5pt5p6DxiXCuLBqGhEIpy6HYn-o43DirtpaTJwKZfFODr2lbvB6cYMAFWr0th=
+EUEQEtd1sxoieXXmvQD4nmA0BIPLfwrIS2OevvPX3hJpyCv5lJ5RY1wWD9C04F0aNYKKyjBqi7O=
+dz6RjN_5ZhxcbaMaMivmFUdoilKisslR4pXpL7hFWEpGk1aseYjyVrsRlbVAE" class=3D"es-=
+button es-button-2" target=3D"_blank" style=3D"mso-style-priority:100 !impo=
+rtant;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adju=
+st:none;mso-line-height-rule:exactly;color:#333333;font-size:16px;border-st=
+yle:solid;border-color:#F6F6F6;border-width:0px 5px 5px;display:inline-bloc=
+k;background:#F6F6F6;border-radius:0px;font-family:arial, 'helvetica neue',=
+ helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:19p=
+x;width:auto;text-align:center" sib_link_id=3D"21">Add to cart </a></span><=
+!--<![endif]--></td> </tr> </tbody></table></td> </tr> </tbody></table><!--=
+[if mso]></td></tr></table><![endif]--></td> </tr> <tr style=3D"border-coll=
+apse:collapse"> <td align=3D"left" style=3D"padding:0;Margin:0;padding-top:=
+5px;padding-bottom:5px"><!--[if mso]><table style=3D"width:600px" cellpaddi=
+ng=3D"0" cellspacing=3D"0"><tr><td style=3D"width:153px" valign=3D"top"><![=
+endif]--> <table cellpadding=3D"0" cellspacing=3D"0" class=3D"es-left" alig=
+n=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collap=
+se:collapse;border-spacing:0px;float:left"> <tbody><tr style=3D"border-coll=
+apse:collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"padding:0=
+;Margin:0;width:138px"> <table style=3D"mso-table-lspace:0pt;mso-table-rspa=
+ce:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ddeaf0=
+" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ddeaf0" ro=
+le=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse"> <td ali=
+gn=3D"center" style=3D"padding:5px;Margin:0;font-size:0px"><a target=3D"_bl=
+ank" href=3D"https://r.news.medentx.com/mk/cl/f/N8KCvUjxvGmAqXzzBtwlmkI0iZG=
+0SKHUfcrmwMZHSn9ITDOuWck9Hh5X8aI81y5JJ9wkztNPapyhfOzW-mBEqDXgSMl-HEcfNlW7dq=
+_Ph8RQUK3NA7mVxAe7ykJYJF2-LdJBC-gd8Nyo1ZWNmTF9LMvI2PR2s1RLqlDuV2iIrnYp9M4zr=
+anGttpAKmVp8mvUszloRFgEdC0xBM_Jp0-9k0r0qaLgSIR55c6JGMfpLTuufIEc6vmMY4Jpva81=
+j9ajhsn-hyPOOpMNpr9JvxqFPNyS8JZWnXcle9bQ105kHKRzR3zVhVajkt9Fowsx_T7LD2rHpQd=
+8KbZlN1t0nvNsPT8zpC-VF_jrYzkNCJSPpSzR_CyvhdGUmrOuGmj84umjZKLdFcd2MGRSHb6xI-=
+r560upqr2vRAvbnYOfiukMwjmCl0FQ-sPAaXpegLxhtVAAq_wKj9QBUzK9nyR2DDxha5U1fUG8T=
+i4XJs_mG5-X0J2DCMS55hGtcWIR8U-YJmgrkD1vBtQHCh2B_N4dF0h1dbPwSAZ5YkbylHqzmetM=
+aSCiQmRXs-C3EKiXoZWEFfvmtliZ9bFSBFBq_XYnXvpO856rgyqoCtud_PeZvA6K6FtRlKIQYCB=
+iTrzLEuTBD3KHzhIcoE33VNgtw1gqg2vGnOikZHCHU0rtLB5cUCQTIBi3QX4Ttw" style=3D"-=
+webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule=
+:exactly;text-decoration:underline;color:#333333;font-size:14px" sib_link_i=
+d=3D"22"><img class=3D"adapt-img" src=3D"https://img.news.medentx.com/im/46=
+04737/212e34898e54623b3966a1c1b84fe4ad173f94758662757a916e3eaab3f74890.png?=
+e=3D5qvw-SGRSPCuA_L87HPJO1q5f7seslhetcu-MVeqIls4Ue5ewDSukAQBxaMAaRo0gN2xAmg=
+zQkKALqebMxZKH_EsyI3X7G504T8AQi0zttfifRH3_1wpUTJwpFAIxRYDpRP87tEYdlAIEToPqo=
+F6-rJ0V1xjjxjlHKBh1sfDLBRIoH0z-LdKovjO8NBGrCMqiUKFpapoU93Q_IZDwgeE_t2w6nkox=
+0GLXD1S7JFWMsWTHPioUW6Vf8y7eCzoBcH3M7optvqBsSIj" alt=3D"Basics by allheart =
+Unisex 41" lab=3D"" coat?=3D"" title=3D"Basics by allheart Unisex 41" lab=
+=3D"" coat?=3D"" style=3D"display:block;border:0;outline:none;text-decorati=
+on:none;-ms-interpolation-mode:bicubic" height=3D"157" sib_img_id=3D"10"></=
+a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" =
+style=3D"padding:0;Margin:0;padding-top:10px"><p style=3D"Margin:0;-webkit-=
+text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactl=
+y;font-family:verdana, geneva, sans-serif;line-height:27px;color:#000000;fo=
+nt-size:18px">$<span class=3D"price">19.78</span></p></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Marg=
+in:0;padding-top:5px;padding-left:5px;padding-right:5px"><p style=3D"Margin=
+:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-=
+rule:exactly;font-family:verdana, geneva, sans-serif;line-height:17px;color=
+:#000000;font-size:14px">Basics by allheart Unisex 41&quot; Lab Coat</p></t=
+d> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" style=
+=3D"Margin:0;padding-bottom:10px;padding-left:10px;padding-right:10px;paddi=
+ng-top:15px"><!--[if mso]><a href=3D"https://medentrx.com/?match=3Dall&amp;=
+subcats=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY=
+&amp;pkeywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=
+=3DBasics+by+allheart+Unisex+41%22+Lab+Coat&amp;dispatch=3Dproducts.search&=
+amp;security_hash=3Decb4944f29dcbbff79ddd2b4dd619ae4&amp;utm_source=3Dsendi=
+nblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" tar=
+get=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-c=
+om:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D=
+"" href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from=
+_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;sea=
+rch_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3DBasics+by+allheart+Unis=
+ex+41%22+Lab+Coat&amp;dispatch=3Dproducts.search&amp;security_hash=3Decb494=
+4f29dcbbff79ddd2b4dd619ae4&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DM=
+edentrx_Summer_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-=
+anchor:middle; width:96px" arcsize=3D"0%" strokecolor=3D"#666666" strokewei=
+ght=3D"2px" fillcolor=3D"#dbdbdb"> <w:anchorlock></w:anchorlock> <center st=
+yle=3D"color:#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helve=
+tica,=3D"" "sans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" lin=
+e-height:9px;=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundr=
+ect></a> <![endif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button=
+-border-5 es-button-border" style=3D"border-style:solid;border-color:#f6f6f=
+6 #f6f6f6 #666666;background:#dbdbdb;border-width:2px;display:inline-block;=
+border-radius:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medent=
+x.com/mk/cl/f/K4ZXrZEjVDZ66fpKADR-ouOl1cqBZ4B7KNDy3aB6q61VivgriEVxZBFhDkam8=
+mjXFp-1jroDKXmlG-e61bd-C3MAemN6sHP7Vegnsu2Tyc-ndts3nsT4vg7eVzLud99gZXxK5A8B=
+PJBlopWaqSiWD5a70ERGzoNr0ycu8zabr3NghFWPG8b5Lxug15ZDPSpBouRC3XDU6Uw-BdEK4t3=
+zclwnQ9JcDN1bSQyghlpcF_Cq7g2wToKSzMkGNYXbXBsHS3_kHvLBi6NJsVjWihPC8YodXm8GuJ=
+9A6Qq0_jg647QXW9QeG_U5n3OQjBS04Lq6XZmevS69Ywnmubr8GcxxqFyJEPhkze2wkHMuTz5qf=
+za5l2WsL_Bpzt-V1oaAmaeVrFp56dtDQgOSmwYN8-PY5pI-rUW-wM-xCmXdgz1sT9mPniXRP4vF=
+oPGhgqXUfZtqVcl4xWTCb8lze8dh3Hs3FyHwsWVIGm8MxEC7mxf3QSr0OZexQOQLdYEY0Q1PMCB=
+Jl26yJ56esTIDdBGFnUnNz5w-YHpqUDOfrpLexlyGWZf5ShNk0AvO5k43Fzul5KlDHkwYbFMZaT=
+2Yjjr4Y3oNSPkAnrkK0KxMQEEwRqgOGiQlETmFmjUNNSGqA6Prn08Q0qv37kiB99GIWErVLSs0x=
+7rM9xJ7NJe3VF5Byl1zX4_5ztVYug" class=3D"es-button es-button-1" target=3D"_b=
+lank" style=3D"mso-style-priority:100 !important;text-decoration:none;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;color:#333333;font-size:16px;border-style:solid;border-color:#dbdbdb;b=
+order-width:0px 5px 5px;display:inline-block;background:#dbdbdb;border-radi=
+us:0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weig=
+ht:normal;font-style:normal;line-height:19px;width:auto;text-align:center" =
+sib_link_id=3D"23">Add to cart </a></span><!--<![endif]--></td> </tr> </tbo=
+dy></table></td> <td class=3D"es-hidden" style=3D"padding:0;Margin:0;width:=
+15px"></td> </tr> </tbody></table><!--[if mso]></td><td style=3D"width:154p=
+x" valign=3D"top"><![endif]--> <table cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"es-left" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;border-collapse:collapse;border-spacing:0px;float:left"> <tbody><tr=
+ style=3D"border-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"cente=
+r" style=3D"padding:0;Margin:0;width:139px"> <table style=3D"mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;bac=
+kground-color:#e4cade" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+gcolor=3D"#e4cade" role=3D"presentation"> <tbody><tr style=3D"border-collap=
+se:collapse"> <td align=3D"center" style=3D"Margin:0;padding-left:5px;paddi=
+ng-right:5px;padding-bottom:15px;padding-top:20px;font-size:0px"><a target=
+=3D"_blank" href=3D"https://r.news.medentx.com/mk/cl/f/EWje14HkXzmxzZGM8TJQ=
+LoaPvGMKENOkbOw2M2IEox6j_i77kJWEq5b58eb_rHR3C9xgB_iBJqolKf6un8CytTGQaSKd6w4=
+LCQUgTUZ2eYH-JzSSi0v4nDzE_BQ1_8PmkDIpL67lOuKIaUg5adaEWpdKMOs1BJt7yPZRar2aCV=
+iEafyuo7JDh-ghjK9pMb1Xeqls2Sgt4GktJJxDQ5QCXA5FNFWxL7VpNz9zXCSxicjk6HRc70uxc=
+-N2pcP0xleyM0EOfLaN4gZ0jDu9HreHXNoKv8Zsz5WSYGNU6ELj66kN45aUHZXHThuxL67Oz0oW=
+UaeJ5h_pM4dyFK-oAg9Vj2AE8awN_xdnPPAT6BY-7EWXqxn-WXKxRSTjL5Xamq4R" style=3D"=
+-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rul=
+e:exactly;text-decoration:underline;color:#333333;font-size:14px" sib_link_=
+id=3D"24"><img class=3D"adapt-img" src=3D"https://img.news.medentx.com/im/4=
+604737/53e23b89f01052ebe13d8198398ed8ca83dad5ab39c748351790583896ea7520.png=
+?e=3DiYH9es7raC4pKWuUyqcEEUdGhDIxmUNvqmxZ-AbDeV1aiS7SkfrJvAr3MhuHMIIz6j7edt=
+pAirKrg8IdYWNHXGgjz44-QjRrkZifBGu5dv1m-sPrIFvUa3gQtPm5xraRcBov0goojPRfyh7JI=
+YCejL5w7fDFlarLjXxm4xxB0GKtTAuorPs-P628prle5tVRKb9pAveS7Ga-tyhSVU2J7HRF0XF7=
+kLOV7FvNPlHNnzMqJGelaizO3SjqZvnznnBA9-XsBGoVP4DXHOnayogYq_Z5" alt=3D"Dispos=
+able Blue Isolation Knit Cuff Gowns 25GR 10/Bag" title=3D"Disposable Blue I=
+solation Knit Cuff Gowns 25GR 10/Bag" style=3D"display:block;border:0;outli=
+ne:none;text-decoration:none;-ms-interpolation-mode:bicubic" width=3D"90" s=
+ib_img_id=3D"11"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <t=
+d align=3D"center" style=3D"padding:0;Margin:0;padding-top:5px;padding-bott=
+om:5px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-se=
+rif;line-height:27px;color:#333333;font-size:18px">$<span class=3D"price">1=
+.49</span></p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:0;Margin:0"><p style=3D"Margin:0;-webkit-text-=
+size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;fon=
+t-family:verdana, geneva, sans-serif;line-height:17px;color:#333333;font-si=
+ze:14px">Disposable Blue Isolation Knit Cuff Gowns</p></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:10px;M=
+argin:0"><!--[if mso]><a href=3D"https://medentrx.com/disposable-blue-isola=
+tion-knit-cuff-gowns-25gr-10-bag-97324/?utm_source=3Dsendinblue&amp;utm_cam=
+paign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hi=
+dden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=
+=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" href=3D"http=
+s://medentrx.com/disposable-blue-isolation-knit-cuff-gowns-25gr-10-bag-9732=
+4/?utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;ut=
+m_medium=3Demail" style=3D"height:24px; v-text-anchor:middle; width:96px" a=
+rcsize=3D"0%" strokecolor=3D"#333333" strokeweight=3D"2px" fillcolor=3D"#f6=
+f6f6"> <w:anchorlock></w:anchorlock> <center style=3D"color:#333333; font-f=
+amily:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"=
+" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-=
+raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <![endif]--><!--[if=
+ !mso]><!-- --><span class=3D"msohide es-button-border-3 es-button-border" =
+style=3D"border-style:solid;border-color:transparent transparent #333333;ba=
+ckground:#f6f6f6;border-width:2px;display:inline-block;border-radius:0px;wi=
+dth:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f/Qko9CL=
+dpnEP_HRTfxMfExZh7TRiwAHa_mInCVR8_RhanAdAtUPQ-Oc1oZc4iEpTvX6Vb-HzpSMXTtrRFf=
+vPaFPCJHZa-2qAg9upbZVN-1Md7FRMM95Oz0mAg1ohXaRmVQimyyJ3gW4DC-v3upG6SCdZepu3v=
+jUJzY2kqLLlNU2sv0KOVpvRCajeMjpOeVECOP8iXVCRRW2GSZZf71ZKRAx3ndeTr8vwF2Y7L9X9=
+9MfIz7XrGa-KQyO_Fkb-IhzZIYKHjBf0ppyfs4oz2g3FW8_2nl0upfBLt2ig6OntCxGWWXSJdQA=
+WoM4YfZ9W2ypNgocxDSqxt2dIspau2E0v1mdldL2yVHVMXOAeuK2mUOJwPbVxeNZA2WM4tGoyMg=
+oiy" class=3D"es-button es-button-2" target=3D"_blank" style=3D"mso-style-p=
+riority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-=
+ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#333333;font-si=
+ze:16px;border-style:solid;border-color:#F6F6F6;border-width:0px 5px 5px;di=
+splay:inline-block;background:#F6F6F6;border-radius:0px;font-family:arial, =
+'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:norma=
+l;line-height:19px;width:auto;text-align:center" sib_link_id=3D"25">Add to =
+cart </a></span><!--<![endif]--></td> </tr> </tbody></table></td> <td class=
+=3D"es-hidden" style=3D"padding:0;Margin:0;width:15px"></td> </tr> </tbody>=
+</table><!--[if mso]></td><td style=3D"width:139px" valign=3D"top"><![endif=
+]--> <table cellpadding=3D"0" cellspacing=3D"0" class=3D"es-left" align=3D"=
+left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:co=
+llapse;border-spacing:0px;float:left"> <tbody><tr style=3D"border-collapse:=
+collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"padding:0;Marg=
+in:0;width:139px"> <table style=3D"mso-table-lspace:0pt;mso-table-rspace:0p=
+t;border-collapse:collapse;border-spacing:0px;background-color:#ddeaf0" wid=
+th=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ddeaf0" role=3D=
+"presentation"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D=
+"center" style=3D"padding:5px;Margin:0;font-size:0px"><a target=3D"_blank" =
+href=3D"https://r.news.medentx.com/mk/cl/f/IRx52UTyIRhx2cXLQedV1wZDnyrtv0-7=
+PAAypt_VXuEY2EbbasazZxta91QVUY25hoVL-yguBiQnlFvSqzh9YmmT7szNk8lPylg42Hjgh2o=
+wCQ7ie_G4dF8Fd5UA2FWO0TEH7j_jlz81JmrnftyLhrLFSoD1IkJjuVfhEjWDBCidCraez_1pou=
+CRPebB8MzDTl3Q0LvsBVRDHHriWRLtsN0lYOgwqLnABkWb2E422nAEX4C7iesNjzUA_l4rRLLyJ=
+wmbYm31xaNtinSDnhIWiM0dyyRYgADkr4EVzEOz4PXuajoMxuwlpAN0vuAWgntnRQCUwAvhxjx1=
+6z9Si0hBFczFSsFF_UfCvAPj" style=3D"-webkit-text-size-adjust:none;-ms-text-s=
+ize-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;colo=
+r:#333333;font-size:14px" sib_link_id=3D"26"><img class=3D"adapt-img" src=
+=3D"https://img.news.medentx.com/im/4604737/ca36d220922f95a7f2528c7f8ea7458=
+2d595451a488ef569ddd30afe6fce5551.png?e=3DUKBfUJ5VcVct4AuO4u-QfVWH269dEFfmH=
+JZ-9GiGoPLhaAH4n0TEhjslM5moewCAQTutvSaFxUe1fA_psEYZHCksqo6A4p57_azV0wJu17gl=
+dyElPoejx40x161mKABj7P9YRoh3ZaW9iPn9CqlG9Wc9DFGjEXjNix8--knENJExVWq-VEruTS1=
+zHfwGT7vUFdDiTNdti9oGM86GSKK8Z06m9CHjxRBpJBzCWOof0C4Y6dab1lP9Du0MvPkZ5MTZNv=
+JEtUxpaDBDvQyEjGAbeMZZvsWs84k" alt=3D"Earloop Face Masks Level 2" title=3D"=
+Earloop Face Masks Level 2" style=3D"display:block;border:0;outline:none;te=
+xt-decoration:none;-ms-interpolation-mode:bicubic" width=3D"120" sib_img_id=
+=3D"12"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:0;Margin:0;padding-bottom:5px;padding-top:30px=
+"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:n=
+one;mso-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;li=
+ne-height:27px;color:#333333;font-size:18px">$<span class=3D"price">5.95</s=
+pan></p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"ce=
+nter" style=3D"Margin:0;padding-top:5px;padding-left:5px;padding-right:5px;=
+padding-bottom:10px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms=
+-text-size-adjust:none;mso-line-height-rule:exactly;font-family:verdana, ge=
+neva, sans-serif;line-height:17px;color:#333333;font-size:14px">Earloop Fac=
+e Masks Level 2&nbsp;</p></td> </tr> <tr style=3D"border-collapse:collapse"=
+> <td align=3D"center" style=3D"Margin:0;padding-bottom:10px;padding-left:1=
+0px;padding-right:10px;padding-top:15px"><!--[if mso]><a href=3D"https://me=
+dentrx.com/earloop-face-masks-astm-level-ii-97323/?utm_source=3Dsendinblue&=
+amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D=
+"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml=
+" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" hre=
+f=3D"https://medentrx.com/earloop-face-masks-astm-level-ii-97323/?utm_sourc=
+e=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3De=
+mail" style=3D"height:24px; v-text-anchor:middle; width:96px" arcsize=3D"0%=
+" strokecolor=3D"#333333" strokeweight=3D"2px" fillcolor=3D"#dbdbdb"> <w:an=
+chorlock></w:anchorlock> <center style=3D"color:#333333; font-family:arial,=
+ " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font-size:=
+9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-raise:1px"=
+=3D"">Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !mso]><!-=
+- --><span class=3D"msohide es-button-border-5 es-button-border" style=3D"b=
+order-style:solid;border-color:transparent transparent #333333;background:#=
+dbdbdb;border-width:2px;display:inline-block;border-radius:0px;width:auto;m=
+so-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f/4vM4sugea8gWEHXD=
+P3jmIOBokBk3oG0Cx1bPfK9UDjqQ12Lt6e8wXqOq3PT1-8iLps30EpbC3uQ_lv2TUlyZ10Swx15=
+HceW9bS9XKPCc-D43Y0fMcsHRLe9nPqOFJbJwaRR6AyUQU-X6KNjll9cNOT7B7TaOFTbLPrQ_Fw=
+Nmz-j5qsrwbKFBpBDkdO0bwEXCLW0_IPjBHfxIgbAd03n0yNoPKmfdVyQkD_TYeZh0vM2Ia4cku=
+PT6yQkZiXA4QonQgrlrmvRoZVQ85fq8vD1XpKt3EXDPmAmvikqVHLwtrwcIZ-mNFCXYXHmZM2oJ=
+Bk2Dx8jn4BvjgrMq6syhF3Nu_gmUwg632lcAC2VE" class=3D"es-button es-button-4" t=
+arget=3D"_blank" style=3D"mso-style-priority:100 !important;text-decoration=
+:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-heig=
+ht-rule:exactly;color:#333333;font-size:16px;border-style:solid;border-colo=
+r:#dbdbdb;border-width:0px 5px 5px;display:inline-block;background:#dbdbdb;=
+border-radius:0px;font-family:arial, 'helvetica neue', helvetica, sans-seri=
+f;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-ali=
+gn:center" sib_link_id=3D"27">Add to cart </a></span><!--<![endif]--></td> =
+</tr> </tbody></table></td> </tr> </tbody></table><!--[if mso]></td><td sty=
+le=3D"width:15px"></td><td style=3D"width:139px" valign=3D"top"><![endif]--=
+> <table cellpadding=3D"0" cellspacing=3D"0" class=3D"es-right" align=3D"ri=
+ght" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:col=
+lapse;border-spacing:0px;float:right"> <tbody><tr style=3D"border-collapse:=
+collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;width:139px"> <=
+table style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:co=
+llapse;border-spacing:0px;background-color:#e4cade" width=3D"100%" cellspac=
+ing=3D"0" cellpadding=3D"0" bgcolor=3D"#e4cade" role=3D"presentation"> <tbo=
+dy><tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"Ma=
+rgin:0;padding-left:5px;padding-right:5px;padding-top:20px;padding-bottom:3=
+0px;font-size:0px"><a target=3D"_blank" href=3D"https://r.news.medentx.com/=
+mk/cl/f/Haej9HAIW3hnNob9vLPFxogOmzSiGig4EaWGPml4uKnEAnJB3QlqVYT0C-OBxikC0tu=
+GVyCnDbLf37rueKaARzkPXYcVz39863QIv7Qdqyh2QjOZrR-Qu4NhZiBCZ4kwiXdHXWjrPbyinx=
+RWOgqAeiJaU_tHcVLAnqz7CZ6H0CVWjntG7cDAv-giGwuUMwg6XzlGdJUWOzD5alAWwv9bJATr2=
+gPFZyTcGyDaEMeBYRi4l7_uxoZFSmqxa6CV_GKum3khGddyLwmRB3Dcp_OZZDiS_ZVCl4S-OBQe=
+DR-U2Q5PmL3Jphu0xQYWF6pasLyUu3oZC6soj0TvoyiJped4v1NZ6qBsMjjh0WhvYHOoCg-56V7=
+9kO9Jgwty41rjsg" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjus=
+t:none;mso-line-height-rule:exactly;text-decoration:underline;color:#333333=
+;font-size:14px" sib_link_id=3D"28"><img class=3D"adapt-img" src=3D"https:/=
+/img.news.medentx.com/im/4604737/e9eb78576249d12be5d9daad00843104c633125d52=
+3c0a3bbfa508375c66b3d4.png?e=3DkPZWYQJSoRxZov9l-XZcguYLWz_kJkgmL2LmnOUfKvDb=
+Aai9KUdl3TOic1UuNNN4PCJpPLS93Yq9m48Y9WbSG1Hra21GnyM74DOBrcvB1uwICW92WY540cf=
+_oroQD4ApXSUt60f7xK30CG6sKPyQ3vsZQuJkTrtDj7pY9soZTYB80FXYtjz4Hwg32Ehz15GtJV=
+MCvXCJSi10tr40JfxOZ7etYNVNVUiHW0kvsk02BwMhC1tdt3ULw9jVvZLfMCYTxk9CMTanlFgaa=
+LLn9HYdZlo" alt=3D"Light Weight Powder Free Nitrile Examination Gloves" tit=
+le=3D"Light Weight Powder Free Nitrile Examination Gloves" style=3D"display=
+:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bi=
+cubic" width=3D"129" sib_img_id=3D"13"></a></td> </tr> <tr style=3D"border-=
+collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;paddin=
+g-bottom:5px;padding-top:40px"><p style=3D"Margin:0;-webkit-text-size-adjus=
+t:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:v=
+erdana, geneva, sans-serif;line-height:27px;color:#333333;font-size:18px">$=
+5.95</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"ce=
+nter" style=3D"padding:0;Margin:0;padding-top:5px;padding-bottom:5px"><p st=
+yle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso=
+-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-heig=
+ht:17px;color:#333333;font-size:14px">Light Weight Powder Free Nitrile Exam=
+ination Gloves</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td a=
+lign=3D"center" style=3D"Margin:0;padding-top:5px;padding-bottom:10px;paddi=
+ng-left:10px;padding-right:10px"><!--[if mso]><a href=3D"https://medentrx.c=
+om/light-weight-powder-free-nitrile-examination-gloves-59040/?utm_source=3D=
+sendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail=
+" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-micros=
+oft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutt=
+on=3D"" href=3D"https://medentrx.com/light-weight-powder-free-nitrile-exami=
+nation-gloves-59040/?utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Su=
+mmer_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:mid=
+dle; width:96px" arcsize=3D"0%" strokecolor=3D"#333333" strokeweight=3D"2px=
+" fillcolor=3D"#f6f6f6"> <w:anchorlock></w:anchorlock> <center style=3D"col=
+or:#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D""=
+ "sans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9=
+px;=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <=
+![endif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-border-3 =
+es-button-border" style=3D"border-style:solid;border-color:transparent tran=
+sparent #333333;background:#f6f6f6;border-width:2px;display:inline-block;bo=
+rder-radius:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medentx.=
+com/mk/cl/f/0yge7lt6zjYPS0RVJWfeQINvbH_eCYQkBehDkeXfgDGNwy26dJeOTEmocIPNMj1=
+CcpsjBMZuISvlk_1fuZKT-9zZBOy5go5FnZWYZUYazMhaI8ud3SWIvFKEzmwaAUe4Uo_XDK171J=
+fuW2i10rP9ELIyfdAfI40ab_TXpYkQ2x4CiDAuoYvkQVpUbH9IL-vugYn_cN6iQCcC1PRovS7D9=
+ucqnazosDJJQhzhdAc0ly1D0uz15-HriZ7nYy1N79A3Ea30VX8-1O2ETTCfMyE4JkbCUOYnwX5X=
+xtHhR_suvb1YvvnCkaHRhewiQVWbnFS9LorMY3-9RWOqGNqskd8sNw_1pS00tTseV_IKQs2-syE=
+uKpR7_tHRe1eLT7_E7Q" class=3D"es-button es-button-2" target=3D"_blank" styl=
+e=3D"mso-style-priority:100 !important;text-decoration:none;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color=
+:#333333;font-size:16px;border-style:solid;border-color:#F6F6F6;border-widt=
+h:0px 5px 5px;display:inline-block;background:#F6F6F6;border-radius:0px;fon=
+t-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;=
+font-style:normal;line-height:19px;width:auto;text-align:center" sib_link_i=
+d=3D"29">Add to cart </a></span><!--<![endif]--></td> </tr> </tbody></table=
+></td> </tr> </tbody></table><!--[if mso]></td></tr></table><![endif]--></t=
+d> </tr> </tbody></table></td> </tr> </tbody></table> <table class=3D"es-co=
+ntent" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"mso-ta=
+ble-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing=
+:0px;table-layout:fixed !important;width:100%"> <tbody><tr style=3D"border-=
+collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0"> <tab=
+le class=3D"es-content-body" style=3D"mso-table-lspace:0pt;mso-table-rspace=
+:0pt;border-collapse:collapse;border-spacing:0px;background-color:#f6f6f6;w=
+idth:600px" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f6f6f6" align=
+=3D"center"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D"le=
+ft" style=3D"padding:0;Margin:0"><!--[if mso]><table style=3D"width:600px" =
+cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"width:296px" valign=3D=
+"top"><![endif]--> <table class=3D"es-left" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;bo=
+rder-collapse:collapse;border-spacing:0px;float:left"> <tbody><tr style=3D"=
+border-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"left" style=3D"=
+padding:0;Margin:0;width:296px"> <table style=3D"mso-table-lspace:0pt;mso-t=
+able-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-colo=
+r:#fec496" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f=
+ec496" role=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse"=
+> <td class=3D"adapt-img" align=3D"center" style=3D"padding:0;Margin:0;padd=
+ing-top:10px;padding-bottom:30px;font-size:0px"><a href=3D"https://r.news.m=
+edentx.com/mk/cl/f/44BttWUt6HHZAMj4icAQkzDYiNJMGK8BpHTrGrJsIsXeDo-4yZFU6He3=
+7QLOHSHZIRyFKtLv0CzOr91J6-Bg7eQw2sXngtcfHjRuNxVzKA-NNTErXmZzmxThEWI8wnSMnzb=
+8QdWc3oK2u5YzFNS0hPIvOYKOflayI0xoykD6Qp4fNa_nDJan1-uPbI3z6D1c_ELWHjOvuBx3bd=
+DtuztoJ3oyPPF_NJkLM1bvoa3r9Iyo3f-VxEb5RHxPhxhX2dN-CbDwZVIgkcgWDq82RNXup95jP=
+ZT33vp6P7zW1PCxanOdGNXVlbZJW0Q5ExhxYP4RMKyyTdrg3OL0U6B4DYsLEgzsa7S-pgxNmQmA=
+RfxtZ9YR3YMKKSRKoXVkjc9_M0iHuM_Fh2CzeK5GI8TfnAAOzbgsdx45g4v5vhgtBzD4StCmayL=
+rPEm16c0D3QP2HlwVIWnfYdbNaWZnmeoVfqKu_DdUY5_zPMkZ8ta5Q_5X7FMghkZOcuX33wSdxS=
+auNyRqpz9PTHU2aXISt34MNvCwavb2jPrLxOtTEwZR-6T4URlsxXp6OXwgbfs-i5AZvjHLJQeNH=
+0AzflKisx4Z73E8PZIvruaOdi2S4YREoEWBdS4nQwDjBgsfqPA" target=3D"_blank" style=
+=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height=
+-rule:exactly;text-decoration:underline;color:#333333;font-size:14px" sib_l=
+ink_id=3D"30"><img src=3D"https://img.news.medentx.com/im/4604737/85899ff41=
+99b1a0bb8843a876b58c8667672e6647775b47d25cc05df40859687.png?e=3DC5DwlCPtLJ5=
+BRBvliA6MTZq6t1MaNdou8P2O8ChTM1uqIW2jRlYZapnxjJSjmpUXaMuoU41Hhk1T7QfKNnuMVQ=
+1ARzmrbd4qwUTXJVLHFJJumm0_L5HaRvsVebC6KUnEDED__nVzejRUk3SzkjAl445yYyqzUAJw5=
+ix5F_dRkCDjbrgjcjxJSQ5oT_BeeT3DReRvCTB9nBa-vwXJgSTeR3ubIdKNy9KlRo0uigrOUByS=
+rKVdqKUkqauBVhMVjSqRwYX037ds2vTGmlI" alt=3D"Hercules Foldable Lightweight E=
+lectric Battery Mobility Wheelchair Motorized Travel Safe" class=3D"adapt-i=
+mg" title=3D"Hercules Foldable Lightweight Electric Battery Mobility Wheelc=
+hair Motorized Travel Safe" style=3D"display:block;border:0;outline:none;te=
+xt-decoration:none;-ms-interpolation-mode:bicubic" width=3D"296" sib_img_id=
+=3D"14"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:5px;Margin:0"><h2 style=3D"Margin:0;line-heigh=
+t:29px;mso-line-height-rule:exactly;font-family:georgia, times, 'times new =
+roman', serif;font-size:24px;font-style:normal;font-weight:normal;color:#33=
+3333">Hercules Foldable Lightweight Electric Battery Mobility Wheelchair Mo=
+torized Travel Safe</h2></td> </tr> <tr style=3D"border-collapse:collapse">=
+ <td align=3D"center" style=3D"padding:15px;Margin:0"><p style=3D"Margin:0;=
+-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rul=
+e:exactly;font-family:verdana, geneva, sans-serif;line-height:21px;color:#3=
+33333;font-size:14px">Hercules Lite EX Powerful Dual Motor Foldable Medical=
+ Electric Mobility Wheelchair, Supports up to 285 lbs - Weight 75 lbs by Ba=
+ngeran</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"=
+center" style=3D"padding:5px;Margin:0"><p style=3D"Margin:0;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-=
+family:verdana, geneva, sans-serif;line-height:27px;color:#333333;font-size=
+:18px">$<span class=3D"price">999.00</span></p></td> </tr> <tr style=3D"bor=
+der-collapse:collapse"> <td align=3D"center" style=3D"Margin:0;padding-left=
+:10px;padding-right:10px;padding-top:15px;padding-bottom:15px"><!--[if mso]=
+><a href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_fro=
+m_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;se=
+arch_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dwheelchair&amp;dispatc=
+h=3Dproducts.search&amp;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&am=
+p;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm=
+_medium=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:wor=
+d" esdevvmlbutton=3D"" href=3D"https://medentrx.com/?match=3Dall&amp;subcat=
+s=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;p=
+keywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dwhe=
+elchair&amp;dispatch=3Dproducts.search&amp;security_hash=3Df02149801e03eb20=
+55fa0a8c91286fd2&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Su=
+mmer_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:mid=
+dle; width:96px" arcsize=3D"0%" strokecolor=3D"#666666" strokeweight=3D"2px=
+" fillcolor=3D"#f6f6f6"> <w:anchorlock></w:anchorlock> <center style=3D"col=
+or:#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D""=
+ "sans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9=
+px;=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <=
+![endif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-border" s=
+tyle=3D"border-style:solid;border-color:transparent transparent #666666;bac=
+kground:#f6f6f6;border-width:2px;display:inline-block;border-radius:0px;wid=
+th:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f/fVxVWUk=
+gNIrcB65JLGD4hnw5ZPVzQ201gAfJ5GMlBGovIH9PTBQElv-Vcooi4scElY94RzTueL8vd14yWO=
+FM8ijTvB-YR5Y1EF-8ZqWQIk0iRYqKt_GvMkR1L9J_80FDvzSsSIAH_g1uSycnLjCCHm4YS0N1S=
+_T4_pxiF8nPlVuahGA3O8lJMnP6Tq9hSSDVOM1T272KuS1Yo_RCLSJ9NFWc69IWmgV-Vky3XxCH=
+YBeJquswGC4lTA-UDepYKCCKbg8ccS1ZQCDJ-9RrW5Lv8HEGV5hPeT5jn2eULDGezCNYm6c-Uk5=
+4Z9aD_Kfux1J7OoCRZKHEpLD6wt1YCZ8gK-W4bvQYKUk4U-pnVHfX68u3caGggU-UF1QKzKPgmI=
+gX_ZySVTmLrCp6Q91lyrhkyn73nEZIlDzAn3rqCgzZTLpq5i_1mpSV3M7RBL1lCwrPzyA8HLEKg=
+-XrJBODylBjs2kiG_XlnTNbjDK6PJKsIde770Ek1paenD2XkyH5j55ZnFmJx6HwWa5SHcRaBrsV=
+rziQt2UO3HB1JAFYAYthANt7ELTkhiaB251f0RQc5jLzZopsY5luJ6sY0YW-SWx_hv8aRH5B9Mp=
+61-EZfZpsu46FCtlkRLjVb2s" class=3D"es-button es-button-1" target=3D"_blank"=
+ style=3D"mso-style-priority:100 !important;text-decoration:none;-webkit-te=
+xt-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;=
+color:#333333;font-size:16px;border-style:solid;border-color:#F6F6F6;border=
+-width:0px 5px 5px;display:inline-block;background:#F6F6F6;border-radius:0p=
+x;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:no=
+rmal;font-style:normal;line-height:19px;width:auto;text-align:center" sib_l=
+ink_id=3D"31">Add to cart </a></span><!--<![endif]--></td> </tr> </tbody></=
+table></td> </tr> </tbody></table><!--[if mso]></td><td style=3D"width:15px=
+"></td><td style=3D"width:289px" valign=3D"top"><![endif]--> <table class=
+=3D"es-right" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" style=3D"=
+mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-s=
+pacing:0px;float:right"> <tbody><tr style=3D"border-collapse:collapse"> <td=
+ align=3D"left" style=3D"padding:0;Margin:0;width:289px"> <table width=3D"1=
+00%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#fbdfc5" style=3D"mso-t=
+able-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacin=
+g:0px;background-color:#fbdfc5" role=3D"presentation"> <tbody><tr style=3D"=
+border-collapse:collapse"> <td class=3D"adapt-img" align=3D"center" style=
+=3D"padding:0;Margin:0;font-size:0px"><a href=3D"https://r.news.medentx.com=
+/mk/cl/f/SLAgwtft0rj7iuGah0LfHXhuVoL4atUGWQC3ax1Qh1GjjjpR5v-clQ3k6qmWZYhUJO=
+ybfvimOGOSXqJYV2HM6xVjqbTDDsB2rh4qFF_o3mcGOpCToXme-v-h-bCKubZh5yXRTUN3oQSdT=
+ob9MoQ97U8W0HInUQ7BbkfCds07bH9rgPV85nGBHh8A8OCdVotzvq55ZvlSLP0TJepCtu8r1LiN=
+fuyoH0fmHcZKw7nqIUioMZAJSOT9ddBb6mt0lKD7dcBfW5T_GmrohQXRh1ajzN4lHLAvyKq3Q0a=
+56h3QZbZ78qAzNqAlc9YpdH6L97YMYCnIqehyVm8SpqzcIsfge5HcylMSbRit-40aE8RPdpUkik=
+A" target=3D"_blank" style=3D"-webkit-text-size-adjust:none;-ms-text-size-a=
+djust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#33=
+3333;font-size:14px" sib_link_id=3D"32"><img src=3D"https://img.news.medent=
+x.com/im/4604737/2916bb426bedb7ac87b477fa5f83d5763dd7186062e839357ed3d2c4b7=
+ec34b1.png?e=3DlMqEplvm69SOoDai1NQmIX7aoB4iwjOmmr5NSaPOy-ZnZyZ6wOPR-WWDnS6G=
+Kf_QKPi3UqIdWdV_TiO5DsXFfZpXhx76l395bHEfpOdrRQrYnaicDEzvOAWY1lbNrG1yR8N9d9Y=
+kYGZJXHd81AX90NcI3KV2YNj9Vj4UDIdwDeZcAHpQLgtFqMM3LTydFFPueUqwqyU1sMcCJiOwso=
+mqN9-fDF3WDkXQd-Io4r91Q_jPFqP3VdAhULlnBof7kZ5KjMZz_3aQKa5O" alt=3D"Avante P=
+remio E250 Electric Hospital Bed" class=3D"adapt-img" title=3D"Avante Premi=
+o E250 Electric Hospital Bed" width=3D"289" style=3D"display:block;border:0=
+;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" sib_img_=
+id=3D"15"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:0;Margin:0;padding-top:5px;padding-left:25px;p=
+adding-right:25px"><h3 style=3D"Margin:0;line-height:24px;mso-line-height-r=
+ule:exactly;font-family:georgia, times, 'times new roman', serif;font-size:=
+20px;font-style:normal;font-weight:normal;color:#333333">Avante Premio E250=
+ Electric Hospital Bed</h3></td> </tr> <tr style=3D"border-collapse:collaps=
+e"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-top:5px"><p st=
+yle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso=
+-line-height-rule:exactly;font-family:verdana, geneva, sans-serif;line-heig=
+ht:27px;color:#333333;font-size:18px">$<span class=3D"price">3,569.22</span=
+></p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"cente=
+r" style=3D"Margin:0;padding-top:10px;padding-left:10px;padding-right:10px;=
+padding-bottom:15px"><!--[if mso]><a href=3D"https://medentrx.com/avante-pr=
+emio-e250-electric-hospital-bed-96755/?utm_source=3Dsendinblue&amp;utm_camp=
+aign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hid=
+den=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D=
+"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" href=3D"https:/=
+/medentrx.com/avante-premio-e250-electric-hospital-bed-96755/?utm_source=3D=
+sendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail=
+" style=3D"height:24px; v-text-anchor:middle; width:96px" arcsize=3D"0%" st=
+rokecolor=3D"#666666" strokeweight=3D"2px" fillcolor=3D"#f6f6f6"> <w:anchor=
+lock></w:anchorlock> <center style=3D"color:#333333; font-family:arial, " h=
+elvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font-size:9px;=
+=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-raise:1px"=3D"">=
+Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !mso]><!-- --><=
+span class=3D"msohide es-button-border" style=3D"border-style:solid;border-=
+color:transparent transparent #666666;background:#f6f6f6;border-width:2px;d=
+isplay:inline-block;border-radius:0px;width:auto;mso-hide:all"><a href=3D"h=
+ttps://r.news.medentx.com/mk/cl/f/jKYmYhLu8EVMmb7IIMCCp1N7nVE1i-vB4Ifanlr5j=
+1-HktUbZZsCdOj-2I23jnQCeLkNqvGW3U9UaaZGDy1i0q2sGU6rb756BDXGxgy4GkQ6fliyEiSg=
+X2381lAjkb3dpcAWJXFM9-iFYXTzrv7yJSKXNhXLtaGpPP97UyEv7LEyM10ul4zFMTBzWBhzDJW=
+FUw_YvIIhDfQDzGCccgNJmxpF0iDBlqDq9ce3YEM9LR3MB5KO7TqEH4uXHJcFS63th2dT2Lvuxm=
+XVzH5jEFjHdgw3imER8x-oeUU7eoIpA3B_uqhKUWqSLLN2hDFDJLaB0SnUb5Aqvq_OkKF5hCuRx=
+h_YSilEEX8mtzf41EwaAOoNkb4" class=3D"es-button es-button-1" target=3D"_blan=
+k" style=3D"mso-style-priority:100 !important;text-decoration:none;-webkit-=
+text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactl=
+y;color:#333333;font-size:16px;border-style:solid;border-color:#F6F6F6;bord=
+er-width:0px 5px 5px;display:inline-block;background:#F6F6F6;border-radius:=
+0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:=
+normal;font-style:normal;line-height:19px;width:auto;text-align:center" sib=
+_link_id=3D"33">Add to cart </a></span><!--<![endif]--></td> </tr> </tbody>=
+</table></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"le=
+ft" style=3D"padding:0;Margin:0;width:289px"> <table style=3D"mso-table-lsp=
+ace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;ba=
+ckground-color:#f6f6f6" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+bgcolor=3D"#f6f6f6" role=3D"presentation"> <tbody><tr style=3D"border-colla=
+pse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-top=
+:5px;padding-bottom:5px;font-size:0"> <table width=3D"100%" height=3D"100%"=
+ cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" sty=
+le=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;bo=
+rder-spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td style=
+=3D"padding:0;Margin:0;border-bottom:0px solid #f6f6f6;background:#FFFFFF n=
+one repeat scroll 0% 0%;height:1px;width:100%;margin:0px"></td> </tr> </tbo=
+dy></table></td> </tr> </tbody></table></td> </tr> <tr style=3D"border-coll=
+apse:collapse"> <td align=3D"left" style=3D"padding:0;Margin:0;width:289px"=
+> <table style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse=
+:collapse;border-spacing:0px;background-color:#fecf6b" width=3D"100%" cells=
+pacing=3D"0" cellpadding=3D"0" bgcolor=3D"#fecf6b" role=3D"presentation"> <=
+tbody><tr style=3D"border-collapse:collapse"> <td class=3D"adapt-img" align=
+=3D"center" style=3D"padding:0;Margin:0;padding-top:5px;font-size:0px"><a h=
+ref=3D"https://r.news.medentx.com/mk/cl/f/Lbt6Stvi-HREB7eY8QTBsqRMcSe37AHaf=
+Qi4Q-2wGGMFkUVNWMI7S-2sBKK9sQjCsizXbDdzg9MBnL_U5bixgKYBYa9JLACkDNLone81Tfpi=
+Hq9FF5BAb6vmvyIIY6b3G0iy3QZ_61UrPcFMc1V4i3teJ17LLM7NqRrCOizwfphxRtjWSbxwxve=
+96Eqy05dM1h-XYMb9R3b79A6w32C2517gpf6uWOf9WkCbjBHf_goUW_RNSgJgWEHIb34tGkiIxO=
+R-XhWf6a8TTFkg-ue_Ahl6dMtPDOcOX3ULM_WqIbSFCessHR75k8B7L6GGvNtToxk1D5j9b06Wn=
+A" target=3D"_blank" style=3D"-webkit-text-size-adjust:none;-ms-text-size-a=
+djust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#33=
+3333;font-size:14px" sib_link_id=3D"34"><img src=3D"https://img.news.medent=
+x.com/im/4604737/4099f22c0ac3851a7a563744b6fc13c965a4ca90cd3389b98c58a19fc7=
+ff7282.png?e=3D63IJW8Rpbpkd3EVav_OFRh6sAhR-Ouks-Lcc2a4UPtGwbmb6RP8r_6KMfwDL=
+d0gJBilpYmCO1xG4R1CA7WQfHGp5a_wCeA7hWm1BJJWYEPtxNg7u_TqTFknnxTceC-FtbJ97acb=
+rjzsF02sU4jL_iAJLtegkJGd5hA7mU6GEyOdK3ZGovCQgfcOAO8swJ6N3lLWGPQyQ2vyiD57O-i=
+nnfvbw8kN9z2JyimRNAkZTb-V3QJqWsX2w95xtstKDgAyY17doSReSpvQ" alt=3D"Canine Do=
+g Skeleton Model Small Size" class=3D"adapt-img" title=3D"Canine Dog Skelet=
+on Model Small Size" height=3D"151" style=3D"display:block;border:0;outline=
+:none;text-decoration:none;-ms-interpolation-mode:bicubic" sib_img_id=3D"16=
+"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"cent=
+er" style=3D"padding:0;Margin:0;padding-top:10px;padding-left:40px;padding-=
+right:40px"><h3 style=3D"Margin:0;line-height:24px;mso-line-height-rule:exa=
+ctly;font-family:georgia, times, 'times new roman', serif;font-size:20px;fo=
+nt-style:normal;font-weight:normal;color:#333333">Canine Dog Skeleton Model=
+ Small Size</h3></td> </tr> <tr style=3D"border-collapse:collapse"> <td ali=
+gn=3D"center" style=3D"padding:0;Margin:0;padding-top:10px"><p style=3D"Mar=
+gin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-heig=
+ht-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:27px;co=
+lor:#333333;font-size:18px">$<span class=3D"price">99.00</span></p></td> </=
+tr> <tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"M=
+argin:0;padding-left:10px;padding-right:10px;padding-bottom:15px;padding-to=
+p:25px"><!--[if mso]><a href=3D"https://medentrx.com/wellden-international/=
+?utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_=
+medium=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word=
+" esdevvmlbutton=3D"" href=3D"https://medentrx.com/wellden-international/?u=
+tm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_me=
+dium=3Demail" style=3D"height:24px; v-text-anchor:middle; width:96px" arcsi=
+ze=3D"0%" strokecolor=3D"#666666" strokeweight=3D"2px" fillcolor=3D"#f6f6f6=
+"> <w:anchorlock></w:anchorlock> <center style=3D"color:#333333; font-famil=
+y:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" fo=
+nt-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-rais=
+e:1px"=3D"">Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !ms=
+o]><!-- --><span class=3D"msohide es-button-border" style=3D"border-style:s=
+olid;border-color:transparent transparent #666666;background:#f6f6f6;border=
+-width:2px;display:inline-block;border-radius:0px;width:auto;mso-hide:all">=
+<a href=3D"https://r.news.medentx.com/mk/cl/f/qP2WHcudouH2-_lMkvCGtKCZ5ddO1=
+z1ktmjF-gaCAI4n4kbsLNnimJpX-nOAVquYV2da6BM611oJguPl-vZ84aYjfgQfiY3w9wn_oN7m=
+IgWE70y44YH84fxcCGEP3e7qGe9LunSi45g6aHNLlQfsryHIAIHwtFkxH3Z5_AaeZfHV6VCyCDN=
+EyryJtFa-RjnVhOtybaMHuBnK7UBts4IHW7CYPg98HrrqTCR_doyY1m0jtY5hGEHKd9Y_DGhKLJ=
+b-eo8U3AQm76J2T0wfzdcrCRBFL0vcX8fsm6oZLZFAQ1g9_lb3gFtT_nUozjJEC-Y3xtK711q4E=
+KHRPw" class=3D"es-button es-button-1" target=3D"_blank" style=3D"mso-style=
+-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none=
+;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#333333;font-=
+size:16px;border-style:solid;border-color:#F6F6F6;border-width:0px 5px 5px;=
+display:inline-block;background:#F6F6F6;border-radius:0px;font-family:arial=
+, 'helvetica neue', helvetica, sans-serif;font-weight:normal;font-style:nor=
+mal;line-height:19px;width:auto;text-align:center" sib_link_id=3D"35">Add t=
+o cart </a></span><!--<![endif]--></td> </tr> </tbody></table></td> </tr> <=
+/tbody></table><!--[if mso]></td></tr></table><![endif]--></td> </tr> <tr s=
+tyle=3D"border-collapse:collapse"> <td align=3D"left" style=3D"padding:0;Ma=
+rgin:0"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-=
+spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D"l=
+eft" style=3D"padding:0;Margin:0;width:600px"> <table style=3D"mso-table-ls=
+pace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;b=
+ackground-color:#f6f6f6" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ bgcolor=3D"#f6f6f6" role=3D"presentation"> <tbody><tr style=3D"border-coll=
+apse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-to=
+p:5px;padding-bottom:5px;font-size:0"> <table width=3D"100%" height=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td styl=
+e=3D"padding:0;Margin:0;border-bottom:0px solid #f6f6f6;background:#FFFFFF =
+none repeat scroll 0% 0%;height:1px;width:100%;margin:0px"></td> </tr> </tb=
+ody></table></td> </tr> </tbody></table></td> </tr> </tbody></table></td> <=
+/tr> </tbody></table></td> </tr> </tbody></table> <table class=3D"es-conten=
+t" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"mso-table-=
+lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px=
+;table-layout:fixed !important;width:100%"> <tbody><tr style=3D"border-coll=
+apse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0"> <table c=
+lass=3D"es-content-body" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f6=
+f6f6" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;b=
+order-collapse:collapse;border-spacing:0px;background-color:#F6F6F6;width:6=
+00px"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D"left" st=
+yle=3D"padding:0;Margin:0;padding-top:5px;padding-bottom:5px"><!--[if mso]>=
+<table style=3D"width:600px" cellpadding=3D"0" cellspacing=3D"0"><tr><td st=
+yle=3D"width:153px"><![endif]--> <table class=3D"es-left" cellspacing=3D"0"=
+ cellpadding=3D"0" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-r=
+space:0pt;border-collapse:collapse;border-spacing:0px;float:left"> <tbody><=
+tr style=3D"border-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"cen=
+ter" style=3D"padding:0;Margin:0;width:138px"> <table style=3D"mso-table-ls=
+pace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;b=
+ackground-color:#ddeaf0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ bgcolor=3D"#ddeaf0" role=3D"presentation"> <tbody><tr style=3D"border-coll=
+apse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;font-size:=
+0px"><a target=3D"_blank" href=3D"https://r.news.medentx.com/mk/cl/f/IC6sWl=
+eLN39BFvSlLn2G-7kMD_Z9iZpRS6sdAPdAjDoRELnP4GcE9wVonpJGA2_VWQV6G_OAgX8kQBP9V=
+3TGpYkDOZuVCPkdDIekKul9D4KxBuhW1PwDgxlv3Gp1VWJXW6OFIt0djw9ITd53qwyPgnImTY0a=
+FcguerVLO7oSbDswEDK1YMGFq76CoOuDO5N6d33vs-gJNbvVuXnUd--f2oPGK6PCKM5AwMEOl-O=
+lScZ_yf8HRyYWd8OkwyT65ybRqgGumS4H6rlLOpMzmaGZZ8J42ZnnPHlm7bShkg2RIgMx-4rQ98=
+fTJN4KwtN6eYE1x_39SlFAorjielSwlr6KiGZYJHaY7bOdWeD5Zyae50DDSo4UJEZqspE4U8bAB=
+EaOST1fBTDGjfDccincKwbn_Ev1gToCWAibiCNg4IdiDxGIkgX6m2eqGMSEkchjWgOmCk9mmpoL=
+r_-M4-jU3RYxmams1qax1wmoWprA40UkQ15tNe5qfsUjIG3-JZNwrX5Kpyu-w_DF7vb3wQ5e8AA=
+UJW-2hSO5B0wrflHvP8IBJ8IBhNa_YeKZWqmFRkPaBCZkkMbp3Fw7jO6msvzEi3bzS2o0l2PT8-=
+nx0ST9b9gcg8fk5qf8fg" style=3D"-webkit-text-size-adjust:none;-ms-text-size-=
+adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#3=
+33333;font-size:14px" sib_link_id=3D"36"><img class=3D"adapt-img" src=3D"ht=
+tps://img.news.medentx.com/im/4604737/6ea4d1570aeb078b4c2f65c8aa37cba3b60f6=
+d06fcd65cbad2d84cf1c3c82975.png?e=3DQb-hrIWkBfjPmPkye0cfyN17czyY4ti1Rdgg_D6=
+RSpuH-pgY9k1UkcDo6wezwrU0rXmsp1UNznLM5uLxd4RuyoP6iqTpzYKWZiXwG9qMmydi_3rVu1=
+QTlZctB96ZzWcr0JzKlZwkIYG0fZEONVMq_PaN-mn9eDyglw-ymqDvXo8LxidMgyAMrzxYk_IcO=
+f2XEEzcxmWW-KVHxJuMIsEJNz6b_AoGRrvbs5If2qcAVlJ6QeQcbiRVxXZBhWCXi8ZusCbG7I2G=
+2xTx" alt=3D"Filtek Z250 XT Nano Hybrid Universal Restorative Capsule Refil=
+l" title=3D"Filtek Z250 XT Nano Hybrid Universal Restorative Capsule Refill=
+" style=3D"display:block;border:0;outline:none;text-decoration:none;-ms-int=
+erpolation-mode:bicubic" width=3D"109" sib_img_id=3D"17"></a></td> </tr> <t=
+r style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding=
+:0;Margin:0;padding-bottom:5px;padding-top:10px"><p style=3D"Margin:0;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:verdana, geneva, sans-serif;line-height:27px;color:#333333=
+;font-size:18px">$<span class=3D"price">46.50</span></p></td> </tr> <tr sty=
+le=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Ma=
+rgin:0;padding-bottom:10px;padding-top:15px"><p style=3D"Margin:0;-webkit-t=
+ext-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly=
+;font-family:verdana, geneva, sans-serif;line-height:21px;color:#333333;fon=
+t-size:14px">Filtek Z250 XT Nano Hybrid</p></td> </tr> <tr style=3D"border-=
+collapse:collapse"> <td align=3D"center" style=3D"Margin:0;padding-bottom:1=
+0px;padding-left:10px;padding-right:10px;padding-top:15px"><!--[if mso]><a =
+href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_from_q=
+=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;searc=
+h_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dfiltek&amp;dispatch=3Dpro=
+ducts.search&amp;security_hash=3Decb4944f29dcbbff79ddd2b4dd619ae4&amp;utm_s=
+ource=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medium=
+=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:schema=
+s-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" esde=
+vvmlbutton=3D"" href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&a=
+mp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeyword=
+s=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dfiltek&amp=
+;dispatch=3Dproducts.search&amp;security_hash=3Decb4944f29dcbbff79ddd2b4dd6=
+19ae4&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2=
+&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:middle; width:=
+96px" arcsize=3D"0%" strokecolor=3D"#666666" strokeweight=3D"2px" fillcolor=
+=3D"#dbdbdb"> <w:anchorlock></w:anchorlock> <center style=3D"color:#333333;=
+ font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-seri=
+f";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" ms=
+o-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <![endif]-->=
+<!--[if !mso]><!-- --><span class=3D"msohide es-button-border-5 es-button-b=
+order" style=3D"border-style:solid;border-color:#f6f6f6 #f6f6f6 #666666;bac=
+kground:#dbdbdb;border-width:2px;display:inline-block;border-radius:0px;wid=
+th:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f/gZidrxH=
+yvSXpgCiDtjV7TWFqW9J5bCZmz6mHG4q0YJvI4pU4rrFT5dvrvURAl-6FbhA1ebC0ASi0pfORBW=
+dUdG_0i8UOpIp6ehOXEwHDMVGDXsGnkmCbO86TLrPMO9oN7fmo13Ub1wzl21HVyTQqcaVRFgYtM=
+sAhsbE7bdrtpSUEIQqdNs1esAuWyXdkAoi8tlaVMRjzYI-GP8po_Co-KJL2hK07mdr1CUjM3uw6=
+EcSoRayDw_m0izMn_J9baCp2ovYEoaoKnwCVhZz4Wn4JJ6wR50hwn2c4cUUuBKP2ErZ_w2g3gdN=
+kBE0Zmy7qz_eiVwxySR1h1Vy4mBlYmDY0spmqKQ-kzPaas7fc0P2j_49M2-3IvykLO84Nj-FqUz=
+OdYcwYutYArPc689PDdiehkElkuwTCy6M473zSBNc2UeANzJvAg5ruHe25VKuQpGx_wSuDap30I=
+6KMizECuagB0VhyfuYfVMyqWYXRKZQ27dsVs864LZr4bwmnbr8i4vVo2VQ8yCicA2sJoyh2QTuL=
+E3g1exloSEgSDBFQk_YepauCRrB00In2J7SNesHwivPT4WKJTtSetWFmmZ9LZsIvy22KzFShyEc=
+YtqBZsZx6k-FFvefG4w" class=3D"es-button es-button-4" target=3D"_blank" styl=
+e=3D"mso-style-priority:100 !important;text-decoration:none;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color=
+:#333333;font-size:16px;border-style:solid;border-color:#dbdbdb;border-widt=
+h:0px 5px 5px;display:inline-block;background:#dbdbdb;border-radius:0px;fon=
+t-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;=
+font-style:normal;line-height:19px;width:auto;text-align:center" sib_link_i=
+d=3D"37">Add to cart </a></span><!--<![endif]--></td> </tr> </tbody></table=
+></td> <td class=3D"es-hidden" style=3D"padding:0;Margin:0;width:15px"></td=
+> </tr> </tbody></table><!--[if mso]></td><td style=3D"width:154px"><![endi=
+f]--> <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0" align=3D=
+"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:c=
+ollapse;border-spacing:0px;float:left"> <tbody><tr style=3D"border-collapse=
+:collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"padding:0;Mar=
+gin:0;width:139px"> <table style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;background-color:#e4cade" wi=
+dth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#e4cade" role=
+=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:0;Margin:0;padding-bottom:5px;padding-left:5px=
+;padding-right:5px;font-size:0px"><a target=3D"_blank" href=3D"https://r.ne=
+ws.medentx.com/mk/cl/f/JhrPevBg306eUcnFsjZ_vgCWy-fYzzJb-kA-yvNcWAAAaQ7Ildrj=
+11m3ZdTgCF7yUDEyiQdBWMj0ByUc9vQgcEX6VMLp2oyia8WjD9kitB4JsCdbk2vPXD-xYrQgyZn=
+lxHg-rMV4AnuifbtxdEXFy25ELWBVnYVZ9LZN_vC_Be6Q8TVtmr_i4HcIfU1reOAzjRVvsZX-Il=
+ee7E_dCdEC-tZS4R3R8FtMaaYMRJuFVPP2olfq7mbGhkybFs351DxN-DkiR2OaTbmeJZZK4k6Hf=
+pxatval4pd-Ac8JfUC_l9alyd_1aBUeGvvJs3nnXdhllkVX8J5LWLg6zKsEifoxFLNsZRzsroEr=
+w285kQY-I4ASeYiTzvKH-_MqQdsa8OcfopOBKU9bOWWkgVNM2p4YwdRJb8wXm0jRs830pgJphtf=
+8R91Q3nre2JkUgXxceB_KO-wEgO-X4SJlH1jCvleB7TtQCssCb9OYE93Qb3fGJxzYE06TwtihXd=
+eQI_6Gpe048RPl54BjayexscYoePkED11CmguL7sKwFwBApEDXmWJT8gPX7MNuytQPyv0_O9qFk=
+5CwvLuwI0KOIpRuyAZzQWlkyN6JobS4efN-b7ohDMaDzrPKhqRi" style=3D"-webkit-text-=
+size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;tex=
+t-decoration:underline;color:#333333;font-size:14px" sib_link_id=3D"38"><im=
+g class=3D"adapt-img" src=3D"https://img.news.medentx.com/im/4604737/609178=
+c6761cf7594fe8e9287a7f42d4388891eeb80b266f2222f326857f219d.png?e=3DVIwIZu-b=
+a3yYvDdAh7HkCty5m9L_ug7KLckGE4Vda8Y3Dv_tB03DNop7EWmz24iJOxGROV9hN8xcuOAjPE3=
+SbqaE_liuzbHCfAeh-OPCZcD4i8sovgzwRMJbazGvIF2BxvRFobbm7u5sCNBHLg1PNs0tqRMcQA=
+v-kAz686XWztgTsFC_zog7q4RB30Ds3KkfwQdBuYmmB4GyNDiC5p8OOjtmCYX7ae0qP1ILzqCCu=
+GZnKdNF-k0XoYtc7kpESs6ywXM7BIWBwCPZ8Fo" alt=3D"CaviCide1 Surface Disinfecta=
+nt One Gallon" title=3D"CaviCide1 Surface Disinfectant One Gallon" style=3D=
+"display:block;border:0;outline:none;text-decoration:none;-ms-interpolation=
+-mode:bicubic" height=3D"182" sib_img_id=3D"18"></a></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Marg=
+in:0;padding-top:5px;padding-bottom:5px"><p style=3D"Margin:0;-webkit-text-=
+size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;fon=
+t-family:verdana, geneva, sans-serif;line-height:27px;color:#000000;font-si=
+ze:18px">$<span class=3D"price">115.49</span></p></td> </tr> <tr style=3D"b=
+order-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;=
+padding-top:10px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-te=
+xt-size-adjust:none;mso-line-height-rule:exactly;font-family:verdana, genev=
+a, sans-serif;line-height:21px;color:#333333;font-size:14px">CaviCide1 Disi=
+nfectant<br>1 Gallon x 4 Pack</p></td> </tr> <tr style=3D"border-collapse:c=
+ollapse"> <td align=3D"center" style=3D"padding:10px;Margin:0"><!--[if mso]=
+><a href=3D"https://medentrx.com/?match=3Dall&amp;subcats=3DY&amp;pcode_fro=
+m_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pkeywords=3DY&amp;se=
+arch_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dcavicide&amp;dispatch=
+=3Dproducts.search&amp;security_hash=3Df02149801e03eb2055fa0a8c91286fd2&amp=
+;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_=
+medium=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word=
+" esdevvmlbutton=3D"" href=3D"https://medentrx.com/?match=3Dall&amp;subcats=
+=3DY&amp;pcode_from_q=3DY&amp;pshort=3DY&amp;pfull=3DY&amp;pname=3DY&amp;pk=
+eywords=3DY&amp;search_performed=3DY=C2=A4cy=3DUSD&amp;sl=3Den&amp;q=3Dcavi=
+cide&amp;dispatch=3Dproducts.search&amp;security_hash=3Df02149801e03eb2055f=
+a0a8c91286fd2&amp;utm_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summe=
+r_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anchor:middle=
+; width:96px" arcsize=3D"0%" strokecolor=3D"#666666" strokeweight=3D"2px" f=
+illcolor=3D"#f6f6f6"> <w:anchorlock></w:anchorlock> <center style=3D"color:=
+#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "s=
+ans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=
+=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect></a> <![e=
+ndif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-border-3 es-=
+button-border" style=3D"border-style:solid;border-color:#f6f6f6 #f6f6f6 #66=
+6666;background:#f6f6f6;border-width:2px;display:inline-block;border-radius=
+:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f=
+/5459XRHLgCMaFw05CJKuQBaxW5CA0l2q6A_9oYlHN-f1U-cyHCYhoDCTKTF8X1_k00aTcw0rcJ=
+kiwlLn7rGBAMO2gkY11dAv6iYAhii45hmNrt5dEhUQ6ul67IugzuhsPYagFgkdQ6VUmBj82Ob0O=
+5JdLsVEaW1DUmYo1m4lqv0KdTJWkhk__jbDxGeXRSJyxBeQ_5Qaa3YPryqMfPciJIIUBP4CECp-=
+MlTEtefBtr17rkAVa3HRNSnLPLCV5uWrvRoTW2Fm_TgymYUk9CP6sjcOmlCYXb7ylW2eL_tMl5L=
+B1ECDYWmZPyiuZBb4hroQ7_gu_W44O4jixuVcNprsL2yfO_gRdAZvrhb4RaeGJA-E8dRMX6gEDv=
+EwHbLIIhtEA4_uJdYHz5NNlVmu2kOCpJ8mk0Yg6t1jTCVMn96FWmad4ZRXeLx2UArOR3ULgzL8b=
+HttqdmSMjgWcXogDlCYsElpptlYzGLmwwc1EuiS5P4s2AR_H-L0JUVKyabiuTJmCNztwxu2_C7E=
+lgiyANdfQzhXGjXsSNljX5Ij7ozhSnkEM0vf5KpqnrtvLMpki6jYRTqK5I-0eqbYRNjgeMg8QP3=
+lypfQlnccEL7sp75VlCnwFByZVsRy" class=3D"es-button es-button-1" target=3D"_b=
+lank" style=3D"mso-style-priority:100 !important;text-decoration:none;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;color:#333333;font-size:16px;border-style:solid;border-color:#F6F6F6;b=
+order-width:0px 5px 5px;display:inline-block;background:#F6F6F6;border-radi=
+us:0px;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-weig=
+ht:normal;font-style:normal;line-height:19px;width:auto;text-align:center" =
+sib_link_id=3D"39">Add to cart </a></span><!--<![endif]--></td> </tr> </tbo=
+dy></table></td> <td class=3D"es-hidden" style=3D"padding:0;Margin:0;width:=
+15px"></td> </tr> </tbody></table><!--[if mso]></td><td style=3D"width:139p=
+x"><![endif]--> <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-=
+collapse:collapse;border-spacing:0px;float:left"> <tbody><tr style=3D"borde=
+r-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"center" style=3D"pad=
+ding:0;Margin:0;width:139px"> <table width=3D"100%" cellspacing=3D"0" cellp=
+adding=3D"0" bgcolor=3D"#ddeaf0" style=3D"mso-table-lspace:0pt;mso-table-rs=
+pace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ddea=
+f0" role=3D"presentation"> <tbody><tr style=3D"border-collapse:collapse"> <=
+td align=3D"center" style=3D"Margin:0;padding-left:5px;padding-right:5px;pa=
+dding-top:10px;padding-bottom:10px;font-size:0px"><a target=3D"_blank" href=
+=3D"https://r.news.medentx.com/mk/cl/f/jHmpbFDE0mq9WCx87x7Dy5eHm7wWb5-GS7TQ=
+Aly17KTyj8KcYOUM1U3MPhSl7Wfe9Zn3CcqWoOwK2c_2A3YuIVht0sfyk9gKcMeHAuXWLOB8M6h=
+pn1OoA6vR-937vU5jYes1-GDDPcH8_2KoaRo4NH4SsDszuUNgVwaPInAQf-WZKY8W_HLZFXri0T=
+H4cpipFkwYLVxBDhrGBVyuVPwgdw0l3W9iMm5ouqX98kMeQPmJHWcUocPhd9SRRKvg7S2C90KPj=
+J5Az64eRr51YAU0DdJH8GYCpnFZ5BqXjXRlQHrkfJRoS5EQpHEvAWh_pHkOPgpFT4xzc9DjEG7W=
+gmKuEN0aaIFdIeQHDLsu_7Jkm-_SwISkH4HUBXEh" style=3D"-webkit-text-size-adjust=
+:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoratio=
+n:underline;color:#333333;font-size:14px" sib_link_id=3D"40"><img class=3D"=
+adapt-img" src=3D"https://img.news.medentx.com/im/4604737/adfce2e709272392a=
+f63b6f8921515963bb48d77d679b0b5fa88ffd40cbb74a6.png?e=3D_JRgiIrBVz7MzI2l-HU=
+l796IQDRcqW-6_7RIa8OIKoRulRAMCLqyxG3yxI3kOgsRLUG8623nPwRsH0YsrfGCASlF5ksf_u=
+odJM6lK3-ezDuYX6LHaYEmC-4Ijg3mpIYxYh1hddXfmQEQMdn8wDo2XJRBZh_wc8CFZZdHpTG_w=
+TQkO15V1bJhgbtyHg05UCq_czr0uj2v00CGDhfgDvsyMvEosdFYJGyI98yUTfGifUOSBA7piRuJ=
+fBlvcctT8jBap6EWDNXEk0W8r7sijsYHkg" alt=3D"Elate by Allheart Unisex V Neck =
+Solid Scrub Top" title=3D"Elate by Allheart Unisex V Neck Solid Scrub Top" =
+style=3D"display:block;border:0;outline:none;text-decoration:none;-ms-inter=
+polation-mode:bicubic" height=3D"168" sib_img_id=3D"19"></a></td> </tr> <tr=
+ style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:=
+0;Margin:0;padding-bottom:5px"><p style=3D"Margin:0;-webkit-text-size-adjus=
+t:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:v=
+erdana, geneva, sans-serif;line-height:27px;color:#333333;font-size:18px">$=
+10.98</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D"c=
+enter" style=3D"padding:0;Margin:0;padding-top:20px"><p style=3D"Margin:0;-=
+webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule=
+:exactly;font-family:verdana, geneva, sans-serif;line-height:17px;color:#33=
+3333;font-size:14px"><span class=3D"product-name">Elate by Allheart Unisex =
+V Neck Solid Scrub Top</span></p></td> </tr> <tr style=3D"border-collapse:c=
+ollapse"> <td align=3D"center" style=3D"Margin:0;padding-bottom:10px;paddin=
+g-left:10px;padding-right:10px;padding-top:15px"><!--[if mso]><a href=3D"ht=
+tps://medentrx.com/elate-by-allheart-unisex-v-neck-solid-scrub-top-79977?ut=
+m_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_med=
+ium=3Demail" target=3D"_blank" hidden=3D""> <v:roundrect xmlns:v=3D"urn:sch=
+emas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" e=
+sdevvmlbutton=3D"" href=3D"https://medentrx.com/elate-by-allheart-unisex-v-=
+neck-solid-scrub-top-79977?utm_source=3Dsendinblue&amp;utm_campaign=3DMeden=
+trx_Summer_Sale_2&amp;utm_medium=3Demail" style=3D"height:24px; v-text-anch=
+or:middle; width:96px" arcsize=3D"0%" strokecolor=3D"#333333" strokeweight=
+=3D"2px" fillcolor=3D"#dbdbdb"> <w:anchorlock></w:anchorlock> <center style=
+=3D"color:#333333; font-family:arial, " helvetica=3D"" neue",=3D"" helvetic=
+a,=3D"" "sans-serif";=3D"" font-size:9px;=3D"" font-weight:400;=3D"" line-h=
+eight:9px;=3D"" mso-text-raise:1px"=3D"">Add to cart</center> </v:roundrect=
+></a> <![endif]--><!--[if !mso]><!-- --><span class=3D"msohide es-button-bo=
+rder-5 es-button-border" style=3D"border-style:solid;border-color:transpare=
+nt transparent #333333;background:#dbdbdb;border-width:2px;display:inline-b=
+lock;border-radius:0px;width:auto;mso-hide:all"><a href=3D"https://r.news.m=
+edentx.com/mk/cl/f/hhJTOgCDpdGzi5Ge8csk8xtAFEN-Rl5pxZLnH40j9SwaBSy_ubl1vNK6=
+sMG5uZhDrPtcmiUzythl7sxV6FH5zB0joAAqAGYkLkI-qdHOBuQRLuo_D8NF4iM4T0ZOtuTSqTn=
+XIwv9DbuYIFD-y3n_nYOI5a_u4vvNSfJ3sHsid69CgqpeUdnleQAggA96ORt61fY86E7K78n37X=
+Oeb0LmLs_J1lVDR5URofqd0cp5r4EncALIdPGuDDg9HXct3vVoTeutHJugwjljr8DLX9CEAFlc3=
+z3HxV_16dl4-0vlcrV3AzjwpBgcNu_6GBtZ1l08UPlp3xvyqkr0CwqtdZEamfODqz6zwu1wWgP5=
+vkGLbBDuZ6tuQ3bA" class=3D"es-button es-button-4" target=3D"_blank" style=
+=3D"mso-style-priority:100 !important;text-decoration:none;-webkit-text-siz=
+e-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:=
+#333333;font-size:16px;border-style:solid;border-color:#dbdbdb;border-width=
+:0px 5px 5px;display:inline-block;background:#dbdbdb;border-radius:0px;font=
+-family:arial, 'helvetica neue', helvetica, sans-serif;font-weight:normal;f=
+ont-style:normal;line-height:19px;width:auto;text-align:center" sib_link_id=
+=3D"41">Add to cart </a></span><!--<![endif]--></td> </tr> </tbody></table>=
+</td> </tr> </tbody></table><!--[if mso]></td><td style=3D"width:15px"></td=
+><td style=3D"width:139px"><![endif]--> <table class=3D"es-right" cellspaci=
+ng=3D"0" cellpadding=3D"0" align=3D"right" style=3D"mso-table-lspace:0pt;ms=
+o-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right"=
+> <tbody><tr style=3D"border-collapse:collapse"> <td class=3D"es-m-p20b" al=
+ign=3D"center" style=3D"padding:0;Margin:0;width:139px"> <table style=3D"ms=
+o-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spa=
+cing:0px;background-color:#e4cade" width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" bgcolor=3D"#e4cade" role=3D"presentation"> <tbody><tr style=3D"b=
+order-collapse:collapse"> <td align=3D"center" style=3D"Margin:0;padding-le=
+ft:5px;padding-right:5px;padding-top:40px;padding-bottom:40px;font-size:0px=
+"><a target=3D"_blank" href=3D"https://r.news.medentx.com/mk/cl/f/gmUc7mbn_=
+TQyaBYzaWt0JWDSs2lZY3OEVFcWTdH0TLh1RtOZGTxNW8dNXtqXsowWEoOOd1_U0Uj61szft0O0=
+5w1mrr9XTPMqYt8KnrzH3ouJ7gBIIGjGkRAxGyXlsXgJooMOAQVB1xbDLXXGgjmIu6OgxXL-oYb=
+SMSnmBKJ9HsfTMl2ualX8DjPt-u4WZR2DM11oAYJaMcHg5IKZADAxALVPO3wTQKloVoKw0EUNsy=
+YbzvlHEHAOMv-YXwtTDbrmAxDVjG16DBvC7M9Fk_i4R8559ziNI3zSTBHdBvCSbcXAF-AbN-36G=
+_fBqj8XZTK9PRSAkzAMIfjQfwYfAWSkH8Iu5vmDFaM68BGLGsskAK2iIF9C_ZO1gtCls_0cZPBQ=
+E1opuZiYMXi4regruA08Sxkjp3jwgynBUjQWsLZCZUcUnVSF187VAGisWV7vVTrxaH3H1eNEJSZ=
+2pWpafzMUf_28y6j8B73c6AAZw2JfBmmoixu083h0SGJDeLRfBnD8WrUdDxKdsBO8c9RAHMrMZr=
+1wo58B7k8xgTgwx8RNd4t1mHLAqX2-iNzGUNWEQ6FAVcW0hTMR9tF999NwgsgbavV8SwVE58Nnm=
+vxx5iKxCqYSYhcDfGvX0g" style=3D"-webkit-text-size-adjust:none;-ms-text-size=
+-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#=
+333333;font-size:14px" sib_link_id=3D"42"><img class=3D"adapt-img" src=3D"h=
+ttps://img.news.medentx.com/im/4604737/7ae380787380782e50c181c1ac49799d2c49=
+ae14bb0daac94cf5867f71d2b8a5.png?e=3DmLtPxiuib76NnXhjU-TvjhupxZtXI_oVswFtz_=
+uGNzRbhkh3sz6b5A6PES2zzQqwjQfE83WLIErKTwpFofO4Hzwsn_nHRBrlcwnnX6rIfHfctvwzs=
+k4tdp4O9yedoqICrTM3lVXq_R_5KodyALAcdzVyuixjd8D1bebNg5Y4Hh6R-NAnwBQhF9y6HSfz=
+76yb-x0fnlegOXVfhYm-Z-7XX8X9uqXPBPzqxM95rRi6dR5m2hSdypmtDCAUPapAEOBwsCGAP_3=
+CCKc" alt=3D"Cook Waite Lidocaine HCl 2% Epinephrine" title=3D"Cook Waite L=
+idocaine HCl 2% Epinephrine" style=3D"display:block;border:0;outline:none;t=
+ext-decoration:none;-ms-interpolation-mode:bicubic" height=3D"65" sib_img_i=
+d=3D"20"></a></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:0;Margin:0;padding-top:40px"><p style=3D"Margi=
+n:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height=
+-rule:exactly;font-family:verdana, geneva, sans-serif;line-height:27px;colo=
+r:#333333;font-size:18px">$54.95</p></td> </tr> <tr style=3D"border-collaps=
+e:collapse"> <td align=3D"center" style=3D"Margin:0;padding-bottom:5px;padd=
+ing-left:5px;padding-right:5px;padding-top:30px"><p style=3D"Margin:0;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:verdana, geneva, sans-serif;line-height:17px;color:#333333=
+;font-size:14px">Cook Waite Lidocaine HCl 2% Epinephrine</p></td> </tr> <tr=
+ style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:=
+10px;Margin:0"><!--[if mso]><a href=3D"https://medentrx.com/cook-waite-lido=
+caine-hcl-2-epinephrine-1-100-000-29491?utm_source=3Dsendinblue&amp;utm_cam=
+paign=3DMedentrx_Summer_Sale_2&amp;utm_medium=3Demail" target=3D"_blank" hi=
+dden=3D""> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=
+=3D"urn:schemas-microsoft-com:office:word" esdevvmlbutton=3D"" href=3D"http=
+s://medentrx.com/cook-waite-lidocaine-hcl-2-epinephrine-1-100-000-29491?utm=
+_source=3Dsendinblue&amp;utm_campaign=3DMedentrx_Summer_Sale_2&amp;utm_medi=
+um=3Demail" style=3D"height:24px; v-text-anchor:middle; width:96px" arcsize=
+=3D"0%" strokecolor=3D"#333333" strokeweight=3D"2px" fillcolor=3D"#f6f6f6">=
+ <w:anchorlock></w:anchorlock> <center style=3D"color:#333333; font-family:=
+arial, " helvetica=3D"" neue",=3D"" helvetica,=3D"" "sans-serif";=3D"" font=
+-size:9px;=3D"" font-weight:400;=3D"" line-height:9px;=3D"" mso-text-raise:=
+1px"=3D"">Add to cart</center> </v:roundrect></a> <![endif]--><!--[if !mso]=
+><!-- --><span class=3D"msohide es-button-border-3 es-button-border" style=
+=3D"border-style:solid;border-color:transparent transparent #333333;backgro=
+und:#f6f6f6;border-width:2px;display:inline-block;border-radius:0px;width:a=
+uto;mso-hide:all"><a href=3D"https://r.news.medentx.com/mk/cl/f/h2paa8lIV1p=
+XJ8j6qzbAiWTiyuAKqrW_iiwJNroQjmukQR2Gd57k7eyz--inkxlfl4-jVqbIp9Hkfo0DskCX4E=
+l7seZaa-gILw77z-RoAtB5JPOFiqH2NreXB3okITtmsPiZxgjQBwtaHU-axu8-hg5lbNELiUA0Z=
+A5FueVVL5CDgS82xJ6W-hIImg3a7CtZfbDXb2oupzX5DsNLg7fvUuH7Zu0jNIcOeeVS6rTCNNG-=
+PLpBk1_h0hFohTgKILmINXP8QIYdZmB3xb_C61V-J-7BA9hp4OQ_41LWIqJTpToQMF0EjDq6UCA=
+KgbnR1fohVa_N4SPqymPs9IfKGrRw6WvSNOs8KdUEe_xV8AsIsBz8P1HuK4xRzg" class=3D"e=
+s-button es-button-2" target=3D"_blank" style=3D"mso-style-priority:100 !im=
+portant;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;color:#333333;font-size:16px;border-=
+style:solid;border-color:#F6F6F6;border-width:0px 5px 5px;display:inline-bl=
+ock;background:#F6F6F6;border-radius:0px;font-family:arial, 'helvetica neue=
+', helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:1=
+9px;width:auto;text-align:center" sib_link_id=3D"43">Add to cart </a></span=
+><!--<![endif]--></td> </tr> </tbody></table></td> </tr> </tbody></table><!=
+--[if mso]></td></tr></table><![endif]--></td> </tr> <tr style=3D"border-co=
+llapse:collapse"> <td align=3D"left" style=3D"Margin:0;padding-top:5px;padd=
+ing-bottom:5px;padding-left:20px;padding-right:20px"><!--[if mso]><table st=
+yle=3D"width:560px" cellpadding=3D"0" cellspacing=3D"0"><tr><td style=3D"wi=
+dth:192px"><![endif]--> <table class=3D"es-left" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt=
+;border-collapse:collapse;border-spacing:0px;float:left"> <tbody><tr style=
+=3D"border-collapse:collapse"> <td class=3D"es-m-p20b" align=3D"left" style=
+=3D"padding:0;Margin:0;width:172px"> <table style=3D"mso-table-lspace:0pt;m=
+so-table-rspace:0pt;border-collapse:separate;border-spacing:0px;border-radi=
+us:3px" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presenta=
+tion"> <tbody><tr style=3D"border-collapse:collapse"> <td align=3D"center" =
+style=3D"padding:0;Margin:0;padding-top:5px;padding-bottom:10px;font-size:0=
+px"> <table width=3D"100%" height=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-ta=
+ble-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr sty=
+le=3D"border-collapse:collapse"> <td style=3D"padding:0;Margin:0;border-bot=
+tom:2px solid #e42521;background:none 0% 0% repeat scroll #FFFFFF;height:1p=
+x;width:100%;margin:0px"></td> </tr> </tbody></table></td> </tr> <tr style=
+=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Marg=
+in:0;padding-top:5px;padding-left:15px;padding-right:15px"><h4 style=3D"Mar=
+gin:0;line-height:120%;mso-line-height-rule:exactly;font-family:georgia, ti=
+mes, 'times new roman', serif;color:#64434a">FREE Delivery</h4></td> </tr> =
+<tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"paddi=
+ng:5px;Margin:0"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-tex=
+t-size-adjust:none;mso-line-height-rule:exactly;font-family:verdana, geneva=
+, sans-serif;line-height:21px;color:#333333;font-size:14px">Free standard d=
+elivery on certain Items</p></td> </tr> <tr class=3D"es-hidden" style=3D"bo=
+rder-collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;p=
+adding-top:5px;padding-bottom:10px;font-size:0px"> <table width=3D"100%" he=
+ight=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pres=
+entation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collaps=
+e:collapse;border-spacing:0px"> <tbody><tr style=3D"border-collapse:collaps=
+e"> <td style=3D"padding:0;Margin:0;border-bottom:2px solid #e42521;backgro=
+und:none 0% 0% repeat scroll #FFFFFF;height:1px;width:100%;margin:0px"></td=
+> </tr> </tbody></table></td> </tr> </tbody></table></td> <td class=3D"es-h=
+idden" style=3D"padding:0;Margin:0;width:20px"></td> </tr> </tbody></table>=
+<!--[if mso]></td><td style=3D"width:170px"><![endif]--> <table class=3D"es=
+-left" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" style=3D"mso-tabl=
+e-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0=
+px;float:left"> <tbody><tr style=3D"border-collapse:collapse"> <td class=3D=
+"es-m-p20b" align=3D"left" style=3D"padding:0;Margin:0;width:170px"> <table=
+ style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:separat=
+e;border-spacing:0px;border-radius:3px" width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" role=3D"presentation"> <tbody><tr style=3D"border-collapse:=
+collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-top:5px=
+;padding-bottom:10px;font-size:0px"> <table width=3D"100%" height=3D"100%" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;bor=
+der-spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td style=
+=3D"padding:0;Margin:0;border-bottom:2px solid #e42521;background:none 0% 0=
+% repeat scroll #FFFFFF;height:1px;width:100%;margin:0px"></td> </tr> </tbo=
+dy></table></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=3D=
+"center" style=3D"padding:0;Margin:0;padding-top:5px"><h4 style=3D"Margin:0=
+;line-height:120%;mso-line-height-rule:exactly;font-family:georgia, times, =
+'times new roman', serif;color:#64434a">100% Money back</h4></td> </tr> <tr=
+ style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"padding:=
+5px;Margin:0"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-s=
+ize-adjust:none;mso-line-height-rule:exactly;font-family:verdana, geneva, s=
+ans-serif;line-height:21px;color:#333333;font-size:14px">Within 10 days fro=
+m receiving items</p></td> </tr> <tr class=3D"es-hidden" style=3D"border-co=
+llapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-=
+top:5px;padding-bottom:10px;font-size:0px"> <table width=3D"100%" height=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:colla=
+pse;border-spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td=
+ style=3D"padding:0;Margin:0;border-bottom:2px solid #e42521;background:non=
+e 0% 0% repeat scroll #FFFFFF;height:1px;width:100%;margin:0px"></td> </tr>=
+ </tbody></table></td> </tr> </tbody></table></td> </tr> </tbody></table><!=
+--[if mso]></td><td style=3D"width:20px"></td><td style=3D"width:178px"><![=
+endif]--> <table class=3D"es-right" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"right" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-coll=
+apse:collapse;border-spacing:0px;float:right"> <tbody><tr style=3D"border-c=
+ollapse:collapse"> <td class=3D"es-m-p20b" align=3D"left" style=3D"padding:=
+0;Margin:0;width:178px"> <table style=3D"mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;border-collapse:separate;border-spacing:0px;border-radius:3px" widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation"> <tbod=
+y><tr style=3D"border-collapse:collapse"> <td align=3D"center" style=3D"pad=
+ding:0;Margin:0;padding-top:5px;padding-bottom:10px;font-size:0px"> <table =
+width=3D"100%" height=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace=
+:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr style=3D"bord=
+er-collapse:collapse"> <td style=3D"padding:0;Margin:0;border-bottom:2px so=
+lid #e42521;background:none 0% 0% repeat scroll #FFFFFF;height:1px;width:10=
+0%;margin:0px"></td> </tr> </tbody></table></td> </tr> <tr style=3D"border-=
+collapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;paddin=
+g-top:5px"><h4 style=3D"Margin:0;line-height:120%;mso-line-height-rule:exac=
+tly;font-family:georgia, times, 'times new roman', serif;color:#64434a">24h=
+ Support</h4></td> </tr> <tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" style=3D"padding:5px;Margin:0"><p style=3D"Margin:0;-webkit-tex=
+t-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;f=
+ont-family:verdana, geneva, sans-serif;line-height:21px;color:#333333;font-=
+size:14px">24 Hours customer support</p></td> </tr> <tr style=3D"border-col=
+lapse:collapse"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-t=
+op:5px;padding-bottom:10px;font-size:0px"> <table width=3D"100%" height=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation=
+" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collap=
+se;border-spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td =
+style=3D"padding:0;Margin:0;border-bottom:2px solid #e42521;background:none=
+ 0% 0% repeat scroll #FFFFFF;height:1px;width:100%;margin:0px"></td> </tr> =
+</tbody></table></td> </tr> </tbody></table></td> </tr> </tbody></table><!-=
+-[if mso]></td></tr></table><![endif]--></td> </tr> </tbody></table></td> <=
+/tr> </tbody></table> <table cellpadding=3D"0" cellspacing=3D"0" class=3D"e=
+s-footer" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%;background-color:transparent;background-repeat:repeat;backgrou=
+nd-position:center top"> <tbody><tr style=3D"border-collapse:collapse"> <td=
+ align=3D"center" style=3D"padding:0;Margin:0"> <table class=3D"es-footer-b=
+ody" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:col=
+lapse;border-spacing:0px;background-color:#000000;width:600px" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#000000" align=3D"center"> <tbody><tr s=
+tyle=3D"border-collapse:collapse"> <td align=3D"left" style=3D"padding:0;Ma=
+rgin:0"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-=
+spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td valign=3D"=
+top" align=3D"center" style=3D"padding:0;Margin:0;width:600px"> <table widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" style=
+=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;bord=
+er-spacing:0px"> <tbody><tr style=3D"border-collapse:collapse"> <td align=
+=3D"center" bgcolor=3D"#ddeaf0" style=3D"padding:0;Margin:0;padding-bottom:=
+15px;padding-left:20px;padding-right:20px"><h3 style=3D"Margin:0;line-heigh=
+t:24px;mso-line-height-rule:exactly;font-family:georgia, times, 'times new =
+roman', serif;font-size:20px;font-style:normal;font-weight:normal;color:#00=
+0000">Let's get social</h3></td> </tr> <tr style=3D"border-collapse:collaps=
+e"> <td align=3D"center" style=3D"padding:0;Margin:0;padding-top:5px;paddin=
+g-left:20px;padding-right:20px;font-size:0px;background-color:#237cb9" bgco=
+lor=3D"#237CB9"> <table class=3D"es-table-not-adapt es-social" cellspacing=
+=3D"0" cellpadding=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0p=
+t;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> <tbody=
+><tr style=3D"border-collapse:collapse"> <td valign=3D"top" align=3D"center=
+" style=3D"padding:0;Margin:0;padding-right:10px"><a target=3D"_blank" href=
+=3D"https://r.news.medentx.com/mk/cl/f/emWJ9YXLzr6Ng4-TPH4qgkk4u3fL4--cp_5-=
+CVViqB3ixE7JXooewmi3JeBkMsRFFOcSCFufuA_mTri3J-QR_FRodfUVrtJx5CsGBd3pv3C20gf=
+hZYm_o1v6tvmh3aYp17JyxgsRExiLPcPBq5UTYhe9rwrR2U_QXjRTvYdcQ08FpaRP7gHA695GXV=
+WjZ9xv9bZY9k6BaUo2sjHDs9gjqrs6WfTaHwRxx_yfltVuMpZatI_KAdOspSmfHpPpE8eGcw6nI=
+b3UZoXDlwCi8TQ3NSY7iVi2d9V-q3hvFLpLVL-T7bO72rw5PCFahv9bwK90Zw" style=3D"-we=
+bkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:e=
+xactly;text-decoration:underline;color:#333333;font-size:11px" sib_link_id=
+=3D"44"><img title=3D"Facebook" src=3D"https://img.news.medentx.com/im/4604=
+737/77f089a7288f63f2ded115e1a007a91276b0b25f203f76dd6c94b1c0ca4d9d76.png?e=
+=3DgMYd_tQqZPul1sG27PXJNBr5rk3ra-WpYe_UTP7Hw1X6fNymIYdpwWbY3tjTbkQph0JVerfB=
+QrGJV9rlTiiPKT-hQDo5KrBVjaVnjO-AaEeANnPDcdq84tr1PCzvCfvCiD1er9-x35oVC1_1-7u=
+MhClbGKKssET_pbxxBQQ1Pp5tkFGzEMSEV9BBgDKIhZ5cBYQvuWnfVLftqo3Jy6EG6Ou95pJL2s=
+MG-Aa8KoFnjqeVcD3a3fY" alt=3D"Fb" width=3D"32" style=3D"display:block;borde=
+r:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" sib_i=
+mg_id=3D"21"></a></td> <td valign=3D"top" align=3D"center" style=3D"padding=
+:0;Margin:0;padding-right:10px"><a target=3D"_blank" href=3D"https://r.news=
+.medentx.com/mk/cl/f/p-0pln2JNsd30AkJnkMWZXxl2qzutpnQMrzRF3sWcms40qzGRq8MBV=
+kuUhdx4dancjXwovF6a5meYTmEXyGMWSIte4tJHeFNmSsDq7CL85JcmziEdSfOP9BiduDCl1SsG=
+u6uxkNsRRAWHRrpVd1xAt3xKObCSgP-Cxk31bj9e7EJBwYwx6xaY1qrJxj4gV2amR60wstzHYTH=
+-fj1ugxPGs9hWdJwPeoUrYxrLgtFhvVni1R1sfajlxv-3VXioDGlB_tP00Z4Lh-G3PuJhTiDf_1=
+1WHyColshd4eceOfAkcpPP44zvtEOpUQ" style=3D"-webkit-text-size-adjust:none;-m=
+s-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underl=
+ine;color:#333333;font-size:11px" sib_link_id=3D"45"><img title=3D"Twitter"=
+ src=3D"https://img.news.medentx.com/im/4604737/736cb2642c8a4734bfb7cd4326a=
+62d8a3b6756bdd162ab69a55aac185cd463c5.png?e=3D7JTVx_jWKa5iEFT9IjZUcHjVuk0Qf=
+n_s6_ykuzQrzDEbHMKPo1AAHipTIzJHt_W9JOHvyjwhuWQ-WjPo0CQ2ANzA7U6mAdu4frfT4l0Z=
+xhhgU1eyTCJZEZJeOeHLAPszSDyHu_KjFkUd0XFhHjd9PJPGp6_nhrvX-If0xkm58cNEdj0cMw4=
+Xlsi4-S9HyZM9DxA3DeFlC-ijqVMG9XBYdiADre8g5bAc-8v0TzMz_V1ysuNbdQ" alt=3D"Tw"=
+ width=3D"32" style=3D"display:block;border:0;outline:none;text-decoration:=
+none;-ms-interpolation-mode:bicubic" sib_img_id=3D"22"></a></td> <td valign=
+=3D"top" align=3D"center" style=3D"padding:0;Margin:0;padding-right:10px"><=
+a target=3D"_blank" href=3D"https://r.news.medentx.com/mk/cl/f/5Wd9skqrqokO=
+IIQMx_YQ5wWR9OExp4Mt_oVq1-vB9RSObMD52BAMbxM7cRL9T5Uq6zJjGbBARI-z1EpnDmKDURP=
+ftVhXIZBnyN2iwSRhPvFNPJheHrF_XKtO9rW-YNoEKFArqcpVyNVRh8e7tfdbYVbqAoKt5xKpHU=
+Dp4bw5Mgdx1N43Ptg7uIKOgOMIezi7c_lPqPesLBKqudk76bf2WRwEzhErOhQIzD3gfMUqWyPT0=
+olpesEUbHRbaNbmKpLAw35N_RWzyhhnbQ7-v15rihD4xaUtPxE2J7Y3QG8xgqmnTnnOFWuuS0gj=
+_BHMNGnhUMc" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:no=
+ne;mso-line-height-rule:exactly;text-decoration:underline;color:#333333;fon=
+t-size:11px" sib_link_id=3D"46"><img title=3D"Instagram" src=3D"https://img=
+.news.medentx.com/im/4604737/16eb33b70426a84727de4435475da6829a88a5f6cc5a93=
+a261d3d8f1acd3d4ae.png?e=3DVgUnI1WgzZX_GHfMYJFoalLlCTm2ULSup7sMoKTuxiBtoRRq=
+90gLo-YulLxBw_Zez_HUh-5o_vdWdy4h4kPL2iIN7pPCuRUn8fbwucQB5JeLaWlVBCJBeCXrDpA=
+tl7QI1uHb34oYJrhNR2bQsVHVytBzK0Xh7TDVTISjX8Ras7re04Y15p-QuajKrAwmnIqvucNnYT=
+Xu37nzffVKwMCBgH6LYWVO_ynP1kQSyOW4vEXPNOYwOw6v" alt=3D"Inst" width=3D"32" s=
+tyle=3D"display:block;border:0;outline:none;text-decoration:none;-ms-interp=
+olation-mode:bicubic" sib_img_id=3D"23"></a></td> <td valign=3D"top" align=
+=3D"center" style=3D"padding:0;Margin:0;padding-right:10px"><a target=3D"_b=
+lank" href=3D"https://r.news.medentx.com/mk/cl/f/rVTID-egUfSEn0HwsBNtbVlqCe=
+tRw2MPWZcamAPS6hpchsvTwPx9vEhpjdLcSq8gmO4n0ukRr-De7Qav4N5B9rv2bf3Xu2aGxnMpe=
+830tCxQUSVIgsrEm8bBRdfb0yAh8gmzur13SmC551xXOwiZfm0QfjwFmG808CUy43zJBKRUEC7t=
+q6_2rSK7FSvGMVRuw25DJCf7ciZ_t2CTT6XaOateiOd0X6ZlvCwNavFnZaDBFpse1RLOmhLHjYE=
+WphlwqAUbRxjYAlEyAVHZ0KkVqHrkF79ZKZYwvH77kFHwvQQIbil4pVrjUnTJWUkRuMz3OO9l3S=
+MhiXPibzxrTQVAlXpBHLMz0Ds" style=3D"-webkit-text-size-adjust:none;-ms-text-=
+size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;col=
+or:#333333;font-size:11px" sib_link_id=3D"47"><img title=3D"Youtube" src=3D=
+"https://img.news.medentx.com/im/4604737/766a042f291ff4e1b5f981d590ce8ad16b=
+c73429bc6380a74e5814aa9b9ed1a1.png?e=3DvIpyWuoCMvBhPSzWrGB2nZZP-w9jrb7cGO1k=
+G7BiochEFiIGilVqrL-jWjoVpXHiuFSpNzpkEythbCNrX7aOThwZxOzJx9KASWrNBV2gdFJRs4O=
+7tkm2uMlkGUPjCRj-jgM9CZcQPWdhhVtOwLnd6ZOjRltkrU90IVGxrBz576cMD4hSDrdY2pe2QZ=
+VJy2TzndPybEttkNmPLwlNPDmx_1_jGxSLOvqQ4gh5W3LatAhUCymNdg" alt=3D"Yt" width=
+=3D"32" style=3D"display:block;border:0;outline:none;text-decoration:none;-=
+ms-interpolation-mode:bicubic" sib_img_id=3D"24"></a></td> </tr> </tbody></=
+table></td> </tr> </tbody></table></td> </tr> </tbody></table></td> </tr> <=
+tr style=3D"border-collapse:collapse"> <td align=3D"left" bgcolor=3D"#ddeaf=
+0" style=3D"Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;=
+padding-bottom:25px;background-color:#ddeaf0"> <table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" style=3D"mso-table-lspace:0pt;mso-table-rspac=
+e:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr style=3D"bor=
+der-collapse:collapse"> <td valign=3D"top" align=3D"center" style=3D"paddin=
+g:0;Margin:0;width:560px"> <table width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rsp=
+ace:0pt;border-collapse:collapse;border-spacing:0px"> <tbody><tr style=3D"b=
+order-collapse:collapse"> <td esdev-links-color=3D"#999999" align=3D"center=
+" style=3D"padding:0;Margin:0"><p style=3D"Margin:0;-webkit-text-size-adjus=
+t:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:v=
+erdana, geneva, sans-serif;line-height:17px;color:#000000;font-size:11px">Y=
+ou've received this email because you opted-in to receive newsletters from =
+us or our affiliates</p></td> </tr> <tr style=3D"border-collapse:collapse">=
+ <td align=3D"center" bgcolor=3D"#ddeaf0" style=3D"padding:0;Margin:0;paddi=
+ng-bottom:5px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-=
+size-adjust:none;mso-line-height-rule:exactly;font-family:verdana, geneva, =
+sans-serif;line-height:17px;color:#000000;font-size:11px">You can <a target=
+=3D"_blank" href=3D"https://r.news.medentx.com/mk/cl/f/z-VRSLF7O7tAzuyekVHo=
+QFFEnaQYf2ZkQh2UG7-SdGEOUTgEOuMOZ1L4ojjPzKqbh7j1mMlvMAzqeGY_FxmCEkdyOhD1fIg=
+nCmB-GHqphnoLoqvN7DtHV9pUyzCnLGiOyrWLRqeM7gyo4Q20iubEBorK2kaF9PQPyTItkAPNbI=
+MrP7R7LG_JNXWpJeyz6U7mD_XrdnfbX-JTaBqlIuoWAVwlNT-stNUyuxLhzIvv3hnDjMh-XJCXi=
+9A4G7cyUQNFJ-XON0_7RUAJ7OXKrT9Byjq4" class=3D"unsubscribe" style=3D"-webkit=
+-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exact=
+ly;text-decoration:none;color:#000000;font-size:11px" sib_link_id=3D"48">un=
+subscribe</a> from these emails by clicking on the link at the bottom of th=
+e page</p></td> </tr> <tr style=3D"border-collapse:collapse"> <td esdev-lin=
+ks-color=3D"#999999" align=3D"center" bgcolor=3D"#ddeaf0" style=3D"padding:=
+0;Margin:0;padding-bottom:5px"><p style=3D"Margin:0;-webkit-text-size-adjus=
+t:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:v=
+erdana, geneva, sans-serif;line-height:17px;color:#000000;font-size:11px">2=
+009 W Holt Ave Pomona, CA 91768</p></td> </tr> </tbody></table></td> </tr> =
+</tbody></table></td> </tr> </tbody></table></td> </tr> </tbody></table></t=
+d> </tr> </tbody></table> </div> <div align=3D"center" style=3D"color:#7272=
+72;font-size:10px">If you wish to unsubscribe from our newsletter, click <a=
+ style=3D"color:#01a4c6" target=3D"_blank" href=3D"https://r.news.medentx.c=
+om/mk/un/Dd_2nS9McsmDyc8gmgfB5RedFs0GbV98RZyGC8P-KDQhKlUsNrBxn19RHBrukd9Qsa=
+C2ndHanMdUXJCaxG0wx3CgGhK9Myh0hzpYDNOYK_BUt5NXBMTOtQPETsdBXteAimEIgWqKesHaB=
+Go8CEXfDOYQechvbY0">here</a></div><div><img width=3D"1" height=3D"1" src=3D=
+"https://r.news.medentx.com/mk/op/O3vxVTfHuSsCzL6QRc8uF1fkwRjfXQWxEdDv61PyC=
+ce7FFaweyTr15Xll_H5njRO0CU_LsHt3LW9WTU1urWJnWH5lQBiVnIc3EIUoIuMgXhxmnoBAY77=
+fIPToEFwl5rD1Q"></div> </body></html>
+
+---------?=_78922-5441619205293--

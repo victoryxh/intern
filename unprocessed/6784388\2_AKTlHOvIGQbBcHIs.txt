@@ -1,0 +1,247 @@
+Received: from SN6PR06MB4655.namprd06.prod.outlook.com (::1) by
+ SN6PR06MB4942.namprd06.prod.outlook.com with HTTPS; Sun, 7 Aug 2022 06:36:34
+ +0000
+Received: from DM5PR0601MB3782.namprd06.prod.outlook.com (2603:10b6:4:7c::38)
+ by SN6PR06MB4655.namprd06.prod.outlook.com (2603:10b6:805:95::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5458.18; Sun, 7 Aug
+ 2022 06:36:13 +0000
+Received: from DM5PR0601MB3782.namprd06.prod.outlook.com
+ ([fe80::a5d0:d169:f8d7:6187]) by DM5PR0601MB3782.namprd06.prod.outlook.com
+ ([fe80::a5d0:d169:f8d7:6187%7]) with mapi id 15.20.5504.017; Sun, 7 Aug 2022
+ 06:36:13 +0000
+From: Kennedy Hanewall <khanewall@wisc.edu>
+Subject: JOB REFERRAL! EARN 900 WEEKLY
+Thread-Topic: JOB REFERRAL! EARN 900 WEEKLY
+Thread-Index: AdiqJR1N7H+3522ySv6KujMFAvrRAwAAWInQ
+Date: Sun, 7 Aug 2022 06:36:10 +0000
+Message-ID:
+	<DM5PR0601MB37828E3A0C3C874CA46723D4D1609@DM5PR0601MB3782.namprd06.prod.outlook.com>
+References:
+	<DM5PR0601MB378278CC8E8B18D5E10B5338D1609@DM5PR0601MB3782.namprd06.prod.outlook.com>
+In-Reply-To:
+	<DM5PR0601MB378278CC8E8B18D5E10B5338D1609@DM5PR0601MB3782.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	DM5PR0601MB3782.namprd06.prod.outlook.com
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-Network-Message-Id:
+	44c259ee-97c8-4f7b-98d3-08da783f1e17
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 44c259ee-97c8-4f7b-98d3-08da783f1e17
+x-ms-traffictypediagnostic: SN6PR06MB4655:EE_
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DM5PR0601MB3782.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource:
+	DM5PR0601MB3782.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	44c259ee-97c8-4f7b-98d3-08da783f1e17
+x-ms-exchange-crosstenant-originalarrivaltime: 07 Aug 2022 06:36:10.9325 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	x5mv+7a6SNIYfyAWxB1qOj4Yccr8rDAftwoBbP+6fdyMrS0qV9c+Njh9AhEgY8LEjHrLPs5h0P7G4hAw1QriFA==
+x-ms-exchange-transport-crosstenantheadersstamped: SN6PR06MB4655
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	w237AWrgsw7y+VpZvOm0F0Sa9BEUcyhjA7MW6paSvFz018Pgsf9PwvEZtshkxPwG3oExIWL5KFBl/7+VX5qxP+XwS8avTl+g2i534bWgx9VYcua1u8doF4B9NEoZ8VNCtfblM+BeAQ+xhspbLcoTOuKL+Ixp0cKIvtgXzBtKKUYNYLOfOOWxphR42z/eGwgk5u2gAYJmMci9vxWPBjf26U3HOss9UCx/P3fhNkhGpiNmExr4eCHvX5srOTQufQsxmksA2SndORRlP+wR2/SKE6eMKm2r5c+wKu+XKZrbD3tmAEZIZ4e628xSJygdQB9Chc6HqsQpksl6k5YwhiSUW9KZIw5Wvc1KvR0pexPKha+HTU5ciMiicGcuTknyyLYcA/GCLARlTWUOYeHHj+axlZs88d+9t49oyYKzuIaDm90MNcp4vvXQAT4ZulWGbzYIgX1G98E7Z53aU13L7/Hl+LL9RV93GumTOJ873NIswzsiKVVY3IPjEEBdmq76cTnnscVp/zaCsybiaSKjPNUjDBHBOU99kh/ZGU4flCiC/ImNHFiqQ61kFcsV2hu004zH17TEFZSuW868IMbrEXusxHsi3rQI0vZKo/Z9MK6FjzoQudhoZ8YWzu4fLuKmEKQrJh8qHDvp6sORJt3ENPGeGYUdTloMCKhKYDyRHOpANutXa4Djq3MsqQxW4i1Q873vkQDby7YzPPg6b7HjS8vgDmHggSQcL5j4L9sZ4VJZ6MjuXZpMP993JnNRr8RZoCvMihHf+VrDovyIu4190EaBA1eXQEM3f4IGrTqlGj3tbCFcw4x7x5E79J1Yf8GmNQE/RjgpNg25xeA30skRoRmsbrdekSKo3/qZjp+4R5/POOw=
+Content-Type: multipart/related;
+	boundary="_005_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_005_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_
+Content-Type: multipart/alternative;
+	boundary="_000_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_"
+
+--_000_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_
+Content-Type: text/plain; charset="us-ascii"
+
+
+                                                                JOB OFFERS TO ALL
+
+Hello,
+
+Are you seeking flexible hours for a remote part time job ?
+Are you self-motivated and able to work from home or school?
+Here is an amazing virtual job position that pays over 900 weekly!!!
+APPLY NOW<https://aesthetic-marigold-78cbb6.netlify.app/> to read more about this great opportunity and how to Apply.
+
+Job seekers should not hesitate to apply for this job, We have students who are working already, more workers are needed urgently.
+
+Approved!!!
+You're not required to acknowledge or respond to this email.
+
+Thank you,
+
+The Financial Aid Services Team
+[cid:image001.gif@01D8A9EA.710E8CD0]<http://cunybaruchretain.askadmissions.net/admin/Communications/ClickThru.aspx?qs=_3CKRphrP0q1RMLzGModQmgypT2cf2tUfFbdypjnEKYfjCp8is5YUK2rYkQEh4dxz>[cid:image002.gif@01D8A9EA.710E8CD0]<http://cunybaruchretain.askadmissions.net/admin/Communications/ClickThru.aspx?qs=_3CKRphrP0q1RMLzGModQmmUZs3V266WnEANLiqtZwV6p985axLo31nC5sI1m5iOo>  Stay Connected!
+
+
+
+--_000_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#0563C1" vlink="#954F72" style="word-wrap:break-word">
+<div class="WordSection1">
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div align="center">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%;background:#7A96BD;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+<tbody>
+<tr>
+<td style="padding:11.25pt 11.25pt 11.25pt 11.25pt;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+<div align="center">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="650" style="width:487.5pt;background:black;border-collapse:collapse;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+<tbody>
+<tr style="height:.5in">
+<td width="650" colspan="2" style="width:487.5pt;background:white;padding:0in 0in 0in 0in;height:.5in;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+<p class="MsoNormal"><span style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b><u><span style="font-size:13.5pt;color:black">JOB OFFERS TO ALL</span></u></b><span style="color:black">
+</span><o:p></o:p></p>
+</td>
+</tr>
+<tr>
+<td width="650" colspan="2" style="width:487.5pt;background:white;padding:7.5pt 7.5pt 7.5pt 7.5pt;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:black">Hello,</span></b><o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><i><span style="font-size:13.5pt;color:black">Are you seeking flexible hours for a remote part time job ?<br>
+Are you self-motivated and able to work from home or school? <br>
+Here is an amazing virtual job position that pays over 900 weekly!!!</span></i><span style="font-size:13.5pt;color:black"><br>
+</span><b><span style="font-size:24.0pt;color:black"><a href="https://aesthetic-marigold-78cbb6.netlify.app/" target="_blank">APPLY NOW</a></span></b><span style="font-size:24.0pt;color:black">
+</span><i><span style="font-size:13.5pt;color:black">to read more about this great opportunity and how to Apply.
+</span></i><o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><i><span style="font-size:13.5pt;color:black">Job seekers should not hesitate to apply for this job, We have students who are working already, more workers are needed urgently.
+</span></i><o:p></o:p></p>
+<p class="MsoNormal" style="margin-bottom:12.0pt"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><b><i><span style="font-size:13.5pt;color:black">Approved</span><span style="color:black">!!!</span></i></b><o:p></o:p></p>
+<p class="MsoNormal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:red">You&#8217;re not required to acknowledge or respond to this email.</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:black"><br>
+<br>
+Thank you,<br>
+<br>
+The Financial Aid Services Team</span><o:p></o:p></p>
+<p class="MsoNormal"><span style="color:black"><a href="http://cunybaruchretain.askadmissions.net/admin/Communications/ClickThru.aspx?qs=_3CKRphrP0q1RMLzGModQmgypT2cf2tUfFbdypjnEKYfjCp8is5YUK2rYkQEh4dxz" target="_blank"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:blue;text-decoration:none"><img border="0" width="24" height="24" style="width:.25in;height:.25in" id="Picture_x0020_2" src="cid:image001.gif@01D8A9EA.710E8CD0"></span></a><a href="http://cunybaruchretain.askadmissions.net/admin/Communications/ClickThru.aspx?qs=_3CKRphrP0q1RMLzGModQmmUZs3V266WnEANLiqtZwV6p985axLo31nC5sI1m5iOo" target="_blank"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:blue;text-decoration:none"><img border="0" width="24" height="24" style="width:.25in;height:.25in" id="Picture_x0020_1" src="cid:image002.gif@01D8A9EA.710E8CD0"></span></b></a></span><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:black">&nbsp;
+ Stay Connected!</span></b><o:p></o:p></p>
+</td>
+</tr>
+<tr style="height:15.75pt">
+<td width="550" style="width:412.5pt;background:#225391;padding:0in 7.5pt 0in 7.5pt;height:15.75pt;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+</td>
+<td width="100" style="width:75.0pt;background:#225391;padding:0in 0in 0in 0in;height:15.75pt;background-position-x:0%;background-position-y:0%;background-attachment:scroll">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal" style="margin-bottom:12.0pt">&nbsp;<o:p></o:p></p>
+<table class="MsoNormalTable" border="0" cellspacing="4" cellpadding="0" width="100%" style="width:100.0%">
+<tbody>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt"></td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_--
+
+--_005_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_
+Content-Type: image/gif; name="image001.gif"
+Content-Description: image001.gif
+Content-Disposition: inline; filename="image001.gif"; size=806;
+	creation-date="Sun, 07 Aug 2022 06:15:43 GMT";
+	modification-date="Sun, 07 Aug 2022 06:36:35 GMT"
+Content-ID: <image001.gif@01D8A9EA.710E8CD0>
+Content-Transfer-Encoding: base64
+
+R0lGODlhGAAYAPUAAAAAAClKmIym3Wl+qDNYqn2TvM/Y7GSHyFVvq0pfjKm832+ErYGd0V+F3kNr
+y1R4vufs9jRUnJ2030Vlq05lmV+Bw3WS122PzU1vvLrJ5vb4/DFTpJys0Fhzr19ofaC664Wh1mmL
+3FN2zGZ/uDthuYWZyStNnTler9/m82mHyUlqsKS75naMtmCH4F5+x/Dz+TlZoZSx6VRpmWmCvXWP
+yv///5Su3lppiYuj0kpz0kFmu3qY0QAAAAAAAAAAAAAAACH5BAUAAAAALAEAAQAWABYAAAb/QABA
+sLIZj0jk57MQxhQCi3RKrdo+A9Zqx+16dxeBRAHdSUoFWyp1aYNn4EumRq9lUjvBAjS79P1tMzMK
+dXQZFTs4CwwpfY5+ayh1KBk4Myk4AzsVnJwXLqAXhTMPa5gJMyqcB6x9ODiFrxcqHSMJHQEwMCcq
+vTuFhRwBFA+3uscnJjPAdRLDM8a6J7snFQYGhdcFGyfQD9In4eInL3QQBOgEEyMyDxHj4xh1EPDQ
+I/A6OiQkGOU1EPtITNAxgxiBcPvy5XswT8eEcAQp3Duhg6JCBzrqvAg4MIXBgQp1YBTRMCQLCjMI
+JBQp0kGOeTlCpkBAQ+BFBzhJ1glJ48GNMjUBSWDEmQMJTh0iLMgAIANPihBPQ0gN0aBqg6dcEAgB
+4EGGjA5gOzwYMHZs2A43hAQBADs=
+
+--_005_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_
+Content-Type: image/gif; name="image002.gif"
+Content-Description: image002.gif
+Content-Disposition: inline; filename="image002.gif"; size=819;
+	creation-date="Sun, 07 Aug 2022 06:15:44 GMT";
+	modification-date="Sun, 07 Aug 2022 06:36:35 GMT"
+Content-ID: <image002.gif@01D8A9EA.710E8CD0>
+Content-Transfer-Encoding: base64
+
+R0lGODlhGAAYAPUAAAAAAF+HklXF47jm9GjZ90+lvTG013TI5Nz0+47a72O50I3l+7zz/mGpvUXC
+5HXX8lXN7v///43f+1eVqmLH42nK6u39/2vA18z3/n7h+yix1Ua72+r3+6ff7nK4yr30/mmyxVa+
+212PnErJ7Kvv/XXd+DW63oDE2t/6/5Xb7pfp+8fw/FurwIfT7pTf+VSfumTH6HTN60yvyXm901bD
+5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUAAAAALAEAAQAWABYAAAb/QMBL
+IkkYj0gkEQCYSFKVaBQirUoXC0AsBevCOquBdZyatWJeRGRtGXthrUMsdoF0Ioh8ZEWr0N4wITEn
+cyEhAxEoihwcc2gwEHVzhDEQNIgYmRZrnAiVdQcHhoaIHx8rKxaqCJsRFYYUCoYaGncMt7i5ETG0
+G7IhtHckw8TDKgwRLRomIb8mtRHGDCTTtygRISbMowYGdyrgK5ycKRvmEAoU2SbfKhLXnBblG9rN
+AgLad1gJDKqqawzMbYhEgUK+CBIyKExQoiG/XecU1DH3IFrDixclREgwwkSFOiEciFSjgoDJkwRI
+QByYzuCIgWosoJopDsGIm6EEiRQJIQUrP3+qOlTYSQBEgQcVNowQcHMEhKdQm46o8GACABkNH2jV
+KqFE164XExBgwQSAiAYgGnhooECBh7dwPbBgEYBJEAA7
+
+--_005_DM5PR0601MB37828E3A0C3C874CA46723D4D1609DM5PR0601MB3782_--

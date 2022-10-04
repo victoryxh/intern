@@ -1,0 +1,167 @@
+Received: from DM6PR06MB4171.namprd06.prod.outlook.com (2603:10b6:5:2c::33) by
+ DS7PR06MB6904.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021 16:37:13
+ +0000
+Received: from DM6PR10CA0020.namprd10.prod.outlook.com (2603:10b6:5:60::33) by
+ DM6PR06MB4171.namprd06.prod.outlook.com (2603:10b6:5:2c::33) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4394.21; Fri, 13 Aug 2021 16:37:13 +0000
+Received: from DM6NAM11FT021.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:60:cafe::2c) by DM6PR10CA0020.outlook.office365.com
+ (2603:10b6:5:60::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Fri, 13 Aug 2021 16:37:13 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ DM6NAM11FT021.mail.protection.outlook.com (10.13.173.76) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Fri, 13 Aug 2021 16:37:13 +0000
+Received: from p3plwbeout14-03.prod.phx3.secureserver.net ([173.201.192.186])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS01OY2E5YIZ10@smtp6.wiscmail.wisc.edu> for
+ egbooth@wisc.edu; Fri, 13 Aug 2021 11:37:11 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Mike Rupiper" <wisconsinawra@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=22%, Hits= FRAUD_LITTLE_BODY 2,
+ FORGED_FROM_GMAIL 0.1, RCVD_FROM_IP_DATE 0.1, REPLYTO_FROM_DIFF_ADDY 0.1,
+ SUBJ_1WORD 0.1, HTML_00_01 0.05, HTML_00_10 0.05, BODYTEXTP_SIZE_3000_LESS 0,
+ BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_300_399 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DATE_TZ_NA 0, ECARD_WORD 0, KNOWN_MTA_TFX 0, NO_CTA_URI_FOUND 0,
+ NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SPF_NONE 0, SXL_IP_TFX_WM 0,
+ WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0, __BEC_PHRASE 0,
+ __BODY_NO_MAILTO 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __DQ_NEG_HEUR 0,
+ __DQ_NEG_IP 0, __FRAUD_COMMON 0, __FRAUD_REPLY 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_FROM 0, __FRAUD_WEBMAIL_REPLYTO 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NAME_NOT_IN_BODY 0, __FUR_RDNS_GODADDY 0, __HAS_FROM 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HEADER_ORDER_FROM 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0,
+ __MIME_TEXT_P1
+X-Wisc-Doma: jameson@thehuges.com,gmail.com
+X-Wisc-Env-From-B64: amFtZXNvbkB0aGVodWdlcy5jb20=
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.163016,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840001,
+ SenderIP=[173.201.192.186]
+X-Spam-Score: *
+Received: from p3plgemwbe14-03.prod.phx3.secureserver.net ([173.201.192.152])
+	by :WBEOUT: with SMTP	id EaBCm5nJPeDoDEaBCmjzAx; Fri,
+ 13 Aug 2021 09:37:10 -0700
+X-CMAE-Analysis: v=2.4 cv=YYF4Wydf c=1 sm=1 tr=0 ts=61169fb6
+ a=IkyyP6rRnGJyrhQs5+IWFw==:117 a=QVjVDSs6qjcA:10 a=0d2IpkB-Uy4A:10
+ a=p66Ed4SFk-UA:10 a=IkcTkHD0fZMA:10 a=MhDmnRu9jo8A:10 a=x7bEGLp0ZPQA:10
+ a=08LH3mvSY3YA:10 a=ljQYV4cn7lu0uldALWEA:9 a=QEXdDO2ut3YA:10
+ a=xo5jKAKm-U-Zyk2_beg_:22 a=atxTfE5akgAtuRYRRpJe:22
+X-SECURESERVER-ACCT: jameson@thehuges.com
+X-SID: EaBCm5nJPeDoD
+Received: (qmail 767 invoked by uid 99); 13 Aug 2021 16:37:10 -0000
+Content-type: text/plain; charset=utf-8
+Content-transfer-encoding: quoted-printable
+To: "egbooth@wisc.edu" <egbooth@wisc.edu>
+Subject: Request
+Reply-to: Mike Rupiper <lolaw8386@gmail.com>
+Date: Fri, 13 Aug 2021 09:37:10 -0700
+Message-id:
+ <20210813093710.0ceb3b8dd9b0a1c2752d0931ef78e3f5.9b07f4d6e5.mailapi@mobilemail14.godaddy.com>
+X-Originating-IP: 105.112.50.142
+User-Agent: MailAPI
+X-Sender: jameson@thehuges.com
+X-CMAE-Envelope:
+ MS4xfFX8BiD6Z6SY+8XPJBszcKJcUV5d3rHyE+qm0GRAunrgHKM/dWMVIy5Z5nGV5lIBnxjpxqZvloLopmfkH31lZa5o7otP0LfdqsteKq3KS+A1Rzcsr4mI
+ KJeOOpcObeaIyXpU/vSsswsC6qjplkmI5Ie74m1EoCZ7DhAikWjWGSogIKYRYwE6cD4DKF60Z35uH9NaZyQAQbFkTx+4HUB+wolzzxga/4ILTsMkhRsVzbsJ
+From: wisconsinawra@gmail.com
+Return-Path: jameson@thehuges.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 16:37:13.2229
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ eedb820d-ff94-4def-c8b0-08d95e789a95
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT021.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: eedb820d-ff94-4def-c8b0-08d95e789a95
+X-MS-TrafficTypeDiagnostic: DM6PR06MB4171:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:5236;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SFE;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 16:37:13.1230
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: eedb820d-ff94-4def-c8b0-08d95e789a95
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT021.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB4171
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.8098507
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4352.035
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(520004051)(702028)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?QktqVHJLNlBlWkErTEJNNjIyRHhua0s1YXgycEsvSzMvTHRnQVc2WnFRSy9w?=
+ =?utf-8?B?M2dhZ0cxTm1XQkxzQkJaeVIwUkVSY1RlNitsNi9JeUxNV3k1K0NjTGJ2cjYx?=
+ =?utf-8?B?R01WZTlzQ1ljRmNIeVdaa1JFaktMcGFSK2hRNWdLNXNNL0RQeVMxOENDdWpj?=
+ =?utf-8?B?WTZBdHRENFYyQVRSdlJiWjV0SGN6aTVSU0s1TnhkN1d4UE1yeDZjUWpxc3Jh?=
+ =?utf-8?B?N3NsNXlReFF5Sm56RWdDSWM0Rko1elVRVElrQndYOTdKaGF2VnVxb0h4cVl1?=
+ =?utf-8?B?cEt3WElhQno1T1pWSURIRzQyTWdIbVd0SmhSbGdkMitrK0U4emE3UVBHcEVU?=
+ =?utf-8?B?c3pNaEZVWVR6Z1dMWHV4V2traHdFbkxydGV2L3JkWFlzbHdRY01INjI1S0Jj?=
+ =?utf-8?B?SnpWZ3J6aElGMDV1bUw5ZlFOL2gxSmsyMW40QXZFUE9WS0tTcnB3UXc3ajJm?=
+ =?utf-8?B?K1djK3Z3bktQdmVYS1A2NCtqdGExQk1UT1JyMGR6cmgrVmVZbXVubk0vejZv?=
+ =?utf-8?B?aXhvZ2VEcENUYXRLSFE4RThhdTE3V2JBejc2RWFGYjlHTGl2c2JlUHVyK2Qv?=
+ =?utf-8?B?dDJaTFRPT1BNWU5KUUs5c0NkZjVrNXQ0bVgxVnNidEErRkRVWEtYY1h6aVU5?=
+ =?utf-8?B?WG5YVGNUb25XRUs5ZVNmRElUMk90b2d5SThIWlFxb2VSR2dOQ2FnTzk1MmZh?=
+ =?utf-8?B?MWowejNIL1Z1KzV6TW51cGowcG80MHZPRys4dE5jRHBVWnIwOHFrc3pTZWFK?=
+ =?utf-8?B?djR1c1VxRVlsRTBtSy8wakgrTE5iNFpTcDFBSmZtc0x1aGVXRFF4ZVRVU1hH?=
+ =?utf-8?B?ODZLdVd2ZG5mL0k1NEFTbldKTWJBTXhkaG1aQ2g1UUNMSlBiamJCeW12UW8y?=
+ =?utf-8?B?UXJEUnp5S2ZBOFUzZkJoeFNyazBVU21vR2pJcURXUmcxaW1DU2JGT2g5bnFS?=
+ =?utf-8?B?Z2xEQzRiMmllWVdHd2hMM1dkVTByVTdFdVFnMTd5VU0rV3JZSHlabzFEYjJJ?=
+ =?utf-8?B?cklxZlQxM2ZySzRBUG9pWERHb1ZOUHNSYThCbnZweGk4Rkhad1FLcEpJaS9V?=
+ =?utf-8?B?MllTcDV5eEZ6Sk5kNm5VeHE1R29xVjU1OE9nc2YyV2Z3UU11a1hqSFMyVkhs?=
+ =?utf-8?B?OWpHamFtK0J1RFNVMnF2R0N4aUUxaXR4ck00Ni9JRjdKQ28yaGNCMEZCU2Z1?=
+ =?utf-8?B?OEtLTTJKTzVQUXduQlpJNTFNaENEdkZ1VDdkUGJGOHo5RkpSa3RTRE5CQVEr?=
+ =?utf-8?B?T1VZUldPY0gvYUM5VDhrSzZaYzljUGQ2YjFzUTgxcHZGU00zNDhCMGtza2lX?=
+ =?utf-8?B?Y2h5RTZzdXBacFdiRnkrUis2T3BSakI3RVl0TlpVWUtIL1hHZlNSMjdZcDNx?=
+ =?utf-8?B?R3Z4ZEhhMkhTY1dINzhUeWk3aGU3MlRraStHa25kZUh4NnMxYzN2bzYyOUhn?=
+ =?utf-8?B?dU5VRzUzM04vVzA1OU04bnhxWFRNa1Y0bmNNM1VKWWpPaFVzbUNYVm5kN3Rw?=
+ =?utf-8?B?aENmTXkxVmJPdCtEd1ZEcERpQXFLbTZkSThyelNFVkEzMzJybjg0Q2h5M0Zi?=
+ =?utf-8?B?b0dEVDdsOXorcmcvS2VBY01sZWlQT1hUd3pqajBHZzZuVDRVNjRxWVFOVVlw?=
+ =?utf-8?B?TklwbHJhVEhSODF4RHVFR2JOTE9DdXlKcUxwRE9zZzg3bHRrNExwajVadkV5?=
+ =?utf-8?B?L3d5QndHa0pBSnkrc2NZdjdWS1RVMXp2ZmluN1UrNVBoaEdhUUR0VnFocDJU?=
+ =?utf-8?B?YkMrdFNJNlBUV1RycHg0cWdUOG5sNmFjMmJRWTRlL2RhaFNCTm9ZRk00L2NO?=
+ =?utf-8?B?SXNFVzVtcXBLWWFUZE9KekhaVU9HNXFJSnBNNDlabHM1TGRxdE5KcjNyRlIy?=
+ =?utf-8?B?Q3JQWGhRNEJuUzNkczUya1FEeExCakRvdHpBZTdmeDVUcFg4SHFLR1pGTll1?=
+ =?utf-8?B?c3o5ejhkZ3poVVNzdDBVSVUxRDJpd2ZnSXkzUzVISTh3Q2ZYSzgzQWUxY3NI?=
+ =?utf-8?B?dk5Bd0VWWFVHazFTaXJWd0ovUVh1blZBREQ3cnkvSmN6bHgzZ1kreHR6ZlhO?=
+ =?utf-8?B?SGFTYUxidTVMWGpCWUpTMjR2UkxXTVBuQXdHcGw1VCthZlZzK2NGYjV6S2V2?=
+ =?utf-8?B?UUJ0MlpYWHpiVnpDbUF2NnNOZG1ZNHdwRmpFOE1uZCtxZjN1ekdId2hRVE5n?=
+ =?utf-8?B?WDR0RzRlNExOeTAwakRsMStLeTFteVZraGFITHBlemxseW9MSGIySUgveHdw?=
+ =?utf-8?B?YkpiQXE4Zmp5YTVXVEpKNDR1SW5jSzBXR2hjVk8raktMTnZJQWRMTUdoRzdk?=
+ =?utf-8?B?OXVvR0JmbUM2ZkxDQ0lMTHBDTlp5Y3B6aitSQmtkQ1FnYlRlSGgwcithaEI3?=
+ =?utf-8?B?ZWljU0w4UkNUaWwxdWxvY3BQcElHZXdQMTFhbjI5RXdiMlpjbWJJL1dNRG9k?=
+ =?utf-8?B?M2wrZTZQdmlEUXJmRG1SS0FGU2ZIeDdlTTdVZzBHWHYwQ3Z2SUowTkp6TEEr?=
+ =?utf-8?B?S0wvV25OaEQ0N3gvYU1GMXczOXdPaktiUWkxdHBXRGRUTWlEL2FNNDdMbUNs?=
+ =?utf-8?B?ZnM5TXZTQW9PUmZlWU55VjVBQnhzeVZDYTRuZHgzRlRlODV0eGhRT0RORGsz?=
+ =?utf-8?B?ek9GZUU1VVlxcEsyS1FzTllvUFl6aU9PSFJOUHhYQVByTlJRdm1UaE4zNTFW?=
+ =?utf-8?B?M1EzMFlwS2VIeWNrSXFSNVMyWE9iTG9ha3c9PQ==?=
+MIME-Version: 1.0
+
+Hello
+
+
+How are you doing, Are you available? Can you kindly handle this for
+me, We are giving gift card donations to the Hospice Care Units,
+Please confirm if you can get some today. You will be reimbursed.
+Kindly reply with an email I can=E2=80=99t call now, so an email will be
+preferred Await your prompt response.
+
+Thanks
+Mike=20

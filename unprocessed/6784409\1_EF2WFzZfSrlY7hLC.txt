@@ -1,0 +1,172 @@
+Received: from DM6PR06MB6443.namprd06.prod.outlook.com (2603:10b6:5:10c::31)
+ by DM6PR06MB5692.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022
+ 22:12:59 +0000
+Received: from BN9PR03CA0869.namprd03.prod.outlook.com (2603:10b6:408:13d::34)
+ by DM6PR06MB6443.namprd06.prod.outlook.com (2603:10b6:5:10c::31) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.18; Mon, 15 Aug
+ 2022 22:12:58 +0000
+Received: from BN8NAM11FT075.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:13d:cafe::76) by BN9PR03CA0869.outlook.office365.com
+ (2603:10b6:408:13d::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.18 via Frontend
+ Transport; Mon, 15 Aug 2022 22:12:58 +0000
+Authentication-Results: spf=pass (sender IP is 3.92.150.237)
+ smtp.mailfrom=student.midlandstech.edu; dkim=none (message not signed)
+ header.d=none;dmarc=bestguesspass action=none
+ header.from=student.midlandstech.edu;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of student.midlandstech.edu
+ designates 3.92.150.237 as permitted sender) receiver=protection.outlook.com;
+ client-ip=3.92.150.237; helo=us04psmtp.brightspace.com; pr=C
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ BN8NAM11FT075.mail.protection.outlook.com (10.13.176.208) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5546.7 via Frontend Transport; Mon, 15 Aug 2022 22:12:58 +0000
+Received: from us04psmtp.brightspace.com ([3.92.150.237])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.16.20220118 64bit (built Jan 18
+ 2022)) with ESMTPS id <0RGO00SD0GDLZL10@smtp7.wiscmail.wisc.edu> for
+ arik.kriha@wisconsinhistory.org; Mon, 15 Aug 2022 17:12:58 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=12%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_50_70 0.1, RCVD_FROM_IP_DATE 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODY_SIZE_1500_1599 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0,
+ BODY_SIZE_7000_LESS 0, CTE_QUOTED_PRINTABLE 0, FRAUD_HIGH_X3 0,
+ FROM_EDU_TLD 0, HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0,
+ INVALID_MSGID_NO_FQDN 0, MISSING_HEADERS 0, NO_CTA_URI_FOUND 0,
+ NO_FUR_HEADER 0, NO_URI_HTTPS 0, REPLYTO_SAMEAS_FROM 0, SENDER_NO_AUTH 0,
+ SINGLE_HREF_URI_IN_BODY 0, SPF_PASS 0, TO_MALFORMED 0, __ANY_URI 0,
+ __BODY_TEXT_X4 0, __CT 0, __CTE 0, __CTYPE_HTML 0, __CTYPE_IS_HTML 0,
+ __FRAUD_BODY_WEBMAIL 0, __FRAUD_JOB 0, __FRAUD_MONEY 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FRAUD_MONEY_PAYMENT 0, __FRAUD_WEBMAIL 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_START 0,
+ __MIME_HTML 0, __MIME_HTML_ONLY 0, __MIME_TEXT_H 0, __MIME_
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: peterkelly@student.midlandstech.edu,student.midlandstech.edu
+X-Wisc-Env-From-B64: cGV0ZXJrZWxseUBzdHVkZW50Lm1pZGxhbmRzdGVjaC5lZHU=
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.8.15.220619,
+ AntiVirus-Engine: 5.92.0, AntiVirus-Data: 2022.8.15.5920001,
+ SenderIP=[3.92.150.237]
+X-Spam-Score: *
+Received: from [172.27.22.75] (unknown [172.27.22.75])
+	by us04psmtp002d.aue1.int.d2l (Postfix) with ESMTP id 5CE9940E8B;	Mon,
+ 15 Aug 2022 22:12:57 +0000 (UTC)
+From: Peter Kelly <peterkelly@student.midlandstech.edu>
+Date: Mon, 15 Aug 2022 22:12:57 +0000
+Subject: UNICEF Job Opportunity
+Message-id: <S5QH0EDNMHU4.NOZI3L7PG2LS2@IP-AC1B164B>
+Reply-to: Peter Kelly <peterkelly@student.midlandstech.edu>
+Content-type: text/html; charset=utf-8
+Content-id: <S5QH0EDNMHU4.0O8KGY43YIOQ3@IP-AC1B164B>
+Content-transfer-encoding: quoted-printable
+To: Undisclosed recipients:;
+Return-Path: peterkelly@student.midlandstech.edu
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2022 22:12:58.5453
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3f4eadad-c8d8-4b39-492a-08da7f0b4fbc
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[3.92.150.237];domain=us04psmtp.brightspace.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[3.92.150.237];domain=us04psmtp.brightspace.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT075.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3f4eadad-c8d8-4b39-492a-08da7f0b4fbc
+X-MS-TrafficTypeDiagnostic: DM6PR06MB6443:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:us04psmtp.brightspace.com;PTR:us04psmtp.brightspace.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2022 22:12:58.4516
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3f4eadad-c8d8-4b39-492a-08da7f0b4fbc
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT075.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB6443
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.8412539
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5504.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?elc3WmpIMHN5VHN5eTVQVytpOHF5OHhVRmVPN0QrWVJ5QWVxY01HOS9mdmVj?=
+ =?utf-8?B?bjJuL3pGZEFWQ3FaaDJrN2JWblllVnZaNHcvNFlNUnQ4bFVQMXhZQWJlNHVC?=
+ =?utf-8?B?cG5USnNHTlQ2SDladW0zTWNOdHZtNERsVW5UWnRxWDBVTVpuNTNZTlpVYzFu?=
+ =?utf-8?B?YlVZVmE1ZDNWOWplb0M4enJWU2lIMnhoVGYwa1pUc2dWN1dEdHFQZmRzZGFR?=
+ =?utf-8?B?eXRsazBoM25MWitVNERqcWpJWEFWc0dWNm9yZVkyai90aUV1YnEwYlVnQXU1?=
+ =?utf-8?B?ZW5pT2FxNU9KcktOMkV6V1RKMmVZcXBQeXk2Wnc2SmQ5b3hhZ2FibEFKL0N3?=
+ =?utf-8?B?b3djY1gvTFZPS0VQNE1mLzI0N09tR29sU1NPQVA3c1loZlNqbGtxQ00rTG5z?=
+ =?utf-8?B?MytHR3ljV0hvdnBvT1V3TkprT21VWXlBbzhrVGpJQlpUZEt0UTRHbVB2VUVv?=
+ =?utf-8?B?bWFXL3Jmc1hCSWlKYzJKc1hZdjRPMWVpNWtVKzFlSEE0L3hNMW83YVY2ZjYy?=
+ =?utf-8?B?eThOeVB3R1dXR1JWTGVSanlqRlhJSXBoaW0yODE1TmVSTDF3SWJRdmxoL2I0?=
+ =?utf-8?B?aXJPTm5oeCtEMC93ZTgrd2s1WWdvVXp6MDV2YVVtNVZPWWVQN3dJM2xXb1ow?=
+ =?utf-8?B?bjRIRU9EQ1k3SWZTMDZXNDdjRWUwNmM4M0ZNVUFFa0tRRGdGaThPVHlFT1Ev?=
+ =?utf-8?B?YS9ZclFua1hSa0RrdmMxUEh0dko4Q2lxNFRMcXRoM1lxclVaWXIzYkJVUnZP?=
+ =?utf-8?B?cnVLRVh4TVdWVHRHNGkraDc3T3hNd2JIWWZFQ200Wk53Y3lqcW1ibFFFQUZp?=
+ =?utf-8?B?b0R2bXg4SWNiUndLeWF0ZTRtRkh0Zy9hMGRjNVQwNGx6YXNCNy9JVkUvS3dL?=
+ =?utf-8?B?NlRFMm5WdWJjRTRBNUlDbmtpWjhYd1NKWDBPeWIvczg5Rmkzc21QQ1ZqaUdF?=
+ =?utf-8?B?ZmdmTU5ZK2lLUWRpWVFob1hnMmxyUlVMNWZGcUtlTGdCRTFFMmxMT1pVemtK?=
+ =?utf-8?B?d2g5M0pTR0JJWHJiMHU2ZHh1QytDU2U1b3VEVEVLZUhRWEFtTlZoOVNZRnJX?=
+ =?utf-8?B?WDZDbnVkc2RjRjlIMmU5TTZuMDlaN0hqd3dQeWVsbzJ0ZnI2TzhPNHE2NzZk?=
+ =?utf-8?B?dG51VnVHbkMvc0tEd1dReWJEM1J4aVV2YW5xWDZZTU9Yd2RlTEdCTytub0lt?=
+ =?utf-8?B?aFIrTEMxeGpvL1JEY1RFUUEzVmpvVkNEL3lyUndNY2RBWjJZRm1INUJjNVlE?=
+ =?utf-8?B?MklabTRQSml2Wm9HUWwyOW1uQlhCZTJTSTROdjdjQnkzc3BVYVJCVWlNcyty?=
+ =?utf-8?B?UFZFallEUW5WTkg0N0xVQ3BmNHdBVEFXZDFGQUxMcGFuTjRhODJ3SWd5RUJs?=
+ =?utf-8?B?SWQwenBBZUVwczZ2MTR4Rm5YSlZXbDV6cVBCS2ZVSlJ4bmlaZkhvdVZZRW1H?=
+ =?utf-8?B?L0xZYnZQUEtMSGNiVXZxMWMwMW5QcWtxNVFINVdpQmZReUYvTStadHltRkJX?=
+ =?utf-8?B?U21EU1FTR1g1SDVxV0lSRGNadWY5VzdPMGFiOHZqQ2hhU3I3cVV5clU1dTNs?=
+ =?utf-8?B?bmo4b2xMM1Z1K1UyaElYYnM0TlZsUXRWZklNM2hkZWZ5QXlRclFPbWEwUWhk?=
+ =?utf-8?B?akhMSVp5M2M3N3ZmM3BGRktqWVB4b05lZFpZUExPWGZ5QUM1cVVhMExNdHla?=
+ =?utf-8?B?azJMMjluVEt1ZDZPUisyQldJbkJTKzZvb25LOFBUTXRpYTVUMjFXLzBva2Uw?=
+ =?utf-8?B?bXZoSXF4NFJEcndrVnhxa282VEtRbHB5cXJrb2RqYmpjdGVxTW51bHdpYjBY?=
+ =?utf-8?B?Rk9jQm1PQ0dRT01lUmNOcWd2dyt5STlTYmpsSWY2YVJkbEdJbm45WVlFWlZs?=
+ =?utf-8?B?RG5VVlFjTVY0S3pCUlNYV2FwSmRqV2x3WTVJSTNVOVZGOUcyb3R2aVNkY2Iz?=
+ =?utf-8?B?akI0ZmJSUU02UC9ucU5VL3BRVU0xVTYyYnJOQ05IV0liamYxL1hxN3AzMUNZ?=
+ =?utf-8?B?N0dmUzlQdW0vcmcrdzl5clF2THQ1WHhFWUJJRWFmL3oySkRrZWkxZFBXRUR4?=
+ =?utf-8?B?dnE5TUFLWDBYb2g1YmY2VjZaRTJiTWdHc2JyRXVXQWk2RUNFeHd0M3hqTXJN?=
+ =?utf-8?B?M0h2T2RZakY1ZFoyUStyWmRuS2RwUDNpZVNva2NYa0J3UERPcC92cGJFbCsz?=
+ =?utf-8?B?VDdjNjF0aDdDcFVwc0dvVFlzVDVSZ2VDb2ZQcThIQThFNTlDSFR5OGhrQlNQ?=
+ =?utf-8?B?eEpKMHR2eS8rTTRtMlZ6dE9tT2RYdDEzZEJ2NTR2TWduVG1kQy9XV1phQWxZ?=
+ =?utf-8?B?anI1cm9zd05Ia2JrY2VKWlo5aEFpc1h4eG42amhHenY3MzRrZ3pRR0wyMkRo?=
+ =?utf-8?B?a2M4aWdKSWdOdjV0WmNkMkJBU1NqSENrMmdTQlA0bEtTNjd6bmlGYVpNN2ZG?=
+ =?utf-8?B?MEMxaWhQSWFwQlhGeTVkN3M1ODluUUdveFNCd3E4c2hQZ2hSNjUvVDc4bi9v?=
+ =?utf-8?B?dUlyY0tScWhtQjNXNXlWT1p5SGFBc3c3NkZxVkpSMnNqeTR1MzRSdEgzZVlL?=
+ =?utf-8?B?dk14ZzlVZ1dDZU5IbFFHV01HR29yTGdBM25EY1RmMGdGOHJJRWc4UUZIMjFt?=
+ =?utf-8?B?TFQ0bnAyMEhLNXVEbm1LVXRkMTluVnRoZUpuSEF4MTdsRnQ3ZXBaSUp3aU5l?=
+ =?utf-8?Q?EPs9?=
+MIME-Version: 1.0
+
+<?xml version=3D"1.0" encoding=3D"utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DT=
+D XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-trans=
+itional.dtd"><html xmlns=3D"http://www.w3.org/1999/xhtml" lang=3D"en" xml:l=
+ang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>UNICEF Job Opportunity</title>	</head><body><p>I am sharing job opport=
+unity information to students and staff who might be interested in a paid U=
+NICEF Part-Time job with a weekly pay of $500.00 (USD).<br aria-hidden=3D"t=
+rue"><br aria-hidden=3D"true">Kindly direct your replies to&nbsp;<strong><a=
+ target=3D"_blank" id=3D"gmail-m_6994822968155289336m_1810065427654113646m_=
+7691127565218138639m_-5290448067030726776m_7213185953275057856gmail-m_-8465=
+533979189973884m_5147810372296844732gmail-LPlnk755170" rel=3D"noopener%20no=
+referrer%20nofollow%20noopener%20noreferrer%20nofollow%20noopener%20norefer=
+rer%20nofollow%20noopener%20noreferrer nofollow noopener noreferrer" href=
+=3D"mailto:dranthonybrown20@gmail.com">dranthonybrown20@gmail.com</a></stro=
+ng>&nbsp;<wbr>for instant response from Dr. Anthony Brown with your alterna=
+te non-educational email address I.e., Gmail, Yahoo, Hotmail etc.) for deta=
+ils of employment.<br aria-hidden=3D"true"><br aria-hidden=3D"true">N.B , t=
+his is strictly a work from home position.<br aria-hidden=3D"true"><br aria=
+-hidden=3D"true">Sign,<br aria-hidden=3D"true">Academic Career Opportunity<=
+/p></body></html>

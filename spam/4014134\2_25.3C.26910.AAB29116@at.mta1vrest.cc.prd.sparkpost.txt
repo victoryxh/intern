@@ -1,0 +1,433 @@
+Received: from PH0PR06MB8240.namprd06.prod.outlook.com (2603:10b6:510:ba::22)
+ by DM6PR06MB6748.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 14:58:54 +0000
+Received: from CO2PR04CA0072.namprd04.prod.outlook.com (2603:10b6:102:1::40)
+ by PH0PR06MB8240.namprd06.prod.outlook.com (2603:10b6:510:ba::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.21; Sun, 15 Aug
+ 2021 14:58:53 +0000
+Received: from CO1NAM11FT003.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:102:1:cafe::18) by CO2PR04CA0072.outlook.office365.com
+ (2603:10b6:102:1::40) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sun, 15 Aug 2021 14:58:52 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ CO1NAM11FT003.mail.protection.outlook.com (10.13.175.93) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 14:58:52 +0000
+Received: from mta-253-209-13.smtp-out.sparkpostmail.com ([147.253.209.13])
+ by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXV02WS4YY25190@smtp4.wiscmail.wisc.edu> for
+ forrestl@svm.vetmed.wisc.edu; Sun, 15 Aug 2021 09:58:51 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_50_70 0.1,
+ SUPERLONG_LINE 0.05, BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0,
+ BULK_EMAIL_SENDER 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, FONT_STYLE_0PT 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, HTML_BAD_EXTRAS 0,
+ LEGITIMATE_SIGNS 0, LINK_TO_IMAGE 0, LIST_HEADER 0, OBFUSCATION 0,
+ RDNS_BULK_EMAIL 0, SEO_OFFER 0, SPF_PASS 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_HIREME 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __FUR_RDNS_SPARKPOST 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_ID 0,
+ __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HEADER_ORDER_FROM 0,
+ __HIDDEN_HTML_CONTENT 0, __HIGHBITS 0, __HREF_LABEL_TEXT 0,
+ __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_BAD_START 0,
+ __HTML_HREF_TAG_X2 0, __HTML_TAG_DIV 0, __HTML_TAG_IMG_X
+X-Wisc-Doma:
+ msprvs1=18861QTos5YIm=bounces-302274@spmailtechno.com,isearchbse.com
+X-Wisc-Env-From-B64:
+ bXNwcnZzMT0xODg2MVFUb3M1WUltPWJvdW5jZXMtMzAyMjc0QHNwbWFpbHRlY2huby5jb20=
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.144815,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840000,
+ SenderIP=[147.253.209.13]
+X-Wisc-DKIM-Verify:
+ msprvs1=18861QTos5YIm=bounces-302274@spmailtechno.com,isearchbse.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+X-MSFBL: fcirizYwmFrfq4S3EpYgQDTeJwGFVUNuXJY+5FhnQeg=|eyJtZXNzYWdlX2lkIjo
+	iNjExNWFhMmIxOTYxNzU3NTUyYzMiLCJyIjoiZm9ycmVzdGxAc3ZtLnZldG1lZC5
+	3aXNjLmVkdSIsInRlbmFudF9pZCI6InNwYyIsImN1c3RvbWVyX2lkIjoiMzAyMjc
+	0Iiwic3ViYWNjb3VudF9pZCI6IjAifQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=isearchbse.com;
+	s=scph0621; t=1629039530; i=@isearchbse.com;
+	bh=ZcWfoAV8AMKG8D6nvL+KiLjEAiW1IfzZnWxYtw056/E=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=mdRPeS8KUueemlphmaOTyivg+D5rXuuH5iApSlCHHmYzikhumKV+YdbrUwsvNa4rE
+ 45Jpg8xIGf6BnKf5TuQ3V7X9RX41Bj07Q3jrSvguV1UGjbS/R9ed2StsCTCvRbzLKT
+ 2E16bLjv65CxV255JAX5rsBsYN3F3ZYM/9THLZyU=
+To: forrestl@svm.vetmed.wisc.edu
+Message-id: <25.3C.26910.AAB29116@at.mta1vrest.cc.prd.sparkpost>
+Date: Sun, 15 Aug 2021 14:58:50 +0000
+Content-type: multipart/alternative;
+ boundary="_----55v24x+txlDC0cwaNwz8Fw===_D4/3C-26910-AAB29116"
+Subject: More on JARVIS Summaries
+From: Ayesha Schroeder <as@isearchbse.com>
+List-Unsubscribe:
+ <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:SOo7HqMq_0pPmPe9U8PijXzWCiqyKSmeGoRNvyk7Obo~|eyAicmNwdF90byI6ICJmb3JyZXN0bEBzdm0udmV0bWVkLndpc2MuZWR1IiwgInRlbmFudF9pZCI6ICJzcGMiLCAiY3VzdG9tZXJfaWQiOiAiMzAyMjc0IiwgInN1YmFjY291bnRfaWQiOiAiMCIsICJtZXNzYWdlX2lkIjogIjYxMTVhYTJiMTk2MTc1NzU1MmMzIiB9>
+List-Id: <spc.302274.0.sparkpostmail.com>
+Return-Path: msprvs1=18861QTos5YIm=bounces-302274@spmailtechno.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 14:58:52.4833
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5dca6a61-f005-488b-ddfe-08d95ffd324b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT003.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5dca6a61-f005-488b-ddfe-08d95ffd324b
+X-MS-TrafficTypeDiagnostic: PH0PR06MB8240:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 14:58:52.3177
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5dca6a61-f005-488b-ddfe-08d95ffd324b
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT003.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB8240
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8250119
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UGdBZmpNNlFoN0ZQa3dRdDZiRVBSdjg1UjRkRytqMlFpYnh0MldCbVgzQmJU?=
+ =?utf-8?B?ak5zOUVnTGNzM0tWTHZtN0tUUE9mZU9oV0RhTDhFUDFQUEVIemlNRHpUY01j?=
+ =?utf-8?B?c01UTmppNkwyQmlCYVN4cjdhL3g5c1lLSzEvM1NwbkxSSERZNlB3Z0E3TitG?=
+ =?utf-8?B?REIyN2hZdkh0blpYQU96dU5BeFNuVjhSZnExb1ZJTitGWk5WQzVHV3VwQk1p?=
+ =?utf-8?B?RzVwU0FyanBaNS9xQml2cTVvbmdjZEUzQVZoQ3dUMmVqWGh1TTAwTHBmK0k0?=
+ =?utf-8?B?bXU0emZEa3Q2WnpyTTVmS1hXNFNKNW9tTGg2ZXM0eTN1bFBzNHo5YmlFMFNL?=
+ =?utf-8?B?amhvU3FWWWlzZzE4cmVydFI1TENkaFRmdnZ6RVZoWUJhU3ZMU01OaUJ5RHoy?=
+ =?utf-8?B?czJGQXRSVXVCQlFEUnprQ2dhY3k2M2QyanozSUF4NS94bTZoeG5BY3ZhS2NE?=
+ =?utf-8?B?TTlERWxPQUhlK1pRUmc4dTBRMTBRSlVKRCtuRm15TjFick51QllrbjdEalpy?=
+ =?utf-8?B?elBscm9ISHo4N1B2cGp6OHYvN1NBRzI0eXRhSDlFRnF6QzB4amVDNDdtMklw?=
+ =?utf-8?B?d0FNR1JRNmYyaXIxUkRCeVc3VkJxalUwVWRDYUZLTlVML25mTUxsbGRReGI0?=
+ =?utf-8?B?OTIzRllrOW9Jejc4RnlzeGI4VEhkU3FDWWRlUWU4b1VJQmN4RTZxbEpLNU5H?=
+ =?utf-8?B?ZmhqKzNiZ0VTMXMwSUR6d1FFRUMrMzVJZEFtNlVKS0JhT0Exb1J6V2lxWVVZ?=
+ =?utf-8?B?SkVYZk5xSTFIb3pWeEllM1F6d29FQ3EyTGc3UEJFcjlHcnVNVWNMMHp1WDVR?=
+ =?utf-8?B?aHVrMFBraTVuV2NNMytuSEZzb3FkUlcvSm5YUjhZRDM5dml3K3d4TmdobHND?=
+ =?utf-8?B?R2pmdTN6czdGSFlDRzlyZ2Z3SHJ5MCtzWSsxVnJXYkpJeU1ZN2VMWXVXTDJC?=
+ =?utf-8?B?bE9Ba3YxSDVPblZ3MzI4VHdFQWt5ZUZZeUNkZlJ0R0RoUFZMMk1jdVczVGNs?=
+ =?utf-8?B?K2JaSHFkYytRQmVZU2t2MFZtUlkvQ3NoTXZwRWsxdkJHMlpoaHhLMFVIUXRP?=
+ =?utf-8?B?a1RId0xHMGJNaU0wS0pkWDFtYTFxbVFpcEZWcGtUNmV5ZFdDRG4xNmI3MGh6?=
+ =?utf-8?B?MTBOek1vWENIRm1pNTMweWZqUE1ZNlZxbUsvMTJjMzJ0T0lWU001Ly9tU0hr?=
+ =?utf-8?B?a2llQ2RzU3pGVEczZUZxNFFOQ3J6Rk1qdXpka21rbnV1bVRyUW5EQ01Ka3I1?=
+ =?utf-8?B?aXNOVXBSVXh6eis3TkhyNFkzOVpuNlN3U0dQSk1KZVZlTUtxQktiZ3M0WDRK?=
+ =?utf-8?B?L2l6Y1crMFh6NVg3SHFQZk9aMzdqeE1EYmVGOG9Vem9Ebk9vVHhUWXBCYXRo?=
+ =?utf-8?B?eDZHaEN3U2Vob05KdHNZUnkrMmJHOTl4dTNLRTNWanJVK1lOcFBXQThXMnNt?=
+ =?utf-8?B?aitQZCtKdFZnUW5YWlduV2lkN0NYUXZKYnpyNTAvVmgyOFhaTzY1cWhwYW9Q?=
+ =?utf-8?B?bXFyN1BDRkp2dnE4WVliT0RVWkNZdzRDV0plZHh3VWI5SktKdWRqeU1KOWJj?=
+ =?utf-8?B?Z0pzS256ZjVqOVMvZExCM0twUC9sd09WbDJaeHRQaEtOSzBrSmZBRXIxb2xM?=
+ =?utf-8?B?VWRTOFRBaHpEbkNuVmhzRnNnY0NYcSt4TjhSSWZXUDZ5QXhjbWRpZVp0UXBG?=
+ =?utf-8?B?cTBOMURCWHl5VVJuMVoxRzkrNldDS2RXVEtoWHBaNnpUMUt3K1ArcGJsdGRE?=
+ =?utf-8?B?MTc4QmZtdU9iWjgxS0FGUE8ra1RQNnI3aFBhNFpHZXhWWUd3WmNEeXRKYWZB?=
+ =?utf-8?B?WWg2NWFwRUQ2emdCckM5a2F4OEpGKzN5N1lBbU04aUlWSnVsSmJFRUdib2NJ?=
+ =?utf-8?B?OEYwc2lubW5uN0tCZ21wVGxhdmhGT2Z4cXR0SmZkNVpDa0RvQXBCU016dFdn?=
+ =?utf-8?B?UWQyRGZwdTBEZ1g2ZmZrU211OUtTY2d2aEdJcXQvZ1REMTNxQ09OQnFZS2tJ?=
+ =?utf-8?B?MG1zRmo3LzVnS2dvTXlMbVZLNHJ2RlBNa24zQTlyOWxHNEV1NEpLOU44dHJy?=
+ =?utf-8?B?OW5qSzIrQng4a2NuYzBjdVQyTXR1L0g0ZFMyMzl4dG84VnhRdmRqeFRDV0wy?=
+ =?utf-8?B?TzIzTU5wV2xuTHJpd0E1WW90THYwYXZnVGRmWjdjUWtDNHhrcjNUN0FqQWM5?=
+ =?utf-8?B?WmwyWXdoU1hWNDFaMUtOQ2pVenlPdXh0N0VTM0JKUFdIZHdBa3l6OVd6eU0v?=
+ =?utf-8?B?dmRSaFp4eXkwUnV1TS9jZFFmWWFtVkNEczB6d1FlV1FKVkt1WDg3U1N3Y0Np?=
+ =?utf-8?B?RVkzTlU4Uy9TSS9VMERvaXBCVkJ2ZCtLb2Z4TkdOTnN6Zk5ESFdPR09ZSG0y?=
+ =?utf-8?B?RGpIenQram9YWVpaU2VxZEhObElBMWhnRS9VRGVTSDd2a0ZUV2tqaTd6K1k0?=
+ =?utf-8?B?ZWVvdFpURXhXd2tzaG1oZGVTWmZiNFNGblhIUmVVbGdCUnZWelk2U2NKWk5Q?=
+ =?utf-8?B?dENmSGVPaHNLMXhyYzYvTXczckgzN044bmVJdklKcGNHaGtXQldlU2F2blhI?=
+ =?utf-8?B?QlRoa3Q4a2tzUGw2VktnSkdTVmVtVmNDdWJid1NoT25SN1phSFlieGZrVnNO?=
+ =?utf-8?B?Qjh0K3pyM0ptTUhVNW9pVDFEcUQxRHZicmFyVUNzL0gyaUZaSWxCSnprdFo0?=
+ =?utf-8?B?L3UzWlZWaEtTZDR4aGVWbm5jSk95dDFXMGFZYWs1eTNlR2M2MG9tSXB5OXhM?=
+ =?utf-8?B?SWZXUFJnbEZ5YW5HNTVBK3FpYk03cURRM29Fa1pPVHR6NG9aM3RQbTBSVHZV?=
+ =?utf-8?B?cXpVanRwWXdFeFVjVGhWSTRDZ2JMZlhuRjVoZ04rTUFPa3A5dzRuQU9MRUhL?=
+ =?utf-8?B?SHpsYktZbEFqNjNZWnBWOGl4MllwMWhuamtZQVdMdUQzTEVLWHhmRFRBdnl1?=
+ =?utf-8?B?RENIbHlUSTQ5UVl6OXgvQmYvdGhXODBTVEdaaXppZ2tWZCt6OWpEbWhuSkxx?=
+ =?utf-8?B?UEpDNE1maEl3NWdHOXdXZ3FhaXVISTFtMzJxSEYrTmlIY0p5MkxUcEd1cnZX?=
+ =?utf-8?B?MWRtaFBUOURsaW1BWHJVV093ZDlubVBldGNsK05VNTVVSjZxdXBmUlpERFN4?=
+ =?utf-8?B?ZktUMW50ZTdqZGYyU3FYa29xLzJ3d1dPelpLcDZzazlCMkN2ejUyWkxSR0FM?=
+ =?utf-8?B?a01IYnMyMkNXRFNncUJOdDZhdXo2WTZQb0FrcSs3czMxSGlFSzVLWTJuRVRs?=
+ =?utf-8?B?L2FoVGN1SDhYV2QvTWkyUGxhdkZITHNtQ0YxbjNZMHFnZUwybGxRRmQva09k?=
+ =?utf-8?B?YWFvVWVwbmY2UGM3b0Z5VnpucFVydjZ2MVJVbEM4QlZ6Tks2ZXZDRTQrcXhB?=
+ =?utf-8?B?SkxKb09iMm5LcFhFSXJJckV6M1liMzRhRmFSWDFwZTgrTm02UC9WU0tFK2VC?=
+ =?utf-8?Q?NgZ/OeHG2S2as9+iyhY=3D?=
+MIME-Version: 1.0
+
+--_----55v24x+txlDC0cwaNwz8Fw===_D4/3C-26910-AAB29116
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+The Medical Google - More on JARVIS Summaries=0A=0A=0AiSearch Science or th=
+e Medical Google helps elucidate the current best evidence on a topic or cl=
+inical question using Google and a Natural Language AI. It also helps you s=
+earch for the best and the most relevant basic science studies.=0A=0A =0A=
+=0AAs we mentioned in the email yesterday, JARVIS Search Summaries are now =
+available on the Medical Google. We illustrate with an example the differen=
+ce between individual article summaries and abstractive summaries that JARV=
+IS generates, at times using his own words. The latter is available current=
+ly only with the combined subscription to iSearch Science and iSearch Biome=
+d.=0A=0A =0A=0A1. We search for "Negative appendectomy". We check 'searchin=
+g for..' Procedure at the bottom of the screen.=0A=0A =0A=0A2. Upon searchi=
+ng, you run JARVIS.=0A=0A =0A=0A3. Next, you go to Adv Sort in iOS and sele=
+ct "Sort by best evidence and most relevance ONLY". This is available in th=
+e JARVIS menu in Mac. In the prompt, you choose "Highly Relevant".=0A=0A =
+=0A=0A4. We then Left swiped on this article titled "Reducing the negative =
+appendectomy rate with the laparoscopic appendicitis score; a multicenter p=
+rospective cohort and validation study". This is what JARVIS said: After ad=
+justing for covariables, including radiological imaging, use of the LAPP sc=
+ore led to fewer treatment failures when compared to not using the LAPP sco=
+re (OR: 0,48, 95% C.I. 0,251 to 0,914; P=C3=82 =3D=C3=82 0,025). The LAPP s=
+core is a safe and simple tool to reduce the negative appendectomy rate dur=
+ing laparoscopic surgery without missing cases of acute appendicitis. This =
+option is available just below the Open Article button in Mac.=0A=0A =0A=0A=
+5. Next, we hit Summarize all articles at the top of the search results in =
+iOS. This is available from the JARVIS menu in Mac. After several minutes, =
+JARVIS emails us a PDF, with the same article summarized thus: Negative app=
+endectomy rate was significantly lower when the lapp score was used (4,7% v=
+s. 8,4%; p =3D 0,034) there were no significant differences in operation ti=
+me, complications, or readmissions. Use of the lapp score led to fewer trea=
+tment failures when compared to not using the score (or: 0,48, 95% c.i. 0,2=
+51 to 0,914)=0A=0A =0A=0AYou can note the obvious difference between the tw=
+o. In the first one, JARVIS provides a reasonable summary, but misses the m=
+ain outcome - negative appendectomy! While JARVIS just picks out the most i=
+mportant sentences in the first case, he actually summarizes in a way thing=
+s make more sense in the second. You can check out the entire Search Summar=
+y here. The second type of summaries takes much more computing resources wh=
+ich is the reason we need to limit this to higher subscription tiers at thi=
+s point.=0A=0AThis platform is available for iOS =F0=9F=94=97, Mac =F0=9F=
+=94=97, Windows =F0=9F=94=97, and Android =F0=9F=94=97.=0A=0A =0A=0AYou wil=
+l be able to see the iSearch Biomed/iPubmed app when you check out all apps=
+ from Best Surgical Education, LLC on the App Stores. Or, you can download =
+it from our product page.
+--_----55v24x+txlDC0cwaNwz8Fw===_D4/3C-26910-AAB29116
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle>=0A=
+	.center {=0A=
+		margin: auto;=0A=
+		width: 200px;=0A=
+		border: 3px solid green;=0A=
+		padding: 5px;=0A=
+	}=0A=
+=0A=
+	.centerText {=0A=
+		margin: auto;=0A=
+		text-align: center;=0A=
+		text-decoration: underline;=0A=
+	}=0A=
+=0A=
+	.centerTextN {=0A=
+		margin: auto;=0A=
+		text-align: center;=0A=
+	}=0A=
+</style>=0A=
+
+<div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;b=
+order:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!im=
+portant;display:none!important;line-height:0px!important;"><img border=3D"0=
+" width=3D"1" height=3D"1" src=3D"http://post.spmailtechno.com/q/zuZThlEuZw=
+3ppI9HsV6OQw~~/AAScwgA~/RgRi-7CqPVcDc3BjQgphFaorGWF1dVLDUhxmb3JyZXN0bEBzdm0=
+udmV0bWVkLndpc2MuZWR1WAQAAAAA" alt=3D""></div>
+<div class=3D"center">=0A=
+	<img src=3D"https://isearchbse.com/iSearchLogo.png" width=3D"200" height=
+=3D"200">=0A=
+</div>=0A=
+<br>=0A=
+<br>=0A=
+<h1 class=3D"centerText">The Medical Google - More on JARVIS Summaries</h1>=
+=0A=
+=0A=
+<br>=0A=
+<br>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">iSearch Science or the Medical Google helps elucidate the current be=
+st evidence on a topic or clinical question using Google and a Natural Lang=
+uage AI. It also helps you search for the best and the most relevant basic =
+science studies.</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">As we mentioned in the email yesterday, JARVIS Search Summaries are =
+now available on the Medical Google. We illustrate with an example the diff=
+erence between individual article summaries and abstractive summaries that =
+JARVIS generates, at times using his own words. The latter is available cur=
+rently only with the combined subscription to iSearch Science and iSearch B=
+iomed.</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">1. We search for &quot;Negative appendectomy&quot;. We check 'search=
+ing for..' Procedure at the bottom of the screen.</b></p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">2. Upon searching, you run JARVIS.</p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">3. Next, you go to Adv Sort in iOS and select &quot;Sort by best evi=
+dence and most relevance ONLY&quot;. This is available in the JARVIS menu i=
+n Mac. In the prompt, you choose &quot;Highly Relevant&quot;. </p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">4. We then Left swiped on this article titled <i>&quot;Reducing the =
+negative appendectomy rate with the laparoscopic appendicitis score; a mult=
+icenter prospective cohort and validation study&quot;</i>. This is what JAR=
+VIS said: <b>After adjusting for covariables, including radiological imagin=
+g, use of the LAPP score led to fewer treatment failures when compared to n=
+ot using the LAPP score (OR: 0,48, 95% C.I. 0,251 to 0,914; P&nbsp;=3D&nbsp=
+;0,025). The LAPP score is a safe and simple tool to reduce the negative ap=
+pendectomy rate during laparoscopic surgery without missing cases of acute =
+appendicitis.</b> This option is available just below the <i>Open Article</=
+i> button in Mac.</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">5. Next, we hit Summarize all articles at the top of the search resu=
+lts in iOS. This is available from the JARVIS menu in Mac. After several mi=
+nutes, JARVIS emails us a PDF, with the same article summarized thus: <b>Ne=
+gative appendectomy rate was significantly lower when the lapp score was us=
+ed (4,7% vs. 8,4%; p =3D 0,034) there were no significant differences in op=
+eration time, complications, or readmissions. Use of the lapp score led to =
+fewer treatment failures when compared to not using the score (or: 0,48, 95=
+% c.i. 0,251 to 0,914)</b></p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">You can note the obvious difference between the two. In the first on=
+e, JARVIS provides a reasonable summary, but misses the main outcome - nega=
+tive appendectomy! While JARVIS just picks out the most important sentences=
+ in the first case, he actually summarizes in a way things make more sense =
+in the second. You can check out the entire Search Summary <a href=3D"http:=
+//post.spmailtechno.com/f/a/C2wNpMIqKZh_uAl_V9dnnQ~~/AAScwgA~/RgRi-7CqP0Qia=
+HR0cHM6Ly9pc2VhcmNoYnNlLmNvbS9zdW1tYXJ5LnBkZlcDc3BjQgphFaorGWF1dVLDUhxmb3Jy=
+ZXN0bEBzdm0udmV0bWVkLndpc2MuZWR1WAQAAAAA"><span style=3D"color:#0563C1;">he=
+re</span></a>. The second type of summaries takes much more computing resou=
+rces which is the reason we need to limit this to higher subscription tiers=
+ at this point. </p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">This platform is available for <a href=3D"http://post.spmailtechno.c=
+om/f/a/MopbBWdzT-_05FLxc9p2PA~~/AAScwgA~/RgRi-7CqP0Q6aHR0cHM6Ly9hcHBzLmFwcG=
+xlLmNvbS91cy9hcHAvaXNlYXJjaC1zY2llbmNlL2lkMTUxNjg3NDg2MVcDc3BjQgphFaorGWF1d=
+VLDUhxmb3JyZXN0bEBzdm0udmV0bWVkLndpc2MuZWR1WAQAAAAA">iOS &#128279;</a>, <a =
+href=3D"http://post.spmailtechno.com/f/a/FcB-HFOcjNS3uf-1oKG-6Q~~/AAScwgA~/=
+RgRi-7CqP0Q6aHR0cHM6Ly9hcHBzLmFwcGxlLmNvbS91cy9hcHAvaXNlYXJjaC1zY2llbmNlL2l=
+kMTUzNTU1NTU4NFcDc3BjQgphFaorGWF1dVLDUhxmb3JyZXN0bEBzdm0udmV0bWVkLndpc2MuZW=
+R1WAQAAAAA">Mac &#128279;</a>, <a href=3D"http://post.spmailtechno.com/f/a/=
+-3QMUfB8ewrPQsD6A_5J1g~~/AAScwgA~/RgRi-7CqP0RFaHR0cHM6Ly9pc2VhcmNoYnNlLmNvb=
+S9XaW5kb3dzX0FwcHMvaVNlYXJjaCUyMFNjaWVuY2UlMjBXaW4lMjAzLjMuemlwVwNzcGNCCmEV=
+qisZYXV1UsNSHGZvcnJlc3RsQHN2bS52ZXRtZWQud2lzYy5lZHVYBAAAAAA~">Windows &#128=
+279;</a>, and <a href=3D"http://post.spmailtechno.com/f/a/0hdyAf3GvM7IYM3TL=
+jp7oQ~~/AAScwgA~/RgRi-7CqP0RaaHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy=
+9kZXRhaWxzP2lkPWNvbS5iZXN0c3VyZ2ljYWxlZHVjYXRpb24uaU1lZEdvb2dsZS5hbmRyb2lkV=
+wNzcGNCCmEVqisZYXV1UsNSHGZvcnJlc3RsQHN2bS52ZXRtZWQud2lzYy5lZHVYBAAAAAA~">  =
+Android &#128279;.</a></p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">You will be able to see the iSearch Biomed/iPubmed app when you chec=
+k out all apps from Best Surgical Education, LLC on the App Stores. Or, you=
+ can download it from our <a href=3D"http://post.spmailtechno.com/f/a/_vOe6=
+RRubFKVSD5Ul9llVg~~/AAScwgA~/RgRi-7CqP0QWaHR0cHM6Ly9pc2VhcmNoYnNlLmNvbVcDc3=
+BjQgphFaorGWF1dVLDUhxmb3JyZXN0bEBzdm0udmV0bWVkLndpc2MuZWR1WAQAAAAA"><span s=
+tyle=3D"color:#0563C1;">product page</span></a>.</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">Those who have already subscribed to JARVIS Search Summary, will aut=
+omatically be subscribed to iSearch Biomed. <i>Current subscribers will hav=
+e their subscriptions renewed at the price they originally subscribed</i> (=
+the early bird thing!).</p>=0A=
+=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">&nbsp;</p>=0A=
+<p style=3D"margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left=
+:0in;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,sans-s=
+erif;">Please check out the brochures on the apps before you use them. They=
+ are available from the Help menu on the Mac app and from the main menu in =
+iOS.</p>=0A=
+=0A=
+=0A=
+<p style=3D"margin:0in;font-size:15px;font-family:&quot;Calibri&quot;,sans-=
+serif;">If you are a General Surgeon, check out our all new <a href=3D"http=
+://post.spmailtechno.com/f/a/jm1kH6IPGwKDrQtgWY1x6A~~/AAScwgA~/RgRi-7CqP0Q9=
+aHR0cHM6Ly9hcHBzLmFwcGxlLmNvbS91cy9hcHAvY2hvbGVjeXN0ZWN0b215LWFpL2lkMTUxOTI=
+3MTM5MVcDc3BjQgphFaorGWF1dVLDUhxmb3JyZXN0bEBzdm0udmV0bWVkLndpc2MuZWR1WAQAAA=
+AA"><span style=3D"color:#0563C1;">Cholecystectomy AI</span></a> app.</p>=
+=0A=
+<p style=3D"margin:0in;font-size:15px;font-family:&quot;Calibri&quot;,sans-=
+serif;">Check out Dr. Rao's latest book on how to build similar software pr=
+oducts yourself <a href=3D"http://post.spmailtechno.com/f/a/5Cqialk6L9aEeqM=
+4AkC1mg~~/AAScwgA~/RgRi-7CqP0QkaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9kcC9CMDk5UDFX=
+Nkc4VwNzcGNCCmEVqisZYXV1UsNSHGZvcnJlc3RsQHN2bS52ZXRtZWQud2lzYy5lZHVYBAAAAAA=
+~"><span style=3D"color:#0563C1;">here</span></a>.</p>=0A=
+<p style=3D"margin:0in;font-size:15px;font-family:&quot;Calibri&quot;,sans-=
+serif;">&nbsp;</p>=0A=
+<h5 class=3D"centerTextN">You received this email as you opted in to receiv=
+e emails from Best Surgical Education.</h5>=0A=
+<p style=3D"margin:0in;font-size:15px;font-family:&quot;Calibri&quot;,sans-=
+serif;">Please use  <a href=3D"mailto:isearch.bse@gmail.com"><span style=3D=
+"color:#0563C1;">this link</span></a> to contact us (or email to <i>isearch=
+.bse@gmail.com</i>). DO NOT REPLY TO THIS EMAIL.</p>=0A=
+<p style=3D"margin:0in;font-size:15px;font-family:&quot;Calibri&quot;,sans-=
+serif;">&nbsp;</p>=0A=
+<p style=3D"margin:0in;font-size:15px;font-family:&quot;Calibri&quot;,sans-=
+serif;">Best Surgical Education, LLC. 804 Blake St, Indianapolis, IN. 46202=
+</p>
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://post.spma=
+iltechno.com/q/j_wMoqPmR5azRZ_OBhZzbw~~/AAScwgA~/RgRi-7CqPlcDc3BjQgphFaorGW=
+F1dVLDUhxmb3JyZXN0bEBzdm0udmV0bWVkLndpc2MuZWR1WAQAAAAA">
+
+--_----55v24x+txlDC0cwaNwz8Fw===_D4/3C-26910-AAB29116--

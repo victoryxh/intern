@@ -1,0 +1,433 @@
+Received: from SJ0PR06MB6990.namprd06.prod.outlook.com (2603:10b6:a03:27b::14)
+ by CH2PR06MB6725.namprd06.prod.outlook.com with HTTPS; Wed, 19 May 2021
+ 15:30:42 +0000
+Received: from BN0PR02CA0001.namprd02.prod.outlook.com (2603:10b6:408:e4::6)
+ by SJ0PR06MB6990.namprd06.prod.outlook.com (2603:10b6:a03:27b::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4129.25; Wed, 19 May
+ 2021 15:30:41 +0000
+Received: from BN8NAM11FT028.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:e4:cafe::61) by BN0PR02CA0001.outlook.office365.com
+ (2603:10b6:408:e4::6) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4129.25 via Frontend
+ Transport; Wed, 19 May 2021 15:30:41 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ BN8NAM11FT028.mail.protection.outlook.com (10.13.176.225) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4129.25 via Frontend Transport; Wed, 19 May 2021 15:30:41 +0000
+Received: from o6.mailings.actionnetwork.org ([167.89.57.64])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QTD05OZO1QZ7840@smtp5.wiscmail.wisc.edu> for
+ jchung69@wisc.edu; Wed, 19 May 2021 10:30:37 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=13%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_70_90 0.1, HTML_FONT_INVISIBLE 0.1, FROM_NAME_ONE_WORD 0.05,
+ MIME_LOWER_CASE 0.05, SUPERLONG_LINE 0.05, BODYTEXTH_SIZE_3000_MORE 0,
+ BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0, DKIM_SIGNATURE 0,
+ FONT_STYLE_1PT 0, HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0,
+ LEGITIMATE_SIGNS 0, LINK_TO_IMAGE 0, OBFUSCATION 0, REPLYTO_SAMEAS_FROM 0,
+ SPF_PASS 0, STYLE_RATWARE_REF 0, SXL_IP_TFX_ESP 0, URI_WITH_PATH_ONLY 0,
+ __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __COURIER_PHRASE 0, __CT 0,
+ __CTE 0, __CTYPE_HTML 0, __CTYPE_IS_HTML 0, __DKIM_ALIGNS_2 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_CONTACT_ADDY 0, __FRAUD_CONTACT_NUM 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_REPLYTO 0,
+ __HIDDEN_HTML_CONTENT 0, __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0,
+ __HTML_BAD_END 0, __HTML_FONT_BLUE 0, __HTML_HREF_TAG_X2 0,
+ __HTML_TAG_CENTER 0, __HTML_TAG_DIV 0, __HTML_TAG_IMG_X2 0,
+ __HTML_TAG_TABLE 0, __HTTPS_URI 0, __HTTP_IMAGE_TAG 0,
+X-Wisc-Doma:
+ bounces+1584542-ddaa-jchung69=wisc.edu@em9370.email.actionnetwork.org,actionnetwork.org
+X-Wisc-Env-From-B64:
+ Ym91bmNlcysxNTg0NTQyLWRkYWEtamNodW5nNjk9d2lzYy5lZHVAZW05MzcwLmVtYWlsLmFjdGlv
+ bm5ldHdvcmsub3Jn
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.5.19.152415,
+ AntiVirus-Engine: 5.82.0, AntiVirus-Data: 2021.5.19.5820001,
+ SenderIP=[167.89.57.64]
+X-Wisc-DKIM-Verify:
+ bounces+1584542-ddaa-jchung69=wisc.edu@em9370.email.actionnetwork.org,email.actionnetwork.org!pass
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=email.actionnetwork.org;
+	h=from:reply-to:to:subject:mime-version:content-type:content-transfer-encoding;	s=s1;
+ bh=I7/vbWy0eShaWBfEntqNManZkNk5nqV3+8Yc/Q9+z9g=; b=hCT2lu5
+	pRryddYInpIn96lCCT7s/xzcpFQl+dDfsNeXXusLpkeu8a7p+8/v+js0An3dhlQ8
+	i5yVSiBnZw446HJC3rxe7m/ta1e8QZM3PJPZvT/vvILNws/ch7sS+j3ACE9HoYf5
+	mCCa+LDdKaShGbboRIp4xeemm1C97WdBJqaY=
+Received: by filter1782p1iad2.sendgrid.net with SMTP id
+ filter1782p1iad2-1450-60A52F1A-5A 2021-05-19 15:30:34.992385116 +0000 UTC
+ m=+60653.340893858
+Received: from actionnetwork.org (unknown)	by geopod-ismtpd-2-2 (SG)
+ with ESMTP id NsI1dPjLTE6X0ypgqF2N7w	for <jchung69@wisc.edu>; Wed,
+ 19 May 2021 15:30:34.979 +0000 (UTC)
+Date: Wed, 19 May 2021 15:30:35 +0000 (UTC)
+From: Mari <mari@actionnetwork.org>
+Reply-to: mari@actionnetwork.org
+To: jchung69@wisc.edu
+Message-id: <60a52f1ae94ea_b8f43fc699c34db82611e1@ip-10-0-0-180.mail>
+Subject: Coming soon: New Letter Campaign design!
+Content-type: text/html; charset=UTF-8
+Content-transfer-encoding: quoted-printable
+X-SG-EID:
+ agY3Ryz9akOAmnuzT+Q77Q2ippsTivBLYsPef4UVFE3N9ezOgOsU8A+y7x1ua5icLUvbrFCUaOqg2t
+ 1h6EeWDtXI8MyLFgv9VMZH09n4kuYsjpv2Ic7wOcvlTKlTbJvJOT/Uh6aOU+zlHxm6PJ4ooXutR9lb
+ ayiVVLn/N2mGkuMxDRxHwAsK0nNgbC4hm0hQrE02aH53MXMFb/wREdZ2TA==
+X-SG-ID: 22wNoD3teINF9WeD3QlLMwJNIW/CaE8x74gpTHk768A=
+X-Entity-ID: MLyRGzg0goutU4S6nhGmsA==
+Return-Path:
+ bounces+1584542-ddaa-jchung69=wisc.edu@em9370.email.actionnetwork.org
+X-MS-Exchange-Organization-ExpirationStartTime: 19 May 2021 15:30:41.3472
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b4737424-54b5-4fcc-6237-08d91adb0fb7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT028.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b4737424-54b5-4fcc-6237-08d91adb0fb7
+X-MS-TrafficTypeDiagnostic: SJ0PR06MB6990:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=109
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SKN;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 May 2021 15:30:41.2572
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b4737424-54b5-4fcc-6237-08d91adb0fb7
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT028.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR06MB6990
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1748062
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4129.033
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?M0xvcXUyM2dYcEpoa2ZRVWFodUFucUhtNHVPc251MDFrVWVaTEc2N1dBZkdM?=
+ =?utf-8?B?UW1lOTZTK1lVVVpuclcwSHhsdmZ3TWlEbjZrazFEUDhpK0lOTmRReEthODZq?=
+ =?utf-8?B?SkJXbU1jQllzUTJ1bnViVmNsOUxzRWJZbWN6MWFYQ0wwOCtkZXhvWjh5dHVD?=
+ =?utf-8?B?TGhnc3lRRC9rTGFrSnI5dE9VQUtseXdXZ0pKeTVnT0E3Nm5SUXJIZ01ROU5o?=
+ =?utf-8?B?S3VwUlVvOS9iUUtOTnR4VEhTVi9uM2k1KzA1WExkWXFFM0FudVp0RGxpK2Zx?=
+ =?utf-8?B?S2lvQjBYOVR6b1VEbGZBVVBVajhQSWw1K25RenMzZHQvaVZBNm1FaHd5WU9l?=
+ =?utf-8?B?R0lTaG1oNWhHOXlTTUxSdk1WdlN0VlR2OGxxL2pkRDRFY0xjVUhIa0xWbHZn?=
+ =?utf-8?B?OTA3VGxDQ1l0QzQwbG1GV2N1NjZmMWc1cUl5SzIzcldZVjc1eHUzYXR0aER3?=
+ =?utf-8?B?YmpKQVFqOEhSdGk0dXB2Y1J0TnB2M2N1ZUp1UGlEZ2UycGhGY243ektldFM5?=
+ =?utf-8?B?QWJlZVF6bmU2QmcyaVh3YjUvMy9TLzZ6V2ttZE9kSTlsRlB1V1FIM0N2UlhN?=
+ =?utf-8?B?bk14SUxjM3prZEtjRlZGRVVtMUMwYjIxcTRLcEJQcEdmb3pwNUh6MUJXdVN2?=
+ =?utf-8?B?ZTNtYzRYdEdrdk9abWQ2d0Q4dnVaK0M3T2dyTkZ0bWt0czBtZGdpLzNTdlUy?=
+ =?utf-8?B?aUVSK3N3Ulo3R1hHTUorWmtUc0lCamZ0WVJWUlVGc21GQmFXdWVyM2FHOTVC?=
+ =?utf-8?B?K09UYmtKM0RWRmZobWRvTTFmc3Rmd0ErT0JKNWEzdzdMZGZGSnBWaUErSTdw?=
+ =?utf-8?B?Z0xUQ3FYUjZnWE01SXM1clNoVjVyOC9Pekdic3paTnQzdHVtdmxQcFBUalJm?=
+ =?utf-8?B?aCtPdFdxTjVRcW5BVkJ6VG1GV25LVnNiSEVEaGhUSCtCQzhUdlYxTWQ4VFlN?=
+ =?utf-8?B?dW5ESWFsWnpxc0JJZ2pza1VrQzdabElFV0p3N0xoSE50bEJHMm9oZWE3YjdS?=
+ =?utf-8?B?MVkvS0h4MlBpM0hCNnlvUHIrNC9GSFRnVjBidWNIdzhuWW5TMTlldy9GSFYv?=
+ =?utf-8?B?dGZqRmpYeHJydjBiWjc1TlNQRm8vcnpyU2h2VDk5dk9GZ0tVL3VGNUM1YnJx?=
+ =?utf-8?B?M2VUZ1FBVWp4TFFRbjdMa3pHY0Z5TjRCS3hPeE9BdFFhaURkRDlBeWtxMVpG?=
+ =?utf-8?B?Ty9tRzhKWXBicHVQZXoxcG1ETWVCbkUwVmRxUkdncnByU0F4a2c2SkRtK0RC?=
+ =?utf-8?B?QzJLaFNTVHBqakw0NmhLV1pzM3F1VitUVHk2VG0vL2JMK0FlYnQ0S3VYdzFp?=
+ =?utf-8?B?SWJoWFlnd1ZoRDBqU3FEekFuR0xLYXZBSmFGRFdBT2tqb2ZPU1hHdUhQeUly?=
+ =?utf-8?B?MVJCYTY0QzhhZ2V4SFNhZUpNQTZ4VTI0REFaa3V5MnNnUTB1WG9IenNNdU9X?=
+ =?utf-8?B?a1BvaHYyYVdNclVKSGxBS21keHVuMjI4TVArcVkrMk5mTEhaWVI3Q0ZBbmF4?=
+ =?utf-8?B?YXhIM3hLdzd6UmpFVW1aTXh4bnYzVis1TDAwVlhjR0NGazZBU29VdmFCeEg1?=
+ =?utf-8?B?T0grTGdKdE51eFhCRjVFTzZZNkkvUXBHRzVOUTB5RVFQS0xhY3lzaUg1SVky?=
+ =?utf-8?B?QUovQWE4d1ovd3p6aDNjQ1N1RXk4R0NZTEJJMU1TMmRNcFBMdXNjVlMxZ0cv?=
+ =?utf-8?B?SVRmMjVJU2ptT1AzNTRUVndqMEUrWTRGMlN1YW1VWTFmMW9KWXUxRE1BTlcy?=
+ =?utf-8?B?cnljais4U080VnQ5aktqSE1TNG5xTndVTG1hTDB4YzMxVmJjUndoeFp2K3pW?=
+ =?utf-8?B?TDAxQ2o3RVJCdXNtY0gvYUtTSDVNdllDUWZudHgwUGQxTzhqK2t0Z1RuamJ1?=
+ =?utf-8?B?OXNMOXBRdFZ1eHNHOXJPVFpxOXU1ZTJpQnZZVDVxd0s1ZmRYK285U0pjVEZD?=
+ =?utf-8?B?RzhudlBHWkZxRVY5QzhtV0ZPeTV5NkxNMHlJaWo1UkR5VXdvenJMK2hYaGpE?=
+ =?utf-8?B?NEZ5MXIxN2VyMG82TzhNTnp3YmJteW1BODNnSUd6WDBQVzNxZ3M3R3hHSVRk?=
+ =?utf-8?B?enlzTHF5emJRYlN3ZnE3eWlCUDhielpXNWROU0VadmtPdHY5N2I0amc0N0hi?=
+ =?utf-8?B?NFM1NWpSQnowK0wweUpnWHdrT2txVUdkV0s0aENkTFh3VEF3WFZ2UXNPRnBZ?=
+ =?utf-8?B?MlBzYmZxOTdnYWFESXZmdEV2R1hiT1BVTG5JbEdLbWhvQ0NMM0ZGRm1odWY4?=
+ =?utf-8?B?NG1zeDVaSksrNUQwaUFaQ1pDYzZ3Wmx2OTdiWGVia2syanB3NFJQb0FwZUp5?=
+ =?utf-8?B?WWk5T1J3UGh4NmVuTnBwczBHOERlWkR5NEw1eE94akY5bUlwcUVqMmJrSFY5?=
+ =?utf-8?B?amd2STdpblhKbEJ4VmdkaXlMSXhLMHpiMmoxakJtSENnWHNBdDJieHdGWG5O?=
+ =?utf-8?B?Y1UyWFhGWWl1MCtvK0R4WW95STUwNWQzWlNxWElGMjlUa1lsMWNEVFBPSlJG?=
+ =?utf-8?Q?FJSP7Odo7zh?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <title></title>
+
+    <style type=3D"text/css">
+      #outlook a {padding:0;}
+      .ExternalClass {width:100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass=
+ font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+
+      img {outline:none; text-decoration:none; -ms-interpolation-mode: bicu=
+bic;}
+      a img {border:none;}
+      .image_fix {display:block;}
+
+      p {margin: 1em 0;}
+
+      h1, h2, h3, h4, h5, h6 {color: #404040;}
+
+      table td {border-collapse: collapse;}
+
+      @media only screen and (max-device-width: 480px) {
+        a[href^=3D"tel"], a[href^=3D"sms"] {
+              text-decoration: none;
+              color: blue;
+              /* pointer-events: none; */
+              cursor: default;
+            }
+
+        .mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {
+              text-decoration: default;
+              color: orange;
+              pointer-events: auto;
+              cursor: default;
+            }
+
+      }
+
+      @media only screen and (min-device-width: 768px) and (max-device-widt=
+h: 1024px) {
+        a[href^=3D"tel"], a[href^=3D"sms"] {
+              text-decoration: none;
+              color: blue;
+              /* pointer-events: none; */
+              cursor: default;
+            }
+
+        .mobile_link a[href^=3D"tel"], .mobile_link a[href^=3D"sms"] {
+              text-decoration: default;
+              color: orange;
+              pointer-events: auto;
+              cursor: default;
+            }
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+      }
+
+
+      @media only screen and (-webkit-device-pixel-ratio:.75){
+
+      }
+      @media only screen and (-webkit-device-pixel-ratio:1){
+
+      }
+      @media only screen and (-webkit-device-pixel-ratio:1.5){
+
+      }
+
+    </style>
+
+    <!--[if IEMobile 7]>
+    <style type=3D"text/css">
+
+    </style>
+    <![endif]-->
+
+    <!--[if gte mso 9]>
+      <style>
+
+      </style>
+    <![endif]-->
+  </head>
+  <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=3D"=
+0" offset=3D"0" style=3D"margin: 0;padding: 0;background-color: #FFFFFF;wid=
+th: 100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:10=
+0%;">
+    <span style=3D"font-size: 1px; display: none;">Check out this upgrade:<=
+/span>
+    <center>
+      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"cent=
+er" id=3D"backgroundTable" style=3D"margin: 0;padding: 0;background-color: =
+#FFFFFF;height: 100% !important;width: 100% !important; line-height: 100% !=
+important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace=
+:0pt;" role=3D"presentation">
+        <tr>
+          <td align=3D"center" valign=3D"top" style=3D"border-collapse: col=
+lapse;">
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center" style=3D"border: 0;background-color: #FFFFFF; border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" role=3D"presentation"=
+>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"border-collaps=
+e: collapse;">
+<table border=3D"0" cellpadding=3D"10" cellspacing=3D"0" style=3D"border-co=
+llapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+  <tr>
+    <td valign=3D"top" style=3D"border-collapse: collapse; background-color=
+: #FFFFFF; padding:10px 10px 40px;">
+      <table border=3D"0" cellpadding=3D"10" cellspacing=3D"0" style=3D"bor=
+der-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+        <tr>
+          <td valign=3D"top" style=3D"border-collapse: collapse;" width=3D"=
+600">
+            <div style=3D"color: #505050;font-family: Arial;font-size: 14px=
+;line-height: 150%;text-align: left;">
+               <center>
+                <img src=3D"http://can2-prod.s3.amazonaws.com/email_templat=
+es/logos/000/004/843/original/ANLogo.png" style=3D"max-width:396px; width: =
+100%; margin: 20px auto">
+               </center>
+<p>Hi Joon,</p>
+
+<p>New upgrades to <a href=3D"https://u1584542.ct.sendgrid.net/ss/c/mw31GZs=
+W-tYdpIw-ePlYv4NdCYev1MAmjWQOaAqGDjRzhixG50SzdWSVWICu6DY34oUGnQLaqZUFxnV91G=
+dza6wtER-PNXWmhhfeXs-K1C-x8Msj_xpsIAwdofAmfAUUq0OeKRbXJUqyInPxkMB_9qNKTJr-Z=
+ewIog0lzGfwBtn0wsr3I7bpRR9rGReRWj9rYSWq1IHNg5OSDZ9cMK9EmnBGrp-LEnI07fHaMjjA=
+cBtijnnfP-HHjHTicuptLzTtxa6iPuJkqAEYUNeudc_50su8bBIyHuTaagU20i4p8w57u7OYc8f=
+YA4Uird4VhttLP33s3cfqSdn6j5xRSoMQTrUCeDuaq6-vokpWr3VTTF95Z4FwQ1EoLWxakHNcvz=
+Ib/3c1/CbaAjls_SImjYPPVd-eBog/h0/OXPNgMf4agU9-FLCd_bMFbmRE_hz_H036Di6J7rZPd=
+Y" target=3D"_blank">Letter Campaigns</a> are almost here! I emailed a few =
+weeks ago announcing that we have a brand new, user-focused upgrade coming =
+for our Letter Campaign tool =E2=80=94 and now I can finally share a previe=
+w of what this will look like!</p>
+
+<p>As a reminder, here=E2=80=99s what to look for in the new upgrade:</p>
+
+<ul>
+<li><p>Intuitive design, centering what activists most need to see (the let=
+ter itself, which is currently in a sidebar)</p>
+</li>
+
+<li><p>Streamlined set-up process for admins</p>
+</li>
+
+<li><p>Versioning, to ensure this update doesn=E2=80=99t break any existing=
+ campaigns!</p>
+</li>
+
+<li><p>Update to the Thank You page color, changing from bright green to tr=
+ansparent</p>
+</li>
+
+<li>Title included in letter deliveries (ex. <em>Senator</em> Tina Smith) <=
+/li>
+
+</ul>
+<p>Here's a preview of the new look:</p>
+
+<p><em>Step 1: Enter your address.</em></p>
+
+<p><img src=3D"https://lh5.googleusercontent.com/g_ZCRFnmnQgJPIRR58yGwp_aLg=
+3NT_W6dQ8eudTSQnvfEkIA_l83q-M0SE10cvJ9vZRLpW7tB8y50PccctYysfkM9BuCsgvPi-qN-=
+SziAc1H1W5D6XCX1x01dMBmqzUxNXSrsqE" alt=3D"Screenshot of Letter Campaigns" =
+title=3D"Screenshot of Letter Campaigns" align=3D"center" width=3D"700" sty=
+le=3D"display: block; margin: auto; width: 100%; max-width: 700px;"><br>
+</p>
+
+<p><em>Step 2: Write your letter.</em> Notice how the letter is now front-a=
+nd-center, instead of off to the side?</p>
+
+<p><img src=3D"https://lh4.googleusercontent.com/FFZr2wikQsThiD4hyRW4mf4kEa=
+FGAAeBj0QDyTL2LTFWxTxvZSkkVPrq0u-kvFRJ4VRY69gcc6kc3-PRiUce752Jv8wGiEEdRMOM1=
+JgC3s9x0Z_fokWLh5wSoiSirK7-CMZ1nX4" alt=3D"Screenshot of Letter Campaigns" =
+title=3D"Screenshot of Letter Campaigns" align=3D"center" width=3D"700" sty=
+le=3D"display: block; margin: auto; width: 100%; max-width: 700px;"><br>
+</p>
+
+<p><em>Step 3: Hit send!</em></p>
+
+<p>The new upgrade will take place without any interruption to live Letter =
+Campaigns, which means we are maintaining the current version of Letter Cam=
+paigns to make the transition smooth for you. <a href=3D"https://u1584542.c=
+t.sendgrid.net/ss/c/mw31GZsW-tYdpIw-ePlYv4NdCYev1MAmjWQOaAqGDjRzhixG50SzdWS=
+VWICu6DY3qNWOZn1AJP2JWgwNncFXv4BXFtJ0WuIVzHROK314Hev-LLIToVKf4Gs8Kz9H_-rWxt=
+vlVKVmau0ejI0Kokc_py-YAnnxxQEqfVOE1wBLXj_O9UfXQqJN0o0WQ-SXW6NFWyUbLObnuqBl2=
+rQmitzsFuKqoTSOAshB8HeBjXc06mGk8jUFiQZjQJbryfqPulTF2E4u4PIC5YHO6vNT2uyhOYbo=
+zcN7Q1LnE_uvfdMiqQmOh5Uh3IrhHP50mGy8jKEGqbMHWgfqNEIYN0jo2GZx5hj09URxqcTy_Eq=
+TS7Mm8ekoHlCt8ddPfS2pF7xKAwYYu_negeiEtljUAoxBz3jgsA/3c1/CbaAjls_SImjYPPVd-e=
+Bog/h1/kAY-wcmNl5QR89H78oPxt4C3Gy5IoJSoLrQx2qYud4k" target=3D"_blank"><stro=
+ng>Read up on how and when the new version will be implemented and what you=
+ can look out for on your end to make sure the new look works seamlessly wi=
+th your embedded forms.</strong></a></p>
+
+<p>Feel free to reach out if you have any questions.</p>
+
+<p>Take care,</p>
+
+<p>Mari Vangen | The Action Network<br>
+Product Manager</p>
+            </div>
+
+          </td>
+
+        </tr>
+      </table>
+    </td>
+
+  </tr>
+</table>
+</td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" style=3D"border-collaps=
+e: collapse;">
+                  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" s=
+tyle=3D"background-color: #FFFFFF;border-top: 2px solid #909090; border-col=
+lapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" role=3D"presen=
+tation">
+                    <tr>
+                      <td valign=3D"top" style=3D"border-collapse: collapse=
+;">
+                        <table border=3D"0" cellpadding=3D"10" cellspacing=
+=3D"0" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-r=
+space:0pt;" role=3D"presentation">
+                          <tr>
+                            <td colspan=3D"2" valign=3D"middle" style=3D"bo=
+rder-collapse: collapse;background-color: #FFFFFF;border-top: 0;">
+                             =20
+
+                              <div style=3D"color: #707070;font-family: Ari=
+al;font-size: 11px;line-height: 125%;text-align: left;">
+                                Sent via <a href=3D"https://u1584542.ct.sen=
+dgrid.net/ss/c/O93kI8o-kT9cRvZ9zJLPP860qXFcvweDHZkUEJZuK-c/3c1/CbaAjls_SImj=
+YPPVd-eBog/h2/psYxPXI3yop16Qa6vcAzZ0vwvcybFdwliIE11p5FG9c" style=3D"color: =
+#0096DB;">ActionNetwork.org</a>.
+                               =20
+                                  To update your email address, change your=
+ name or address, or to stop receiving emails from The Action Network, plea=
+se <a href=3D"https://u1584542.ct.sendgrid.net/ss/c/P8Elou2Rvc0qoMPEUZrMXcO=
+py_XqN4R2ZGjoK-5zZnl7NBjmTZL5F5oqdT0MFW4GsD0POgfVU7HSYZsetsHVfNkvgSbiHjIOUE=
+sdxSHUw4pCvowHJb_nSPn4-eJOPX5oRG63uDpHbVwqofaZ49hHG3jM6BDodSsI6ZvRl6cyssOMV=
+7hVswTgtmP1rl-dvvvqWvrZoTLrTFFY7VQ4CfHKARC5uBURMgOovplmddmOWls/3c1/CbaAjls_=
+SImjYPPVd-eBog/h3/P-MFcfl7-urYULL2ole_cGzmiZN54IOTMA4dRvk3_60" style=3D"col=
+or: #0096DB;font-weight: normal;text-decoration: underline;">click here</a>=
+.
+                               =20
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br>
+    </center>
+
+<img src=3D"https://u1584542.ct.sendgrid.net/ss/o/sKxQ9Tusut-gXiwfMaIEaQ/3c=
+1/CbaAjls_SImjYPPVd-eBog/ho.gif" alt=3D"" width=3D"1" height=3D"1" border=
+=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 !=
+important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0=
+ !important;margin-left:0 !important;padding-top:0 !important;padding-botto=
+m:0 !important;padding-right:0 !important;padding-left:0 !important;">
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+Received: from BL0PR06MB4385.namprd06.prod.outlook.com (::1) by
+ BY5PR06MB6625.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 19:28:15
+ +0000
+Received: from BN8PR06MB5474.namprd06.prod.outlook.com (2603:10b6:408:67::22)
+ by BL0PR06MB4385.namprd06.prod.outlook.com (2603:10b6:208:26::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.11; Mon, 15 Aug
+ 2022 19:27:48 +0000
+Received: from BN8PR06MB5474.namprd06.prod.outlook.com
+ ([fe80::74d2:bd9d:e035:24df]) by BN8PR06MB5474.namprd06.prod.outlook.com
+ ([fe80::74d2:bd9d:e035:24df%3]) with mapi id 15.20.5525.011; Mon, 15 Aug 2022
+ 19:27:48 +0000
+From: Abby Eddy <ameddy2@wisc.edu>
+Subject: School Approved Job Offer!!!
+Thread-Topic: School Approved Job Offer!!!
+Thread-Index: AQHYsNt+sO07RpUbTEW36q9yCibelQ==
+Date: Mon, 15 Aug 2022 19:27:39 +0000
+Message-ID:
+	<BN8PR06MB54746A6B4C35577ACF0DC0F08C689@BN8PR06MB5474.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: BN8PR06MB5474.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	9df3307e-9bf1-48ea-b4e5-08da7ef43bd4
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 9df3307e-9bf1-48ea-b4e5-08da7ef43bd4
+x-ms-traffictypediagnostic: BL0PR06MB4385:EE_
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: BN8PR06MB5474.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	9df3307e-9bf1-48ea-b4e5-08da7ef43bd4
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	d+QIisVLNpVhLkwi3xJvq87RDKWFMu18Pf78VyNxTce5dejV+CobgSzFvM8urZPFzEFHwsgOdbBcpZI/QGjoZQ==
+x-ms-exchange-transport-crosstenantheadersstamped: BL0PR06MB4385
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:BN8PR06MB5474.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 15 Aug 2022 19:27:39.4610 (UTC)
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	dfkpztBnB9WIcnfvaOglgJ7gOEUjkdbB2G07ylSUUdi4l7ClWMhXaMaUao6fdyVy9/ZxP6CQhJItlIjZzy8wz6Co/QiJgDQ2jhtcur5i2hAiC1StX84El0MesxND8s6/3E5c9Zr2oGWtdEfmQywmwwI06f8FeCu5Wpei6QnX9n+RNC48ukMPQVqPvPV2zAjUlbc/sjv9ZgSiTbRpO1DmEsKvznHxvCboMpkR4OgczS45vDT0kX6ZQm1qUPreUdeiiq2Pej3bE0w6BQfwvjwww8T0HCo1rFPQEWBmUxdaZnnFAfXKKUKnwCZS1gBUmslbX4NYVh8gDRxvhyRsegaicbneChJBm6tau46zEZFwarQGqeKycVqqvdC+k6N3SF2STg0w8vleecOxmmDdSU5xRnfz28qJjpgMam50GQUdb3l4Uc7nuBJUU0rnMA1UUXBfrztkf0g1yvVpoW5lsdhtlFFLJy6qPAu2y2hASNyKzUmrfgIyVuPW/4pL3F6GAdgt3pnhI47eUBmc+5pPFNWoem7q5voT9svrTmfLtDcGmBCKwZyZ4a5yO0pU13HjniX6fytwaUxPpz3OCSRQfsp0+qZhYAXWorHMrRKXThA/FqLnC9n8+2F65p9j1PYqAMtyWj+o7+tI3EhQVNBzHaNZMwYs98KxrRZRUfQGcOzF8vkuSUIbfHSeI4HP8cAPogWFpbzZjqvXL0TdXScQCKGl5gjAuVTeOA0kf3WAjcOii7RIcsFD0p/JyqwDlz1qAnB5gIFuvitaZjF5EEnpXiSQdHXZVxBrOZMRPcib8yAjojFBI/AEFYrYWHyuAGu7K5I9
+Content-Type: multipart/alternative;
+	boundary="_000_BN8PR06MB54746A6B4C35577ACF0DC0F08C689BN8PR06MB5474namp_"
+MIME-Version: 1.0
+
+--_000_BN8PR06MB54746A6B4C35577ACF0DC0F08C689BN8PR06MB5474namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Personal Assistant Service
+
+
+
+All Email recipients of  University Of Wisconsin-Madison are encouraged to =
+be a part of this amazing offer.  This is a part time job that will not aff=
+ect your present employment or study at the campus & you'll be working from=
+ home. It=92s fun, rewarding, and flexible.
+
+2-3 hours daily
+
+Four Hundred Dollars ($400)
+
+Part-Time Job
+
+
+
+ To apply, Be sure to visit the link below.
+
+Apply Here<https://forms.gle/7wDXaaJ38Yc4jhno7><https://docs.google.com/for=
+ms/d/e/1FAIpQLSfk8_XFnb2qWbaaBnORCYmfKR11uwds8CPiUZufjVevaljy-Q/viewform?us=
+p=3Dsf_link>
+
+
+
+--_000_BN8PR06MB54746A6B4C35577ACF0DC0F08C689BN8PR06MB5474namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<table width=3D"100%" style=3D"text-align: left; margin: 0px; border-spacin=
+g: 0px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" style=3D"font-family:&quot;Google Sans&quot;, Roboto, Ro=
+botoDraft, Helvetica, Arial, sans-serif;margin:0px;padding:5px 10px;border-=
+collapse:collapse">
+<div style=3D"border:0px none;line-height:25px;margin:0px">
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+<span style=3D"border:0px none;margin:0px">Personal&nbsp;<span style=3D"mar=
+gin:0px">Assistant</span>&nbsp;Service</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+&nbsp;</p>
+<p dir=3D"auto" style=3D"margin:0px"><span style=3D"border:0px none;font-fa=
+mily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin=
+:0px">All Email recipients of&nbsp;&nbsp;</span><span style=3D"border:0px n=
+one;margin:0px"><font color=3D"#4d5156" style=3D""><span style=3D"font-size=
+:11pt;line-height:normal;margin:0px"><b>University
+ Of Wisconsin-Madison</b></span>&nbsp;</font></span><span style=3D"font-fam=
+ily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:=
+0px">are encouraged to be a part of this amazing&nbsp;</span><span style=3D=
+"border:0px none;font-family:&quot;Times New Roman&quot;, Times, Baskervill=
+e, Georgia, serif;margin:0px">offer</span><span style=3D"font-family:&quot;=
+Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">.&nbs=
+p;&nbsp;This
+ is a part time&nbsp;</span><span style=3D"border:0px none;font-family:&quo=
+t;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">job=
+</span><span style=3D"font-family:&quot;Times New Roman&quot;, Times, Baske=
+rville, Georgia, serif;margin:0px">&nbsp;that will not affect your
+ present employment or study at the campus &amp; you'll be working from hom=
+e. It=92s fun, rewarding, and flexible.&nbsp;</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+<span style=3D"margin:0px">2-3 hours daily&nbsp;</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+Four Hundred Dollars ($400)</p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+<span style=3D"margin:0px">Part-Time Job</span></p>
+<p style=3D"font-family: &quot;Times New Roman&quot;, Times, Baskerville, G=
+eorgia, serif; font-size: 17px; margin: 0px; color: rgb(19, 19, 19);">
+&nbsp;</p>
+<p style=3D"text-align: center; font-family: &quot;Times New Roman&quot;, T=
+imes, Baskerville, Georgia, serif; font-size: 17px; margin: 0px; color: rgb=
+(19, 19, 19);">
+<span style=3D"border:0px none;margin:0px">&nbsp;To apply, Be sure to visit=
+ the link below. &nbsp;</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" style=3D"text-align: left; margin: 0px; border-spacin=
+g: 0px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" align=3D"center" style=3D"font-family:&quot;Google Sans&=
+quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;margin:0px;padding=
+:20px;border-collapse:collapse">
+<table style=3D"margin: 0px; border: 0px none; display: inline-block; borde=
+r-radius: 5px; background-color: rgb(36, 160, 237);">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td align=3D"center" style=3D"margin:0px;padding:12px;border-collapse:colla=
+pse"><span style=3D"border: 0px none; font-size: 24px; line-height: 24px; f=
+ont-family: &quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif=
+; margin: 0px; color: rgb(255, 255, 255);"><font><span style=3D"margin:0px;=
+display:inline-block"><a href=3D"https://forms.gle/7wDXaaJ38Yc4jhno7" title=
+=3D"https://forms.gle/7wDXaaJ38Yc4jhno7" style=3D"margin:0px">Apply&nbsp;He=
+re</a></span></font><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLSfk=
+8_XFnb2qWbaaBnORCYmfKR11uwds8CPiUZufjVevaljy-Q/viewform?usp=3Dsf_link" targ=
+et=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-=
+saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://docs.google.com/f=
+orms/d/e/1FAIpQLSfk8_XFnb2qWbaaBnORCYmfKR11uwds8CPiUZufjVevaljy-Q/viewform?=
+usp%3Dsf_link&amp;source=3Dgmail&amp;ust=3D1660634102464000&amp;usg=3DAOvVa=
+w3SZZRVcujjA176BsSPrXEC" data-linkindex=3D"0" style=3D"margin: 0px; color: =
+rgb(17, 85, 204);"></a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br class=3D"Apple-interchange-newline">
+<br>
+</div>
+</body>
+</html>
+
+--_000_BN8PR06MB54746A6B4C35577ACF0DC0F08C689BN8PR06MB5474namp_--

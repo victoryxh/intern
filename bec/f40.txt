@@ -1,0 +1,524 @@
+Received: from MWHPR06MB3149.namprd06.prod.outlook.com (2603:10b6:301:44::29)
+ by SJ0PR06MB7694.namprd06.prod.outlook.com with HTTPS; Wed, 29 Sep 2021
+ 16:52:41 +0000
+Received: from DM6PR11CA0027.namprd11.prod.outlook.com (2603:10b6:5:190::40)
+ by MWHPR06MB3149.namprd06.prod.outlook.com (2603:10b6:301:44::29) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4566.14; Wed, 29 Sep
+ 2021 16:52:40 +0000
+Received: from DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:190:cafe::34) by DM6PR11CA0027.outlook.office365.com
+ (2603:10b6:5:190::40) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4566.15 via Frontend
+ Transport; Wed, 29 Sep 2021 16:52:40 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ DM6NAM11FT040.mail.protection.outlook.com (10.13.173.133) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4566.14 via Frontend Transport; Wed, 29 Sep 2021 16:52:39 +0000
+Received: from m238-30.mailgun.net ([159.135.238.30])
+ by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R0703Y1JG7MCK70@smtp4.wiscmail.wisc.edu> for
+ elsmith9@wisc.edu; Wed, 29 Sep 2021 11:52:37 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_90_100 0.1,
+ FROM_NAME_ONE_WORD 0.05, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0, DKIM_ALIGNS 0,
+ DKIM_SIGNATURE 0, HREF_LABEL_TEXT_NO_URI 0, INFO_TLD 0, KNOWN_MTA_TFX 0,
+ LINK_TO_IMAGE 0, LIST_HEADER 0, NO_FUR_HEADER 0, OBFUSCATION 0,
+ SENDER_NO_AUTH 0, SPF_PASS 0, STYLE_RATWARE_REF 0, SXL_IP_TFX_WM 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __FRAUD_URGENCY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_SENDER 0,
+ __HIDDEN_HTML_CONTENT 0, __HREF_LABEL_IMG 0, __HREF_LABEL_TEXT 0,
+ __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_HREF_TAG_X2 0,
+ __HTML_TAG_CENTER 0, __HTML_TAG_DIV 0, __HTML_TAG_IMG_X2 0,
+ __HTML_TAG_TABLE 0, __HTTPS_URI 0, __HTTP_IMAGE_TAG 0, __IMG_SRC_X5 0,
+ __IMG_THEN_TEXT 0, __INFO_FROM 0, __INVOICE_MULTILINGUAL 0, __MIME_HTML 0,
+ __MIME_TEXT
+X-Wisc-Doma:
+ bounce+c23dcb.5884c2-elsmith9=wisc.edu@phishydomain.info,phishydomain.info
+X-Wisc-Env-From-B64:
+ Ym91bmNlK2MyM2RjYi41ODg0YzItZWxzbWl0aDk9d2lzYy5lZHVAcGhpc2h5ZG9tYWluLmluZm8=
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.9.29.160017,
+ AntiVirus-Engine: 5.86.0, AntiVirus-Data: 2021.9.29.5860001,
+ SenderIP=[159.135.238.30]
+X-Wisc-DKIM-Verify:
+ bounce+c23dcb.5884c2-elsmith9=wisc.edu@phishydomain.info,phishydomain.info!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=phishydomain.info;
+ q=dns/txt; s=k1; t=1632934357; h=Subject: Content-Transfer-Encoding:
+ Content-Type: MIME-Version: Message-ID: Date: sender: To: From;
+ bh=9QUXxwA5pNipXg01ukouCVAvoByfzUi3XKfrBrZ22ZY=;
+ b=X696E1CrFHqXocyAQP7NVVdAcIRXUvWaoiufKtXWf3Xiu9211xkSBTM0+clGg1EmIJiP7/gT
+ 6n1aiYveE2f7kb9AleaFQnF4r91FK6rk8v5tY3ZhX+BxROrLdoXGc+Zx3tf1J0X/yPS/o6fy
+ 3uh7WL9pDc3ckPGmWM/UjV49aNI=
+X-Mailgun-Sending-Ip: 159.135.238.30
+X-Mailgun-Sid: WyJmZDgwYyIsICJlbHNtaXRoOUB3aXNjLmVkdSIsICI1ODg0YzIiXQ==
+Received: from securityiq.infosecinstitute.com
+ (ec2-34-202-49-109.compute-1.amazonaws.com [34.202.49.109])
+ by smtp-out-n07.prod.us-east-1.postgun.com with SMTP id
+ 615499c263b1f186580549ec (version=TLS1.3, cipher=TLS_AES_128_GCM_SHA256); Wed,
+ 29 Sep 2021 16:52:18 GMT
+From: Doodle <doodlestuff@phishydomain.info>
+To: ELENA SMITH <elsmith9@wisc.edu>
+X-PHISH: This is a security awareness phishing simulation test from InfoSec
+ Institute that has been authorized by the recipient organization
+Sender: Doodle <doodlestuff@phishydomain.info>
+Date: Wed, 29 Sep 2021 16:52:18 +0000
+Message-id:
+ <c66b0b1f-4a41-4e55-afab-18629eb65c5a@securityiq.infosecinstitute.com>
+Content-type: multipart/alternative; boundary=d297b0019a6ab2bd93d9ebfedfb97fe7
+Content-transfer-encoding: 8bit
+X-Report-Abuse-To: abuse-siq@infosecinstitute.com
+Subject: Invitation to COVID Doodle Poll
+Return-Path: bounce+c23dcb.5884c2-elsmith9=wisc.edu@phishydomain.info
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Sep 2021 16:52:39.9295
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 22419956-a70c-4b60-3c4d-08d983698c5c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 22419956-a70c-4b60-3c4d-08d983698c5c
+X-MS-TrafficTypeDiagnostic: MWHPR06MB3149:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Sep 2021 16:52:39.8266
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 22419956-a70c-4b60-3c4d-08d983698c5c
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR06MB3149
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3637022
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4544.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(750132)(520011016);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?T05lQ25oQ0xyc0ZvZkxFTzV0SW8rcGxRSHFkNElCb2VBWnBVMEtDT1VOTnZT?=
+ =?utf-8?B?dCs5bDh5akdQd0NvRStXZzdRNmRUOG9wNGpxYUh0NU9TV1RmdDNBb3lPMlNY?=
+ =?utf-8?B?YWFab0E0bkFFZDM4UlEvaVMra09VdGJKMnYzUHpkaGtnS3hZRDByNlY5RVB6?=
+ =?utf-8?B?K2VjNCtlSmtvQXpnaFRVakJsUjNGS09RSGdyYURERHVLWnlZNVRQcURzN3BJ?=
+ =?utf-8?B?eldkUkI4Z1d4amdUeEIvQjE4ZkE3TmlTN3lrN09jWXZTWVdoTHlFS1hnZ1ZQ?=
+ =?utf-8?B?OWpmMjc2YlE4RklCQkFKcVEzVW5FWFhOZXJPZytRUERCNm9STGhhNWR3WkVY?=
+ =?utf-8?B?d3RWUnNIck9FcmdvT3N2cUhCck9FTjZpKzlaNURlQksrT3Y1eXg0TkdSWHRo?=
+ =?utf-8?B?dTkwVjJ5UU94dTRXK0UzYUtiZVJRVjcwTjNUSWRTa1kxV0Y0STR1c01JYmRu?=
+ =?utf-8?B?cy91NkZOOVhJSnBBUlJXL2dmOHVUdGFoWXN0ZzhkT3N3cXFhR3NsdGdWQ3A5?=
+ =?utf-8?B?V3BHT1RpcXQrK3c3MVFiYk5ZREhTMlJLMjhLSjl0YzNuN3J4bjRSWWVEN2o0?=
+ =?utf-8?B?UnlJeGNTV1piN3VwRUhDVjlWaHZkeGVYV0NUUWFJUlZ6TzRKM2tSSnkzc3pH?=
+ =?utf-8?B?R3EvZ05sTHNMR2hpb3N6eGE4SlFlNDBVeFd0R0w5Qzh5N3pSY0pqdDE4RWhV?=
+ =?utf-8?B?TFJDc3B3elh6Sk9VV3JYWXpnQlc1Zm9MNUpmOHJkNGZJTmV2U25nZmhiQ3JU?=
+ =?utf-8?B?bk4vN0p5eXpjZHNhclVRdnM3QWtsSU8vaUFVSkUxMDM2MEJXaG90YnJSeDA2?=
+ =?utf-8?B?MzVISjBxdnlxbnlXUFo5L2RjemhJQUZIWEtSMC9paFU5eVhlV0M4TFJPQXZh?=
+ =?utf-8?B?NkJmR3JobStMd01NUUM4dldHQ1VSNXVEZzJFcnZ4RVIxeCtJVWpDYjErRVVq?=
+ =?utf-8?B?b21xSzNNTkJEOGYxNjA2ejNzTnY3SkFzL2NDbVdIN0RCcVJUeVpNMWFFNzhV?=
+ =?utf-8?B?MFRneDZhNkZ2VUpzcFhpSEpmQU1jeUpoZ0hCaU44alF4VnBBZE02ZTFHaU85?=
+ =?utf-8?B?cER1WWJPdEFJaEdxQ2FBL1VQUWFyZ0xNVFZ1UUhxUWcvRU1BNHJVaVB1Z0JC?=
+ =?utf-8?B?UXd0aXBjU3BXTTFwdmpxeFZheThBbWNmTkZEK0pRYmFLU1BRU1FhQUpMNGkz?=
+ =?utf-8?B?VHRaSFFvbGpkMGtudnd2b2pZUHZ3QlJyU3FPTUhhSmovblRjRlRDcVNrQzc5?=
+ =?utf-8?B?ZjNVTGtwcTdTVWRyb0VJTHdtVkZGL2VLaFdEQ2JRaWVJWnVQOFJwM3lqUGxF?=
+ =?utf-8?B?WURnOGFjMy80ajdSMlNXVm9KN01POWZxM3RRL2IyK01ZSWt1N2NTUXNiU3F1?=
+ =?utf-8?B?cWVGWVU5NGNUcDI5ZUxORWRLc1hKLzB3TEU4MlRXbzQxeWt0K0dZQjBTeVVC?=
+ =?utf-8?B?MmZxcC8xSjhYdmRRSWVycHJwZFNkbitPR2ZyTGt6KzA0eVVVazZ3U1FqeU85?=
+ =?utf-8?B?Q0hMZ0pzRTdKTTBWbmNQd09yNS9aTi9NV2ltZDVMVzF6cGNQS2M4cjRoWmJM?=
+ =?utf-8?B?bXZRY1BGbGo1TnJMS1ViZTJaTndYZ3RPVENRdklhaHdSaHk5dmwvU0pGMllQ?=
+ =?utf-8?B?cFFxU0xNcFliVlUxMlBMTFZxOTBEZ0NjOExRZXdwZ2dIRGlkZDZpZ2hwa3J1?=
+ =?utf-8?B?eHk1N0pkRi9aLzNZVEt6ZDAzRVNNWkQ2bEJHb3grNUJoVndGTm1uTFpDazB3?=
+ =?utf-8?B?bk9vU2FlMHlaM21hVm9SWVZxTm1mUWo0ZGJpaUViOVNObFVscXdZa3hYQWwr?=
+ =?utf-8?B?TXNoY0xSNkxDb0kvMWM5SXp6SEd1eUgyS2JXdFMwblNVMEZnSkxOMGdjNHlV?=
+ =?utf-8?B?R3YvbFdZbkRXam9VNnhJNVdlVE5oYWR0NGJxWng3WExoOVAyeE82Sng2RjI5?=
+ =?utf-8?B?b2x6Z2FNR3pFOXR5ZmY5cGxSL0VUd2tVSStlbXdLUXdkMUJEY0lkUDdNeXMy?=
+ =?utf-8?B?RkRicGpwRWtDTE9vYzl2dzZhVEJ4K0xrajNscXN3SWpSRnJnQ3NTd1FPemRi?=
+ =?utf-8?B?ZG80K2xLUmd0WDZuU1pLVVFQQ2NpV2d6UGxiMTFTT2tva3U5MVpNTnUzdWtq?=
+ =?utf-8?B?ZGxNYjRDSkJOaWNOeTVwc1RVbURNdG04ekJIT0E1T29tMzZvRjhpY2ppTkNE?=
+ =?utf-8?B?ZEtOblE4dDlESTFlMDY0d3hYYXI3QjhyZkVubmVoR3U2a2t6Q0F6T1RPdDVI?=
+ =?utf-8?B?WW5ZRkZMUU5BcGRvT1hacUVRZ1pxUy8reXlqZFlqQ1RYQndYNFY3ZFJPNjlW?=
+ =?utf-8?B?T1lJNUdVNTRHNEhPdW9iaStPNzl4QzlVd2c4cjI0ZG9GUlBETStrMkxBYXRz?=
+ =?utf-8?B?VDFZenVNdTE1aVd6SW1yRGIzRFZtazJZTFRhdHErTkphcGpJREtyS0ZOY0hN?=
+ =?utf-8?B?elovSERHcDFOME9jTU1hQXdzUVVIUGxpaURNOHM5eUtsVUpsWitCQlNOUDlt?=
+ =?utf-8?B?WjR5Q1VTWVRPaVZtMHozdjZ4NTRqbHQ3LzFYaW5hbWxYeXBYRytpS00ybzdK?=
+ =?utf-8?B?d04rczJDL3VrU3RzUVRRdWxVU2tDU3NEYjR3TmhRQStiaExCQ3dhcDdnWjcv?=
+ =?utf-8?B?MncyUDQrL1lnSWRzR2g4dEFCZ2tSNmJXVE1LTC9wcmlJcStMWXAyRzVqK21I?=
+ =?utf-8?B?dmF1SVN2RERlb2FsR2dSYVk1RHQ0UVczWHlaVWR0L0RNU0QxTTZsWHFmVUN0?=
+ =?utf-8?B?YkxaVi85bnBiUHoyVy9VUHBpRStEUmM5MW5nZitqS2ZUaWw0NlJwUlJJQlNU?=
+ =?utf-8?B?bjBTZkc5Y3VrZnNpRDFkc2NiVkdvb0dDSXFqNGVWTFlCa3NLcmpWT3BidWJZ?=
+ =?utf-8?B?TTByL1pVRUdWUVdxZ2pnR3hkc2tWTGpTcXk1NnFCMXpXb0QwNDBld0JFeGJw?=
+ =?utf-8?B?OXZyZzdZSVU2Ri9vd0hpbmpjUjlxc0FQMXRpdlM0a29GblRvSEhUWHRkb1hv?=
+ =?utf-8?B?NUJXa3J2UEdua25lSG8xdSt3VDlHbkcxOThZWERYWW9hQ25DZW84MGZiak5S?=
+ =?utf-8?Q?j2SWGy8vu8QVEsA1gRzvwYJkq+PCvpWzg=3D?=
+MIME-Version: 1.0
+
+--d297b0019a6ab2bd93d9ebfedfb97fe7
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 520px) {
+  .u-row {
+    width: 500px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 500px !important;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+</style>
+  
+  
+
+</head>
+
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-color: transparent">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0;font-family:arial,helvetica,sans-serif;" align="left">
+        
+  <div>
+    <table align="center" width="100%" border="0" style="border-collapse:collapse;background-color:#faf7f5;"><tbody><tr><td>
+<table align="center" width="100%" border="0" style="font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;border-collapse:collapse;max-width:600px;line-height:1.4em;"><tbody><tr><td style="padding:10px;background-color:#faf7f5;">&nbsp;</td>
+</tr><tr><td style="background:#FFFFFF;border:1px solid #e5e1df;padding:15px;">
+<table style="width:100%;"><tbody><tr><td style="padding-bottom:15px;border-bottom:dashed 1px #e5e1df;"><img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-1.png" style="height:22px;"></td>
+</tr><tr><td style="padding:12px 0;">
+<p style="color:#282f34;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:16px;line-height:1.4;">Hl ELENA,</p>
+<p style="color:#282f34;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:16px;line-height:1.4;">Immediate Action Needed!! Please click the link below and review the dates and times provided for next week’s A11 Staff meeting that will focus on COV1D planning for the remainder of the year. Please specify your top choices via the Doodle poll below.  This poll will only remain open for the next 48 hours from receipt so you must respond ASAP.</p>
+</td>
+</tr><tr><td style="padding-bottom:15px;border-bottom:dashed 1px #e5e1df;">
+<table><tbody><tr><td><a href="http://phishydomain.info/landing/c66b0b1f-4a41-4e55-afab-18629eb65c5a" style="border:1px solid #3798d4;color:#ffffff;display:inline-block;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:16px;line-height:inherit;padding:12px 18px;text-decoration:none;background:#3798d4;">Participate now</a></td>
+</tr></tbody></table></td>
+</tr><tr><td style="padding-bottom:15px;border-bottom:dashed 1px #e5e1df;">
+<p style="padding:9px 15px 9px 15px;font-family:'Helvetica Neue', Arial, sans-serif;text-align:center;color:#999999;font-size:12px;line-height:16px;">You have recieved this e-mail because your supervisor has invited you to participate.</p>
+</td>
+</tr><tr><td>
+<p style="color:#434e57;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:13px;font-style:normal;font-weight:normal;line-height:1.4;padding:12px 0;text-align:center;">Doodle is also available for i0S and Android</p>
+</td>
+</tr><tr><td>
+<table style="margin:0 auto;"><tbody><tr><td><a href="http://phishydomain.info/landing/c66b0b1f-4a41-4e55-afab-18629eb65c5a"> <img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-app-store.png" style="height:42px;"></a></td>
+<td><a href="http://phishydomain.info/landing/c66b0b1f-4a41-4e55-afab-18629eb65c5a"> <img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-google-play.png" style="height:42px;"></a></td>
+</tr></tbody></table></td>
+</tr></tbody></table></td>
+</tr><tr><td style="padding:10px;background-color:#faf7f5;">&nbsp;</td>
+</tr><tr><td style="background:#faf7f5;text-align:center;"><img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-2.png" style="height:20px;"></td>
+</tr><tr><td style="text-align:center;padding:15px 0 0 0;">
+<p style="padding:9px 15px 9px 15px;font-family:'Helvetica Neue', Arial, sans-serif;text-align:center;color:#999999;font-size:12px;line-height:16px;"></p>
+</td>
+</tr><tr><td style="padding:20px;background-color:#faf7f5;">&nbsp;</td>
+</tr></tbody></table></td>
+</tr></tbody></table>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
+</body>
+
+</html>
+<img id="siq-image" data-id="c66b0b1f-4a41-4e55-afab-18629eb65c5a" style="height: 1px; width: 1px;" src="http://phishydomain.info/phished/opened/c66b0b1f-4a41-4e55-afab-18629eb65c5a" alt=""/>
+
+
+--d297b0019a6ab2bd93d9ebfedfb97fe7
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 520px) {
+  .u-row {
+    width: 500px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 500px !important;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+</style>
+  
+  
+
+</head>
+
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-color: transparent">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0;font-family:arial,helvetica,sans-serif;" align="left">
+        
+  <div>
+    <table align="center" width="100%" border="0" style="border-collapse:collapse;background-color:#faf7f5;"><tbody><tr><td>
+<table align="center" width="100%" border="0" style="font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;border-collapse:collapse;max-width:600px;line-height:1.4em;"><tbody><tr><td style="padding:10px;background-color:#faf7f5;">&nbsp;</td>
+</tr><tr><td style="background:#FFFFFF;border:1px solid #e5e1df;padding:15px;">
+<table style="width:100%;"><tbody><tr><td style="padding-bottom:15px;border-bottom:dashed 1px #e5e1df;"><img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-1.png" style="height:22px;"></td>
+</tr><tr><td style="padding:12px 0;">
+<p style="color:#282f34;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:16px;line-height:1.4;">Hl ELENA,</p>
+<p style="color:#282f34;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:16px;line-height:1.4;">Immediate Action Needed!! Please click the link below and review the dates and times provided for next week’s A11 Staff meeting that will focus on COV1D planning for the remainder of the year. Please specify your top choices via the Doodle poll below.  This poll will only remain open for the next 48 hours from receipt so you must respond ASAP.</p>
+</td>
+</tr><tr><td style="padding-bottom:15px;border-bottom:dashed 1px #e5e1df;">
+<table><tbody><tr><td><a href="http://phishydomain.info/landing/c66b0b1f-4a41-4e55-afab-18629eb65c5a" style="border:1px solid #3798d4;color:#ffffff;display:inline-block;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:16px;line-height:inherit;padding:12px 18px;text-decoration:none;background:#3798d4;">Participate now</a></td>
+</tr></tbody></table></td>
+</tr><tr><td style="padding-bottom:15px;border-bottom:dashed 1px #e5e1df;">
+<p style="padding:9px 15px 9px 15px;font-family:'Helvetica Neue', Arial, sans-serif;text-align:center;color:#999999;font-size:12px;line-height:16px;">You have recieved this e-mail because your supervisor has invited you to participate.</p>
+</td>
+</tr><tr><td>
+<p style="color:#434e57;font-family:'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;font-size:13px;font-style:normal;font-weight:normal;line-height:1.4;padding:12px 0;text-align:center;">Doodle is also available for i0S and Android</p>
+</td>
+</tr><tr><td>
+<table style="margin:0 auto;"><tbody><tr><td><a href="http://phishydomain.info/landing/c66b0b1f-4a41-4e55-afab-18629eb65c5a"> <img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-app-store.png" style="height:42px;"></a></td>
+<td><a href="http://phishydomain.info/landing/c66b0b1f-4a41-4e55-afab-18629eb65c5a"> <img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-google-play.png" style="height:42px;"></a></td>
+</tr></tbody></table></td>
+</tr></tbody></table></td>
+</tr><tr><td style="padding:10px;background-color:#faf7f5;">&nbsp;</td>
+</tr><tr><td style="background:#faf7f5;text-align:center;"><img alt="" src="https://s3.us-east-2.amazonaws.com/cdn29/doodle/doodle-2.png" style="height:20px;"></td>
+</tr><tr><td style="text-align:center;padding:15px 0 0 0;">
+<p style="padding:9px 15px 9px 15px;font-family:'Helvetica Neue', Arial, sans-serif;text-align:center;color:#999999;font-size:12px;line-height:16px;"></p>
+</td>
+</tr><tr><td style="padding:20px;background-color:#faf7f5;">&nbsp;</td>
+</tr></tbody></table></td>
+</tr></tbody></table>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
+</body>
+
+</html>
+<img id="siq-image" data-id="c66b0b1f-4a41-4e55-afab-18629eb65c5a" style="height: 1px; width: 1px;" src="http://phishydomain.info/phished/opened/c66b0b1f-4a41-4e55-afab-18629eb65c5a" alt="">
+
+
+
+--d297b0019a6ab2bd93d9ebfedfb97fe7--

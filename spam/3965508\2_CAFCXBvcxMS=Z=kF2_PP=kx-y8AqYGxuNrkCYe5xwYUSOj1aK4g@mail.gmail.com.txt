@@ -1,0 +1,231 @@
+Received: from MWHPR06MB2845.namprd06.prod.outlook.com (2603:10b6:300:120::10)
+ by DM6PR06MB5817.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 21:46:14 +0000
+Received: from DS7PR05CA0019.namprd05.prod.outlook.com (2603:10b6:5:3b9::24)
+ by MWHPR06MB2845.namprd06.prod.outlook.com (2603:10b6:300:120::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.18; Fri, 13 Aug
+ 2021 21:46:13 +0000
+Received: from DM6NAM11FT038.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:3b9:cafe::51) by DS7PR05CA0019.outlook.office365.com
+ (2603:10b6:5:3b9::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4436.12 via Frontend
+ Transport; Fri, 13 Aug 2021 21:46:13 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT038.mail.protection.outlook.com (10.13.173.137) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Fri, 13 Aug 2021 21:46:13 +0000
+Received: from mail-io1-f49.google.com ([209.85.166.49])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS01H9QSGUJH00@smtp5.wiscmail.wisc.edu> for
+ fhofmann@wisc.edu; Fri, 13 Aug 2021 16:46:06 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_50_70 0.1,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_1900_1999 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0,
+ BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, KNOWN_MTA_TFX 0,
+ SENDER_NO_AUTH 0, SPF_PASS 0, SXL_IP_TFX_WM 0, URI_WITH_PATH_ONLY 0,
+ WEBMAIL_SOURCE 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CANPHARM_UNSUB_HREF 0, __CANPHARM_UNSUB_LINK 0, __COURIER_PHRASE 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HELO_GMAIL 0, __HEX28_LC_BOUNDARY 0,
+ __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_HREF_TAG_X2 0,
+ __HTML_TAG_DIV 0, __HTTPS_URI 0, __INT_PROD_ONLINE 0, __MIME_HTML 0,
+ __MIME_TEXT_H 0, __MIME_TEXT_H1 0, __MIME_TEXT_H2 0, __MIME_TEXT_P 0,
+ __MIME_TEXT_P1 0,
+X-Wisc-Doma: katrinageorge@socialteers-vicent.com,socialteers-vicent.com
+X-Wisc-Env-From-B64: a2F0cmluYWdlb3JnZUBzb2NpYWx0ZWVycy12aWNlbnQuY29t
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.213616,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840001,
+ SenderIP=[209.85.166.49]
+X-Wisc-DKIM-Verify:
+ katrinageorge@socialteers-vicent.com,socialteers-vicent.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-io1-f49.google.com with SMTP id b7so6095012iob.4 for
+ <fhofmann@wisc.edu>; Fri, 13 Aug 2021 14:46:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=socialteers-vicent.com; s=google;
+ h=mime-version:from:date:message-id:subject:to;
+ bh=x7S8LfCfWkMkUWpeutRxi0UgNyx0XlG0IzZifrYvnjM=;
+ b=HnrYmamqN9z3JACPS3uXHEkfo4TqCjKc5k0WyyNbNQkpMNIlnfiI+G9bQQlie0fBlQ
+ 7IBmcg/1Y79x5pXWV9tQ0LN7JPSNrySlGOrNuMIzMrHcvKoeGBvRck5Sn16jwPJvyK1w
+ up24sZCtfJR27FBCen7ZJBJk+TRI2nmA9Kc/zRJYNdtjIgJ/i9TPcKAaTvIXd6ac2GIv
+ GnietLJ9ZLpvpr2Ebha4jslonmd4iqjfyxUfDcQ+NgO34cSkFyO87bHkxXKX47wwkehC
+ goH6AHvUqGBAG9+ISgMfYYL0BjwPCh5zuskjGo6LekR+L/TSz4i8WlmoP5LGly3uvn/H
+ 0EBQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=x7S8LfCfWkMkUWpeutRxi0UgNyx0XlG0IzZifrYvnjM=;
+ b=dybhEUvVR+OjMzxQACIjUUJ7NpKEAY08IY8wqzQyQr9F7LNI+4Crdx2jHQq12VoN6m
+ +l80vUzCk7t2401YMEFEU0nqEo0r4imuhycmUuXpMl1Y+8pTy9kpRc4mxEYDgW63djWC
+ WAzUbSnZ+EEtLAaVIH8Fel0kkE4CHu2aqK6w1WzjMZUrpT3MSUNUDGAfvUty5bY4lU/p
+ OVRLysn94nkUEl8yY8zb7SYMDr3yf9zEYXW5qcNojFTplHNA/WVa0QlrTF7gVkrNHYaH
+ YWmlFhY2E/AwBD5aVVjLbK553+MROUZtdBdrF65aJ5CJW9vIgn9siLfWw24ApXDp2GjL
+ ucAQ==
+X-Gm-Message-State: AOAM533i7m1RUtMQuq0Z7cx6GbBhYfrlHJAlM85hkIrkYb5LpitWnBqZ
+	Wb5fzlhhV3+9ZZUUIe18w/kDFAbQ3+h2aDjQNThuephZOGw=
+X-Google-Smtp-Source:
+ ABdhPJxUPACVNWmW6bsdU/CDynIqJnDCBWqFx0ElGJIZCer8/IBtqw145y9jZok+oBLAaaVr6SG9H0r/6QuGZ5MRVDQ=
+X-Received: by 2002:a02:c502:: with SMTP id s2mr4142554jam.135.1628891165693;
+ Fri, 13 Aug 2021 14:46:05 -0700 (PDT)
+Received: from 576368256655 named unknown by gmailapi.google.com with HTTPREST;
+ Fri, 13 Aug 2021 21:46:05 +0000
+From: Katrina George <katrinageorge@socialteers-vicent.com>
+Date: Fri, 13 Aug 2021 21:46:05 +0000
+Message-id: <CAFCXBvcxMS=Z=kF2_PP=kx-y8AqYGxuNrkCYe5xwYUSOj1aK4g@mail.gmail.com>
+Subject: A LinkedIn marketing online training workshop for you Fae...
+To: fhofmann@wisc.edu
+Content-type: multipart/alternative; boundary=0000000000004f2cc805c977c711
+Return-Path: katrinageorge@socialteers-vicent.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 21:46:13.1305
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cbbef74b-4285-42a4-2b25-08d95ea3c53b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT038.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: cbbef74b-4285-42a4-2b25-08d95ea3c53b
+X-MS-TrafficTypeDiagnostic: MWHPR06MB2845:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-MS-Oob-TLC-OOBClassifiers: OLM:6430;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 21:46:13.0255
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cbbef74b-4285-42a4-2b25-08d95ea3c53b
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT038.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR06MB2845
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4266394
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?a3EydmNjSW9uVkhTYi9rTS9rdnpLZFJ5ZkpHaWNIdktPVk4xVmpaS0JQNDdK?=
+ =?utf-8?B?UE5VaDdwcXJCbEVMWFlHV0dTMDBOOUVKSXEzWWd4bTRVZHZ0YWRzSm1RL21a?=
+ =?utf-8?B?cjJ0NmlobWtzQXdXYmFITTVPSGttcmtMdkQrMmlSWWZFSWpPYTlZZnc5NDgw?=
+ =?utf-8?B?aTdwY2JaZjJvMjhFS0NaYk1veUMvWDZSeHQxS3NkQll6TmYybVNFOWV3a3BB?=
+ =?utf-8?B?NVBVSTZ2Q3hra1pjVkR3aWlaSHBmMlZ5ay9NdGZLOGZqYUVxQjFETzN5U1Ax?=
+ =?utf-8?B?QVpsTi84bzNKY3l3WElUbi9zQ01kY2YrV3h6UnpROWVzaEZHS0g4bFdQYlV6?=
+ =?utf-8?B?QTQrby8vYmFqUVcrbGpyZ1kwN3NVOWNwd29Gck5uWFhNQXJqRHVTVUhFZ0oz?=
+ =?utf-8?B?NGZubmdjbEN1SmRpaWRRNFJyMXpZZ2R2WEJacVVla096MjREcWdlMi9oVzJS?=
+ =?utf-8?B?ZFhuVmxOSHdWbjkwMnpGNEUzc3NSSStjTW1RbHc5ank0cGNhRlZhSDg4WmZJ?=
+ =?utf-8?B?UmpqV0pyK3NEVHZjVWZFZXZYZGhJWjJxaVZMdGRTMW9qYzI4QUM2NmowMW9L?=
+ =?utf-8?B?U3AzbC9MNDZNUmZUUmpUTDcxQ2FOaGZIV3NXa29WcWN6UDU4ZUlCN3pVeGpo?=
+ =?utf-8?B?cTRxMmJDTVpFZXVUM2g4eElGQWZ2T3JKd1BuLzlyUTY1QUhLVlZVQWRja1Vt?=
+ =?utf-8?B?MHNmbTVYTFdVcG9FaHVWclVLTnhDY0lnYm4xbk9WVC85VzZSczFGTDFmTTkv?=
+ =?utf-8?B?ci9rbXFBUmhlL2FDT1BndGYyRiszSE5oRmtPYndkTTlUcDFPbTZjNzk1dFRh?=
+ =?utf-8?B?MzNsekVEYlIvSmJuR1owOGgxelltUVVzQVBPbEd2Wkx3c2F6ZVhENythQUZP?=
+ =?utf-8?B?ZGtmYjJ0OU85dE5YY3BEaGxURm9JUnUwdlBKYjZyY2krM3V2eDdldmt2ZGFu?=
+ =?utf-8?B?aHdMZ0ViTjM1Qis0Z0tpVTJ3RmJVRHZrMFdOSkNLQWdtR05yR3ZYMEhVRFIw?=
+ =?utf-8?B?TURBcnh2R3ZUdHlNZ0xUd2ZQK0lKS2NKYkdiaGdaMWNwRjJMSGhaelozTDRJ?=
+ =?utf-8?B?NG1iVmdLOCtnUFJXelBrUDNoaWFqM2hHR3NDdVBqYkFhQm9PR2hEc0ttRjJW?=
+ =?utf-8?B?RHpxTzQ3bTRtRTlSOFdybzJpZUc4Ui94c28xWlZnK0luMHgzNjRDSGNHTnlk?=
+ =?utf-8?B?c2d2NjNTYk9jM1EranU4WjkzK3VLWlVFVFVHQjBoU2xkN2t3WG1Td3VIMGdN?=
+ =?utf-8?B?dWNyVk41a3RnU1Rra1lUdnFtcTU5d3F6KytONTdWb2ZLb0Mxem1JUGNmUmVO?=
+ =?utf-8?B?NjJPSGxvNUdCM1JwM3NOcGpBUnlzTXdGcnQzVlRLWDZudUZtc2RYbjREYTFM?=
+ =?utf-8?B?R0xNbkVzcTIxZjJvUUdwd1FMZEpHZURKT1RhN2JGdXZjbmtDWmVEL1EzWkd1?=
+ =?utf-8?B?SFc0SU9jZjdTR3ltRS85OGxRQWRzREVFL0dyOVU3TUcxLzY1a1lHc2FwMDFZ?=
+ =?utf-8?B?YnJvZjFVYVVsODltb3NXbkNwckpId2FPaWxsQmxJL1R6VUtvMk9NMVZQWGNq?=
+ =?utf-8?B?MnJTM1IzOUpOdTJhbjlWQVJmdEdpQ2pwQk5NTTUxdzZ0TUlDNEQ1dEg2OXA4?=
+ =?utf-8?B?Tm01R3d1M0ZUejV0a2NQbW5rZUNGcTg4T0ltVkNWb3BTdWtZNmJ3QjY3OXYw?=
+ =?utf-8?B?RUFYZERmRXBkc2tBZzh0TlNsWENWYkQraWNSRzZabDZUUk9mREhMZEVvenpR?=
+ =?utf-8?B?RHNPYWc5YXpZS0lpNy8zS2R6Q1hPMEk3QnFNeWt4RkJiLzBYUUtRSUJ6SEJN?=
+ =?utf-8?B?dG4wdzJIZ3NHVjR6QXR1emRvd2EySExuc2FSM2U4T2x0MjNRQS8rWGN3cnQy?=
+ =?utf-8?B?akNRQVhRTElCMHd2TGhqWWdKVTFRZ0VLbnp1Z0RvTDl5RTc3cEg2Y1k0eHF2?=
+ =?utf-8?B?OWZCSkFZWEEzVE8wQlpIRHJ6SmxlenBuQTBGc2NYTlBpNWZCQlhpT0h6cU1L?=
+ =?utf-8?B?M3dtbXJ0NHZXdDVBams3VlRhc2o4TkhFZ2VDblZMSzFrR2JYWXNyUVBzMUFB?=
+ =?utf-8?B?ZjJaUktrSmVPSVl5N1doUWthM2dtMitEcjNrd0RDMVNzbU5udndtNHJPUENm?=
+ =?utf-8?B?T3FtUHdXY08rRzBGTWJyeTlEbWU1ZE1TZmxyQXllTWVPOVdxUWVGbWpPZE91?=
+ =?utf-8?B?YjdNVk1TL2hhNjRDcmhBN2k5QmFLNlBOYTEvWlZBYjhqM3dnT1FES1p3MmM1?=
+ =?utf-8?B?bVgzN3lGYmFGQXFDaWVmWnpNem41V1BTRjNuSUxkZ2NCcm55MlE1bHMwZytF?=
+ =?utf-8?B?WGVlRmh3dXFjZ2hsMEdiemI1VUY5V2FwVnRjbEd2c05tLzZxV2RxSjdHeGFB?=
+ =?utf-8?B?dURESVEvcHF1Z2tjN1plZjFNdDdlV01zVDR0N3NybDIyaEdaYVM3Z1NDSzhv?=
+ =?utf-8?B?cW9FMkovdlBJekJPY3Y1QmlQZytKQXMwaG4ySHI3aTRsUFJ3ZFJFUWsrSmZL?=
+ =?utf-8?B?ei9KMisycG1aR1Z3ZGxMOTBYV0Q4Qy9walIvMVo4TC9CQ0FFb2UxQ3VTSk01?=
+ =?utf-8?B?WXB1Q2FhNlZEKzJ0RTBualRIMzNQR25iZG1NUTBIdFRjOEd4U1NLNzQzaHZP?=
+ =?utf-8?B?Qzh3c2JFMVlhbHNhNE5jRk1pMlE0R1R3L0hUY3lNdUY5VG9NVFQwbkhtMkxt?=
+ =?utf-8?B?NFZYUHd1ZjRzSzJ6ZVR5dEdYQW9SV2JhVEtWQlpOcm5KTmRrMkZ0SXVBNFlX?=
+ =?utf-8?B?bkw3WklvZWlEMDhSbEdMWFFPRXU2VExUKytqSTVndjhUOHFSaUlTVzhuZEtU?=
+ =?utf-8?B?b0NtZXJBZUhKSG9NaFUvTDBhdkJRa01teE02TGdSMnhpdFdBQUZuSEYwMk9z?=
+ =?utf-8?B?dHZkTFRJSVNhUm11YzhQUTJRTDR5QlBKTHZJTFFSbkJiczVNMzNtSGhQOG5Y?=
+ =?utf-8?B?RmM5Z0xjVUF4eEJYa1JxQW9IbkJQaDRzRkR6T2hBNGJjMlhTaHBmSDVkWHc0?=
+ =?utf-8?B?UGFOaU8xY01NUUQvcnhtd3BpZHlQcUx5T0pvN3k5M2VZbThHZnQ2ME5kZjlJ?=
+ =?utf-8?B?bXVZb0xIRjBYRFo0QWxyM0FDTHQ3a0JJVkV5bnRVUkJjTFpESHZOZXRDblhv?=
+ =?utf-8?B?UnJlZWttMnQwenZMa0ZqRnlOVmZBQTlCMXFpT1MrZz09?=
+MIME-Version: 1.0
+
+--0000000000004f2cc805c977c711
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Fae,
+
+We have a LinkedIn marketing & advertising online training workshop that
+could be a great help to improve your LinkedIn marketing deployment at
+University of Wisconsin-Madison.
+
+You can see what's covered on the course here
+<https://Socialteers-Vicent.com/courses/linkedin-marketing-advertising/?camp=LMAI-01-syllabus-1&utm_source=Snov_2&utm_medium=ST600&utm_campaign=LMAI>
+.
+
+Our LinkedIn Marketing Accelerator online training workshop has recently
+been updated & looks a good fit for your role at University of
+Wisconsin-Madison.
+
+Could this be a fit for you??
+
+Kind regards,
+
+Katrina George
+
+Training Manager
+
+Socialteers
+
+
+Unsubscribe
+<https://s1628496002209.signdrip.com/track/unsubscribe/793542309>
+
+--0000000000004f2cc805c977c711
+Content-Type: text/html; charset="UTF-8"
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+</head>
+<body>
+<p>Hi Fae,</p>
+<p>We have a LinkedIn marketing &amp; advertising online training workshop that could be a great help to improve your LinkedIn marketing deployment at University of Wisconsin-Madison.</p>
+<p>You can see what's covered on the course <a href="https://Socialteers-Vicent.com/courses/linkedin-marketing-advertising/?camp=LMAI-01-syllabus-1&amp;utm_source=Snov_2&amp;utm_medium=ST600&amp;utm_campaign=LMAI">here</a>.</p>
+<p>Our LinkedIn Marketing Accelerator online training workshop has recently been updated &amp; looks a good fit for your role at University of Wisconsin-Madison.</p>
+<p>Could this be a fit for you??</p>
+<p>Kind regards,</p>
+<div class="signature">
+<p>Katrina George</p>
+<p>Training Manager</p>
+<p>Socialteers</p>
+<p><br></p>
+<h6><span style="color:#7e8c8d"><a style="color:#7e8c8d" href="https://s1628496002209.signdrip.com/track/unsubscribe/793542309" target="_blank" rel="noopener">Unsubscribe</a></span></h6>
+</div>
+</body>
+</html>
+
+
+--0000000000004f2cc805c977c711--

@@ -1,0 +1,113 @@
+Received: from BYAPR06MB4712.namprd06.prod.outlook.com (::1) by
+ SN6PR06MB4093.namprd06.prod.outlook.com with HTTPS; Wed, 10 Aug 2022 14:22:42
+ +0000
+Received: from CY4PR06MB2934.namprd06.prod.outlook.com (2603:10b6:903:139::21)
+ by BYAPR06MB4712.namprd06.prod.outlook.com (2603:10b6:a03:4d::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.11; Wed, 10 Aug
+ 2022 14:22:33 +0000
+Received: from CY4PR06MB2934.namprd06.prod.outlook.com
+ ([fe80::68bc:58e8:50fe:5bcd]) by CY4PR06MB2934.namprd06.prod.outlook.com
+ ([fe80::68bc:58e8:50fe:5bcd%3]) with mapi id 15.20.5504.020; Wed, 10 Aug 2022
+ 14:22:32 +0000
+From: ARIA CELESTE JACKSON <acjackson3@wisc.edu>
+Subject: Part-time Work From Home
+Thread-Topic: Part-time Work From Home
+Thread-Index: AQHYrMJm8ZC92ims/kKiHSRLmUDSdw==
+Date: Wed, 10 Aug 2022 14:22:27 +0000
+Message-ID:
+	<CY4PR06MB2934C164CA171B9B7BD8AAB6EE659@CY4PR06MB2934.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: CY4PR06MB2934.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	e6343827-a692-4571-a31c-08da7adbc29b
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	WSDOOBltKjyBsxAqLvWlo1CNsu65fj2f24GwstKkZtLK08CkhGDJtR3WM6stTmoMkOyfbXB5neAcyPcl9nC7MP5nkgYBO4qYmugmmJfMxR6fM9boMJ2+04xamAyyFYo+FuHzGCg8iPQpmbPphKuPjVa/bu8TM9293OJnqd8MvI2upcG6cXFBdxc//HZz+glY8lgaxGfEUrWq1xkZ6fbaQ3fzUDV4SG7tsXTrjGcyI12VxGT8Q07gU5eXVwXQeXd/YEba077702NkFKzhCfN7sghohy2BX94KceQ79y/514s020/HHzgCICDKNrKzqi3/D33Wi0wF3KeA4BbX82kEP8zZYDV4MmZ9mLUY+NOlL4hG+R2F6LUAnNiXh6P37qdOo8780izYVBkH61osx7yJOL2PKa+qxaLzM8ktUFCLc6exNuu0tdXnHpw5b2mPxxJoCv2M1/L8wfjA2sZ0kgmFvXC3yHKBU60/TXdlXKRn/fWxTMGP/XrnlQV6Nt2DYXyy2TFPrBv/nELFudU8mByLSak6NHc7DWqP8UCWCaUTzXwEHUmmMbWcs/j0LZ5gDaIpmxEC64p7Xm92KN68hSuHnjleYFZZsB6xV0FEQNUOVyrX9bNIZopowK80ILcXHbDgufUSK+V1JwthGiAduRtQibN4iDYFVDeAPIRowj5rp9e9WbCc3ldKIaE0Vc90OKiOTFIgJ1XxO7+A6roUJbqCwLj1puzyJ5vNirdn1WpqXTY3O9RQFg7h6VHgEpnYgs11AWdKInJ3cChRxsctJlZ6qAsGDxEQ8eWUhuCydKPtzfE=
+Content-Type: multipart/alternative;
+	boundary="_000_CY4PR06MB2934C164CA171B9B7BD8AAB6EE659CY4PR06MB2934namp_"
+MIME-Version: 1.0
+
+--_000_CY4PR06MB2934C164CA171B9B7BD8AAB6EE659CY4PR06MB2934namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+You are encouraged to be a part of this amazing offer, for a PART-TIME JOB,=
+ as you can work remotely at the Convenience of your Home or School.
+
+As an administrative assistant, you will be responsible for various adminis=
+trative tasks like making or receiving payment, keeping record and processi=
+ng paperwork, when necessary, with a good weekly pay, and bonus benefits.
+
+The job is exciting, flexible and will not affect your current job or studi=
+es. Don't miss this  APPLY NOW<https://tinyurl.com/mvwbmw8d>   for further =
+details or to sign up.
+
+During this time that we are, working from home would be great. Therefore, =
+you have been offered an employment office Job Opportunity at the convenien=
+ce of your home or school or anywhere you are, which serves as a gateway to=
+ pay all expenses.
+
+Thank you.
+
+
+--_000_CY4PR06MB2934C164CA171B9B7BD8AAB6EE659CY4PR06MB2934namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<span style=3D"margin:0px;font-family:Calibri,Arial,Helvetica,sans-serif;co=
+lor:rgb(0,0,0)">
+<div style=3D"border:0px none;margin:0px">You are encouraged to be a part o=
+f this amazing offer, for a PART-TIME JOB, as you can work remotely at the =
+Convenience of your Home or School.<br>
+</div>
+<div style=3D"border:0px none;margin:0px"><br>
+As an administrative assistant, you will be responsible for various adminis=
+trative tasks like making or receiving payment, keeping record and processi=
+ng paperwork, when necessary, with a good weekly pay, and bonus benefits.&n=
+bsp;</div>
+<div style=3D"border:0px none;margin:0px"><br>
+<div dir=3D"auto">The job is exciting, flexible and will not affect your cu=
+rrent job or studies. Don't miss this&nbsp;&nbsp;<a href=3D"https://tinyurl=
+.com/mvwbmw8d" target=3D"_blank" data-saferedirecturl=3D"https://www.google=
+.com/url?q=3Dhttps://tinyurl.com/mvwbmw8d&amp;source=3Dgmail&amp;ust=3D1660=
+225319070000&amp;usg=3DAOvVaw0wEuS1MuJ18ssikYniSB7I">APPLY
+ NOW</a>&nbsp;&nbsp;&nbsp;for further details or to sign up.&nbsp;<br>
+</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">
+<div dir=3D"ltr">During this time that we are, working from home would be g=
+reat. Therefore, you have been offered an employment office Job Opportunity=
+ at the convenience of your home or school or anywhere you are, which serve=
+s as a gateway to pay all expenses.</div>
+<div dir=3D"ltr"><br>
+</div>
+<span>Thank you.</span></div>
+</div>
+</span><br>
+</div>
+</body>
+</html>
+
+--_000_CY4PR06MB2934C164CA171B9B7BD8AAB6EE659CY4PR06MB2934namp_--

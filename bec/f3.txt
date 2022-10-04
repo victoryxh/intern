@@ -1,0 +1,175 @@
+Received: from BY3PR06MB8148.namprd06.prod.outlook.com (2603:10b6:a03:3cb::12)
+ by DM5PR06MB3371.namprd06.prod.outlook.com with HTTPS; Fri, 30 Jul 2021
+ 20:22:16 +0000
+Received: from BN9PR03CA0071.namprd03.prod.outlook.com (2603:10b6:408:fc::16)
+ by BY3PR06MB8148.namprd06.prod.outlook.com (2603:10b6:a03:3cb::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4373.22; Fri, 30 Jul
+ 2021 20:22:16 +0000
+Received: from BN8NAM11FT036.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:fc:cafe::5e) by BN9PR03CA0071.outlook.office365.com
+ (2603:10b6:408:fc::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4373.18 via Frontend
+ Transport; Fri, 30 Jul 2021 20:22:16 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ BN8NAM11FT036.mail.protection.outlook.com (10.13.177.168) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4373.18 via Frontend Transport; Fri, 30 Jul 2021 20:22:15 +0000
+Received: from mail-ej1-f50.google.com ([209.85.218.50])
+ by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QX205EF5R91UJ30@smtp4.wiscmail.wisc.edu> for
+ pa.her@wisc.edu; Fri, 30 Jul 2021 15:22:14 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Steve
+ Quintana <stevequintana086@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_50_70 0.1,
+ HTML_NO_HTTP 0.1, BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_300_399 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, HTML_BAD_EXTRAS 0, KNOWN_MTA_TFX 0,
+ NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0,
+ SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0, SXL_IP_TFX_WM 0, TEXT_DIRECTION 0,
+ TEXT_DIR_LTR_ONLY 0, WEBMAIL_SOURCE 0, __BODY_NO_MAILTO 0,
+ __BODY_STARTS_WITH_2XDASH 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __EMAIL_SIG_DBLDASH 0,
+ __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_GMAIL 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0,
+ __HELO_GMAIL 0, __HEX28_LC_BOUNDARY 0, __HTML_ATTR_DIR 0, __HTML_BAD_END 0,
+ __HTML_BAD_START 0, __HTML_DI
+X-Wisc-Doma: stevequintana086@gmail.com,gmail.com
+X-Wisc-Env-From-B64: c3RldmVxdWludGFuYTA4NkBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.7.30.200915,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.30.5840001,
+ SenderIP=[209.85.218.50]
+X-Wisc-DKIM-Verify:
+ stevequintana086@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-ej1-f50.google.com with SMTP id yk17so11241096ejb.11 for
+ <pa.her@wisc.edu>; Fri, 30 Jul 2021 13:22:13 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20161025;        h=mime-version:from:date:message-id:subject:to;
+ bh=WA7ymjnU+Oq8L1SQrDAMPfgGcf0oZLTqijUgjWpEVnQ=;
+ b=C889nycJgqKzMkCmMke99IWKvPDGqoXybkUK1SZb3xk6zE36QXPoHOoqmlBowAB8A/
+ a9UgBfCtGL5nOlagRYkxLgJnYKUc8cF4w8iMg8iisP+p26sCFT93oBFxra6agWUHkPXN
+ SWNThW4AvLyeAwnQDBbemPw66t2jBncY5pLYWeobernW5K/CbZN9mUfgvst1Q6cLEwXA
+ /XeWv89HuD1YA/tlGhX9TOusm8hKkvY4btk4DPcJqVJjpD85DM7obTuKzIp+XABBy/eq
+ G32jl2QRFX1aghvR4lIP2qsO8lV9WXpkpHjjhR7FShTOjhNAyuyWp2lUHSn5RU3OfXWl
+ zoMA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=WA7ymjnU+Oq8L1SQrDAMPfgGcf0oZLTqijUgjWpEVnQ=;
+ b=NVEIvIaLNpVCKscAaQgsSpW7VK2Qm9tNfSwRoszzVV4rzBoesGvcrLjiQ+/JexlmWF
+ 9BH8iCtUFqNjHRSkmsxTfX1PRQIfgOHZjNZQPfQ0ccSlQifG8UklgdIJ1QAsEtQ4gpg8
+ fOhRCww2ctc6t9Yc/os1qork8+AapkwQ7yNkcDrQy4o96pkXKl0QwcEISHD87mOquEG+
+ /V+/wDJPDhyrV7pAH1Qgk9U/69A04ZRsfdxTBT6aOe2MDQaKVkkfm1K2UDCdGTBVKhXj
+ Qhi8JQAQXf8/IT1jBE08reCVF80jYrrfz4ry68aUOV/kTrUODXa5kaF4joTk7vFS1jml
+ /IwA==
+X-Gm-Message-State: AOAM5319TGrd1XKrwTLuMWA/ks4hydAXYbC6MxyuW80WzD5VVtJi1pnj
+	lDv/WtJniGA2tCCcsqjjFa5DXqzAkV2ahDZuQ23fI0/ew+sqUA==
+X-Google-Smtp-Source:
+ ABdhPJweljcYVGQ8u6qKpt6RwWSBUNvkzu15ajdpu+ENusFIRe8TE1T3sZeoCORI7dlmVXhc6vwwy5RSZx3wWNiqJbY=
+X-Received: by 2002:a17:906:5e0d:: with SMTP id
+ n13mr4517447eju.82.1627676532673; Fri, 30 Jul 2021 13:22:12 -0700 (PDT)
+Date: Fri, 30 Jul 2021 21:21:59 +0100
+Message-id: <CAPy5cnhE4R2Vh=nwNFSpux7xirQX5TVPyNGBg3AyqGNmVRgm_Q@mail.gmail.com>
+Subject: Send me your available cell number
+To: pa.her@wisc.edu
+Content-type: multipart/alternative; boundary=0000000000008a10cc05c85cf909
+From: stevequintana086@gmail.com
+Return-Path: stevequintana086@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 30 Jul 2021 20:22:15.6967
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3feb0825-cbf1-49b3-47ca-08d95397b8e7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT036.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3feb0825-cbf1-49b3-47ca-08d95397b8e7
+X-MS-TrafficTypeDiagnostic: BY3PR06MB8148:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1728;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Jul 2021 20:22:15.5818
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3feb0825-cbf1-49b3-47ca-08d95397b8e7
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT036.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY3PR06MB8148
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3335656
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4373.025
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Rk5pV1h5MGtNa1E1WmZUVTdvL09nUGZZelpBRnF0YU9zNVRTUEdRLzM0SWdx?=
+ =?utf-8?B?NC95aGhxaVZYRWdmMEl5TmZnc1FWMG55aGJQMmpTRXhkNms0dlVyNjZuSXcr?=
+ =?utf-8?B?bitsNisyUktOUTBLZHozeFlZRHhwaU5CdHVpUTVZbWkrREVlOVZBeVhXYjBm?=
+ =?utf-8?B?ajA0MjRQMVBQb0FaTUhEaXI2U2ZjdGZ5UHJJbkd6RGVRK0YvTjdWaC9zM0FY?=
+ =?utf-8?B?TEs3b1g2RkZGWnBWcjk1ZzE2U2hqbUM0eFVIRXdFVmFqMmF6Q3FOa0hDenJR?=
+ =?utf-8?B?NGVqMlRyN3pOeExtT25RUVk3b0xlWWZOeTdTdkFma2tmZDFIYjZIRzVzcU1M?=
+ =?utf-8?B?LzV0MmUrY21CT0V3T2IvMkhyMDRQWFBTanE1djJoNXRKSWlsb1pCYi81dlJp?=
+ =?utf-8?B?WjZJdWsydDdHNWtwTUNnalI2OEFhaFdYYlorbHVleGhrU3FIakJIcmtVVTRZ?=
+ =?utf-8?B?cGpjS0pNNHh1cVJGOERBZHVpMkRpTGEwYUxxVWVFd2FoQjZWTEF6SGFyVzUx?=
+ =?utf-8?B?aEpFYUtSbjRzdGIzTk1YUlJRcUlZQXdJZWl0d0Y5NTdpcm4waFNVL0dRdmg2?=
+ =?utf-8?B?aUlaWjZvTlNGa1JlRHRtMW5lNW5FdXFoVWIxUVNhZFFIb05RbC8ySStuT2tt?=
+ =?utf-8?B?NlBNWVVqSm15dHRSNUtCUGhRSFBsdUZmM1ZML2dOS054cUczM1BONXhxYm11?=
+ =?utf-8?B?c3hueWdhY25XRi9odDR1L0ZCa0V2c2ZVMDVmbVhpVWl3eW5EU0hTK1VqRzZF?=
+ =?utf-8?B?blN6MlZncWxyUDRHaEhJL3J2aFozTW9Gc2ZUTU4xbU1la2l5WmdJbUZPdDhs?=
+ =?utf-8?B?MzBteEpEQ0hmalhMZVlaeHZWYVArSXZaS2YxK1l3S0pVcmR4TG02aklsVmNl?=
+ =?utf-8?B?T0VDMjhuUGw5Ui8wRzhlMi95UWtZQjE4NWVCZjBzNDZKTnZIVHF3V2t4bHJW?=
+ =?utf-8?B?MEpzNHlhZTZaWkxxNUJ2S3hKQ1luUUdxczZmV0tQcHZqQ3NrWmFVczNwZXFZ?=
+ =?utf-8?B?WVEvKzJjNkhSZVFKYmpsUlJjb3k3RzZXcXNRbEpRTTlGdzlPSE5SUDZXZnM3?=
+ =?utf-8?B?SFNuc25xSURkM3JabWJLcmh5ZVdUbUp6blpzZEZVSjkzWDIyOXRUbGZrblBh?=
+ =?utf-8?B?T09ndWV6dVl5RU92cFo0WjVGczNRQ0w0R2MzZVZFb3kxQUJZUSttcWNBN2k1?=
+ =?utf-8?B?TXVIc0NncHpkZDlBeEdod1RCdFJLYkdFZmwvRkVoOHFrUEFyVHFVNmhZQTZk?=
+ =?utf-8?B?dTMrR1pSMWE0NmQ0SnZQb0xZZWo2YVFuQ0lrc29vaVJQNXdNaFB2MDB4eS82?=
+ =?utf-8?B?WWhYTTdjNkc4eXYvNjRiUVBLNVoxWEoxTWk5ZXFFb2Npc3ZJOVNPeldTZGE2?=
+ =?utf-8?B?MjZ4akgwWDFOcjg3czNtbFBhbmNuN3BIQmtqOWJxT1V6ZkE3RTJMcTBuVkxz?=
+ =?utf-8?B?VnBZN3RYTVUvS0hyd3NrMVB0dzZiMTZMWWFPNlg1d3ZxSjcyM1lwVk9wT2Y4?=
+ =?utf-8?B?L285VXM4WGFjcTNxckUyZ0xjNEh4Z2NwRWEwdHkvdDdTSVpNM21wbnFPVHlX?=
+ =?utf-8?B?YVBXZk0wcnpxM1hxTEN6ZUVhYklNVHRMSFdxQXFtd1AvRk8vYytCN0hJZHA3?=
+ =?utf-8?B?aEFmWHNKc1pHdDBiYytNK05vcytxeGMyUHZVYksxSGZhOVlhSGYzOFpHSldt?=
+ =?utf-8?B?T25wM01UTEVHUkNlN1NvbEZHemhXUCtLOWwrMGVKM29uUTl1ZC95S0dpRmZ3?=
+ =?utf-8?B?TUNjQ3MwNDFKbzNxNVU1WFplT0tnYXBjWkRqZk1BRjYwTVZ1NXdrNzY5Q0VJ?=
+ =?utf-8?B?WjFtNWpuVFJUQ090YjZLRXdCbmZ0cVp5em4xTnJyMWJNYy9KTGpVN3FJY3FL?=
+ =?utf-8?B?U2xjZWpOc2Y2azYvUDkzSitJSkI2UmJDNWVReHlCYmFaYU1pcU04QnlibnNB?=
+ =?utf-8?B?bk5xeGFUd0xIZm5uc2ZKQzFObWUrM0J5dmkwUmR2YnQvbUMzcGpJa1VSV1hU?=
+ =?utf-8?B?NnpxSzM3dm9PQlhPWWtCWlFLS2VxMGdOUUdnZHA5cThQNktvR0NRemt0RG1w?=
+ =?utf-8?B?aXdZQ3g3amwxbmJxdFlDUDlxWDJZZjZVWWRrYnNoUXFtZ2pCemRXN2JMNjd4?=
+ =?utf-8?B?eXVDcXRGZU0xRXFqL1FlY0xqeXBwRzdrN0U5OVNaTlN5bllaODhhQk1HR2sx?=
+ =?utf-8?B?MWNTbTZEREhBUjlQcmlOQkdLbng1YXc1Z1c0am9RK0ZWZ1FwZ1gwWk1XTDl4?=
+ =?utf-8?B?bmdwUDF6WnBIbXlvRnhXcm1TUjliMndZK24wRmZ3ZUJDN1JSTUcySllWdmFE?=
+ =?utf-8?B?dm1kT2FPL1V2dnRKTXY0enlFMDVtYkdEcmx2bGRLTklsaWU1Q1NyZFFTK2Zv?=
+ =?utf-8?B?VjRzdFVvM1EydncrTzJvSTV4cEZOOGo3dXlYSEVQQU55d3Q4UHJFT1VoV3k2?=
+ =?utf-8?Q?qJHN9GnRmz0GixuUvcgi3ApAsQp14L7I6qs=3D?=
+MIME-Version: 1.0
+
+--0000000000008a10cc05c85cf909
+Content-Type: text/plain; charset="UTF-8"
+
+-- 
+Steve Quintana
+Department Chair,
+
+--0000000000008a10cc05c85cf909
+Content-Type: text/html; charset="UTF-8"
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-- <br><div dir="ltr" class="gmail_signature" data-smartmail="gmail_signature">Steve Quintana<br>Department Chair,<br></div>
+
+--0000000000008a10cc05c85cf909--

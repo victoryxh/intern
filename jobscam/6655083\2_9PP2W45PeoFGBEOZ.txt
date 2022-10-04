@@ -1,0 +1,112 @@
+Received: from SJ0PR06MB7696.namprd06.prod.outlook.com (2603:10b6:a03:37e::14)
+ by PH0PR06MB7176.namprd06.prod.outlook.com with HTTPS; Wed, 16 Feb 2022
+ 00:46:47 +0000
+Received: from SJ0PR06MB8213.namprd06.prod.outlook.com (2603:10b6:a03:398::9)
+ by SJ0PR06MB7696.namprd06.prod.outlook.com (2603:10b6:a03:37e::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4975.17; Wed, 16 Feb
+ 2022 00:46:10 +0000
+Received: from SJ0PR06MB8213.namprd06.prod.outlook.com
+ ([fe80::441b:157c:8fce:4c89]) by SJ0PR06MB8213.namprd06.prod.outlook.com
+ ([fe80::441b:157c:8fce:4c89%7]) with mapi id 15.20.4975.017; Wed, 16 Feb 2022
+ 00:46:10 +0000
+From: Joanna Q Wang <jqwang2@wisc.edu>
+Subject: Part-time Personal Assistant Needed
+Thread-Topic: Part-time Personal Assistant Needed
+Thread-Index: AQHYIs2IULHRQUOK8UK7zDAIT3ejpw==
+Date: Wed, 16 Feb 2022 00:46:04 +0000
+Message-ID:
+	<SJ0PR06MB8213C11E81CE1DBC325BFA4B98359@SJ0PR06MB8213.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: SJ0PR06MB8213.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	b63e74a2-ef4d-4940-44c4-08d9f0e5b9bf
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: b63e74a2-ef4d-4940-44c4-08d9f0e5b9bf
+x-ms-traffictypediagnostic: SJ0PR06MB7696:EE_
+x-ms-oob-tlc-oobclassifiers: OLM:6430;
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:SJ0PR06MB8213.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 16 Feb 2022 00:46:04.5050 (UTC)
+x-ms-exchange-crosstenant-network-message-id:
+	b63e74a2-ef4d-4940-44c4-08d9f0e5b9bf
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-authsource: SJ0PR06MB8213.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-transport-crosstenantheadersstamped: SJ0PR06MB7696
+x-ms-exchange-transport-endtoendlatency: 00:00:43.2663905
+x-ms-exchange-processed-by-bccfoldering: 15.20.4975.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	X02E9yTkLmD5z8sDhepiJKS/9b1xqnE2DIMnqE3D9lqLtpmUmM9PETK2GP+ht21b0b79EbsW5CFgV9AmVJqLTcSoLAj44IzteLL+TDb1xzBPbHZK+irt89Kyk5JBZyG5xgFsc2Gp9cSnWy1+0x9fz5ZyyajmMPcppNv/ILI7T5VR7Y/ZumOSemR/MsIhJRl2TpOA0Ldciq0h6wiU+wkuncdWblFHKKcFqHEzI4CfL0kUhQBmEN6XKs5IZEyiLAi4J9oejUbqpfiOReDG6tPT3CAxQ5HBVOo1DU3fX0xmH4VJURTxLMXZ8hNcBrCjpZU2gdE00BiV4nX9Y7UtoE9kKI81mo5lPH5slkqibFnTe7ocWkPIWnIJd0iWrADyLiy4s1oVXMPC07+rfAN9JqIWXI2x4McynDOBGvuW9UdK98G1Rwx0LOefU4kJcMwJ1lsCopYdJC3AMXQZVewaY1/XvuBaVFamqRjuDe23bKKEoSuDPFCZKy2lVvBBZDm3ovgt8MaZKcz1xpFecoSfqCvjv+CRIfdxJFA+SfPYb8JdShi1xxdmDM+5POVMMxvqYpNsNeLKK+D4BC4ZmR3BMM8symXjLRARpqjdjuLTraVk73emSrkxCYsgPHQlJPcc5MMPHvy2AhA4uh0PBC+QWjAb2WrL5+w3QBqCGDXccrGg7Evu+DzovnCyOnMAskjF5WgBx3kWegALCl16avMswlj26wTW8o/ziJU1UTt47JRbD+c=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR06MB8213C11E81CE1DBC325BFA4B98359SJ0PR06MB8213namp_"
+MIME-Version: 1.0
+
+--_000_SJ0PR06MB8213C11E81CE1DBC325BFA4B98359SJ0PR06MB8213namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Busy small business owner is seeking an office admin/personal assistant to =
+help with general tasks.
+
+Work time is up to 8 hours a week, at $500 (USD) weekly,  hours can be spli=
+t throughout the week. You'd have to choose what hours work best for you
+
+for more information to apply. Be sure to visit the
+
+link below: APPLY NOW<http://tinyurl.com/y956ss5b>
+
+--_000_SJ0PR06MB8213C11E81CE1DBC325BFA4B98359SJ0PR06MB8213namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"margin:0px;font-family:Calibri,Arial,Helvetica,sans-serif;co=
+lor:rgb(0,0,0)"><span style=3D"margin:0px;font-family:Arial,Helvetica,sans-=
+serif,serif,EmojiFont"><font style=3D"font-family:tahoma,sans-serif;color:r=
+gb(34,34,34)" size=3D"4" face=3D"tahoma, sans-serif"><span>Busy
+ small business owner is seeking an office admin/personal assistant to help=
+ with general tasks.</span></font></span></span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"margin:0px;font-family:Calibri,Arial,Helvetica,sans-serif;co=
+lor:rgb(0,0,0)"><span style=3D"margin:0px;font-family:Arial,Helvetica,sans-=
+serif,serif,EmojiFont"><font style=3D"font-family:tahoma,sans-serif;color:r=
+gb(34,34,34)" size=3D"4" face=3D"tahoma, sans-serif">
+<div><br>
+</div>
+<div>Work time is up to 8 hours a week, at $500 (USD) weekly,&nbsp; hours c=
+an be split throughout the week. You'd have to choose what hours work best =
+for you</div>
+<div><br>
+</div>
+<div>for more information to apply. Be sure to visit&nbsp;the&nbsp;</div>
+<div><br>
+</div>
+<span>link below:&nbsp;<a href=3D"http://tinyurl.com/y956ss5b" target=3D"_b=
+lank">APPLY NOW</a></span></font></span></span><br>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR06MB8213C11E81CE1DBC325BFA4B98359SJ0PR06MB8213namp_--

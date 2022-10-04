@@ -1,0 +1,186 @@
+Received: from CO6PR06MB7777.namprd06.prod.outlook.com (2603:10b6:303:13b::24)
+ by DM6PR06MB5932.namprd06.prod.outlook.com with HTTPS; Mon, 16 Aug 2021
+ 11:33:00 +0000
+Received: from MW4PR06MB8347.namprd06.prod.outlook.com (2603:10b6:303:12a::17)
+ by CO6PR06MB7777.namprd06.prod.outlook.com (2603:10b6:303:13b::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16; Mon, 16 Aug
+ 2021 11:32:46 +0000
+Received: from MW4PR06MB8347.namprd06.prod.outlook.com
+ ([fe80::498d:c926:deff:aa12]) by MW4PR06MB8347.namprd06.prod.outlook.com
+ ([fe80::498d:c926:deff:aa12%6]) with mapi id 15.20.4394.022; Mon, 16 Aug 2021
+ 11:32:46 +0000
+From: GRAY JOSEPH STUEBER <gstueber@wisc.edu>
+Subject: EMAIL VERIFICATION
+Thread-Topic: EMAIL VERIFICATION
+Thread-Index: AQHXkpIFfsiKSMD8ykaCeVPYIvwT7Q==
+Date: Mon, 16 Aug 2021 11:32:43 +0000
+Message-ID:
+	<MW4PR06MB83477D2D0FB6A890036A6BFFABFD9@MW4PR06MB8347.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: MW4PR06MB8347.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	507ee69c-6ec4-41a9-f74d-08d960a99216
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CO6PR06MB7777:
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-network-message-id:
+	507ee69c-6ec4-41a9-f74d-08d960a99216
+x-ms-exchange-transport-crosstenantheadersstamped: CO6PR06MB7777
+x-ms-exchange-transport-endtoendlatency: 00:00:16.7409952
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:MW4PR06MB8347.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 16 Aug 2021 11:32:43.7898 (UTC)
+x-ms-office365-filtering-correlation-id: 507ee69c-6ec4-41a9-f74d-08d960a99216
+x-ld-processed: 2ca68321-0eda-4908-88b2-424a8cb4b0f9,ExtFwd,ExtAddr
+x-ms-exchange-transport-forked: True
+x-ms-oob-tlc-oobclassifiers: OLM:3968;
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	fKBfyM4yTnib2W/ItnyTfTFrsulbrguZZ5nR2IBHT4Ic1u2nxlDgVQ39O1wvgMhzxqmtkmdbcsXmChDGI0KfWA==
+x-ms-exchange-processed-by-bccfoldering: 15.20.4415.023
+x-ms-exchange-crosstenant-authsource: MW4PR06MB8347.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(706158)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	3Td9YMfxYAvA69XKHS4ukGAWX3q7jPEHHiXiZvBDWPHC3RR4T4VDSk3lEpavOOAS+Ud4S8uxnrwmusnWzAcck0qqvgpPLYR1yJnGYA3M6yWgz/k1X76idGS3huFWy00/cOqow4MNtNuua6RsUNHDENU+FXpw4g49tyjWIo2YkQQa2nEOeZ/zXjso7zm4w9rhhMnIGyvUQJvEpyWvs5SukdOSs6yZ/6lCgOElq+VqurXwjEiy1BymoBHB0yB6A84gmMtNpYOZuemly50tXDnDh0UbrWy4z8zKlciWTaEuYsopQGQY0NewrCnmFwMUwpLEKQa9Q18pyV99ZTxuChpGM74Nkv4v+s3IsUk56OVko2dq4P+lcUrjRcTG06Y8Z11efpEcH3Az7o6V9cTiNN6yEvEQqJNLTcVNgxq/H8qjMGSHW9ppSPCPqifzEPZpXjgRpRcS1qaaLkVBU27Vhwqt2zrwjLQTy3vmZYcz1++t92DBG1dKAL4ygQY3YtS1zxlyVa4+GlR3PigrtEigZV4pEVAbJ8bE8Ybzs5JJWDkqusH/nLH3oeTTFoGLeQjWEIbKLuPk/wM+6RqOSz7Aph1EYA8eG1DpNnSOQP79HKrHrfTJrSHGMR+RNq/O8wGJARgQxu4n/2y7aYZA/MTTMLNlK7q19C4y4SwfNo608QtgctpllIqs7H0Evi+Xgw6CGradvLxCqasHlZQD9JUPtQkeJBHjrjWH8MVONkR8br4s6nY=
+Content-Type: multipart/alternative;
+	boundary="_000_MW4PR06MB83477D2D0FB6A890036A6BFFABFD9MW4PR06MB8347namp_"
+MIME-Version: 1.0
+
+--_000_MW4PR06MB83477D2D0FB6A890036A6BFFABFD9MW4PR06MB8347namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+This email is to notify the student and staff of University of Wisconsin
+that your email is being logged in from another computer. We will need you =
+to  confirm that your account is still in use  CLICK HERE<https://eduemailv=
+erification8.godaddysites.com/>  in order To keep your account active .
+
+
+University of Wisconsin
+UW Help-desk
+Copyright UW . All rights reserved
+
+
+--_000_MW4PR06MB83477D2D0FB6A890036A6BFFABFD9MW4PR06MB8347namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span dir=3D"ltr" style=3D"color:rgb(34, 34, 34);font-family:Arial, Helveti=
+ca, sans-serif;font-size:small;background-color:rgb(255, 255, 255)"><span s=
+tyle=3D"color:rgb(51, 51, 51);font-family:&quot;Segoe UI&quot;, &quot;Segoe=
+ UI Web Regular&quot;, &quot;Segoe UI Symbol&quot;, &quot;Helvetica Neue&qu=
+ot;, &quot;BBAlpha Sans&quot;, &quot;S60 Sans&quot;, Arial, sans-serif;font=
+-size:13px">This
+ email is to notify the student and staff of University of Wisconsin</span>=
+</span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<div dir=3D"ltr" style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetic=
+a, sans-serif;font-size:small;background-color:rgb(255, 255, 255)">
+<span style=3D"color:rgb(0, 0, 0);font-family:Calibri, Arial, Helvetica, sa=
+ns-serif;font-size:16px"></span>
+<div dir=3D"ltr" style=3D"margin:0px;font-size:16px;font-family:verdana, sa=
+ns-serif">
+<span style=3D"margin:0px;color:rgb(0, 0, 0)"></span></div>
+<div dir=3D"ltr" style=3D"margin:0px;font-size:16px;font-family:verdana, sa=
+ns-serif">
+<table style=3D"font-size:14px;font-family:Roboto, RobotoDraft, Helvetica, =
+Arial, sans-serif;border-collapse:collapse;margin-top:0px;width:auto;letter=
+-spacing:0.2px;display:block">
+<tbody style=3D"display:block">
+</tbody>
+</table>
+<font face=3D"calibri, arial, helvetica, sans-serif" color=3D"#000000">that=
+ your email is being logged in from another computer.&nbsp;<span style=3D"m=
+argin:0px"></span><span style=3D"margin:0px"></span><span style=3D"margin:0=
+px"></span><span style=3D"margin:0px"></span><span style=3D"margin:0px"></s=
+pan><span style=3D"margin:0px"></span><span style=3D"margin:0px"></span><sp=
+an style=3D"margin:0px"></span><span style=3D"margin:0px"></span><span styl=
+e=3D"margin:0px"></span><span style=3D"margin:0px"></span><span style=3D"ma=
+rgin:0px"></span><span style=3D"margin:0px"></span><span style=3D"margin:0p=
+x"></span><span style=3D"margin:0px"></span><span style=3D"margin:0px"></sp=
+an><span style=3D"margin:0px"></span><span style=3D"margin:0px"></span>We
+ will need you to</font><span style=3D"color:rgb(51, 51, 51);font-family:&q=
+uot;Segoe UI&quot;, &quot;Segoe UI Web Regular&quot;, &quot;Segoe UI Symbol=
+&quot;, &quot;Helvetica Neue&quot;, &quot;BBAlpha Sans&quot;, &quot;S60 San=
+s&quot;, Arial, sans-serif;font-size:13px">&nbsp;</span><font face=3D"calib=
+ri, arial, helvetica, sans-serif" color=3D"#000000">&nbsp;confirm
+ that your account is still in use&nbsp;</font><font face=3D"calibri, arial=
+, helvetica, sans-serif" color=3D"#000000" style=3D"color:rgb(0, 0, 0);font=
+-family:calibri, arial, helvetica, sans-serif">&nbsp;</font><a href=3D"http=
+s://eduemailverification8.godaddysites.com/" rel=3D"nofollow noopener noref=
+errer" title=3D"Original URL: http://emailverification18.godaddysites.com/.=
+ Click or tap if you trust this link." target=3D"_blank" data-saferedirectu=
+rl=3D"https://www.google.com/url?q=3Dhttps://eduemailverification8.godaddys=
+ites.com&amp;source=3Dgmail&amp;ust=3D1629198873936000&amp;usg=3DAFQjCNGcQP=
+-25eLfeitqhQJQcHbxn5Iy5A" style=3D"color:rgb(25, 106, 212);margin:0px;font-=
+family:calibri, arial, helvetica, sans-serif">CLICK
+ HERE</a><span style=3D"margin:0px;font-family:calibri, arial, helvetica, s=
+ans-serif;color:rgb(0, 0, 0)"><span style=3D"margin:0px;font-family:verdana=
+, sans-serif">&nbsp;</span>&nbsp;</span><span style=3D"margin:0px;font-fami=
+ly:calibri, arial, helvetica, sans-serif;color:rgb(0, 0, 0)">in
+ order<span style=3D"margin:0px;font-family:verdana, sans-serif"></span><sp=
+an style=3D"margin:0px;font-family:verdana, sans-serif"></span><span style=
+=3D"margin:0px;font-family:verdana, sans-serif"></span>&nbsp;<span style=3D=
+"margin:0px;font-family:verdana, sans-serif"></span><span style=3D"margin:0=
+px;font-family:verdana, sans-serif"></span><span style=3D"margin:0px;font-f=
+amily:verdana, sans-serif"></span><span style=3D"margin:0px;font-family:ver=
+dana, sans-serif"></span><span style=3D"margin:0px;font-family:verdana, san=
+s-serif"></span><span style=3D"margin:0px;font-family:verdana, sans-serif">=
+</span><span style=3D"margin:0px;font-family:verdana, sans-serif"></span><s=
+pan style=3D"margin:0px;font-family:verdana, sans-serif"></span><span style=
+=3D"margin:0px;font-family:verdana, sans-serif"></span><span style=3D"margi=
+n:0px;font-family:verdana, sans-serif"></span><span style=3D"margin:0px;fon=
+t-family:verdana, sans-serif"></span><span style=3D"margin:0px;font-family:=
+verdana, sans-serif"></span><span style=3D"margin:0px;font-family:verdana, =
+sans-serif"></span><span style=3D"margin:0px;font-family:verdana, sans-seri=
+f"></span><span style=3D"margin:0px;font-family:verdana, sans-serif"></span=
+><span style=3D"margin:0px;font-family:verdana, sans-serif"></span><span st=
+yle=3D"margin:0px;font-family:verdana, sans-serif"></span><span style=3D"ma=
+rgin:0px;font-family:verdana, sans-serif"></span>To
+ keep your account active</span><span style=3D"margin:0px;font-family:calib=
+ri, arial, helvetica, sans-serif;color:rgb(0, 0, 0)">&nbsp;.</span>&nbsp;</=
+div>
+<div dir=3D"ltr" style=3D"margin:0px;font-size:16px;font-family:verdana, sa=
+ns-serif">
+<br>
+</div>
+<div dir=3D"ltr" style=3D"margin:0px;font-size:16px;font-family:verdana, sa=
+ns-serif">
+<br>
+</div>
+<div style=3D"margin:0px;font-size:16px;font-family:verdana, sans-serif">Un=
+iversity of Wisconsin</div>
+<div dir=3D"ltr" style=3D"margin:0px;font-size:16px;font-family:verdana, sa=
+ns-serif">
+UW Help-desk&nbsp;</div>
+<span dir=3D"ltr" style=3D"margin:0px;font-size:16px;font-family:verdana, s=
+ans-serif">Copyright UW . All rights reserved</span></div>
+<br>
+</div>
+</body>
+</html>
+
+--_000_MW4PR06MB83477D2D0FB6A890036A6BFFABFD9MW4PR06MB8347namp_--

@@ -1,0 +1,199 @@
+Received: from DM6PR06MB4860.namprd06.prod.outlook.com (2603:10b6:5:5b::25) by
+ DS7PR06MB6904.namprd06.prod.outlook.com with HTTPS; Tue, 21 Sep 2021 16:22:13
+ +0000
+Received: from MWHPR22CA0005.namprd22.prod.outlook.com (2603:10b6:300:ef::15)
+ by DM6PR06MB4860.namprd06.prod.outlook.com (2603:10b6:5:5b::25) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4523.14; Tue, 21 Sep
+ 2021 16:22:13 +0000
+Received: from CO1NAM11FT052.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:ef:cafe::c4) by MWHPR22CA0005.outlook.office365.com
+ (2603:10b6:300:ef::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4523.14 via Frontend
+ Transport; Tue, 21 Sep 2021 16:22:12 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ CO1NAM11FT052.mail.protection.outlook.com (10.13.174.225) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4523.14 via Frontend Transport; Tue, 21 Sep 2021 16:22:12 +0000
+Received: from p3plwbeout04-01.prod.phx3.secureserver.net ([72.167.218.222])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QZS01ZSMLGX4DA0@smtp5.wiscmail.wisc.edu> for
+ egbooth@wisc.edu; Tue, 21 Sep 2021 11:22:10 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Mike Rupiper" <wisconsinawra@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=yes, Probability=43%, Hits= FRAUD_WEBMAIL_R_NOT_F2 3,
+ CTYPE_JUST_HTML 0.848, FORGED_FROM_GMAIL 0.1, FRAUD_WEBMAIL_R_NOT_F 0.1,
+ HTML_90_100 0.1, HTML_NO_HTTP 0.1, REPLYTO_FROM_DIFF_ADDY 0.1,
+ MIME_LOWER_CASE 0.05, BODYTEXTH_SIZE_10000_LESS 0, BODY_SIZE_2000_2999 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, KNOWN_MTA_TFX 0,
+ NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0, NO_URI_FOUND 0, NO_URI_HTTPS 0,
+ SENDER_NO_AUTH 0, SPF_NONE 0, SXL_IP_TFX_WM 0, WEBMAIL_SOURCE 0,
+ WEBMAIL_USER_AGENT 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0, __BEC_PHRASE 0,
+ __BODY_NO_MAILTO 0, __CC_NAME 0, __CT 0, __CTE 0, __CTYPE_HTML 0,
+ __CTYPE_IS_HTML 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_SUBJ_A 0,
+ __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0, __FRAUD_WEBMAIL_REPLYTO 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FUR_RDNS_GODADDY 0, __HAS_CC_HDR 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_MSGID 0, __HAS_REPLYTO 0, __HTML_TAG_DIV 0, __INVOICE_MULTILINGUAL 0,
+ __MIME_HTML 0, __MIM
+X-Wisc-Doma: gadfly@morethings.com,gmail.com
+X-Wisc-Env-From-B64: Z2FkZmx5QG1vcmV0aGluZ3MuY29t
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.9.21.160916,
+ AntiVirus-Engine: 5.86.0, AntiVirus-Data: 2021.9.21.5860000,
+ SenderIP=[72.167.218.222]
+X-Spam-Score: ****
+Received: from p3plgemwbe04-02.prod.phx3.secureserver.net ([72.167.218.140])
+	by :WBEOUT: with SMTP	id SiX3mmxDClDeUSiX3mXsEV; Tue,
+ 21 Sep 2021 09:22:09 -0700
+X-CMAE-Analysis: v=2.4 cv=aKs1FZxm c=1 sm=1 tr=0 ts=614a06b1
+ a=oIX66qUPiBHq4pwuPfOE2w==:117 a=tfRQ3m2V59AA:10 a=xREhmAZwsD8A:10
+ a=cm-Sdz_e2D0A:10 a=IkcTkHD0fZMA:10 a=7QKq2e-ADPsA:10 a=x7bEGLp0ZPQA:10
+ a=08LH3mvSY3YA:10 a=kKW-5bDQcJxbQT21Hv4A:9 a=k1UvWu-7wlNqM7yK:21
+ a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=xo5jKAKm-U-Zyk2_beg_:22
+X-SECURESERVER-ACCT: gadfly@morethings.com
+X-SID: SiX3mmxDClDeU
+Received: (qmail 28479 invoked by uid 99); 21 Sep 2021 16:22:09 -0000
+Content-transfer-encoding: quoted-printable
+Content-type: text/html; charset=utf-8
+X-Originating-IP: 75.33.67.241
+User-Agent: Workspace Webmail 6.12.9
+Message-id:
+ <20210921092208.27b5e89cf5d597b76bc3882f2f6cb48e.e4a5430820.wbe@email04.godaddy.com>
+X-Sender: gadfly@morethings.com
+Reply-to: Mike Rupiper <nonreplyon@outlook.com>
+To: "egbooth@wisc.edu" <egbooth@wisc.edu>
+Cc: "egbooth@wisc.edu" <egbooth@wisc.edu>
+Subject: Payment Request
+Date: Tue, 21 Sep 2021 09:22:08 -0700
+X-CMAE-Envelope:
+ MS4xfByRf9QMWB5N0f87TYgeXZuysBN8mWiF5/+V/GHV6Xvnx1PFdBYtBLr34r6cPOAkGXpzn/smpytHC6dCgIBZ809Kgk5a9I9TduleA1dV+oLxT0Vp4UE/
+ i1xzs3fLRsxrt5MhF46FiLKABwikgg7Bt1IvjRc9dBTpZ4kVAmwpHZTJfzJABdL20qpE5D+qh39aIJ7dfHZmEDqysSZGB5KJT2oEWgWx6n8QV8b2kfYKHmVe
+From: wisconsinawra@gmail.com
+Return-Path: gadfly@morethings.com
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Sep 2021 16:22:12.7997
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a30913c0-1d22-47a6-5aeb-08d97d1bf800
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT052.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: a30913c0-1d22-47a6-5aeb-08d97d1bf800
+X-MS-TrafficTypeDiagnostic: DM6PR06MB4860:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:2733;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SFE;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Sep 2021 16:22:12.6108
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a30913c0-1d22-47a6-5aeb-08d97d1bf800
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT052.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB4860
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.9390092
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4523.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(750131)(520011016)(520004051)(702028);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?aFJzdXZMU1djZVQ3Y01UMGM1cFQ2SmErM0pOK1ZUNW5SaUhDN1NVZnRwdTBm?=
+ =?utf-8?B?ay9hSWpSWWd1REp2eExGcm1MUXdmS1QrTXVZRDFEbWhrYUxSV2J2enMxUTNj?=
+ =?utf-8?B?ZnI1aEFaemFiSEdHRFhUWkwxMEYzS3hRbUVtTDVBbnRlemdCNkNtSzlTZVVJ?=
+ =?utf-8?B?cnRjK0lPSkNOcnlKV1huU1hxWkN2aWh3Nk9iQTVsUEhDZGRFUThHRUlwVWZ3?=
+ =?utf-8?B?bkp6dlhGaEp2TFkwY2tDUWNBSC9LbUdnSWpMdG5yWTNWbTlxanlrSFZlR2FT?=
+ =?utf-8?B?S0xFamRrU28xdFQ3QlJRNlI4aURzUlZHNm4yYkRkMUZWNmNMcTZpQ01Na3kx?=
+ =?utf-8?B?VStYU290a1RZbURPUEVnbk5GTGYxL2xJQ21xalFOUktabWVzckdtSXJWT0Nw?=
+ =?utf-8?B?T2tZajdLUDlaRUc4UldmbTBkN3FBVmtPODZqall3WXlBVTJIMW5rL25WMVlx?=
+ =?utf-8?B?WjJjWHlWZmt6Mm5KM0ZWdnNVZnQveVQ5aU1uQzhxc1FnaW1wTkdraHhyNUh0?=
+ =?utf-8?B?NnUrTmRBSFNvQ2hPYTRCT0k2N2pteFRwOGFpVmEyemZJWnllWXMwdnV1VjFI?=
+ =?utf-8?B?aFJuL2prWVlmOVFrRnY5MlRJV09HM3BRZWJibnBsVzdKaUxMUTYyakl0NXQ2?=
+ =?utf-8?B?QVdSRnRESlBLUnBBZVJCOVlVMnhzeUNBUEtkUVZYMjQ2a05ISWdnbXdvMk05?=
+ =?utf-8?B?bEUyQWRML1RqRkhsVklRbHFvMFRKYWJudW52b3V3eW1lQm9ZdFFYbGdMWkFO?=
+ =?utf-8?B?QUZBQ3JjUGM5R0RrSnZJc3VvcXFmWHc1UTZIZjQwWmgvWDFNRXV3bVhXaHRz?=
+ =?utf-8?B?UTdoWUlFV3FzT1AwTUpERTFXZmQrV1VCRU00T3R5cFZtVTdsNFcrVEN5MFpW?=
+ =?utf-8?B?YU5XN0MvRG14YW1oM3BoaEhyOFplTUNEdSsxd3RvL0lQcmluS1NkTmFFQitH?=
+ =?utf-8?B?UHBUZXoyM0hUQTY0R0dFRWE4TmZ2MGZkeEgvRSswZ1NIWXJScS82UmhlekZk?=
+ =?utf-8?B?NkpMK2lMNGZjSHZ2a3Y2QTU5aHNkOENaUWhaQUN2bi9pVGlPRmdCMC9VNVlD?=
+ =?utf-8?B?Wk8wanQxYlI0TTNXbzcxQldqc05JQ25XUjUxSit0RlpWZTgrNWw5c1ZVZVBL?=
+ =?utf-8?B?SmVZUHJZZnV0WGZnTVZXdXFUSks3NnpXLysraHRLQjBwclpGLzlxYThMaDlU?=
+ =?utf-8?B?Nm52aEUzSms1NWplMlVhZGt0MHNDcm9LbmI3YmJlclV6MHA1ajhBN2JMRVdG?=
+ =?utf-8?B?WlhlUkpzTHkxcEl2QXlXZlU2eENLaGwvRGpRNjNoc05COXFUZ0ZVMGRVNDdB?=
+ =?utf-8?B?RVlNbDRvQlJtQzRsa3dJTkVHMkJZNWE3U3JWVGNGdGcwYXA3bEVhYStSTFRY?=
+ =?utf-8?B?a3ZuUW14Tmx0S3RKbUtiZDUzNjJXVVJGemJrVHpySHFRbFFTOTBmSEdJMk1Y?=
+ =?utf-8?B?NDZDbWhrRiswUHVPRU10bnlFUlF3YTdwdC9mRWF4L2tDQUQxd0dkQkRtb1Bi?=
+ =?utf-8?B?MzdiUnlFbk9JZW5jbFV3aWYyUlFjRFJGV3Z4MzEvWkJPVkgwU2QwQk4wWC9F?=
+ =?utf-8?B?TU9iZzR2b1NIeEV2dEw5aFFQeTdoTXJHNU15b0FHSHhUbmRDUXh4NlpYQjBT?=
+ =?utf-8?B?R3o0NFdiTHpjNXh5TDlJb0dzVmVjSUNrdEhWMksydzVkQ0lkT2pmaHRwc0F1?=
+ =?utf-8?B?aTMzUFU0TVBYRFpCd1RmQWh5eFVsU1B2MHJiNGFjNmJTWDRFNTZSa3lJdkE3?=
+ =?utf-8?B?UXp4RG42cm5pSTNhdjVMVkVtMGFscCs5YThiWGVJcnRObEVEZmRVZmFzc2JH?=
+ =?utf-8?B?TFF3M3JITkJPd1NvWU5weERpRUpvRU1kR0ZSZWNlck9ZTXRFbWFWcjRYVS9G?=
+ =?utf-8?B?YTQwcURHRmMyeWtSSEt6NDBDQWsrUzFjSVM2cVVsbWozTXk1Mjg1dEhta3h6?=
+ =?utf-8?B?YWJ6UFN3VGg2czZKMmJ4MWxHVnNMVkVTWmtQVkQrYXFoSkFTWW5ieG40NWxC?=
+ =?utf-8?B?VG94UXNSdHZ3TUg4aFJkWTdidEljTHhOY29TbEdWWnFXVXFJcHQ0dnFFbWx3?=
+ =?utf-8?B?TGwvQjVYRzVQUmNFaXRFUnV6Qy9jaVpQKzkxSVZZcFNoRDREVlRsVUVKQTM5?=
+ =?utf-8?B?TUJiRDljcHdIc0N6TE1NZ0xrZ0Y4cUZ6UmFTQXFuRkdWQytvQ3FqaDhjdjEy?=
+ =?utf-8?B?SkR3ZHl1cE4rcmZFYjZRemZqenVSMG1tazEwVk5vZXlIZWVUWXdCWWwvb05n?=
+ =?utf-8?B?bE1hWHpPdExsa3BveTFWazJGYnZTbkxKQ21UZjlLQ1UxL2FxRjgvL1d6cU95?=
+ =?utf-8?B?d09RNlZhdlMwWVBweFZINmZRaVY2MzArQVlZZExMMDg4RGUxWFZNS281eUph?=
+ =?utf-8?B?VTd2T0swUzdxanpFcnlvc09GYmh2WExBeUc4Vlk1eGNHZC9UcnNMelRveGJD?=
+ =?utf-8?B?aWMrNWd2R0dQZW9lMlU4WWNSbU9yWkVTb1NCNFh0YVRPTXFxTm5xeTRmd3Nv?=
+ =?utf-8?B?NTlJSE1jQUxUQmI2Y0t6Z0pQeG5yL0hMWWVNS2ZoTVNPcSs0bUhtdWdlZVAw?=
+ =?utf-8?B?djZuZ2J2WEp6MDdXRmlyeTFaUXRoZHhiNTdaWmRoWEY2QldPTmV6RlNBYjZP?=
+ =?utf-8?B?ZnF1cGxLcDQrSTZtK3F2ZmU2L21xaVNrTE03TTJGMG9qMXoyUGNpeEVxSGpM?=
+ =?utf-8?B?dk84RHZxZldXaWhuZEJjNE10SU42ME9sWWJpeUMraWNKYVVMRTNtK2V3VTZ3?=
+ =?utf-8?Q?mk=3D?=
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><span style=3D"font-family:Verdana; color:#000000; font-size:10pt;"><=
+div style=3D""><font face=3D"verdana, geneva" style=3D""><br style=3D""></f=
+ont></div><div style=3D""><span style=3D"font-family: &quot;trebuchet ms&qu=
+ot;, geneva;" mce_style=3D"font-family: &quot;trebuchet ms&quot;, geneva;">=
+<span style=3D"font-size: 10pt;" mce_style=3D"font-size: 10pt;">Hi&nbsp;Eri=
+c,</span></span></div><div style=3D""><span style=3D"font-family: &quot;tre=
+buchet ms&quot;, geneva;" mce_style=3D"font-family: &quot;trebuchet ms&quot=
+;, geneva;"><span style=3D"font-size: 10pt;" mce_style=3D"font-size: 10pt;"=
+><br style=3D""></span></span></div><div style=3D""><span style=3D"font-fam=
+ily: &quot;trebuchet ms&quot;, geneva;" mce_style=3D"font-family: &quot;tre=
+buchet ms&quot;, geneva;"><span style=3D"font-size: 10pt;" mce_style=3D"fon=
+t-size: 10pt;">Are you available today? I urge you to stop by at the bank t=
+o process an outgoing wire transfer to a vendor or mail a check out.</span>=
+</span></div><div style=3D""><span style=3D"font-family: &quot;trebuchet ms=
+&quot;, geneva;" mce_style=3D"font-family: &quot;trebuchet ms&quot;, geneva=
+;"><span style=3D"font-size: 10pt;" mce_style=3D"font-size: 10pt;"><br styl=
+e=3D""></span></span></div><div style=3D""><span style=3D"font-family: &quo=
+t;trebuchet ms&quot;, geneva;" mce_style=3D"font-family: &quot;trebuchet ms=
+&quot;, geneva;"><span style=3D"font-size: 10pt;" mce_style=3D"font-size: 1=
+0pt;">Email me, I'll be busy.</span></span></div><div style=3D""><span styl=
+e=3D"font-family: &quot;trebuchet ms&quot;, geneva;" mce_style=3D"font-fami=
+ly: &quot;trebuchet ms&quot;, geneva;"><span style=3D"font-size: 10pt;" mce=
+_style=3D"font-size: 10pt;"><br style=3D""></span></span></div><div style=
+=3D""><span style=3D"font-family: &quot;trebuchet ms&quot;, geneva;" mce_st=
+yle=3D"font-family: &quot;trebuchet ms&quot;, geneva;"><span style=3D"font-=
+size: 10pt;" mce_style=3D"font-size: 10pt;"><br style=3D""></span></span></=
+div><div style=3D""><span style=3D"font-family: &quot;trebuchet ms&quot;, g=
+eneva;" mce_style=3D"font-family: &quot;trebuchet ms&quot;, geneva;"><span =
+style=3D"font-size: 10pt;" mce_style=3D"font-size: 10pt;">Thanks</span></sp=
+an></div><div style=3D""><span style=3D"font-family: &quot;trebuchet ms&quo=
+t;, geneva;" mce_style=3D"font-family: &quot;trebuchet ms&quot;, geneva;"><=
+span style=3D"font-size: 10pt;" mce_style=3D"font-size: 10pt;"><br></span><=
+/span></div><div style=3D""><span style=3D"font-family: &quot;trebuchet ms&=
+quot;, geneva;" mce_style=3D"font-family: &quot;trebuchet ms&quot;, geneva;=
+"><span style=3D"font-size: 10pt;" mce_style=3D"font-size: 10pt;">Mike Rupi=
+per</span></span></div></span></body></html>

@@ -1,0 +1,266 @@
+Received: from PH0PR06MB8445.namprd06.prod.outlook.com (2603:10b6:510:bc::16)
+ by DM6PR06MB5067.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 22:25:46 +0000
+Received: from MW4PR03CA0263.namprd03.prod.outlook.com (2603:10b6:303:b4::28)
+ by PH0PR06MB8445.namprd06.prod.outlook.com (2603:10b6:510:bc::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.21; Sat, 14 Aug
+ 2021 22:25:44 +0000
+Received: from CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:303:b4:cafe::e9) by MW4PR03CA0263.outlook.office365.com
+ (2603:10b6:303:b4::28) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sat, 14 Aug 2021 22:25:44 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ CO1NAM11FT050.mail.protection.outlook.com (10.13.174.79) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sat, 14 Aug 2021 22:25:44 +0000
+Received: from mail-ot1-f97.google.com ([209.85.210.97])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU033QIOYT8S70@smtp6.wiscmail.wisc.edu> for
+ christopher.chambers@wisc.edu; Sat, 14 Aug 2021 17:25:41 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= FROM_US_TLD 0.1,
+ HTML_70_90 0.1, REPLYTO_FROM_DIFF_ADDY 0.1, SUPERLONG_LINE 0.05,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_3000_3999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DKIM_SIGNATURE 0, FROM_EDU_TLD 0, KNOWN_MTA_TFX 0, MISSING_HEADERS 0,
+ NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0,
+ SPF_PASS 0, SXL_IP_TFX_WM 0, TO_MALFORMED 0, WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0,
+ WEBMAIL_X_IP_HDR 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __BOUNCE_CHALLENGE_SUBJ 0, __BOUNCE_NDR_SUBJ_EXEMPT 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DC_PHRASE 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_HIREME 0,
+ __FRAUD_JOB 0, __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_BODY 0, __FUR_RDNS_GMAIL 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_XOIP 0,
+ __HELO_GMAIL 0, __HTML_TAG_DIV 0, __INVOICE_MULTILINGUA
+X-Wisc-Doma: chaneym@troy.k12.mo.us,troy.k12.mo.us
+X-Wisc-Env-From-B64: Y2hhbmV5bUB0cm95LmsxMi5tby51cw==
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.221516,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.14.5840001,
+ SenderIP=[209.85.210.97]
+X-Wisc-DKIM-Verify:
+ chaneym@troy.k12.mo.us,troy-k12-mo-us.20150623.gappssmtp.com!pass
+X-Spam-Score:
+Received: by mail-ot1-f97.google.com with SMTP id
+ c19-20020a9d6153000000b0051829acbfc7so1576943otk.9 for
+ <christopher.chambers@wisc.edu>; Sat, 14 Aug 2021 15:25:41 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=troy-k12-mo-us.20150623.gappssmtp.com; s=20150623;
+ h=from:subject:thread-topic:thread-index:date:message-id:reply-to
+ :accept-language:content-language:mime-version;
+ bh=a1Ec7Ah8kyj4tDzeVgKIxoUpt9kjDd0/IOBfIrT08Fo=;
+ b=nje2TKwtmiLZ7z2s0UXvytCuI4Zp85O4NEXrFm6N29ICKRPJItcgPvMZFI8qavTKie
+ t0DTw5TPu0Vqht85BF0esNDN01HLamTmRBFGBeytW0G71/6W8IebWOjFYE3k/+bCUfoA
+ omCsippBuKGpySDmzhXwIsJjvlcdpaZ3IG0q9G5qQrvWdH2KGftQxXc29kn36/KD6A8p
+ VO1BpRFmjSfGLwOs2JQ0klUrrcLchOp48A28kstQeJfe0xJfhcRvCR65ntj2De8UmhbZ
+ 4596sQeUbToDvKlK+6AlRnrh23PuabxoYvLxx3F7xMQT4qKTzTBWcyncTpk2F8XmYjXV
+ D28A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:from:subject:thread-topic:thread-index:date
+ :message-id:reply-to:accept-language:content-language:mime-version;
+ bh=a1Ec7Ah8kyj4tDzeVgKIxoUpt9kjDd0/IOBfIrT08Fo=;
+ b=ST89VhKayFvIJP61H78A063Ijoic4n7uCAoJEPkakSGgWMtJE+dJVwF81sd9C9JYBN
+ RjuLdwAqNh45Oga+pakYpb/J7ZjZiUyFlV+DZzMM/Hasrxnvy8SJpKM2A3Ogy9Xb1oAq
+ UcxZ8DrTE5ipWl8smPkwAhGcyHxpi2DwEhffOK0+apkWyvskOjTuTMh32fTm7llO1ClS
+ XyFSmaqMQGfbNM7BHrifHCKeunXuBA2KBqCbgnu5jT3xzC19e4a8iSxBAZfhR/J62egv
+ OZEGF3M74h4pyDil0f3cgwpI52laIVTRj1G/kZE5HdDVz8xtkRoVxwbRlVt4Vxv/P1wd
+ 7ExA==
+X-Gm-Message-State: AOAM533ijTXcbME7Amxkp6eEnAdWvWqMnNXzrNejQ1i4FIFX8mxz41fG
+	QjH3oWz5dCv2S/77KX+odj8/pycUXKtRzWGSXvDtOk3kJds9cw==
+X-Google-Smtp-Source:
+ ABdhPJwnzfbdktd9dumqt5Z4hFxhjUkxELgMRusZ5055PieeS+GqOZ8waxa7ytV5TZRK7USU9zpDsoA52DjE
+X-Received: by 2002:a9d:2ce:: with SMTP id 72mr7322782otl.116.1628979940962;
+ Sat, 14 Aug 2021 15:25:40 -0700 (PDT)
+Return-Path: chaneym@troy.k12.mo.us
+Received: from exchg1.troy.k12.mo.us ([207.160.26.79])
+ by smtp-relay.gmail.com with ESMTPS id w7sm1161905ott.5.2021.08.14.15.25.40
+ (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128); Sat,
+ 14 Aug 2021 15:25:40 -0700 (PDT)
+X-Relaying-Domain: troy.k12.mo.us
+Received: from exchg1.troy.k12.mo.us (10.1.1.79)
+ by exchg1.troy.k12.mo.us (10.1.1.79) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256)
+ id 15.1.1713.5; Sat, 14 Aug 2021 17:25:40 -0500
+Received: from exchg1.troy.k12.mo.us ([207.160.26.79])
+ by exchg1.troy.k12.mo.us ([207.160.26.79]) with mapi id 15.01.1713.010; Sat,
+ 14 Aug 2021 17:25:40 -0500
+From: Madeline Chaney <chaneym@troy.k12.mo.us>
+Subject: Re:
+Thread-topic: Re:
+Thread-index: AQHXkVtPQWCrKdjgK0uN20kzYKVBXQ==
+Date: Sat, 14 Aug 2021 22:25:39 +0000
+Message-id: <65df83bd97e4440db1a8d1f6da89a5f1@troy.k12.mo.us>
+Reply-to: "hr-dept@a-dce.com" <hr-dept@a-dce.com>
+Accept-Language: en-US
+Content-language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+X-Originating-IP: [138.199.52.21]
+Content-type: multipart/alternative;
+ boundary=_000_65df83bd97e4440db1a8d1f6da89a5f1troyk12mous_
+To: Undisclosed recipients:;
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 22:25:44.3757
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 1379d7f0-1f28-42a2-39d6-08d95f727504
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 1379d7f0-1f28-42a2-39d6-08d95f727504
+X-MS-TrafficTypeDiagnostic: PH0PR06MB8445:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=106
+X-MS-Oob-TLC-OOBClassifiers: OLM:5516;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 22:25:44.2038
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1379d7f0-1f28-42a2-39d6-08d95f727504
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB8445
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5464698
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?ARS+S5PxAo0kOot8Qc4sPtOf0497KpQT4cU8vFl05hgWoXq0GEPv/G3Bl7f6?=
+ =?us-ascii?Q?6elTY5h/RMkPOUnGbBpTa+7nHMn6zFDbGoJxvSZgpx80BIAG4EL4uOzc/t3J?=
+ =?us-ascii?Q?K8sZdZLSIv/04xwxq3IZ7+nbyk2x1fBpbUP7sHWNmhRkblFtG9GB59jpTs0/?=
+ =?us-ascii?Q?g37+n9RaTn6SR3lau3eZUvQhQUb87Hr5TFMCZQ7ZkeU4HbsZr7VUhB01Qedp?=
+ =?us-ascii?Q?Bne2XsANDyX/8suygCTewR4zOujz25i2RNOUTcPW3aSn3lc8QBDqroK8HZz6?=
+ =?us-ascii?Q?AxOibuXV2B6piuSeNBvrQHLi7fRd3kuv5NZuVS1FvpE4H/u+RdAIVbidvsET?=
+ =?us-ascii?Q?CWKcML3B7A2euFQKLmfWHeTxJGTmNrfnnKYraoMZK3C/Rbydc7jzXpIaJGPd?=
+ =?us-ascii?Q?3ku1jjxgbEk2JHEWaD4jPzuSsrefU3TmYuege6M913QV89x8WrMoKttmUQsf?=
+ =?us-ascii?Q?XmF7QZKyzhDcZqwq+b4nfiqudUEMj8txPJXejT1LTghnQs1JzrznV46TE8JO?=
+ =?us-ascii?Q?DF3IPrQrDSH9gXXeFFSJyGaoG5jwiSk3Y8om5akQ4s2Q9S2kG+dk7Pl+0DY6?=
+ =?us-ascii?Q?5ZQiLyr0pkWziROh+9tpBrRyTP5bMx12g2fAtKHLbNHPmFC3eqKfB2G4VUTM?=
+ =?us-ascii?Q?cATKTbwnlHYH9t8wnyZmsDtlvgdN6XzLPqwOKCkqj0/LIKQfg1Q2Leae59aO?=
+ =?us-ascii?Q?q7DnKt59Xg6EvUvIB09KSJcHHN6Jda1gZc1nS2uZfgHAgRgjtUp2JCpFQDi2?=
+ =?us-ascii?Q?pXU62YcaKjeJiO39FiiBM1af12EbkXgeNAcaATompOkhAx8iXIOcd9XNwnqp?=
+ =?us-ascii?Q?EfXQl2fANuW4yM+cc7Jtx+g1GFthopFHCQBmhLCWb2eswYJi59v5Vt/IohqL?=
+ =?us-ascii?Q?tYtPl9RkwXe4Vx1vC1m6F5ix2xgSbuXUF0ALdcuezi3/d0PIHGqlFGiixbyX?=
+ =?us-ascii?Q?y6u2HVYtfCnmAEL2o96YCcXgXYNNRvMzv7PdU7YLZPjyEnkNk8uDOlortdrJ?=
+ =?us-ascii?Q?joqDF4dhAGO68xFCA8FxoLY1GUNQmgH3UkRjbdyY4a9tusa1KEyHQ/IwCqrb?=
+ =?us-ascii?Q?XeJkmvQez1kQNwfqPdjfCKkpUDUHxUNNP7j+hDvOoRZmUiheKhy9+XseLqSJ?=
+ =?us-ascii?Q?i+EvqxDaXXZOFnvCWLkw2GjKN7+UgxtXZ95ykjTyhyGdtBbHYxkahwa0lUWG?=
+ =?us-ascii?Q?C1/hMz3sTfHebKfga9fpStAJp+jCpb88mmlckNUGA00cWWgwYg4Cv8N8tsMM?=
+ =?us-ascii?Q?kVWlLtgGkUA5gyMQcTIOuqc1elp4d/qMjjexfELeYxHaZaB3cLf96DwO11Fw?=
+ =?us-ascii?Q?kUI8XUbsZqowwMGuCrABNyqoDshm0Wex9L4X2LJk6bTVf9GGU9L268VU7SwY?=
+ =?us-ascii?Q?qgyk26FXCQD7/w4rQ95utaFdJeil62wiOHvfDh2Ji0VwEERaEDE+ndellOUE?=
+ =?us-ascii?Q?mPbKpxKH1WaiR/6wgx/dTEoVhXpOJmU9GuH0+eViXbFVYzWGM+sh5s/eQL3S?=
+ =?us-ascii?Q?1T6BXR0+hJ4pyjzgK7h4tJB+mpP5cwsAK1PO1JAOZ5RaDd0swSvvQ+ez32a+?=
+ =?us-ascii?Q?rMZ2Lb+cxzHJWK4Przw+Km5bFBGYdgY1ouJtvZn13KKEAWh2wEgNZAJmhpJR?=
+ =?us-ascii?Q?kAKHIYRZ8ooJNA+aybAdk2YcXsU/2/2WU4yC55vSRHOEQu/I61CQ78f+5DX5?=
+ =?us-ascii?Q?6NwsW3E1joEePjYz9H+K2Lqo15yU824DJ99Mj0zRuV4Dt8gSqhQ1ziDElZHV?=
+ =?us-ascii?Q?117C0XjAhaeQKJSzPnCe5cMzn5Xb37EYGQ3/a0f1WSniqbspjaVIRm2VkmGm?=
+ =?us-ascii?Q?7YqiCx2PyXjXrWwUN9pPVJoiXnXIPKeaWE7NQ/G6RMP0nonY7jiTCFAlMAOh?=
+ =?us-ascii?Q?Rbf8CQRTHk/rH94iSX+7M2xKbknGajpR759Js94gqxArGQU5QtGTCgs2MJy8?=
+ =?us-ascii?Q?RfOWOFcZ9I5WVO14htSEdOnKAFNCVioTg2nGup9qYXJYRFoRaHOzyMGtk3zD?=
+ =?us-ascii?Q?WTKtC55xEpj3OsBkHdGOHNALW40tQQBb1B9vzuhTF1UGFMWO01vkO0wTkiaz?=
+ =?us-ascii?Q?uaw/QkZApg0MMSCP9MLVWK+Zbprq8VTR8GINmXOhgw0VYGkYJ4tAMo2gJ5y/?=
+ =?us-ascii?Q?UeYgSvPA8pgtg6BPayJ+XOxX8QC2+jvXOARbFCrOzIcRTO5ez3j8zrGE3V3W?=
+ =?us-ascii?Q?zKisj8nfBS8Nj+Zh?=
+MIME-Version: 1.0
+
+--_000_65df83bd97e4440db1a8d1f6da89a5f1troyk12mous_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+We the management of A-Dec Australia are presently sourcing to retain the s=
+ervices of an efficient Company/Individual that can act as our Company fina=
+ncial representative in your region(USA/CANADA).This is a work from home/of=
+fice job opportunity(a part time job you can run while having your normal J=
+ob, Pay: $28/Hr.).Paid Weekly via Direct Deposit/Check depend on your choic=
+e. If you are interested for more info contact us.
+
+Have a nice day
+HR A-Dec Australia
+
+--_000_65df83bd97e4440db1a8d1f6da89a5f1troyk12mous_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello,<o:p></o:p></p>
+<p class=3D"MsoNormal">We the management of A-Dec Australia are presently s=
+ourcing to retain the services of an efficient Company/Individual that can =
+act as our Company financial representative in your region(USA/CANADA).This=
+ is a work from home/office job opportunity(a
+ part time job you can run while having your normal Job, Pay: $28/Hr.).Paid=
+ Weekly via Direct Deposit/Check depend on your choice. If you are interest=
+ed for more info contact us.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Have a nice day<o:p></o:p></p>
+<p class=3D"MsoNormal">HR A-Dec Australia<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_65df83bd97e4440db1a8d1f6da89a5f1troyk12mous_--

@@ -1,0 +1,449 @@
+Received: from PH0PR06MB7951.namprd06.prod.outlook.com (2603:10b6:510:af::10)
+ by DM6PR06MB6748.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 13:50:00 +0000
+Received: from BN9PR03CA0060.namprd03.prod.outlook.com (2603:10b6:408:fb::35)
+ by PH0PR06MB7951.namprd06.prod.outlook.com (2603:10b6:510:af::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.15; Sat, 14 Aug
+ 2021 13:49:57 +0000
+Received: from BN8NAM11FT011.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:fb:cafe::bd) by BN9PR03CA0060.outlook.office365.com
+ (2603:10b6:408:fb::35) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Sat, 14 Aug 2021 13:49:57 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ BN8NAM11FT011.mail.protection.outlook.com (10.13.176.140) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sat, 14 Aug 2021 13:49:57 +0000
+Received: from smtp.rochelle.bluehornet.com ([67.216.225.249])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU04UKL137XF40@smtp6.wiscmail.wisc.edu> for
+ lforrest@facstaff.wisc.edu; Sat, 14 Aug 2021 08:49:57 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_90_100 0.1,
+ HTML_95_100 0.1, HTML_98_100 0.1, HTML_FONT_INVISIBLE 0.1,
+ MIME_LOWER_CASE 0.05, BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0, DATE_TZ_NA 0, DKIM_ALIGNS 0,
+ DKIM_SIGNATURE 0, FONT_STYLE_0PT 0, INVALID_MSGID_NO_FQDN 0,
+ LEGITIMATE_SIGNS 0, LIST_HEADER 0, NO_URI_HTTPS 0, OBFUSCATION 0,
+ REPLYTO_SAMEAS_FROM 0, SPF_PASS 0, STYLE_RATWARE_REF 0, SXL_IP_TFX_ESP 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BITCOIN_ADDRESS_OBFU 0,
+ __CANPHARM_UNSUB 0, __CANPHARM_UNSUB_LINK 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0,
+ __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_REPLYTO 0,
+ __HEADER_ORDER_FROM 0, __HIDDEN_HTML_CONTENT 0, __HTML_BAD_END 0, __H
+X-Wisc-Doma:
+ bounce-use=M=42742521512=echo7=D75E76FE7F9031B02B253F666004CE7E@returnpath.bluehornet.com,greatagain.org
+X-Wisc-Env-From-B64:
+ Ym91bmNlLXVzZT1NPTQyNzQyNTIxNTEyPWVjaG83PUQ3NUU3NkZFN0Y5MDMxQjAyQjI1M0Y2NjYw
+ MDRDRTdFQHJldHVybnBhdGguYmx1ZWhvcm5ldC5jb20=
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.133916,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.14.5840000,
+ SenderIP=[67.216.225.249]
+X-Wisc-DKIM-Verify:
+ bounce-use=M=42742521512=echo7=D75E76FE7F9031B02B253F666004CE7E@returnpath.bluehornet.com,greatagain.org!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Return-Path:
+ bounce-use=M=42742521512=echo7=D75E76FE7F9031B02B253F666004CE7E@returnpath.bluehornet.com
+X-MSFBL: bGZvcnJlc3RAZmFjc3RhZmYud2lzYy5lZHVAcm9jaGVsbGVAZGVmYXVsdEBib3Vu
+	Y2UtdXNlPU09NDI3NDI1MjE1MTI9ZWNobzc9RDc1RTc2RkU3RjkwMzFCMDJCMjUz
+	RjY2NjAwNENFN0U=
+DKIM-Signature: v=1; a=rsa-sha256; d=greatagain.org; s=s1024-1.bh;
+ c=simple/simple;	q=dns/txt; i=@greatagain.org; t=1628948995;
+	h=From:Subject:Date:To:Mime-Version:List-Unsubscribe:List-Unsubscribe-Post:Content-Type;
+	bh=+wUaG0vwQ5Ec+M6IDgg1qiubUaRELGYQQzwkdLiHMHs=;
+	b=IenSR2YFAwbdYOLm1VfwGKdmyHhbABLi85+gyTRHvnR98kpx5Jev3dlAbHRkc4G0
+	Xk9hvVLpIt5aiUzgsuV38AwXKB/G9CYmPCp7VdUkBct/9pC2StJrrnTkN7o28CUH
+	eVrmlO1Uuda8+PjJdFsELJqyb1MkWxFhz7RMGV2kFQQ=;
+Received: from [172.16.9.175] ([172.16.9.175:35594])
+	by returnpath.bluehornet.com
+ (envelope-from <bounce-use=M=42742521512=echo7=D75E76FE7F9031B02B253F666004CE7E@returnpath.bluehornet.com>)
+	(ecelerity 3.6.25.56547 r(Core:3.6.25.0)) with ESMTP	id CF/FB-09938-30AC7116;
+ Sat, 14 Aug 2021 06:49:55 -0700
+Message-id: <CF.FB.09938.30AC7116@emsmta13>
+Date: Sat, 14 Aug 2021 06:46:50 -0700
+From: Wendy Rittenhouse <news@greatagain.org>
+Reply-to: news@greatagain.org
+To: =?UTF-8?B?TGlzYSBGT1JSRVNU?= <lforrest@facstaff.wisc.edu>
+X-Outgoing: rochelle
+Subject: I will not let my son down
+List-Unsubscribe:
+ <mailto:unsub-42742521512-echo7-D75E76FE7F9031B02B253F666004CE7E@listunsub.bluehornet.com>
+Content-type: multipart/alternative;
+ boundary=--6117c94a556ad-MultiPart-Mime-Boundary
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 13:49:57.7095
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ae667480-0ac4-447b-b62b-08d95f2a675d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT011.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ae667480-0ac4-447b-b62b-08d95f2a675d
+X-MS-TrafficTypeDiagnostic: PH0PR06MB7951:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=softpass reason=201
+X-MS-Oob-TLC-OOBClassifiers: OLM:5797;
+X-Microsoft-Antispam: BCL:4;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 13:49:57.5886
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ae667480-0ac4-447b-b62b-08d95f2a675d
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT011.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB7951
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5117822
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	kl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(520007050)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WUpDTEJSWk5wTlkzbEV1ZVpoaHJad3hHSEhZMUc5QzVxc0ZBbzJiWkdXRFZu?=
+ =?utf-8?B?M2pFSVhLUEQ0REhmRU5uR3JpVnp6OWdkR1hEV0ZITEZ6d0JtM1VkYmlQa2xR?=
+ =?utf-8?B?OTNxQU9GdmFwUGNva0N4UEhOdUJHOWMrYVprUnJmZWpTWU9PckhkVzZyMDJ3?=
+ =?utf-8?B?SExHVld2NkxNUnRQaitqcW1wUlhiVFU4djk4MkZIMmViY0Q4eG02b2svc3Rs?=
+ =?utf-8?B?RUd6YkZleFE2NmhEQ2k5V2xGTENFeVJJUkRxNTN0ai93SFlRb2xlZFZ6Q1hF?=
+ =?utf-8?B?WTVCK0doa2pvWkVlNE4xdE9OYjZ0K1hIdUsvcHRmWnhSZFFHMy9hQVpIMGtU?=
+ =?utf-8?B?S1RqWEhCaUF5OEpsMW9iMXZLYXRNK3VJZkNPcjVtb29XK0dnR3RKNWhwaUo1?=
+ =?utf-8?B?Nzg0K2w5SzhzeGFVeUtSQTVOdzJiZkJtZG1PV0YxMUk2UW03OHN6akxpNkky?=
+ =?utf-8?B?eWlZUlEwamYwSnBxa3NaRXFZek5JNTNIcnNsNHJkeGJhTEhjSXloaTB2NE0x?=
+ =?utf-8?B?bEdMZHZsdTZPamR3ZDVIZndyMVJaWTRpaXJUVVBEeU8xQVJuWmZ1NXRSV0xx?=
+ =?utf-8?B?bWpQY3RoN1czOEpjd0VETUVUR0NKdWNGeit2a29HZURNRGhBNno1T25rdy93?=
+ =?utf-8?B?d294dlYvZTRZa1dGWVVBc3NKYmkycks1NDZvdm9VRHZyalgrUUxOT3I4dkhI?=
+ =?utf-8?B?QTM2eG5vS0x3TWhzVGZzVzVvZk5FZ09leTRYeWhRdXdNbzZPekN0ZGZHMmU2?=
+ =?utf-8?B?aTZLRE9RYWd3ZWc4Vk1pNS8zTGFXUUh3SEpPVFc2cUhSS0VEZ1dHUUgvVG4r?=
+ =?utf-8?B?ZTB1c0FOY2g0OFJwMFBIT3hhZFBoUHZtMUwwdXlHT3hjVm85UnVZN0JxdXRp?=
+ =?utf-8?B?dGRoQzNuN0lxOVJsWXdyYmJLWHJSa1A3Q0FQVWRjTHZ1cVZoeEZkS3E5eUh0?=
+ =?utf-8?B?Tk9rMW5ldzhLZ2pIRFphRFBUeGZZN0p1V3JRbFphSDVhVlJnRzdmeG5wNnE0?=
+ =?utf-8?B?cThXMHVhR2Z1UzVIVm1NbzhSNTZyQk03QU04OUlkaDdnUnhpRzhrWWhjYjIv?=
+ =?utf-8?B?NHdxSFR4NngwUkk4d0JLVGpzbzVzOXBqNlJEdTc4NVdqaURVZWthcUhoMXA0?=
+ =?utf-8?B?K3RiR042MHpJREVyQllCZmxRTFNuYWhXa0tEYnMrZkNjTTFrMGpBRlVRN0dR?=
+ =?utf-8?B?UHptclM1MmdIdkQrS2dYd0x0Y1ViYzRhUXBiT2czc0xTOGtxNGtyKzBFZG5v?=
+ =?utf-8?B?clYwTGtEUkREczFaTmZmSlk3WG9iVWlFZm9vb3JxekJjMjFxcGVlYzdKelYz?=
+ =?utf-8?B?K0t4OFZ5a2dVUzRTcGlhZlpyTWZTeDkwT0JMZWN2V3FoNjdTVmo4QmMzRExh?=
+ =?utf-8?B?bHhoNEo1dG1nQUlvWHJGbDBzYnhWOHE1ZmkvT2QxVHZXSDNEWHVsVmFGdUts?=
+ =?utf-8?B?Y1NtNFNITncyS292SjMzaWdrV3lJb3BTSkk0a01vR0p4QnhvMmphbnkydnp0?=
+ =?utf-8?B?NjMxbUJFemFnQk5EY1V3eFpwV2JEZ21PN2xXaWpvREZ5amppK1dMMDJCQlBI?=
+ =?utf-8?B?WjRmVHdyaEpnbURwbU54NlVWeVh0UkNTOTE4UlpYMXAzQWxNZXBhZGhDc1NU?=
+ =?utf-8?B?dnQvbFB3aWlnbU1wNDU4K0pXYXVxOUYwMmo0N1hRb1c1OVdNSUtOeXVsWnlH?=
+ =?utf-8?B?MkhRVkMyUzR0WFFTcnVLS3dOR0RiKzd0UHpjc2I4R3prSnlmZFRuMkVuUDkv?=
+ =?utf-8?B?M0J6MHJTelZ2WkFmcWUyb3dKd3dlUHRIaERETzdtYWlDNUZRcXdCQ3B1V0wx?=
+ =?utf-8?B?RThRaHo5UHhxU2dwZTlncVlaeWIweTh5R2lYR3JHWWZBM2xRSEJYUDlJZVJi?=
+ =?utf-8?B?endMblBjMVNKbG1JWjBSTjRGWVJ3Y2pleTl5dWc3UEhIWG5nRnJrUlBreHQ5?=
+ =?utf-8?B?b0Vma1owTkZEdFZVSlJhTU5jaGgvR0MvMkp2NTFXc0VlM0kyYXFiVmJEaE1w?=
+ =?utf-8?B?TWVJZGlHWlJieGRTNnZYTlozZGNxR0w1MnA1dDQ4c2RUMnBBMGRaYTV1SGZN?=
+ =?utf-8?B?aVM2Zi9ERE56QjVvU1daS1dMb0dZMTRKVnFkanlHTEpoM0RsdEFzNFgrVjl6?=
+ =?utf-8?B?QkdQL3VXVjdWR3UvVmxYUUhycUZNUVljanVOUmV1T1JxSTV5NzRtLzYrckZ3?=
+ =?utf-8?B?SDVmdEQ2ZVF6YURzd3hkNy8wM0Z3M0x0eWVRY3h4OHNJSUp0a2w5SmNsRjNy?=
+ =?utf-8?B?S05VckNPdk05azRJOFBRTmxpSkFnU1Q3TGZrT2ZOU1lPbkNUWWlPY0MyZkNa?=
+ =?utf-8?B?dkZOdy9OMG9vOFR5ZXR5cTRWU3ZJMWdSRitTZEFPdVM3RmpXaHp3OS9YTkRD?=
+ =?utf-8?B?Nk5oWnIvR3R4c29kUkxpUjlLSWM0eXZXcDVjY3FZalRzdkpubm02MmNtY1Uy?=
+ =?utf-8?B?eTNYZVJTS2taYUpJZ29lVHl0NDZCcUtjNE5HWTNObnNNVXAzWTd5MHZCL1ZS?=
+ =?utf-8?B?bDBteWdCQnF0T3U1S0NOa1lJWFJMb0JldXU2WWJCTm5IdnhEZ0NNRVRRSkpr?=
+ =?utf-8?B?ZCsvRG0vRXBLb2tLVk5oZDlxY0tGZG1LQXczTFVDaXVybVpNc2I5QjdUeHZa?=
+ =?utf-8?B?MVJEdGhVTDhFMTFjRm5aL1prZDFPczNiUDRQVHdqL3pFN0pUaDZSS2FlSmY1?=
+ =?utf-8?B?b3NmRVBDOXVkSGxYVFdmUWxnU1JJbitRMHpyYnZqWTFGOFErMGlCZDlrbUFx?=
+ =?utf-8?B?UzhQUlJBbk53VlJadkVEQWRKZnZXalAxdDRuQnFETmZjRUJCczJBbmVVV3dG?=
+ =?utf-8?Q?iWj+e5N+EOCJJWPBR91qk=3D?=
+MIME-Version: 1.0
+
+----6117c94a556ad-MultiPart-Mime-Boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+
+
+
+http://email.vervemail.com/p/v620qx4lNq
+
+This message was intended for: lforrest@facstaff.wisc.edu
+You were added to the system March 31, 2021.
+For more information please follow the URL below:
+http://email.vervemail.com/p/i620qx4lNq
+
+Follow the URL below to update your preferences or opt-out:
+http://email.vervemail.com/p/o620qx4lNq
+
+To unsubscribe from future mailings, send an email to mailto:unsub-42742521512-echo7-D75E76FE7F9031B02B253F666004CE7E@emailsendr.net?Subject=Unsubscribe&body=Please%20remove%20me%20from%20further%20mailings
+with "Unsubscribe" as the subject line.
+
+
+
+
+
+
+----6117c94a556ad-MultiPart-Mime-Boundary
+Content-Type: text/html; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+
+<html><!--
+
+*******************************************************
+*Note: If you are having trouble viewing this message,*
+*copy and paste the link below into your browser      *
+*address field and hit the Enter button on your       *
+*keyboard.                                            *
+http://email.vervemail.com/p/v620qx4lNq 
+ If you would like to change your preferences         *
+ or unsubscribe, copy the URL below:                  *
+This message was intended for: lforrest@facstaff.wisc.edu
+You were added to the system March 31, 2021.
+For more information please follow the URL below:
+http://email.vervemail.com/p/i620qx4lNq
+
+Follow the URL below to update your preferences or opt-out:
+http://email.vervemail.com/p/o620qx4lNq
+
+To unsubscribe from future mailings, send an email to mailto:unsub-42742521512-echo7-D75E76FE7F9031B02B253F666004CE7E@emailsendr.net?Subject=Unsubscribe&body=Please%20remove%20me%20from%20further%20mailings
+with "Unsubscribe" as the subject line.
+
+ 
+*******************************************************
+ --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>                  <meta content="width=device-width, initial-scale=1" name="viewport">         <meta name="x-apple-disable-message-reformatting">         <meta http-equiv="X-UA-Compatible" content="IE=edge">         <meta content="telephone=no" name="format-detection">         <title>FKUSA Outbound 3
+Wendy</title>         <!--[if (mso 16)]>
+    <style type="text/css">
+    a {text-decoration: none;}
+    </style>
+    <![endif]-->    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->    <!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG></o:AllowPNG>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->    <style type="text/css">
+#outlook a {
+	padding:0;
+}
+.es-button {
+	mso-style-priority:100!important;
+	text-decoration:none!important;
+}
+a[x-apple-data-detectors] {
+	color:inherit!important;
+	text-decoration:none!important;
+	font-size:inherit!important;
+	font-family:inherit!important;
+	font-weight:inherit!important;
+	line-height:inherit!important;
+}
+.es-desk-hidden {
+	display:none;
+	float:left;
+	overflow:hidden;
+	width:0;
+	max-height:0;
+	line-height:0;
+	mso-hide:all;
+}
+[data-ogsb] .es-button {
+	border-width:0!important;
+	padding:10px 20px 10px 20px!important;
+}
+[data-ogsb] .es-button.es-button-1 {
+	padding:10px 25px!important;
+}
+@media only screen and (max-width:600px), screen and (max-device-width:600px) {p, ul li, ol li, a { line-height:150%!important } h1, h2, h3, h1 a, h2
+a, h3 a { line-height:120%!important } h1 { font-size:30px!important; text-align:center } h2 { font-size:26px!important; text-align:center } h3 {
+font-size:20px!important; text-align:center } .es-header-body h1 a, .es-content-body h1 a, .es-footer-body h1 a { font-size:30px!important }
+.es-header-body h2 a, .es-content-body h2 a, .es-footer-body h2 a { font-size:26px!important } .es-header-body h3 a, .es-content-body h3 a,
+.es-footer-body h3 a { font-size:20px!important } .es-menu td a { font-size:16px!important } .es-header-body p, .es-header-body ul li, .es-header-body
+ol li, .es-header-body a { font-size:16px!important } .es-content-body p, .es-content-body ul li, .es-content-body ol li, .es-content-body a {
+font-size:16px!important } .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a { font-size:16px!important }
+.es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a { font-size:12px!important } *[class="gmail-fix"] { display:none!important
+} .es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .es-m-txt-c h3 { text-align:center!important } .es-m-txt-r, .es-m-txt-r h1, .es-m-txt-r h2, .es-m-txt-r
+h3 { text-align:right!important } .es-m-txt-l, .es-m-txt-l h1, .es-m-txt-l h2, .es-m-txt-l h3 { text-align:left!important } .es-m-txt-r img,
+.es-m-txt-c img, .es-m-txt-l img { display:inline!important } .es-button-border { display:block!important } .es-adaptive table, .es-left, .es-right {
+width:100%!important } .es-content table, .es-header table, .es-footer table, .es-content, .es-footer, .es-header { width:100%!important;
+max-width:600px!important } .es-adapt-td { display:block!important; width:100%!important } .adapt-img { width:100%!important; height:auto!important }
+.es-m-p0 { padding:0!important } .es-m-p0r { padding-right:0!important } .es-m-p0l { padding-left:0!important } .es-m-p0t { padding-top:0!important }
+.es-m-p0b { padding-bottom:0!important } .es-m-p20b { padding-bottom:20px!important } .es-mobile-hidden, .es-hidden { display:none!important }
+tr.es-desk-hidden, td.es-desk-hidden, table.es-desk-hidden { width:auto!important; overflow:visible!important; float:none!important;
+max-height:inherit!important; line-height:inherit!important } tr.es-desk-hidden { display:table-row!important } table.es-desk-hidden {
+display:table!important } td.es-desk-menu-hidden { display:table-cell!important } .es-menu td { width:1%!important } table.es-table-not-adapt,
+.esd-block-html table { width:auto!important } table.es-social { display:inline-block!important } table.es-social td { display:inline-block!important
+} a.es-button, button.es-button { font-size:20px!important; display:block!important; border-left-width:0px!important; border-right-width:0px!important
+} .es-m-p5 { padding:5px!important } .es-m-p5t { padding-top:5px!important } .es-m-p5b { padding-bottom:5px!important } .es-m-p5r {
+padding-right:5px!important } .es-m-p5l { padding-left:5px!important } .es-m-p10 { padding:10px!important } .es-m-p10t { padding-top:10px!important }
+.es-m-p10b { padding-bottom:10px!important } .es-m-p10r { padding-right:10px!important } .es-m-p10l { padding-left:10px!important } .es-m-p15 {
+padding:15px!important } .es-m-p15t { padding-top:15px!important } .es-m-p15b { padding-bottom:15px!important } .es-m-p15r {
+padding-right:15px!important } .es-m-p15l { padding-left:15px!important } .es-m-p20 { padding:20px!important } .es-m-p20t { padding-top:20px!important
+} .es-m-p20r { padding-right:20px!important } .es-m-p20l { padding-left:20px!important } .es-m-p25 { padding:25px!important } .es-m-p25t {
+padding-top:25px!important } .es-m-p25b { padding-bottom:25px!important } .es-m-p25r { padding-right:25px!important } .es-m-p25l {
+padding-left:25px!important } .es-m-p30 { padding:30px!important } .es-m-p30t { padding-top:30px!important } .es-m-p30b {
+padding-bottom:30px!important } .es-m-p30r { padding-right:30px!important } .es-m-p30l { padding-left:30px!important } .es-m-p35 {
+padding:35px!important } .es-m-p35t { padding-top:35px!important } .es-m-p35b { padding-bottom:35px!important } .es-m-p35r {
+padding-right:35px!important } .es-m-p35l { padding-left:35px!important } .es-m-p40 { padding:40px!important } .es-m-p40t { padding-top:40px!important
+} .es-m-p40b { padding-bottom:40px!important } .es-m-p40r { padding-right:40px!important } .es-m-p40l { padding-left:40px!important } }
+</style>     </head>     <body style="width:100%;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">         <div class="es-wrapper-color" style="background-color:#FFFFFF"><!--[if gte mso 9]>
+			<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+				<v:fill type="tile" color="#ffffff"></v:fill>
+			</v:background>
+		<![endif]-->         <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center
+top;background-color:#FFFFFF">             <tbody>                 <tr>                     <td valign="top" style="padding:0;Margin:0"><table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">               
+         <tbody>                             <tr>                                 <td align="center" bgcolor="#ffffff" style="padding:0;Margin:0;background-color:#ffffff"><table class="es-content-body" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">               
+                     <tbody>                                         <tr>                                             <td align="left" style="padding:0;Margin:0;padding-left:15px;padding-right:15px"><table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">                                                 <tbody>
+                                                    <tr>                                                         <td align="center" valign="top" style="padding:0;Margin:0;width:570px"><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">                                                        
+    <tbody>                                                                 <tr>                                                                    
+<td align="center" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#1376C8;font-size:14px"><img class="adapt-img" src="https://iqgigh.stripocdn.email/content/guids/CABINET_af9b4f46f8b16da7ec89f6e191dfd0ea/images/14621628277338409.png" alt="" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="570"></a></td>                               
+                                 </tr>                                                             </tbody>                                           
+             </table></td>                                                     </tr>                                                 </tbody>         
+                                   </table></td>                                         </tr>                                         <tr>           
+                                 <td align="left" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px"><table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">           
+                                     <tbody>                                                     <tr>                                                 
+       <td valign="top" align="center" style="padding:0;Margin:0;width:560px"><table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">                                                        
+    <tbody>                                                                 <tr>                                                                    
+<td align="left" style="padding:0;Margin:0"><p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size:
+small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">Lisa<br>             
+                                                       <br>                                                                     Last August, a mob
+of rioters burned down and destroyed Kenosha, Wisconsin. When they came for my son Kyle,&nbsp;who was there offering medical assistance to
+anyone&nbsp;who needed it, he defended himself with deadly force.&nbsp;</span></p>                                                                    
+<p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>                                                          
+          <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height:
+15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">You'd think that because it was all on tape, the truth
+might matter – but sadly that's not the time&nbsp;we're living in.</span></p>                                                                   
+ <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>                                                          
+          <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height:
+15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">Instead, he was immediately labeled a&nbsp;&quot;white
+supremacist&quot; vigilante based on absolutely nothing, and our corrupt media, dishonest politicians and&nbsp;<span class="il">Big</span>&nbsp;Tech
+companies colluded to destroy his character and completely crush his ability to get the truth out.</span></p>                                         
+                           <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in;
+line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>                             
+                                       <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small;
+margin: 0in; line-height: 15.75pt;"><strong><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">In less than 3 months, on
+November 1,&nbsp;his trial begins.</span></strong><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;We will see
+if the truth and self-defense still matter in America, or if they&nbsp;can be stamped out by powerful interests who only care about rating,&nbsp;<span class="il">politics</span>, and power.</span></p>                                                                     <p style="color: #222222;
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt;
+font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>                                                                     <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height:
+15.75pt;"><strong><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">So simply put, Kyle needs&nbsp;your help and
+he&nbsp;needs it now. With help from tens of thousands of generous patriots, we've been able to pay off over $500,000 in legal costs, but we are
+running out of time and our costs are about to skyrocket.<br>                                                                     <br>            
+                                                        </span></strong><strong><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color:
+#333333;"><a href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://click.bigleaguepolitics.com/Pages/Click.aspx?ghff34ghj%3D6190%257c4%257c66444%257c1%257cwnpxjqnyl%2540tznvy.pbz%26wdmdk%3D0bXACbgyoh36HCH4YKU3Xw%26sysid%3D1&amp;source=gmail&amp;ust=1628967020243000&amp;usg=AFQjCNGitIsriIzYymhK_7xzuCEn69YVLQ" style="color: #1155cc;"><u><span style="color: #1376c8; background: yellow;">Please rush a donation to the official Kyle Rittenhouse Defense Fund
+right now.</span></u></a></span></strong></p>                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:21px;color:#333333;font-size:14px"><strong><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#1376C8;font-size:14px" href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r"><span style="background-color:#FFFF00">                                   
+                                 <br type="_moz">                                                                     </span></a></strong></p>      
+                                                              <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:21px;color:#333333;font-size:14px"></p></td>                                                                 </tr>             
+                                                   <tr>                                                                     <td align="center" class="es-m-p5" style="padding:0;Margin:0"><!--[if mso]><a href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r"
+target="_blank">
+	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton
+href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" 
+                style="height:46px;v-text-anchor:middle;width:266px;" arcsize="11%" stroke="f"  fillcolor="#bf0a30">
+		<w:anchorlock></w:anchorlock>
+		<center style='color:#ffffff;font-family:arial, "helvetica neue", helvetica, sans-serif;font-size:18px;font-weight:700;'>SUPPORT KYLE NOW
+>></center>
+	</v:roundrect></a>
+<![endif]-->                         <!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-style:solid;border-color:#2cb543;background:#bf0a30;border-width:0px;display:inline-block;border-radius:5px;width:auto;mso-hide:all"><a href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" class="es-button msohide es-button-1" target="_blank" style="mso-style-priority:100
+!important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;border-style:solid;border-color:#bf0a30;border-width:10px
+25px;display:inline-block;background:#bf0a30;border-radius:5px;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;font-weight:bold;font-style:normal;line-height:22px;width:auto;text-align:center;mso-hide:all">SUPPORT KYLE NOW &gt;&gt;</a></span>        
+                <!--<![endif]--></td>                                                                 </tr>                                           
+                     <tr>                                                                     <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:21px;color:#333333;font-size:14px"></p>                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:21px;color:#333333;font-size:14px"></p>                                                                     <p style="color:
+#222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size:
+10.5pt; font-family: Arial, sans-serif; color: #333333;"><br>                                                                     Because of the
+outpouring of grassroots support for Kyle we've been able to recruit an incredible team of lawyers and subject matter experts. From medical to
+ballistics we are covering every possible base and cannot wait to expose all of these liars who've been endlessly slandering my son.</span></p>       
+                                                             <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color:
+#333333;">&nbsp;</span></p>                                                                     <p style="color: #222222; font-family: Roboto,
+RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial,
+sans-serif; color: #333333;">While preparing for trial, he's also been working around the clock to finish high school and when this is all done I want
+to see him off to college, not a jail cell.</span></p>                                                                     <p style="color: #222222;
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt;
+font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>                                                                     <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">As his mother, I will not let him down. I will work 24/7 to ensure that he
+gets the legal representation that he deserves, but the truth is I can't do it without you.</span></p>                                                
+                    <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in;
+line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>                             
+                                       <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small;
+margin: 0in; line-height: 15.75pt;"><strong><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;"><a href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://click.bigleaguepolitics.com/Pages/Click.aspx?ghff34ghj%3D6190%257c67%257c66444%257c1%257cwnpxjqnyl%2540tznvy.pbz%26wdmdk%3DLVDwPkZtrBlVu0lQj%252fTt1Q%26sysid%3D1&amp;source=gmail&amp;ust=1628967020243000&amp;usg=AFQjCNGjtMGG9x2G72TuINtveauL7N_p1g" style="color: #1155cc;"><u><span style="color: #1376c8; background: yellow;">So think for a moment as if this was your own son or brother or some
+other close relative fighting for his freedom – and rush a donation of anything you can.</span></u></a></span></strong></p>                     
+                                               <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size:
+small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>         
+                                                           <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">Thank you for
+your time, I hope we can count on your support, and ask that also you&nbsp;spread the word to your family and friends.</span></p>                     
+                                               <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size:
+small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color: #333333;">&nbsp;</span></p>         
+                                                           <p style="color: #222222; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial, sans-serif; color:
+#333333;">Sincerely,</span></p>                                                                     <p style="color: #222222; font-family: Roboto,
+RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt; font-family: Arial,
+sans-serif; color: #333333;">&nbsp;</span></p>                                                                     <p style="color: #222222;
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small; margin: 0in; line-height: 15.75pt;"><span style="font-size: 10.5pt;
+font-family: Arial, sans-serif; color: #333333;">Wendy Rittenhouse</span></p></td>                                                                
+</tr>                                                                 <tr>                                                                     <td align="center" style="padding:20px;Margin:0;font-size:0"><table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">                                    
+                                    <tbody>                                                                             <tr>                          
+                                                      <td style="padding:0;Margin:0;border-bottom:0px solid
+#cccccc;background:none;height:1px;width:100%;margin:0px"></td>                                                                             </tr>     
+                                                                   </tbody>                                                                    
+</table></td>                                                                 </tr>                                                                
+<tr>                                                                     <td align="center" style="padding:0;Margin:0"><!--[if mso]><a
+href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" target="_blank">
+	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton
+href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" 
+                style="height:46px;v-text-anchor:middle;width:256px;" arcsize="11%" stroke="f"  fillcolor="#bf0a30">
+		<w:anchorlock></w:anchorlock>
+		<center style='color:#ffffff;font-family:arial, "helvetica neue", helvetica, sans-serif;font-size:18px;font-weight:700;'>SUPPORT KYLE NOW
+>></center>
+	</v:roundrect></a>
+<![endif]-->                         <!--[if !mso]><!-- --><span class="msohide es-button-border" style="border-style:solid;border-color:#2cb543;background:#bf0a30;border-width:0px;display:inline-block;border-radius:5px;width:auto;mso-hide:all"><a href="http://email.vervemail.com/ct/58130114:620qx4lNq:m:1:3254696835:5599EF0A6BF8023B82922514853E7207:r" class="es-button msohide" target="_blank" style="mso-style-priority:100
+!important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;border-style:solid;border-color:#bf0a30;border-width:10px
+20px 10px 20px;display:inline-block;background:#bf0a30;border-radius:5px;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;font-weight:bold;font-style:normal;line-height:22px;width:auto;text-align:center;mso-hide:all;border-left-width:20px;border-right-width:20px">SUPPORT
+KYLE NOW &gt;&gt;</a></span>                         <!--<![endif]--></td>                                                                 </tr>      
+                                                      </tbody>                                                         </table></td>                  
+                                  </tr>                                                 </tbody>                                            
+</table></td>                                         </tr>                                     </tbody>                                 </table></td>
+                            </tr>                         </tbody>                     </table>                     <table class="es-footer" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed
+!important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">                         <tbody>          
+                  <tr>                                 <td align="center" bgcolor="#ffffff" style="padding:0;Margin:0;background-color:#ffffff"><table class="es-footer-body" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">               
+                     <tbody>                                         <tr>                                             <td align="left" style="Margin:0;padding-bottom:20px;padding-left:20px;padding-right:20px;padding-top:35px"><table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">                                                 <tbody>
+                                                    <tr>                                                         <td valign="top" align="center" style="padding:0;Margin:0;width:560px"><table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">                                                        
+    <tbody>                                                                 <tr>                                                                    
+<td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:18px;color:#808080;font-size:12px"><em>Copyright © 2021 Free Kyle USA, All rights reserved.</em></p>                      
+                                              <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:18px;color:#808080;font-size:12px"></p>                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:18px;color:#808080;font-size:12px">Free Kyle USA</p>                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:18px;color:#808080;font-size:12px">PO Box 5322</p>                                                                     <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,
+sans-serif;line-height:18px;color:#808080;font-size:12px">Reno, NV 89513</p></td>                                                                
+</tr>                                                             </tbody>                                                         </table></td>      
+                                              </tr>                                                 </tbody>                                          
+  </table></td>                                         </tr>                                     </tbody>                                
+</table></td>                             </tr>                         </tbody>                     </table></td>                 </tr>            
+</tbody>         </table></div>     </body>
+
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#999999">
+            This message was intended for: <a href="mailto:lforrest@facstaff.wisc.edu">lforrest@facstaff.wisc.edu</a> <br>
+            You were added to the system March 31, 2021.<br>
+            For more information <a href="http://email.vervemail.com/p/i620qx4lNq">click here</a>. <a href="http://email.vervemail.com/p/o620qx4lNq">Update your preferences</a><br>
+            <a href="http://email.vervemail.com/p/o620qx4lNq">Unsubscribe</a> | <a href="mailto:unsub-42742521512-echo7-D75E76FE7F9031B02B253F666004CE7E@emailsendr.net?Subject=Unsubscribe&amp;body=Please%20remove%20me%20from%20further%20mailings">Unsubscribe via email</a><br>
+            <br>
+            </font></p><img src="http://email.vervemail.com/imagelibrary/N-620qx4lNq-F7DEE31C3C2600A09C5CD085F4C6549E.jpg" width="1" height="1" style="border:none; visibility:hidden; max-height:0px; max-width:0px; overflow:hidden;">
+
+</html>
+
+
+
+----6117c94a556ad-MultiPart-Mime-Boundary--

@@ -1,0 +1,149 @@
+Received: from BN6PR06MB3457.namprd06.prod.outlook.com (2603:10b6:404:117::13)
+ by SA0PR06MB6810.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 17:56:07 +0000
+Received: from DM5PR07CA0127.namprd07.prod.outlook.com (2603:10b6:3:13e::17)
+ by BN6PR06MB3457.namprd06.prod.outlook.com (2603:10b6:404:117::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13; Fri, 13 Aug
+ 2021 17:56:05 +0000
+Received: from DM6NAM11FT014.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:3:13e:cafe::79) by DM5PR07CA0127.outlook.office365.com
+ (2603:10b6:3:13e::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Fri, 13 Aug 2021 17:56:05 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT014.mail.protection.outlook.com (10.13.173.132) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Fri, 13 Aug 2021 17:56:05 +0000
+Received: from k-xyz.live ([106.75.2.62]) by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS030T5HTC3I10@smtp5.wiscmail.wisc.edu> for
+ alvarado@engr.wisc.edu; Fri, 13 Aug 2021 12:56:05 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ sales@k-xyz.live
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=28%, Hits= FRAUD_LITTLE_BODY 2,
+ WEBMAIL_REPLYTO_NOT_FROM 0.5, NO_MESSAGE_ID 0.3, FRAUD_WEBMAIL_R_NOT_F 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, SUBJ_1WORD 0.1, HTML_00_01 0.05, HTML_00_10 0.05,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_200_299 0, BODY_SIZE_5000_LESS 0,
+ BODY_SIZE_7000_LESS 0, DKIM_SIGNATURE 0, DOMAINKEY_SIG 0, NO_CTA_URI_FOUND 0,
+ NO_REAL_NAME 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0,
+ SMALL_BODY 0, SPF_PASS 0, __BEC_PHRASE 0, __BODY_NO_MAILTO 0, __CT 0, __CTE 0,
+ __CT_TEXT_PLAIN 0, __DATE_TZ_HK 0, __DKIM_ALIGNS_2 0, __FRAUD_COMMON 0,
+ __FRAUD_MONEY_BIG_COIN 0, __FRAUD_MONEY_BIG_COIN_DIG 0, __FRAUD_REPLY 0,
+ __FRAUD_SUBJ_A 0, __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_REPLYTO 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NAME_NOT_IN_BODY 0, __FROM_NO_NAME 0, __HAS_FROM 0, __HAS_REPLYTO 0,
+ __HEADER_ORDER_FROM 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0,
+X-Wisc-Doma: sales@k-xyz.live,k-xyz.live
+X-Wisc-Env-From-B64: c2FsZXNAay14eXoubGl2ZQ==
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.174516,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840001,
+ SenderIP=[106.75.2.62]
+X-Wisc-DKIM-Verify: sales@k-xyz.live,
+X-Spam-Score: **
+Message-id: <0QXS030TJHTF3I10@smtp5.wiscmail.wisc.edu>
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=k-xyz.live;
+ h=Content-Type:MIME-Version:Content-Transfer-Encoding:Content-Description:Subject:To:From:Date:Reply-To;
+ i=sales@k-xyz.live; bh=T52J30TGS4PqKnrUvIKk79AuGzY=;
+ b=jBHrmw8vX3RxNpPKlxW7J/cqmAekFVfuLCzY2zwAaUNERher3XmAJJLAjMuUzP1F6r0dddLtA3Cf
+   B1rdo91cC0aGZ8QzVf1UtPWQy34gosUlqiI1ndlzenaZTBeb5kK6snReBhajjSHLwhAwhP9M9De2
+   2X25jar2k9TGynxGiCo=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=k-xyz.live;
+ b=BAQuQpuQZmeI6k5ypnimuWFCW7DE9z3MYa3U7G7aWvezb/Bxyrl3AYvItU0twlyhRg4R/4buKwpT
+   vlEAkZScC0a6f/9SAyf5AulRn4vm2Szh9E4T+di4GLc6D8fAr9GoJzq/s32CxzFMyxnB0Xms5ow8
+   Fri+4DGUpITVJo8ylBc=;
+Content-type: text/plain; charset=iso-8859-1
+Content-transfer-encoding: quoted-printable
+Content-description: Mail message body
+Subject: urgent
+To: alvarado@engr.wisc.edu
+Date: Sat, 14 Aug 2021 01:55:57 +0800
+Reply-to: cjacksonjr494@gmail.com
+From: sales@k-xyz.live
+Return-Path: sales@k-xyz.live
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 17:56:05.7391
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b033f9ed-0f18-4224-721b-08d95e839f62
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT014.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: b033f9ed-0f18-4224-721b-08d95e839f62
+X-MS-TrafficTypeDiagnostic: BN6PR06MB3457:
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=451
+X-MS-Oob-TLC-OOBClassifiers: OLM:1923;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:de;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-ForwardingLoop:
+ alvarado@engr.wisc.edu;2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 17:56:05.6402
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b033f9ed-0f18-4224-721b-08d95e839f62
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource: DM6NAM11FT014.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR06MB3457
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7466541
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?lvzJtqrYmkeiDbxM8h0snLiE3BDimnlC+mTIPja/J5nrvvrj4mBout8SDD?=
+ =?iso-8859-1?Q?uTMWcoWQPUrEvBt+UsmjIQDAV8HjfL2CUxBlScSlglI9WRyByThFPTeE6k?=
+ =?iso-8859-1?Q?kn5WgLWqMbvQSPvxC5rXVOSCcLd/Og3rQSO9RZLKsMcg4y/8VF4PAdPk3N?=
+ =?iso-8859-1?Q?ZKpyWJ5lSMEeZkee2pU87JE/LxBWXwjUADzQPhjRKy0SCohchyENmvDBlL?=
+ =?iso-8859-1?Q?ZjukiyOTCfPdYBT1TrPTJcldRpasL/EHLDFMiOvVYQW/n17oKTbNIcSqGn?=
+ =?iso-8859-1?Q?uJ7q8+f+LJ1rwVNM19sW8nSTxTuedMGcvnx6R5dSylT2BmauZg1eSmrrXM?=
+ =?iso-8859-1?Q?fL6cbQO0FekzcWbwGaSCUVvSz0XwoRC9sqmfCg4eEMXuNLPLv0qk+jYDti?=
+ =?iso-8859-1?Q?iAYiKkpJktiXwVWEODQSFKTWldO6/GvAOsS3wK+ss+6KjoJmSBghA3piOH?=
+ =?iso-8859-1?Q?LLN0pNs0RoWYSxC4EENJPztuKj878fL5es9IwYlOZMyA2uwsc4oWFvTeiM?=
+ =?iso-8859-1?Q?G9fBrxEXHtq/aGYAmZNMPgSlZgaO1+GAHOZClZcxyjXErvXLLFFpL2yVX9?=
+ =?iso-8859-1?Q?+a5dMfZ+EnpKCpN3nRy6dgflmPnYcjXkIPIl+fpOia7DlRewM+jxg4UH3a?=
+ =?iso-8859-1?Q?WITDwswNCKTHSzHyL76neCqgRmqi/N4lVijLbDrw3cwdYfncnPxXGjx/+a?=
+ =?iso-8859-1?Q?6HRk7SZIMCeIyyvLZf81Wfrr29knrb4NJskfJM3i2E6G3BBbsV/E8QVSsb?=
+ =?iso-8859-1?Q?Ip5RuKX+NYa39qzUdHb3uviYGdjDz+1iiM3qZN4R++nRzJA5Twazjjke+w?=
+ =?iso-8859-1?Q?O1ZdQKtKf5R+RFiHsaKaP9cs9xcdFpDr9F/6GlirCQlilYgK5tEkrtdaHW?=
+ =?iso-8859-1?Q?5sVUI1uw24lO0OwQjaarEXKmARQkBb7KUkQz9fu2VXE+DWiD0zjeAx1U0u?=
+ =?iso-8859-1?Q?juWaxKUMQO+PxZy4/pRBnD4Zp+23MI3dZkO5aKctTHGtp6IS63PRb59TPm?=
+ =?iso-8859-1?Q?ZzZvk3OjXVeMfzzf9I7z0kY1LYTxcR95OuJb2K8kJfuaQkRF0VOWWgH0Kb?=
+ =?iso-8859-1?Q?8lJC19ZOZiXFJkz0+3dzFS2KVwejYU4SqGLU1F3eXAx/1EyHr6VhNqvxQf?=
+ =?iso-8859-1?Q?3mpGNVXLDO+gky9mXkWSe97mNeApfr844+pDqqhII6X2loTzk/hAvv551V?=
+ =?iso-8859-1?Q?dkaIt+nRfcUDgtrdJ5v+WsyG6SooN8TpEFXO8rs1Q9Y54zojliY2Wxsdg6?=
+ =?iso-8859-1?Q?N1Sz9FA8yqvxHQM4cZdy76gyZSHT/zCP5dBFVfRoQjGXqtOJ3F1tN/b7BA?=
+ =?iso-8859-1?Q?nkAKnE4OJBOLSyAUXZvTZkAVPw6AogOdUwMxstXwA/AGqM9pqMm+3kU3Dc?=
+ =?iso-8859-1?Q?0XNWaTamSuJV/ytPr+4m/yInp5d3DjiC+QdK1z5yy9GVowdsu3f9/3PRTl?=
+ =?iso-8859-1?Q?4nTRcvGPJfjtIr9nPvi9PPS1HF+RMFzOpB5pfUCeEXsO7eqTROG9hJU4bl?=
+ =?iso-8859-1?Q?m4bWO7sqdgxOzQr4BxCVjp8FFk1lj0Iu07gOOcGF6ghX1MeBr9SswqesEH?=
+ =?iso-8859-1?Q?YxmRXNnTDf7vQucdbTOoCekwtYIkS+NIi+1xuPnydIQwG3zFSvzGw1RR/y?=
+ =?iso-8859-1?Q?lS7M8haGi3dXFKFiNv/+AjIEaRg5tMnQenGQs6aK5vLmJupCknjlenpKCc?=
+ =?iso-8859-1?Q?mvt2HVfZWHDyDwRe4iQuG249aYLkO+jBIPUiCOk9r+m4dq75C4rw7itOez?=
+ =?iso-8859-1?Q?wHmjAirfduek/tw0q28RhM7ZNe4aONXDobUeKqAV9e+oIm5r6rIPEGrLqe?=
+ =?iso-8859-1?Q?GpXP3gkyRTHlwTx5+Dg8iuge9Fjd50vIv+70r2+jyzb8MO2smtcAje9TZN?=
+ =?iso-8859-1?Q?8k/yUYQxM/pCWnfB3WJxcO3w2QYTKu2kZ3bL3vsTHjnulZjVUE2527atKM?=
+ =?iso-8859-1?Q?wVJmKsrq0Tn8Zvkio5V2f/iF05GRR3wHq75UgzNIkEGz/SoitFGcEZfZ/p?=
+ =?iso-8859-1?Q?i6BzGWiZxPNgvyWhASRiji8fOm/v+EIl5oSwJ0bP5ZeS4AspW6Zz0TCf51?=
+ =?iso-8859-1?Q?B2eAV763ELG9gDAdDJXzyCmAgDrRKWDkmtLudc4iB6Xh+UM+AsckQt6qvU?=
+ =?iso-8859-1?Q?fsQgb5YrPrSMofLTWLfgx230Ms6UHP1o1fXk98yXDgJibykiCJVSpAJSvI?=
+ =?iso-8859-1?Q?m+sXrCTXObZSCWGOSQMIxWBc?=
+MIME-Version: 1.0
+
+an urgent message for you regarding your 2.8Millions cailm, kindly get back=
+ to me. my private mail:
+--------------------------------------
+eine dringende Nachricht f=FCr Sie bez=FCglich Ihrer 2.8 Millionen Ruhe, bi=
+tte senden Sie mir zur=FCck. meine private Mail:
+

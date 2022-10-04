@@ -1,0 +1,219 @@
+Received: from DS7PR06MB6885.namprd06.prod.outlook.com (::1) by
+ SN6PR06MB4942.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 15:28:45
+ +0000
+Received: from CH2PR06MB6485.namprd06.prod.outlook.com (2603:10b6:610:8d::8)
+ by DS7PR06MB6885.namprd06.prod.outlook.com (2603:10b6:5:2c8::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.16; Mon, 15 Aug
+ 2022 15:28:22 +0000
+Received: from CH2PR06MB6485.namprd06.prod.outlook.com
+ ([fe80::f5b2:a745:bebc:7c3f]) by CH2PR06MB6485.namprd06.prod.outlook.com
+ ([fe80::f5b2:a745:bebc:7c3f%3]) with mapi id 15.20.5525.011; Mon, 15 Aug 2022
+ 15:28:22 +0000
+From: ALLIE KLOOS <akkloos@wisc.edu>
+Subject: Personal Assistant Service
+Thread-Topic: Personal Assistant Service
+Thread-Index: AQHYsLpa5cR2FzDzfECX2Fu1gbpiwg==
+Date: Mon, 15 Aug 2022 15:28:19 +0000
+Message-ID:
+	<CH2PR06MB648577E1CFB57B239B64B795D0689@CH2PR06MB6485.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: CH2PR06MB6485.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	08827d37-ca7b-4392-deff-08da7ed2c87f
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 08827d37-ca7b-4392-deff-08da7ed2c87f
+x-ms-traffictypediagnostic: DS7PR06MB6885:EE_
+x-microsoft-antispam: BCL:0;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:CH2PR06MB6485.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: CH2PR06MB6485.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	08827d37-ca7b-4392-deff-08da7ed2c87f
+x-ms-exchange-crosstenant-originalarrivaltime: 15 Aug 2022 15:28:19.1068 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	1/oSOW/xVqCBjAlm5ntAGkxI9PQmiQWqxcN/bEFa0mUoGJdK2PI+Ll9NMww2NM4mOfODjVjJuORZFzb8QsR4FA==
+x-ms-exchange-transport-crosstenantheadersstamped: DS7PR06MB6885
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	dexWLFtTD6xhpW2o4cSE6S39B563e/+H/FhjtHbjnQV035G9gmGYrlVYQUCMFRVkB+AgNoR0qV70MtQXMBg1OiOCl35SD0EQe8VBz6mNonf9S7QcwMXdMuYOw/v5h69pXeDmdnwitbGNLvY9BO/pEV4HQo1WOuntS6OvoUmCO3U6UaUwuFE10NDr+XF0I5q2D6FZfGhbCRbG7g7Un5PbHspj9OkX6KePK6FOIOU4Mq9M/f8rQq2EXg/2vnR8OYjvE+hxl00HsmredE0+gQZUsu4BF8wsIFG3BiyMFFgujR1091C9DgRubEN8WWKhGDQyg0IpC+hihpaEHFudGZRAunoF6ZYRLIQJdJfYfTAcBF4ApSmtyenfnKSP5uLKs6VrSzRkYyPAo2u5hmS1MT230kygn3Xv2By7JQXr3EVPqDM5rOp/tzJJXIORA6yf6taMj81MGnxuQ4hmhXnjfaiuBat3DQqgmla/WyJ8RX21tHYDAcZHqP4ZwlbwePAxIawYtTWnwLOn4U6/ggNqqRUD3gvL/MtKttfh+So9IL80KKwoMFB0WlCYrEX82gljJEWCzuDl0aUreNV4Up0dRHkR5yteeO9HwmuELQFwLRbsBjeAbcN8iMLanq0ryrDBTZPZBJ2qLylXmTUwXRPXBAHhIMUDFwpIWeQAMOuRgB0Dh06thuLtJPrDtPdl52CIXonmaxlzx2NjGrd7lBRLTUQRf1LElzNOGdvMh8eWJCt8dS/00Iec4qUAe+ejVjyi15c1TuUJB5eVCT9/9yjUyTol0wbwAUV8N3/t1W387WPqAzY=
+Content-Type: multipart/alternative;
+	boundary="_000_CH2PR06MB648577E1CFB57B239B64B795D0689CH2PR06MB6485namp_"
+MIME-Version: 1.0
+
+--_000_CH2PR06MB648577E1CFB57B239B64B795D0689CH2PR06MB6485namp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Approved Job for the School
+
+Personal Assistant Service
+
+
+
+All Email recipients of  University Of Wisconsin-Madison are encouraged to =
+be a part of this amazing offer.  This is a part time job that will not aff=
+ect your present employment or study at the campus & you'll be working from=
+ home. It=92s fun, rewarding, and flexible.
+
+2-3 hours daily
+
+Four Hundred Dollars ($400)
+
+Part-Time Job
+
+
+
+                               To apply, Be sure to visit the link below.
+
+Apply Here<https://forms.gle/jWKBUCbTBZKVnt8s5>
+
+
+--_000_CH2PR06MB648577E1CFB57B239B64B795D0689CH2PR06MB6485namp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<div dir=3D"auto" style=3D"color:rgb(34, 34, 34);font-family:Arial, Helveti=
+ca, sans-serif;font-size:small;font-style:italic;margin:0px">
+<table width=3D"100%" style=3D"font-family:Calibri, Arial, Helvetica, sans-=
+serif;margin:0px;border-spacing:0px">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" style=3D"margin:0px;padding:5px 10px;border-collapse:col=
+lapse">
+<div style=3D"margin:0px;border:0px none;font-size:24px;line-height:38px;fo=
+nt-family:&quot;Nunito Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helve=
+tica, sans-serif;color:rgb(4, 156, 207)">
+<p style=3D"margin:0px;text-align:center"><strong style=3D"font-family:Robo=
+to, RobotoDraft, Helvetica, Arial, sans-serif;font-size:small;font-style:no=
+rmal;color:rgb(34, 34, 34)"><span style=3D"margin:0px;font-family:cambria, =
+serif"><span style=3D"margin:0px;font-size:22pt">Approved
+ Job for the School</span></span></strong><br>
+</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div dir=3D"auto" style=3D"color:rgb(34, 34, 34);font-family:Arial, Helveti=
+ca, sans-serif;font-size:small;font-style:italic;margin:0px">
+<span style=3D"margin:0px;font-family:Arial, Helvetica, sans-serif, serif, =
+EmojiFont"><span style=3D"margin:0px;font-family:Calibri, Arial, Helvetica,=
+ sans-serif, serif, EmojiFont">
+<table width=3D"100%" style=3D"font-family:Calibri, Arial, Helvetica, sans-=
+serif;margin:0px;border-spacing:0px">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" style=3D"margin:0px;padding:5px 10px;border-collapse:col=
+lapse">
+<div style=3D"margin:0px;border:0px none;line-height:25px">
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+<span style=3D"margin:0px;border:0px none">Personal&nbsp;<span style=3D"mar=
+gin:0px">Assistant</span>&nbsp;Service</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+&nbsp;</p>
+<p dir=3D"auto" style=3D"margin:0px"><span style=3D"font-family:&quot;Times=
+ New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px;border:0px =
+none">All Email recipients of&nbsp;</span><span style=3D"font-family:&quot;=
+Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px;border=
+:0px none"><font style=3D"color:rgb(77, 81, 86)">&nbsp;</font></span><span =
+style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Georg=
+ia, serif;margin:0px;border:0px none"><font><span style=3D"color:rgb(95, 99=
+, 104);font-family:Roboto, arial, sans-serif;font-size:14px;font-style:norm=
+al;font-weight:700">University
+ Of Wisconsin-Madison</span><span style=3D"font-family:Roboto, arial, sans-=
+serif;font-size:14px;font-style:normal;font-weight:700"><font color=3D"#4d5=
+156">&nbsp;</font></span></font></span><span style=3D"font-family:&quot;Tim=
+es New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">are
+ encouraged to be a part of this amazing&nbsp;</span><span style=3D"font-fa=
+mily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin=
+:0px;border:0px none">offer</span><span style=3D"font-family:&quot;Times Ne=
+w Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">.&nbsp;&nbsp;=
+This
+ is a part time&nbsp;</span><span style=3D"font-family:&quot;Times New Roma=
+n&quot;, Times, Baskerville, Georgia, serif;margin:0px;border:0px none">job=
+</span><span style=3D"font-family:&quot;Times New Roman&quot;, Times, Baske=
+rville, Georgia, serif;margin:0px">&nbsp;that will not affect your
+ present employment or study at the campus &amp; you'll be working from hom=
+e. It=92s fun, rewarding, and flexible.&nbsp;</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+<span style=3D"margin:0px">2-3 hours daily&nbsp;</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+Four Hundred Dollars ($400)</p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+<span style=3D"margin:0px">Part-Time Job</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+&nbsp;</p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19)">
+<span style=3D"margin:0px;border:0px none">&nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp;To apply, Be sure to visit the link below. &nbsp;</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" style=3D"font-family:Calibri, Arial, Helvetica, sans-=
+serif;margin:0px;border-spacing:0px">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" align=3D"center" style=3D"margin:0px;padding:20px;border=
+-collapse:collapse">
+<table style=3D"margin:0px;border:0px none;display:inline-block;border-radi=
+us:5px;background-color:rgb(36, 160, 237)">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td align=3D"center" style=3D"margin:0px;padding:12px;border-collapse:colla=
+pse"><span style=3D"margin:0px;border:0px none;font-size:24px;line-height:2=
+4px;font-family:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, s=
+erif;color:rgb(255, 255, 255)"><a href=3D"https://forms.gle/jWKBUCbTBZKVnt8=
+s5" rel=3D"noopener noreferrer" target=3D"_blank" data-saferedirecturl=3D"h=
+ttps://www.google.com/url?q=3Dhttps://forms.gle/jWKBUCbTBZKVnt8s5&amp;sourc=
+e=3Dgmail&amp;ust=3D1660412544416000&amp;usg=3DAOvVaw1ABO3CEYfzWA831vvpiDUN=
+" style=3D"color:rgb(17, 85, 204);margin:0px;border:0px none;text-decoratio=
+n-line:none;display:inline-block">Apply&nbsp;Here</a></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</span></span></div>
+<br>
+</div>
+</body>
+</html>
+
+--_000_CH2PR06MB648577E1CFB57B239B64B795D0689CH2PR06MB6485namp_--

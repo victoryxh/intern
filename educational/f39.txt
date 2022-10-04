@@ -1,0 +1,582 @@
+Received: from PH0PR06MB7190.namprd06.prod.outlook.com (2603:10b6:510:20::23)
+ by DM6PR06MB4762.namprd06.prod.outlook.com with HTTPS; Thu, 26 Aug 2021
+ 19:42:08 +0000
+Received: from BN8PR12CA0028.namprd12.prod.outlook.com (2603:10b6:408:60::41)
+ by PH0PR06MB7190.namprd06.prod.outlook.com (2603:10b6:510:20::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4457.19; Thu, 26 Aug
+ 2021 19:42:06 +0000
+Received: from BN8NAM11FT058.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:60:cafe::e3) by BN8PR12CA0028.outlook.office365.com
+ (2603:10b6:408:60::41) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4457.18 via Frontend
+ Transport; Thu, 26 Aug 2021 19:42:06 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ BN8NAM11FT058.mail.protection.outlook.com (10.13.177.58) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4457.17 via Frontend Transport; Thu, 26 Aug 2021 19:42:05 +0000
+Received: from m238-30.mailgun.net ([159.135.238.30])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QYG03VZFPDDIUD0@smtp6.wiscmail.wisc.edu> for
+ peng.liu@wisc.edu; Thu, 26 Aug 2021 14:42:03 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_90_100 0.1,
+ HTML_95_100 0.1, FROM_NAME_ONE_WORD 0.05, BODYTEXTH_SIZE_3000_MORE 0,
+ BODY_SIZE_10000_PLUS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, FONT_STYLE_0PT 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, KNOWN_MTA_TFX 0,
+ LINK_TO_IMAGE 0, LIST_HEADER 0, NO_URI_HTTPS 0, OBFUSCATION 0,
+ SENDER_NO_AUTH 0, SPF_PASS 0, STYLE_RATWARE_REF 0, SXL_IP_TFX_WM 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HAS_SENDER 0, __HIDDEN_HTML_CONTENT 0,
+ __HIGHBITS 0, __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0,
+ __HTML_BOLD 0, __HTML_HREF_TAG_X2 0, __HTML_TAG_CENTER 0, __HTML_TAG_DIV 0,
+ __HTML_TAG_IMG_X2 0, __HTML_TAG_TABLE 0, __HTTP_IMAGE_TAG 0, __IMG_SRC_X5 0,
+ __IMG_THEN_TEXT 0, __MIME_HTML 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0,
+ __MIME_TEXT_H2 0, __MIME_
+X-Wisc-Doma:
+ bounce+ce90d5.c18e1-peng.liu=wisc.edu@coupononlineshoponline.com,coupononlineshoponline.com
+X-Wisc-Env-From-B64:
+ Ym91bmNlK2NlOTBkNS5jMThlMS1wZW5nLmxpdT13aXNjLmVkdUBjb3Vwb25vbmxpbmVzaG9wb25s
+ aW5lLmNvbQ==
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.26.193315,
+ AntiVirus-Engine: 5.85.0, AntiVirus-Data: 2021.8.26.5850001,
+ SenderIP=[159.135.238.30]
+X-Wisc-DKIM-Verify:
+ bounce+ce90d5.c18e1-peng.liu=wisc.edu@coupononlineshoponline.com,coupononlineshoponline.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=coupononlineshoponline.com; q=dns/txt; s=k1; t=1630006922; h=Subject:
+ Content-Transfer-Encoding: Content-Type: MIME-Version: Message-ID: Date:
+ sender: To: From; bh=4FA8wE0Buqtz3TlMwM+vzdxzERWFc/LWwiVEat6dMws=;
+ b=NW7hqYcL4XFSm2OvmHXTEjOgGEvWfgaxppusIhfXYNMTuB9JBTp2ZudceAfXchkTZ44oHvTT
+ tbQ3pzR4nVFIKJu7+VhNQfTXvHIShCxXcRsS6u+R2u7P+BVVfTWuqTb2porc47RVP3TN1Ner
+ 0FzPn4QpLgC4KwL7N9+8MGs/5lU=
+X-Mailgun-Sending-Ip: 159.135.238.30
+X-Mailgun-Sid: WyJlNTk0MyIsICJwZW5nLmxpdUB3aXNjLmVkdSIsICJjMThlMSJd
+Received: from securityiq.infosecinstitute.com
+ (ec2-34-202-49-109.compute-1.amazonaws.com [34.202.49.109])
+ by smtp-out-n05.prod.us-west-2.postgun.com with SMTP id
+ 6127ee77fc1f4cb6924afe84 (version=TLS1.3, cipher=TLS_AES_128_GCM_SHA256); Thu,
+ 26 Aug 2021 19:41:42 GMT
+From: Starbucks <starbucks@coupononlineshoponline.com>
+To: PENG LIU <peng.liu@wisc.edu>
+X-PHISH: This is a security awareness phishing simulation test from InfoSec
+ Institute that has been authorized by the recipient organization
+Sender: Starbucks <starbucks@coupononlineshoponline.com>
+Date: Thu, 26 Aug 2021 19:41:42 +0000
+Message-id:
+ <02c29354-c0c7-4247-a5ad-4116cfbb81a0@securityiq.infosecinstitute.com>
+Content-type: multipart/alternative; boundary=a089fb785f3651d00c7b37398f6754b7
+Content-transfer-encoding: 8bit
+X-Report-Abuse-To: abuse-siq@infosecinstitute.com
+Subject: First one is on us!
+Return-Path: bounce+ce90d5.c18e1-peng.liu=wisc.edu@coupononlineshoponline.com
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Aug 2021 19:42:06.0321
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7e800176-ce4f-4f70-e36c-08d968c995c8
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT058.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7e800176-ce4f-4f70-e36c-08d968c995c8
+X-MS-TrafficTypeDiagnostic: PH0PR06MB7190:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Aug 2021 19:42:05.9112
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7e800176-ce4f-4f70-e36c-08d968c995c8
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT058.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB7190
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4907160
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4436.025
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?RWJWVlJZcVVCeDZMSll0QjRML01TcEU2OEV4VnFRbXRvZVE4bHNMYXFXYUlv?=
+ =?utf-8?B?RFR2MlNQREJ1T3JuVWRDVWxMN0lxaEZ5Y0djYVJ3WFkvaUpDZjAxVnpiTGNK?=
+ =?utf-8?B?dHBGZDkyVW5oUkdRUk5iK1lHMkxndXZtampFZlQ2K3lEWlliSk1WVmhIdlp5?=
+ =?utf-8?B?Q2xGeWxlYk82M01CdFo4U050azNWZml5cWJvUGJLSVI2eHU3aGN3OWtQV3RT?=
+ =?utf-8?B?Zk13YlZKdlNKQ21xUGprbVF5a2xSalI3YWxESlNtVE1TYjZlelVmTk5hN0dr?=
+ =?utf-8?B?aitLL0xsd2k4ZDVhaEpRTjMvYVYzd05GR0pycEdWeVZYRHJ6NE5qbFduV3hU?=
+ =?utf-8?B?Q29LUXJwZklEU01LcXU5UzhmR3k4SGF0ZndEUHd3YnpiRXpBY0ZQVEpHOGtO?=
+ =?utf-8?B?dzFEK01KTHdmUkU3K0pyV21uVmt0TXUwSkEzRUNPSjBqenl1SVQrZ0Jvb0lG?=
+ =?utf-8?B?ck1OcGtLbW1EeEdEZVc3V25KU2FEbTh6RDR5SkQ0UzNQdDA4dHhta0E4dXVt?=
+ =?utf-8?B?NHBjTmlJeTJtQllWWk1VeFhZYm9JSnk3U1phakNPS1FVTFpMTDRCY3Jkb0dK?=
+ =?utf-8?B?Myt4Z2lFUlZBQnMydnhNRFBUdXlEd3lMaTZjaVBEb09GaUxjN3huZTd2dkFx?=
+ =?utf-8?B?aGJLTXEvVEc0TGxxcVM1a2t1MVBYZURRSHl4UGx3aVRjK01rMWNvY08vS2JP?=
+ =?utf-8?B?L0Zremh6VCs1SSszUkFEYjRvVE5Bd2VNSlloZFNmeWUxNWlEQVVDdnExZzAy?=
+ =?utf-8?B?V3N6eFNiMjV6VUJwZ0FRWHpCbTlZWlAzd1JZbWZuQ3hORWMyR0pmWHN3NGN6?=
+ =?utf-8?B?K25wUFBrTVJ0ckNMMTdFK0RORDdCTGpTL3E0OTJHMW9rZUQvblNWaDh4Mjlu?=
+ =?utf-8?B?ZW5TYWZxVXh0V1dFV0Z2MG54R0RmVlVYb2NpSzR4UERmSmZ0YkpHdmRGK1BU?=
+ =?utf-8?B?Y3V4ajFjclJvWHhZT1lNM1JWTExqeEludHJIeFN3ajVidmxlelBaTDhEeHhp?=
+ =?utf-8?B?T3Z2WE1FK1NRMUxLM3JweERvL0lBdjNpcW45K3hZU2VrR0hKUHF1UHN4eGwx?=
+ =?utf-8?B?M1cvcDM3WENwQ2dHajI5cDlteEpiejloeVVYazZ6SGdGMWZMaGpPblNOZWph?=
+ =?utf-8?B?MUEvSHdYd3VUWVk2dzcvVjFPbVhoYURVd2pwd2RiT1B2RGhJclRPbURsdnJn?=
+ =?utf-8?B?S1FRRG9UZUdmdmtIUkxqRkRSeUJlVUdLak1YSWpnZHZmZmticWJ3SVE3dmhK?=
+ =?utf-8?B?QlBwMVFUMHFQTmt4ck1Nb1BwVkxEZUg0b01aT2VlYlBEUFI1d0tXajd1RFk4?=
+ =?utf-8?B?UzNWb3hFcFRKWDczOXpSbG9DS05YbkhRQ3pQMHIwTUZCdStMSENQQlY3K0kr?=
+ =?utf-8?B?aWhLcWQrV0o0VVBjVDBwMW9xQU1aL21UUGJpanYxOTluRForYnQvdDVzdWVt?=
+ =?utf-8?B?TmRLUFBOcTJ5ZW8wS2dMWUJBaE40eXNIMFlaQnRLaUpsbVBOQ2JsOTQ0RnMz?=
+ =?utf-8?B?K09YOUMySWdLU3krNTJTdy9TRU1zeDA3ckl2aDg1MC80T0QyeWx3SWFMLzJH?=
+ =?utf-8?B?ZVRkNURsR0RPbmxJY05RTFpNRjVXanZSOWtiVTdNaFdodEthYTJBSWY4U3N2?=
+ =?utf-8?B?RStBbzc2QUIxK21TU1E4eUFBNUpvRElVSzBFU3FEQjNTWE5mYng5QXl0UkJJ?=
+ =?utf-8?B?M3N1RGJ5bGdzRlJkZW8zazAreXpzOCtMKzlvN3RISmpMQ1JLcU84VjhpZzRW?=
+ =?utf-8?B?Uzg3dXg5eGppOHhaYzE3ZHNBSHB0SDBJY3BMUDNyanJLNHNreDJDMFUyT2JM?=
+ =?utf-8?B?dWJ4QzZkLzR1L0NDaTVZTkgwQXNwdGVnQjd1cWRmR1JVeEE3ZVRHNUYxOW0w?=
+ =?utf-8?B?VVZaZXpPVkdzUGxXQ08vZk9FWFlLTEwveWVtQTdiaEx0NUgzQUdIRUFvRy9W?=
+ =?utf-8?B?QWhjRGtDbUdsT2NoZlA0ZzUrVXg1dEZZZDFnbFRBcmhTN2x2NDZJSm9IOTFW?=
+ =?utf-8?B?aGwxWHVoQ1F2Y0NQZ2MrVG1hMzQzeU5GSEVaNFB4OGtiMWdpT2EzcTBodENi?=
+ =?utf-8?B?UnpwSEE0bzBZUTUrTHpya2tFWFB4ZHRJa2ZJSVI5WDZNSEVoOCtDUVdnRSti?=
+ =?utf-8?B?QW1SajEyUWxnN2R1Tm5BTlJIWUE5enQyQXVHUTdRS213bllvQUVEU00yUFEr?=
+ =?utf-8?B?V1MydldNL1g0TENjbzFvd3ZjZFA0bU84TnRyWFBIOUxpY3M3RTQ3N1pGbC80?=
+ =?utf-8?B?WFBVRndXUlZWeU1GeWk3QVMyaDY2UnM1RXRMaXdVMXZ4ZEJpTEo4ZElXaE5j?=
+ =?utf-8?B?ZDNzeWhYWHBPMlUwZk1mMHAxU3ZVbFlEbEpJVGVpV2RESHpETVdQTmt0NEx0?=
+ =?utf-8?B?SVRNdjZYY3paczF4cHFSdWxDM3NkY2JVeC9Ucnk1NURMbUJGR1NuSWxWMXIx?=
+ =?utf-8?B?WlR2dkJTUE5wclk4VEkxakx6WVlORll5ODBkMWNTWmFiYnhOUmlQR2p3TUcw?=
+ =?utf-8?B?am55S1dlVm94Q0RtMHMyRFQ4aUdrdVFpR0dPVFlUaE8zYnMreUpSSGthR3BL?=
+ =?utf-8?B?Y0Y5S2wvbm92UVdHMEh2ejVDYnJ6S0JRVGRuWXUrYWlKQ2VvZHR0Ymo2L0E1?=
+ =?utf-8?B?M1FwbHlmb3JPSldGSW5CRmJDNlpaTUIwVnFqMjZYOHAwZGJHdG1YcWRpeDRk?=
+ =?utf-8?B?cjlCZlhDQTdFV2hzeEZnbnROdTNLU1lDd0ptYnJ2VG1FRjZvZnBQaTZuazdX?=
+ =?utf-8?B?c3RoNTFwdUJvalBvdDhXaWIySENSNE56ZmtrbWE2Q2s1ZHN6UDRXRm9WRloy?=
+ =?utf-8?B?RU1JbGorUDhQbTV3NTBFZHkvdktJdlJoVnN1bzFMbzl6cE9lalE1ZlRPcTlC?=
+ =?utf-8?B?TTVsZ3pod1JDYXV1U3Z2UnZ2cTZidGRUa2Jrc056czlBazdWaUJHWFFobU9o?=
+ =?utf-8?B?NWIvY05zRkZZMDlsZ0ZDNUNkWlpPTkxqYmJEN2dwd0RFd1NBNEg4ZTFrSkhv?=
+ =?utf-8?B?TTVYUndVeTN0U0RNV2RMTlBVc0N4Nzl1RC9hQUFKUWlhT0lFRnJuaTU3aHc0?=
+ =?utf-8?Q?j4v28wPMOVU0ZxTfJM3mxLdCtWQFX6XtQ=3D?=
+MIME-Version: 1.0
+
+--a089fb785f3651d00c7b37398f6754b7
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 520px) {
+  .u-row {
+    width: 500px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 500px !important;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+</style>
+  
+  
+
+</head>
+
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-color: transparent">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0;font-family:arial,helvetica,sans-serif;" align="left">
+        
+  <div>
+    <p><img alt="" src="http://e.starbucks.com/a/hBa6kL6AJvkyvB9njmRNvPuiHcp/spacer.gif" style="display:none;max-height:1px;max-width:1px;border:0;background-color:transparent;padding:0;min-height:1px;min-width:1px;height:1px;width:1px;" width="1" height="1"></p>
+<table width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff"><tbody><tr><td width="100%" valign="top" align="center">
+<table width="640" cellspacing="0" cellpadding="0" bgcolor="#006241"><tbody><tr><td width="10">&nbsp;</td>
+<td valign="middle" height="30" align="center">
+<div style="font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:17px;line-height:16px;color:#fefefe;"> A new Starbucks is open down the street. You can find us <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="text-decoration:none;color:#fefefe;line-height:18px;">here |&nbsp;&nbsp;View Online</a></div>
+</td>
+<td width="10">&nbsp;</td>
+</tr></tbody></table><table width="550" cellspacing="0" cellpadding="0"><tbody><tr><td width="20">&nbsp;</td>
+<td valign="middle" height="145" align="left">
+<div data-tip="Links in emails can be dangerous. This link is an example of link masking. Hackers use link masking to hide the actual URL of the link. Most browsers will display the true link by hovering the mouse pointer over it." style="display:inline;" class="indicator"><img alt="Starbucks®" src="http://f.e.starbucks.com/i/52/163466415/siren.png" title="Starbucks®" style="display:block;border:0;font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:12px;line-height:14px;color:#046240;" width="83" height="83"></div>
+</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td width="640" valign="top" bgcolor="#ffffff" align="center">
+<table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td valign="top"><img alt="Starbucks® happy hour | Team Thursday | New Ultra Caramel Frappuccino® Blended Beverage" src="http://f.e.starbucks.com/i/52/163466415/HH_May3_Offer_Animation.gif" title="Starbucks® happy hour | Team Thursday | New Ultra Caramel Frappuccino® Blended Beverage" style="display:block;font-family:Avenir, Roboto, Arial, 'Sans-Serif';color:#182e4b;font-size:32px;line-height:52px;font-weight:bold;" width="640" height="875" border="0"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td valign="top"><img alt="'kerəməl,'kerəˌmel,'kärməl" src="http://f.e.starbucks.com/i/52/163466415/HH_May3_Offer_Caramel.gif" title="'kerəməl,'kerəˌmel,'kärməl" style="display:block;font-family:Avenir, Roboto, Arial, 'Sans-Serif';color:#f4542f;font-size:24px;font-weight:bold;text-align:center;" width="640" height="55" border="0"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="60"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="60"></td>
+</tr></tbody></table><table style="min-width:640px;" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="100" border="0"></td>
+<td width="440" bgcolor="#ffffff">
+<table width="440" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td width="440" valign="middle" align="center">
+<div data-tip="Any time an email is offering free goods or services your suspicions should be raised." style="display:inline;" class="indicator">The first cup of coffee after printing the coupon is free!</div>
+</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td style="line-height:10px;" height="10"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="10"></td>
+</tr></tbody></table><table width="440" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td width="440" valign="middle" align="center"><span style="color:#182e4b;font-size:26px;line-height:38px;font-family:Avenir, Roboto, Arial, sans-serif;"> Frappuccino<sup style="font-size:16px;vertical-align:8px;">®</sup> Blended Beverage grande or larger* </span></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="40"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="40"></td>
+</tr></tbody></table></td>
+<td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="100" border="0"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="60"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="60"></td>
+</tr></tbody></table><table style="width:635px;" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td style="width:99px;"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="170" height="1" border="0"></td>
+<td style="width:424.503px;" align="center"><span style="color:#182e4b;font-family:Avenir, Roboto, Arial, sans-serif;"><span style="color:#182e4b;font-family:Avenir, Roboto, Arial, sans-serif;"><span style="font-size:26px;">Click</span></span></span>
+<div data-tip="Links in emails can be dangerous. This link is an example of link masking. Hackers use link masking to hide the actual URL of the link. Most browsers will display the true link by hovering the mouse pointer over it." style="display:inline;" class="indicator"><a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="font-size:26px;">here</a></div>
+<span style="color:#182e4b;font-family:Avenir, Roboto, Arial, sans-serif;"><span style="font-size:26px;">
+to print your coupon.</span></span></td>
+<td style="width:105.497px;"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="170" height="1" border="0"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="60" height="1" border="0"></td>
+<td width="520" bgcolor="#ffffff">
+<table width="520" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td width="520" valign="middle" align="center"><span style="color:#182e4b;font-size:16px;line-height:22px;font-family:Avenir, Roboto, Arial, sans-serif;">Cannot be combined with any other offer or discount. Code valid for one-time use. </span></td>
+</tr></tbody></table></td>
+<td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="60" height="1" border="0"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="40"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="40"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td><img alt="" src="http://f.e.starbucks.com/i/52/163466415/HH_May3_Offer_Bottomfetti.gif" style="display:block;" width="640" height="147" border="0"></td>
+</tr></tbody></table></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td style="line-height:1px;" width="550" height="1" bgcolor="#808080"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="1"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><div style="font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:18px;line-height:35px;color:#5c5c5c;letter-spacing:1px;"><a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:35px;color:#5c5c5c;text-decoration:none;">PRIVACY POLICY</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:35px;color:#5c5c5c;text-decoration:none;">STORES</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:35px;color:#5c5c5c;text-decoration:none;">TERMS OF USE</a></div>
+<table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td style="line-height:1px;" width="550" height="1" bgcolor="#808080"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="1"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td width="25" height="5">&nbsp;</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td width="450" valign="top" align="center">
+<div style="font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:14px;line-height:24px;color:#5c5c5c;letter-spacing:1px;"><br> Ref:18-31-Per-8-1-OTH <br><br> If you would like to change the format in which you receive our emails, please click <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">HERE</a>.<br><br> We've contacted you because you have opted in to receive news and promotional email from <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#5c5c5c;text-decoration:none;">Starbucks.com</a>. Your address is listed as <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;text-transform:uppercase;">peng.liu@wisc.edu</a>. To
+<a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">UNSUBSCRIBE</a> from our email list <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">CLICK HERE</a>.<br><br> This email is sent from an account we use for sending messages only. So if you want to contact us, don’t reply to this email – we won’t get your response. Instead use this&nbsp;<a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">WEB&nbsp;FORM</a>.<br><br><a style="line-height:24px;color:#5c5c5c;text-decoration:none;">P.O. Box 93490 Seattle, WA 90210</a>. <br><br></div>
+<div style="font-family:'Times New Roman', Times, serif;font-size:16px;line-height:30px;color:#9c9c9c;font-style:italic;letter-spacing:2px;">© 2021 Starbucks Coffee Company. <br> All rights reserved.</div>
+<div style="font-family:'Times New Roman', Times, serif;font-size:16px;line-height:30px;color:#9c9c9c;font-style:italic;letter-spacing:2px;"></div>
+</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="80"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="80"></td>
+</tr></tbody></table></td>
+</tr></tbody></table><p>&nbsp;</p>
+<div style="display:none;white-space:nowrap;font:15px courier;color:#ffffff;">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+<p>&nbsp;</p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
+</body>
+
+</html>
+<img id="siq-image" data-id="02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="height: 1px; width: 1px;" src="http://coupononlineshoponline.com/phished/opened/02c29354-c0c7-4247-a5ad-4116cfbb81a0" alt=""/>
+
+
+--a089fb785f3651d00c7b37398f6754b7
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 520px) {
+  .u-row {
+    width: 500px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 500px !important;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+</style>
+  
+  
+
+</head>
+
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-color: transparent">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0;font-family:arial,helvetica,sans-serif;" align="left">
+        
+  <div>
+    <p><img alt="" src="http://e.starbucks.com/a/hBa6kL6AJvkyvB9njmRNvPuiHcp/spacer.gif" style="display:none;max-height:1px;max-width:1px;border:0;background-color:transparent;padding:0;min-height:1px;min-width:1px;height:1px;width:1px;" width="1" height="1"></p>
+<table width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff"><tbody><tr><td width="100%" valign="top" align="center">
+<table width="640" cellspacing="0" cellpadding="0" bgcolor="#006241"><tbody><tr><td width="10">&nbsp;</td>
+<td valign="middle" height="30" align="center">
+<div style="font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:17px;line-height:16px;color:#fefefe;"> A new Starbucks is open down the street. You can find us <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="text-decoration:none;color:#fefefe;line-height:18px;">here |&nbsp;&nbsp;View Online</a></div>
+</td>
+<td width="10">&nbsp;</td>
+</tr></tbody></table><table width="550" cellspacing="0" cellpadding="0"><tbody><tr><td width="20">&nbsp;</td>
+<td valign="middle" height="145" align="left">
+<div data-tip="Links in emails can be dangerous. This link is an example of link masking. Hackers use link masking to hide the actual URL of the link. Most browsers will display the true link by hovering the mouse pointer over it." style="display:inline;" class="indicator"><img alt="Starbucks®" src="http://f.e.starbucks.com/i/52/163466415/siren.png" title="Starbucks®" style="display:block;border:0;font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:12px;line-height:14px;color:#046240;" width="83" height="83"></div>
+</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td width="640" valign="top" bgcolor="#ffffff" align="center">
+<table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td valign="top"><img alt="Starbucks® happy hour | Team Thursday | New Ultra Caramel Frappuccino® Blended Beverage" src="http://f.e.starbucks.com/i/52/163466415/HH_May3_Offer_Animation.gif" title="Starbucks® happy hour | Team Thursday | New Ultra Caramel Frappuccino® Blended Beverage" style="display:block;font-family:Avenir, Roboto, Arial, 'Sans-Serif';color:#182e4b;font-size:32px;line-height:52px;font-weight:bold;" width="640" height="875" border="0"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td valign="top"><img alt="'kerəməl,'kerəˌmel,'kärməl" src="http://f.e.starbucks.com/i/52/163466415/HH_May3_Offer_Caramel.gif" title="'kerəməl,'kerəˌmel,'kärməl" style="display:block;font-family:Avenir, Roboto, Arial, 'Sans-Serif';color:#f4542f;font-size:24px;font-weight:bold;text-align:center;" width="640" height="55" border="0"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="60"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="60"></td>
+</tr></tbody></table><table style="min-width:640px;" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="100" border="0"></td>
+<td width="440" bgcolor="#ffffff">
+<table width="440" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td width="440" valign="middle" align="center">
+<div data-tip="Any time an email is offering free goods or services your suspicions should be raised." style="display:inline;" class="indicator">The first cup of coffee after printing the coupon is free!</div>
+</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td style="line-height:10px;" height="10"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="10"></td>
+</tr></tbody></table><table width="440" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td width="440" valign="middle" align="center"><span style="color:#182e4b;font-size:26px;line-height:38px;font-family:Avenir, Roboto, Arial, sans-serif;"> Frappuccino<sup style="font-size:16px;vertical-align:8px;">®</sup> Blended Beverage grande or larger* </span></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="40"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="40"></td>
+</tr></tbody></table></td>
+<td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="100" border="0"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="60"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="60"></td>
+</tr></tbody></table><table style="width:635px;" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td style="width:99px;"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="170" height="1" border="0"></td>
+<td style="width:424.503px;" align="center"><span style="color:#182e4b;font-family:Avenir, Roboto, Arial, sans-serif;"><span style="color:#182e4b;font-family:Avenir, Roboto, Arial, sans-serif;"><span style="font-size:26px;">Click</span></span></span>
+<div data-tip="Links in emails can be dangerous. This link is an example of link masking. Hackers use link masking to hide the actual URL of the link. Most browsers will display the true link by hovering the mouse pointer over it." style="display:inline;" class="indicator"><a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="font-size:26px;">here</a></div>
+<span style="color:#182e4b;font-family:Avenir, Roboto, Arial, sans-serif;"><span style="font-size:26px;">
+to print your coupon.</span></span></td>
+<td style="width:105.497px;"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="170" height="1" border="0"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="60" height="1" border="0"></td>
+<td width="520" bgcolor="#ffffff">
+<table width="520" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center"><tbody><tr><td width="520" valign="middle" align="center"><span style="color:#182e4b;font-size:16px;line-height:22px;font-family:Avenir, Roboto, Arial, sans-serif;">Cannot be combined with any other offer or discount. Code valid for one-time use. </span></td>
+</tr></tbody></table></td>
+<td style="line-height:0px;font-size:0px;" valign="top"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/080213-sbux-summer2-week8-d1-space.gif" style="display:block;" width="60" height="1" border="0"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="40"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="40"></td>
+</tr></tbody></table><table width="640" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td><img alt="" src="http://f.e.starbucks.com/i/52/163466415/HH_May3_Offer_Bottomfetti.gif" style="display:block;" width="640" height="147" border="0"></td>
+</tr></tbody></table></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td style="line-height:1px;" width="550" height="1" bgcolor="#808080"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="1"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><div style="font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:18px;line-height:35px;color:#5c5c5c;letter-spacing:1px;"><a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:35px;color:#5c5c5c;text-decoration:none;">PRIVACY POLICY</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:35px;color:#5c5c5c;text-decoration:none;">STORES</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:35px;color:#5c5c5c;text-decoration:none;">TERMS OF USE</a></div>
+<table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="20"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="20"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td style="line-height:1px;" width="550" height="1" bgcolor="#808080"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="1"></td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td width="25" height="5">&nbsp;</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0"><tbody><tr><td width="450" valign="top" align="center">
+<div style="font-family:Avenir, Roboto, Helvetica, Arial, sans-serif;font-size:14px;line-height:24px;color:#5c5c5c;letter-spacing:1px;"><br> Ref:18-31-Per-8-1-OTH <br><br> If you would like to change the format in which you receive our emails, please click <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">HERE</a>.<br><br> We've contacted you because you have opted in to receive news and promotional email from <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#5c5c5c;text-decoration:none;">Starbucks.com</a>. Your address is listed as <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;text-transform:uppercase;">peng.liu@wisc.edu</a>. To
+<a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">UNSUBSCRIBE</a> from our email list <a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">CLICK HERE</a>.<br><br> This email is sent from an account we use for sending messages only. So if you want to contact us, don’t reply to this email – we won’t get your response. Instead use this&nbsp;<a href="http://coupononlineshoponline.com/landing/02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="line-height:24px;color:#006241;text-decoration:none;font-weight:bold;">WEB&nbsp;FORM</a>.<br><br><a style="line-height:24px;color:#5c5c5c;text-decoration:none;">P.O. Box 93490 Seattle, WA 90210</a>. <br><br></div>
+<div style="font-family:'Times New Roman', Times, serif;font-size:16px;line-height:30px;color:#9c9c9c;font-style:italic;letter-spacing:2px;">© 2021 Starbucks Coffee Company. <br> All rights reserved.</div>
+<div style="font-family:'Times New Roman', Times, serif;font-size:16px;line-height:30px;color:#9c9c9c;font-style:italic;letter-spacing:2px;"></div>
+</td>
+</tr></tbody></table><table cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td height="80"><img alt="" src="http://f.e.starbucks.com/i/52/163466415/spcr.gif" style="display:block;border:0;" width="1" height="80"></td>
+</tr></tbody></table></td>
+</tr></tbody></table><p>&nbsp;</p>
+<div style="display:none;white-space:nowrap;font:15px courier;color:#ffffff;">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+<p>&nbsp;</p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
+</body>
+
+</html>
+<img id="siq-image" data-id="02c29354-c0c7-4247-a5ad-4116cfbb81a0" style="height: 1px; width: 1px;" src="http://coupononlineshoponline.com/phished/opened/02c29354-c0c7-4247-a5ad-4116cfbb81a0" alt="">
+
+
+
+--a089fb785f3651d00c7b37398f6754b7--

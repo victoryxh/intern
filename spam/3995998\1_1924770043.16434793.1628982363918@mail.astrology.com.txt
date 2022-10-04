@@ -1,0 +1,661 @@
+Received: from SA2PR06MB7530.namprd06.prod.outlook.com (2603:10b6:806:140::9)
+ by SN6PR06MB5102.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 23:06:07 +0000
+Received: from BN1PR13CA0008.namprd13.prod.outlook.com (2603:10b6:408:e2::13)
+ by SA2PR06MB7530.namprd06.prod.outlook.com (2603:10b6:806:140::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16; Sat, 14 Aug
+ 2021 23:06:06 +0000
+Received: from BN8NAM11FT020.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:e2:cafe::e0) by BN1PR13CA0008.outlook.office365.com
+ (2603:10b6:408:e2::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4436.11 via Frontend
+ Transport; Sat, 14 Aug 2021 23:06:06 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ BN8NAM11FT020.mail.protection.outlook.com (10.13.176.223) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sat, 14 Aug 2021 23:06:05 +0000
+Received: from mail1.mail.astrology.com ([96.46.137.56])
+ by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU05KFLQU4RX60@smtp4.wiscmail.wisc.edu> for
+ jsweckmu@facstaff.wisc.edu; Sat, 14 Aug 2021 18:06:05 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=13%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_90_100 0.1, HTML_95_100 0.1, HTML_FONT_INVISIBLE 0.1,
+ BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0, DATE_TZ_NA 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, FONT_STYLE_0PT 0, HREF_LABEL_TEXT_NO_URI 0,
+ IMGSPAM_TABLE_1 0, KNOWN_MTA_TFX 0, LINK_TO_IMAGE 0, LIST_HEADER 0,
+ OBFUSCATION 0, REPLYTO_SAMEAS_FROM 0, SENDER_NO_AUTH 0, SPF_PASS 0,
+ STYLE_RATWARE_REF 0, SXL_IP_TFX_WM 0, URI_ENDS_IN_HTML 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BANNER_TRUSTED_SENDER 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CT 0, __CTE 0, __CTYPE_HTML 0,
+ __CTYPE_IS_HTML 0, __DATING_PHRASE 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __FRAUD_MONEY_DENOMINATION 0, __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HEADER_ORDER_FROM 0, __HIDDEN_HTML_CONTENT 0,
+ __HREF_LABEL_IMG 0, __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0,
+ __HTML_HREF_TAG_X2 0, __HTML_TAG_CENTER 0,
+X-Wisc-Doma:
+ bounce-xrgrjrdbbtjpsrjtdbvscsvgggtnsscqqnn@mail.astrology.com,mail.astrology.com
+X-Wisc-Env-From-B64:
+ Ym91bmNlLXhyZ3JqcmRiYnRqcHNyanRkYnZzY3N2Z2dndG5zc2NxcW5uQG1haWwuYXN0cm9sb2d5
+ LmNvbQ==
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.230016,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.14.5840001,
+ SenderIP=[96.46.137.56]
+X-Wisc-DKIM-Verify:
+ bounce-xrgrjrdbbtjpsrjtdbvscsvgggtnsscqqnn@mail.astrology.com,mail.astrology.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=class;
+ d=mail.astrology.com;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:
+ Content-Transfer-Encoding:List-Unsubscribe; i=info@mail.astrology.com;
+ bh=j13m02ZaffMg5FEtE3aqyXK+81W9JkMs0T/0poWB108=;
+ b=bMj+puVZYBmTP6DrLDLfbqcTEvBySxF0WfW4KDvmNn5wgJead83uuuBr8GkMAl4egTYNeyTlqoHi
+   Hoxdh09aA/GrKoq/z9+1ROwVlg//d+jndPqLoUipD9nU5vV3Qy6MSqmyHSs7Ih8auZPxMG7OlBF3
+   UOUcZVEOk2Z0USMdIlo=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=class;
+ d=mail.astrology.com;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:
+ Content-Transfer-Encoding:List-Unsubscribe;
+ bh=j13m02ZaffMg5FEtE3aqyXK+81W9JkMs0T/0poWB108=;
+ b=eqAqqQdBq3Ee2wstBczXqJv7jrKELMj5fcpVgHBfFfc3EGNfKpw/fLkdrjYKQf+bsL7QUDv+9AtU
+   ZKXwB0/Yyv+mATvuTW1/u95N2d+hyKDBnGZFQZH5yR5QLZ7NzXCNr8GJeZ64NU48HwV/7brRJ8Fl
+   D7aVZ9u1wtr974lwUPw=
+Received: by mail1.mail.astrology.com id h3165o2q2ek8 for
+ <jsweckmu@facstaff.wisc.edu>; Sat,
+ 14 Aug 2021 18:06:04 -0500 (envelope-from <bounce-xrgrjrdbbtjpsrjtdbvscsvgggtnsscqqnn@mail.astrology.com>)
+Date: Sat, 14 Aug 2021 18:06:03 -0500 (CDT)
+From: SilverSingles Info <info@mail.astrology.com>
+Reply-to: "Astrology.com" <info@mail.astrology.com>
+To: Joan <jsweckmu@facstaff.wisc.edu>
+Message-id: <1924770043.16434793.1628982363918@mail.astrology.com>
+Subject: Stress-free dating for Singles Over 50. Join now!
+Content-type: text/html; charset=UTF-8
+Content-transfer-encoding: quoted-printable
+X-HORO: uhfccynfywcfshqhsmqhqfnqgf
+ zmmckkzzbmdhgvbhzdwpqkdvgzdjnhjmsnpnhffspgmnpshfqmcmqyyy hmhhmqnfgq
+List-Unsubscribe:
+ <mailto:unsub-575166-74857-A889CCAAD8F14BD1AF372CFB4AFE51E8@mail.astrology.com>
+Return-Path: bounce-xrgrjrdbbtjpsrjtdbvscsvgggtnsscqqnn@mail.astrology.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 23:06:06.0141
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3b6e0348-b345-47a9-e9e7-08d95f78186c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT020.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 3b6e0348-b345-47a9-e9e7-08d95f78186c
+X-MS-TrafficTypeDiagnostic: SA2PR06MB7530:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1417;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:SFE;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 23:06:05.8921
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3b6e0348-b345-47a9-e9e7-08d95f78186c
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT020.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA2PR06MB7530
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3393149
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	wl:1;pcwl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(520004051)(702028)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?b3dsMEdEUDYzQ1pEYkI4Slc1Q01XT1l4V09JaFhUK0RqaFVRQ1J0T24xVVBE?=
+ =?utf-8?B?d0RmRW82WXlPSEJ6NFk4a2tKRTJjQ051VTlOMXdVMFdGYmF5ZlMrTXFhdnow?=
+ =?utf-8?B?aEtwUUhhZUdXOG0vUUJLYmZKbDFSc1Z4RHdGdC9TREs1Lzcya0c0SmM1aVdW?=
+ =?utf-8?B?cHRKK2JZVHhnTVBYRk1hQjIxZCtQMVlXeStKQ1FPeXlsSnJrbWhkL2xqZ2dk?=
+ =?utf-8?B?S0dwSVZnZkZRellyVUtwaDl2QTNwNTEvaEg1cG5mS0dPcytzeFVVUGxvZmhE?=
+ =?utf-8?B?S2VuWU44eU14Lzk1U2M2VE1vU0F2aGJSWTdZQkYwdWx3SjZPbzkxYVp3TWdo?=
+ =?utf-8?B?WldVS2xPRlp2YVdaS3VVbjZkSEQ4dmYvV2tIWE9sVms3RTdXYWtJdUZ4T0Fh?=
+ =?utf-8?B?aXpDNlZXRSsxWW9ERFhpcWNjeWR1NFlWSnFZbUNhSEN6YWxwTWJDcThYY3Bu?=
+ =?utf-8?B?Uk9xMWJyQ2ZIcnhTQVVBSkpjZGtHbnNBQ2pMTHZIMFNwemhBZ3BGblduVEZT?=
+ =?utf-8?B?ZExOVkhQSzhDeGp3c3daNmhGdzdjaTZnazdxNWpVN1M0SGlnV3VpVXByTkFi?=
+ =?utf-8?B?dVV5V0dlaDlURVVCRDNqMWxac3R2TEQvVmVEVzMvbE9JRS9GSkhSS2paNmhH?=
+ =?utf-8?B?ZFpFb1gzOVNiazFveEpRMFQvdlZlZEd3ZjEwY1JKQjVWRlRpSjFRZGRJc2M1?=
+ =?utf-8?B?czVEMlNVSVNscE82WlNHTkxtaU9SdnoxV3JJWWxSeUlySmhPOGlReGNvYWVa?=
+ =?utf-8?B?YzJ5bkhVUy9BcEhWZDU1TUhqNVhYMzBKZ05NcGtYencxV2l1eWx2d0Fwbzh4?=
+ =?utf-8?B?eG9GUWxLazhMQmVVYnREcTRJeTJuc3VMRHdKaDdraGM3bGNVT0RQQ1NnOUtK?=
+ =?utf-8?B?ZWtXS1VyNzRYdFFvRGFXNmsxK0QrR3NKQ0psWGZ3M3NkbjVtVURSTkVzWVFB?=
+ =?utf-8?B?bmpOY2V2VzQ0dFRkZVZTRk43TkRzNW83SDhhdHUvZ0R6UW1VeDFRSlRxeTRo?=
+ =?utf-8?B?Z2VaVDRxcDU3eHF4RytXWUlweTVHTDVWRHN3bFArVjlJeFVWZXRVcDlyWjRa?=
+ =?utf-8?B?M2hxVmZPZVZESjZTS1NrMFpUem1RTTdTVFduTkJJVHlMWG9UdHY4Z2czRWZh?=
+ =?utf-8?B?b2FtMlQ5cnBQN3puQTJIbk01TmN1bFJuQzlpRWZwTHcrWmNQRitSeFI2blBr?=
+ =?utf-8?B?K3pka3dGcVpJY3Zsc3Y5TlllN3dDMWRlS2RVOW83RGluU2tQOXYwNThLOHpD?=
+ =?utf-8?B?Vk1VVG95ekw0NGdmZVU3SE82RkhUTnBxVlVreTdOcHQ1aTJTdDVJTTdpQkF6?=
+ =?utf-8?B?b3NTenNzcUVNTU9nNnZCb1doZkd4YTNnbjZ3YTU1M1dxVGtxaFgxNGpuR1RW?=
+ =?utf-8?B?aFFvSEsxRHFYcHUzU3VxWDdVd0FmR1lKcFlCdmQrOURYN3UyVnJGNFl2OGxP?=
+ =?utf-8?B?ck5KZFRwMEZTcmJsK1NCSUhOMzFPejUxYzJHL0E3dmlBOFFUK3RGRmE2ayti?=
+ =?utf-8?B?ODlBSW9RYUxrcGRFd1lCQ0hkVzFrZmF1dlJSQU9iYTdRWkgxb1lycm90Z0Vt?=
+ =?utf-8?B?VE1VK3VGYTF6RWZOZUJ4TjVyRjA1Z0prQVJXR2owSy9nL1ZDS2xaNWt1QzZX?=
+ =?utf-8?B?MmRXZWRqd0Z2S0R0blhYZHZWd1U0UTJUaUN1T05aS2lXNmpVeWJHNEZ5dVFL?=
+ =?utf-8?B?VW4yRW1ZeHhmMndaNHA3cSsrTzROUUZQK1F5V1RnMWNXYjRQd0FGMmVtSTZ3?=
+ =?utf-8?B?dStvdWJXMFdsWDlpbkVyd00zcDlXTU1PUTk4V05jYS8yTlZlMU05SERhOWN4?=
+ =?utf-8?B?SW1IUXlWbzh0czl0YklpL3ZtY1l3a2F1VzRZK3MrL0lPYmZ4NTBEY3d3cXhw?=
+ =?utf-8?B?MjZUNVRKazg0LzZxRVhrdysyMUQ5WHVHQ3JtY2pqeG42NTBkdFFEbzUzZXlB?=
+ =?utf-8?B?dm0wa1JwbzFYWWNaL2cvaElkSWtvMURWdFllckJvWmVBNzA0SHdKdzZIZTRB?=
+ =?utf-8?B?VUpHQmxXajZnakNOVFJhaTZnSlhNU0JmMXNDa0NRSWxROXRCZUJIQXNVNUhk?=
+ =?utf-8?B?ZGJTbUJlMENDVWRXbUZtYTRmOEdiM0FEd29ERk9aYTUxdDV1SHUxM0hNNHZ5?=
+ =?utf-8?B?UXhBM0VXYTZRd2JnRUkwMEV3Q2F6SW0zWVBMYUxyMjNUOE1Jc2dwYlJLTU9D?=
+ =?utf-8?B?eU9lTVFrdVFVbzZLU1B3YnFlMDRNeDVybElxbTdDQ3RNdm43b1AxbWNKYkZW?=
+ =?utf-8?B?bmx3VkhSbXdNclNUYTllNitwY09jRlhYT1V3T0k4OW1jWmlOQkdqeUJDWmNw?=
+ =?utf-8?B?MFpldVgxZGwwMjRWZHV2V05Pd1JDMVRNaGJ5UWo1TWJsSVc2MVVZWEFFQjNN?=
+ =?utf-8?B?aU1MSFBsVEk2M2lxNEpvNDA5QVlTRlBmZ04wOGhrd0dSM1JsZXRSVlJicU1E?=
+ =?utf-8?B?Z3RsL2NIM0xZNWdzWFRXcFdOdmhRdysrMzA2MzRyeFpnTDBORGUyZnFDVXBa?=
+ =?utf-8?B?KzN6cmdJaG9qcVREemhEZ0JVeVFEeVpYNFNxcUJhNGhWelY3R2gvbDJuL3d5?=
+ =?utf-8?B?QlVreWEvTnJKZnJWUU5vUTdMcWVrdzNRMVUvTnMyblQ5Y0RzZ1NPWlpBOVNI?=
+ =?utf-8?B?dDl4MXVCRUxiMkdqQTRsdHo4ZmlYR3E0RWwrRGR4akFnbzNRc0hZRVYrZ29t?=
+ =?utf-8?B?dGVMNG9kNmk5bTBEcm9jZXZGeW11M0RlbkJxOG83b0ZRY29tbFhRbmJvRVRV?=
+ =?utf-8?B?dE5QL1l5Vld5bG9RT1hBdnVOc254N2hkbzZvQ2FoQ3Njb3RrbE5vb3ZOTE10?=
+ =?utf-8?B?OHN0MkROSWJienk0emhjRlBtM2pEYVJVV3pjVG9LcHpXUDYvN1QzR3g2bUR4?=
+ =?utf-8?B?eHR5N0FoNyt1VEgvUFE4aWpYcGMyWklGR3k2YXVDY1p4M1BaWjBDMkVOVmt5?=
+ =?utf-8?B?TG9WTjZYelVYeVVQSENjcmZ3RS9ndWQrcXN6cWxIb1pIS3BOUXRHZ3gzRzFU?=
+ =?utf-8?B?b0MxcmpEa09jaUprWklCYXRERGRzNkhjWDJqOHpSYUxTb0dKcU8wWXRveUFn?=
+ =?utf-8?B?MXZkYUN3bUV3ZjVieVd0N0daMkRuK1h4REEySGlldy83YlJCOG9BNjRPNUhO?=
+ =?utf-8?B?L0N3cElWdmxvT2JOdUk2Rkh1cWxaRTBZcXg2V1lFc2JYeEVJbys4eFdJZ09S?=
+ =?utf-8?B?Z3BOMW0rbEthQmYyM21BU1gvaDhwU1JFVXJCVlAxcW5NUUppblo2Ulo2OHNX?=
+ =?utf-8?Q?YAA4MWGVVQfpPJMsdDFIS2iD6u/PGUCGTVO74YZxdCnbMIJ?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>find love this spring</title>
+	<!--[if !mso]>
+ <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+ <!=3D=3D<![endif]-->
+	<style type=3D"text/css">
+ #outlook a {
+ padding: 0;
+ }
+ .ReadMsgBody {
+ width: 100%;
+ }
+ .ExternalClass {
+ width: 100%;
+ }
+ .ExternalClass * {
+ line-height: 100%;
+ }
+ body {
+ margin: 0;
+ padding: 0;
+ -webkit-text-size-adjust: 100%;
+ -ms-text-size-adjust: 100%;
+ background-color: #e4e7e9;
+ }
+ table,
+ td {
+ border-collapse: collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+ overflow: hidden !important;
+ }
+ img {
+ border: 0;
+ height: auto;
+ line-height: 100%;
+ outline: none;
+ text-decoration: none;
+ -ms-interpolation-mode: bicubic;
+ }
+ p {
+ display: block;
+ margin: 13px 0;
+ }
+ a {
+ text-decoration:none;
+ }
+ .ButtonCTA{
+ -webkit-transition: all 500ms ease;
+ -moz-transition: all 500ms ease;
+ -ms-transition: all 500ms ease;
+ -o-transition: all 500ms ease;
+ transition: all 500ms ease;
+ }=20
+ .ButtonCTA:hover{
+ background-color:#1cb2c8!important;
+ }=20
+=20
+ @media screen and (max-width: 540px) {
+ .heart{max-width:100px!important;}
+ .t1{font-size:16px!important;line-height:18px!important;}
+ .headline2 {font-size: 26px!important;line-height: 30px!important;}
+ .headline3 {font-size: 20px!important;line-height: 24px!important;}
+ .ButtonCTA {width:220px!important;font-size: 14px!important;}
+ .footer{padding-left: 20px; padding-right: 20px!important;}
+ }=20
+ @media screen and (max-width: 400px) {
+ .heart{max-width:80px!important;}
+ .t1{font-size:14px!important;line-height:18px!important;}
+ .headline2 {font-size: 24px!important;line-height: 26px!important;}
+ .headline3 {font-size: 20px!important;line-height: 24px!important;}
+ .ButtonCTA {width:220px!important;font-size: 14px!important;}
+ .footer{padding-left: 20px; padding-right: 20px!important;}
+ }
+	</style>
+	<!--[if !mso]>
+ <style type=3D"text/css">
+ @media only screen and (max-width:480px) {
+ @-ms-viewport {
+ width: 320px;
+ }
+ @viewport {
+ width: 320px;
+ }
+ }
+ </style>
+ <!=3D=3D<![endif]--><!--[if mso]>
+<xml>
+ <o:OfficeDocumentSettings>
+ <o:AllowPNG/>
+ <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml>
+<![endif]--><!--[if lte mso 11]>
+<style type=3D"text/css">
+ .outlook-group-fix {
+ width:100% !important;
+ }
+</style>
+<![endif]-->
+</head>
+<body style=3D"margin: 0px; background-color: rgb(228, 231, 233); cursor: c=
+ol-resize;"><img src=3D"https://ec97a1.efeedbacktrk.com/bqlsbbzmmssykbtpyjv=
+kpystfcylmtvjstngpnblplgbcl_zmpswsrllkrlmdfdmzzz.gif" width=3D"0" height=3D=
+"0" alt=3D"">
+<div style=3D"text-align: center;"><span style=3D"font-size:12px;"><span st=
+yle=3D"font-family:Arial,Helvetica,sans-serif;">A message from Silver Singl=
+es brought to you by Astrology.com</span></span></div>
+
+<div style=3D"background-color: #e4e7e9;">
+<div style=3D"margin:0px auto;max-width:640px;">
+<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"font-size:0px;width:100%;background-color:#fffff=
+f;">
+	<tbody>
+		<tr>
+			<td bgcolor=3D"#FFFFFF" style=3D"text-align:center;vertical-align:top;di=
+rection:ltr;font-size:0px;padding:0px;padding-top:0px;padding-bottom:0px; b=
+ackground-color:#ffffff;"><!--[if mso | IE]>
+ <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"640" alig=
+n=3D"center" style=3D"width:640px;">
+ <tr>
+ <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+ <![endif]-->
+			<div style=3D"margin:0px auto;max-width:640px;">
+			<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"max-width:640px;" width=3D"100%">
+				<tbody>
+					<tr>
+						<td align=3D"center" bgcolor=3D"#FFFFFF" style=3D"padding-top: 45px; =
+padding-left:25px; padding-right:25px; padding-bottom:45px;"><a class=3D"he=
+adline2" href=3D"http://click1.mail.astrology.com/ksmbffpqqbbjkfgljrwkljbgm=
+djhqgwrbgzvlzfhlhvfdm_zmpswsrllkrlmdfdmzzz.html" style=3D"cursor:auto;color=
+:#ffffff;font-family: 'Lato', Arial, sans-serif;font-size:32px;line-height:=
+34px; text-decoration:none;text-transform: uppercase; font-weight:600;"><sp=
+an style=3D"color:#0091A6;">You've received an </span></a> <a class=3D"head=
+line2" href=3D"http://click1.mail.astrology.com/rvkhwwlbbhhpfwqcpkyfcphqntp=
+rbqykhqsgcswrcrgwtk_zmpswsrllkrlmdfdmzzz.html" style=3D"cursor:auto;color:#=
+ffffff;font-family: 'Lato', Arial, sans-serif;font-size:32px;line-height:34=
+px; text-decoration:none;text-transform: uppercase; font-weight:600;"><span=
+ style=3D"color:#E03351;"> invitation</span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if mso | IE]>
+ </td></tr></table>
+ <![endif]--></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!--[if mso | IE]>
+ </td></tr></table>
+ <![endif]--><!--[if mso | IE]>
+ <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"640" alig=
+n=3D"center" style=3D"width:640px;">
+ <tr>
+ <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+ <![endif]-->
+
+<div style=3D"margin:0px auto;max-width:640px;">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"max-width:640px;" width=3D"100%">
+	<tbody>
+		<tr>
+			<td align=3D"center" bgcolor=3D"#FFFFFF"><a href=3D"http://click1.mail.a=
+strology.com/tcvdjjprrddkfjglkbsflkdghmkzrgsbdgtvltjzlzvjmv_zmpswsrllkrlmdf=
+dmzzz.html" target=3D"_blank"><img align=3D"center" alt=3D"" border=3D"0" h=
+eight=3D"" src=3D"http://d76jhp88vnxmm.cloudfront.net/10819/200324_realenve=
+lope_v1_n_EN_SiSi_main.gif" style=3D"max-width: 640px; height: auto; backgr=
+ound-color: #ffffff; font-family: 'Lato', Arial, sans-serif; font-size: 18p=
+x; line-height: 140%; color: #ffffff; margin: auto;text-transform: uppercas=
+e;" width=3D"100%"></a></td>
+		</tr>
+		<tr style=3D"width:100%;" width=3D"100%">
+			<td align=3D"center" bgcolor=3D"#ffffff" height=3D"" style=3D"font-size:=
+24px; word-break:break-word;font-size:0px;padding:25px 0px 25px 0px; backgr=
+ound-color:#ffffff;display:inline-block;width: 100%; max-width: 640px!impor=
+tant;" valign=3D"middle" width=3D"100%">
+			<div><!--[if mso]>
+ <v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-m=
+icrosoft-com:office:word" href=3D"https://seekhopclick.com/eb5d458b920b11bf=
+3///" target=3D"_blank" style=3D"height:56px;
+ v-text-anchor:middle;
+ width:290px;"
+ border:2px solid #ffffff;"=20
+ strokecolor=3D"#ffffff" strokeweight=3D"2pt"
+ fillcolor=3D"#0091a6">
+ <w:anchorlock/>
+ <center style=3D"color:#ffffff;
+ font-family:'Lato',Arial,Helvetica,sans-serif;
+ font-weight:400;
+ font-size:15px;text-transform: uppercase;">BROWSE YOUR MATCHES</center>
+ </v:rect>
+<![endif]--><a class=3D"ButtonCTA" href=3D"http://click1.mail.astrology.com=
+/skkzllphhzztfldbtcwfbtzdvstrhdwczdgmbglrbrmlsk_zmpswsrllkrlmdfdmzzz.html" =
+style=3D" background-color: #0091a6; color:#ffffff; display:inline-block; b=
+order:1px solid #ffffff; font-family:'Lato',Arial,Helvetica,sans-serif; fon=
+t-size:16px; line-height:50px; text-align:center; text-decoration:none; fon=
+t-weight:400; width:290px; -webkit-text-size-adjust:none; text-transform: u=
+ppercase; mso-hide:all;" target=3D"_blank"><span style=3D"color:#ffffff;">B=
+ROWSE YOUR MATCHES</span></a></div>
+			</td>
+		</tr>
+		<tr>
+			<td align=3D"center" bgcolor=3D"#FFFFFF" style=3D"word-break:break-word;=
+font-size:0px;padding-right:10px;padding-left:10px;padding-top:15px;padding=
+-bottom:15px;background-color:#ffffff;" width=3D"100%">
+			<div style=3D"text-align:center;"><a class=3D"headline3" href=3D"http://=
+click1.mail.astrology.com/cljkqqmzzkkfrqntfgvrtfknpjfdznvgknsctsqdtdcqjj_zm=
+pswsrllkrlmdfdmzzz.html" style=3D"cursor:auto;color:#ffffff;font-family: 'L=
+ato', Arial, sans-serif;font-size:24px;line-height:30px; text-decoration:no=
+ne;font-weight:400;"><span style=3D"color:#393939 ;">Find the passion of lo=
+ve and companionship online</span></a><br><a class=3D"headline3" href=3D"ht=
+tp://click1.mail.astrology.com/ufmzmmckkzzsbmdhsgvbhszdwpsqkdvgzdjnhjmqhqnm=
+pm_zmpswsrllkrlmdfdmzzz.html" style=3D"cursor:auto;color:#ffffff;font-famil=
+y: 'Lato', Arial, sans-serif;font-size:24px;line-height:30px; text-decorati=
+on:none;font-weight:400;"><span style=3D"color:#E03351 ;">this spring </spa=
+n></a> <a class=3D"headline3" href=3D"http://click1.mail.astrology.com/aplv=
+sslggvvnzswmnyrzmnvwdtnkgwryvwchmcskmkhstl_zmpswsrllkrlmdfdmzzz.html" style=
+=3D"cursor:auto;color:#ffffff;font-family: 'Lato', Arial, sans-serif;font-s=
+ize:24px;line-height:30px; text-decoration:none;font-weight:400;"><span sty=
+le=3D"color:#393939 ;">with 1 of 100,000 monthly singles<br>who register ea=
+ch month.</span></a></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!--[if mso | IE]>
+ </td></tr></table>
+ <![endif]--><!--[if mso | IE]>
+ <table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"640" align=3D"center" style=3D"width:640px;background-color:#fff=
+fff;">
+ <tr>
+ <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;ba=
+ckground-color:#ffffff;">
+ <![endif]-->
+
+<div style=3D"margin:0px auto;max-width:640px;background-color:#ffffff;">
+<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"font-size:0px;width:100%;background-color:#fffff=
+f;">
+	<tbody><!-- 3 Even Columns : BEGIN -->
+		<tr>
+			<td align=3D"center" bgcolor=3D"#FFFFFF" height=3D"100%" style=3D"paddin=
+g: 0px 0 10px;background-color:#ffffff;padding: 15px 0px 25px 0px" valign=
+=3D"top" width=3D"100%"><!--[if mso]>
+ <table bgcolor=3D"#ffffff" role=3D"presentation" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" width=3D"640" style=3D"background=
+-color:#ffffff;">
+ <tr>
+ <td align=3D"center" valign=3D"top" width=3D"640" style=3D"background-colo=
+r:#ffffff;">
+ <![endif]-->
+			<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation" style=3D"max-width:640px;backgro=
+und-color:#ffffff;" width=3D"100%">
+				<tbody>
+					<tr>
+						<td align=3D"center" bgcolor=3D"#FFFFFF" style=3D"font-size:0;backgro=
+und-color:#ffffff;" valign=3D"top"><!--[if mso]>
+ <table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" width=3D"640" style=3D"background-color:#ffffff;">
+ <tr>
+ <td align=3D"left" valign=3D"top" width=3D"210" style=3D"background-color:=
+#ffffff;">
+ <![endif]-->
+						<div class=3D"stack-column" style=3D"display:inline-block; margin: 0 =
+-2px; max-width:33.33%; min-width:190px; vertical-align:top; width:100%;bac=
+kground-color:#ffffff;">
+						<table bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"background-color:#ffffff;" width=3D"1=
+00%">
+							<tbody>
+								<tr>
+									<td bgcolor=3D"#FFFFFF" style=3D"padding: 10px 10px;background-col=
+or:#ffffff;">
+									<table bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" role=3D"presentation" style=3D"font-size: 14px;text-align: center=
+;background-color:#ffffff;" width=3D"100%">
+										<tbody>
+											<tr>
+												<td style=3D"background-color:#ffffff;"><a href=3D"http://click=
+1.mail.astrology.com/jnbzffnkkzzwhfdbwtchbwzdjqwrkdctzdpvbpfrbrvffs_zmpswsr=
+llkrlmdfdmzzz.html" target=3D"_blank"><img alt=3D"=F0=9F=94=92" border=3D"0=
+" class=3D"heart" height=3D"" src=3D"http://d76jhp88vnxmm.cloudfront.net/10=
+819/200324_realenvelope_EN_SiSi_hear01.gif" style=3D"width: 100%; max-width=
+: 126px; height: auto; background-color: #ffffff; font-family:'Lato', Arial=
+, sans-serif; font-size: 45px; line-height: 140%; color: #ffffff; font-weig=
+ht:900;" width=3D"110"></a></td>
+											</tr>
+											<tr>
+												<td style=3D"font-family:'Lato', Arial, sans-serif; font-size: =
+17px; line-height: 140%; color: #ffffff; padding-top: 10px;text-align: cent=
+er;background-color:#ffffff;"><a class=3D"t1" href=3D"http://click1.mail.as=
+trology.com/kphbffpqqbbjkfgljrwkljbgmdjhqgwrbgzvlzfhlhvffl_zmpswsrllkrlmdfd=
+mzzz.html" style=3D"color:#ffffff;font-family:'Lato', Arial, sans-serif;fon=
+t-size:18px;line-height:24px; text-decoration:none;font-weight:700;"><span =
+style=3D"color:#0091A6;">STRESS-FREE<br>DATING</span></a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<!--[if mso]>
+ </td>
+ <td align=3D"left" valign=3D"top" width=3D"210" style=3D"background-color:=
+#ffffff;">
+ <![endif]-->
+
+						<div class=3D"stack-column" style=3D"display:inline-block; margin: 0 =
+-2px; max-width:33.33%; min-width:220px; vertical-align:top; width:100%;">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" width=3D"100%">
+							<tbody>
+								<tr>
+									<td style=3D"padding: 10px 10px;background-color:#ffffff;">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" style=3D"font-size: 14px;text-align: center;" width=3D"100%">
+										<tbody>
+											<tr>
+												<td style=3D"background-color:#ffffff;"><a href=3D"http://click=
+1.mail.astrology.com/icvtzzcqqttwkzfywbpkywtfvnwhqfpbtfrmyrzhyhmzzh_zmpswsr=
+llkrlmdfdmzzz.html" target=3D"_blank"><img alt=3D"=E2=9C=85" border=3D"0" c=
+lass=3D"heart" height=3D"" src=3D"http://d76jhp88vnxmm.cloudfront.net/10819=
+/200324_realenvelope_EN_SiSi_hear02.gif" style=3D"width: 100%; max-width: 1=
+26px; height: auto; background-color: #ffffff; font-family:'Lato', Arial, s=
+ans-serif; font-size: 45px; line-height: 140%; color: #ffffff; font-weight:=
+900;" width=3D"110"></a></td>
+											</tr>
+											<tr>
+												<td style=3D"font-family:'Lato', Arial, sans-serif; font-size: =
+15px; line-height: 140%; color: #ffffff; padding-top: 10px;text-align: cent=
+er;background-color:#ffffff;"><a class=3D"t1" href=3D"http://click1.mail.as=
+trology.com/xcpnsscqqnntlsmdtpkldtnmhjtvqmkpnmyrdysvdvrssh_zmpswsrllkrlmdfd=
+mzzz.html" style=3D"color:#ffffff;font-family:'Lato', Arial, sans-serif;fon=
+t-size:18px;line-height:24px; text-decoration:none;font-weight:700;"><span =
+style=3D"color:#0091A6;">130.000+ NEW MEMBERS PER MONTH*</span></a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<!--[if mso]>
+ </td>
+ <td align=3D"left" valign=3D"top" width=3D"210" style=3D"background-color:=
+#ffffff;">
+ <![endif]-->
+
+						<div class=3D"stack-column" style=3D"display:inline-block; margin: 0 =
+-2px; max-width:33.33%; min-width:190px; vertical-align:top; width:100%;">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" width=3D"100%">
+							<tbody>
+								<tr>
+									<td style=3D"padding: 10px 10px;background-color:#ffffff;">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" style=3D"font-size: 14px;text-align: center;" width=3D"100%">
+										<tbody>
+											<tr>
+												<td style=3D"background-color:#ffffff;"><a href=3D"http://click=
+1.mail.astrology.com/djclssjwwllfksntfrzktflnhdfpwnzrlnbctbsptpcssr_zmpswsr=
+llkrlmdfdmzzz.html" target=3D"_blank"><img alt=3D"=F0=9F=92=91" border=3D"0=
+" class=3D"heart" height=3D"" src=3D"http://d76jhp88vnxmm.cloudfront.net/10=
+819/200324_realenvelope_EN_SiSi_hear03.gif" style=3D"width: 100%; max-width=
+: 126px; height: auto; background-color: #ffffff; font-family:'Lato', Arial=
+, sans-serif; font-size: 45px; line-height: 140%; color: #ffffff; font-weig=
+ht:700;" width=3D"110"></a></td>
+											</tr>
+											<tr>
+												<td style=3D"font-family:'Lato', Arial, sans-serif; font-size: =
+15px; line-height: 140%; color: #ffffff; padding-top: 10px;text-align: cent=
+er;background-color:#ffffff;"><a class=3D"t1" href=3D"http://click1.mail.as=
+trology.com/alpvsslggvvnzswmnyrzmnvwdtnkgwryvwchmcskmkhssh_zmpswsrllkrlmdfd=
+mzzz.html" style=3D"color:#ffffff;font-family:'Lato', Arial, sans-serif;fon=
+t-size:18px;line-height:24px; text-decoration:none;font-weight:700;"><span =
+style=3D"color:#0091A6;">MEANINGFUL<br>CONNECTIONS</span></a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<!--[if mso]>
+ </td>
+ </tr>
+ </table>
+ <![endif]--></td>
+					</tr>
+				</tbody>
+			</table>
+			<!--[if mso]>
+ </td>
+ </tr>
+ </table>
+ <![endif]--></td>
+		</tr>
+		<!-- 3 Even Columns : END -->
+		<tr bgcolor=3D"#1E4047" style=3D"width:100%;">
+			<td align=3D"center" bgcolor=3D"#1E4047" height=3D"63" style=3D"font-siz=
+e:24px; word-break:break-word;font-size:0px; background-color:#1E4047;displ=
+ay:inline-block;width: 100%; max-width:45px!important;" valign=3D"right" wi=
+dth=3D"100%">&nbsp;</td>
+			<td align=3D"center" bgcolor=3D"#1E4047" height=3D"" style=3D"font-size:=
+24px; word-break:break-word;font-size:0px; background-color:#1E4047;display=
+:inline-block;width: 100%; max-width:135px!important;" valign=3D"middle" wi=
+dth=3D"100%"><a href=3D"http://click1.mail.astrology.com/djdlssjwwllfksntfr=
+zktflnhdfpwnzrlnbctbsptpcssm_zmpswsrllkrlmdfdmzzz.html" target=3D"_blank"><=
+img align=3D"auto" alt=3D"" border=3D"0" height=3D"" src=3D"http://d76jhp88=
+vnxmm.cloudfront.net/10819/200324_realenvelope_EN_SiSi_logo.gif" style=3D"m=
+ax-width: 135px; height: auto; background-color: #ffffff; font-family: 'Lat=
+o', Arial, sans-serif; font-size: 18px; line-height: 140%; color: #ffffff; =
+margin: auto;text-transform: uppercase;" width=3D"100%"></a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!--[if mso | IE]>
+ </td></tr></table>
+ <![endif]--><!--[if mso | IE]>
+ <table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"640" align=3D"center" style=3D"width:640px;background-color:#fff=
+fff;">
+ <tr>
+ <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:exactly;ba=
+ckground-color:#ffffff;">
+ <![endif]-->
+
+<div style=3D"margin:0px auto;max-width:640px">
+<table align=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"font-size:0px;width:100%;">
+	<tbody>
+		<tr>
+			<td align=3D"center" bgcolor=3D"#FFFFFF" colspan=3D"6" height=3D"55" sty=
+le=3D"font-size:24px; word-break:break-word;font-size:0px; background-color=
+:#ffffff;" valign=3D"middle">&nbsp;</td>
+			<td align=3D"center" bgcolor=3D"#FFFFFF" class=3D"footer" colspan=3D"7" =
+height=3D"4" style=3D"font-size:11px; color:#393939; font-family:Arial, Hel=
+vetica, sans-serif;" valign=3D"middle">*Average number of monthly<br>regist=
+rations globally, 2019.</td>
+			<td align=3D"center" bgcolor=3D"#FFFFFF" class=3D"footer" colspan=3D"7" =
+height=3D"4" style=3D"font-size:11px; color:#393939; font-family:Arial, Hel=
+vetica, sans-serif;" valign=3D"middle">Spark Networks Services GmbH -<br>Ko=
+hlfurter Stra=C3=9Fe 41/43 10999 Berlin</td>
+			<td align=3D"center" bgcolor=3D"#FFFFFF" class=3D"footer" colspan=3D"7" =
+height=3D"4" style=3D"font-size:11px; color:#393939; font-family:Arial, Hel=
+vetica, sans-serif;" valign=3D"middle">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!--[if mso | IE]>
+ </td></tr></table>
+ <![endif]--></div>
+
+<p style=3D"margin-top: 20px; font-size: 10px; padding-top: 20px; font-fami=
+ly:verdana; text-align:center;">This is an advertisement. <a href=3D"http:/=
+/click1.mail.astrology.com/jnfzffnkkzzwhfdbwtchbwzdjqwrkdctzdpvbpfrbrvffq_z=
+mpswsrllkrlmdfdmzzz.html">Unsubscribe</a> from this offer.<br>Spark Network=
+s, Attn: Silver Singles, 3300 N Ashton Blvd, Suite 240, Lehi, UT 84043.<br>=
+Spark Networks SE, a NYSE MKT Company (LOV)<br><br><br><span style=3D"line-=
+height:2;"><a href=3D"http://www.mail.astrology.com/Unsub.do?a=3Du&amp;e=3D=
+jsweckmu%40facstaff.wisc.edu&amp;mid=3D74857&amp;sid=3DA889CCAA-D8F1-4BD1-A=
+F37-2CFB4AFE51E8&amp;rid=3D575166&amp;lid=3D70">Unsubscribe</a>&nbsp;from <=
+a href=3D"http://click1.mail.astrology.com/gwwjnnmppjjdqnhcdksqcdjhgldyphsk=
+jhfrcfnycyrnnm_zmpswsrllkrlmdfdmzzz.html">astrology.com</a>&nbsp;partner ma=
+ilings. Visit the <a href=3D"http://click1.mail.astrology.com/vvpqmmyzzqqnb=
+mtfnkdbfnqtpjnvztdkqtchfcmvfvhmyf_zmpswsrllkrlmdfdmzzz.html?a=3Djsweckmu%40=
+facstaff.wisc.edu&amp;b=3D575166">subscription management page</a>.<br>Horo=
+scope.com, Inc. 182 Howard Street, Ste 826 San Francisco CA 94105</span></p=
+>
+<span style=3D"display: none;"><a href=3D"http://click1.mail.astrology.com/=
+fsgcrryllccwzrfdwbtzdwcfhgwslftbcfpjdprsdsjryj_zmpswsrllkrlmdfdmzzz.html?a=
+=3DA889CCAA-D8F1-4BD1-AF37-2CFB4AFE51E8&amp;b=3Dhfmchcvww">Link</a></span> =
+</body>
+</html>

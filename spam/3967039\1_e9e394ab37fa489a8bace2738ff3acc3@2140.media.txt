@@ -1,0 +1,537 @@
+Received: from PH0PR06MB7723.namprd06.prod.outlook.com (2603:10b6:510:ed::13)
+ by DS7PR06MB6775.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 23:09:11 +0000
+Received: from BN9PR03CA0547.namprd03.prod.outlook.com (2603:10b6:408:138::12)
+ by PH0PR06MB7723.namprd06.prod.outlook.com (2603:10b6:510:ed::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16; Fri, 13 Aug
+ 2021 23:09:10 +0000
+Received: from BN8NAM11FT050.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:138:cafe::48) by BN9PR03CA0547.outlook.office365.com
+ (2603:10b6:408:138::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13 via Frontend
+ Transport; Fri, 13 Aug 2021 23:09:10 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ BN8NAM11FT050.mail.protection.outlook.com (10.13.177.5) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Fri, 13 Aug 2021 23:09:10 +0000
+Received: from mail261.bms6.bmsend.com ([207.8.97.9])
+ by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS055OWWB8P180@smtp4.wiscmail.wisc.edu> for
+ jwagman@wisc.edu; Fri, 13 Aug 2021 18:09:09 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=14%, Hits= REPLY_TO_EMPTY 1.2,
+ FROM_NAME_ALLCAPS 0.1, HTML_70_90 0.1, SUPERLONG_LINE 0.05,
+ BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0, DATE_TZ_NA 0, DKIM_SIGNATURE 0,
+ FONT_STYLE_0PT 0, FONT_STYLE_1PT 0, HREF_LABEL_TEXT_NO_URI 0,
+ HREF_LABEL_TEXT_ONLY 0, LEGITIMATE_SIGNS 0, LINK_TO_IMAGE 0, LIST_HEADER 0,
+ LOCALE_CHINESE 0, OBFUSCATION 0, SINGLE_HREF_URI_IN_BODY 0, SPF_PASS 0,
+ SXL_IP_TFX_ESP 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0,
+ __BODY_TEXT_X4 0, __CHAR_CHINESE_UTF8 0, __COURIER_PHRASE 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DC_PHRASE 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FRAUD_INTRO 0, __FRAUD_URGENCY 0, __FREE_IMAGE_HOST 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __FROM_NAME_USPS 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_ID 0,
+ __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_SENDER 0, __HAS
+X-Wisc-Doma:
+ BOUNCE.C2B4C2.B874722A.11C149E.8E84B.bme@8E84B.clients.bmsend.com,2140.media
+X-Wisc-Env-From-B64:
+ Qk9VTkNFLkMyQjRDMi5CODc0NzIyQS4xMUMxNDlFLjhFODRCLmJtZUA4RTg0Qi5jbGllbnRzLmJt
+ c2VuZC5jb20=
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.230315,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840002,
+ SenderIP=[207.8.97.9]
+X-Wisc-DKIM-Verify:
+ BOUNCE.C2B4C2.B874722A.11C149E.8E84B.bme@8E84B.clients.bmsend.com,bmsend.com!pass
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; d=8E84B.clients.bmsend.com; s=bmdeda;
+	c=relaxed/relaxed; i=support@8E84B.clients.bmsend.com; t=1628896148;
+	h=subject:from:reply-to:to:date:message-id:list-unsubscribe:content-type:
+	mime-version;	bh=A3sRTeTtwk4kvxWtxrjR0TUqZmDAqgZyS75hPpHkEH8=;
+	b=nLvkV6TE7fe5ul6jDgCDxxC4QtWC91GDfPyQtphN96YRSB+2C3hWYVdt1vnjC7VMKz3WnDxfi1c
+	0eLx9mPFcD26cfCJsVDxop1ML0pBQLIRBLJTNBgxHM3HkkDzHSmwDy1doOFm0K9/BNQS83UOHp/j8
+	UfDA74iyITyg+Wr2au0=
+DKIM-Signature: v=1; a=rsa-sha256; d=bmsend.com; s=bmdeda; c=relaxed/relaxed;
+	t=1628896148;
+	h=subject:from:reply-to:to:date:message-id:feedback-id:list-unsubscribe:
+	content-type:mime-version;	bh=A3sRTeTtwk4kvxWtxrjR0TUqZmDAqgZyS75hPpHkEH8=;
+	b=DHsxxlyfNs3+LyMvRuFzmb2bGCmkXosF/m5nJrAMoQR2pTI8YPHQXl1EtoRfk24G66o7qcyP3co
+	n9m1zCrofH1nrOt+UX3LDMx2Wl+95cVC/5KnJJG5m5tG/d2/2dXHcnZAJgvpmv71DDzgB9Yoi5bug
+	JrmM2mxiTk9M/FLBdVc=
+From: "[USPS]" <support@2140.media>
+Date: Fri, 13 Aug 2021 19:09:08 -0400
+Subject: We were unable to deliver your package !
+Message-id: <e9e394ab37fa489a8bace2738ff3acc3@2140.media>
+Reply-to:
+X-Identify: <12760258_3094639146@benchmarkemail.com>
+X-CMC: 11C149E.B874722A
+X-Campaignid: 12760258
+X-SentFromRelay: mail261.bms6.bmsend.com
+X-SentFromServer: 207.8.97.9
+X-Report-Abuse:
+ =?us-ascii?q?http=3A=2F=2Fwww=2Ebenchmarkemail=2Ecom=2FAbuse=3F9tSN8Jgb1Car%2Br4oL%2BmO3?=
+ =?us-ascii?q?iCLdnAXRzalisvD%2FPNxPWNkC1Reka4zWBui%2Bq%2BQ%2BRSjq%2BY0UTwz?=
+ =?us-ascii?q?GiU%3D?=
+X-BM-User: 8E84B
+Feedback-ID: 583755:12760258:us:benchmarkemail
+X-Mailer: BME Mailer - **BME12760258-583755-3094639146**
+List-Id: 3094639146BM list <3094639146.583755@benchmarkemail.com>
+List-Unsubscribe:
+ =?us-ascii?q?=3Chttp=3A=2F=2Fwww=2Ebenchmarkemail=2Ecom=2Fud=3F9tSN8Jgb1Car%2Br4oL%2BmO3iC?=
+ =?us-ascii?q?LdnAXRzalisvD%2FPNxPWNkC1Reka4zWBui%2Bq%2BQ%2BRSjq%2BY0UTwzGi?=
+ =?us-ascii?q?U%3D=3E=2C?=
+ <mailto:unsub.12760258.3094639146@unsub.bmesrv.com?subject=unsubscribe
+ 12760258.3094639146>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+To: jwagman@wisc.edu
+Sender: "[USPS]" <support@8E84B.clients.bmsend.com>
+Content-type: multipart/alternative; boundary="=-7RsL/OGnXkfqp8l3ltYc8g=="
+Return-Path: BOUNCE.C2B4C2.B874722A.11C149E.8E84B.bme@8E84B.clients.bmsend.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 23:09:10.1977
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a18ce215-0604-4a7b-5b18-08d95eaf5bcb
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: a18ce215-0604-4a7b-5b18-08d95eaf5bcb
+X-MS-TrafficTypeDiagnostic: PH0PR06MB7723:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:zh-tw;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 23:09:10.0768
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a18ce215-0604-4a7b-5b18-08d95eaf5bcb
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB7723
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6735853
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UW1mRnh0TnlacHo3WDJpNnNuNkRvQnEwSXJDK3pWNnhPaFZiZ1hoZDBpWHdG?=
+ =?utf-8?B?ckVUOHFGRmNPcXpLeGt5RVZrenRmZTdBb3Y0dnEwOGRQVStBWktNNDZoNktN?=
+ =?utf-8?B?cXN1UG5INU9XSThHRS83bTczL092dFU4VjlBUkJESHRPbmcwS05TdTR0Q2Zh?=
+ =?utf-8?B?RTRtd1BXSWVSUk40cGUrRDBXaDhKT3FnamhRSWZvakxlUnpmbW9MT0d5TFBY?=
+ =?utf-8?B?U2lHNmN1L29iWCtUaFFvL2d5djlrYmlBTjlyNm1Zb1pkY3g3SURXYWRkMGs4?=
+ =?utf-8?B?YlJCWS8zZ04zbTduOEZ0bzFzTXZZc2tKR3ZHOUZaQ3FwNmxPdExIaUlsdEFm?=
+ =?utf-8?B?SlhBbzR6RXVnQ2gwM1VGVDFvMEl6WVpYU1ZFQld0NFF3L3BJU1BUVmE2eW5x?=
+ =?utf-8?B?T2I2QmdHRHlFMm9tU01hQ0ZhaXl6ZUw4N2RJRVh3R25QTlBSSGJKTkphYWwv?=
+ =?utf-8?B?cVlieXUyYlpzbDhtV05wczJ4TUxLL1RFaklrdW5zL2RxYk1YWko0Z3g5NUMy?=
+ =?utf-8?B?aXZJSU83ZUVxd000NjNGV1Y5eitRVWhBVHM0YTk5U0NWajQ5SVQ3aTF5U3FS?=
+ =?utf-8?B?NU8xU3Z3UG1xSjFRcmtmNzZ5ZE1tcXh2ZGhvc3dEbksrbnlLVk54N1oxemti?=
+ =?utf-8?B?YWlobC9tR0pnaytFS1ZRbkZzSlZyT1VjQlpDWkJvdjhWdDFhWVBBSWRSZ1Fo?=
+ =?utf-8?B?bXVZKzJHT2VsSjdla1czTnY2RitIZTVDZzk3RTllN29EVm16LzdlUHpsaCtV?=
+ =?utf-8?B?TWxrZXdYa3hMRUJtNEtscmpNNlNkUnJDKzk0TnVuZzZmQW5weVFybnVSUk9W?=
+ =?utf-8?B?aFg3NHN0STB0RjE1ZHVsSW1EeXRRWU82MlZlZFRaSnFUa2xPd3MzTjVKbEFw?=
+ =?utf-8?B?ckFoM3IvNFZqWjZRcXpJZFl4U2lnMG1EeUdLb3J0UDhTN3Y5UEJIV2krTG5Q?=
+ =?utf-8?B?YzhzQXorSXlMRkJMU0F5eUFDL0c3cW14MUxLVFE0T0lHUVl1eVlIVDRIYVUw?=
+ =?utf-8?B?aWFqSEhteEhsQjNZU2Y3WlRwU0ZBTGdyTlpzdFRQS0Z4ZklsVlBwTGFMNWtk?=
+ =?utf-8?B?ZXBIL1IyVjBBNkYwMXM2d0QzWHNoVFJYK0pLQURxWE03Nlp1UUJDOXB4NjVN?=
+ =?utf-8?B?SFM4ZDBiYy9NTWM1VDNBRW1ub0dVejIxYnpud01Jbkt0MEZ6MWdyaG56NXYr?=
+ =?utf-8?B?WE9ja2pHV2w2b2krZmhYcVlMajRFdHJWU3lxdVJTTFJtWEE2UnNOVmpQNUdH?=
+ =?utf-8?B?dnhucXNKWUhrYjU0ZTJ3aGthT0lqeVMrVmpzMmcrMEJFRGhhcS9WTGlHZ1JO?=
+ =?utf-8?B?Y0VMN1U5UndycnRXcmlrLzRVOUxqWXBXdWluakhZcDQyZHEvUlJwZjBjb2tq?=
+ =?utf-8?B?WFk1SlN4Z0xIa0JvamxhdkdKQklKbzZPd3NOU0ZoK2RLdzFuSWs0ajY1N3Rm?=
+ =?utf-8?B?VTBSRDlVNXZaOWhnVTc4SU53SFR0QkFOZGpOWHhleGt0OFAxbWdwNmo1aFhX?=
+ =?utf-8?B?alhXeHNQTFo5bTZBcDVSMzJxRVhpYkp1eXk4NEc3d2V5UWQ4bjd2NWdKNDJa?=
+ =?utf-8?B?VjFLOWFja3hrYmN6UlFTTHZJblo1SWFMMnBqbDNyTnR2eG1hN002V2hWWWNG?=
+ =?utf-8?B?bkw5SEExZWx3TlZueGFlOG5XdEVNOVJHdW9JMTdYaXVuQjJaMjdpWVdtSXpx?=
+ =?utf-8?B?MTdRZjIweHBpQXFKOUJtOXV2MTdJaTh4cm5WOEpjQ0tUVmdrS2prbXhlUVFj?=
+ =?utf-8?B?QnUwdjd6TjBWVjNkak01WkRjWklwa3hMd25mdUp2Uy9QQi82Y0NqTWNQU2Jt?=
+ =?utf-8?B?SzJWVHh2UVZJSzdLS0FaakJkRWF0ZjNLQW9Qd1NCSUtoNUtPS1pScldKdk5l?=
+ =?utf-8?B?RzZhMHNSSDlkSDlhZXhPT3BUb3VTVHpOSDhBSzg5eDh0NG85UVZVb2ZwVXBK?=
+ =?utf-8?B?bmpWd3lwNEV1STNPNWg0QWJoSEx3dS90amR3ZVF2V0llK3J5aTZ0SnpuQ0hT?=
+ =?utf-8?B?dHNVb3RtaUlXQW1hNldDamJLT3JzMGNLYUFWL0JOMWxyVG5Zb200NGJaSm5M?=
+ =?utf-8?B?S0lyTStrUkVFczZVd0tqcFJiQTB3UDdFQW9HZlZMTVBYTnBma21SaGJITUcr?=
+ =?utf-8?B?WERDMG5WdEJBYzRsY21CN2hYMEtPVHJ2bkZjQkp6UCtpc0lXUzV0U3hwY0pL?=
+ =?utf-8?B?OUFBMjNjbTdMekFMWTUwVm1jMWxwdi9veksyZVV0cEZHbGxQUkhGbHZIVFN5?=
+ =?utf-8?B?bk9TUElTTGRNUmkyS0EzWEQ3TTMxSUFpdVFLaXpiWXZzMDdwWGZGK3dyUXVu?=
+ =?utf-8?B?cTAvQUV5S0RwYXI3MkJodzR5MDdTSFF2QU9ObWRVVndnTXVIOXZaTHpDMEJq?=
+ =?utf-8?B?c1ZWTWYydFdjZnc1VWZhbDc1b05nbVB4dHVPYjFUN3pkR21rQ2NsdzVXS3VE?=
+ =?utf-8?B?UGxCUFM4akRDeVdxZEFEUzdjdHVUVGdOYURWZjB3azJTQms0SHFIMnU2d2hB?=
+ =?utf-8?B?OVp0ZEt2ZkRaR01WSm1uKzdIVUtOR0k3d0tEbzBTOHAvQXgxcmJFeTFvaHNa?=
+ =?utf-8?B?NEQ4MjFnRVBkdmJna0xvbFViWFBHMjRkSGFkNFY0WENheTBCVXJndnZJcFFi?=
+ =?utf-8?B?dlRtNzJtSWVtNFJXZGFwWGM5VjhnV045c284b3QrenBiUWxzaTdmSXpnVm5N?=
+ =?utf-8?B?ak5nT2c2QzJaYjRuVE1kdzNvWFkwVjZQc2hVemx3Z0xjVm9hMjhXbmZTMWR3?=
+ =?utf-8?B?MTNKTzZLN0IrWHlrUlBOY3psMmdGVmRUZ0lleUlwOG10SllKRStiYWczeU1o?=
+ =?utf-8?B?M2RiKzltR1N3Mkk0YWdJVmNVaDIrWEdySHM2MjdSb05yTEhudFFqNzlzMW9n?=
+ =?utf-8?B?QUVCcHFwemgxY3p3WmFxUFZBcmFLMFNOc0x1VktDL1R0ei9DQm1sQXlVeXZp?=
+ =?utf-8?B?Nytya3pISWh4bFphcCt3dFJndnNJT1NPVnZRUk9OeVU4N0FmVDMxL09KenVL?=
+ =?utf-8?B?YVVpTVVMQnZuR09zbEQxSjRieFlPMVlTNlRnR1hpN0M1cEZGMHpyNGZ0aE5x?=
+ =?utf-8?B?UHJuRXd6R251Y3NDRVBjQ0djWHZqbzBkbWxHQXFmRlVzZGdDVHF5YUVjNmtR?=
+ =?utf-8?Q?3WJUbNdJ3?=
+MIME-Version: 1.0
+
+--=-7RsL/OGnXkfqp8l3ltYc8g==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+ZGVhciBjbGllbnQsCiAgd2Ugd2FudCB0byBtYWtlIHN1cmUgeW91J3JlIHRoZSBvd25lciBv
+ZiB0aGlzIGFjY291bnQuCgogCWRlYXIgY3VzdG9tZXIgLAoKICB3ZSdyZSBzb3JyeSB0byBs
+ZXQgeW91IGtub3cgdGhhdCB5b3VyIHBhY2thZ2Ugd2hpY2ggYXJyaXZlZCBvbiAxMy8wOC8y
+MDIxIHdpbGwgYmUgc2VudCBiYWNrICwKdGhpcyBtYXkgaGFwcGVuIHdoZW4gdGhlIHJlY2Vp
+dmVyJ3MgYWRkcmVzcyBpcyBpbmNvcnJlY3QuCnRvIHN1Ym1pdCBhIHJlZGVsaXZlcnkgcmVx
+dWVzdCBmb3IgdGhpcyBwYWNrYWdlIHBsZWFzZSBmaWxsIG91dCB0aGUgZm9ybSBpbiBvdXIg
+d2Vic2l0ZS4KClsxXSBjaGVjayB0aGlzIG5vdwoKbm90aWNlOgpwbGVhc2Ugbm90ZSwgdGhh
+dCBpZiBhIHJlZGVsaXZlcnkgaXMgbm90IHNjaGVkdWxlZCB3aXRoaW4gNDggaG91cnMgd2ls
+bCBiZSByZWZ1bmRlZC4KCgogUmVmZXJlbmNlczoKCjEuIHU9Y2FhY2M4OCAgICANCiAgICAN
+CiAgICAgICAgICAgOiAgICAgDQogICAgDQpodHRwczovL2JpdHdhbi5ibWV0cmFjay5jb20v
+Yy92P2U9MTJFMTczNCZjPThFODRCJmw9JmVtYWlsPSUyRnZYZ3FMMiUyQk5wS01QeUFmY0k4
+dmd6Y2lIZyUyRlZiRnkxJnJlbGlkPUNGMDg2MTA5ICAgIA0KICAgIA0K5Zug54K65oKo6IiH
+6YKB5oCd6Kqy6IKh5Lu95pyJ6ZmQ5YWs5Y+455qE5ZCI5L2c6Zec5L+C77yM5omA5Lul5pS2
+5Yiw6YCZ5bCB6Zu75a2Q6YO15Lu244CC6KuL56K66KqN5oKo5ZCM5oSP57m857qM5o6l5pS2
+57aT55Sx5oiR5YCR55m86YCB55qE6Zu75a2Q6YO15Lu244CCIOWmguaenOaCqOS4jemhmOaE
+j+e5vOe6jOaOpeaUtuWIsOS7u+S9leebuOmXnOioiuaBr++8jOaCqOWPr+S7peWcqOatpOWP
+lua2iOiogumWseOAgiAgICANCiAgICANCmh0dHBzOi8vYml0d2FuLmJtZXRyYWNrLmNvbS9j
+L29wdD9lPTEyRTE3MzQmYz04RTg0QiZsPSZlbWFpbD0lMkZ2WGdxTDIlMkJOcEtNUHlBZmNJ
+OHZnemNpSGclMkZWYkZ5MSZyZWxpZD1DRjA4NjEwOSAgICANCiAgICANCmh0dHBzOi8vYml0
+d2FuLmJtZXRyYWNrLmNvbS9jL3N1P2U9MTJFMTczNCZjPThFODRCJmw9JmVtYWlsPSUyRnZY
+Z3FMMiUyQk5wS01QeUFmY0k4dmd6Y2lIZyUyRlZiRnkxJnJlbGlkPUNGMDg2MTA5ICAgIA0K
+ICAgIA0KICAgIA0KICAgIA0K5q2k6KiK5oGv55SxIHN1cHBvcnRAMjE0MC5tZWRpYSDlgrPp
+gIHntaYgandhZ21hbkB3aXNjLmVkdSAgICAgDQogICAgDQpUYWl3YW4xMDU5N+advuWxseWN
+gOiHuuWMl+W4guiHuuWMl+W4guadvuWxseWNgOWNl+S6rOadsei3rzXmrrU3MOiZnyAgICAN
+CiAgICANCueuoeeQhuiogumWsTogaHR0cHM6Ly9iaXR3YW4uYm1ldHJhY2suY29tL2Mvcz9l
+PTEyRTE3MzQmYz04RTg0QiZsPSZlbWFpbD0lMkZ2WGdxTDIlMkJOcEtNUHlBZmNJOHZnemNp
+SGclMkZWYkZ5MSZyZWxpZD1DRjA4NjEwOSAgICANCumDteS7tui9ieWvhDogaHR0cHM6Ly9i
+aXR3YW4uYm1ldHJhY2suY29tL2MvZj9lPTEyRTE3MzQmYz04RTg0QiZsPSZlbWFpbD0lMkZ2
+WGdxTDIlMkJOcEtNUHlBZmNJOHZnemNpSGclMkZWYkZ5MSZyZWxpZD1DRjA4NjEwOQ0K
+
+--=-7RsL/OGnXkfqp8l3ltYc8g==
+Content-Type: text/html; charset=utf-8
+Content-Id: <J7918IM7IEU4.9CBA47T1ZFS82@prod-app61>
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><div class=3D"inbox-preview" style=3D"display: none; font-size: =
+0; max-height: 0; line-height: 0; padding: 0; mso-hide: all;">We were unabl=
+e to deliver your package !</div><!-- inbox-preview --><img src=3D"https://=
+bitwan.bmetrack.com/c/o?e=3D12E1734&amp;c=3D8E84B&amp;l=3D&amp;email=3D%2Fv=
+XgqL2%2BNpKMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCF086109" alt=3D"" border=3D=
+"0" style=3D"display:none;" height=3D"1" width=3D"1"><style type=3D"text/cs=
+s" id=3D"bmeresponsecss">   =20
+/* CMS Other Editor Test */   =20
+ @media only screen and (max-width: 480px){   =20
+body { margin: 0; padding: 0; }   =20
+}               =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+table[class=3Dcontainer-table], .bmeheadertext, .container-table{ width: 95=
+% !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.header{font-size: 24px !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.contenttitle{font-size: 20px !important;line-height: 140% !important;}    =
+=20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.contenttext{font-size: 16px !important;line-height: 140% !important;}    =
+=20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.single-col{display: block !important; width: 100% !important; float:left; =
+clear:both;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+img.mobile-img-large { width: 100% !important; height:auto !important;displ=
+ay:block;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+img.bmeRSSImage{max-width:300px; height:auto !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+td[class=3D"preheader-table"]{padding: 10px 0 !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+div[class=3D"bmeheadertext"]{font-size: 12px !important;line-height: 140% !=
+important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+td[class=3D"bmefootertext"], div[class=3D"bmefootertext"]{font-size: 12px !=
+important;padding-top: 10px;line-height: 140% !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+div[class=3D"bmefooter"] td[width=3D"79%"], div[class=3D"bmefooter"] td[wid=
+th=3D"21%"]{display: block !important;width: 100%;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.mobile-footer, .mobile-footer a{ font-size: 13px !important; line-height: =
+18px !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.mobile-footer{ text-align: center !important;}    =20
+}               =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+div.bmefooter, div.bmeheader{ display:block !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+table[class=3D"share-tbl"] { padding-bottom: 15px; width: 100% !important;}=
+    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+table[class=3D"share-tbl"] td { display: block !important; text-align: cent=
+er !important; width: 100% !important;}    =20
+}               =20
+   =20
+ @media only screen and (min-width: 640px){   =20
+img.bmeRSSImage{max-width:500px !important; height:auto !important;}    =20
+}   =20
+   =20
+</style><div id=3D":k0" class=3D"ii gt adP adO"><div id=3D":lp" class=3D"a3=
+s aXjCH m15cb56006babc523"><div class=3D"adM">
+   </div><div style=3D"padding:0;margin:0;background:#f2f2f2"><div class=3D=
+"adM"> =20
+ </div><div style=3D"display:none;display:none!important;color:#fff;font-si=
+ze:1pt">=20
+
+Dear Client,=20
+
+</div>    =20
+
+   =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" clas=
+s=3D"m_-6313486496045983387marginFix">
+ =20
+  <tbody><tr>
+    <td bgcolor=3D"#f2f2f2" class=3D"m_-6313486496045983387mobMargin" style=
+=3D"font-size:0px"> </td>
+    <td bgcolor=3D"#ffffff" width=3D"660" align=3D"center" class=3D"m_-6313=
+486496045983387mobContent">
+      =20
+         =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+         =20
+          <tbody><tr><td align=3D"center" width=3D"600" valign=3D"top">
+                 =20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+              <tbody><tr class=3D"m_-6313486496045983387no_mobile_phone">
+                <td bgcolor=3D"#f2f2f2" style=3D"padding-top:10px"></td>
+              </tr>
+              <tr>
+                <td bgcolor=3D"#f2f2f2" style=3D"padding-top:10px"></td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff">
+                  =20
+                 =20
+                    <img src=3D"https://i.imgur.com/A9gCiVp.png" alt=3D"" a=
+lt=3D"Homepage Canadapost.ca" weight=3D"50" height=3D"100">
+    =20
+        =20
+                       =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bo=
+ttom:10px;padding-top:10px" width=3D"100%">
+                        <tbody><tr valign=3D"bottom">   =20
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                            <td>  =20
+                              <span class=3D"m_-6313486496045983387text_lig=
+htblue_header" style=3D"font-family:Calibri,Trebuchet,Arial,sans serif;font=
+-size:16px;line-height:24px;color:#00BFFF&gt;&lt;strong&gt; &lt;center&gt;
+                                      We want to make sure you're the owner=
+ of this account. &lt;/strong&gt; &lt;/center&gt;
+                                &lt;/span&gt;                              =
+ =20
+                            &lt;/td&gt;
+                            &lt;td width=3D" 20?=3D"" align=3D"center" vali=
+gn=3D"top"> </span></td>
+                        </tr>
+                    </tbody>   =20
+</table>
+               =20
+                       =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bo=
+ttom:10px;padding-top:10px;margin-bottom:20px" width=3D"100%">
+                        <tbody><tr valign=3D"bottom">   =20
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                            <td valign=3D"top" style=3D"font-family:Calibri=
+,Trebuchet,Arial,sans serif;font-size:15px;line-height:22px;color:#333333" =
+class=3D"m_-6313486496045983387ppsans">	Dear Customer ,
+       =20
+<br>
+<p>
+    We're sorry to let you know that your package which arrived on 13/08/20=
+21 will be sent back , </p><p>This may happen when the receiver's address i=
+s incorrect.</p>
+To submit a redelivery request for this package please fill out the form in=
+ our website.   =20
+<br>   =20
+<br>
+<p></p>   =20
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"m_-6313486496045983387mobile_button"><tbody><tr><td height=3D"40" id=
+=3D"m_-6313486496045983387force_height" width=3D"1"></td><td align=3D"cente=
+r" class=3D"m_-6313486496045983387button_style" id=3D"m_-631348649604598338=
+7button_text" style=3D"font-family:Calibri,Trebuchet,Arial,sans-serif;font-=
+weight:300;font-stretch:normal;text-align:center;color:#fff;font-size:15px;=
+background:#0D487C;border-radius:7px!important;line-height:1.45em;padding:7=
+px 15px 8px;font-size:1em;padding-bottom:7px;margin:0 auto 16px" valign=3D"=
+middle"><span class=3D"m_-6313486496045983387aloha-editable">
+
+<a style=3D"text-decoration:none;color:#ffffff" href=3D"https://bitwan.bmet=
+rack.com/c/l?u=3DCAACC88&amp;e=3D12E1734&amp;c=3D8E84B&amp;t=3D0&amp;l=3D&a=
+mp;email=3D%2FvXgqL2%2BNpKMPyAfcI8vgzciHg%2FVbFy1&amp;seq=3D1" target=3D"_b=
+lank" target=3D"_blank">Check This Now</a>
+
+</span></td></tr></tbody>   =20
+</table>   =20
+<br>   =20
+<table border=3D"0" cellpadding=3D"10" cellspacing=3D"0" class=3D"m_-631348=
+6496045983387howTo" style=3D"font:11px Calibri,Trebuchet,Arial,sans serif,s=
+ans-serif" width=3D"100%">
+<tbody><tr>
+<td style=3D"background-color:#e8f1fa">
+<h4 style=3D"color: black;">NOTICE:</h4> <strong><h4 style=3D"color: black;=
+">
+Please note, that if a redelivery is not scheduled within 48 hours will be =
+refunded.
+</h4></strong></td>
+</tr>
+</tbody>   =20
+</table>
+
+                                <span style=3D"font-weight:bold;color:#444"=
+>
+                                </span>
+                                <span>
+                                </span>
+                            </td>
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                        </tr>
+                    </tbody>   =20
+</table>
+               =20
+                 =20
+                </td>
+              </tr>
+            </tbody>   =20
+</table></td>
+                    =20
+       </tr></tbody>   =20
+</table>
+     =20
+     =20
+     =20
+    </td>
+    <td bgcolor=3D"#f2f2f2" class=3D"m_-6313486496045983387mobMargin" style=
+=3D"font-size:0px"> </td>
+  </tr>
+ =20
+</tbody>   =20
+</table><div class=3D"yj6qo"></div><div class=3D"adL">
+
+
+   </div></div><div class=3D"adL">
+</div></div></div>
+</body></html><!-- Online Path -->   =20
+<div align=3D"center" class=3D"bmeheader">   =20
+<div style=3D"font-family:Arial, Verdana; font-size: 12px" class=3D"bmehead=
+er" align=3D"center">   =20
+<table class=3D"container-table" width=3D"600" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" style=3D"padding: 20px;"><tr><td align=3D"center" vali=
+gn=3D"top" class=3D"preheader-table"><div style=3D"font-size:11px; color:#6=
+66666; font-family:Arial, Helvetica, sans-serif; padding-bottom:5px; line-h=
+eight: 140%;" align=3D"center">   =20
+<a target=3D"_new" href=3D"https://bitwan.bmetrack.com/c/v?e=3D12E1734&amp;=
+c=3D8E84B&amp;l=3D&amp;email=3D%2FvXgqL2%2BNpKMPyAfcI8vgzciHg%2FVbFy1&amp;r=
+elid=3DCF086109" style=3D"color: #16a7e0;">=E6=96=BC=E7=80=8F=E8=A6=BD=E5=
+=99=A8=E4=B8=AD=E6=AA=A2=E8=A6=96=E9=9B=BB=E5=AD=90=E9=83=B5=E4=BB=B6</a>  =
+ =20
+   =20
+<br>=E5=9B=A0=E7=82=BA=E6=82=A8=E8=88=87=E9=82=81=E6=80=9D=E8=AA=B2=E8=82=
+=A1=E4=BB=BD=E6=9C=89=E9=99=90=E5=85=AC=E5=8F=B8=E7=9A=84=E5=90=88=E4=BD=9C=
+=E9=97=9C=E4=BF=82=EF=BC=8C=E6=89=80=E4=BB=A5=E6=94=B6=E5=88=B0=E9=80=99=E5=
+=B0=81=E9=9B=BB=E5=AD=90=E9=83=B5=E4=BB=B6=E3=80=82=E8=AB=8B<a target=3D"_n=
+ew" style=3D"color:#16a7e0;" href=3D"https://bitwan.bmetrack.com/c/opt?e=3D=
+12E1734&amp;c=3D8E84B&amp;l=3D&amp;email=3D%2FvXgqL2%2BNpKMPyAfcI8vgzciHg%2=
+FVbFy1&amp;relid=3DCF086109">=E7=A2=BA=E8=AA=8D</a>=E6=82=A8=E5=90=8C=E6=84=
+=8F=E7=B9=BC=E7=BA=8C=E6=8E=A5=E6=94=B6=E7=B6=93=E7=94=B1=E6=88=91=E5=80=91=
+=E7=99=BC=E9=80=81=E7=9A=84=E9=9B=BB=E5=AD=90=E9=83=B5=E4=BB=B6=E3=80=82 =
+=E5=A6=82=E6=9E=9C=E6=82=A8=E4=B8=8D=E9=A1=98=E6=84=8F=E7=B9=BC=E7=BA=8C=E6=
+=8E=A5=E6=94=B6=E5=88=B0=E4=BB=BB=E4=BD=95=E7=9B=B8=E9=97=9C=E8=A8=8A=E6=81=
+=AF=EF=BC=8C=E6=82=A8=E5=8F=AF=E4=BB=A5<a target=3D"_new" style=3D"color:#1=
+6a7e0;" href=3D"https://bitwan.bmetrack.com/c/su?e=3D12E1734&amp;c=3D8E84B&=
+amp;l=3D&amp;email=3D%2FvXgqL2%2BNpKMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCF0=
+86109">=E5=9C=A8=E6=AD=A4=E5=8F=96=E6=B6=88=E8=A8=82=E9=96=B1</a>=E3=80=82 =
+  =20
+</div></td></tr>   =20
+</table></div></div>   =20
+<!-- /Online Path -->   =20
+   =20
+   =20
+   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" name=
+=3D"blk_footer" class=3D"blk" style=3D"color: #666666;"><tbody><tr><td name=
+=3D"tblCell" style=3D"padding: 20px;" align=3D"left" valign=3D"top">   =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbo=
+dy><tr><td name=3D"bmeBadgeText" style=3D"text-align:center; word-break: br=
+eak-word;" align=3D"center"><span id=3D"spnFooterText" style=3D"font-family=
+: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px; line-=
+height: 140%;">=E6=AD=A4=E8=A8=8A=E6=81=AF=E7=94=B1 support@2140.media =E5=
+=82=B3=E9=80=81=E7=B5=A6 jwagman@wisc.edu    =20
+<br>Taiwan10597=E6=9D=BE=E5=B1=B1=E5=8D=80=E8=87=BA=E5=8C=97=E5=B8=82=E8=87=
+=BA=E5=8C=97=E5=B8=82=E6=9D=BE=E5=B1=B1=E5=8D=80=E5=8D=97=E4=BA=AC=E6=9D=B1=
+=E8=B7=AF5=E6=AE=B570=E8=99=9F</span>   =20
+<br>   =20
+<br><span style=3D"font-family: Arial, Helvetica, sans-serif; font-weight: =
+normal; font-size: 11px; line-height:140%;"><span href=3D"https://bitwan.bm=
+etrack.com/c/su?e=3D12E1734&amp;c=3D8E84B&amp;l=3D&amp;email=3D%2FvXgqL2%2B=
+NpKMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCF086109"><img src=3D"https://ui.ben=
+chmarkemail.com/images/verified-tw.png" alt=3D"=E5=8F=96=E6=B6=88=E8=A8=82=
+=E9=96=B1=E6=89=80=E6=9C=89=E7=9A=84=E7=99=BC=E9=80=81" title=3D"=E5=8F=96=
+=E6=B6=88=E8=A8=82=E9=96=B1=E6=89=80=E6=9C=89=E7=9A=84=E7=99=BC=E9=80=81" b=
+order=3D"0"></span> <a class=3D"bmefootertext" href=3D"https://bitwan.bmetr=
+ack.com/c/su?e=3D12E1734&amp;c=3D8E84B&amp;l=3D&amp;email=3D%2FvXgqL2%2BNpK=
+MPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCF086109" style=3D"color:inherit;text-d=
+ecoration:underline;">=E5=8F=96=E6=B6=88=E8=A8=82=E9=96=B1</a>   | <a class=
+=3D"bmefootertext" href=3D"https://bitwan.bmetrack.com/c/s?e=3D12E1734&amp;=
+c=3D8E84B&amp;l=3D&amp;email=3D%2FvXgqL2%2BNpKMPyAfcI8vgzciHg%2FVbFy1&amp;r=
+elid=3DCF086109" style=3D"color:inherit;text-decoration:underline;">=E7=AE=
+=A1=E7=90=86=E8=A8=82=E9=96=B1</a>   |  <a class=3D"bmefootertext" href=3D"=
+https://bitwan.bmetrack.com/c/f?e=3D12E1734&amp;c=3D8E84B&amp;l=3D&amp;emai=
+l=3D%2FvXgqL2%2BNpKMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCF086109" style=3D"c=
+olor:inherit;text-decoration:underline;">=E9=83=B5=E4=BB=B6=E8=BD=89=E5=AF=
+=84</a>    =20
+<br></span></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table>
+
+
+--=-7RsL/OGnXkfqp8l3ltYc8g==--

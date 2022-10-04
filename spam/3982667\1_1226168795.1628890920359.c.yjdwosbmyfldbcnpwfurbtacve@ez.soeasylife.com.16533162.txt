@@ -1,0 +1,249 @@
+Received: from SN7PR06MB7102.namprd06.prod.outlook.com (2603:10b6:806:f7::7)
+ by DM5PR06MB2347.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 21:42:04 +0000
+Received: from CO2PR07CA0066.namprd07.prod.outlook.com (2603:10b6:100::34) by
+ SN7PR06MB7102.namprd06.prod.outlook.com (2603:10b6:806:f7::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.15; Fri, 13 Aug 2021 21:42:03 +0000
+Received: from CO1NAM11FT010.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:100:0:cafe::50) by CO2PR07CA0066.outlook.office365.com
+ (2603:10b6:100::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Fri, 13 Aug 2021 21:42:02 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ CO1NAM11FT010.mail.protection.outlook.com (10.13.175.88) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Fri, 13 Aug 2021 21:42:01 +0000
+Received: from ez.soeasylife.com ([208.116.22.223]) by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS057QZSA0NI00@smtp4.wiscmail.wisc.edu> for
+ asullivan@fpm.wisc.edu; Fri, 13 Aug 2021 16:42:01 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=10%, Hits= IMGSPAM_BODY 0.5,
+ HTML_50_70 0.1, REPLYTO_FROM_DIFF_ADDY 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_3000_3999 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, DKIM_ALIGNS 0,
+ DKIM_SIGNATURE 0, FONT_STYLE_0PT 0, HREF_LABEL_TEXT_NO_URI 0, LINK_TO_IMAGE 0,
+ LIST_HEADER 0, NO_URI_HTTPS 0, OBFUSCATION 0, SENDER_NO_AUTH 0, SPF_PASS 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BANNER_TRUSTED_SENDER 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CANPHARM_UNSUB_HREF 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __FRAUD_BADTHINGS 0, __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_UNSUBSCRIBE 0,
+ __HAS_MSGID 0, __HAS_REPLYTO 0, __HEADER_ORDER_FROM 0,
+ __HIDDEN_HTML_CONTENT 0, __HREF_LABEL_IMG 0, __HREF_LABEL_TEXT 0,
+ __HTML_AHREF_TAG 0, __HTML_HRE
+X-Wisc-Doma: c.yjdwosbmyfldbcnpwfurbtacve@ez.soeasylife.com,soeasylife.com
+X-Wisc-Env-From-B64:
+ Yy55amR3b3NibXlmbGRiY25wd2Z1cmJ0YWN2ZUBlei5zb2Vhc3lsaWZlLmNvbQ==
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.213016,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.22.5840001,
+ SenderIP=[208.116.22.223]
+X-Wisc-DKIM-Verify:
+ c.yjdwosbmyfldbcnpwfurbtacve@ez.soeasylife.com,soeasylife.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/simple; d=soeasylife.com;	s=s1024;
+ t=1628890920; bh=Ybg5t+OLxZcnk6il+S6ZxYhifD4=;
+	h=Date:From:To:Message-ID:Subject:Content-Type;
+	b=BtM8GlEiPdohD8q2+R//Wo7gJ2HMfK4yyN1qoVdMRQwrdfW4n3vl/180R+GsjtRyw
+ CUvZCEDmKZHI04yt18H6jAZAEah0fKZ0/AsZr/Q904ig5U+Q2YRGnIp1xZwTkei6ZO
+ ljvG1Ac5xtPpIrFn+UV9T9x2NU5IRFvqGyYL+tno=
+Date: Fri, 13 Aug 2021 17:42:00 -0400 (EDT)
+From: Morning Stretch <news@soeasylife.com>
+Reply-to: Morning Stretch <d.yjdwosbmyfldbcnpwfurbtacve@ez.soeasylife.com>
+To: asullivan@fpm.wisc.edu
+Message-id:
+ <1226168795.1628890920359.c.yjdwosbmyfldbcnpwfurbtacve@ez.soeasylife.com.16533162>
+Subject: 30-second stretch HEALS back pain & sciatica
+Content-type: multipart/alternative;
+ boundary="----=_Part_33002527_1100702193.1628890920352"
+List-Unsubscribe:
+ <mailto:d.yjdwosbmyfldbcnpwfurbtacve@ez.soeasylife.com?subject=remove>
+Return-Path: c.yjdwosbmyfldbcnpwfurbtacve@ez.soeasylife.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 21:42:02.1662
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 01087041-7afc-490a-0ff6-08d95ea32fa5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT010.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 01087041-7afc-490a-0ff6-08d95ea32fa5
+X-MS-TrafficTypeDiagnostic: SN7PR06MB7102:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-Microsoft-Antispam: BCL:3;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 21:42:01.9963
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 01087041-7afc-490a-0ff6-08d95ea32fa5
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT010.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN7PR06MB7102
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1994407
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?dmtWcTRyUEpwSXZDNE55NnQvVFZJZlhkaW1CUHNGNlRoNkdNcFFLdkN3U1hl?=
+ =?utf-8?B?SjcrQUVxaWRkV1pSNHFYcHV6bUU3M2I1QmJ1bnJmK1RjZ2ZVMC9ZdGU2dG82?=
+ =?utf-8?B?TDJaRDhXeDVrVm1VWi9qK0k4d2E3aU41Q1VSVnBFbHFDakprQ0krWGowNFVL?=
+ =?utf-8?B?cFpLRGpKVk1wVVRIVlo0aE9MSEJjQVFEeld4RDJOMy93KytKTmo2bjh2eVcv?=
+ =?utf-8?B?dXFZU3RsU1ozUkdnTkluQ3RKMUthTy9mL1pXZm5SZ09malQ0MFRaSDJIN2Nv?=
+ =?utf-8?B?TnZGeHEvYUd6UjlBWVBGcEZCQ1QrVlJSaXk0Z1BWUitwRE1GZmFIUjdOWlE1?=
+ =?utf-8?B?M0czZ1hyNVYyMVFBL1hUK20rejRxQkJQQWlCMGRjdWp3T3huRHZTdWRQOW1y?=
+ =?utf-8?B?REZNbEJacm1wN0dEL29EZVk3T2JvMEVVWmxCTEp5NWdCcFNvaXZSK21mb1pj?=
+ =?utf-8?B?NjE0dXR0Mk1HN0lISy9tZjJnYXl5bkNIR3g3R2p6ZWVYNW9tUW5TTzdTRFJ6?=
+ =?utf-8?B?eDlOV2toSngvdUhtSEFrRlB4VTVWdUNGcjk4VzRFb1F5VGV2Z0hZVFRYTWZu?=
+ =?utf-8?B?MXFvc056SkpvM0dBYjBHa2lhaFBTUm1kbyt1a3h3TkJzT0lGUGJlRDBXMjBm?=
+ =?utf-8?B?NHlhWEEveTNIWkF4ZzhIUVNEMG51WXA2VnJsSVlZRGJUY0NEOGlCdHcrWW8w?=
+ =?utf-8?B?RnI2TG9NU1E5ejFCR3ljdkpwNGMra0ZrNVdWREY2VnR5NGtsSENHQ1BnazBL?=
+ =?utf-8?B?aTRXN2Nkd0R5c2pFQk50M0pVLzhTN0NUTjd0NW5qMFhVZCtSbDg3M3NSbHIy?=
+ =?utf-8?B?MTFPa3drUGZwRWc3MjNhTDJVck12MmhZVHcwejg1RlRvV3lDbUNUWE1UbjJH?=
+ =?utf-8?B?SVpGZGtDcTZOSUxOOHNYaHZJSGZjelZ6M3ZZREtXbzI1emVHSS9lYlRhMm5U?=
+ =?utf-8?B?OGk2c0NzM3NvdzBaS3NwempnQjhDU3RMRG43N2g1dlczTFVNR3FjbnVhRTc2?=
+ =?utf-8?B?dVZpZmM1UGtOMWxJbFdZd29LWS96UTM4YUtObGVpeS94TU1ObTV1QVUxRkVV?=
+ =?utf-8?B?VG1QS01ZeG9VTFZrQk53aThKQzBaZjBZZlRaYkgrdjJDbjMxRkYzbnlLaml6?=
+ =?utf-8?B?NUVwaHNrSkREVU1MTUJ3S1NZNEc2ZC9yMXZYQ0x2d25oVjhYRXNHV3dOY3RC?=
+ =?utf-8?B?VkphVEJWcXoyN3BGdGttSG5LVkgxR2thanVHSy9oM21KVzBBWVFRTTZ5L1l2?=
+ =?utf-8?B?SU5MbWwvRnczZGFBSnNkUGswQVRCNG9FbWRMRk81c29HSk5qUnNqN2VFN0dl?=
+ =?utf-8?B?SEVqMXBqSnpkWVM1UWpScFZrUVVGeS94Qm1oK3B3VkFNVUw4V0JIYmZ0NFJR?=
+ =?utf-8?B?WGpndlNkRmlUSG15V0owUjFTeUI5OEtpUlFkNXBVdzY2R3ZjakVlWUUvNmZr?=
+ =?utf-8?B?ODVTWDc1WUQwNWZwZlV2d2JOdnVrSlhtS2Y0VUtlRXFyRUgyM3YwQUl4TytM?=
+ =?utf-8?B?NXppcURrQW9xZmJHSjlETTBkMEg3U3FtTDhCbUI3Tk8vU1pxbHdLR2Y3dys2?=
+ =?utf-8?B?NkRFQWRGZG9KZHpycUtmeEE3bjd6clhadHpMQklUOElRa0U1MHBSQUNBYktv?=
+ =?utf-8?B?Q3ppTlpWNHdYRmNIUnA2MG5zNTZTcFNta0Q0ZUQ4VHIxZXVMZnpocXhHd3la?=
+ =?utf-8?B?RHhuQmJvVVhVWU9VM3laSnRhMTVPdmN6MlE4YksreDB2N2p2ZHhoeFBSMnRa?=
+ =?utf-8?B?djVrNlhsUVc3WUMyQWNVdHUzNE1xT3JOeWxGdzJoaWJyN2JXZDhHNUJEWHla?=
+ =?utf-8?B?UU0yeDNRRUJ1a0hydWJsaEg1ZjVGODdRcDdOeHM1T3hDQXo1aFp2WVVESVB4?=
+ =?utf-8?B?MU9PV1JrbDRMamVMYXFFWlRBc2V1c0ErbFUrQjFGaDdMUCtzeDhBTWtXdDlw?=
+ =?utf-8?B?TEV2TnBnci92aXpFclZ0MW9zVDFTSzJPV28zanZUT1IwSXdYTDY4UVBMekxl?=
+ =?utf-8?B?YVNkNlMxTDNMcUo1VlRFQitRLy9IcHhTTGR5dHc4RktZeGUyY2lOWGZJZ1RB?=
+ =?utf-8?B?SG5GU1lyNzF5bHo4OW5pdGgzNEtNTWlDZmo2eVRVMG5PeUhjajhTUFFib0FE?=
+ =?utf-8?B?WVpwazYrclVyYlk4Mm5YR3I1d2ozdlVuZE4rT0IxMEtZSjVqdmprbHExRFhK?=
+ =?utf-8?B?eG9oeHVhVEpmQWpPS2VGMStkSDU0NXdNRmlSNlJHb25jcC9yU0dWWG44QXBC?=
+ =?utf-8?B?M2toOURTRDJVUHFmV1FTSmpFaE51a0Qyd2pSZ0RsL09ZVXNuVGNpUGhXakYv?=
+ =?utf-8?B?WnNGWElrK0ViSi9XKy9mclBjcTd2N0J5U3hOakhzdzRDWVpjalFWMUcwMk5D?=
+ =?utf-8?B?QjJwaFo3Y2tGU1R4M04yKy9LT09QVGk0c29wMjNGYW1oTzNXVm9FREl6dERH?=
+ =?utf-8?B?b0R3bFljVm9rZVNaTzRSQ25ZVENodlp4cUx6NzZkM1Rnd05GUzZIcGowL3BE?=
+ =?utf-8?B?Z1VBYXdzbDNYZVNNZ2ZoY3h1bFZxKzRQdUtoYmlJaTY1TThKd1UyVkJLSzVE?=
+ =?utf-8?B?TFhmd3pVYkI2MFlWRzdKbUE4ajVvb25RSEM1K241ejZyY2l0MzIrTWxTRk1a?=
+ =?utf-8?B?NENBN2lvR2xZK1pVcWZlbGV2akdMZkVNY3pkZ0Y5aC9ieDcwTHBNOHEvYXFz?=
+ =?utf-8?B?WkZDbTBTemJJRUY3dnNjcFcxVDNValUxbHdzMTJMbGlaMEhoMHJvS2pHUW1H?=
+ =?utf-8?B?dTVic2Z4WjExREhjZ1YwZTh6RlR6d2hWM3JkQUxXeld6Q0ZBZGZYL0R5d1Er?=
+ =?utf-8?B?TWtDY3FocDMvQ1YwNSt4YjJneEdROW5NVUxUSk9lTEcvNTdHSG9ZczRxbzhu?=
+ =?utf-8?B?OUdpWGs0ak5QNVlwdld3dHVRYitlV043cE5hejVxaUo1UXMyTEptNFUvRXhL?=
+ =?utf-8?B?djU5Q3VNU1RMNXdwNDVoMHVuWFZOR21TTlErSHdSa0oyUk1HM2pwQVN2YlBG?=
+ =?utf-8?B?Y0tzcElyUDE3ZG00dkpqbE9vL2xHWEtsNUVyZnR2NnlvT3ZiWDkyN00zWFhy?=
+ =?utf-8?B?cGZFN1FlcTJvdnV3PT0=?=
+MIME-Version: 1.0
+
+------=_Part_33002527_1100702193.1628890920352
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+A simple 30-second stretch that heals back pain & sciatica.
+http://f.soeasylife.com/easy/7xdd3skB1goj7lB4byuBfpue0akBz0tBlag/1/5158
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This email was sent to asullivan@fpm.wisc.edu
+If you no longer wish to receive messages from soeasylife.com please Unsubscribe Here:  http://f.soeasylife.com/oeas/0/7xdd3skB1goj7lB4byuBfpue0akBz0tBlag
+------=_Part_33002527_1100702193.1628890920352
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"Cache-Control" content=3D"no-cache, no-store, must-revali=
+date">=20
+  <meta http-equiv=3D"Pragma" content=3D"no-cache">=20
+  <meta http-equiv=3D"Expires" content=3D"0">=20
+  <meta http-equiv=3D"Cache-Control" content=3D"no-cache, no-store, must-re=
+validate">=20
+  <meta http-equiv=3D"Pragma" content=3D"no-cache">=20
+  <meta http-equiv=3D"Expires" content=3D"0">=20
+  <meta http-equiv=3D"Cache-Control" content=3D"no-cache, no-store, must-re=
+validate">
+  <meta http-equiv=3D"Pragma" content=3D"no-cache">
+  <meta http-equiv=3D"Expires" content=3D"0">
+ </head>=20
+ <body>
+   <img src=3D"http://f.soeasylife.com/soea/7xdd3p1B0fni6kB3axtBeotdz9jBxzs=
+Bk9f/b.gif" width=3D"1" height=3D"1">=20
+  <br>=20
+  <br>=20
+  <a style=3D"font-size:0.01;" href=3D"http://f.soeasylife.com/oeas/5/7xdd3=
+p1B0fni6kB3axtBeotdz9jBxzsBk9f"><img src=3D"http://f.soeasylife.com/soea/7x=
+dd3p1B0fni6kB3axtBeotdz9jBxzsBk9f/b.gif" width=3D"1" height=3D"1"></a> My g=
+ood friend Emily used to suffer from extreme back pain caused by a car acci=
+dent that wasn=E2=80=99t her fault.=20
+  <br>=20
+  <br> She tried many things and even considered surgery=E2=80=A6=20
+  <br>=20
+  <br> Until she found this:=20
+  <br>=20
+  <br> A simple 30-second stretch that heals back pain &amp; sciatica.=20
+  <br>=20
+  <br> This weird stretch is so effective, Emily is now on a mission to sha=
+re it with as many back pain sufferers as she possibly can.=20
+  <br>=20
+  <br> =3D&gt;=20
+  <a href=3D"http://f.soeasylife.com/easy/7xdd3p1B0fni6kB3axtBeotdz9jBxzsBk=
+9f/1/5158">This 30-second stretch HEALS back pain &amp; sciatica</a>=20
+  <br>=20
+  <br> P.S. Since Emily started teaching it, this one simple stretch has he=
+lped thousands of back pain and sciatica sufferers all over the world and c=
+ontinues to provide relief to the most skeptical people=E2=80=A6=20
+  <br>=20
+  <br>=20
+  <br>=20
+  <a href=3D"http://f.soeasylife.com/easy/7xdd3p1B0fni6kB3axtBeotdz9jBxzsBk=
+9f/1/5158"><img border=3D"0" src=3D"http://img.soeasylife.com//1056945050/s=
+ciatica.jpg" &rdquo;=3D""></a>=20
+  <br>=20
+  <br>=20
+  <br>=20
+  <center>=20
+   <font size=3D"=E2=80=9D2=E2=80=9D"> <a href=3D"http://f.soeasylife.com/e=
+asy/7xdd3p1B0fni6kB3axtBeotdz9jBxzsBk9f/1/5156">unsubscribe</a> </font>=20
+  </center> =20
+ <br><br><br><br><br><br><br><br>
+<font size=3D"2" face=3D"Verdana, Arial, sans-serif" color=3D"#00000"><br><=
+br><br><br><br><br>This email was sent to asullivan@fpm.wisc.edu<br>If you =
+no longer wish to receive messages from soeasylife.com please <a href=3D"ht=
+tp://f.soeasylife.com/oeas/0/7xdd3p1B0fni6kB3axtBeotdz9jBxzsBk9f">Unsubscri=
+be Here</a></font></body>
+</html>=
+
+------=_Part_33002527_1100702193.1628890920352--

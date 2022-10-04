@@ -1,0 +1,403 @@
+Received: from BYAPR06MB6421.namprd06.prod.outlook.com (2603:10b6:a03:cc::25)
+ by BL0PR06MB4771.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 00:25:51 +0000
+Received: from MWHPR20CA0002.namprd20.prod.outlook.com (2603:10b6:300:13d::12)
+ by BYAPR06MB6421.namprd06.prod.outlook.com (2603:10b6:a03:cc::25) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.21; Fri, 13 Aug
+ 2021 00:25:48 +0000
+Received: from CO1NAM11FT024.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:13d:cafe::97) by MWHPR20CA0002.outlook.office365.com
+ (2603:10b6:300:13d::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Fri, 13 Aug 2021 00:25:48 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ CO1NAM11FT024.mail.protection.outlook.com (10.13.174.162) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Fri, 13 Aug 2021 00:25:48 +0000
+Received: from smtp1.iad1.qemailserver.com ([162.247.216.60])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXR01TXO56WI220@smtp7.wiscmail.wisc.edu> for
+ mucci@surgery.wisc.edu; Thu, 12 Aug 2021 19:25:47 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_70_90 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, FROM_NAME_ONE_WORD 0.05, KNOWN_FREEWEB_URI 0.05,
+ BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_10000_PLUS 0, CLOUD_WEB_HOSTS 0, DATE_TZ_NA 0, DKIM_ALIGNS 0,
+ DKIM_SIGNATURE 0, ECARD_KNOWN_DOMAINS 0, HREF_LABEL_TEXT_ONLY 0,
+ KNOWN_MTA_TFX 0, LIST_HEADER 0, SENDER_NO_AUTH 0, SPF_PASS 0, SXL_IP_TFX_WM 0,
+ URI_ENDS_IN_PHP 0, __ANY_URI 0, __BODY_TEXT_X4 0, __CANPHARM_UNSUB_LINK 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_MIXED 0, __DC_PHRASE 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NOREPLY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0,
+ __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_SENDER 0,
+ __HEADER_ORDER_FROM 0, __HREF_LABEL_TEXT 0, __HREF_LABEL_URI 0,
+ __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_HREF_TAG_X2 0, __HTTPS_URI 0,
+ __IMG_SRC_DATA 0, __KNOWN_FREEWEB
+X-Wisc-Doma: noreply@qualtrics-survey.com,qualtrics-survey.com
+X-Wisc-Env-From-B64: bm9yZXBseUBxdWFsdHJpY3Mtc3VydmV5LmNvbQ==
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.1816,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.23.5840001,
+ SenderIP=[162.247.216.60]
+X-Wisc-DKIM-Verify:
+ noreply@qualtrics-survey.com,qualtrics-survey.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: from jwm9-app.iad1.qprod.net (unknown [10.24.32.5])
+	by smtp1.iad1.qemailserver.com (Postfix) with ESMTP id 59DE622B27583	for
+ <mucci@surgery.wisc.edu>; Wed, 11 Aug 2021 17:10:29 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=simple/relaxed; t=1628701830;
+	s=qualtrics2k; d=qualtrics-survey.com;
+	h=Date:From:Sender:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+	l=15016; bh=bi7J37jkcjqDkiNmlYyLOFqU64EbGDgT5F3ayIf3VnE=;
+	b=pshbSCmKKTDX0pR+PNkRdtTJeT3k30iSIYJvsLFKpfvSZDOl2SIcTNuhkYi1Z/pb
+	oAPtRs38p8QoSRQBRN0dXzddu8ab0Qdp36f6T+tfWAZYbpvfqhDrCPKfHeY/H6SMgTn
+	fxkAgvW4AOyh1rlC/70HhiYZT5QYPI1pVeOWGit086gxSyWFkO68LFTkgYB1ixEiImH
+	YFkGXPnhXwOiKgmyshVb9Cdn+FiFOhgBU+0UHz1QiPEnKUnGlhwqpZE44PXTKU3gCvH
+	QSRz+u2E6LnW/741bQdnyba5EP/GHXSbMlBS/Q7qWTlnWDTiqkKyGuvY0X6Ds8OUAb2
+	JUps+4GrNg==
+Date: Wed, 11 Aug 2021 11:10:29 -0600 (MDT)
+From: StudentPrint <noreply@qualtrics-survey.com>
+Sender: StudentPrint <noreply@qualtrics-survey.com>
+Reply-to: StudentPrint <stuprint@rso.wisc.edu>
+To: mucci@surgery.wisc.edu
+Message-id: <1371123743.819548.1628701829349@jwm9-app.iad1.qprod.net>
+Subject: StudentPrint Course Reader Survey
+Content-type: multipart/mixed;
+ boundary="----=_Part_819542_632261920.1628701829331"
+X-QUMID:
+ UR_cLVH5frdr7lpStv-EMD_FoLDQIlL94V0GGX-MLRP_3TTlX6DeWupMA74-SV_eIPjJeMrU9MuWzQ
+List-Unsubscribe:
+ <https://uwmadison.co1.qualtrics.com/CP/Register.php?OptOut=true&RID=MLRP_3TTlX6DeWupMA74&LID=UR_cLVH5frdr7lpStv&DID=EMD_FoLDQIlL94V0GGX&BT=dXdtYWRpc29u&_=1>,
+ <mailto:AD.GNKFI3CYGZCGKV3VOBGUCNZU.MNGFMSBVMZZGI4RXNRYFG5DW@unsubscribe.qemailserver.com?subject=qunsub_MLRP_3TTlX6DeWupMA74.UR_cLVH5frdr7lpStv.uwmadison.EMD_FoLDQIlL94V0GGX.SV_eIPjJeMrU9MuWzQ.UR_cLVH5frdr7lpStv.ML_0GOjErPzp7WI3AO.https%3A%2F%2Fuwmadison.co1.qualtrics.com%2FCP%2FRegister.php>
+Return-Path: noreply@qualtrics-survey.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 00:25:48.3237
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 19dfec1c-19af-4cab-f619-08d95df0e613
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT024.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 19dfec1c-19af-4cab-f619-08d95df0e613
+X-MS-TrafficTypeDiagnostic: BYAPR06MB6421:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=451
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 00:25:48.1498
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 19dfec1c-19af-4cab-f619-08d95df0e613
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT024.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR06MB6421
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.4586332
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4394.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?QkRRSUNjcjROREVYenVkL3JNOS9vV3RjZmRFVTZDN3U0bjBZYmJkVVhXYmhw?=
+ =?utf-8?B?L2xKTXpKRHZaYVhDay9BN2ttSTlKV0VFUHJ3dVBlZXczY29XeUVRS1F3Vnc3?=
+ =?utf-8?B?bHN6bll0U1RHeU10dTNJcS9sWE5kNjloUkx0V2ZPcW9NZ0xrbFBGMTMxQTBa?=
+ =?utf-8?B?aFR6c3QwTDJsMmNzZEwrNGd3a1VLa0lqVFQyOE4vRW93VzFhcjFOZThqOGkr?=
+ =?utf-8?B?Q0VzTHJYZFYyS3ZXc0lmQzdobkxqbWNJcGhTOUg4Rjg3MDdwakE1VUd1QzJP?=
+ =?utf-8?B?cEdHY3lPR3hCMG8rcVQ5V2dhT3hkMDR5NitTWmRmK0RxeEpMUzd3cEZyNEFy?=
+ =?utf-8?B?Y2FEdEo2VWVjL0hoQzlLbWVCdWI2TWhKSzlxREZpblo1ZGpKdS9LSk13YkR1?=
+ =?utf-8?B?VTFSOCs4Y1loczZEK1JmdnRQTnhXcVMrbmpIRzVkL1lUNVQ2blN5dXdldm83?=
+ =?utf-8?B?U0NxN1FWRVFQMGN3MUZycFNMeUE4c3JzOEljMmhCQ0FNK055bXUzTFdyN2Yy?=
+ =?utf-8?B?T2t6OFRTYVRVYU1TcTVGd3k4eTVrbEc3MnJSbi9wWXRhcXhTcE5WMFkzZ0Q3?=
+ =?utf-8?B?Mkp1K3hGbFgvRC9LSW4xNzRWVWQ2OXdTa1lZcU9OTk9tSis5WnZZWStFdTFL?=
+ =?utf-8?B?Nmg5b1AxOXpMRFFBeTYyTURBbG5TL1ZnSkF6R21jZmM2Qnc0WEZjeTAxZDdu?=
+ =?utf-8?B?SUJScHZhdExvUE1haVdnWWJ3OUU5eXp1NEtMc2wwc0xVZGN4THNYUjB1T3gz?=
+ =?utf-8?B?cHlXSnY0bXlWOVIyMkVOY05jenBjd25zbFhJNWhwOWc0RTlpTW9uK3JSSWlZ?=
+ =?utf-8?B?YXhRUnhhM0VJTFNGQjU2ZkRKVWs0NVhnNUpFR1lXWWg4djRWeVRyQ0hNMzc1?=
+ =?utf-8?B?SVRqQnVSVWlsb0VzS0RrUUIyaTBzclJ2RHhnL01hb1BkTGZYd3R4ZnBPZlIz?=
+ =?utf-8?B?TFIxWTBESXV3bjdGM003V0loODFNaFkyMk5PaXJ6ZW9SOGxoOS8xQ3BZM3h1?=
+ =?utf-8?B?TWUrWTBQbTc5a01KQW1XNVJscGRIMVhDOWxMQnByVnJqNXZEVXlZRTZMdnY3?=
+ =?utf-8?B?SDBWbjZwZGh4Ykg4d3duaWg3dTZBYXJEZUhGTXhxLzA5YkJOay9QMURHak5T?=
+ =?utf-8?B?eXM1MEVKa2JnYy9BZFBHZEpZb2ovRDQ5dW1nMWdOR1BsVGtFSHdIS1BKVVR0?=
+ =?utf-8?B?cXozMkI0d3h5NzBoZjAvSUJOalFSbjJGeCtraXlMQ3pWR3lvWDlzcjJhVkt4?=
+ =?utf-8?B?Vy8wTWdNcEVSbWN1Tjl4WmljcnFlRko4ZHdpOTQvUDV5N3oxMU1zYlJ2MVlS?=
+ =?utf-8?B?MisyUlEvcDNPSWJlMlhKK0E0OUlZYWxlQTNrU1ZPOXIrTUcrMkJQWUVBRFdv?=
+ =?utf-8?B?QVJKSURycVB2eFlpcDR2aEtCVWltSTcxa3FRRE91dEIvNGdnVklSdC9ibWFM?=
+ =?utf-8?B?OVE0QTVsYnVFd0Y5YXljRGFRL0ZrZ1Z1UWt0aWt0NVJpbGZuTWc4QTZqcGVu?=
+ =?utf-8?B?Vkd1c0RTUS9ZMzF0ZFhKUnQ1Uk1tclRqNGplWCs2VVpBNlovMkpoamxENVdk?=
+ =?utf-8?B?dHdxTTRBL21reDRzalFKaDdOejdidk9vRTNKUVd0eVMxRjVieTB1Nlk3Mjdk?=
+ =?utf-8?B?RWZjZitNVzh5NWdwUXVNOWVrcHdHVUxBVWFzM2xScTJmQlBBbVBCNURwVnRh?=
+ =?utf-8?B?MGx3WUF6eVdPbDVFWFRSeHV1cXRkSzB5dTY2d3VaMVZ0L3dCNjUrRFZRUlFF?=
+ =?utf-8?B?SS9TRHBCVFNkMDV0L0RlNWR4MHVkNXd5d2EvcmZvWWFyRVg1SnNNQ2NPNWpU?=
+ =?utf-8?B?VE1sNkU1SUh5c1VDZFh6UTJWTmFMdHlyR1ZzVE91ZjdRT2d2WHd5aWdzOU9x?=
+ =?utf-8?B?cU4vV080SzFBSk5TUVJPNnJVbDJzaVM0eDdya0s4NGd6Z3B2YlBhZlB4NkdV?=
+ =?utf-8?B?MG9WMVBpOExXZ3BXUTVmamdlUXo4YzZoM2lIMHdYTnU1RXZCUEhEUXQ4REht?=
+ =?utf-8?B?WFd6Z0ZaZGplSnZiT2N2TCt2RTJKR3N0YWZ0d3Vpa0I3ODZQT1JCQkJuVStl?=
+ =?utf-8?B?T0RtNE1nYXlpRHZsbXNsL3JnWktGakVVemdYdWJZN3o5NGlIdGxvMFFKRkVX?=
+ =?utf-8?B?WWhDQlRUZHUxTllhYUtBMmQxMTNiVjMzMVV0RkU4VlgwMDA4Q084elJhem1C?=
+ =?utf-8?B?MnU1S0JpWjhZK0Vza3J3TldoSzVKM3VMYTRZekZ5cDBVcUhLY2tNVS9XaUJI?=
+ =?utf-8?B?NXpuMzk0bVBwSFNhTzRXS09OclA1U1pFcVFtNStlSGxVaDNxeVByQnVUWjV6?=
+ =?utf-8?B?cmdZV0VpUTE0aUdLVlNnRVJBVU8xYmtNay9WakZzaXU3NHF6aVZRdk1yc3Yz?=
+ =?utf-8?B?akxpbDh4L0lJZ0U2cXozZWNhNDBTbUEzYkJzUWZkNkdZTFByUXNFeVF2WDBl?=
+ =?utf-8?B?cGtSVEhsTkE3MHd6aWhBZ3B2dkljVERCRVFVYS9zSHBrV3dRbkdNTDgvbWFD?=
+ =?utf-8?B?QzZsNlRRL3p5R0JyWG9zUlZtTTc3clU5UVAvdC80Y3U5NkNiaTFKVmttU3Zk?=
+ =?utf-8?B?L3g5V2h2S2NRWHNpU3hFSXRCVGorSE5UZkNRNWE3a3NyMDlkeDR1N0phMlFi?=
+ =?utf-8?B?N3dTQXA2a1NtUnhKNThiWGVhajNma3h1ZWJaQmRSbVhZQjZML1NwVlBUMjQ5?=
+ =?utf-8?Q?0MRz?=
+MIME-Version: 1.0
+
+------=_Part_819542_632261920.1628701829331
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_819543_971223086.1628701829331"
+
+------=_Part_819543_971223086.1628701829331
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+As StudentPrint begins to prepare for fall semester, we wanted to reach out=
+ to
+professors that are interested in course readers for their classes.
+
+
+* This is an opportunity to submit all readings for a course and StudentPri=
+nt
+will combine them into one course reader, complete with a bibliography and
+copyright verification.
+* This would be available for students to purchase online at www.stuprint.o=
+rg
+<http://www.stuprint.org> or pick them up in person.=C2=A0 For this, we wou=
+ld like
+to get your feedback via thissurvey
+<https://uwmadison.co1.qualtrics.com/jfe/form/SV_eIPjJeMrU9MuWzQ?Q_DL=3DFoL=
+DQIlL94V0GGX_eIPjJeMrU9MuWzQ_MLRP_3TTlX6DeWupMA74&Q_CHL=3Demail>
+You can also copy and paste the URL below into your internet browser:
+https://uwmadison.co1.qualtrics.com/jfe/form/SV_eIPjJeMrU9MuWzQ?Q_DL=3DFoLD=
+QIlL94V0GGX_eIPjJeMrU9MuWzQ_MLRP_3TTlX6DeWupMA74&Q_CHL=3Demail
+It should only take 2-3 minutes to complete.
+
+Thank you for giving StudentPrint the opportunity to provide you and your
+students this service.=C2=A0 We greatly appreciate your continued partnersh=
+ip! If or
+when you decide to order course readers, please fill out thisorder form
+<https://docs.google.com/forms/d/e/1FAIpQLSdTA0bS1WK7gxywQKQKXyMQGhLNf7Sda9=
+xzU1V0Hmd6m9CFow/viewform>
+.
+
+
+
+=C2=A0
+333 East Campus Mall, Room 3301
+Madison, WI 53715-1380
++1 (608) 262-6216
+stuprint@rso.wisc.edu <mailto:stuprint@rso.wisc.edu>
+https://stuprint.org/ <https://stuprint.org/>
+=C2=A0
+
+Follow the link to opt out of future emails:
+Click here to unsubscribe
+<https://uwmadison.co1.qualtrics.com/CP/Register.php?OptOut=3Dtrue&RID=3DML=
+RP_3TTlX6DeWupMA74&LID=3DUR_cLVH5frdr7lpStv&DID=3DEMD_FoLDQIlL94V0GGX&BT=3D=
+dXdtYWRpc29u&_=3D1>
+------=_Part_819543_971223086.1628701829331
+Content-Type: multipart/related; 
+	boundary="----=_Part_819544_694800102.1628701829331"
+
+------=_Part_819544_694800102.1628701829331
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><p><span style=3D"font-size:11pt"><span style=3D"font-family:Cal=
+ibri,sans-serif">As StudentPrint begins to prepare for fall semester, we wa=
+nted to reach out to professors that are interested in course readers for t=
+heir classes.</span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11px;"><span style=3D"font-size:11pt"><span s=
+tyle=3D"font-family:Calibri,sans-serif">This is an opportunity to submit al=
+l readings for a course and StudentPrint will combine them into one course =
+reader, complete with a bibliography and copyright verification.</span></sp=
+an></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">This would be available for students to purchase online at <a href=
+=3D"http://www.stuprint.org" style=3D"color:#0563c1; text-decoration:underl=
+ine">www.stuprint.org</a> or pick them up in person.&nbsp;</span></span></l=
+i>
+</ul>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">For this, we would like to get your feedback via this </span></span><=
+a href=3D"https://uwmadison.co1.qualtrics.com/jfe/form/SV_eIPjJeMrU9MuWzQ?Q=
+_DL=3DFoLDQIlL94V0GGX_eIPjJeMrU9MuWzQ_MLRP_3TTlX6DeWupMA74&amp;Q_CHL=3Demai=
+l">survey</a><br>
+You can also copy and paste the URL below into your internet browser: https=
+://uwmadison.co1.qualtrics.com/jfe/form/SV_eIPjJeMrU9MuWzQ?Q_DL=3DFoLDQIlL9=
+4V0GGX_eIPjJeMrU9MuWzQ_MLRP_3TTlX6DeWupMA74&amp;Q_CHL=3Demail<br>
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f">It should only take 2-3 minutes to complete.</span></span><br>
+<br>
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f">Thank you for giving StudentPrint the opportunity to provide you and you=
+r students this service.&nbsp; We greatly appreciate your continued partner=
+ship! If or when you decide to order course readers, please fill out this <=
+a href=3D"https://docs.google.com/forms/d/e/1FAIpQLSdTA0bS1WK7gxywQKQKXyMQG=
+hLNf7Sda9xzU1V0Hmd6m9CFow/viewform" style=3D"color:#0563c1; text-decoration=
+:underline">order form</a>.</span></span></p>
+
+<p><br>
+<span style=3D"font-size:11pt"><span style=3D"background:white"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:13.5pt"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif"><img src=3D"data:image/p=
+ng;base64,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3D" style=3D"wid=
+th:257px; height:30px"></span></span><br>
+&nbsp;</span></span></span><br>
+<span style=3D"font-size:11pt"><span style=3D"background:white"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:13.5pt"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif">333 East Campus Mall, Ro=
+om 3301</span></span></span></span></span><br>
+<span style=3D"font-size:11pt"><span style=3D"background:white"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:13.5pt"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif">Madison, WI 53715-1380</=
+span></span></span></span></span><br>
+<span style=3D"font-size:11pt"><span style=3D"background:white"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:13.5pt"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif">+1 (608) 262-6216</span>=
+</span></span></span></span><br>
+<span style=3D"font-size:11pt"><span style=3D"background:white"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:13.5pt"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif"><a href=3D"mailto:stupri=
+nt@rso.wisc.edu" style=3D"color:#0563c1; text-decoration:underline">stuprin=
+t@rso.wisc.edu</a></span></span></span></span></span><br>
+<span style=3D"font-size:11pt"><span style=3D"background:white"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:13.5pt"><span =
+style=3D"font-family:&quot;Arial&quot;,sans-serif"><a href=3D"https://stupr=
+int.org/" style=3D"color:#0563c1; text-decoration:underline">https://stupri=
+nt.org/</a></span></span></span></span></span><br>
+&nbsp;</p>
+
+<p><small>Follow the link to opt out of future emails:<br>
+<a href=3D"https://uwmadison.co1.qualtrics.com/CP/Register.php?OptOut=3Dtru=
+e&amp;RID=3DMLRP_3TTlX6DeWupMA74&amp;LID=3DUR_cLVH5frdr7lpStv&amp;DID=3DEMD=
+_FoLDQIlL94V0GGX&amp;BT=3DdXdtYWRpc29u&amp;_=3D1">Click here to unsubscribe=
+</a></small></p>
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"https://uwmadison.co1.qualtri=
+cs.com/WRQualtricsContacts/Watermark.php?UID=3DUR_cLVH5frdr7lpStv&amp;EMD=
+=3DEMD_FoLDQIlL94V0GGX&amp;CGC=3DMLRP_3TTlX6DeWupMA74&amp;SV=3DSV_eIPjJeMrU=
+9MuWzQ"></body></html>=
+
+------=_Part_819544_694800102.1628701829331--
+
+------=_Part_819543_971223086.1628701829331--
+
+------=_Part_819542_632261920.1628701829331--

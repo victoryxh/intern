@@ -1,0 +1,260 @@
+Received: from BYAPR06MB4022.namprd06.prod.outlook.com (2603:10b6:a02:8c::14)
+ by DM5PR06MB2475.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 10:28:23 +0000
+Received: from DM5PR04CA0048.namprd04.prod.outlook.com (2603:10b6:3:12b::34)
+ by BYAPR06MB4022.namprd06.prod.outlook.com (2603:10b6:a02:8c::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.17; Sun, 15 Aug
+ 2021 10:28:21 +0000
+Received: from DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:3:12b:cafe::59) by DM5PR04CA0048.outlook.office365.com
+ (2603:10b6:3:12b::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Sun, 15 Aug 2021 10:28:21 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ DM6NAM11FT040.mail.protection.outlook.com (10.13.173.133) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sun, 15 Aug 2021 10:28:21 +0000
+Received: from business62-5.web-hosting.com ([63.250.38.201])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXV039DOMF7BPA0@smtp6.wiscmail.wisc.edu> for
+ mhshank@wisc.edu; Sun, 15 Aug 2021 05:28:20 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "IT Help Desk" <smtpfox-vc2ex@store.hindumunnani.org>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=11%, Hits= NO_MESSAGE_ID 0.3,
+ HTML_90_100 0.1, HTML_95_100 0.1, PHISH_SPEAR_CONTENT_X3 0.1,
+ PHISH_SPEAR_CONTENT_X4 0.1, PHISH_SPEAR_CONTENT_X5 0.1, SUBJ_1WORD 0.1,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTH_SIZE_3000_MORE 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_6000_6999 0,
+ BODY_SIZE_7000_LESS 0, FROM_NAME_PHRASE 0, FROM_RCPT_DOMAIN_NOT_IN_RCVD 0,
+ FROM_SAME_AS_TO_DOMAIN 0, IMGSPAM_TABLE_1 0, LINK_TO_IMAGE 0,
+ SENDER_NO_AUTH 0, SPF_NONE 0, __ANY_URI 0, __BODY_NO_MAILTO 0,
+ __BODY_TEXT_X4 0, __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DATE_TZ_HK 0,
+ __FRAUD_ANTIABUSE 0, __FRAUD_SUBJ_ALLCAPS 0, __FRAUD_URGENCY 0,
+ __FROM_DOMAIN_IN_RCPT 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __HAS_FROM 0, __HAS_HTML 0, __HEADER_ORDER_FROM 0,
+ __HREF_LABEL_IMG 0, __HREF_LABEL_TEXT 0, __HREF_LABEL_URI 0,
+ __HTML_AHREF_TAG 0, __HTML_HREF_TAG_X2 0, __HTML_TAG_DIV 0,
+ __HTML_TAG_TABLE 0, __HT
+X-Wisc-Doma: smtpfox-vc2ex@store.hindumunnani.org,store.hindumunnani.org
+X-Wisc-Env-From-B64: c210cGZveC12YzJleEBzdG9yZS5oaW5kdW11bm5hbmkub3Jn
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.101815,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840000,
+ SenderIP=[63.250.38.201]
+X-Spam-Score: *
+Message-id: <0QXV039DPMF8BPA0@smtp6.wiscmail.wisc.edu>
+Received: from [66.251.164.17] (port=62963 helo=[192.168.0.188])
+	by business62.web-hosting.com with esmtpa (Exim 4.94.2)
+	(envelope-from <smtpfox-vc2ex@store.hindumunnani.org>)
+	id 1mFDN8-00Cojk-73; Sun, 15 Aug 2021 06:28:15 -0400
+Content-type: multipart/alternative; boundary="===============1802590441=="
+Subject: UPDATE
+To: Recipients <smtpfox-vc2ex@store.hindumunnani.org>
+Date: Sun, 15 Aug 2021 18:27:05 +0800
+X-Antivirus: AVG (VPS 210814-0, 14/8/2021), Outbound message
+X-Antivirus-Status: Clean
+X-OutGoing-Spam-Status: No, score=-0.9
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - business62.web-hosting.com
+X-AntiAbuse: Original Domain - wisc.edu
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - store.hindumunnani.org
+X-Get-Message-Sender-Via: business62.web-hosting.com: authenticated_id:
+ smtpfox-vc2ex@store.hindumunnani.org
+X-Authenticated-Sender: business62.web-hosting.com:
+ smtpfox-vc2ex@store.hindumunnani.org
+X-Source:
+X-Source-Args:
+X-Source-Dir:
+X-From-Rewrite: unmodified, already matched
+From: smtpfox-vc2ex@store.hindumunnani.org
+Return-Path: smtpfox-vc2ex@store.hindumunnani.org
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 10:28:21.7752
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7f4a9487-c4f4-49bc-5ba2-08d95fd7680a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7f4a9487-c4f4-49bc-5ba2-08d95fd7680a
+X-MS-TrafficTypeDiagnostic: BYAPR06MB4022:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:2150;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 10:28:21.6703
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7f4a9487-c4f4-49bc-5ba2-08d95fd7680a
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR06MB4022
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3376220
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?V+73GN9pMRDulwDIZv5WcsDqi7oEdUi25pqL3RfioSZRSAElv/nVoq5bT9?=
+ =?iso-8859-1?Q?dfjNsH+HXjFRFKOfF0Qc+U2+y/BvEyWIwtgy/drVPD+DWkoGk25AzVbZJy?=
+ =?iso-8859-1?Q?RgU+om+iNh3yXUmE9xnjdHO6ykRfqp5bNCNHjq65B6LrxQTqnVHFyAat33?=
+ =?iso-8859-1?Q?6+7eC5dX8UcUxpORM+oT9ULKz2y2q7dXeR4ntgOTDyo4gacqIcYek0XfKF?=
+ =?iso-8859-1?Q?vVJMJA5VxDP3coWsJpHKGAqoH3ua5k1c8bWq61CpU0jQn9vT4idpOucEV4?=
+ =?iso-8859-1?Q?0jo8UVmEKQ8xD5xRlC6VS/CbKT3FygcDAjx56Y7SU4Vn9pXAW30MPWVofQ?=
+ =?iso-8859-1?Q?TPj3tk42+eBHhTgn+wIJ2Ndle9NrgegInVC/W4TVTcDoPmoyGrLtpTfyOY?=
+ =?iso-8859-1?Q?fSMX6Whfiy4SFYCLR5M/ZTkBy1pW1zg23+E+AwwHd7uw+ezF8VyWw5YsbQ?=
+ =?iso-8859-1?Q?nPWVqkhp+aiMWrmABBnYUyitLhEb31fSj8THdmv4Pd1/WDhPxoDX4FzOsx?=
+ =?iso-8859-1?Q?TvNF1b4jrzS31OG8/DfLtJwBP/Mh1j28KlpHk46sv6zTEVcQ5HH27Qwfe/?=
+ =?iso-8859-1?Q?p1i2ycqvV0Ud2Us/o2VQu4/G7RLLYTIYez0SJHCLE+T302nBdEFyLRTDc7?=
+ =?iso-8859-1?Q?pl49V15adqVO6lu3Bf4o9iepOijpHt58h3p10RZsiCPScTPR2qWEZeO1yl?=
+ =?iso-8859-1?Q?+Ln21UATsEcw8bkLrDlayR3qaKLXmjtRbkfsQCbR+jSIYVpE5xB8/66SRw?=
+ =?iso-8859-1?Q?5yK7M6L/jLbFZE+8R4g1d3zh+HeIVDBmZY17/gaMGEmowu0+bQI0UrEgZ4?=
+ =?iso-8859-1?Q?M/0czDRvmJFfthlY3G0wVOc6lCoH8oHRZl2rHcLcyHsxQVlLhzGbnoLkOG?=
+ =?iso-8859-1?Q?xemEncBAWTu7rDfTsWsvJK47phklPEy9pac99vy539svtzA9eV/fVir3Jb?=
+ =?iso-8859-1?Q?mdLnOMHmyEHuWUi9kz2GTcdPMQ52N10fJgkSw8s9KvHRZfaAkEmyM9hb1E?=
+ =?iso-8859-1?Q?+wr9jNwnudC+s9dDvxlJ37ElbTcyUfaD1VAnFMb5B2PnBMYXtOAqIYQJ5p?=
+ =?iso-8859-1?Q?yfQdrPhS8E4Od9MZ6vxv930pblKOUw61kSboSUhClD6IFB7dkuiClkU+o9?=
+ =?iso-8859-1?Q?OR2el/MQt+B/yNwmgZEonrExiFhYdnm/QRXqeCyqgMoIPUfG2DifPART5r?=
+ =?iso-8859-1?Q?79GRKKDWFZq5Ca4eSxLfXVv5tuk1t/cY+czAmk82QQXGH+MeCdAL4gGiFz?=
+ =?iso-8859-1?Q?IFpwoAHXiSAXfQWKzzzFqvq0PJMpGYqMUGDyQ0/0xuyD+XC0zPk9Bciggi?=
+ =?iso-8859-1?Q?4Wg935B9OoOJqXM9woTNqNkCJYuT3yV/qNXkjc58wg5EZHXB1c848wtX9p?=
+ =?iso-8859-1?Q?EIihM70CT4AokzXxnkA9bscNElumL9Y/+cYZdwEolllLWN7LS9NxCN4w19?=
+ =?iso-8859-1?Q?U1aPozoZg3L2CgEs7Eo1aJx0XEcA2S8y48cjPDg8PJoIRSVpdgWtDE/2HE?=
+ =?iso-8859-1?Q?LrWfeQsfNljGz4xIu+E4wdKcbTabwQ8DNBj3q6crGQjwofVkI7FEq5dKjE?=
+ =?iso-8859-1?Q?YruKJ8qTC9MQRDvcyDKHqyuoikrUYAATJDs2A52niZh8xE4yKnLdL6xzoS?=
+ =?iso-8859-1?Q?ethOP0miWPAbKG8/2e4TLWzRSfsv7EpJoHTVjj1ehzBwbd1Oxm23WxP37i?=
+ =?iso-8859-1?Q?49P+kfaWumrhWv7lT1vk7ycOCkmvfpnaXkNP9XidIbj7BQqfGhQtIkklVQ?=
+ =?iso-8859-1?Q?0ltS3fF+LzV5Uhi2D2gAi5M3HdF+gFozr/uEoMPTY+GxcZiZ3/PqOMlaM4?=
+ =?iso-8859-1?Q?62nCTXeBZULnkTzmk66ho/Vbm/NggvZe76Q9SyZgQq9AdXUlFR3Mu4jnnS?=
+ =?iso-8859-1?Q?yTgyt/40aP95tT7zNFMPo4mhSmR6BYZ91I1TyLr+iWd86LTPVn19x8w1WC?=
+ =?iso-8859-1?Q?uWlOykUlQ5pW6DeFaDTO3ZxTR5YRwo0wdnCIy8NK6cuYUHokP5A7mC22Rk?=
+ =?iso-8859-1?Q?9N8kHmg9BCvbqt5EuCD4SbQEos6M9V2g5xAYKIF7NA3EZYXZrKAxM/GxPL?=
+ =?iso-8859-1?Q?cTZIPb4kyCaQ1i/uUh6DC48U0WUtepJnpUPmNwugYS+Y3b3OXckq+tlk1x?=
+ =?iso-8859-1?Q?OCa7zuYkcOEXwTJ6B3IJcazCkTx5PiFcVr5W42xM+OZplpswiokOCurGUN?=
+ =?iso-8859-1?Q?fFjzxXH87X3undsICq/U3dTMHlY2Cf4NO1eixN9QqpeXpw=3D=3D?=
+MIME-Version: 1.0
+
+--===============1802590441==
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+Hello 
+ Your Email account will be Deactivated shortly. To stop Deactivation, CLIC=
+K HERE and log in 
+ Thanks 
+ IT Help Desk
+
+-- 
+This email has been checked for viruses by AVG.
+https://www.avg.com
+
+--===============1802590441==
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"></head><body><div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT=
+-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial; -webkit-text-stroke-width: 0px">Hello</div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px"><br></div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px">Your Email account will be Deactivat=
+ed shortly.</div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px">To stop Deactivation,&nbsp;<a style=
+=3D"COLOR: rgb(17,85,204)" href=3D"https://7949ee71.sibforms.com/serve/MUIE=
+AAh0TELtUdAclquHzm5NNOJEO4XElKe4js9QGufswCl--3O2fSypszzFrPwheiJGxEc6U3LkDMR=
+4akZbs9zhn2oAB42f3rFLzQPd61lYBE56smWW67pcQX3fopKsuP_CJn4YPjuJD0Ss7pVmiVP_Gx=
+t0yUJ4rMJ8NcBJJ5I0zcE1SF9hzEgF-LQtvOLJPuWEgf3NH3r6tXSx" target=3D"_blank" d=
+ata-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://11ec435b.sibf=
+orms.com/serve/MUIEAKL7_m8Yo52sfZeNdcBKLhSbzcGzbnjnKJ5wZAPp1b7d80Rsc8Ool-OB=
+MTbe6gTrCc9KxSugtcBMPK8dQI0GCUMuEWXXFqQOav-ke6B_b1ihdh-PlWrmhNaCbTXaGITALno=
+d7f_DvxAkkF6W-gLuSk15WLqGJxx4nQ-A9_R04sB9MBTbOyVvQDLWkdjYK2fD_r_NSYgCz-hQ&a=
+mp;source=3Dgmail&amp;ust=3D1629068551011000&amp;usg=3DAFQjCNGz9Nv_ys3joLgf=
+ft6vjNq9Jml4zg">CLICK HERE</a>&nbsp;and log in</div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px"><br></div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px">Thanks</div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px"><br></div>
+<div style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
+R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial; -webkit-text-stroke-width: 0px">IT Help Desk</div><div id=3D"DAB4FAD=
+8-2DD7-40BB-A1B8-4E2AA1F9FDF2"><br>
+<table style=3D"border-top: 1px solid #D3D4DE;">
+	<tr>
+        <td style=3D"width: 55px; padding-top: 13px;"><a href=3D"http://www=
+.avg.com/email-signature?utm_medium=3Demail&amp;utm_source=3Dlink&amp;utm_c=
+ampaign=3Dsig-email&amp;utm_content=3Demailclient" target=3D"_blank"><img s=
+rc=3D"https://ipmcdn.avast.com/images/icons/icon-envelope-tick-green-avg-v1=
+.png" alt=3D"" width=3D"46" height=3D"29" style=3D"width: 46px; height: 29p=
+x;"></a></td>
+		<td style=3D"width: 470px; padding-top: 12px; color: #41424e; font-size: =
+13px; font-family: Arial, Helvetica, sans-serif; line-height: 18px;">Virus-=
+free. <a href=3D"http://www.avg.com/email-signature?utm_medium=3Demail&amp;=
+utm_source=3Dlink&amp;utm_campaign=3Dsig-email&amp;utm_content=3Demailclien=
+t" target=3D"_blank" style=3D"color: #4453ea;">www.avg.com</a>
+		</td>
+	</tr>
+</table><a href=3D"#DAB4FAD8-2DD7-40BB-A1B8-4E2AA1F9FDF2" width=3D"1" heigh=
+t=3D"1"> </a></div></body></html>=
+
+--===============1802590441==--

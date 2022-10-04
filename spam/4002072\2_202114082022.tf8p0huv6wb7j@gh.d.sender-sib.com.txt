@@ -1,0 +1,352 @@
+Received: from BY3PR06MB8131.namprd06.prod.outlook.com (2603:10b6:a03:3ca::9)
+ by DM6PR06MB6682.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 20:22:44 +0000
+Received: from MWHPR1601CA0012.namprd16.prod.outlook.com
+ (2603:10b6:300:da::22) by BY3PR06MB8131.namprd06.prod.outlook.com
+ (2603:10b6:a03:3ca::9) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.20; Sat, 14 Aug
+ 2021 20:22:43 +0000
+Received: from CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:da:cafe::c7) by MWHPR1601CA0012.outlook.office365.com
+ (2603:10b6:300:da::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13 via Frontend
+ Transport; Sat, 14 Aug 2021 20:22:42 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ CO1NAM11FT050.mail.protection.outlook.com (10.13.174.79) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sat, 14 Aug 2021 20:22:42 +0000
+Received: from gh.d.sender-sib.com ([77.32.148.8]) by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU04O9TJ9HGS40@smtp7.wiscmail.wisc.edu> for
+ bmcmahon@wisc.edu; Sat, 14 Aug 2021 15:22:38 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_70_90 0.1,
+ SUPERLONG_LINE 0.05, BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTH_SIZE_3000_MORE 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BULK_EMAIL_SENDER 0, DKIM_SIGNATURE 0,
+ FONT_STYLE_0PT 0, FONT_STYLE_1PT 0, HREF_LABEL_TEXT_NO_URI 0,
+ HREF_LABEL_TEXT_ONLY 0, LEGITIMATE_SIGNS 0, LINK_TO_IMAGE 0, LIST_HEADER 0,
+ OBFUSCATION 0, PRECEDENCE_HEADER 0, REPLYTO_SAMEAS_FROM 0, SPF_PASS 0,
+ SXL_IP_TFX_ESG 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0,
+ __BODY_TEXT_X4 0, __COURIER_BODY_DHL 0, __COURIER_PHRASE 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DC_PHRASE 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FRAUD_INTRO 0, __FRAUD_URGENCY 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_DHL 0, __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_ID 0,
+ __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_X_MAILER 0,
+ __HEADER_ORDER_FROM 0, __HIDDEN_HT
+X-Wisc-Doma:
+ bounces-tf8p0huv6wb7j-bmcmahon=wisc.edu@gh.d.sender-sib.com,medihelp.com.mx
+X-Wisc-Env-From-B64:
+ Ym91bmNlcy10ZjhwMGh1djZ3YjdqLWJtY21haG9uPXdpc2MuZWR1QGdoLmQuc2VuZGVyLXNpYi5j
+ b20=
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.200916,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.14.5840001,
+ SenderIP=[77.32.148.8]
+X-Wisc-DKIM-Verify:
+ bounces-tf8p0huv6wb7j-bmcmahon=wisc.edu@gh.d.sender-sib.com,sendinblue.com!pass
+X-Spam-Score:
+DKIM-Signature: a=rsa-sha256; bh=7580r1iuCoEzqKPhCQxxltrRTxZYTrQY7zuHWkQKs5M=;
+ c=relaxed/relaxed; d=sendinblue.com;
+ h=to:cc:from:reply-to:subject:date:mime-version:content-type:list-id:list-unsubscribe:x-csa-complaints:list-unsubscribe-post:message-id:sender:x-sib-id:x-mailin-client:x-mailin-campaign:feedback-id;
+ q=dns/txt; s=mail; t=1628972557; v=1;
+ b=zfKmXltzKdn0a2+HLdLNvjy8iYQ749pHoSkgc4+3DpB3oPjHkU4OyFxpyw7CZFPwuaWPkH3Y
+ SsN+hh25fsFCBwTj0s8VrF9LlwipJXxhWQ/kp8JuZF+EnNyNwZYxRa3G3VjEbc9/91Kf1KEIEUS
+ VRrJzhXNw3Ll76pgOuGLn8ec=
+To: bmcmahon@wisc.edu
+Subject: [DHL] - Manage Your Shipment Now.
+Content-type: multipart/alternative; boundary="-------?=_51607-4926288977223"
+Date: Sat, 14 Aug 2021 20:22:37 +0000
+Feedback-ID: 77.32.148.8:2617684_52:2617684:Sendinblue
+From: DHL Delivery <gmartinez@medihelp.com.mx>
+List-Id: MjYxNzY4NC0xMDk4MjAtMzM= <MjYxNzY4NC0xMDk4MjAtMzM=.list-id.mailin.fr>
+List-Unsubscribe:
+ <mailto:unsubscribe@gh.d.sender-sib.com?subject=unsub-tf8p0huv6wb7j&body=tf8p0huv6wb7j>,
+ <https://4gq2s.r.ag.d.sendibm3.com/mk/un/li/WcyM7WTlWde4lKER3f9VR3Yg0Mf91P6NQZrDy0TFjZfeODVpzgnPuN03gEcC-OYEcrBoOO3JrATyROA0_DNK5pubqGXeWMdbrSOzROZ5z20NV9bJAxMK_u8IS2HCP1T5en-eT2nj8agMHQo>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Message-id: <202114082022.tf8p0huv6wb7j@gh.d.sender-sib.com>
+Precedence: bulk
+Reply-to: gmartinez@medihelp.com.mx
+X-Csa-Complaints: csa-complaints@eco.de
+X-Mailer: Sendinblue
+X-Mailin-Campaign: 52
+X-Mailin-Client: 2617684
+X-sib-id:
+ af9Go-Iid3Fvkh_hiCB-dgygxpB7Ly7kjnmRFSPAGQflbTMWlJrjugHv2Mur1PPrp9tD1x3TQynA8g-TO4t8YjkMlSvrbdrlAYJ0sC6HtpDstVRxbOsoFaGyhvzjH-eGUKHhai5C98B8repGxmc4K6J7W6Wu0FXYH34k
+Return-Path: bounces-tf8p0huv6wb7j-bmcmahon=wisc.edu@gh.d.sender-sib.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 20:22:42.4540
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ add96fe1-3803-421f-5cd6-08d95f61450c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: add96fe1-3803-421f-5cd6-08d95f61450c
+X-MS-TrafficTypeDiagnostic: BY3PR06MB8131:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 20:22:42.2831
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: add96fe1-3803-421f-5cd6-08d95f61450c
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BY3PR06MB8131
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.2184142
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MHhLeFRnOTFKSUxMS1QwWjNVVzRXaXBtajJnNGZhOTgwNDRKZHUvMjZRU1dM?=
+ =?utf-8?B?NTF0YTIydlN6MUk3UlRzajVSbXc3Q1pha1ZnTFhvN285SGFUVGw3Y1hEcWtH?=
+ =?utf-8?B?UEJtNjdUU1ExaEdhUTFVZTRxVk5DMWRqYk81WHZqQzc5MzI3eDgyY2xYRG0v?=
+ =?utf-8?B?dWIxcngycmJlQ2dFd05jdnlwdHNWbXZTMytHaFpVejRMMTFzaDZPSjhMSUJj?=
+ =?utf-8?B?MGxERU16OEhGeGhybHduWFNXTzl0V25IT0hRaFBnUUtENjdvT2JnNWsxN1pE?=
+ =?utf-8?B?SE8vYWhDMm5pN2FWTTB3ZGVabC9jZkw2MHBNU0wxZDd4aDF1WFljWCt3R0RE?=
+ =?utf-8?B?ZnZ1S3Z1MHUzdGNRWjlwanllYzZ2MFJSNnV4ZitXakV6L0wzbXZDemdQY0dW?=
+ =?utf-8?B?em5JZE5Za0lleHZhNkNMQkM4S1dyd1lrRjMrSkMvU3VlaWhwS2gwVXZ3Vjlk?=
+ =?utf-8?B?SDZCZ3VZOGdaSlFiNVVLbHhOTlVmenNsMG5uaWN0d3BsMVM0Vi8xdmJFRTV5?=
+ =?utf-8?B?QXVSZUIvUlJjNkpiNk1aNE0vYnRUbU95UnNTSWdoM3ZTNUcyVi9zMDRHZDhP?=
+ =?utf-8?B?ZkNFSUhRZldFYVQrZ085UVBnekpuT3V1UkpWY254ejZOT0VHempYUHp6RXA3?=
+ =?utf-8?B?SjBwVnNkVXdvMnBKd1RwRjFYMERpaTcvajlHUlJzU3JYcThmT2pwVWNWZ1BV?=
+ =?utf-8?B?RUl0a3JJZ3hFcnhaVTBRanREM3Y2MlphV1B2WEJsUVZYQU5CZERhUzAwTzBF?=
+ =?utf-8?B?bFRqNHJBN040ZHdjRFMyandrRUx3YnZrZVNPeUJzZDlDNy81NTczTWs4VTU0?=
+ =?utf-8?B?TmFrUGVRYU1DdG8xVGorMGxiV0ovZk11dlNlVUo0MWtzNGVzQTBxaEtKUGNX?=
+ =?utf-8?B?a2tsR3dtdkRubDlHSVNFUnRFd1JkY1pjK09oQWI0aVlyTzg1STc2NGlLVWUx?=
+ =?utf-8?B?Z1dMdE05b3BGamMzWk9ZWkFvQWVjUjVPVHliSk00Qm53d2Y1WmJnblNkRGxB?=
+ =?utf-8?B?aDkvQVJuWjE0NXBwS0R5bnMzYTAyT3VCbjZMWDRMTEtvbis0YW1TMUZxc3cr?=
+ =?utf-8?B?d1ZUeTd6cTByb3N3Y0doQnF0R1FBSDdpQVBXcXhJZVdTKzFYdFUrY2pFUW0w?=
+ =?utf-8?B?TE1PQmg0YklSaWIxQjhxbWNoZmRrdlBnKzFlRi80VDVvZVJUc1c2WUltcE9S?=
+ =?utf-8?B?NlVYMzQrQUZzQkRkSFo5K09HcGZyTXkvTEdOWHJOckMzOFZpM3VxdGNqUU9h?=
+ =?utf-8?B?RVRmZzRoT2xGYXdiVFVDVXNXeDZpd1VvNVAxS0gySkFBSUd5d1ZhWDc2RUE0?=
+ =?utf-8?B?TlhuNEUxaWxXNS9pTnA1c1d6ODQ4aDdoTnNHamNPQTBJbEZOKzJwMEtMQkIy?=
+ =?utf-8?B?NGpEb1MwVVIxSGJmdWtGblRBdjdteFUzbXNlVmxVVWRCNGhLcVNKSzBzdlF4?=
+ =?utf-8?B?a1d3K3V3bTJUamFtMnU4ZnIvRnlWWU8yN3VOdEJCUU8xMlM5UFBhK3puRUpl?=
+ =?utf-8?B?NVRQWkhnOVRkeUZBdkFvMUlRbURGM3p0SmI0M2Z6QkRjNEdKRTFRdU5XVTRx?=
+ =?utf-8?B?b2kzMGtyell4a1lsZ2ZqVWQwRDVtb25LNGdCeW1lVjNMc3NhVDR2U2JzbUhZ?=
+ =?utf-8?B?aGF4djQvdndDc0NJMTZSZzRCSzJ3QUM3MGV6NHJYNDVHQUFyemVOUDAyQ3dV?=
+ =?utf-8?B?YmdXeFBFSllrU0x3eGNqNUxyaWJwVkZqVzZZME5oc01LMXpVbXU0N3RGRmsw?=
+ =?utf-8?B?d3JsdzNhVExuTDczRlZkem1RMDcwOUNPY1c4a1kwK3NzWk1RRjdCWW8rcXkx?=
+ =?utf-8?B?UE1DcWkvSE5RNlBCYjJ1UjUxTlN2MHhSVkZUWGNwbzZ2MXNobGJCZEREa2N6?=
+ =?utf-8?B?Q3YxZUhpNXk5UWYzam9pa1NDbndwV2dWd3I0YnhWb1hETmc3UnE1TWpXMW03?=
+ =?utf-8?B?VUVLOUlWUWFaeml4ZzUyMWQ0SXZJYW5tQ09qM2ZUQ3p6bDJoSjEreXFKOUVE?=
+ =?utf-8?B?TVJFRmZiZ2FLVGNtaVQ4bEwveUY1V1dyZWdEbGsrcHhyaTBCV1pTQjUyT1dI?=
+ =?utf-8?B?ek5XWk5wWmNlendEWENoOUVGeWpEdUZUeEc3cUlSZkpTRWZqdTVyOWNFNnpB?=
+ =?utf-8?B?Q2trdFRkYjFqUTFIRmFmdFc3ZHVQY2ltNE5IVWVFTGwrZjZVZ3d0TTdXbWxN?=
+ =?utf-8?B?dUZPdEpTaGhTTzMzVEJvR01rUlIyVDh0SzFmQUhTeFRGLzE2eWdqSGlhNGJ0?=
+ =?utf-8?B?eWxIcWt6L1NUUEtXT2hPOUhMdXM2T1N1YWRLS2tKYmNnQlFKcUdLUytYZDFV?=
+ =?utf-8?B?ZEx0Z1I1d0x0TkxFSVprdiswbUF5Syt5L0sweWoydm5FbTIwdmlsWDNRa1J6?=
+ =?utf-8?B?eUx3d21qbHVqNU9NSEZVZ2NBQ0VQQWVoV2VVWDFLODZKK1FSU3lVNU44SVBK?=
+ =?utf-8?B?L3liWkk0MUtSVldXSXQvM0J1SDNYU1dnM2xnamdwTmQzUDNPUGlOT1FpMGsw?=
+ =?utf-8?B?WGxiaGM1cXNKZGJ5UzhYaHZ5UWpKdnJMWUdrT2hsSjM1b0RQTCswcHRPeFJN?=
+ =?utf-8?B?Y3dBSWxxMEFVODBJL1BxbjJGT05pWk90UHFTOGZJQ2hTMXlyMGUxYVpLVzQ3?=
+ =?utf-8?B?bmNZdWNaVWY3TTdzdXRVNldpY3o2SDN5VDdvRVJDUldCRHBSSG42RWtyRVAx?=
+ =?utf-8?B?czlGaUx1b1ZSVXRjRHVnYVVwaEZoQzREOFgybGIrclBHdHhIaHpTWXBjZzZB?=
+ =?utf-8?B?SnJWamVSbnpXbVkvdVJSdHYrMFRLSjNMU1VUMVZleTVZODlXZnR4WVc4WVQv?=
+ =?utf-8?B?OGtHZDdyQjRHM3EyOXQ2ZE4rNjJ1Qktid1BUSDdzYUFPYUNSY09GazdHem4r?=
+ =?utf-8?B?aW1QQy9wSWZzNjNtMWc0cVErQm1HL3loT0dVaXFBS1lTVUxtTXB1Z0hFN0FG?=
+ =?utf-8?B?dFdCQUxoUWhETElwM3dzRHhTSVVxOEhJZHdneEc3MG82ZmFxRVVscVJTVlo3?=
+ =?utf-8?B?SFhUUCtVL1haTzBoMmxFMWtDQWZOZFIra2dlS2JIRWsrSlpMSzlVb2hWOWh1?=
+ =?utf-8?B?d0Yrb0pqOUk3NjF0b3hUY3pTUEQzTVRGdEwwK1FGamdrbDdBaDhma1dXRTZF?=
+ =?utf-8?B?KzJxVG5UMGxxT3NkZ2tCenNlM2t1UDU2RzNMRzlnbXdpU1NpM210VGFqYXpl?=
+ =?utf-8?B?VEJoaFJFclhWeWUxcDkzaW0rNjNtd29nQW93MFJuOWl3THNDK05zVDB0aStN?=
+ =?utf-8?B?VGVsamFVSXlpTGV5U2hnRHp0Vk9yeVY1MVRkdm4wczdNQTcrVklYdFFYN0dT?=
+ =?utf-8?B?dWR1cDlUT2lGVlZTbWZKd3RhN05GcHVQcGFWcDVjQ1NIMHFGTjdVSHFVeStF?=
+ =?utf-8?Q?=3D?=
+MIME-Version: 1.0
+
+---------?=_51607-4926288977223
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Dear Client,
+Dear Customer ,
+
+We're sorry to let you know that your package which arrived on 14/08/2021 w=
+ill be sent back ,
+
+This may happen when the receiver's address is incorrect.
+To submit a redelivery request for this package please fill out the form in=
+ our website.
+
+
+
+[ Check This Now ]( https://4gq2s.r.ag.d.sendibm3.com/mk/cl/f/0fVsYUJdczwPn=
+t4wPfgvw3xdwfejTjQ0hLpwaGftsGUaiKJfkM4afTsjo_F8_FE5qPjhFiqypgzy8PSX0Ycj_atg=
+Kx18HPiOjnXiNMe0rtpiaV12qt8qHaIrulW8XFBGyK31hE6rahoHS8koLQ3mK9JMJLoNQKoEjTI=
+q_6MfG5UDc0ux_l5Mqd4iucVH )
+
+NOTICE:
+
+Please note, that if a redelivery is not scheduled within 48 hours will be =
+refunded.
+
+
+---------?=_51607-4926288977223
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body> <table cellpadding=3D"0" border=3D"0" cellspacing=3D"0" style=
+=3D" mso-hide: all; display: none;"><tr><td>[DHL] - Manage Your Shipment No=
+w.</td></tr></table>  <div id=3D":k0" class=3D"ii gt adP adO"><div id=3D":l=
+p" class=3D"a3s aXjCH m15cb56006babc523"><div class=3D"adM">
+   </div><div style=3D"padding:0;margin:0;background:#f2f2f2"><div class=3D=
+"adM"> =20
+ </div><div style=3D"display:none;display:none!important;color:#fff;font-si=
+ze:1pt">=20
+
+Dear Client,=20
+
+</div>    =20
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" clas=
+s=3D"m_-6313486496045983387marginFix">
+ =20
+  <tbody><tr>
+    <td bgcolor=3D"#f2f2f2" class=3D"m_-6313486496045983387mobMargin" style=
+=3D"font-size:0px"> </td>
+    <td bgcolor=3D"#ffffff" width=3D"660" align=3D"center" class=3D"m_-6313=
+486496045983387mobContent">
+      =20
+      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%=
+">
+         =20
+          <tbody><tr><td align=3D"center" width=3D"600" valign=3D"top">
+              <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0">
+              <tbody><tr class=3D"m_-6313486496045983387no_mobile_phone">
+                <td bgcolor=3D"#f2f2f2" style=3D"padding-top:10px"></td>
+              </tr>
+              <tr>
+                <td bgcolor=3D"#f2f2f2" style=3D"padding-top:10px"></td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff">
+                  =20
+                 =20
+                    <img src=3D"https://4gq2s.img.ag.d.sendibm3.com/im/2617=
+684/d9aab7de7c80401dd9b2871f1b2790d8f4f3c057660b34869af7355820b52d1c.png?e=
+=3Dtgmg7jXX4KypLTsOB0fn6T0voez0uCGYee7m4XrC_lvFSKtTeYUKzG8m8okDLcMOIrdoUtpR=
+7vWxurewVQT1yaeaYegdjMxwC0bvicIEhz9oT957MAMIM7jJdt8Yrskq1KlRh_My99BJz3TLaZy=
+aDsI" alt=3D"Homepata" weight=3D"50" height=3D"100" sib_img_id=3D"0">
+    =20
+        =20
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"padding-bottom:10px;padding-top:10px" width=3D"100%">
+                        <tbody><tr valign=3D"bottom">   =20
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                            <td>  =20
+                              <span class=3D"m_-6313486496045983387text_lig=
+htblue_header" style=3D"font-family:Calibri,Trebuchet,Arial,sans serif;font=
+-size:16px;line-height:24px;color:#00BFFF&gt;&lt;strong&gt; &lt;center&gt;
+                                      We want to make sure you're the owner=
+ of this account. &lt;/strong&gt; &lt;/center&gt;
+                                &lt;/span&gt;                              =
+ =20
+                            &lt;/td&gt;
+                            &lt;td width=3D" 20?=3D"" align=3D"center" vali=
+gn=3D"top"> </span></td>
+                        </tr>
+                    </tbody></table>
+               =20
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"padding-bottom:10px;padding-top:10px;margin-bottom:20px" width=3D=
+"100%">
+                        <tbody><tr valign=3D"bottom">   =20
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                            <td valign=3D"top" style=3D"font-family:Calibri=
+,Trebuchet,Arial,sans serif;font-size:15px;line-height:22px;color:#333333" =
+class=3D"m_-6313486496045983387ppsans">	Dear Customer ,
+    <br>
+<p>
+    We're sorry to let you know that your package which arrived on 14/08/20=
+21 will be sent back , </p><p>This may happen when the receiver's address i=
+s incorrect.</p>
+To submit a redelivery request for this package please fill out the form in=
+ our website.<br><br>
+<p></p><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_-6313486496045983387mobile_button"><tbody><tr><td height=
+=3D"40" id=3D"m_-6313486496045983387force_height" width=3D"1"></td><td alig=
+n=3D"center" class=3D"m_-6313486496045983387button_style" id=3D"m_-63134864=
+96045983387button_text" style=3D"font-family:Calibri,Trebuchet,Arial,sans-s=
+erif;font-weight:300;font-stretch:normal;text-align:center;color:#fff;font-=
+size:15px;background:#0D487C;border-radius:7px!important;line-height:1.45em=
+;padding:7px 15px 8px;font-size:1em;padding-bottom:7px;margin:0 auto 16px" =
+valign=3D"middle"><span class=3D"m_-6313486496045983387aloha-editable">
+
+<a style=3D"text-decoration:none;color:#ffffff" href=3D"https://4gq2s.r.ag.=
+d.sendibm3.com/mk/cl/f/0fVsYUJdczwPnt4wPfgvw3xdwfejTjQ0hLpwaGftsGUaiKJfkM4a=
+fTsjo_F8_FE5qPjhFiqypgzy8PSX0Ycj_atgKx18HPiOjnXiNMe0rtpiaV12qt8qHaIrulW8XFB=
+GyK31hE6rahoHS8koLQ3mK9JMJLoNQKoEjTIq_6MfG5UDc0ux_l5Mqd4iucVH" target=3D"_b=
+lank" sib_link_id=3D"0">Check This Now</a>
+
+</span></td></tr></tbody></table><br><table border=3D"0" cellpadding=3D"10"=
+ cellspacing=3D"0" class=3D"m_-6313486496045983387howTo" style=3D"font:11px=
+ Calibri,Trebuchet,Arial,sans serif,sans-serif" width=3D"100%">
+<tbody><tr>
+<td style=3D"background-color:#e8f1fa">
+<h4 style=3D"color: black;">NOTICE:</h4> <strong><h4 style=3D"color: black;=
+">
+Please note, that if a redelivery is not scheduled within 48 hours will be =
+refunded.
+</h4></strong></td>
+</tr>
+</tbody></table>
+
+                                <span style=3D"font-weight:bold;color:#444"=
+>
+                                </span>
+                                <span>
+                                </span>
+                            </td>
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                        </tr>
+                    </tbody></table>
+               =20
+                 =20
+                </td>
+              </tr>
+            </tbody></table></td>
+                    =20
+       </tr></tbody></table>
+     =20
+     =20
+     =20
+    </td>
+    <td bgcolor=3D"#f2f2f2" class=3D"m_-6313486496045983387mobMargin" style=
+=3D"font-size:0px"> </td>
+  </tr>
+ =20
+</tbody></table><div class=3D"yj6qo"></div><div class=3D"adL">
+
+
+   </div></div><div class=3D"adL">
+</div></div></div>
+ <div align=3D"center" style=3D"color: #727272; font-size: 10px;">If you wi=
+sh to unsubscribe from our newsletter, click <a style=3D"color:#01a4c6;" ta=
+rget=3D"_blank" href=3D"https://4gq2s.r.ag.d.sendibm3.com/mk/un/v2/c49vKsiv=
+WfQenBl0gZaaX7CdEK5xCqxRZhkYWaejxRTS5qbgI1wcHi9xJkYksf3e-ve9E66E34-yBgYtzWT=
+1ABhLMoAXI-V6_sfiD55r6h84PJZZvH9B7TV81g2V8_4lMDdc2M7wc_-jj1A">here</a></div=
+><div><img width=3D"1" height=3D"1" src=3D"https://4gq2s.r.ag.d.sendibm3.co=
+m/mk/op/qz6PtReFNUgbAc7siAzzLN7x3xOcim17AsoLoiNj0RlLm-1PcJN9ZK_XQPy7oKlirHB=
+uU260FSKOg6gmNT7Z_4g8U64ejyTORiJTQRvlji-3y9B8FA"></div>  </body></html>
+
+---------?=_51607-4926288977223--

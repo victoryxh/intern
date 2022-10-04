@@ -1,0 +1,358 @@
+Received: from SJ0PR06MB8475.namprd06.prod.outlook.com (2603:10b6:a03:38b::10)
+ by DM6PR06MB6748.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 13:53:59 +0000
+Received: from DS7PR03CA0118.namprd03.prod.outlook.com (2603:10b6:5:3b7::33)
+ by SJ0PR06MB8475.namprd06.prod.outlook.com (2603:10b6:a03:38b::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.21; Sat, 14 Aug
+ 2021 13:53:58 +0000
+Received: from DM6NAM11FT027.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:3b7:cafe::dd) by DS7PR03CA0118.outlook.office365.com
+ (2603:10b6:5:3b7::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sat, 14 Aug 2021 13:53:58 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ DM6NAM11FT027.mail.protection.outlook.com (10.13.172.205) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sat, 14 Aug 2021 13:53:58 +0000
+Received: from smtp.rochelle.bluehornet.com ([67.216.225.249])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU03VO819WAU50@smtp7.wiscmail.wisc.edu> for
+ lforrest@facstaff.wisc.edu; Sat, 14 Aug 2021 08:53:57 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_70_90 0.1,
+ UTF8_SUBJ_OBFU 0.1, MIME_LOWER_CASE 0.05, BODYTEXTH_SIZE_3000_MORE 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0,
+ DATE_TZ_NA 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, FROM_NAME_PHRASE 0,
+ INVALID_MSGID_NO_FQDN 0, LEGITIMATE_SIGNS 0, LIST_HEADER 0, NO_URI_HTTPS 0,
+ OBFUSCATION 0, OBFU_ZERO_WIDTH 0, REPLYTO_SAMEAS_FROM 0, SPF_PASS 0,
+ STYLE_RATWARE_REF 0, SXL_IP_TFX_ESP 0, TEXT_DIRECTION 0, TEXT_DIR_LTR_ONLY 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_TEXT_X4 0, __CANPHARM_UNSUB 0,
+ __CANPHARM_UNSUB_LINK 0, __CP_MEDIA_BODY 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FROM_3RD_PARTY 0, __FROM_ALERT 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_BODY 0, __FROM_TRANSACTIONAL 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_LIST_HEADER 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_REPLYTO 0,
+ __HEA
+X-Wisc-Doma:
+ bounce-use=M=42742634657=echo7=3902B6D0291C9BCAD266E8D4D95F2740@returnpath.bluehornet.com,magatriumph.net
+X-Wisc-Env-From-B64:
+ Ym91bmNlLXVzZT1NPTQyNzQyNjM0NjU3PWVjaG83PTM5MDJCNkQwMjkxQzlCQ0FEMjY2RThENEQ5
+ NUYyNzQwQHJldHVybnBhdGguYmx1ZWhvcm5ldC5jb20=
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.134515,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.23.5840001,
+ SenderIP=[67.216.225.249]
+X-Wisc-DKIM-Verify:
+ bounce-use=M=42742634657=echo7=3902B6D0291C9BCAD266E8D4D95F2740@returnpath.bluehornet.com,magatriumph.net!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Sun-Java-System-SMTP-Warning: Lines longer than SMTP allows found and wrapped.
+Return-Path:
+ bounce-use=M=42742634657=echo7=3902B6D0291C9BCAD266E8D4D95F2740@returnpath.bluehornet.com
+X-MSFBL: bGZvcnJlc3RAZmFjc3RhZmYud2lzYy5lZHVAcm9jaGVsbGVAZGVmYXVsdEBib3Vu
+	Y2UtdXNlPU09NDI3NDI2MzQ2NTc9ZWNobzc9MzkwMkI2RDAyOTFDOUJDQUQyNjZF
+	OEQ0RDk1RjI3NDA=
+DKIM-Signature: v=1; a=rsa-sha256; d=magatriumph.net; s=s1024-1.bh;
+ c=simple/simple;	q=dns/txt; i=@magatriumph.net; t=1628949235;
+	h=From:Subject:Date:To:Mime-Version:List-Unsubscribe:List-Unsubscribe-Post:Content-Type;
+	bh=h2qQouFMbDemLpAVmal8l9OVrfKEvoKQ6ozD4lrCVRE=;
+	b=f3HOkEatj/S+nQHfRo9bap9bYsQsd5ldpI8SmjFWtlaM1nO+LJyUXZTePmZtnJBX
+	iNUWIeKqWkuXqR+WSEyITt/1VDp0sugy7545sTUFGT4f4MiMJEBrNPMHCmbsNK4Z
+	sIynMO9AbMma2cO8kV1NCZ8Y+Q5q9sEQcoS+Y60hP58=;
+Received: from [172.16.9.174] ([172.16.9.174:45496])
+	by returnpath.bluehornet.com
+ (envelope-from <bounce-use=M=42742634657=echo7=3902B6D0291C9BCAD266E8D4D95F2740@returnpath.bluehornet.com>)
+	(ecelerity 3.6.25.56547 r(Core:3.6.25.0)) with ESMTP	id 35/48-09928-3FAC7116;
+ Sat, 14 Aug 2021 06:53:55 -0700
+Message-id: <35.48.09928.3FAC7116@emsmta12>
+Date: Sat, 14 Aug 2021 06:51:00 -0700
+From: Alerts via Team Abbott <alerts@magatriumph.net>
+Reply-to: alerts@magatriumph.net
+To: =?UTF-8?B?TGlzYSBGT1JSRVNU?= <lforrest@facstaff.wisc.edu>
+X-Outgoing: rochelle
+List-Unsubscribe:
+ <mailto:unsub-42742634657-echo7-3902B6D0291C9BCAD266E8D4D95F2740@listunsub.bluehornet.com>
+X-Base64-Encode: Subject
+Content-type: multipart/alternative;
+ boundary=--6117ca440f11d-MultiPart-Mime-Boundary
+Subject: =?UTF-8?B?V2XigJl2ZQ==?= worked so hard
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 13:53:58.3279
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ff27b6e8-70a7-4661-2a23-08d95f2af6c9
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT027.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ff27b6e8-70a7-4661-2a23-08d95f2af6c9
+X-MS-TrafficTypeDiagnostic: SJ0PR06MB8475:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=softpass reason=201
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 13:53:58.2360
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ff27b6e8-70a7-4661-2a23-08d95f2af6c9
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT027.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR06MB8475
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5088982
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	kl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(520007050)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VW5sa2JHRldVejRQbUZSRjZUZjdvclB0QlBYQ0RYSmJlbGNuZnEwVEZxS09a?=
+ =?utf-8?B?YU9rdUpLNzl2dEtjcC9jNmlncTRuOWpjdVE2Q2RRTGp0akJhYlYyR1dQWDVr?=
+ =?utf-8?B?aXlhOEUvSVBKQitWQW12OGtyTnFESWNJN3ZCWlBZdytIaC85Qjg3UFBOckxv?=
+ =?utf-8?B?blpZaldBeXVLQjBqVlM5cWk4VHhidzkzUWNRSFpsdkdObkQ5cGxVcmk5aE9j?=
+ =?utf-8?B?YjhMNVZyWlZnMm9RL2R6dDBFUEFPNWt1M0NKSVhnSkJvaW5qMjJqZ2IxUmNj?=
+ =?utf-8?B?TW1uTDRpM08zR1pnMVdpaSsvVWJtMXU4b1BBMWNGQWVUMmFRWkwxaExseE82?=
+ =?utf-8?B?Q3daQWhLajRzZ1pKQ0F5bWRWYml4YWlHS1pWZGxkOWdXOTVEazRQYUNZbU52?=
+ =?utf-8?B?cHlvMmg0bGprc29RdVVLcG1KV203M2J4M0FvRUM5REppS1NRR0MzRCtUaklW?=
+ =?utf-8?B?aHN0OXlOYitsR0F6cmw0bFBTVG9LYkttSjAwK1EwcmJaSVNWWEhhd0JOeDVI?=
+ =?utf-8?B?MkJkOEIxYW1DaDJQc2kvbytvbWgyUFdjWkdEVEhwN0dma1QrbkxINUZnaUlv?=
+ =?utf-8?B?Sy85UVJmdCt0c25ybU53SDhiWGxML3h6dDI4L1lRWmtFYXpvSWM1ZXluNU93?=
+ =?utf-8?B?a3htdGp1RHp6aW84QnhlTmxldTA2eTBlZFlFTWdiVzNValAxUElqTjZMdlR0?=
+ =?utf-8?B?UHU5dmdZL1A3TitjSCtKMTdFZE0zWlhDNlcraFBmT0ZxcnRYSlV1cUNuV256?=
+ =?utf-8?B?K2dHc2QxVTJDR3VRUVgxYThWdXpnNjRXdUVBdnNPdUVWZkhLdE5MbjYrZjl1?=
+ =?utf-8?B?YUF5R3piRzYvVEIrYklZby9xTlpybHBYSDNLeVJScFoxSnUzZ0dhNTNybFZH?=
+ =?utf-8?B?MnJJL2Nza1Q4Rk9NdGRmb1loYllBWjRpSldvWmhocVZzMEM1Z3hjYkF1WHE5?=
+ =?utf-8?B?S2t2TjdrbFh6UWg4VkhSam1DbEdHTVJTZmU4M0d5K0xkbW5rb2RGeGo5RHc2?=
+ =?utf-8?B?TmQ0Y0dFSzJDWWQ1RURUNDhPUkp5TXJiMTZkSkozK3NJSGRCbi92L0c2N0d5?=
+ =?utf-8?B?akxVL1pHaUxVODRtUWgrYjlHWkNwcTBWK2haZ2dtK2FyZnVrbEhET0xxU2sz?=
+ =?utf-8?B?bFF3Nzl1RXlMM0FOQTZCZ1F6bnVyOGZTRnlyWWM0VFpEY2FzWlhvamgxdExj?=
+ =?utf-8?B?QXpZcnI5cWRHajJlWC9VcitDNU5UREVWMTZGWHpoYlN0MTNMU3M5V3pJaUVu?=
+ =?utf-8?B?RG81SEFFV3FQY3luanVHZG1MM3VJeVpoRTFVYk9MZHp1TFYrV1JIeG9Eb1Zy?=
+ =?utf-8?B?M0ZaQUViUjNoR3pDaS9Ub3JoSTI2TWJLdkNUbVBkWW1BQlBlallyOU1VSWc0?=
+ =?utf-8?B?c3FZKzhYL2QrK0p4UW5mY0hBRXd2VGFZV0tXSVg5cllpVFdKQU52SVJUVERy?=
+ =?utf-8?B?TjZwSEFXQnlyN0lTVzM3RWJmTDdaOHlVQUplN05iUWFEbkIvTDBKZVJ3VHZB?=
+ =?utf-8?B?bGY4VDNMeFpZVTZQUmk1RWkwQWlxdjFoRzdhUVQ4WWRoVStkdWpTTjhVMVJk?=
+ =?utf-8?B?YXhtb1ZVY0dXZmRTaG1tZk8zUSsyVlBTWW1qNmV1TDJjOTRDNEdxYWNqNkF3?=
+ =?utf-8?B?VkloZE9VdVZLVnBqTmJOQmR5M1JvTlVqcjBITVdRM3gxOWFXdWRNQTFqd1pa?=
+ =?utf-8?B?dWk1QjBYMWRzdGk4aUxOekVuWmxmR3RocFFmbzh6U1RzUWNDbHRJNVF1TUt3?=
+ =?utf-8?B?WTEzNjlnWEVKZEtFR0ZoYVU1alA1c25NYm9EZWN3blFaaFdHN3doMS9DcEJW?=
+ =?utf-8?B?eGt0TWpSQWdISjBqaTc4VnpjQ25FcVRaYUFsdUc0WFljTHVqQlFObnlZN1ha?=
+ =?utf-8?B?K0VOek9uQ1o2end5dm9jaDZMYUhkNFhSbkFyd0wvemZiVmFrZ3VpakFWZTJF?=
+ =?utf-8?B?cHdoV25JYVRSSTZCTEFSazZXbk5pc29kSmJGNndWcWZHTUltUzZNU3Q4YWlJ?=
+ =?utf-8?B?cGV3QjRUZ1VlVC9YbmJLdHg3anRpTlRmbzlIRWc1dUhCRlpNMEdGUDJUVFZh?=
+ =?utf-8?B?YTlNaW5Yc0NIS1VVem91MFR5TVZHL050Q3YrdnJnOFBsTGhrWjI3K0U3TWhZ?=
+ =?utf-8?B?RnFXTzV0Uk4zeVU3MDdCQ3h6dURRSFZzc29VaTZ0a1Y1T0FzdzlxK2FlazEw?=
+ =?utf-8?B?WDRVSDU1VXo2alJsVVJicDNWOXVDR3lTamt4Q0ZiV1VFZHNDWE9VNks3a29Q?=
+ =?utf-8?B?K0JoSlNCQXBRajNGL2xQNmEyQkc1d0NTM1ZqcU9hNFoxamdTN0Zjd3BkczEv?=
+ =?utf-8?B?bTN5VURsc1VQSzV4SGk1NkVQREZjeHpjRWE2RmxhVHRqcjM1V09MaFFWL2FJ?=
+ =?utf-8?B?cUNvejRuWUo1WkhGTTl3aEVIZHZ1MTdoR3dJTUlTOFVGUlEvNGR3TDFFdmhx?=
+ =?utf-8?B?c2JVd0VtcVo1Y2R2UHZMdERuVTRQMDBtOEo0YnlIQzNYR2hWdWtrS1Y4alFO?=
+ =?utf-8?B?Z0pGa2w1MmorYzFHSDNNa3QzYmgxQ2Nhdm9QSnBMbEc2cGQzcnM0d3VCMFhs?=
+ =?utf-8?B?WldkdDd0MldxQnZoaVBwSHNVelg3cERhRHEyM0FHTWUyQzhtVXNSUVY5b0F3?=
+ =?utf-8?B?dlVua3drNCtTVWsxeGhMa3dGV0lMMHVKMkRocUI0Yjh5Zk45dmlqbFFOUXBs?=
+ =?utf-8?B?NXFJL2V2d0lETldURUFDSVpqVGUraVVOVUw4dEY3QlhONFRyZFlkMjE5MWZp?=
+ =?utf-8?B?dHRsYjBGS0Q4THBlbmRTeUd1SG0rcDRqMkwwdW1TOXJJSjVlVlhWQWpDTWJX?=
+ =?utf-8?B?M2Jad2RmZ01kTzVMM0JNaUtYbHFVb0VkMWVIemVFU1ZteFJZMnJHeFE2M2ds?=
+ =?utf-8?B?Q0xadnZHTUw2ekhoekJnclRpd2d3MWE5OHVhZ3FGMFRDcXZLR3JERUtBQisw?=
+ =?utf-8?B?VG4wZjVvaHJvZjJ0ZE0vcGcrN2k2ODZYMTA0VTlrYmZad2VaTVBmdHFwOWJC?=
+ =?utf-8?B?L1Q0Tk15bzdla0prZEhSeDgra1hUcjd4R1M3V29SWVZPcENQdFVMK3g3ZVBu?=
+ =?utf-8?B?MnFObXdPRVczb25VVEhHdG9OTXZYSFkvYVNrWncvbWR3STM2STgrRlh2UXF2?=
+ =?utf-8?B?alNXUlFyTGRvVXpFWFZ1WVJvNElGdGdIQXMrL3V2UXVwL1prMERDMEVkR215?=
+ =?utf-8?Q?RQHXEVCG8RsoLQcFp4jNfSs7Rh9s?=
+MIME-Version: 1.0
+
+----6117ca440f11d-MultiPart-Mime-Boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+
+
+
+http://messages.vervemail10.com/p/vJYtkF4lEN
+
+This message was intended for: lforrest@facstaff.wisc.edu
+You were added to the system September 6, 2020.
+For more information please follow the URL below:
+http://messages.vervemail10.com/p/iJYtkF4lEN
+
+Follow the URL below to update your preferences or opt-out:
+http://messages.vervemail10.com/p/oJYtkF4lEN
+
+To unsubscribe from future mailings, send an email to mailto:unsub-42742634657-echo7-3902B6D0291C9BCAD266E8D4D95F2740@emailsendr.net?Subject=Unsubscribe&body=Please%20remove%20me%20from%20further%20mailings
+with "Unsubscribe" as the subject line.
+
+
+
+
+
+
+----6117ca440f11d-MultiPart-Mime-Boundary
+Content-Type: text/html; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+
+<html><!--
+
+*******************************************************
+*Note: If you are having trouble viewing this message,*
+*copy and paste the link below into your browser      *
+*address field and hit the Enter button on your       *
+*keyboard.                                            *
+http://messages.vervemail10.com/p/vJYtkF4lEN 
+ If you would like to change your preferences         *
+ or unsubscribe, copy the URL below:                  *
+This message was intended for: lforrest@facstaff.wisc.edu
+You were added to the system September 6, 2020.
+For more information please follow the URL below:
+http://messages.vervemail10.com/p/iJYtkF4lEN
+
+Follow the URL below to update your preferences or opt-out:
+http://messages.vervemail10.com/p/oJYtkF4lEN
+
+To unsubscribe from future mailings, send an email to mailto:unsub-42742634657-echo7-3902B6D0291C9BCAD266E8D4D95F2740@emailsendr.net?Subject=Unsubscribe&body=Please%20remove%20me%20from%20further%20mailings
+with "Unsubscribe" as the subject line.
+
+ 
+*******************************************************
+ --><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<html dir="ltr"><head>         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">              <style type="text/css">
+      ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      @-ms-viewport{ width: device-width;}
+    </style>     <style type="text/css">
+      @media only screen and (max-width: 480px) {
+        .container {width: 320px !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding-left:00px !important;padding-right:00px !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    </style>     <!--[if mso]>
+      <style type="text/css">
+          /* Begin Outlook Font Fix */
+          body, table, td {
+              font-family: Arial, Helvetica, sans-serif ;
+              font-size:18px;
+              color:#000000;
+              line-height:1;
+          }
+          /* End Outlook Font Fix */
+      </style>
+    <![endif]-->   <style type="text/css">.preheader { display:none !important; visibility:hidden; opacity:0; color:transparent; height:0; width:0; }
+</style>     </head>     <body bgcolor="#ffffff" text="#000000" style="background-color: #ffffff; color: #000000; padding: 0px;
+-webkit-text-size-adjust:none; font-size: 18px; font-family:arial,helvetica,sans-serif;">         <!-- X-250ok-CID: lforrest@facstaff.wisc.edu -->     <!-- start PREVIEW
+TEXT SPACER -->     <!--[if !mso]><! -->         <div style="display:none !important; display:none; overflow:hidden; float:left; width:0px;
+max-height:0px; max-width:0px; line-height:0px;
+visibility:hidden;">‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;</div>
+        <!--<![endif]-->     <!-- end PREVIEW TEXT SPACER -->                                           <!-- END HEADER -->         <table class="tb_properties border_style" style="background-color:#FFFFFF;" cellspacing="0" cellpadding="7" bgcolor="#ffffff" width="100%">            
+<tbody>                 <tr>                     <td align="center" valign="top"><table cellspacing="0" cellpadding="0" style="width:100%" bgcolor="#ffffff">                         <tbody>                             <tr>                                 <td class="responsive-td" valign="top" style="width: 100%;"><!-- BEGIN BODY CONTENT -->                                 <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">                                     <tbody>                       
+                 <tr>                                             <td class="stylingblock-content-wrapper camarker-inner"><span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;">Lisa, we need to act quickly.<br>                                  
+          <br>                                             Our mid-month deadline is TOMORROW, and we need ALL hands on deck if we’re going to
+meet our goal.<br>                                             <br>                                             We’ve worked so hard to meet
+this goal, but if we stop now, we simply won’t meet our goal, <em>and we won’t have the resources we need to protect Texas from the
+radical left.</em><br>                                             <br>                                             That’s why we need your
+IMMEDIATE help, Lisa.<br>                                             <br>                                             <strong><em><span style="background-color:#ffff00;"><a alias="Will you please RUSH a donation to ensure we have the resources we need to meet our CRUCIAL mid-month
+goal?" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130223:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="Will you please RUSH a donation to ensure we have the resources we need to meet our CRUCIAL
+mid-month goal?">Will you please RUSH a donation to ensure we have the resources we need to meet our CRUCIAL mid-month
+goal?</a></span></em></strong></span></span><br>                                             &nbsp;                                             <div style="text-align: center;"></div>                                             <div style="text-align: center;"><span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><a alias="RUSH CRITICAL RESOURCES NOW:" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130223:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="RUSH CRITICAL
+RESOURCES NOW:">RUSH CRITICAL RESOURCES NOW:</a></strong><br>                                             &nbsp;</span></span></div>                
+                            <div style="text-align: center;"><span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><a alias="DONATE $500" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130224:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="DONATE
+$500">DONATE $500</a></strong><br>                                             <strong><a alias="DONATE $250" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130225:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="DONATE $250">DONATE $250</a><br>                                             <a alias="DONATE $150" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130226:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="DONATE $150">DONATE $150</a><br>                                             <a alias="DONATE $50" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130227:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="DONATE $50">DONATE $50</a><br>                                             <a alias="DONATE
+$25" conversion="false" data-linkto="https://" href="http://messages.vervemail10.com/ct/58130228:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" style="color:#0000FF;text-decoration:underline;" title="DONATE $25">DONATE $25</a></strong></span></span></div>                                       
+     <br>                                             <span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;">Thank
+you,<br>                                             <br>                                             Team Abbott</span></span></td>              
+                          </tr>                                     </tbody>                                 </table>                                
+<!-- END BODY CONTENT --></td>                             </tr>                         </tbody>                     </table></td>                
+</tr>             </tbody>         </table>         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;
+text-align: center;">             <tbody>                 <tr>                     <td style="padding-top: 5px; font-size:12px;font-family: arial,
+helvetica, sans-serif; text-align: center;line-height:100%;"></td>                 </tr>                 <tr>                     <td style="padding:10px;"><table align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0; text-align: center;">                 
+       <tbody>                             <tr>                                 <td width="300" style="border: 1px solid #000000;text-align: center;
+font-size: 10px; font-family:arial,helvetica,sans-serif;padding: 10px;">POLITICAL AD PAID FOR BY TEXANS FOR GREG ABBOTT <br>                        
+        PO BOX 308, AUSTIN, TEXAS 78767</td>                             </tr>                         </tbody>                     </table></td>     
+           </tr>                 <tr>                     <td style="padding-top: 10px; padding-bottom: 5px; font-size:10px;font-family: arial,
+helvetica, sans-serif; text-align: center;line-height:100%;">This message reflects the opinions and representations of Texans for Greg Abbott. You are
+receiving this email because you signed up as a member of Texans for Greg Abbott's online community.<br>                     <br>                 
+   <br>                     By providing your cell phone or mobile phone number you are consenting to receive calls and texts, including autodialed
+and automated calls and texts, to that number with campaign notifications from Texans for Greg Abbott. Team Abbott is happy to help at 1-512-477-2002.
+Reply HELP for help, STOP to end. Message frequency may vary. Msg&amp;DataRatesMayApply. Message frequency may vary. Terms and Conditions/Privacy
+Policy <a alias="Privacy Policy" href="http://messages.vervemail10.com/ct/58130229:JYtkF4lEN:m:1:3184412112:ED9F2E675B5DF849D3242881E7363558:r" target="_blank">HERE</a>.</td>   
+             </tr>             </tbody>         </table>     </body>
+
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#999999">
+            This message was intended for: <a href="mailto:lforrest@facstaff.wisc.edu">lforrest@facstaff.wisc.edu</a> <br>
+            You were added to the system September 6, 2020.<br>
+            For more information <a href="http://messages.vervemail10.com/p/iJYtkF4lEN">click here</a>. <a href="http://messages.vervemail10.com/p/oJYtkF4lEN">Update your preferences</a><br>
+            <a href="http://messages.vervemail10.com/p/oJYtkF4lEN">Unsubscribe</a> | <a href="mailto:unsub-42742634657-echo7-3902B6D0291C9BCAD266E8D4D95F2740@emailsendr.net?Subject=Unsubscribe&amp;body=Please%20remove%20me%20from%20further%20mailings">Unsubscribe via email</a><br>
+            <br>
+            </font></p><img src="http://messages.vervemail10.com/imagelibrary/N-JYtkF4lEN-173EEF13E1505CECB311A816A9C45FB4.jpg" width="1" height="1" style="border:none; visibility:hidden; max-height:0px; max-width:0px; overflow:hidden;">
+
+</html>
+
+
+
+----6117ca440f11d-MultiPart-Mime-Boundary--

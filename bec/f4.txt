@@ -1,0 +1,167 @@
+Received: from BN6PR06MB2769.namprd06.prod.outlook.com (2603:10b6:404:110::8)
+ by CO6PR06MB7171.namprd06.prod.outlook.com with HTTPS; Tue, 3 Aug 2021
+ 23:28:00 +0000
+Received: from BN9PR03CA0424.namprd03.prod.outlook.com (2603:10b6:408:113::9)
+ by BN6PR06MB2769.namprd06.prod.outlook.com (2603:10b6:404:110::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.15; Tue, 3 Aug
+ 2021 23:27:59 +0000
+Received: from BN8NAM11FT053.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:113:cafe::cf) by BN9PR03CA0424.outlook.office365.com
+ (2603:10b6:408:113::9) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.15 via Frontend
+ Transport; Tue, 3 Aug 2021 23:27:59 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ BN8NAM11FT053.mail.protection.outlook.com (10.13.177.209) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4373.18 via Frontend Transport; Tue, 3 Aug 2021 23:27:59 +0000
+Received: from mail-ed1-f68.google.com ([209.85.208.68])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXA00CR2EIMA420@smtp5.wiscmail.wisc.edu> for
+ dayaprema@wisc.edu; Tue, 03 Aug 2021 18:27:59 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Timo
+ Seppalainen <chairinterim4@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= SUBJ_MISSING 0.1,
+ HTML_00_01 0.05, HTML_00_10 0.05, MIME_LOWER_CASE 0.05,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_100_199 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0,
+ BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, KNOWN_MSGID 0,
+ NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0,
+ SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0, WEBMAIL_SOURCE 0,
+ __BODY_NO_MAILTO 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_FROM 0, __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_MSGID 0,
+ __HAS_X_MAILER 0, __HELO_GMAIL 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0,
+ __MIME_TEXT_P1 0, __MIME_VERSION 0, __MSGID_APPLEMAIL 0, __NO_HTML_TAG_RAW 0,
+ __PHISH_SPEAR_STRUCTURE_1 0, __RDNS_WEBMAIL 0, __SANE_MSGID 0,
+ __SUBJ_MISSING 0, __TO_MALFORMED_2 0, __
+X-Wisc-Doma: chairinterim4@gmail.com,gmail.com
+X-Wisc-Env-From-B64: Y2hhaXJpbnRlcmltNEBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.3.232115,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.3.5840001,
+ SenderIP=[209.85.208.68]
+X-Wisc-DKIM-Verify:
+ chairinterim4@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-ed1-f68.google.com with SMTP id b7so1204918edu.3 for
+ <dayaprema@wisc.edu>; Tue, 03 Aug 2021 16:27:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20161025;
+ h=content-transfer-encoding:from:mime-version:date:message-id:to;
+ bh=7naYWy8rmbNAEljWw76k2dSosIjTrO3+EkDMAdnvsEQ=;
+ b=Eo3hTWrItf4R/cyZBpQMxEOebFT26tEzy8Ur6vDQsREJn+BhLECQHzfjQLXhqByEbv
+ 3MQF5aMZEPJCOC9JElgzmtRd5lPfIQurp75lQ1cP58Q39mR5GeMsQQCtCE149JFnqtl2
+ BQQeT+MKphNDp1VQVWzh6lcyCft52+DVVmfy58QFvd5+fhOcN7gj8Q7YRUuLcKmNx+MB
+ I0dcNumNATq9sGR89OVdXmnldmKd6FQbafb1I8PHn7MxkVpmnnpwzDE1sHOFGHw3fXEp
+ qBB07ZO3gKvl7wbrh8QgaUzh2Hhkmojpg0fooLUCFWfwkRQzBmMY/x8ClsC3N8aBE5xJ
+ vGUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:content-transfer-encoding:from:mime-version:date
+ :message-id:to;        bh=7naYWy8rmbNAEljWw76k2dSosIjTrO3+EkDMAdnvsEQ=;
+ b=MXWtlaKGgOM0kMiO56byNFtFzuE1bitGhw2P6EtyrwKSW9YF0oL1bDhXxYM0RagfP9
+ ZyPN4Uxrk+QhFpM4FSc9kbgiFb8nKgXsjBA/F9yjQDsd2AqUziNiVYdbAI5iRPwrNf/q
+ dkeT2UDpNaHL7ozGf/FA5tRTbVAWxuGZQWJnDhxpAiMHzv7O2IA95NcFdZM9lmR22EAv
+ eXJz5EvMM/tSbF4i2435C3RpcrT/v6oMIITXaoENsn3xParledoJKVjdE82BsJlJb/ri
+ KFpIuuJ2Ft42h7q1MhXhHqfNM76XZgh0lngYshjYaqhC2UnX47YAzYyUta0aRERngc1L
+ GxuQ==
+X-Gm-Message-State: AOAM530G3gkjWNytkO8tBW7exSKRo7m7kPi7sMC8iCloz17CSZybatqT
+	NWFVQ9w4ZANz3/aUXu8K6vZvkNc3jK29JzeL
+X-Google-Smtp-Source:
+ ABdhPJwHJlBKxDtVDwoJtnvoVkdDSTj5o/6eiuWEkFT1yIxMobuj/MkjGpYvGrNuvmrvzAFJb5O0tQ==
+X-Received: by 2002:a05:6402:215:: with SMTP id
+ t21mr23867788edv.68.1628033277920; Tue, 03 Aug 2021 16:27:57 -0700 (PDT)
+Return-Path: chairinterim4@gmail.com
+Received: from [10.32.225.87] ([197.210.44.87]) by smtp.gmail.com with ESMTPSA
+ id x42sm192140edy.86.2021.08.03.16.27.57 for <dayaprema@wisc.edu>
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Tue,
+ 03 Aug 2021 16:27:57 -0700 (PDT)
+Content-type: text/plain; charset=us-ascii
+Content-transfer-encoding: 7bit
+Date: Wed, 04 Aug 2021 00:27:56 +0100
+Message-id: <4A2F2FAA-7580-41FC-8A47-3AB0C37391B6@gmail.com>
+To: dayaprema@wisc.edu
+X-Mailer: iPhone Mail (18A393)
+From: chairinterim4@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Aug 2021 23:27:59.7996
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ afd7c2ab-add8-486a-6c85-08d956d654f5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT053.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: afd7c2ab-add8-486a-6c85-08d956d654f5
+X-MS-TrafficTypeDiagnostic: BN6PR06MB2769:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1923;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Aug 2021 23:27:59.6776
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: afd7c2ab-add8-486a-6c85-08d956d654f5
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT053.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR06MB2769
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2645778
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4373.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?WHo5tR6W5Pe0prnWClU+/ldbhXRZouIMi/32cjv9gC6XzEijJtpYzaP8tPVF?=
+ =?us-ascii?Q?F9S8mS/rBi4+MhHjqJESFbMvksQIUXDI38QRCtDdafo/9QGHAx6s+eR21RHY?=
+ =?us-ascii?Q?37P4BeZ6kt53VlmEs/KkDu7A6yXYr+3FUeVsPmZlpMdquQhvtSdFcRkZZNtb?=
+ =?us-ascii?Q?8UwBwcZN8E+FA7IAXpZuzG3l5muP29ijN5TDAkD8QB8FKqJ4ZNGT1g0vYnDw?=
+ =?us-ascii?Q?JKmOGqH35IPijc9/2Tb0voJSkw/fyG6l5wGhTERj+h7v302RgzbZD25yODnw?=
+ =?us-ascii?Q?MG2uFyC5nvYH/PJDTSKNLMFbXtgxbkEMIiQ9ngzWFL7jiuvz5EG5mPd3kMKN?=
+ =?us-ascii?Q?Ef2kEGvHOOs7GFM+9cbqkTGxHHYUBaWZv89wSIdkooeRd60Mp4l0BqghcNcD?=
+ =?us-ascii?Q?WsFSH27T4G/mm7wgVwnqaw9OFKZGkqJEnfujpbeb67skwdSMxtwLC+NXvL8J?=
+ =?us-ascii?Q?stxcSCzVWnZitnWjiQSvVLRSqmAlkrMgmjjnSVsfNuFiZaC2YZurD2/jOybk?=
+ =?us-ascii?Q?W3PxcRwFm5DYV6efaZHw9vhNU5Uk7Sfrk9CJ3mRRFpnOpcGObEj7GfqnmfqB?=
+ =?us-ascii?Q?1Ln19agFtI5S8CoXPacNSpoA+6S7NDWafXsAmYD1mXwKZ46pdadMkGsnkv5m?=
+ =?us-ascii?Q?7b4UUDq0Sk9A3MFzO8rqKdlxT+d0VfAi5VRaoCjEG1oUY3ogkhawQcaWt0SY?=
+ =?us-ascii?Q?KErt116qLVOdDI1nr9xhat4hMpTieWBegR9G1+C0/1VLvLBbv3Ieel4TKvqq?=
+ =?us-ascii?Q?13cd1HXvH/697oNZNrv4KCK8IMSdQgrbwpZmUNWuGXiuZCS/tFP48IDyAxOS?=
+ =?us-ascii?Q?M9bl0Q3y15G649ti6i8nNCDCsluYxgVytzAbZUnVPOPQlOtodPJEYOaN5aL5?=
+ =?us-ascii?Q?PU47lDWm49oe0mLFA57FHW4hcRXaJoBhwbBAgNrXx7sceN1VpBGVzuxrWBZv?=
+ =?us-ascii?Q?7OwiuUv5qxbmoWsugpA1vY7szrH9VLiSO5KtiUAtWQgttMgxpJhaeYEbgd0L?=
+ =?us-ascii?Q?2B83BOG+UJn1AUEO8qe6X+svUQWRL0KdQ1N3PsrJLRRjEOv2JNcWTT90fSTu?=
+ =?us-ascii?Q?vxUriL19M4SKxVDMweheM5inDmhXgacucHyhyeGaP7ptdVUlNYMcdcgDqzxT?=
+ =?us-ascii?Q?CDIR8dolADSMij9/+Ik3vgBwLDYy/hZKBe0JL5c6lzf1xjbilYnNgIUTGqgY?=
+ =?us-ascii?Q?+ddByHcHwl+etSyhlae7JNgCXhBD3VAMiyxVyxjV+1+lel4zmHf2uodCzBlo?=
+ =?us-ascii?Q?FowPuiEr5HRClN/rbtACrwtbEkEkQc8KamqLRrWsb9CCq/V1BktMZRbXKFGz?=
+ =?us-ascii?Q?nplPyCRliOzM1j9AheHlv7ZlHjoL6pdQrxXgIkpdJQABEbk1Nj5d7qgrespN?=
+ =?us-ascii?Q?ZueqtcRMA0pYvZx3+pBpKYkp+4Hyv6Fst9H917Y6Wnb5sarhIGcAMOjrrU5h?=
+ =?us-ascii?Q?buC/FJetX7SCiNeB+Oey6YjyQEi15BLGqKyYW/2TcH7iaBZ+qIT+ylbOxY3r?=
+ =?us-ascii?Q?WAjr5ifFjdg59RHUTQfkDleN8l/pjJf+fk02qq0qnVr/G/g+aY6kplNnjH44?=
+ =?us-ascii?Q?LQaM6r8x8e/y4rqOMOCbHfJLwieIviddkHyayG+me/QTxeFP7HSCYIMmas+w?=
+ =?us-ascii?Q?oe2PYX+wAL8/1vt9v/3nDHsMaep1qBbieIDF7HEW9u/vguHmHREWqWpmTrx9?=
+ =?us-ascii?Q?uHd2dJt35i2i9HDZW5YKkW81vWEDuSa20JtS8iEqiJ/G8bmhYwfjpRUflVYL?=
+ =?us-ascii?Q?O0H+YyCKjhGqdzbelyEpzehkAj1QoW4pLuKudMopph2+WHcbf352y1HIRm/Q?=
+ =?us-ascii?Q?UbySGNZFbkIOB5w/X328qiL+q0DioV/gZaN1MCZAzd7vjMxk8PRIEXx02Vo6?=
+ =?us-ascii?Q?UeoXY8wQSPgD2Qo33Q=3D=3D?=
+MIME-Version: 1.0
+
+Available cell phone number?
+
+Best Regardsz,
+
+Timo Seppalainen
+Professor Chair
+
+University of Wisconsin-Madison

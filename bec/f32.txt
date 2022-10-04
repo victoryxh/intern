@@ -1,0 +1,277 @@
+Received: from BN6PR06MB2500.namprd06.prod.outlook.com (2603:10b6:404:28::19)
+ by DM6PR06MB5516.namprd06.prod.outlook.com with HTTPS; Tue, 7 Sep 2021
+ 14:13:11 +0000
+Received: from BN1PR10CA0021.namprd10.prod.outlook.com (2603:10b6:408:e0::26)
+ by BN6PR06MB2500.namprd06.prod.outlook.com (2603:10b6:404:28::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4478.19; Tue, 7 Sep
+ 2021 14:13:10 +0000
+Received: from BN8NAM11FT048.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:e0:cafe::2a) by BN1PR10CA0021.outlook.office365.com
+ (2603:10b6:408:e0::26) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4478.19 via Frontend
+ Transport; Tue, 7 Sep 2021 14:13:10 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ BN8NAM11FT048.mail.protection.outlook.com (10.13.177.117) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4478.19 via Frontend Transport; Tue, 7 Sep 2021 14:13:09 +0000
+Received: from se14-3.privateemail.com ([198.54.127.70])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QZ204RM9I5Q9H50@smtp6.wiscmail.wisc.edu> for
+ mitch@wisc.edu; Tue, 07 Sep 2021 09:13:03 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_50_70 0.1,
+ HTML_NO_HTTP 0.1, SUBJ_1WORD 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1200_1299 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DATE_TZ_NA 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, FROM_NAME_PHRASE 0,
+ MISSING_HEADERS 0, NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0,
+ NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0,
+ TO_MALFORMED 0, WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_X_MAILER 0,
+ __HAS_X_PRIORITY 0, __HEADER_ORDER_FROM 0, __HTML_TAG_DIV 0, __MIME_HTML 0,
+ __MIME_TEXT_H 0, __MIME_TEXT_H1 0, __MIME_TEXT_H2 0, __MIME_TEXT_P 0,
+ __MIME_TEXT_P1 0, __MIME_TEXT_P2 0
+X-Wisc-Doma: account@groupmedia.org,groupmedia.org
+X-Wisc-Env-From-B64: YWNjb3VudEBncm91cG1lZGlhLm9yZw==
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.9.7.140316,
+ AntiVirus-Engine: 5.85.0, AntiVirus-Data: 2021.9.7.5850001,
+ SenderIP=[198.54.127.70]
+X-Wisc-DKIM-Verify:
+ account@groupmedia.org,groupmedia.org!pass,DKIM_PASS_ALIGNED_WITH_FROM,groupmedia.org!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: from new-01.privateemail.com ([68.65.122.22])
+	by se14.registrar-servers.com with esmtpsa (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)	(envelope-from <account@groupmedia.org>)	id 1mNbpI-00033y-Hv; Tue,
+ 07 Sep 2021 07:12:04 -0700
+Received: from MTA-08.privateemail.com (unknown [10.50.14.18])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)	by NEW-01.privateemail.com (Postfix)
+ with ESMTPS id 7930C600D4;	Tue,  7 Sep 2021 10:09:40 -0400 (EDT)
+Received: from mta-08.privateemail.com (localhost [127.0.0.1])
+	by mta-08.privateemail.com (Postfix) with ESMTP id 05E01180018D;	Tue,
+ 7 Sep 2021 10:09:40 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=groupmedia.org;
+	s=default; t=1631023780;	bh=1yUeCAgBFaHOjKykkAnMFf0qM2y7jaE8zBlFAS711l0=;
+	h=Date:From:Subject:From;
+	b=pcl9yiRigdPM4N2CNAP22HgrWzvw1pMhlfW+M3e0vm17cixlBlRDM3+t46Yj0CpqZ
+ 8oP7HMf23NUuCHDv3DrOvsljScCX52ERYBQ4ezmGgCtvHrVhVtlc6/NLzzx/TZp0WP
+ n24p3vx0YIWkDQZrSy/efnkYI16qHZRp2nrS48wFS6YGpMNjr0hr+tMK5BohZS2vwg
+ 69IbKmofyOsCkqH97PkVJ5Pp8ikBQ6jgeqGVIMDe7gd1kSFrCrxyhYAA9noUadVP8D
+ sMwh+ncSU/+oFOXU2T3Fa66StrCDbA0/E1QM6pfNkcWeYWRd32A0x58WqO15RLdtKF
+ PMk0slUEKq5iA==
+Received: from APP-09 (unknown [10.50.14.159])	by mta-08.privateemail.com
+ (Postfix) with ESMTPA id 558F518000A5;	Tue,  7 Sep 2021 10:09:38 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=groupmedia.org;
+	s=default; t=1631023779;	bh=1yUeCAgBFaHOjKykkAnMFf0qM2y7jaE8zBlFAS711l0=;
+	h=Date:From:Subject:From;
+	b=fd4jRSFDdv5WjlM9yFiCtHgy05VlUQ6R72PcaVy0egJT3W+MUn8I8+hwIcf/Rqat6
+ tSa55iiKKl18qX5mgIzV8j3u33cZP8PIJV/TNxNcUop4Owh/QXsGT4M8aFsrLazFBz
+ CTsbeqz/tE4rIzUQZBOoVsLQGDsJ7suMrw8LkdPB0fQJPxAd26bjpQ1fGViPleDt4r
+ VOWIn3oREYHOZF3u1PM+vGmeiGxDz0ZYnYmNa1Up617Y4Cnps+JU6uEnOvf0XEmg4Q
+ 9JXkMrNUGJfjwXz4bsypOxJRq5uXbQtlJp/HyuOA1c1+iihJbhPKT6+7bMmFZd0TR0
+ DcBbVldITZ7jA==
+Date: Tue, 07 Sep 2021 10:09:38 -0400 (EDT)
+From: Cheryl Furstace Daniels <account@groupmedia.org>
+Message-id: <46925469.3028398.1631023778289@privateemail.com>
+Subject: Request
+Content-type: multipart/alternative;
+ boundary="----=_Part_3028397_1409216483.1631023778288"
+X-Mailer: Open-Xchange Mailer v7.10.5-Rev17
+X-Originating-Client: open-xchange-appsuite
+X-Virus-Scanned: ClamAV using ClamSMTP
+X-Originating-IP: 68.65.122.22
+X-SpamExperts-Domain: o1.privateemail.com
+X-SpamExperts-Username: out-01
+Authentication-Results-Original: registrar-servers.com; auth=pass (plain)
+ smtp.auth=out-01@o1.privateemail.com
+X-SpamExperts-Outgoing-Class: ham
+X-SpamExperts-Outgoing-Evidence: Combined (0.19)
+X-Recommended-Action: accept
+X-Filter-ID:
+ Pt3MvcO5N4iKaDQ5O6lkdGlMVN6RH8bjRMzItlySaT9M8zXxGeaeEd2dLBKecABmPUtbdvnXkggZ
+ 3YnVId/Y5jcf0yeVQAvfjHznO7+bT5xWJKU3GMMT4RV2UDVUJlNnSBAd0jYxyi/rN4wP8jbhvVd1
+ 235BjdETUVbSZgPcLraaK1OnEWVWLMe8jgRvmoIhBA/an79ulJVgV/p8lY/Iyj21E3SxFGb85FLd
+ Wo2/RVMiAJzZb9K0ZkusHOXs0iQE60/2eQqTIcHrfh273YgHeBqoRGXWdypMZGveyI1qRbSX+R1o
+ 3DiG9NNHuh1YtdtsNnBPphcDTEjR8gN4fsCcj7hrD0+7mk88A7moqnCCTKps3+20w6dGgD4c5sSL
+ Hcu/ph5GuNLs+doCUx8Et9qr1l/JezrSGEkv50yrrXJ8diqfBgMwGGhwuHiemSvxhTL28VqPpUf8
+ mLKsW2Bix8TqLzcRZ3C4eIEIsiKUe3Ze3CDiSJNMCzXvwDVEs6GQsETsiY3y4bLIdnrCNmnjrqQc
+ ANHiUAthdwPPSNE5LwBrxJ9v+cpFwtrf8gwfmeIYfqX3va6D3tAkBLI1N4oB/kDENUIb6kdJY9G5
+ bJSI3NJiDvncS8JRVFiWDddI+es57fOVKlPHzGr7GYWBzUUt6uxdOdnP7joO9lICWaTZbaMG3oDB
+ ZCZCjjMrFxpn6NTHD5A9xvllY87QJm4urCGLKiqoDQCVO0ZHKA3seZYORJAa4qHe5uH1vu7/6TDN
+ e2kCjuVnpAlaJDhhWUw76aBylH0n6vJp7XElaI3ReG8ZaOjPBUrM4THMvTP0iEbt+YlVjX21n/cF
+ ViSc1/HAdxDpaZUONUEWc1XR84YJZzuFSQjdn6AJ8d2JN9VtQ+uAkaKAL95zCp6Sl6qs08/r2A1j
+ EZO8eUrVLmu7MgqzB03ssQcr3MKh6QMK5qW1ISQkx4WNCrWpCxhq3/TB6iEVCa+YOdbFzrM1Oxry
+ P+/yI3oW8l/kGWGLQIcOOgNKUTEtavzY3lxtdhJEKeuXtUzrHtcTeyvpImXe+bJnt6UBLPhWbiEg
+ rnEuMbUKncQIEadPDbghR2MXcyOejZfAVUEHkAV4NS0FVfiPerjS+r9znxN0L8oOIUOlJbIxIkgs
+ +ZXyhdpmqQu1VL9LkKl3CRgFFLH44ITpkiP0yMVGjdro3qGODI292WtH03JBxXmSbKiRM/hIg8fX
+ J1kpXZRYJ1zjeG0ZdGgtlWn2CW+sNQf5VGwDTm5UUQ9hRFRbTMsj58Ydp32I8S6yKBTTrq1ooEK3
+ G/rbKlfV1zceK8fZfVS/73R1GyWefeeDXEz7oJgDiWQ9MTK+1dSXwwU2psgdcfOs+t6IpVaK1Q1X
+ 8k8/EvBxHji4TND1inH30Hx2h4TCW0Ku8tTcuQP7fpY0QbdzyXuZ+KiijitO94lfNZbtIC03XuwC
+ jxOVF2PJvnbWJYYPefiZ43m25vILZaPYbufobF7uBJTWRup7x5frVi8sAZiL5Smp7P5xpP03Qvbs
+ ViSxdjc8Zk+u2hR+ppL3DEA7P5Mv/UyEONPWNXw+UkyF+REcpuuK59tnJp8GxDknPxjti5zrKQLz
+ FihB5Z5R2FkmOgkUmi/ufH+teLOqounJWGlr29LD3TaWmKcWMHz4nFlZ8U8ZgLeTAgitpTtwcJX3
+ 7UuhKYbsmVaFvuTi8Xq0E+zR7spUHGCIkiqmntMCbG4w6yTko4M9luBPID/rNd4rJtntm7REq3PV
+ gZt9In+SBexaTA8ViLBOuWwJNGq/UKNF31iB6I7MbvJZZPxbp/HRFfhdYYyVxnEKbnAbcWQjqGGq
+ vyyTp4QwV+S27XJ6foiBER/J5vxiCkBvJYVySry4GUpPhUtaDZAuEyfY14ISs2u3RPiG38NNIxtk
+ FCDxM9mJ32jlhanIaAC+bQQxZZDCCk7qvCUhYfwJP4NHrbvAwACvAEvJfGDA3Qz7aTnj3zix7XsH
+ n7gByBWfbb4ll/5dXTdBx+73aenGcBAp8b8najXQikih5qUwN4L7wXwOgydRCtTaJK8sTJQmF083
+ MduQ7maTui+57uHkB8GnKG0y3TKMI9Aal8QtbyMZGkLbUnM1IGamm9X0SuXrPEg+PVRTiaxPY52n
+ 0Pp/89uYnTMIvXykhqi/wX1WcAAFNvYOgNsiaCkBDahBXYNw+zOVN3+epmC8lxJgkNICAP+v5ugj
+ bv1fggQhKNeptFs93SsS4aMXJmiJ2G0eb5ahqCfg9zlw/EDsyWW6dEDciHZc3qoCx6jB3DEPYTf4
+ Nom297D8NndzysYZsRwzbMvKYYt0VHqxgIENxytAZrD0Ab1/YQ6woKxvTQXCTWcYm4jsjT/0wR3S
+ Utf9z7dBvTO/W+y7FntU/xwaLfK/la1KDBpU0WZzuFxRRp6v+42h0lWnYEa10b+trrwWX45Twjr5
+ ZUfZEzxGvaL/P3G4EwSs+ZoCyuu65gnK6v/msFgDOfn34YGg4i8BgY+BeA+lZAZ4JUS57zkGQGUJ
+ aYQbbZIBY0FTgxIrCHGlyToYqz9vmeVxXi9LvASoefxQWaxFkzWD9MIK7Oveg7jscBmCDBjA9Bxw
+ EiTVJqDh0qKoKsXx5llpqQ3SMJlqI5NS6AjRRBvPF0We3GP1PALOmHHUlDnTfA2Ps152D4cUjD9y
+ MMqvyIJr+lYmS/RQof4yDnDJReOiGrElmxuG/W7QSGU1ovbhMqqiJun9TPlNOTPg1VvnmUQ5Ix7/
+ C9VwqPH/5QpQnZ0BN+pxJB8CZFky5qkvBmwbjdPaE//TK8Q/I9l8UfObtn6ZgXQHgmVzocPirEzv
+ j9ji
+X-Report-Abuse-To: spam@se16.registrar-servers.com
+To: Undisclosed recipients:;
+Return-Path: account@groupmedia.org
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Sep 2021 14:13:09.7774
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ ee6218a1-6ed4-4473-67c7-08d972099f04
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT048.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: ee6218a1-6ed4-4473-67c7-08d972099f04
+X-MS-TrafficTypeDiagnostic: BN6PR06MB2500:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:5797;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Sep 2021 14:13:09.6745
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: ee6218a1-6ed4-4473-67c7-08d972099f04
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT048.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR06MB2500
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4694593
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4478.025
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VGZuYmZJeWFpSnpMTUxRQWttS3NtQlA1NEY2NEJ5c2tiUHRFNUlqamRaakNE?=
+ =?utf-8?B?YlNHOHBRU0NxTkJzbDJCc29ZaXNZZzlXTWx1NFNJTXFYaGxqeGVrU210eS9Y?=
+ =?utf-8?B?b2J4b3NSMXNBWGVDUmIzQUQ3Vlo2bWQ3Q2JhNENSR0w5RnJQNjFXZTVjWkEz?=
+ =?utf-8?B?K2lNR083MGUveVFOM3VCdXlGOS9oNTZNRWRkcTFISkVld1lFS1FOMlVhY0t0?=
+ =?utf-8?B?MkxkSEpHRUdLQjc3ZXprdkdRMHBWQ3JmV0wrUkltUjkzanM4UHh0dmY1THd2?=
+ =?utf-8?B?VTJsV0o0WEJEakdUOG9VdVlqNmhLanZnUFRyU3R4YXV5TXJLUURIVytoWWlC?=
+ =?utf-8?B?ZmxGOW01ekRxbHFGMjl3aThJR0dGMy9YTm1lQXI5Y2crR0l3eVZjTmdRKzBi?=
+ =?utf-8?B?YTlkTmdkR2d5NmhIK1poTFNha1M3UXV0dVJFM0lMeFplQ2VDNDByTTBqOW5G?=
+ =?utf-8?B?ZFlEbk9Jc2ZXRi9GOGVoSXJoUmZvWHJJYXZ3TTh3aDRvUVhaL3h4d29aZHlF?=
+ =?utf-8?B?VjkremNJbEk0THNkcUM4bFR4T0MzZXplN1lvRmdOWERHR1VNWHA4SG1pMTBz?=
+ =?utf-8?B?NG1JNjhUME9HNGZzTElqQ3BpdG00VkNxTURrU1NmWlNlMERwUUl3YytYcmdM?=
+ =?utf-8?B?MURwR0x2ZWdoVW1sNm9PUXcwNWovTmRDWHdhN09aN2g1T2g2K0E5bGV2WHZW?=
+ =?utf-8?B?eFpJRFJZS2Q5ZWZaYmVhMTlNQjZiN1BLL2NzOGlqWVplVjRjTGw5S3BhSGtz?=
+ =?utf-8?B?cE9MRVo3YnBjanJqdlFlOTVZdjd6czE4eVNNRDdWcGNpdmhVSHRSMC9WTWRH?=
+ =?utf-8?B?WWlUT1FCdkdRbmpBRW5NWnhmUW12NmFoY1lCREpuUGJvV0hNcHA3K3o0WDh3?=
+ =?utf-8?B?MDRpWVgrUmc5bGhBWm4zMGJEWFF3cDhsU3drZG16TVhZUDJwUkhKaXhjdEZJ?=
+ =?utf-8?B?QmpDYXpqY1lJTFZra2NqNTdQNUhjOThodjRIQ3VhRWRQeHEycEJUcDdMS2hr?=
+ =?utf-8?B?SWpJMnlTQlJNeHp6OHdNTHRkU1RGNXArTUk5dXJyMFh4Vi85d092YzRkN2N0?=
+ =?utf-8?B?ZWIrTmo2V3FMeUNOT3d5S1FHT1IyVXpRa2FIdGhldzBpMEFldGVmSkNNWGR0?=
+ =?utf-8?B?Y2pwdi9qYVZBK1l4Y3Vsb0VHR3RtREgvZHBoZFc5ZTVGd0Z2dUYyNEVSMVVj?=
+ =?utf-8?B?UUFGTDlQcFo2RHd3RFk3VVlWY0xOY0pCend3R3RyWDluTmNtM0d2S1pROEpa?=
+ =?utf-8?B?ODFPQzlKWEY2aUhVUDR0Rkt0TVNZZlc4OVZvNU5BTkZ5anZMZ1BnK0xIcU5P?=
+ =?utf-8?B?TkhpOXVoS2VwMmgzTytxc3VDYndLM29Yb0lOZzltYmdjRjNLRStxUWgxbFZX?=
+ =?utf-8?B?SW5KTW9ZTDVZZGxGRGl1WVpCV3BrSitPT0l5TGIrc1RHTnlDNU41WTl1UkRS?=
+ =?utf-8?B?QkdERUtUNTB6VlFMMS96bis1dVJqQkFqZGhUMFF1RjhON0ZEMnNheVE2bnFt?=
+ =?utf-8?B?N0tJQngxVlVoUngrM24yZGVaMDRLTUs2Tk1Vb1lwRDZ4TU9OK0FWT0JrYUV2?=
+ =?utf-8?B?YUZiSVRTcStiUFJYaU9UMldPQlkzd1NJRE5JaktDRGxTbDdKRldkVk1IMUx0?=
+ =?utf-8?B?OHAvNWcxSnA5ZmVjQ2MwTHZKdzBnbnNyVUt5WHZMbUZabGlEc2dxakxXYi9E?=
+ =?utf-8?B?aDRndjRld3pnMnNqbVFNcnlDZVdZVWs0UHJScDEzRmEwWEwzNjgxOC9xS1dI?=
+ =?utf-8?B?RENjMjZVTVcwRmc4U3NuR0RRd2FaajhKOVRxb2ZUbGhjOEd2elF4UnZlU2lh?=
+ =?utf-8?B?a0R4NHJORFB2dGovRGpTZnM2dVh3T3gzYVZtbWFWVm9Vc1lCT0tUK3FBL3A0?=
+ =?utf-8?B?UGd2SWRSVUZnQXAzQjM5em94cFhOdjFsK0ZOaVRIUEczdEFIWTNFcGdVVDNS?=
+ =?utf-8?B?OS9Sd1Z1eEM0TEdhTTJxOXhBOUZZWm0xd1NPd1dndjF4SkFNZlhSUFRydnFB?=
+ =?utf-8?B?MHY3WWxiU292eUxUa08wblhVT1FnV05HRUhOc21YcmY4bnZzUld3SXdUMVNR?=
+ =?utf-8?B?KzRsVThWOTVEeDlOVzI2N0IyS1lqckJHVjZCQ3lLRlNQYnhhN3dHZUYyR1J3?=
+ =?utf-8?B?dmJNY293NUF4ckdUc3pUSXhzb1FuMW52RjlxSmdqOU00M3JjOHJ2Sk5PeEk1?=
+ =?utf-8?B?SnBqMjZNQllEU2xTQm9IL0tJU2svZmhKbGFpL1QwcmtTN25zN2R4eDJBb3Uy?=
+ =?utf-8?B?QUNidjRpUDdoRitGSlNaVEhiNnA3ejZ3dU9DYWR1MjdzcHdNdzI4NEFWR3dx?=
+ =?utf-8?B?R1JSUFZBejdMVkRDMmpQMUlmRk9OMDFLMVpNTldVTlJaZnoxVUk5ZUQzbW5t?=
+ =?utf-8?B?SUhuT20rRWFpU2hRTVFkaFprNml2eGtQVEN6Rm9PZjlxSmExS3RlMjFaWDlt?=
+ =?utf-8?B?RnhRS0l3elljOEdhZFV6WHJiNTdDR2lqblJxM0dWd0Y0MmRENDA3dnZGUEVO?=
+ =?utf-8?B?ZVFXbWFXNU40eitteG1CcEFobUpYM20xQXNiSGtTY2REbHRlUzVLd2RuWXM2?=
+ =?utf-8?B?dDcvMmd3QmdRSUhTdGtscnFBdHZiZUN3QVNlbzFjQi96cHlkc1JTTG5OZ0hX?=
+ =?utf-8?B?NFplK0VOUEphdkNoMEVqZ3FPdjZQcFlBdVpUUE9iSEZjdzVnK1VlKzVvTjB6?=
+ =?utf-8?B?U2MvWU41ekcvVVY3by9SbVhGQ1ZhVDhoUGFOMlBzNXNRczc0WmdpOCtOa2Q2?=
+ =?utf-8?B?eTJqMzJ1eGY3SEk0S2NGa21RV2h2bGcrRlZTVkxqRERBekFLWDJYUitEazBL?=
+ =?utf-8?B?ZjIzamd3UXlLTStUM1ZTelc3cnd2QnlRS2hBOXc2aEkyY1F4NUx2UDJiYWcx?=
+ =?utf-8?B?eFlYdHROTUh4TDdaN2Urc3duU24rYXJKT3NqajJKeDJrR0YrazcrZmRlTGlj?=
+ =?utf-8?B?MFB0VERpZkZsUjE4T0FVblR6SVZSTkwxRTgyak9YU1JkZVhEQmc9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_3028397_1409216483.1631023778288
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please can you get something done for the board today ? Please email me so I can explain more better.
+
+
+
+Regards,
+
+
+
+Atty. Cheryl Furstace Daniels
+
+------=_Part_3028397_1409216483.1631023778288
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!doctype html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+ </head>
+ <body>
+  <div style="" class="default-style">
+   <div class="default-style">
+    Hello,
+   </div>
+   <div class="default-style">
+    <br>Please can you get something done for the board today ? Please email me so I can explain more better.
+   </div>
+   <div class="default-style">
+    <br>
+   </div>
+   <div class="default-style">
+    <br>
+   </div>
+   <div class="default-style">
+    <br>Regards,
+   </div>
+   <div class="default-style">
+    <br>
+   </div>
+   <div class="default-style">
+    <br>
+   </div>
+   <div class="default-style">
+    <br>Atty. Cheryl Furstace Daniels 
+    <br>
+   </div>
+  </div>
+ </body>
+</html>
+------=_Part_3028397_1409216483.1631023778288--

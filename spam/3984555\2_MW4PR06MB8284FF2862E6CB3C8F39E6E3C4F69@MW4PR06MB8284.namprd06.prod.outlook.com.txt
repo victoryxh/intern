@@ -1,0 +1,221 @@
+Received: from MW4PR06MB8266.namprd06.prod.outlook.com (2603:10b6:303:125::20)
+ by SN7PR06MB7215.namprd06.prod.outlook.com with HTTPS; Mon, 9 Aug 2021
+ 13:16:23 +0000
+Received: from MW4PR06MB8284.namprd06.prod.outlook.com (2603:10b6:303:127::6)
+ by MW4PR06MB8266.namprd06.prod.outlook.com (2603:10b6:303:125::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4352.29; Mon, 9 Aug
+ 2021 13:15:59 +0000
+Received: from MW4PR06MB8284.namprd06.prod.outlook.com
+ ([fe80::2cb6:5470:12ef:c632]) by MW4PR06MB8284.namprd06.prod.outlook.com
+ ([fe80::2cb6:5470:12ef:c632%2]) with mapi id 15.20.4394.023; Mon, 9 Aug 2021
+ 13:15:59 +0000
+From: GRACE ELIZABETH DARMODY <gedarmody@wisc.edu>
+Subject: GENERAL INFO
+Thread-Topic: GENERAL INFO
+Thread-Index: AQHXjSBac30GvhaeckuMUk7w01eOpA==
+Date: Mon, 9 Aug 2021 13:15:57 +0000
+Message-ID:
+	<MW4PR06MB8284FF2862E6CB3C8F39E6E3C4F69@MW4PR06MB8284.namprd06.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: MW4PR06MB8284.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	f7ad73f7-9a6c-4bfa-6e41-08d95b37d490
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: f7ad73f7-9a6c-4bfa-6e41-08d95b37d490
+x-ms-traffictypediagnostic: MW4PR06MB8266:
+x-ld-processed: 2ca68321-0eda-4908-88b2-424a8cb4b0f9,ExtFwd,ExtAddr
+x-ms-exchange-transport-forked: True
+x-ms-oob-tlc-oobclassifiers: OLM:5236;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:MW4PR06MB8284.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-network-message-id:
+	f7ad73f7-9a6c-4bfa-6e41-08d95b37d490
+x-ms-exchange-crosstenant-originalarrivaltime: 09 Aug 2021 13:15:57.4001 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	Lrp1jHrXOILUZLq8w5GaD0oEVt15pJ4PxksctbKJ5joiqSHhznkA0dpr0frVrMCZYnLgMJwrEMQzWR2OhfKpTw==
+x-ms-exchange-transport-crosstenantheadersstamped: MW4PR06MB8266
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(750129)(520011016)(706158)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	BKlp97iHjHi0YQ9vI1avTY7z/Hq8G1OIpElHrmYeJP4TC6M8/Ck5+bRz6PHnFPoIOGacU/ba/LsECmTVRACc/R+06cHL4HwEbFWB1A6zWMMsHS2kZ8pjDAPnv6BRF04Kn8aO/d1cUYTLZT23C1L3RATIx5wz1NFu70dOpGSUfdsyBODdYiCZHlV58vBLjaIIIqGtlKBnU07JmWP8NGaaxM8nZVmsfzz8qos80Zu18/hacUK3RUR3clZclWkT6G9HtEyPcAwWXD7AyN7PwXLuiTTX5rWUoSqtpT3n5uoSBDif8kFOdaWmd0frosGNVtaO6GH8lsk848FNuvR+ji8DFYscS3xoSvRx85zl4xPiRLWOxr7w9c3SjrEnh45zWN+0GMEeJIn4aS9RD+quRp8CvZ2z7Z7L5EUjjTEcGFDD+QImAdtwsW5gJGwypOQlwV5qSKRj3xWNrIcpFOn+uDLolSRTjW4rgihzM/XBHfdBP3Hf1oBcc7CaeQ79z340/2Ukg/FdlnqhqyxfSoEbYVICNfs0oFvNeKNA01Y+Ha67u1BMBFBsZjTVmUv3hLHaVCoYo8+7Jvz8uOww099ivLeuDhQyqGvKCGsftnFbgzwtUlyF6g4hXq4qLua5HMybLX29iY7rjPbF+DhQVcLgLbL0thtBb3IunHUzFb7VN8KBlyRpTqo6migXDa9usZ2Li0nzUjkPoSx8AVtifInZ4OKKJbB9tJwxLzgCgsUqY1htnj0=
+Content-Type: multipart/alternative;
+	boundary="_000_MW4PR06MB8284FF2862E6CB3C8F39E6E3C4F69MW4PR06MB8284namp_"
+MIME-Version: 1.0
+
+--_000_MW4PR06MB8284FF2862E6CB3C8F39E6E3C4F69MW4PR06MB8284namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Our affiliate is hiring for an administrative/personal assistant to provide=
+ personalized secretarial and administrative support in a well-organized an=
+d timely manner
+
+
+ Job Details
+
+Salary
+$450+ Full Benefits. DOE.
+Up to 10% performance-based Bonus
+Tuition reimbursement
+18YRS and Above
+
+
+Job Type
+Part Time
+
+Number of hires for this role
+2
+
+Role
+Personal Assistant
+
+
+Job  Description
+
+This opportunity should be done at leisure time taking 1hr a day ,2-3 times=
+ a week. You will be working remotely with a flexible schedule that you man=
+age.. All the tasks are work from home/on campus job, you do not need to tr=
+avel, you do not need to have a car to get started. Readhere<https://forms.=
+gle/kg1tUaUDhuo4VTeZ6> for job details
+
+Regards
+
+
+--_000_MW4PR06MB8284FF2862E6CB3C8F39E6E3C4F69MW4PR06MB8284namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-ser=
+if;font-size:small;background-color:rgb(255, 255, 255);margin:0px"><span st=
+yle=3D"margin:0px">Our affiliate is hiring for an administrative/personal a=
+ssistant&nbsp;</span><span style=3D"color:rgb(45, 45, 45);font-family:&quot=
+;Noto Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;=
+font-size:13.3333px">to
+ provide personalized secretarial and administrative support in a well-orga=
+nized and timely manner</span></span></div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<br>
+</div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<br>
+</div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+&nbsp;Job Details</div>
+<div style=3D"background-color:rgb(255, 255, 255);font-size:14px;color:blac=
+k;font-family:georgia, serif;margin:0px">
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;margin:0px">
+<span style=3D"margin:0px"><br>
+</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;margin:0px">
+<span style=3D"margin:0px">Salary</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;margin:0px">
+<span style=3D"margin:0px">$450+ Full Benefits. DOE.<br>
+Up to 10% performance-based Bonus</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;margin:0px">
+<span style=3D"margin:0px">Tuition reimbursement<br>
+18YRS and Above</span></div>
+</div>
+<div style=3D"background-color:rgb(255, 255, 255);font-size:14px;color:blac=
+k;font-family:georgia, serif;margin:0px">
+<br>
+</div>
+<div style=3D"background-color:rgb(255, 255, 255);font-size:14px;color:blac=
+k;font-family:georgia, serif;margin:0px">
+<br>
+</div>
+<div style=3D"background-color:rgb(255, 255, 255);font-size:14px;color:blac=
+k;font-family:georgia, serif;margin:0px">
+</div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px">Job Type &nbsp;<br>
+Part Time<br>
+<br>
+Number of hires for this role<br>
+2</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px"><br>
+</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px">Role</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px">Personal Assistant<br>
+</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<br>
+</div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px"><br>
+<div style=3D"margin:0px"><span style=3D"margin:0px">Job &nbsp;Description<=
+/span></div>
+<div style=3D"margin:0px"><span style=3D"margin:0px"><br>
+</span></div>
+</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px"><span style=3D"margin:0px">This opportunity shou=
+ld be done at leisure time taking 1hr a day ,2-3 times a week.&nbsp;</span>=
+<span style=3D"color:rgb(45, 45, 45);font-family:&quot;Noto Sans&quot;, &qu=
+ot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:13.3333px">=
+You
+ wi</span><span style=3D"color:rgb(45, 45, 45);font-family:&quot;Noto Sans&=
+quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:1=
+3.3333px">ll be working remotely with a flexible schedule that you manage</=
+span>.. All the tasks are work from home/on campus job,
+ you do not need to travel, you do not need to have a car to get started.&n=
+bsp;</span><a href=3D"https://forms.gle/kg1tUaUDhuo4VTeZ6" rel=3D"noopener =
+noreferrer" target=3D"_blank" data-saferedirecturl=3D"https://www.google.co=
+m/url?q=3Dhttps://forms.gle/kg1tUaUDhuo4VTeZ6&amp;source=3Dgmail&amp;ust=3D=
+1628600710241000&amp;usg=3DAFQjCNFIQRD8rpoiYNNcMsHZ6TK3DI9qcA" style=3D"col=
+or:rgb(17, 85, 204);margin:0px">Readhere</a><span style=3D"margin:0px">&nbs=
+p;for
+ job details&nbsp;</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px"><br>
+</span></div>
+<div style=3D"color:rgb(34, 34, 34);font-family:Arial, Helvetica, sans-seri=
+f;font-size:small;background-color:rgb(255, 255, 255);margin:0px">
+<span style=3D"margin:0px">Regards</span></div>
+<br>
+</div>
+</body>
+</html>
+
+--_000_MW4PR06MB8284FF2862E6CB3C8F39E6E3C4F69MW4PR06MB8284namp_--

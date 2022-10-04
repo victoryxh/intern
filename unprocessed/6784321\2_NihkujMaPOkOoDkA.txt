@@ -1,0 +1,215 @@
+Received: from SJ0PR06MB8229.namprd06.prod.outlook.com (::1) by
+ SN6PR06MB5150.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 19:59:48
+ +0000
+Received: from DM5PR06MB3500.namprd06.prod.outlook.com (2603:10b6:3:124::23)
+ by SJ0PR06MB8229.namprd06.prod.outlook.com (2603:10b6:a03:386::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.16; Mon, 15 Aug
+ 2022 19:59:05 +0000
+Received: from DM5PR06MB3500.namprd06.prod.outlook.com
+ ([fe80::c412:3386:df:408e]) by DM5PR06MB3500.namprd06.prod.outlook.com
+ ([fe80::c412:3386:df:408e%4]) with mapi id 15.20.5504.027; Mon, 15 Aug 2022
+ 19:59:05 +0000
+From: ALIYA KAIMOLDIYEVA <kaimoldiyeva@wisc.edu>
+Subject: Approved Job For School!!
+Thread-Topic: Approved Job For School!!
+Thread-Index: AQHYsOAHpePSqa+oyUycC6k6fZBrcw==
+Date: Mon, 15 Aug 2022 19:58:58 +0000
+Message-ID:
+	<DM5PR06MB3500A7E6807349E0FCBC9057A5689@DM5PR06MB3500.namprd06.prod.outlook.com>
+Accept-Language: ru-RU, en-US
+Content-Language: ru-RU
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource: DM5PR06MB3500.namprd06.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	25ef1b3f-a1f1-4ef7-9f30-08da7ef89a1e
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 25ef1b3f-a1f1-4ef7-9f30-08da7ef89a1e
+x-ms-traffictypediagnostic: SJ0PR06MB8229:EE_
+x-microsoft-antispam: BCL:0;
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: DM5PR06MB3500.namprd06.prod.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	25ef1b3f-a1f1-4ef7-9f30-08da7ef89a1e
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	/jXocwgUjBpYc2FOGNFyQuACi72dp4B8cj5OC+4HqNU07Ic2xSzfqZmawZAoUTkwyPdndpAPQUaBmZLdzdULnQ==
+x-ms-exchange-transport-crosstenantheadersstamped: SJ0PR06MB8229
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKI;H:DM5PR06MB3500.namprd06.prod.outlook.com;PTR:;CAT:NONE;SFS:;DIR:INB;
+x-ms-exchange-crosstenant-originalarrivaltime: 15 Aug 2022 19:58:58.4193 (UTC)
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(425001)(930097);
+X-Microsoft-Antispam-Message-Info:
+	8DKs66q5ikQE1MlMdVwk+aXam56VWMBMuikoJ2x/HXmJsTjpaZDERnRT8GE3yKj0niyjgaLXthnWLQNuh13+1XjYC1F1P+Cvrrom7PbklP49Zr7WEcaGFmNL8MazWGnVyO4EkOkKtOtVXJ1uPn3HShtaF7eDQfs2OYiFEunlc1lC2pCPBa526YT29hBY9V/0Ys4I02t1VlG4yMUunzjST/VWteZ/qfeWiX5xnEE7ZiMB6TN8b8qOjVY0w1+DiPUTsD5Q5DthPWsR72F0MyMC7BULW/6rYOshAB56Peg3KNkC0YyEtVG9IIL6hH4LmrLjTSyeuxm7+3+EZt0VFQz4DXCFptYjwiPFgZR1ZDY24oB62pdAJdYqfH38vIu7ZzyJ0I3ldcKzx8GsfFoHAZw4i+NJnZeNXCsGO6EmzbcetWoQGEk3QqhZwYWbQsevzpwGDarVF3UUD7UChZMQEvoIB5oqxHybJPist+gRPdL/h9EFXnQ2s3/9ozN2lLc5tHTW9GrxXrt7ZFS5PuMQOXKAuq9L6BR7Mz/6PZMWnwBt7xZuZZm2F2QiWHeLY7d6oJFAuc1Qj0xiYC9OxQZ+FIrWZ2zfYxDEdwlSl/aLkU2z6XQe0roLD2lZ38b+sASLSFreO7FomLzz0GEpebiGDl33Hzn42S5Yzdh7KTPK71XLzEoz3zqgAR9Fis92rj1MnOSTvWLdRi+8WRm1IqRsQa4fBb21LLxtUtYa8un1kAWZ8vOPJrrFAnJsYwmIe24o3ViOYifvxRVnbvtTshbYbn3z2Bm1lE91ldIKvGeT7Is2Sf4=
+Content-Type: multipart/alternative;
+	boundary="_000_DM5PR06MB3500A7E6807349E0FCBC9057A5689DM5PR06MB3500namp_"
+MIME-Version: 1.0
+
+--_000_DM5PR06MB3500A7E6807349E0FCBC9057A5689DM5PR06MB3500namp_
+Content-Type: text/plain; charset="windows-1251"
+Content-Transfer-Encoding: quoted-printable
+
+Approved Job for the School
+
+Personal Assistant Service
+
+
+
+All Email recipients of  University Of Wisconsin-Madison are encouraged to =
+be a part of this amazing offer.  This is a part time job that will not aff=
+ect your present employment or study at the campus & you'll be working from=
+ home. It=92s fun, rewarding, and flexible.
+
+2-3 hours daily
+
+Four Hundred Dollars ($400)
+
+Part-Time Job
+
+
+
+                               To apply, Be sure to visit the link below.
+
+Apply Here<https://forms.gle/7wDXaaJ38Yc4jhno7>
+
+
+
+--_000_DM5PR06MB3500A7E6807349E0FCBC9057A5689DM5PR06MB3500namp_
+Content-Type: text/html; charset="windows-1251"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+251">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<div dir=3D"auto" style=3D"font-style:italic;margin:0px;background-color:rg=
+b(255, 255, 255)">
+<table width=3D"100%" style=3D"margin:0px;border-spacing:0px">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" style=3D"font-family:&quot;Google Sans&quot;, Roboto, Ro=
+botoDraft, Helvetica, Arial, sans-serif;margin:0px;padding:5px 10px;border-=
+collapse:collapse">
+<div style=3D"border:0px none;font-size:24px;line-height:38px;font-family:&=
+quot;Nunito Sans&quot;, Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-=
+serif;margin:0px;color:rgb(4, 156, 207) !important">
+<p style=3D"margin:0px;text-align:center"><strong style=3D"font-family:Robo=
+to, RobotoDraft, Helvetica, Arial, sans-serif;font-size:small;font-style:no=
+rmal;color:rgb(34, 34, 34) !important"><span style=3D"font-family:cambria, =
+serif;margin:0px"><span style=3D"font-size:22pt;margin:0px">Approved
+ Job for the School</span></span></strong><br>
+</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div dir=3D"auto" style=3D"font-style:italic;margin:0px;background-color:rg=
+b(255, 255, 255)">
+<span style=3D"font-family:Arial, Helvetica, sans-serif, serif, EmojiFont;m=
+argin:0px"><span style=3D"font-family:Calibri, Arial, Helvetica, sans-serif=
+, serif, EmojiFont;margin:0px">
+<table width=3D"100%" style=3D"font-family:Calibri, Arial, Helvetica, sans-=
+serif;margin:0px;border-spacing:0px">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" style=3D"font-family:&quot;Google Sans&quot;, Roboto, Ro=
+botoDraft, Helvetica, Arial, sans-serif;margin:0px;padding:5px 10px;border-=
+collapse:collapse">
+<div style=3D"border:0px none;line-height:25px;margin:0px">
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+<span style=3D"border:0px none;margin:0px">Personal&nbsp;<span style=3D"mar=
+gin:0px">Assistant</span>&nbsp;Service</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+&nbsp;</p>
+<p dir=3D"auto" style=3D"margin:0px"><span style=3D"border:0px none;font-fa=
+mily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin=
+:0px">All Email recipients of&nbsp;&nbsp;</span><span style=3D"border:0px n=
+one;margin:0px"><font color=3D"#4d5156"><span style=3D"font-size:11pt;line-=
+height:normal;margin:0px"><b>University
+ Of Wisconsin-Madison</b></span>&nbsp;</font></span><span style=3D"font-fam=
+ily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:=
+0px">are encouraged to be a part of this amazing&nbsp;</span><span style=3D=
+"border:0px none;font-family:&quot;Times New Roman&quot;, Times, Baskervill=
+e, Georgia, serif;margin:0px">offer</span><span style=3D"font-family:&quot;=
+Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">.&nbs=
+p;&nbsp;This
+ is a part time&nbsp;</span><span style=3D"border:0px none;font-family:&quo=
+t;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin:0px">job=
+</span><span style=3D"font-family:&quot;Times New Roman&quot;, Times, Baske=
+rville, Georgia, serif;margin:0px">&nbsp;that will not affect your
+ present employment or study at the campus &amp; you'll be working from hom=
+e. It=92s fun, rewarding, and flexible.&nbsp;</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+<span style=3D"margin:0px">2-3 hours daily&nbsp;</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+Four Hundred Dollars ($400)</p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+<span style=3D"margin:0px">Part-Time Job</span></p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+&nbsp;</p>
+<p style=3D"font-family:&quot;Times New Roman&quot;, Times, Baskerville, Ge=
+orgia, serif;font-size:17px;margin:0px;color:rgb(19, 19, 19) !important">
+<span style=3D"border:0px none;margin:0px">&nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp;To apply, Be sure to visit the link below. &nbsp;</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" style=3D"font-family:Calibri, Arial, Helvetica, sans-=
+serif;margin:0px;border-spacing:0px">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td valign=3D"top" align=3D"center" style=3D"font-family:&quot;Google Sans&=
+quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;margin:0px;padding=
+:20px;border-collapse:collapse">
+<table style=3D"margin:0px;border:0px none;display:inline-block;border-radi=
+us:5px;background-color:rgb(36, 160, 237) !important">
+<tbody style=3D"margin:0px">
+<tr style=3D"margin:0px">
+<td align=3D"center" style=3D"margin:0px;padding:12px;border-collapse:colla=
+pse"><span style=3D"border:0px none;font-size:24px;line-height:24px;font-fa=
+mily:&quot;Times New Roman&quot;, Times, Baskerville, Georgia, serif;margin=
+:0px;color:rgb(255, 255, 255) !important"><font color=3D"#1155cc"><span sty=
+le=3D"margin:0px;display:inline-block"><a href=3D"https://forms.gle/7wDXaaJ=
+38Yc4jhno7" title=3D"https://forms.gle/7wDXaaJ38Yc4jhno7" style=3D"margin:0=
+px">Apply&nbsp;Here</a></span></font></span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</span></span></div>
+<br class=3D"Apple-interchange-newline">
+<br>
+</div>
+</body>
+</html>
+
+--_000_DM5PR06MB3500A7E6807349E0FCBC9057A5689DM5PR06MB3500namp_--

@@ -1,0 +1,179 @@
+Received: from SJ0PR06MB7757.namprd06.prod.outlook.com (2603:10b6:a03:301::9)
+ by CH2PR06MB6709.namprd06.prod.outlook.com with HTTPS; Mon, 23 Aug 2021
+ 15:47:07 +0000
+Received: from BN9PR03CA0221.namprd03.prod.outlook.com (2603:10b6:408:f8::16)
+ by SJ0PR06MB7757.namprd06.prod.outlook.com (2603:10b6:a03:301::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4436.19; Mon, 23 Aug
+ 2021 15:47:07 +0000
+Received: from BN8NAM11FT014.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:f8:cafe::57) by BN9PR03CA0221.outlook.office365.com
+ (2603:10b6:408:f8::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4436.18 via Frontend
+ Transport; Mon, 23 Aug 2021 15:47:06 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ BN8NAM11FT014.mail.protection.outlook.com (10.13.177.142) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4436.19 via Frontend Transport; Mon, 23 Aug 2021 15:47:06 +0000
+Received: from mail-oo1-f54.google.com ([209.85.161.54])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QYA04ZVBUI7A700@smtp7.wiscmail.wisc.edu> for
+ elizabeth.manriquez@wisc.edu; Mon, 23 Aug 2021 10:47:05 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Lisa R. Carter" <lisarcarter50@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= BLANK_SUBJECT 0.1,
+ HTML_NO_HTTP 0.1, BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_500_599 0, BODY_SIZE_7000_LESS 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, HTML_BAD_EXTRAS 0, KNOWN_MTA_TFX 0,
+ NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0,
+ SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0, SXL_IP_TFX_WM 0, TEXT_DIRECTION 0,
+ TEXT_DIR_LTR_ONLY 0, WEBMAIL_SOURCE 0, __BODY_NO_MAILTO 0,
+ __BODY_STARTS_WITH_2XDASH 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_FROM 0, __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0,
+ __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HELO_GMAIL 0,
+ __HEX28_LC_BOUNDARY 0, __HTML_ATTR_DIR 0, __HTML_BAD_END 0,
+ __HTML_BAD_START 0, __HTML_DIR_LTR 0, __HTML_TAG_
+X-Wisc-Doma: lisarcarter50@gmail.com,gmail.com
+X-Wisc-Env-From-B64: bGlzYXJjYXJ0ZXI1MEBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.23.153615,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.19.5840000,
+ SenderIP=[209.85.161.54]
+X-Wisc-DKIM-Verify:
+ lisarcarter50@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-oo1-f54.google.com with SMTP id
+ s21-20020a4ae495000000b0028e499b5921so2804950oov.12 for
+ <elizabeth.manriquez@wisc.edu>; Mon, 23 Aug 2021 08:46:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20161025;        h=mime-version:from:date:message-id:subject:to;
+ bh=1+5mZ8VYqjGdAZVCYviNwxwt/0wk0iiQqt14Lk/vsH4=;
+ b=E7JBbmlJnB/KEpWlc9kZv6UzekIYJDV2FLZHGCvdroxB604N2rOW9TSGVUetq4b+Eh
+ kXu+z2/bLQSQNIwmTRzCTZV4KXnk9mqJXiqEWBglMSVYOQo264kT8OmRNy3/rKH9nrq7
+ c1o7ig58VOU7Ciz5v2a7db21r4YfwPOK49Jsuypi4Y4wMnPkAwYKUc4c5Tm3KrOzVNgZ
+ qrnxLLDkLAMmZGD0rIZRLsX/1LQrmVAA6YE/2hDFtDro1QTojGWQg7/77GKVaHQHxdqF
+ hP3cA+x7ggLphCB4J5NoUBlN5WgMgou2o+HVHPVLKbrIMsAMuWQrvkObGoDJI4o0ddYi
+ F+jw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=1+5mZ8VYqjGdAZVCYviNwxwt/0wk0iiQqt14Lk/vsH4=;
+ b=VuBtYjg+Arn7iOkemZiteIHLxWJk4uzlpbPBBZq/U4Sy/ExWLRJNlALa8tO2FYrtkL
+ hks1qRx+RJ89OAD824bdRyEew04t7oUzLJonUVKE+/hezK4GwoEv2Zu2uT0u8qoYWMx5
+ N3jTXmMhr6+vThVDfvs7PPj6DT8HYiTwC+utY8JVRqat9q168LYuLoh2otJk0s7qzkzo
+ QRsW7/0OC18eqDoRH8oejaPXBS5KrHVw5lT2yQyqmQT6NpQ9kzNntlhit3zXTfNHDbLp
+ D5dO76UquUPclVk4y38X/SSvkmpXL571GH0xD4XI5DYW1uion1xypIk0TiGE7grjkBKr
+ 8uRA==
+X-Gm-Message-State: AOAM533hockNK5r7cRCYaqq4AgrDtpIRQLPfe81JBVerUxpCifx9sNNA
+	omCPxIQklRalO+217vrU/hVjhjYychdpI6hDHjlXdX1Mf4Wt+nZ6nJw=
+X-Google-Smtp-Source:
+ ABdhPJzsrdKKYtKzZ5MGEHLZZ/LuH6RQFiEa3mzkQQLw26Qpa5j67eV8rgQx3oEHfHzxSHqaGXAHuA8vZphm7z9haSw=
+X-Received: by 2002:a4a:e416:: with SMTP id t22mr914754oov.56.1629733615039;
+ Mon, 23 Aug 2021 08:46:55 -0700 (PDT)
+Date: Mon, 23 Aug 2021 16:46:43 +0100
+Message-id: <CAF3dbgxQsVNnw_mrCyXuhbsLTS_P7rsOSubLpa-8457tv=yAsg@mail.gmail.com>
+Subject:
+To: elizabeth.manriquez@wisc.edu
+Content-type: multipart/alternative; boundary=00000000000033f86305ca3bedd4
+From: lisarcarter50@gmail.com
+Return-Path: lisarcarter50@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Aug 2021 15:47:06.5791
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d37774cf-7689-4eb7-d93e-08d9664d429d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT014.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: d37774cf-7689-4eb7-d93e-08d9664d429d
+X-MS-TrafficTypeDiagnostic: SJ0PR06MB7757:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1923;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Aug 2021 15:47:06.4572
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d37774cf-7689-4eb7-d93e-08d9664d429d
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT014.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR06MB7757
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1980318
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4436.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Q1ArazI0dDRGMUE1WkVtMkFBMzNaRHJ6NFlKVjlxYkZ2Wjd3VVc3aGt5RTZy?=
+ =?utf-8?B?ZnNaZFdYdmFXcGM0VU56dU1IZkJnVWpNTjVpZmhaQWtrRHZnMUh4OTJsRCtY?=
+ =?utf-8?B?UksxcDZXTXRFdkkvcFJGbnViV1FqNFRrY1pKT0dqTUF5QTZ5bm5PTURXRDVn?=
+ =?utf-8?B?czNWUzllNmxEc1VDNEpjTEFGY2VlemZVeXp1Smc4Y2JVUGdlWlhBNW1xOUlj?=
+ =?utf-8?B?WVhmQklRSFN1aUFVbWtwUjJYUm9hcnlXQmtzTUFMZWdxZ1RZWDRjNTczd3I1?=
+ =?utf-8?B?ZkthVmt6UGV1cHV4OGZiQVRxZGUvNHFuS25GTUgvSXpqd0lRdmJjQzVXNTdJ?=
+ =?utf-8?B?OWF4YnYwYVNQYTRnZnI3bGh1S0JIcTNnYTEySHc2L1QyMmJRYzNWRWZXMnIv?=
+ =?utf-8?B?U0ZNdlJhVXArTmQ5Yldkcnk5Sy9tVEQ5cm9vRi9td3VrOWx4Z3FaQ0R3T2hk?=
+ =?utf-8?B?S3N4eDlEdU9nMGJuOVRXWjlYK1I4SC9TMmhjbVIzMjk5ektqeWJ5Q29WZWc5?=
+ =?utf-8?B?U2ZNTXgwWEpnVHpyNVNBMFFTMzRWaHllOE1sUnlrLzlvN2dxbW5CMU1VMTNU?=
+ =?utf-8?B?aHZWdFF2UnhXa21DeUlGNG5NdUhWRXhFS0RReGUzMzUxR2dDdDdvVm00NFFR?=
+ =?utf-8?B?bm8wSUFtNS9lV2I2cmNON3FuS05BUzRRV3VsRFMxNlg4bW9CMmFzUnd4UXB5?=
+ =?utf-8?B?ejlFUmUzTnJBL211anBjMWlBUTY5aVNWVFUrWXE3ZlRHWUxJSms1dExaSEFj?=
+ =?utf-8?B?VlVUNzhTMytySHRBM2V1alN5RWlGL1N1NGFiWVdaUmlFdjNLalRqRWNnbWxG?=
+ =?utf-8?B?djVsMzhnVGRBeDNWWk9mZjc3SHFEeUUxU0RaSjMzak96RlVmenNudjU0UXg4?=
+ =?utf-8?B?d2Y2bzBXYXJocnBaVFBWeTI0eHpydGRjeEVkcHFYa28wZzFZZHF0SzM5RTNQ?=
+ =?utf-8?B?UmltVm5iR1hFUnBrK3dsWHVVZ1NCTFh1VEkwUWlBc1ZoMFhJQkphaW92WmZL?=
+ =?utf-8?B?MUlUVXZCQms0YmVjNEJ4ODNnTkVjdWREWkhFWlVJUHZldkVNMjgwUm5UTlh1?=
+ =?utf-8?B?NnRvTXVxUXoza0Q3TjYxNU9iajdTeDdVOENZdkRUZ1ZiTTdGSnFpL0djNkxV?=
+ =?utf-8?B?NFQzeU41RFIzbFpTdlpQUTNwdlVzVmdSbytOT01Ma3dseGdSZWFVemhzeHZ1?=
+ =?utf-8?B?KzJ5VWJZdGFKalRqSTlsVENHSWZtRWZpMFhKQkdxSHZmMVZCYWp1WUZWSFA3?=
+ =?utf-8?B?WFlKTlZHRjY3WmhFbXEyekpJanpvcnFMczRrTlE0MDVEVnNDRk0zclNhRzdu?=
+ =?utf-8?B?a2JBRlhsOTE0KzBGZ0ZYNmdseUZOdmtCQTg2anl3ZkpCWkZZRldIYjUxSDhm?=
+ =?utf-8?B?MEl6L2lUalNlNm5rYTFITlNRNmMvOGx3Vm5HbWljQkdVQTdiWmR0bFEyL1l1?=
+ =?utf-8?B?SzdNSVYrcWVldkFGajhjT29NLzBVSi80ZGdiRHcvdUFJcEcvNDJOZU1hNmE2?=
+ =?utf-8?B?MFF1SU5oOVQxcXdWUHp3L1BLUE1LVE85U3FDS0FCSEVJTkYyY0QvUFlSbFdZ?=
+ =?utf-8?B?VDgxN1VrMnZyYktML0hwRHg2L2twOWxsVk04SVc3OGlsVTl2Sy9zZW0wLzlj?=
+ =?utf-8?B?ckpwQURKS21MM2w0eGoyTXJKV0tRelVyaGxwRWN1UXhkL0Z2Q3o3VzhjNVd0?=
+ =?utf-8?B?UFAzMUhUNnZkT25Hdk0veStRakJXVTlLTllMVVg5T3BlUTZtS3FUM3Z5OHA5?=
+ =?utf-8?B?ZTd5QVJtcCtVMFZ6RklaVGkwQ1Z5bE0yd2RVZERXYVkrTXlEaWp6M2RRME1t?=
+ =?utf-8?B?TmdiYjNUR0xPa0YrSUdqM0FoSU9zVys4dXdaT215bHRVRUpPcEhiK05PQ2tt?=
+ =?utf-8?B?aTRvcEEyanhySnkyZldvWVl6U3lVVyt2QUxwdERqdUszS05hdnhRZENIWGZC?=
+ =?utf-8?B?L2xVeVpEYnVrT1EyYXk3K0wydGtGMGFkMTVQeTZRWEdXdFZ1d0FXUTFsUk14?=
+ =?utf-8?B?R0l2NS8zRzE4S1JLN0F0ZmdLdTJGSFNCOUhkd1NrTVFjT0I2TThaQmQreHBz?=
+ =?utf-8?B?dnF4aHduZ3E3NnRmKzhtUmF0RWtGVmVGYWtQb2wyaTdjL0ZsaWhjNDJFK3lD?=
+ =?utf-8?B?TFZEVHlRUDZRTTZiZkpsMEI1ZWtMUVBDM29xS0tHdndtNGVPRW5CeHdiR3JQ?=
+ =?utf-8?B?cU8vcWNwZWZCNnVNRmRWeGVaQ0ROVWRzOVk4eXhZUVJDSVdaUHJjRUhuTjMy?=
+ =?utf-8?B?VEl2MWtvVHBMN1JvWlBpZnowL0NMWVQzYTNhSWhXVFE1SXY0U2hHZUprbVV3?=
+ =?utf-8?B?QllZVmhEOU1weWd6ZTlhbmN0OFA3V1huR0FMODhCRmt2dEl1TjlPOG1mamUw?=
+ =?utf-8?B?dnNJemdJeGIveU0rQU5UeHMrdHYzNDN4N21SV1ArcDkwUUtmcmZUR2dLRWNZ?=
+ =?utf-8?B?TmlvVVJ4Y3RRaEtHbTJkVjFYcmVLbWlseHVBbEhGYWdkTkRiZzUvR2x4WUhM?=
+ =?utf-8?B?R0pnalEyVkgwK0xUa3VwelVvcHh1Ym12R2J6bytWQjJRPT0=?=
+MIME-Version: 1.0
+
+--00000000000033f86305ca3bedd4
+Content-Type: text/plain; charset="UTF-8"
+
+-- 
+Send me your available text number
+
+Lisa R. Carter
+Vice Provost for Libraries and University Librarian
+
+--00000000000033f86305ca3bedd4
+Content-Type: text/html; charset="UTF-8"
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-- <br><div dir="ltr" class="gmail_signature" data-smartmail="gmail_signature">Send me your available text number <br><br>Lisa R. Carter<br>Vice Provost for Libraries and University Librarian<br></div>
+
+--00000000000033f86305ca3bedd4--

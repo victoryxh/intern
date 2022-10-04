@@ -1,0 +1,1572 @@
+Received: from CY4PR06MB3094.namprd06.prod.outlook.com (2603:10b6:910:58::36)
+ by DM6PR06MB6201.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 12:12:31 +0000
+Received: from BN0PR04CA0008.namprd04.prod.outlook.com (2603:10b6:408:ee::13)
+ by CY4PR06MB3094.namprd06.prod.outlook.com (2603:10b6:910:58::36) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.21; Fri, 13 Aug
+ 2021 12:12:29 +0000
+Received: from BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:ee:cafe::a0) by BN0PR04CA0008.outlook.office365.com
+ (2603:10b6:408:ee::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Fri, 13 Aug 2021 12:12:29 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ BN8NAM11FT066.mail.protection.outlook.com (10.13.177.138) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Fri, 13 Aug 2021 12:12:29 +0000
+Received: from senderb55.zcsend.net ([135.84.83.55]) by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS01K5N1WNDC50@smtp8.wiscmail.wisc.edu> for
+ tfinman@wisc.edu; Fri, 13 Aug 2021 07:12:25 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_90_100 0.1,
+ HTML_95_100 0.1, SUPERLONG_LINE 0.05, BITCOIN_SEXTORTION 0,
+ BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0,
+ DATE_TZ_NA 0, DKIM_SIGNATURE 0, KNOWN_MTA_TFX 0, LEGITIMATE_SIGNS 0,
+ LIST_HEADER 0, REPLYTO_SAMEAS_FROM 0, SPF_PASS 0, SXL_IP_TFX_ESG 0,
+ SXL_IP_TFX_WM 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BITCOIN_ADDRESS_OBFU 0,
+ __BODY_NO_MAILTO 0, __CANPHARM_UNSUB_LINK 0, __CP_MEDIA_BODY 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DATING_PHRASE 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FRAUD_MONEY_BIG_COIN 0, __FRAUD_MONEY_BIG_COIN_DIG 0,
+ __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0,
+ __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_X_MAILER 0,
+ __HEADER_ORDER_FROM 0, __HTML_BAD_END 0, __HTTPS_URI 0, __LEGIT_LIST_HEADER 0,
+ __MEDS_PLAIN_MEDICATION 0, __MIME_HTML 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0,
+ __MIME_TEXT_H2 0, __
+X-Wisc-Doma:
+ bounce_706976386+a.18c8f79cb33b3c24_v29@mail7.psnd.zcsend.net,greenpatriot.org
+X-Wisc-Env-From-B64:
+ Ym91bmNlXzcwNjk3NjM4NithLjE4YzhmNzljYjMzYjNjMjRfdjI5QG1haWw3LnBzbmQuemNzZW5k
+ Lm5ldA==
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.120616,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840000,
+ SenderIP=[135.84.83.55]
+X-Wisc-DKIM-Verify:
+ bounce_706976386+a.18c8f79cb33b3c24_v29@mail7.psnd.zcsend.net,greenpatriot.org!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: from 172.30.236.14 (172.30.236.14) by senderb55.zcsend.net id
+ h2pgqe2rdfod for <tfinman@wisc.edu>; Fri,
+ 13 Aug 2021 05:12:23 -0700 (envelope-from
+ <bounce_706976386+a.18c8f79cb33b3c24_v29@mail7.psnd.zcsend.net>)
+DKIM-Signature: a=rsa-sha256;
+ b=FOfWJk5OCbU1QV8uShNl28M1LBYEsdBytY9uO2TGmPWVWtGTYQIdzrtl1cTs1PDj/IsWHUoG8L2fmNWfH/BgG/Oenxf3/rzkCPk0+euSqEbUaYtxuBdB+PkBX4IoY5pYgR+kRwhVSGwDvSitczw24nQ5eEtJqfyboSVk0+ZvWg4=;
+ c=simple/simple; s=22318; d=greenpatriot.org; v=1;
+ bh=hbQdVwTf1qwxInITngQqREhLX45B0PaRaILRHJmf+EA=;
+ h=date:from:to:message-id:subject:mime-version:content-type:list-unsubscribe:list-unsubscribe-post:x-csa-complaints;
+Date: Fri, 13 Aug 2021 05:12:23 -0700 (PDT)
+From: Ryan Tanner <ryan@greenpatriot.org>
+To: tfinman@wisc.edu
+Message-id:
+ <zcb.3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc.18c8f79cb33b3c24.1628856743768@mail7.psnd.zcsend.net>
+Subject: Do You or Your Family Have Arthritis? THIS Will Help You.
+Content-type: multipart/alternative;
+ boundary="----=_Part_1308554_1388924585.1628856743766"
+List-Unsubscribe:
+ <https://olbx.maillist-manage.com/ua/optout?od=3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&rd=18c8f79cb33b3c24&sd=18c8f79cb33abca5&n=11699e4c18f78e5>,
+ <mailto:leave_706976386+18c8f79cb33b3c24_18c8f79cb33abca5@zcsend.net>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-CSA-Complaints: whitelist-complaints@eco.de
+Reply-to: ryan@greenpatriot.org
+X-JID:
+ 3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc.18c8f79cb33796c7
+X-campaignid:
+ zohocampaigns.3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc.zcb.18c8f79cb33b3c24.11699e4c18f78e5
+X-Zoho-RID:
+ zohocampaigns.3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc.zcb.18c8f79cb33b3c24.11699e4c18f78e5
+X-Mailer: Zoho Campaigns
+X-Report-Abuse: <Please send a copy of this message along with header to
+ abuse+3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc_zcb_18c8f79cb33b3c24@zohocampaigns.com>,
+ <https://olbx.maillist-manage.com/campaigns/ReportAbuse.zc?od=3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&rd=18c8f79cb33b3c24&sd=18c8f79cb33abca5&n=11699e4c18f78e5>
+Return-Path: bounce_706976386+a.18c8f79cb33b3c24_v29@mail7.psnd.zcsend.net
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 12:12:29.4644
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ da523b79-1b5e-43d4-931f-08d95e539f20
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: da523b79-1b5e-43d4-931f-08d95e539f20
+X-MS-TrafficTypeDiagnostic: CY4PR06MB3094:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:363;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp8.wiscmail.wisc.edu;PTR:wmmta5.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 12:12:29.3505
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: da523b79-1b5e-43d4-931f-08d95e539f20
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR06MB3094
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8124391
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	kl:1;ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(520007050)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ZVByZ0dXUVJGWGJmc1U2UjM4bzV1RGI5N2k3L0laSlcxVzdlSUErWmpqcDZr?=
+ =?utf-8?B?MzAzTjRXcEJJNVQ5YnJ3WS9CcEFzQ0NNUk1ENGZ4OUk0aUFSNXlSQ3RYbVda?=
+ =?utf-8?B?R1dMZ2l5VjlKaEN1KzlZaGwyUUNJNGtzT3NGekFNdW8rMWNteDBpd2trWWVy?=
+ =?utf-8?B?SFc3Q215OXJoU2UwMGNzdUZ0d3pHWkF1c2kzNnpnWVg2U2VHSG84WjFSbjFi?=
+ =?utf-8?B?ejZHQ2Jkb01PWWwyK1JBSDZIS1crVFVFQnpvek9tUGxJRTJiMXVoNkhUN1l6?=
+ =?utf-8?B?K0tMaUtWN2tkL25YUERpWkxxNHBxN3RDeUYyV1FvK3pSTjNOckkzSElERjQ3?=
+ =?utf-8?B?L3NSZXJhTDNHZGZpQ3FabUQ4ZVlZZW5QeHdkdGZCbjJDNGE0MlA2dXVjM2FB?=
+ =?utf-8?B?bjBOeGdvbzFPT3dnSllYVUJCN1RqbnloUEJZRnc3Njl4djB4cUwxR2NWc0U4?=
+ =?utf-8?B?Wi9CNVBFZmtDN0c1QkRHMDRkNWRHUjVQTnNoc1d3b2RTeEtjYytNNitDelVF?=
+ =?utf-8?B?c0tZemdZNEoxOUk3U1ZKd3Z5ZW41Z0IwOG9qekVUTzlDU2JEakxJRXVMeVls?=
+ =?utf-8?B?QUZua0g5SmRmQkpUZnpYTlZmck5pRU5FSm5aTjgwS25KcUEzZmh6TmZmZ1Bv?=
+ =?utf-8?B?emF6aERpSmJlSGRVMDhMVGE2algwZ3VDWENxTk96MEdhaGtMSUlmVUZUZENz?=
+ =?utf-8?B?NlJaTVNVR0d1QmM2N3RzUlkvYTYzUHhSS3lNeWxQRHZLWTZ4VGp0TnZaaW0r?=
+ =?utf-8?B?OEpBQzhEYVh6TWsxZEExakEwbUZXOHhtNzE0VEhVOEJ2dDZDNVFoTjdabHNX?=
+ =?utf-8?B?ZXgyM25weTBUdnExbDgvampvckl3K01vL01NTnA3Yjl1OHlDbnZrQmJ3SXBp?=
+ =?utf-8?B?SDZ2OHNHdjV6WEpyZERlbmVmTmVyazB3TERXN1pVcFpjbXJVSG1QeENkVHgr?=
+ =?utf-8?B?TXdLNW9TK1RrUEN3bkNiY2Z1UUx3ZUxuWEtHandKL2psQ0JFWG5mSTBIT0xP?=
+ =?utf-8?B?VDVTR1I2clNFZlJ5UjR0cm1YK1F6dkFWdWFZVEpONjlQNHZOZ3I3N1JHZ2Ny?=
+ =?utf-8?B?LzBKeDBVQUx0eXhuQlRwem9zT3E0a2xFOElNM0t6Q0NGSGgxMzRHeUpLZWlW?=
+ =?utf-8?B?UkFPUkhsNi96QmliSWFBS3lSZEVBcTJVV1BubFI1WnpIVWo4cUZJWHpERUNY?=
+ =?utf-8?B?bUkzTUc1ZUJVZEpNZ3ZhNFVsUEplOFV0RGo5SnMydndrb05OdFUzK1BmL2Fa?=
+ =?utf-8?B?WlNwL1VZS2hoRUxQeDdydVFLRmRVaTVDR2VQRjV6YWp4N3kyNGl2T2tkZzk2?=
+ =?utf-8?B?cGhUZHVIQmVDU2IweEdEa2F6L3RlQS9zVzlVZ2p6VlpreW8zc29qaTYvUVNZ?=
+ =?utf-8?B?TWF3OUhyZUczSVQrbGRITTVGbXpxVTRpZW9GUDNDN1ZERTJKWGNJb3FzRkZX?=
+ =?utf-8?B?S2pxVStYM1ZDWFd5dG80aXJ0cW56MU9Fd0piVHVQVjMwbVllUzZMNEFybDVj?=
+ =?utf-8?B?dkdrRjhodHZPd3NVTVluOXJmem5iUzByWnRjSGF0SWhoMWl2WDRNK2tqKy9y?=
+ =?utf-8?B?bU1oby9ibS9oeEhFVnprM0liNTk0Z2hxeFNoL25ROVlwT3hBSkVGZFBpaDJX?=
+ =?utf-8?B?WW1ZZ3F1WkRpTldDRFpsL2o2RkpKOTI4WEpuUG5MZlFLZG5nU2dLRmRpWFJU?=
+ =?utf-8?B?RWdwT3dRZWpWbmtiV1krdEQwUnBmS1orbTRCeVpwdzR3ckh5R1pVcHJVdWsy?=
+ =?utf-8?B?cmJ1SXVmR2lrNnNORk10WmhMMGlIK0xqMHJLd1JqREVLNnh2SG9yMFpPR1ow?=
+ =?utf-8?B?Mkp6elF6eDBXZ054VTJydU1uS25vWTdnRy9kaDl2dktERTRjbmVXWStIcXdn?=
+ =?utf-8?B?OTFNWm1adUw0Q2oxaTNEQU9yUTR2RXA3Z01mTTNrbkZlRHJCRi9WQms0RGs3?=
+ =?utf-8?B?eW01QVZTRkhqeTNxeXBzZWhjcFBXTEwrbnFTdlkrMi9LSG1NOS9BdmJ6Nzlk?=
+ =?utf-8?B?Rkc5YlFMSDBLaU9QRDlhNkx6dExmb3FLaFQzS1BWT004d1psWTZ4cFBYQUJC?=
+ =?utf-8?B?ZUVhL2pJS0FQTVBiSlJVM0g0Q0pHcUd2bmRNRStwa00zZFBERzh6bEJCU3Ur?=
+ =?utf-8?B?Mm9aVmFQRDZFOTNQNUJBVUlpV3podDFHTDIySDJKR2FoOERHMHNnWDZ3VmRT?=
+ =?utf-8?B?SnI0NGk2M2E4UkYrV2FlaitqcXYwMGV3Z2F1ckd0czRLSUM5cVRhdldLM2ZH?=
+ =?utf-8?B?RHFVOExHeFFFQ01GQytvZHBpeStMc29xU2RKZkFLQ0RnSWNHT2JsWVZGRy8v?=
+ =?utf-8?B?eVBlRVg1V2lPODhCMUJndC9CdiswY2xYaUhha2xBZ1IrQ3NaV0hscTlMVnh4?=
+ =?utf-8?B?UCtWN2pzenM2c1pRYmFsMDRDT0xCOExBZUl6V1lua2tQcmlyMnJUUmxLRTZa?=
+ =?utf-8?B?L0ZuSWZZendWb0kreU1ZMk9CRWk2MzdLd2dsUkp3UTNQbHAzd0dlMUFCVWY5?=
+ =?utf-8?B?SXlNeEllWU1saDJIVzNpdjhmY2U3Yk44YnVCRGYwalluZkhzMEY2MzdrTkpj?=
+ =?utf-8?B?Zm5SYXJDZmlhTW9VUVBIeFBtNDVjMXpxWWVVd045dDFwUVFNU1VVV2Y4K3Bs?=
+ =?utf-8?B?VzBGSlB1THhBODd6ZlRtRXhUSzJKV3NIYUQ2TW9VcDJoc05WdXFJSGNVemV1?=
+ =?utf-8?B?d3A0YUNSbDBsR3RuclpuWG9Ia1B4bUVCSW9FN2g2Tmd3Vm9yd056ZU9hRlR3?=
+ =?utf-8?B?d1JhZXYwNGFVZi9hTHVzbXJPdTNJYUxKQmlXVUo2SUVjVkpzMnpHdnJoSXVY?=
+ =?utf-8?B?QUU1T0pUOWN0aFNWL3U2RmlydisrUGFrTERvaitZUXAxRE5YZElGcGhSRCtU?=
+ =?utf-8?B?UXBNRVNBODQ2eThLcCtsWDJFaDdRODlKMTMzb0RjZVF6YkdSN1g0OHEwUUpp?=
+ =?utf-8?B?TjVKZ1FFVjNzaDh6QTVnaHJqRkNYMHpoa0drUUtDb3FTZVo5b3VOc1VBUUpP?=
+ =?utf-8?B?RDJpUDhUVmp6UGw2L0VqY0JENDBxVHNvRVRsL0dxaGg0N3YxeitVKzZJb2Mv?=
+ =?utf-8?B?ZFJSbkNRRTdteU1zOWp4RVRYR25aQVp2TlhaRnBKejFFUHA0NkJaRmM4TFlt?=
+ =?utf-8?B?anFHTzUxTXV0VEhvZTUxV3d5YVBmTWt1VkZGV0ZQNWl3Tkd1cFordW84T3c2?=
+ =?utf-8?B?UGg5NTUxN2UvOElFM2F2SVhmUU1LVVNEN0pObThSZlN3NVJrM0ZtejVEbGtm?=
+ =?utf-8?B?UElQcHZ1Vy9UQXh2ckUxZ1h6czJkNzA0WCthZkdiVkF1YzdNZDhLNDd3dmFE?=
+ =?utf-8?B?Y1c5VWVrZFcvUERBaVMrOVFMQlZxQU5CZWwvZW0zRE9lMTBkWWJGM2xLTXk4?=
+ =?utf-8?B?by81R3IyZmZFRWtCcXNjd2FhNHZITElnVmhUaXJLWDJJc1JHbjZqemtyTWxR?=
+ =?utf-8?B?YWpXUGZVaWFidzBTbzBaNVRDZDVQcEw0UFFpQnVUdGZZSUk0ZGtIQkswaTd1?=
+ =?utf-8?B?MDcwWnh3MFZQVnQxamh0S1E9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_1308554_1388924585.1628856743766
+Content-Type: text/plain;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=C2=A0 =20
+      =20
+  =20
+  =20
+
+ https://energypedia.kartra.com/page/painfix-gly Do You or Your Family Have=
+ Arthritis? THIS Will Help You.=20
+    =20
+=20
+  =20
+
+Chronic pain caused by arthritis affects millions of people in the United S=
+tates every year.=20
+
+
+
+About one in four adults with arthritis =E2=80=9415 million people=E2=80=94=
+ report experiencing  https://energypedia.kartra.com/page/painfix-gly sever=
+e joint pain related to arthritis . Millions of Americans have experienced =
+something like this scenario, and maybe you're one of them=E2=80=A6=20
+
+
+You go to see visit your family doctor because you have a stiff, painful jo=
+int that just won't quit=E2=80=94and he gives you some of the worst news of=
+ your life.=20
+
+
+He tells you have no cartilage left and your joints are now =C2=A0 BONE ON =
+BONE.=20
+
+
+What does this mean?=20
+
+
+In a healthy joint=E2=80=94a knee, elbow, hip, shoulder or any other spot w=
+here two bones meet=E2=80=94the ends of the bones are covered by cartilage.=
+=20
+
+
+
+This smooth, white "connective tissue" =E2=80=94a kind of cross between sof=
+t muscle and hard bone=E2=80=94literally cushions every joint, making effor=
+tless movement possible.=20
+
+
+
+ https://energypedia.kartra.com/page/painfix-gly Healthy cartilage helps =
+=C2=A0 you move by allowing bones to glide over one another. =C2=A0=20
+
+
+
+It also protects bones by preventing them from rubbing against each other. =
+Keeping your joints healthy will allow you to run, walk, jump, play sports,=
+ and do the other daily things you like to do.=20
+
+
+Unfortunately, time and gravity aren't a friend to our joints. As the years=
+ go by, cartilage can start to erode. Cell by cell, it just wears away sile=
+ntly, until there's so little to none left that the two bones now live on t=
+op of each other.=20
+
+
+
+This is constant and horrible pain! You went from living a healthy pain fre=
+e life, to only being able to focus on your pain and no longer enjoying you=
+r daily activities. This new stiffness replaces flexibility, and changes yo=
+ur entire lifestyle.=20
+
+
+Not only are your poor joint in constant pain, they are often sometimes voc=
+al! Bone on bone joints have an eerie, loud, and embarrassing soundtrack. I=
+n the scientific world, this creepy "bone music" is referred to as crepitus=
+. These grating, grinding, crunchy, creaky sounds are  https://energypedia.=
+kartra.com/page/painfix-gly due to your lack of cartilage .=20
+
+
+I'm sure you are left in agony wondering what you can do! It's all you can =
+think about.=20
+
+
+If you have no cartilage left, what chance do you have of relieving pain an=
+d stiffness? Take the pain aside, what about trips to the grocery store, pl=
+aying with your grandchildren? These normal parts of your life now seem to =
+be impossible to enjoy!=20
+
+
+Your doctor may have even told you your only hope is a costly and painful j=
+oint replacement.=20
+
+
+We're here to tell you that there IS hope. And we want to help you.=20
+
+
+NEAR-INSTANT RELIEF!=20
+
+
+We're talking 2 minutes! You can't get much more "instant" than that.=20
+
+
+In fact, =C2=A0  https://energypedia.kartra.com/page/painfix-gly this one-s=
+tep approach =C2=A0 is =C2=A0 SO simple =C2=A0 and =C2=A0 SO powerful , tha=
+t our doctor who created it is called "The BoneWhisperer" =E2=80=94because =
+the therapy he's describing literally "talks" to your joints so that they s=
+tart working for you, not against you!=20
+
+
+You can think of this as an-all natural "cushion" that quietly slips into t=
+he space between your joints, providing a way to stop bone rubbing on bone.=
+=20
+
+
+ https://energypedia.kartra.com/page/painfix-gly This unique system =C2=A0 =
+can help to restore range of motion, and get you back to your pain free lif=
+e. This may also reduce scarring, help to relieve your muscle tension & pai=
+n. But=E2=80=94most importantly=E2=80=94it douses the chronic inflammation =
+that is THE main cause of vanishing cartilage.=20
+
+
+You may be feeling frustrated because nothing seems to be working to reliev=
+e the pain from tender, swollen and painful muscles and joints,=E2=80=A6=20
+
+
+But what is the culprit behind this health problem? The answer is chronic i=
+nflammation . Chronic inflammation is found to be behind so many health pro=
+blems, this joint therapy affects your other organs too. ... it may be due =
+to an accidental injury, or from repetitive work stress, or a joint deformi=
+ty brought on by chronic inflammation... or it may even be caused by your g=
+enetics .=20
+
+
+But, we have good news for you.=20
+
+
+Scientists at The University of Oklahoma have recently discovered a  https:=
+//energypedia.kartra.com/page/painfix-gly new pain enzyme called 5-LOX .=20
+
+
+It's linked to the chronic pain and degeneration of arthritis, rheumatism, =
+muscle and bone pain, which causes a lack of mobility and joint deformation=
+.=20
+
+
+I can tell you how to potentially block that pain enzyme.=20
+Then you may not have to live in pain.=20
+
+
+You may not have to suffer with feeling achy, with stiffness, soreness and =
+tenderness.=20
+
+
+You may not have to "put up with" this painful health condition for the res=
+t of your life.=20
+
+
+You may not have to give up the things you love to do either...=20
+
+
+... because your wrists, fingers, elbows, knees, hips, neck, back and shoul=
+ders hurt too much.... and...=20
+
+
+... You may not need another expensive pain medication from your doctor eit=
+her...=20
+
+
+Instead...=20
+
+
+ https://energypedia.kartra.com/page/painfix-gly Our joint solution may do =
+the following...=20
+* Restore good circulation by vitalizing your heart.=20
+* Energize your brain, improving mood and granting you a much deeper sleep.=
+=20
+* De-age your skin, restoring youthful shine and reversing the signs of agi=
+ng.=20
+
+
+Not bad for 2 minutes of your time!=20
+
+
+So what is this "one-step" approach that provides relief in less than 10 se=
+conds per day?=20
+
+
+Our doctor put together a  https://energypedia.kartra.com/page/painfix-gly =
+short video that explains exactly what it is and how to do it every day to =
+start feeling relief from pain once and for all.=20
+
+
+But I must warn you=E2=80=A6 this video is a bit controversial .=20
+
+
+
+And it's ruffled more than a few feathers in the medical industry, because =
+of just how effective this natural solution is for destroying pain.=20
+
+
+Because of that, this video is constantly under attack and I can't guarante=
+e it will be available to watch for much longer.=20
+
+
+So please=E2=80=A6 don't put this off...=20
+
+
+ https://energypedia.kartra.com/page/painfix-gly Click Here to Watch this V=
+ideo Presentation and Discover the Simple Pain Relief Protocol that Can Cus=
+hion Your Stiff and Painful Joints--Erase Your WORST DISCOMFORT --and Even =
+Help Protect Your Heart, Lungs, And Other Important Organs !.=20
+
+
+To Your Health,=20
+Ryan     =20
+=20
+  =20
+      =20
+=20
+  =20
+
+Important Note about This Email: You're receiving this email because you op=
+tin to our "Green Energy" newsletter or bought one of our signature DIY Gre=
+en Energy Blueprint in the past from us or our partners. If you don't want =
+to receive any emails in the future, please safely click unsubscribe below =
+this email. Thank you.=20
+
+
+If you would like to stop receiving email messages from Thrive Health Labs,=
+ LLC, click =C2=A0 here =C2=A0 or write to: 304 S. Jones Blvd. #6247, Las V=
+egas NV, 89107=20
+          =20
+=C2=A0
+
+
+
+
+----------------------------------------------------------------------
+This email was sent by ryan@greenpatriot.org to tfinman@wisc.edu
+
+Not interested?Unsubscribe - https://olbx.maillist-manage.com/ua/optout?od=
+=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&rd=3D=
+18c8f79cb33b3c24&sd=3D18c8f79cb33abca5&n=3D11699e4c18f78e5
+
+Update profile -  https://olbx.maillist-manage.com/ua/upc?upd=3D18c8f79cb33=
+15907&r=3D18c8f79cb33b3c24&n=3D11699e4c18f78e5&od=3D3zec5c69027c78942bc4f02=
+d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&r=3D18c8f79cb33b3c24&n=3D11699e=
+4c18f78e5&od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f=
+2e39fc
+  =20
+
+
+
+Smart Solar Box | Green Patriot | PMA 5/35=20
+
+
+
+Our Privacy Policy [ https://smartpower4all.org/privacy-policy/ ] and Terms=
+ of Use. [ https://smartpower4all.org/terms-and-conditions/ ]=20
+
+------=_Part_1308554_1388924585.1628856743766
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Do You or Your Family Have Arthritis? THIS Will Help You.</title><!--[=
+if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>=
+96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+	<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+	<style>
+	/* #### Mobile Phones Portrait #### */
+	/* #### iPhone 4+ Portrait or Landscape #### */
+	@media only screen and (max-width: 480px){
+		table[class=3DcontentInner] {width:100% !important;padding:0px;margin:0px=
+;}
+		img[class=3DzpImage]{width:260px !important;max-width: 360px !important;t=
+ext-align:center;margin:0px;padding:0px}=20
+		body, table, td, p, a, li,div,span, blockquote{-webkit-text-size-adjust:n=
+one !important;margin:0px auto;line-height:1.7}
+		table[class=3DzpImageCaption]{text-align:left;}
+		table[class=3Dcols]{width:100% !important;max-width:100% !important;text-=
+align:left;}
+		table[class=3Dzpcolumns] {text-align:left;margin:0px;}=20
+		table[class=3Dzpcolumn] {text-align:left;margin:0px;}=20
+		table[class=3DzpAlignPos]{width:100%;text-align:left;margin:0px;}=20
+		td[class=3Dtxtsize]{font-size:18px !important;}
+		td[class=3Dpaddingcomp]{padding-left:15px !important;padding-right: 15px =
+!important;}
+		td[class=3Dbannerimgpad]{padding:0px !important;}
+		span[class=3Dtxtsize]{font-size:18px !important;}
+		img[size =3D "B"]{width: 100% !important;max-width:100% !important;margin=
+: 0px !important;padding:0px !important;}
+		img[size =3D "F"]{width: 100% !important;max-width:100% !important;margin=
+: 0px !important;padding:0px !important;}
+		img[size =3D "S"]{width:105px !important; height:auto; margin:0px auto !i=
+mportant;padding:0px !important;}
+		img[size =3D "M"]{width:277.869px !important;height:auto;margin:0px auto =
+!important;padding:0px !important;}
+		h1{
+			font-size:28px !important;
+			line-height:100% !important;
+		}
+		h2{
+			font-size:24px !important;
+			line-height:100% !important;
+		}
+		h3{
+			font-size:20px !important;
+			line-height:100% !important;
+		}
+		h4{
+			font-size:18px !important;
+			line-height:100% !important;
+		}
+		}	=09
+		@media only screen and (max-width: 480px){
+		.zpImage{
+			height:auto !important;
+			width:100% !important;
+		}}
+		@media only screen and (max-width: 480px){
+		.contentInner,.cols,.zpAlignPos{
+			width:100% !important;
+			max-width:100% !important;
+		}}
+		@media only screen and (max-width: 480px){
+		.paddingcomp{
+			padding-left:15px !important;
+			padding-right:15px !important;
+		}
+		.bannerimgpad{
+			padding:0px !important;
+		}
+	}
+		@media screen and (max-width: 480px)
+        {
+                .tmplheader,.tmplfooter{width:100% !important;max-width:400=
+px !important;margin:0px auto;text-align:center;}
+        }
+		a[x-apple-data-detectors] {
+		    color: inherit !important;
+		    text-decoration: none !important;
+		    font-size: inherit !important;
+		    font-family: inherit !important;
+		    font-weight: inherit !important;
+		    line-height: inherit !important;
+		}
+	=09
+		</style>
+</head><body bgcolor=3D"#f0f0f0" style=3D"margin:0; padding:0;font-family:A=
+rial, Helvetica, sans-serif; font-size:12px; color:#000000;"><!--[if !mso 9=
+]><!--><span style=3D"font-size:0px;max-width: 0px;max-height: 0px;mso-hide=
+:all;">  </span><!--<![endif]--><head>
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+        <style>
+            @media screen and (max-width: 480px)
+            {
+	                table[class=3Dtmplfooter]{width:100% !important;max-width:=
+100% !important; text-align:left;}=20
+	                table[class=3Dtmplheader]{width:100% !important; max-width=
+:100% !important; text-align:left;}=20
+	                div[class=3Dtxtsize]{text-align:left}=20
+	                td[class=3Dtxtsize]{text-align:left}
+            }
+            @media screen and (min-width: 320px) and (max-width: 480px) and=
+ (orientation : portrait){
+            {
+	                table[class=3Dtmplfooter]{width:100% !important;max-width:=
+100% !important; text-align:left;}=20
+	                table[class=3Dtmplheader]{width:100% !important; max-width=
+:100% !important; text-align:left;}=20
+	                div[class=3Dtxtsize]{text-align:left}=20
+	                td[class=3Dtxtsize]{text-align:left}
+            }
+            @media screen and (max-width: 598px)
+            {
+	                table[class=3Dtmplfooter]{width:100% !important;max-width:=
+100% !important; text-align:left;}=20
+	                table[class=3Dtmplheader]{width:100% !important; max-width=
+:100% !important; text-align:left;}=20
+	                div[class=3Dtxtsize]{text-align:left}=20
+	                td[class=3Dtxtsize]{text-align:left}
+            }
+        </style>
+</head>
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"backgrou=
+nd-color:#f7f7f7;color:#333;font-size:11px;border-color:#f0f0f0;border-widt=
+h:1px;font-family:Arial;border-style:solid;">
+        <tr><td align=3D"center">
+<div>
+			<table style=3D"color:#333;font-size:11px;font-family:Arial; padding:5px=
+;text-align:center;;width:600px;" class=3D"tmplheader" align=3D"center" id=
+=3D"H_INNER"><tr><td><div class=3D"txtsize" style=3D"text-align:center;colo=
+r:#333;font-size:11px;font-family:Arial; ">Can't read or see images?&nbsp;<=
+a target=3D"_blank" href=3D"https://olbx.campaign-view.com/ua/viewinbrowser=
+?od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&am=
+p;rd=3D18c8f79cb33b3c24&amp;sd=3D18c8f79cb33abca5&amp;n=3D11699e4c18f78e5&a=
+mp;mrd=3D18c8f79cb33abc93&amp;m=3D1" style=3D"color:#03F;font-size:11px;fon=
+t-family:Arial;"> <span style=3D"color:#03F;font-size:11px;font-family:Aria=
+l;">View this email in a browser</span></a></div></td></tr></table>
+</div>
+	</td></tr>
+</table>
+<center>=20
+<div class=3D"zppage-container">                                           =
+              =20
+		<table bgcolor=3D"#f0f0f0" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"contentOuter" id=3D"contentOuter" style=3D"background-color:#f0=
+f0f0;background-color:#f0f0f0;font-size:12px;text-align:center;border:0px;p=
+adding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace=
+:0pt;" width=3D"100%">=20
+			<tbody><tr>=20
+				<td style=3D"border:0px;padding:0px;border-collapse:collapse; mso-table=
+-lspace:0pt; mso-table-rspace:0pt;">&nbsp;</td>
+				<td align=3D"center" style=3D"border:0px;padding:0px;border-collapse:co=
+llapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+					<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"contentInner" id=3D"contentInner" style=3D"border-collapse:=
+collapse; border:0px;font-size:12px;background-color:#ffffff;background-col=
+or:#ffffff;width:600px;margin:0px auto;border:0px;" width=3D"600">=20
+					<tbody><tr>=20
+					<td height=3D"570" style=3D"border:0px none;padding:0px;" valign=3D"to=
+p">
+					 	<a name=3D"Top" style=3D"text-decoration:underline;"></a>
+    <div baseposition=3D"pos_YrobDQg7SAqnBt5RUo4dhQ" class=3D"zpcontent-wra=
+pper" id=3D"page-container">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"page-cont=
+ainer" style=3D"font-size:12px;border:0px;padding:0px;border-collapse:colla=
+pse; mso-table-lspace:0pt;mso-table-rspace:0pt;text-decoration:none !import=
+ant;" width=3D"100%">
+<tbody><tr><td class=3D"txtsize" id=3D"elm_1579751476014" style=3D"border:0=
+px;padding:0px 0px;border-collapse:collapse;" valign=3D"top">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1579751476014" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:#3c70f6;">
+	    	<table bgcolor=3D"#3c70f6" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"zpAlignPos" style=3D"font-size:12px;padding:0px;border:0px;=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-b=
+reak:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"=
+ width=3D"100%">
+	  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border:0px;paddin=
+g:7px 15px;line-height:19pt;border-top:0px none ;   border-bottom:0px none =
+;padding-top:15px;padding-bottom:15px;padding-right:15px;padding-left:15px;=
+">
+             	    		<div componentbgcolor=3D"#3c70f6" componentpaddingbotto=
+m=3D"15px" componentpaddingleft=3D"15px" componentpaddingright=3D"15px" com=
+ponentpaddingtop=3D"15px" style=3D"background-color: rgb(60, 112, 246);"><d=
+iv align=3D"center" style=3D"text-align: center;"><a href=3D"https://olbx.m=
+aillist-manage.com/click.zc?m=3D1&amp;mrd=3D18c8f79cb33abc93&amp;od=3D3zec5=
+c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&amp;linkDgs=
+=3D18c8f79cb3379731&amp;repDgs=3D18c8f79cb33b3c24" style=3D"text-decoration=
+:underline;" zcurl_name=3D"l_1"><font color=3D"#ffffff" face=3D"Arial,Helve=
+tica"><b><font style=3D"font-size: 22pt;"><span style=3D"color: rgb(255, 25=
+5, 255);"><font color=3D"#ffffff" style=3D"color:#ffffff;"><span><span><spa=
+n><span><span><span><span><span><span><span><span><span><span><span><span><=
+span><span><span><span><span><span><span><span><span><span><span><span><spa=
+n><span><span><span><span><span><span><span><span><span><span><span><span>D=
+o You or Your Family Have Arthritis? THIS Will Help You.</span></span></spa=
+n></span><br></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></font></span></font></b></font></a=
+></div></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+</td></tr>
+<tr><td class=3D"txtsize" id=3D"elm_1579751703601" style=3D"border:0px;padd=
+ing:0px 0px;border-collapse:collapse;" valign=3D"top">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1579751703601" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+	    	<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"zpAl=
+ignPos" style=3D"font-size:12px;padding:0px;border:0px;border-collapse:coll=
+apse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width=3D"100%">
+	  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border:0px;paddin=
+g:7px 15px;line-height:19pt;border-top:0px none ;   border-bottom:0px none =
+;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:18px;=
+">
+             	    		<div componentpaddingbottom=3D"20px" componentpaddingle=
+ft=3D"18px" componentpaddingright=3D"20px" componentpaddingtop=3D"20px" sty=
+le=3D""><font face=3D"Arial,Helvetica" style=3D"font-size: 16pt;"><span><p =
+style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0=
+px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: nor=
+mal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thi=
+ckness: initial; text-decoration-style: initial; text-decoration-color: ini=
+tial;"><font style=3D"font-size: 16pt;">Chronic pain caused by arthritis af=
+fects millions of people in the United States every year. <br></font></p><p=
+ style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:=
+0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;=
+ text-align: start; text-indent: 0px; text-transform: none; white-space: no=
+rmal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"line-he=
+ight:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;col=
+or: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligat=
+ures: normal; font-variant-caps: normal; font-weight: 400; text-align: star=
+t; text-indent: 0px; text-transform: none; white-space: normal; word-spacin=
+g: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial;"><font sty=
+le=3D"font-size: 16pt;">About one in four adults with arthritis<b>=E2=80=94=
+15 million people=E2=80=94</b>report experiencing <font color=3D"#000fff"><=
+b><a href=3D"https://olbx.maillist-manage.com/click.zc?m=3D1&amp;mrd=3D18c8=
+f79cb33abc93&amp;od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e=
+097208f2e39fc&amp;linkDgs=3D18c8f79cb3379733&amp;repDgs=3D18c8f79cb33b3c24"=
+ style=3D"text-decoration:underline;color: rgb(0, 15, 255);" zcurl_name=3D"=
+l_2"><font color=3D"#000fff" style=3D"color:#000fff;">severe joint pain rel=
+ated to arthritis</font></a></b></font>. Millions of Americans have experie=
+nced something like this scenario, and maybe you're one of them=E2=80=A6</f=
+ont></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12p=
+x;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style:=
+ normal; font-variant-ligatures: normal; font-variant-caps: normal; font-we=
+ight: 400; text-align: start; text-indent: 0px; text-transform: none; white=
+-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=
+=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;ma=
+rgin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-=
+align: start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial;=
+"><font style=3D"font-size: 16pt;">You go to see visit your family doctor b=
+ecause you have a stiff, painful joint that just won't quit=E2=80=94and he =
+gives you some of the worst news of your life.</font></p><p style=3D"line-h=
+eight:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;co=
+lor: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-liga=
+tures: normal; font-variant-caps: normal; font-weight: 400; text-align: sta=
+rt; text-indent: 0px; text-transform: none; white-space: normal; word-spaci=
+ng: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;"><font st=
+yle=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:1.7;font-fa=
+mily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0)=
+; font-size: medium; font-style: normal; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; font-weight: 400; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial;"><font style=3D"font-size:=
+ 16pt;">He tells you have no cartilage left and your joints are now<span>&n=
+bsp;</span><b>BONE ON BONE.</b></font></p><p style=3D"line-height:1.7;font-=
+family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, =
+0); font-size: medium; font-style: normal; font-variant-ligatures: normal; =
+font-variant-caps: normal; font-weight: 400; text-align: start; text-indent=
+: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webki=
+t-text-stroke-width: 0px; text-decoration-thickness: initial; text-decorati=
+on-style: initial; text-decoration-color: initial;"><font style=3D"font-siz=
+e: 16pt;"><b><br></b></font></p><p style=3D"line-height:1.7;font-family:Ari=
+al,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-s=
+ize: medium; font-style: normal; font-variant-ligatures: normal; font-varia=
+nt-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; tex=
+t-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;"><font style=3D"font-size: 16pt;">=
+What does this mean?</font></p><p style=3D"line-height:1.7;font-family:Aria=
+l,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-si=
+ze: medium; font-style: normal; font-variant-ligatures: normal; font-varian=
+t-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; text=
+-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stro=
+ke-width: 0px; text-decoration-thickness: initial; text-decoration-style: i=
+nitial; text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><=
+br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-si=
+ze:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-=
+style: normal; font-variant-ligatures: normal; font-variant-caps: normal; f=
+ont-weight: 400; text-align: start; text-indent: 0px; text-transform: none;=
+ white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial;"><font style=3D"font-size: 16pt;">In a healthy joint=
+=E2=80=94a knee, elbow, hip, shoulder or any other spot where two bones mee=
+t=E2=80=94the ends of the bones are covered by cartilage. <br></font></p><p=
+ style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:=
+0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;=
+ text-align: start; text-indent: 0px; text-transform: none; white-space: no=
+rmal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"line-he=
+ight:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;col=
+or: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligat=
+ures: normal; font-variant-caps: normal; font-weight: 400; text-align: star=
+t; text-indent: 0px; text-transform: none; white-space: normal; word-spacin=
+g: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial;"><font sty=
+le=3D"font-size: 16pt;">This smooth, white <i>&quot;connective tissue&quot;=
+</i>=E2=80=94a kind of cross between soft muscle and hard bone=E2=80=94lite=
+rally cushions every joint, making effortless movement possible. <br></font=
+></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;p=
+adding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: no=
+rmal; font-variant-ligatures: normal; font-variant-caps: normal; font-weigh=
+t: 400; text-align: start; text-indent: 0px; text-transform: none; white-sp=
+ace: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decora=
+tion-thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"=
+line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin=
+: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-varian=
+t-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-alig=
+n: start; text-indent: 0px; text-transform: none; white-space: normal; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: i=
+nitial; text-decoration-style: initial; text-decoration-color: initial;"><f=
+ont style=3D"font-size: 16pt;"><font color=3D"#000fff"><b><a alt=3D"Healthy=
+ cartilage" href=3D"https://olbx.maillist-manage.com/click.zc?m=3D1&amp;mrd=
+=3D18c8f79cb33abc93&amp;od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd47=
+0c7670e097208f2e39fc&amp;linkDgs=3D18c8f79cb3379735&amp;repDgs=3D18c8f79cb3=
+3b3c24" style=3D"text-decoration:underline;color: rgb(0, 15, 255);" target=
+=3D"_blank" title=3D"Healthy cartilage" zcurl_name=3D"l_3"><font color=3D"#=
+000fff" style=3D"color:#000fff;">Healthy cartilage</font></a></b></font> he=
+lps<span>&nbsp;</span><b>you move by allowing bones to glide over one anoth=
+er.</b><span>&nbsp;</span><br></font></p><p style=3D"line-height:1.7;font-f=
+amily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0=
+); font-size: medium; font-style: normal; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; font-weight: 400; text-align: start; text-indent:=
+ 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit=
+-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoratio=
+n-style: initial; text-decoration-color: initial;"><font style=3D"font-size=
+: 16pt;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verda=
+na;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: med=
+ium; font-style: normal; font-variant-ligatures: normal; font-variant-caps:=
+ normal; font-weight: 400; text-align: start; text-indent: 0px; text-transf=
+orm: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-widt=
+h: 0px; text-decoration-thickness: initial; text-decoration-style: initial;=
+ text-decoration-color: initial;"><font style=3D"font-size: 16pt;">It also =
+protects bones by preventing them from rubbing against each other. <i>Keepi=
+ng your joints healthy will allow you to run, walk, jump, play sports, and =
+do the other daily things you like to do.</i></font></p><p style=3D"line-he=
+ight:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;col=
+or: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligat=
+ures: normal; font-variant-caps: normal; font-weight: 400; text-align: star=
+t; text-indent: 0px; text-transform: none; white-space: normal; word-spacin=
+g: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial;"><font sty=
+le=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:1.7;font-fam=
+ily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0);=
+ font-size: medium; font-style: normal; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; font-weight: 400; text-align: start; text-indent: 0=
+px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial;"><font style=3D"font-size: =
+16pt;">Unfortunately, time and gravity aren't a friend to our joints. As th=
+e years go by, cartilage can start to erode. Cell by cell, it just wears aw=
+ay silently, until there's so little to none left that the two bones now li=
+ve on top of each other. <br></font></p><p style=3D"line-height:1.7;font-fa=
+mily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0)=
+; font-size: medium; font-style: normal; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; font-weight: 400; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial;"><font style=3D"font-size:=
+ 16pt;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdan=
+a;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medi=
+um; font-style: normal; font-variant-ligatures: normal; font-variant-caps: =
+normal; font-weight: 400; text-align: start; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width=
+: 0px; text-decoration-thickness: initial; text-decoration-style: initial; =
+text-decoration-color: initial;"><font style=3D"font-size: 16pt;">This is c=
+onstant and horrible pain! You went from living a healthy pain free life, t=
+o only being able to focus on your pain and no longer enjoying your daily a=
+ctivities. This new stiffness replaces flexibility, and changes your entire=
+ lifestyle.</font></p><p style=3D"line-height:1.7;font-family:Arial,verdana=
+;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: mediu=
+m; font-style: normal; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; font-weight: 400; text-align: start; text-indent: 0px; text-transfor=
+m: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial;"><font style=3D"font-size: 16pt;"><br></font=
+></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;p=
+adding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: no=
+rmal; font-variant-ligatures: normal; font-variant-caps: normal; font-weigh=
+t: 400; text-align: start; text-indent: 0px; text-transform: none; white-sp=
+ace: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decora=
+tion-thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial;"><font style=3D"font-size: 16pt;">Not only are your poor join=
+t in constant pain, they are often sometimes vocal! Bone on bone joints hav=
+e an eerie, loud, and embarrassing soundtrack. In the scientific world, thi=
+s creepy <i>&quot;bone music&quot;</i> is referred to as crepitus. These gr=
+ating, grinding, crunchy, creaky sounds are <font color=3D"#000fff"><b><a a=
+lt=3D"due to your lack of cartilage" href=3D"https://olbx.maillist-manage.c=
+om/click.zc?m=3D1&amp;mrd=3D18c8f79cb33abc93&amp;od=3D3zec5c69027c78942bc4f=
+02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&amp;linkDgs=3D18c8f79cb337973=
+7&amp;repDgs=3D18c8f79cb33b3c24" style=3D"text-decoration:underline;color: =
+rgb(0, 15, 255);" target=3D"_blank" title=3D"due to your lack of cartilage"=
+ zcurl_name=3D"l_4"><font color=3D"#000fff" style=3D"color:#000fff;">due to=
+ your lack of cartilage</font></a></b></font>.</font></p><p style=3D"line-h=
+eight:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;co=
+lor: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-liga=
+tures: normal; font-variant-caps: normal; font-weight: 400; text-align: sta=
+rt; text-indent: 0px; text-transform: none; white-space: normal; word-spaci=
+ng: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;"><font st=
+yle=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:1.7;font-fa=
+mily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0)=
+; font-size: medium; font-style: normal; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; font-weight: 400; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial;"><font style=3D"font-size:=
+ 16pt;">I'm sure you are left in agony wondering what you can do! It's all =
+you can think about.</font></p><p style=3D"line-height:1.7;font-family:Aria=
+l,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-si=
+ze: medium; font-style: normal; font-variant-ligatures: normal; font-varian=
+t-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; text=
+-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stro=
+ke-width: 0px; text-decoration-thickness: initial; text-decoration-style: i=
+nitial; text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><=
+br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-si=
+ze:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-=
+style: normal; font-variant-ligatures: normal; font-variant-caps: normal; f=
+ont-weight: 400; text-align: start; text-indent: 0px; text-transform: none;=
+ white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial;"><font style=3D"font-size: 16pt;">If you have no car=
+tilage left, what chance do you have of relieving pain and stiffness? Take =
+the pain aside, what about trips to the grocery store, playing with your gr=
+andchildren? These normal parts of your life now seem to be impossible to e=
+njoy!</font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-=
+size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; fon=
+t-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;=
+ font-weight: 400; text-align: start; text-indent: 0px; text-transform: non=
+e; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;"><font style=3D"font-size: 16pt;"><br></font></p><=
+p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding=
+:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; =
+font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400=
+; text-align: start; text-indent: 0px; text-transform: none; white-space: n=
+ormal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial; text-decoration-color: i=
+nitial;"><font style=3D"font-size: 16pt;"><b>Your doctor may have even told=
+ you your only hope is a costly and painful joint replacement.</b></font></=
+p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padd=
+ing:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: norma=
+l; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: =
+400; text-align: start; text-indent: 0px; text-transform: none; white-space=
+: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoratio=
+n-thickness: initial; text-decoration-style: initial; text-decoration-color=
+: initial;"><font style=3D"font-size: 16pt;"><b><br></b></font></p><p style=
+=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;ma=
+rgin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-=
+align: start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial;=
+"><font style=3D"font-size: 16pt;">We're here to tell you that there IS hop=
+e. And we want to help you.</font></p><p style=3D"line-height:1.7;font-fami=
+ly:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); =
+font-size: medium; font-style: normal; font-variant-ligatures: normal; font=
+-variant-caps: normal; font-weight: 400; text-align: start; text-indent: 0p=
+x; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-te=
+xt-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-s=
+tyle: initial; text-decoration-color: initial;"><font style=3D"font-size: 1=
+6pt;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;=
+font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium=
+; font-style: normal; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; font-weight: 400; text-align: start; text-indent: 0px; text-transform=
+: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: =
+0px; text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial;"><font style=3D"font-size: 16pt;"><b>NEAR-INS=
+TANT RELIEF!</b></font></p><p style=3D"line-height:1.7;font-family:Arial,ve=
+rdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: =
+medium; font-style: normal; font-variant-ligatures: normal; font-variant-ca=
+ps: normal; font-weight: 400; text-align: start; text-indent: 0px; text-tra=
+nsform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><b><b=
+r></b></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font=
+-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; fo=
+nt-style: normal; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-weight: 400; text-align: start; text-indent: 0px; text-transform: no=
+ne; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial;"><font style=3D"font-size: 16pt;">We're talking 2=
+ minutes! You can't get much more <i>&quot;instant&quot;</i> than that.</fo=
+nt></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px=
+;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: =
+normal; font-variant-ligatures: normal; font-variant-caps: normal; font-wei=
+ght: 400; text-align: start; text-indent: 0px; text-transform: none; white-=
+space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-deco=
+ration-thickness: initial; text-decoration-style: initial; text-decoration-=
+color: initial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=
+=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;ma=
+rgin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-=
+align: start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial;=
+"><font style=3D"font-size: 16pt;">In fact,<span>&nbsp;</span><font color=
+=3D"#000fff"><b><a alt=3D"this one-step approach" href=3D"https://olbx.mail=
+list-manage.com/click.zc?m=3D1&amp;mrd=3D18c8f79cb33abc93&amp;od=3D3zec5c69=
+027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&amp;linkDgs=3D18=
+c8f79cb3379739&amp;repDgs=3D18c8f79cb33b3c24" style=3D"text-decoration:unde=
+rline;color: rgb(0, 15, 255);" target=3D"_blank" title=3D"this one-step app=
+roach" zcurl_name=3D"l_5"><font color=3D"#000fff" style=3D"color:#000fff;">=
+this one-step approach</font></a></b></font><span>&nbsp;</span>is<span>&nbs=
+p;</span><u>SO simple</u><span>&nbsp;</span>and<span>&nbsp;</span><u>SO pow=
+erful</u>, that our doctor who created it is called <i>&quot;The BoneWhispe=
+rer&quot;</i>=E2=80=94because the therapy he's describing literally <i>&quo=
+t;talks&quot;</i> to your joints so that they start working for you, not ag=
+ainst you!</font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;=
+font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium=
+; font-style: normal; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; font-weight: 400; text-align: start; text-indent: 0px; text-transform=
+: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: =
+0px; text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial;"><font style=3D"font-size: 16pt;"><br></font>=
+</p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;pa=
+dding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: nor=
+mal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight=
+: 400; text-align: start; text-indent: 0px; text-transform: none; white-spa=
+ce: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style: initial; text-decoration-col=
+or: initial;"><font style=3D"font-size: 16pt;">You can think of this as an-=
+all natural &quot;cushion&quot; that quietly slips into the space between y=
+our joints, providing a way to stop bone rubbing on bone.</font></p><p styl=
+e=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;m=
+argin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-v=
+ariant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text=
+-align: start; text-indent: 0px; text-transform: none; white-space: normal;=
+ word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial; text-decoration-color: initial=
+;"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:=
+1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: r=
+gb(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligatures:=
+ normal; font-variant-caps: normal; font-weight: 400; text-align: start; te=
+xt-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0p=
+x; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color: initial;"><font style=3D=
+"font-size: 16pt;"><b><font color=3D"#000fff"><a href=3D"https://olbx.maill=
+ist-manage.com/click.zc?m=3D1&amp;mrd=3D18c8f79cb33abc93&amp;od=3D3zec5c690=
+27c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&amp;linkDgs=3D18c=
+8f79cb337973b&amp;repDgs=3D18c8f79cb33b3c24" style=3D"text-decoration:under=
+line;color: rgb(0, 15, 255);" zcurl_name=3D"l_6"><font color=3D"#000fff" st=
+yle=3D"color:#000fff;">This unique system</font></a></font><span alt=3D"Thi=
+s unique system" target=3D"_blank" title=3D"This unique system">&nbsp;</spa=
+n>can help to restore range of motion, and get you back to your pain free l=
+ife. This may also reduce scarring, help to relieve your muscle tension &am=
+p; pain. But=E2=80=94most importantly=E2=80=94it douses the chronic inflamm=
+ation that is THE main cause of vanishing cartilage.</b></font></p><p style=
+=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;ma=
+rgin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-=
+align: start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial;=
+"><font style=3D"font-size: 16pt;"><b><br></b></font></p><p style=3D"line-h=
+eight:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;co=
+lor: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-liga=
+tures: normal; font-variant-caps: normal; font-weight: 400; text-align: sta=
+rt; text-indent: 0px; text-transform: none; white-space: normal; word-spaci=
+ng: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;"><font st=
+yle=3D"font-size: 16pt;">You may be feeling frustrated because nothing seem=
+s to be working to relieve the pain from tender, swollen and painful muscle=
+s and joints,=E2=80=A6</font></p><p style=3D"line-height:1.7;font-family:Ar=
+ial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-=
+size: medium; font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; te=
+xt-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-st=
+roke-width: 0px; text-decoration-thickness: initial; text-decoration-style:=
+ initial; text-decoration-color: initial;"><font style=3D"font-size: 16pt;"=
+><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-=
+size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; fon=
+t-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;=
+ font-weight: 400; text-align: start; text-indent: 0px; text-transform: non=
+e; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;"><font style=3D"font-size: 16pt;">But what is the =
+culprit behind this health problem? The answer is <u><b>chronic inflammatio=
+n</b></u>. Chronic inflammation is found to be behind so many health proble=
+ms, this joint therapy affects your other organs too. ... <i>it may be due =
+to an accidental injury, or from repetitive work stress, or a joint deformi=
+ty brought on by chronic inflammation... or it may even be caused by your g=
+enetics</i>.</font></p><p style=3D"line-height:1.7;font-family:Arial,verdan=
+a;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medi=
+um; font-style: normal; font-variant-ligatures: normal; font-variant-caps: =
+normal; font-weight: 400; text-align: start; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width=
+: 0px; text-decoration-thickness: initial; text-decoration-style: initial; =
+text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><br></fon=
+t></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;=
+padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: n=
+ormal; font-variant-ligatures: normal; font-variant-caps: normal; font-weig=
+ht: 400; text-align: start; text-indent: 0px; text-transform: none; white-s=
+pace: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decor=
+ation-thickness: initial; text-decoration-style: initial; text-decoration-c=
+olor: initial;"><font style=3D"font-size: 16pt;"><b>But, we have good news =
+for you.</b></font></p><p style=3D"line-height:1.7;font-family:Arial,verdan=
+a;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medi=
+um; font-style: normal; font-variant-ligatures: normal; font-variant-caps: =
+normal; font-weight: 400; text-align: start; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width=
+: 0px; text-decoration-thickness: initial; text-decoration-style: initial; =
+text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><b><br></=
+b></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-siz=
+e:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-s=
+tyle: normal; font-variant-ligatures: normal; font-variant-caps: normal; fo=
+nt-weight: 400; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; tex=
+t-decoration-thickness: initial; text-decoration-style: initial; text-decor=
+ation-color: initial;"><font style=3D"font-size: 16pt;">Scientists at The U=
+niversity of Oklahoma have recently discovered a <font color=3D"#000fff"><b=
+><a href=3D"https://olbx.maillist-manage.com/click.zc?m=3D1&amp;mrd=3D18c8f=
+79cb33abc93&amp;od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e0=
+97208f2e39fc&amp;linkDgs=3D18c8f79cb337973d&amp;repDgs=3D18c8f79cb33b3c24" =
+style=3D"text-decoration:underline;color: rgb(0, 15, 255);" zcurl_name=3D"l=
+_7"><font color=3D"#000fff" style=3D"color:#000fff;">new pain enzyme called=
+ 5-LOX</font></a></b></font>.</font></p><p style=3D"line-height:1.7;font-fa=
+mily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0)=
+; font-size: medium; font-style: normal; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; font-weight: 400; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial;"><font style=3D"font-size:=
+ 16pt;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdan=
+a;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medi=
+um; font-style: normal; font-variant-ligatures: normal; font-variant-caps: =
+normal; font-weight: 400; text-align: start; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width=
+: 0px; text-decoration-thickness: initial; text-decoration-style: initial; =
+text-decoration-color: initial;"><font style=3D"font-size: 16pt;">It's link=
+ed to the chronic pain and degeneration of arthritis, rheumatism, muscle an=
+d bone pain, which causes a lack of mobility and joint deformation.</font><=
+/p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;pad=
+ding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: norm=
+al; font-variant-ligatures: normal; font-variant-caps: normal; font-weight:=
+ 400; text-align: start; text-indent: 0px; text-transform: none; white-spac=
+e: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decorati=
+on-thickness: initial; text-decoration-style: initial; text-decoration-colo=
+r: initial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"li=
+ne-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: =
+0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-=
+ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align:=
+ start; text-indent: 0px; text-transform: none; white-space: normal; word-s=
+pacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini=
+tial; text-decoration-style: initial; text-decoration-color: initial;"><fon=
+t style=3D"font-size: 16pt;">I can tell you how to potentially block that p=
+ain enzyme.</font></p><p style=3D"line-height:1.7;font-family:Arial,verdana=
+;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: mediu=
+m; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: =
+400; text-align: start; text-indent: 0px; text-transform: none; white-space=
+: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoratio=
+n-thickness: initial; text-decoration-style: initial; text-decoration-color=
+: initial;"><i><font style=3D"font-size: 16pt;">Then you may not have to li=
+ve in pain.</font></i></p><p style=3D"line-height:1.7;font-family:Arial,ver=
+dana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: m=
+edium; font-variant-ligatures: normal; font-variant-caps: normal; font-weig=
+ht: 400; text-align: start; text-indent: 0px; text-transform: none; white-s=
+pace: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decor=
+ation-thickness: initial; text-decoration-style: initial; text-decoration-c=
+olor: initial;"><i><font style=3D"font-size: 16pt;"><br></font></i></p><p s=
+tyle=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0p=
+x;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-variant-ligatures:=
+ normal; font-variant-caps: normal; font-weight: 400; text-align: start; te=
+xt-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0p=
+x; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color: initial;"><i><font style=
+=3D"font-size: 16pt;">You may not have to suffer with feeling achy, with st=
+iffness, soreness and tenderness.</font></i></p><p style=3D"line-height:1.7=
+;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(=
+0, 0, 0); font-size: medium; font-variant-ligatures: normal; font-variant-c=
+aps: normal; font-weight: 400; text-align: start; text-indent: 0px; text-tr=
+ansform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial;"><i><font style=3D"font-size: 16pt;"><=
+br></font></i></p><p style=3D"line-height:1.7;font-family:Arial,verdana;fon=
+t-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;=
+ text-align: start; text-indent: 0px; text-transform: none; white-space: no=
+rmal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial;"><i><font style=3D"font-size: 16pt;">You may not have to &quot;put u=
+p with&quot; this painful health condition for the rest of your life.</font=
+></i></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12=
+px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-ali=
+gn: start; text-indent: 0px; text-transform: none; white-space: normal; wor=
+d-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: =
+initial; text-decoration-style: initial; text-decoration-color: initial;"><=
+i><font style=3D"font-size: 16pt;"><br></font></i></p><p style=3D"line-heig=
+ht:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color=
+: rgb(0, 0, 0); font-size: medium; font-variant-ligatures: normal; font-var=
+iant-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; t=
+ext-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness: initial; text-decoration-style=
+: initial; text-decoration-color: initial;"><i><font style=3D"font-size: 16=
+pt;">You may not have to give up the things you love to do either...</font>=
+</i></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12p=
+x;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-varian=
+t-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-alig=
+n: start; text-indent: 0px; text-transform: none; white-space: normal; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: i=
+nitial; text-decoration-style: initial; text-decoration-color: initial;"><i=
+><font style=3D"font-size: 16pt;"><br></font></i></p><p style=3D"line-heigh=
+t:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color:=
+ rgb(0, 0, 0); font-size: medium; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; te=
+xt-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-st=
+roke-width: 0px; text-decoration-thickness: initial; text-decoration-style:=
+ initial; text-decoration-color: initial;"><i><font style=3D"font-size: 16p=
+t;">... because your wrists, fingers, elbows, knees, hips, neck, back and s=
+houlders hurt too much.... and...</font></i></p><p style=3D"line-height:1.7=
+;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(=
+0, 0, 0); font-size: medium; font-variant-ligatures: normal; font-variant-c=
+aps: normal; font-weight: 400; text-align: start; text-indent: 0px; text-tr=
+ansform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial;"><i><font style=3D"font-size: 16pt;"><=
+br></font></i></p><p style=3D"line-height:1.7;font-family:Arial,verdana;fon=
+t-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;=
+ text-align: start; text-indent: 0px; text-transform: none; white-space: no=
+rmal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial;"><i><font style=3D"font-size: 16pt;">... You may not need another ex=
+pensive pain medication from your doctor either...</font></i></p><p style=
+=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;ma=
+rgin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-=
+align: start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial;=
+"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:1=
+.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rg=
+b(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligatures: =
+normal; font-variant-caps: normal; font-weight: 400; text-align: start; tex=
+t-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px=
+; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
+decoration-style: initial; text-decoration-color: initial;"><font style=3D"=
+font-size: 16pt;">Instead...</font></p><p style=3D"line-height:1.7;font-fam=
+ily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0);=
+ font-size: medium; font-style: normal; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; font-weight: 400; text-align: start; text-indent: 0=
+px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial;"><font style=3D"font-size: =
+16pt;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana=
+;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: mediu=
+m; font-style: normal; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; font-weight: 400; text-align: start; text-indent: 0px; text-transfor=
+m: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial;"><font style=3D"font-size: 16pt;"><font colo=
+r=3D"#000fff"><b><a alt=3D"Our joint solution" href=3D"https://olbx.maillis=
+t-manage.com/click.zc?m=3D1&amp;mrd=3D18c8f79cb33abc93&amp;od=3D3zec5c69027=
+c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&amp;linkDgs=3D18c8f=
+79cb337973f&amp;repDgs=3D18c8f79cb33b3c24" style=3D"text-decoration:underli=
+ne;color: rgb(0, 15, 255);" target=3D"_blank" title=3D"Our joint solution" =
+zcurl_name=3D"l_8"><font color=3D"#000fff" style=3D"color:#000fff;">Our joi=
+nt solution</font></a></b></font> may do the following...</font></p><ul sty=
+le=3D"color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: norm=
+al; font-variant-caps: normal; font-weight: 400; text-align: start; text-in=
+dent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -w=
+ebkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-deco=
+ration-style: initial; text-decoration-color: initial; font-size: 16pt;"><l=
+i style=3D"font-size: 16pt; color: rgb(0, 15, 255);">Restore good circulati=
+on by vitalizing your heart.<li style=3D"font-size: 16pt; color: rgb(0, 15,=
+ 255);">Energize your brain, improving mood and granting you a much deeper =
+sleep.<li style=3D"font-size: 16pt; color: rgb(0, 15, 255);">De-age your sk=
+in, restoring youthful shine and reversing the signs of aging.</ul><p style=
+=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;ma=
+rgin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-va=
+riant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-=
+align: start; text-indent: 0px; text-transform: none; white-space: normal; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial;=
+"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:1=
+.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rg=
+b(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligatures: =
+normal; font-variant-caps: normal; text-align: start; text-indent: 0px; tex=
+t-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;"><b><font style=3D"font-size: 16pt=
+;">Not bad for 2 minutes of your time!</font></b></p><p style=3D"line-heigh=
+t:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color:=
+ rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligature=
+s: normal; font-variant-caps: normal; font-weight: 400; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; word-spacing: =
+0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; te=
+xt-decoration-style: initial; text-decoration-color: initial;"><font style=
+=3D"font-size: 16pt;"><br></font></p><p style=3D"line-height:1.7;font-famil=
+y:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); f=
+ont-size: medium; font-style: normal; font-variant-ligatures: normal; font-=
+variant-caps: normal; font-weight: 400; text-align: start; text-indent: 0px=
+; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-tex=
+t-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-st=
+yle: initial; text-decoration-color: initial;"><font style=3D"font-size: 16=
+pt;">So what is this &quot;one-step&quot; approach that provides relief in =
+less than 10 seconds per day?</font></p><p style=3D"line-height:1.7;font-fa=
+mily:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0)=
+; font-size: medium; font-style: normal; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; font-weight: 400; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial;"><font style=3D"font-size:=
+ 16pt;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdan=
+a;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medi=
+um; font-style: normal; font-variant-ligatures: normal; font-variant-caps: =
+normal; font-weight: 400; text-align: start; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width=
+: 0px; text-decoration-thickness: initial; text-decoration-style: initial; =
+text-decoration-color: initial;"><font style=3D"font-size: 16pt;">Our docto=
+r put together a <font color=3D"#000fff"><b><a href=3D"https://olbx.maillis=
+t-manage.com/click.zc?m=3D1&amp;mrd=3D18c8f79cb33abc93&amp;od=3D3zec5c69027=
+c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc&amp;linkDgs=3D18c8f=
+79cb3379741&amp;repDgs=3D18c8f79cb33b3c24" style=3D"text-decoration:underli=
+ne;color: rgb(0, 15, 255);" zcurl_name=3D"l_9"><font color=3D"#000fff" styl=
+e=3D"color:#000fff;">short video</font></a></b></font> that explains exactl=
+y what it is and how to do it every day to start feeling relief from pain o=
+nce and for all.</font></p><p style=3D"line-height:1.7;font-family:Arial,ve=
+rdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: =
+medium; font-style: normal; font-variant-ligatures: normal; font-variant-ca=
+ps: normal; font-weight: 400; text-align: start; text-indent: 0px; text-tra=
+nsform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><br><=
+/font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:1=
+2px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-styl=
+e: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-=
+weight: 400; text-align: start; text-indent: 0px; text-transform: none; whi=
+te-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-d=
+ecoration-thickness: initial; text-decoration-style: initial; text-decorati=
+on-color: initial;"><font style=3D"font-size: 16pt;">But I must warn you=E2=
+=80=A6 <i><b>this video is a bit controversial</b></i>. <br></font></p><p s=
+tyle=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0p=
+x;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; t=
+ext-align: start; text-indent: 0px; text-transform: none; white-space: norm=
+al; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thic=
+kness: initial; text-decoration-style: initial; text-decoration-color: init=
+ial;"><font style=3D"font-size: 16pt;"><br></font></p><p style=3D"line-heig=
+ht:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color=
+: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-ligatur=
+es: normal; font-variant-caps: normal; font-weight: 400; text-align: start;=
+ text-indent: 0px; text-transform: none; white-space: normal; word-spacing:=
+ 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial;"><font style=
+=3D"font-size: 16pt;">And it's ruffled more than a few feathers in the medi=
+cal industry, because of just how effective this natural solution is for de=
+stroying pain.</font></p><p style=3D"line-height:1.7;font-family:Arial,verd=
+ana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: me=
+dium; font-style: normal; font-variant-ligatures: normal; font-variant-caps=
+: normal; font-weight: 400; text-align: start; text-indent: 0px; text-trans=
+form: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial; text-decoration-style: initial=
+; text-decoration-color: initial;"><font style=3D"font-size: 16pt;"><br></f=
+ont></p><p style=3D"line-height:1.7;font-family:Arial,verdana;font-size:12p=
+x;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; font-style:=
+ normal; font-variant-ligatures: normal; font-variant-caps: normal; font-we=
+ight: 400; text-align: start; text-indent: 0px; text-transform: none; white=
+-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial;"><font style=3D"font-size: 16pt;">Because of that, this vi=
+deo is constantly under attack and I can't guarantee it will be available t=
+o watch for much longer.</font></p><p style=3D"line-height:1.7;font-family:=
+Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); fon=
+t-size: medium; font-style: normal; font-variant-ligatures: normal; font-va=
+riant-caps: normal; font-weight: 400; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-=
+stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
+e: initial; text-decoration-color: initial;"><font style=3D"font-size: 16pt=
+;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;fon=
+t-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; f=
+ont-style: normal; font-variant-ligatures: normal; font-variant-caps: norma=
+l; font-weight: 400; text-align: start; text-indent: 0px; text-transform: n=
+one; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial; text-decoration-style: initial; text-=
+decoration-color: initial;"><font style=3D"font-size: 16pt;">So please=E2=
+=80=A6 don't put this off...</font></p><p style=3D"line-height:1.7;font-fam=
+ily:Arial,verdana; color:#000000;padding:0px;margin: 0;font-size: medium; f=
+ont-style: normal; font-variant-ligatures: normal; font-variant-caps: norma=
+l; font-weight: 400; text-align: start; text-indent: 0px; text-transform: n=
+one; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial; text-decoration-style: initial; text-=
+decoration-color: initial;"><font color=3D"#000fff" style=3D"font-size: 16p=
+t;"><br></font></p><p style=3D"line-height:1.7;font-family:Arial,verdana;fo=
+nt-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size: medium; =
+font-style: normal; font-variant-ligatures: normal; font-variant-caps: norm=
+al; font-weight: 400; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0p=
+x; text-decoration-thickness: initial; text-decoration-style: initial; text=
+-decoration-color: initial;"><font style=3D"font-size: 16pt;"><b alt=3D"Cli=
+ck Here to Watch this Video Presentation and Discover the Simple Pain Relie=
+f Protocol that Can Cushion Your Stiff and Painful Joints--Erase Your WORST=
+ DISCOMFORT" target=3D"_blank" title=3D"Click Here to Watch this Video Pres=
+entation and Discover the Simple Pain Relief Protocol that Can Cushion Your=
+ Stiff and Painful Joints--Erase Your WORST DISCOMFORT"><font color=3D"#000=
+fff"><a href=3D"https://olbx.maillist-manage.com/click.zc?m=3D1&amp;mrd=3D1=
+8c8f79cb33abc93&amp;od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c76=
+70e097208f2e39fc&amp;linkDgs=3D18c8f79cb3379743&amp;repDgs=3D18c8f79cb33b3c=
+24" style=3D"text-decoration:underline;color: rgb(0, 15, 255);" zcurl_name=
+=3D"l_10"><font color=3D"#000fff" style=3D"color:#000fff;">Click Here to Wa=
+tch this Video Presentation and Discover the Simple Pain Relief Protocol th=
+at Can Cushion Your Stiff and Painful Joints--Erase Your WORST DISCOMFORT</=
+font></a></font>--and Even Help Protect Your Heart, Lungs, And Other Import=
+ant Organs !.</b></font></p><p style=3D"line-height:1.7;font-family:Arial,v=
+erdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0, 0); font-size:=
+ medium; font-style: normal; font-variant-ligatures: normal; font-variant-c=
+aps: normal; text-align: start; text-indent: 0px; text-transform: none; whi=
+te-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-d=
+ecoration-thickness: initial; text-decoration-style: initial; text-decorati=
+on-color: initial;"><font style=3D"font-size: 16pt;"><br></font></p><p styl=
+e=3D"line-height:1.7;font-family:Arial,verdana;font-size:12px;padding:0px;m=
+argin: 0;color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-v=
+ariant-ligatures: normal; font-variant-caps: normal; text-align: start; tex=
+t-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px=
+; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
+decoration-style: initial; text-decoration-color: initial;"><font style=3D"=
+font-size: 16pt;">To Your Health,</font></p><p style=3D"line-height:1.7;fon=
+t-family:Arial,verdana;font-size:12px;padding:0px;margin: 0;color: rgb(0, 0=
+, 0); font-size: medium; font-style: normal; font-variant-ligatures: normal=
+; font-variant-caps: normal; text-align: start; text-indent: 0px; text-tran=
+sform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-wi=
+dth: 0px; text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;"><font style=3D"font-size: 16pt;">Ryan</=
+font><font face=3D"Arial,Helvetica" style=3D"font-size: 16pt;"><span></span=
+></font></p></span></font></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+</td></tr>
+<tr><td class=3D"txtsize" id=3D"elm_1579751755353" style=3D"border:0px;padd=
+ing:0px 0px;border-collapse:collapse;" valign=3D"top">
+
+	=09
+			 <div class=3D"zpelement-wrapper divider" id=3D"elm_1579751755353" style=
+=3D";word-wrap:break-word;overflow:hidden;background-color:;">
+			 <table bgcolor=3D"" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"zpAlignPos" style=3D"padding:0px;border:0px;border-collapse:collapse=
+; mso-table-lspace:0pt;font-size:5px; mso-table-rspace:0pt;word-break:break=
+-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-=
+color:;" width=3D"100%">
+			 <tbody><tr><td class=3D"txtsize" style=3D"border:0px;padding:20px 7px 2=
+0px 7px;border-collapse:collapse;">
+					<div class=3D"divider" componentborder=3D"#666666" style=3D"margin:0px=
+;padding:0px;text-align:center;"><table align=3D"center" border=3D"0" borde=
+r-color=3D"#666666" cellpadding=3D"0" cellspacing=3D"0" class=3D"dvdrtbl" s=
+tyle=3D"border-collapse:collapse;border:0px;font-size: 0px;width:100%;margi=
+n:auto;" width=3D"100%"> <tbody><tr><td align=3D"center" border-size=3D"3px=
+" height=3D"0" style=3D"border:0px;padding:7px;border-color: rgb(102, 102, =
+102); border-style: solid none none; border-width: 3px medium medium; font-=
+size: 0px; margin: 0px; padding: 0px; width: 100%;" width=3D"100%">       <=
+/td> </tr></tbody></table></div>
+			</td></tr></tbody></table>
+			</div>
+</td></tr>
+<tr><td class=3D"txtsize" id=3D"elm_1579752159532" style=3D"border:0px;padd=
+ing:0px 0px;border-collapse:collapse;" valign=3D"top">
+
+          <div class=3D"zpelement-wrapper" id=3D"elm_1579752159532" style=
+=3D";word-wrap:break-word;overflow:hidden;padding-right:0px;background-colo=
+r:;">
+	    	<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"zpAl=
+ignPos" style=3D"font-size:12px;padding:0px;border:0px;border-collapse:coll=
+apse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width=3D"100%">
+	  =09
+            <tbody><tr><td class=3D"paddingcomp" style=3D"border:0px;paddin=
+g:7px 15px;line-height:19pt;border-top:0px none ;   border-bottom:0px none =
+;padding-top:12px;padding-bottom:20px;padding-right:15px;padding-left:15px;=
+">
+             	    		<div componentpaddingbottom=3D"20px" componentpaddingle=
+ft=3D"15px" componentpaddingright=3D"15px" componentpaddingtop=3D"12px" sty=
+le=3D""><p style=3D"font-family:Arial,verdana;font-size:12px; color:#000000=
+;padding:0px;margin: 0;line-height: 13pt;"><font color=3D"#4e4e4e" style=3D=
+"line-height: 13pt; font-size: 9pt;"><span style=3D"line-height: 13pt;"><b>=
+Important Note about This Email:</b> You're receiving this email because yo=
+u optin to our &quot;Green Energy&quot; newsletter or bought one of our sig=
+nature DIY Green Energy Blueprint in the past from us or our partners. If y=
+ou don't want to receive any emails in the future, please safely click unsu=
+bscribe below this email. Thank you.</span></font></p><p style=3D"font-fami=
+ly:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-h=
+eight: 13pt;"><font color=3D"#4e4e4e" style=3D"line-height: 13pt; font-size=
+: 9pt;"><span style=3D"line-height: 13pt;"><br></span></font></p><p style=
+=3D"font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;mar=
+gin: 0;line-height: 13pt;"><font color=3D"#4e4e4e" style=3D"line-height: 13=
+pt; font-size: 9pt;"><span style=3D"line-height: 13pt;"><font style=3D"font=
+-size: 9pt;"><span><font face=3D"Arial,Helvetica" style=3D"font-size: 9pt;"=
+><span><span>If you would like to stop receiving email messages from Thrive=
+ Health Labs, LLC, click<span>&nbsp;</span>here<span>&nbsp;</span>or write =
+to: 304 S. Jones Blvd. #6247, Las Vegas NV, 89107</span></span></font></spa=
+n></font><br></span></font></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+</td></tr>
+    </tbody></table>
+</div>
+
+					</td>=20
+					</tr>=20
+					</tbody></table>
+				</td>=20
+				<td style=3D"border:0px;padding:0px;border-collapse:collapse; mso-table=
+-lspace:0pt; mso-table-rspace:0pt;">&nbsp;</td>
+			</tr>=20
+		</tbody></table>=20
+</div>
+</center>=20
+
+        <meta content=3D"width=3Ddevice-width" name=3D"viewport">
+        <style>
+            @media screen and (max-width: 480px)
+            {
+                table[class=3Dtmplfooter]{width:100% !important;max-width:1=
+00% !important; text-align:left;}=20
+                table[class=3Dtmplheader]{width:100% !important; max-width:=
+100% !important; text-align:left;}=20
+                div[class=3Dtxtsize]{text-align:left}=20
+                td[class=3Dtxtsize]{text-align:left}
+            }
+            @media screen and (min-width: 320px) and (max-width: 480px) and=
+ (orientation : portrait){
+            {
+                    table[class=3Dtmplfooter]{width:100% !important;max-wid=
+th:100% !important; text-align:left;}=20
+	                table[class=3Dtmplheader]{width:100% !important; max-width=
+:100% !important; text-align:left;}=20
+	                div[class=3Dtxtsize]{text-align:left}=20
+	                td[class=3Dtxtsize]{text-align:left}
+             }
+            @media screen and (max-width: 598px)
+            {
+                table[class=3Dtmplfooter]{width:100% !important;max-width:1=
+00% !important; text-align:left;}=20
+                table[class=3Dtmplheader]{width:100% !important; max-width:=
+100% !important; text-align:left;}=20
+                div[class=3Dtxtsize]{text-align:left}=20
+                td[class=3Dtxtsize]{text-align:left}
+            }
+        </style>
+
+<table cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#f7f7f=
+7;color:#333;font-size:11px;border-color:#f0f0f0;border-width:1px;font-fami=
+ly:Arial;border-style:solid;" width=3D"100%"><tbody><tr><td align=3D"center=
+">
+	<table align=3D"center" cellpadding=3D"9" cellspacing=3D"0" class=3D"tmplf=
+ooter" id=3D"F_INNER" style=3D"width:600px;text-align:center;color:inherit;=
+font-size:inherit;font-family:inherit;">
+	<tbody><tr><td align=3D"center">
+		<div class=3D"txtsize" style=3D"text-align:center;color:#333;font-size:11=
+px;font-family:Arial;">
+	=09
+		<div style=3D"color:#333;font-size:11px;font-family:Arial;">This email wa=
+s sent by <a href=3D"mailto:ryan@greenpatriot.org" id=3D"FOOTERLINK" style=
+=3D"color:#0000FF;font-size:11px;font-family:Arial;" target=3D"_blank"><spa=
+n style=3D"">ryan@greenpatriot.org</span></a> to <a href=3D"mailto:tfinman@=
+wisc.edu" id=3D"FOOTERLINK" style=3D"color:#0000FF;font-size:11px;font-fami=
+ly:Arial;" target=3D"_blank"><span style=3D"">tfinman@wisc.edu</span></a></=
+div>
+		<div class=3D"txtsize" style=3D"padding-top:3px;text-align:center;color:#=
+333;font-size:11px;font-family:Arial;">Not interested? <a href=3D"https://o=
+lbx.maillist-manage.com/ua/optout?od=3D3zec5c69027c78942bc4f02d01659b1aca11=
+f0ae3ecd470c7670e097208f2e39fc&amp;rd=3D18c8f79cb33b3c24&amp;sd=3D18c8f79cb=
+33abca5&amp;n=3D11699e4c18f78e5" id=3D"FOOTERLINK" rel=3D"nofollow" style=
+=3D"color:#0000FF;font-size:11px;font-family:Arial;" target=3D"_blank"><spa=
+n style=3D"">Unsubscribe</span></a> | <a href=3D"https://olbx.maillist-mana=
+ge.com/ua/upc?upd=3D18c8f79cb3315907&amp;r=3D18c8f79cb33b3c24&amp;n=3D11699=
+e4c18f78e5&amp;od=3D3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e09=
+7208f2e39fc" id=3D"FOOTERLINK" rel=3D"nofollow" style=3D"color:#0000FF;font=
+-size:11px;font-family:Arial;" target=3D"_blank"><span style=3D"">Update pr=
+ofile</span></a> </div>
+		<div style=3D"margin-top:5px;color:#333;font-size:11px;font-family:Arial;=
+"></div>=20
+		<div class=3D"txtsize" style=3D"padding-top:3px;text-align:center;color:#=
+acacac;font-size:11px;font-family:Arial;">Smart Solar Box | Green Patriot |=
+ PMA 5/35</div>
+		<div class=3D"txtsize" style=3D"padding:3px;text-align:center;color:#acac=
+ac;font-size:11px;font-family:Arial;"></div>	=09
+		<div class=3D"txtsize" style=3D"margin-top:5px;text-align:center;">   </d=
+iv>
+		<div class=3D"txtsize" id=3D"FOOTERADDRESS" style=3D"padding:3px;padding-=
+left:0px;text-align:center;color:#acacac;font-size:11px;font-family:Arial;"=
+></div>
+	=09
+		</div>
+	</td></tr>
+</tbody></table>
+	</td></tr>
+</tbody></table>
+   =20
+<img style=3D"visibility:hidden" src=3D"https://olbx.maillist-manage.com/cl=
+icks/od3zec5c69027c78942bc4f02d01659b1aca11f0ae3ecd470c7670e097208f2e39fc/r=
+d18c8f79cb33b3c24/open.gif" alt=3D"" height=3D"1" width=3D"1"></body></html=
+>=
+
+------=_Part_1308554_1388924585.1628856743766--

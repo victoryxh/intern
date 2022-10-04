@@ -1,0 +1,289 @@
+Received: from DM6PR06MB6649.namprd06.prod.outlook.com (2603:10b6:5:25b::18)
+ by DM6PR06MB5977.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 17:06:27 +0000
+Received: from DS7PR03CA0102.namprd03.prod.outlook.com (2603:10b6:5:3b7::17)
+ by DM6PR06MB6649.namprd06.prod.outlook.com (2603:10b6:5:25b::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.17; Sun, 15 Aug
+ 2021 17:06:26 +0000
+Received: from DM6NAM11FT066.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:3b7:cafe::6a) by DS7PR03CA0102.outlook.office365.com
+ (2603:10b6:5:3b7::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sun, 15 Aug 2021 17:06:26 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ DM6NAM11FT066.mail.protection.outlook.com (10.13.173.179) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 17:06:26 +0000
+Received: from e2e-77-249.ssdcloudindia.net ([164.52.208.249])
+ by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXW051154UNR690@smtp8.wiscmail.wisc.edu> for
+ rtsepich@uhs.wisc.edu; Sun, 15 Aug 2021 12:06:25 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_70_90 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_5000_5999 0,
+ BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, HTML_BAD_EXTRAS 0,
+ LIST_HEADER 0, SENDER_NO_AUTH 0, SPF_PASS 0, TO_NAME_MISSING 0,
+ URI_ENDS_IN_PHP 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0,
+ __BITCOIN_ADDRESS_OBFU 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CANPHARM_UNSUB_HREF 0, __CANPHARM_UNSUB_LINK 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __FAX_BODY 0, __FRAUD_MONEY 0,
+ __FRAUD_MONEY_BIG_COIN 0, __FRAUD_MONEY_BIG_COIN_DIG 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FRAUD_MONEY_VALUE 0, __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_ADDRESS 0,
+ __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0,
+ __HAS_LIST_UNSUBSCRI
+X-Wisc-Doma: bounce@onlinecheckwriterq.com,onlinecheckwriterq.com
+X-Wisc-Env-From-B64: Ym91bmNlQG9ubGluZWNoZWNrd3JpdGVycS5jb20=
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.165716,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840000,
+ SenderIP=[164.52.208.249]
+X-Wisc-DKIM-Verify:
+ bounce@onlinecheckwriterq.com,onlinecheckwriterq.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=onlinecheckwriterq.com; s=mail; h=List-Unsubscribe:Content-Type:
+	MIME-Version:To:Reply-To:From:Subject:Date:Message-ID:Sender:Cc:
+	Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:List-Archive
+	; bh=hoDdBzPkox2Yfi5Y1M8LQrx72OYYOdWh5tPg74cXYw4=; b=e7IZPxcmavwVsVZ5i4sD23+G
+	Foea9FUnRiWDEpM1mSfsfPYqn3eT7mS/g+Rv9NQYQZSholSrWozgpgXCiLPcbQWfgO4RFqgNOOalv
+	1Hvr1IegSM+sp86U4uDFtXJuH3xqUt43oOyoQ9pJHx9CmIxaFwqPS9ckGC0DgtyuSTdrlU=;
+Received: from [157.230.215.94] (helo=[127.0.0.1])
+	by e2e-77-249.ssdcloudindia.net with esmtpa (Exim 4.90_1)
+	(envelope-from <bounce@onlinecheckwriterq.com>)
+	id 1mFJaX-000CuG-8L	for rtsepich@uhs.wisc.edu; Sun, 15 Aug 2021 22:36:21 +0530
+Message-id: <b49f9c84e1f.28c5309351f1f730db04@onlinecheckwriterq.com>
+Date: Sun, 15 Aug 2021 17:06:14 +0000
+Subject: Hi , Pay & Get Paid by Online/Printable/Digital Checks free
+From: "nita@onlinecheckwriterq.com" <nita@onlinecheckwriterq.com>
+Reply-to: Online Check Writer <support@onlinecheckwriter.com>
+To: rtsepich@uhs.wisc.edu
+Content-type: multipart/alternative;
+ boundary="_=_swift_1629047174_af955ce0a056d9fe603286129d312a83_=_"
+List-Unsubscribe:
+ http://onlinecheckwriterq.com/unsubscribed.php?i=YXD78JxwpV6LpmM
+Return-Path: bounce@onlinecheckwriterq.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 17:06:26.2450
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 40222535-c6fc-4d15-3a29-08d9600f044b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 40222535-c6fc-4d15-3a29-08d9600f044b
+X-MS-TrafficTypeDiagnostic: DM6PR06MB6649:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1360;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp8.wiscmail.wisc.edu;PTR:wmmta5.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 17:06:26.1531
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 40222535-c6fc-4d15-3a29-08d9600f044b
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT066.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB6649
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2667788
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?YzZjY1pNMC9Gd1JzU1J5NjlYOGxZREFPQkcxb3RoQmRSclBGMysxK2R3ZmtG?=
+ =?utf-8?B?Vk9Penk0MThndnhmcDlQdzVFSktjbnIzZHFvTm5reTZNYWxva0FtRjZPT2tT?=
+ =?utf-8?B?MUxCazNtSnVMZDk0OU1FUGFsVHFES0lDMUNiaDhCaFhIalozdGMwQU1zMzVK?=
+ =?utf-8?B?c2U1SXY2TjZNdk9OSXVlWEd0Q244L2ZOUXJ6YnlYSVRnZFFwVnRCTHVZZnpq?=
+ =?utf-8?B?cG1JWnplZ25DY0ZiZWNsWU1hNmwyc1FhLzRrK1NJR0N4czUzektUNlNmSkZk?=
+ =?utf-8?B?VlQzbVl1NDAwSmhTOXBKVXh2Y3A2d1VCOWhMY1BLeWRGN3BxNFdma3JJcFhl?=
+ =?utf-8?B?RWtkSG9sd21Oby9OQTZaS0JXM0VaazJpdlVqQm9mei9xRkNlSkNQWXNKNHR5?=
+ =?utf-8?B?V2Y1ODJ3UDlIcm1Ld0o1VXBHbXFheDJoUGZibE8rS3Y3RG9FYmdjeUhNVHZX?=
+ =?utf-8?B?SEJkbUVHM2JVYzRiVGpza1M5NVY4T01LMkNsS0ttakY0Z2crV0sxSkhzMllu?=
+ =?utf-8?B?RTFWcW1lTmFVdlF1T3RZT29FTHh2MDdScVhMRU1ZSXZidmx2QitsdkxWWUZk?=
+ =?utf-8?B?TDR2V2RCRVFKRGJRNUNjYytoRHZNOUZUbCtORWU5YkVsb1M2WnNMTWJ2Yks5?=
+ =?utf-8?B?Mm5CL2Zsd29XQ1ppZWljSlA3eldKVVNia0dOZmdYcStLaUhEL1ErcmY4dHVW?=
+ =?utf-8?B?ZjI1all3MmNaNkVVZW9HS2lmdUx5dk9mK0VLcmU1dzE1b3N4L2NjQnBwRm9t?=
+ =?utf-8?B?TFVOaEQyajNCUVpiMW8zTE1pTU00Qk1QcEdUSjc1Tnd2Qnc0TFBUc2hyUTNY?=
+ =?utf-8?B?T01RRjRucFV1MHJ2RmYxNlNxL2lLalRFb2pJcWZvcThHSFlNVG5hNDVORHZu?=
+ =?utf-8?B?OGtGY2Z3MDBZUG1RL2FKTG1saTdQNE84K2FLTC9vcENaYlVjNHJIcmpGUFc4?=
+ =?utf-8?B?TVYrbWVjT05xbDRDQks0b3JwRzl3YU5RKzlyMWFWSDBSV1d2bmsrS2pvcVh5?=
+ =?utf-8?B?WlhXWTUzOW5ycm1JcTk5dERUeHhsSU4zV3hBbzdwSzVmSjBndENkNmo3Kzl4?=
+ =?utf-8?B?S2hjaTJzeWhSaVJCR1Rtak9EQ1BDR1RTdHpsaHdHd1k0OERpVzVtOWFPeUFr?=
+ =?utf-8?B?a04rUUptSDd0c3o1aTVEVkxMMVB0Q1BkSWF5Z3dZeUN5bnZGTlEyV0ZLcEhC?=
+ =?utf-8?B?UG4zbWt5bzFLdGZUY2NWZmd1VWlNSjZqVWRCTVpua3pGQjllQWJiMmRYeFNt?=
+ =?utf-8?B?MXV4dUVyS3dMSUQ0ZUljR09ZZ2pIcnUwZVJBSnVxdGJhdzNKQWJEcVFGREdp?=
+ =?utf-8?B?NTE0bDdnQ3kxU3VqR29aVDRFV1FMSlkrK1pwN0ZIOWhMWDN6NnZ1SG41WkdG?=
+ =?utf-8?B?UVhRZHJrbWp3a0JBc1NURU9ITGRIamdmVkFLTEQ0QW4xWVJnQVJyTEZBQlhh?=
+ =?utf-8?B?ZUpSeFMwNFBJU3QySXRGQUFRbk5FamJ4bjdEaTNJRm5ncENpSlNNOXh3M3pm?=
+ =?utf-8?B?eFBDYlFVZElUZEs0cnFYT1FsU2FpRjVsUkFseEZqWTlCeVUrWjRjODJyeHJ1?=
+ =?utf-8?B?OUh1dW1xV3RtMEthcnpreTNWOW1VVWp3R1lUUFVNMTBxc0dBbHVYbjBHTnBQ?=
+ =?utf-8?B?aU1Za2g5dzVKKzlTNEkzTjNJdmZmUG1EVENrVHB3VXg1ZXNJUmkvMnF3WkZx?=
+ =?utf-8?B?QndqVUR5QUQ5YWtCa0pNa0ZKSXE2NEc2SzJHa3RSVzRtUTFHWEFveFRaa3VW?=
+ =?utf-8?B?YXhMQmdzbTV2eTZ5LzFMVjhaQmNpcTdGRFhZRmxoNHQzQ2UyMjJTV2t6OUxU?=
+ =?utf-8?B?TGxhcjlRWUdhZEdzdzlySjVZQ21kRGt6bU9aaWgvbWM0T05sd1d2czdKZ2hm?=
+ =?utf-8?B?dVlLNVdlaXdUL1VxY3I4NGRNTW0rVVZKQmEwK2R6dUhlbXdKa2VIekJRM3Vm?=
+ =?utf-8?B?a1ZkeEFBVjlCYlBrcWFVMWJ6amNiMEZCdWpKSVMzNktkYkRoOGZUbmJQZWNT?=
+ =?utf-8?B?aEdpZ1dNd09MbDNZWDU2Ti9paEdEUHlTQ2NYR1ZYN2M0Z0Q5OU5rZXJmeEJM?=
+ =?utf-8?B?YzZSQk9tVU9UMkRUR0Y5NnErMHlEV3ArNTc5bXR0dnVtZFVuNEFCT3JDQ0xt?=
+ =?utf-8?B?SjhLeUFFRmJOTWFJZXovY1ozRDFRd3VSNS9NNVl6NTVxMkkzUVNPMFdlZXVv?=
+ =?utf-8?B?SDkwMGJzQThWZWJycjA3MzB3UG5wVTNPKzBPTjJnMlhMZDJHKyszR0NITlI5?=
+ =?utf-8?B?KzdDdEY0SnVhMXNoYitsU25JZGc1eURZMFJyTnhhakdqam9wY2IybDBjRjNY?=
+ =?utf-8?B?SEVqbWxuY3VINVlwYVAvMTZJY1RJWWMzZVVEMGFsY0UzNnRmdUFkMFlVU3RF?=
+ =?utf-8?B?dS8rSDdGMi9seUxaK3NWc3QwSFo3ZVpJZ0Zzb1V0dUJIUTVOYXJYcDk4ck5Y?=
+ =?utf-8?B?eFltNTVOVmNuN3Q4Tm5CS05OV3JNNUtzampnZHE5ZU1udzFjbFQwSWhsZmY1?=
+ =?utf-8?B?czlNbTVCcHJoOW5LY3pDQnczKzROYkRld0tOSHZJZkE2M0VseXIzTWhxaE44?=
+ =?utf-8?B?SU5USkZJeGUzcVVVSFNpOXJWbDc5RXMyRXpuaDhkeHU0QjZGU2VPZzlNbURR?=
+ =?utf-8?B?cExWNjRJQ0c1L2p2Wkx1MnhKaVVDdkpjRW5HQ3YyL3hXaFB2OStBU0s3QmJM?=
+ =?utf-8?B?djhGbWZnMHcyN1JtRnFmM1ZlRmxvcWlmQ0JzS1htSldSWjFWdTVPb3YvcW5J?=
+ =?utf-8?B?S2diaHpkY1N3TkxUQ2NEOU5VU3NCcElHZmsrWTc0L0tkZ0dXUk5YZ2NubXNV?=
+ =?utf-8?B?MjFMNzRUcnNCZXFYTEh3UXlOVXZTVlNWN1NYT0JCcTdNQ3p3Q253VUkwNUhp?=
+ =?utf-8?B?TldBT0tGT3hVUmFFZVdrK2FmRHJqMmx2cFVHaVE1TzNJSWYxUStlRG4rWVo1?=
+ =?utf-8?B?YmVodlpWaHQzSVdRS3BaM0dNWi9KMFUwNmdMcGo0emZXRXg4SXJoWXY1YkNp?=
+ =?utf-8?B?U2Ixd29JK3hvYXdybThKUFVqOW00TEM1TGVmQ2M1bWVWODhYUElER3VWbzAz?=
+ =?utf-8?B?WVFDNmNVbFRQVHIxdHpVUmNUc1UvUk9haW9MU3FDdThQS2RJd1FHTUl5SFlP?=
+ =?utf-8?B?Ums3a3JPYWhER3ZaOGNwK3p5M3FzNkdOTzVHaUZaNjdhemdzajFDd0U2UE9k?=
+ =?utf-8?B?dVQ5anluL2xTeUlSS0NtTXFSbUdTZm5MY0JJMWUyWmNpekZDV3YxZTR5aFZw?=
+ =?utf-8?B?ekhuRFd0TytLT3JobFl1SEpWNGkwZStPR3JvOHdhRTg0dnBuYmVqQUJoSGZ3?=
+ =?utf-8?B?dGJTV2g5VU80OXlSSUNtNURsMHpsc1R1WnAvK20xUVJuMWJKbVJlQUhPZEM5?=
+ =?utf-8?B?M3lVd21pY1BhY09WK2c5Tlk2d1VWRmllc0RpNzgyT1dHN3dLZjlEUytQTElY?=
+ =?utf-8?B?Z2hSZ25DSzJ6ajRiOU1Cb1JZKyt5ZmRwWE9RdXczN2V2c0hqTmNidUIzYUtY?=
+ =?utf-8?B?TzVManVib0JvbFYxcmR4TlptaGREQ2x5ekZkZStrb0hROFBrb0w4YTZITTZD?=
+ =?utf-8?B?Vkx2T2dySWJaSktjWHp2S0ZSZTlpbTUxdTZpL3ZNZWJKYXJhT0N3RXdGZFJT?=
+ =?utf-8?Q?Jv+dHhyWklj0=3D?=
+MIME-Version: 1.0
+
+--_=_swift_1629047174_af955ce0a056d9fe603286129d312a83_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+OnlineCheckWriter.com
+
+University of Wisconsin System
+
+Pay & Get Pa=
+id by Online/Printable Checks
+
+Join with 100K+ Business. Serving Cities=
+, Counties, and small & Medium Businesses. #1 Check printing software in Qu=
+ickBooks App Store.
+
+What we Solve?
+Pay By ACH, RTP and Printable Che=
+cks.
+Checks Online, Print on Any Printer-Any paper
+Send Email Checks/On=
+e time Printable PDF Checks
+QuickBooks- Supports Multi-Bank & Multi Compa=
+nies
+Send Checks via Postal Services without leaving your Desk
+Get Paid=
+ by Phone Checks, Email Checks, Fax, HTML  & More
+
+Try Now
+https://ad=
+.onlinecheckwriter.com/all-in-one-platform-secured
+
+OnlineCheckWriter I=
+nc
+111 N Market St, San Jose, CA 95113
+support@onlinecheckwriter.com
+
+--_=_swift_1629047174_af955ce0a056d9fe603286129d312a83_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+able class=3D"responsive-table" cellspacing=3D"0" cellpadding=3D"0" bgcolor=
+=3D"#FFFFFF" style=3D"font-family: Arial, Helvetica, sans-serif; padding: 2=
+0px; border-radius: 15px;
+border: 2px solid #00ba69; font-size: medium; width: 600px; margin-left: au=
+to; margin-right: auto; border: 1px solid rgb(204, 204, 204);">
+    <tbody>
+        <tr><td align=3D"center">
+
+        </td></tr><tr><td align=3D"center"><table width=3D"85%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"9"><tbody><tr><td align=3D"center"></td>=
+</tr>
+            <tr><td bgcolor=3D"#00ba69" align=3D"center" style=3D"font-size=
+: 24px; line-height: 24px; text-align: center; color: rgb(255, 255, 255);">=
+<p><b>OnlineCheckWriter.com</b></p></td></tr>
+
+            <tr><td width=3D"350" align=3D"center" style=3D""><h1 class=3D"=
+wysiwyg-text-align-center" style=3D"margin-top: 0px; margin-bottom: 0px; fo=
+nt-size: 28px; line-height: 1.7; font-weight: bold; color: rgb(63, 63, 63);=
+"><font face=3D"roboto"><br></font></h1><h1 class=3D"wysiwyg-text-align-cen=
+ter" style=3D"margin-top: 0px; margin-bottom: 0px; font-size: 28px; line-he=
+ight: 1.7; font-weight: bold; color: rgb(63, 63, 63);"><font face=3D"roboto=
+">Pay &amp; Get Paid by <br> Online/Printable Checks</font></h1></td></tr>
+           =20
+            <tr><td align=3D"center"><h2 style=3D"margin-top: 0px; margin-b=
+ottom: 0px; font-family: &quot;Trebuchet MS&quot;, sans-serif; font-weight:=
+ bold; line-height: 1.7; color: rgb(63, 63, 63); font-size: 24px;">What we =
+Solve?</h2></td>
+
+                </tr><tr><td>
+                <ul style=3D"margin-top: 10px; margin-bottom: 0px; text-ali=
+gn: left; margin-left: 20px; font-family: amiko; line-height: 27.2px; color=
+: rgb(46, 46, 46);"><li style=3D"margin-left: 20px; font-size: 16px; list-s=
+tyle: outside;">Checks Online, Print on Any Printer or Any Paper.</li><li s=
+tyle=3D"margin-left: 20px; font-size: 16px; list-style: outside;">Email Che=
+cks/One time Printable PDF Checks.</li><li style=3D"margin-left: 20px; font=
+-size: 16px; list-style: outside;">Pay By ACH, RTP and Printable Checks.</l=
+i><li style=3D"margin-left: 20px; font-size: 16px; list-style: outside;">Qu=
+ickBooks-&nbsp;Supports Multi-Bank &amp; Multi Companies.</li><li style=3D"=
+margin-left: 20px; font-size: 16px; list-style: outside;">Send Checks via P=
+ostal Services without leaving your Desk.</li><li style=3D"margin-left: 20p=
+x; font-size: 16px; list-style: outside;">Get Paid by Phone, Email, Fax, HT=
+ML Form &amp; More.</li></ul></td></tr>
+                   =20
+              =20
+                <tr><td width=3D"350" align=3D"center">
+
+            =20
+                    <p style=3D"text-align: center; margin-left: 20px; font=
+-size: 16px; font-weight:bold; border-radius: 15px;
+                    border: 2px solid #00ba69;  padding: 20px; font-family:=
+ amiko; list-style: outside;"><font color=3D"#2e2e2e">FREE- Write 5 Checks =
+Per Month.<br> FREE- Receive Unlimited Checks.<br> PREMIUM- Starting at $5 =
+Per Month.</font></p></td></tr>
+
+
+<tr><td width=3D"350" align=3D"center">
+    <a href=3D"http://onlinecheckwriterv.com/emailread.php?c=3DYXD78JxwpV6L=
+pmM&amp;u=3DG1lN7d81G63J2Qz" target=3D"_blank" style=3D"color: rgb(255, 255=
+, 255); text-decoration:none; background-color: rgb(44, 116, 77); font-size=
+: 18px; line-height: 20px; font-weight: bold; border-width: 8px 25px; borde=
+r-style: solid; border-color: rgb(44, 116, 77); border-radius: 8px; display=
+: inline-block;">Try Now for Free!</a></td></tr></tbody></table></td></tr>
+                        <tr><td align=3D"center"><table width=3D"85%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"9">
+                            <tbody><tr><td align=3D"center" style=3D"font-s=
+ize: 14px; line-height: 16px; font-weight: bold; text-align: center; color:=
+ rgb(44, 116, 77);">Online Check Writer</td></tr>
+                            <tr><td align=3D"center" style=3D"line-height: =
+15px; text-align: center;"><p><span style=3D"font-size: 11px;">111 N Market=
+ St. | San Jose, CA 95113</span><br>
+                                <span style=3D"font-size: 11px;">support@on=
+linecheckwriter.com&nbsp;|&nbsp;
+                                    Privacy Policy</span></p></td></tr></tb=
+ody></table></td></tr></tbody></table> <img src=3D"http://onlinecheckwriter=
+v.com/emailimg.php?i=3DYXD78JxwpV6LpmM" alt=3D""> <br><center><a target=3D"=
+blank" href=3D"http://onlinecheckwriterv.com/unsubscribed.php?i=3DYXD78Jxwp=
+V6LpmM">unsubscribe</a></center>
+
+--_=_swift_1629047174_af955ce0a056d9fe603286129d312a83_=_--

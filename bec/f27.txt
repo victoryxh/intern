@@ -1,0 +1,190 @@
+Received: from DM5PR06MB2428.namprd06.prod.outlook.com (2603:10b6:3:56::9) by
+ DM6PR06MB6715.namprd06.prod.outlook.com with HTTPS; Tue, 31 Aug 2021 21:50:03
+ +0000
+Received: from BN9PR03CA0440.namprd03.prod.outlook.com (2603:10b6:408:113::25)
+ by DM5PR06MB2428.namprd06.prod.outlook.com (2603:10b6:3:56::9) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4478.17; Tue, 31 Aug 2021 21:50:03 +0000
+Received: from BN8NAM11FT041.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:113:cafe::53) by BN9PR03CA0440.outlook.office365.com
+ (2603:10b6:408:113::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4457.18 via Frontend
+ Transport; Tue, 31 Aug 2021 21:50:03 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ BN8NAM11FT041.mail.protection.outlook.com (10.13.177.18) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4478.19 via Frontend Transport; Tue, 31 Aug 2021 21:50:02 +0000
+Received: from mail-pg1-f178.google.com ([209.85.215.178])
+ by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QYQ02NOL4NDC130@smtp4.wiscmail.wisc.edu> for
+ buhule@wisc.edu; Tue, 31 Aug 2021 16:50:02 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Michael A. Newton" <dept.chair311@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_50_70 0.1,
+ HTML_NO_HTTP 0.1, MIME_LOWER_CASE 0.05, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ BODY_SIZE_800_899 0, CTYPE_MULTIPART_NO_QUOTE 0, DKIM_ALIGNS 0,
+ DKIM_SIGNATURE 0, KNOWN_MSGID 0, KNOWN_MTA_TFX 0, NO_CTA_FOUND 0,
+ NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0,
+ SMALL_BODY 0, SPF_PASS 0, SXL_IP_TFX_WM 0, TEXT_DIRECTION 0,
+ TEXT_DIR_LTR_ONLY 0, WEBMAIL_SOURCE 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CT 0, __CTE 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0,
+ __HAS_X_MAILER 0, __HELO_GMAIL 0, __HTML_ATTR_DIR 0, __HT
+X-Wisc-Doma: dept.chair311@gmail.com,gmail.com
+X-Wisc-Env-From-B64: ZGVwdC5jaGFpcjMxMUBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.31.213916,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.17.5840000,
+ SenderIP=[209.85.215.178]
+X-Wisc-DKIM-Verify:
+ dept.chair311@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-pg1-f178.google.com with SMTP id w7so579402pgk.13 for
+ <buhule@wisc.edu>; Tue, 31 Aug 2021 14:50:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20161025;
+ h=content-transfer-encoding:from:mime-version:date:subject:message-id
+ :to;        bh=x7v1A1B8wUobSNA0AxB2zw2cAYV6KTVPxfe7RC4PIa0=;
+ b=q0Dcuum7aZUrILAYzK4JCHGxscU6N+r3EqtJpedwy36nYlLMzRrb5lqD1u0u8znKAK
+ fP4WURlRieWqt6/jlpHgz5GsbwnGAPJINuDJOzub2Lg+obUd0Z1+ufcr2ZNBN4j2za/q
+ duLhVEIn7B16Un9QjVuI5CCo/ZDEryfUKfLQRcEX62qmzzgMt2otZzzpuXzlc9HSQ6qP
+ zGNE+rFlC3v4NHbNEfmrc2TqRfsgmNv1BiMXQhyBD3lhBWa72ByZOH1lB4PZfJbs5jS1
+ FShZwZ9yC6VzGAG1nWU0ds4+s713RKUeb/DFE+67PV8Xm18iyefB87cQyXd6eoAsD16y
+ g3WA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:content-transfer-encoding:from:mime-version:date
+ :subject:message-id:to;
+ bh=x7v1A1B8wUobSNA0AxB2zw2cAYV6KTVPxfe7RC4PIa0=;
+ b=TPjIw8Inqf58cMixfXJzwq7i1/yIcPv/bofZxsyLQxkVKkl46MidSFp/H87gKxSx5z
+ 3CQOyYZkOetkmGxqCon9J/yh1F4wuUoXSh6Y9R0XFcEjhNtivxRS7hR9DNVrGUJfK3Vl
+ 49z0ajuqFNu/hc6gp2EobwMS85CrRmyj8Y2Yj7Z3J7WmTHVmtE5433di6mmU8sC0WyhH
+ zqeouhnJd+7jS/SXsbZO62K9/eRjkaJptX+NgiLTkpdmdUfSC1WWhC3vOryu6OzbktGc
+ SB+0x8Iaao0o/65QnZbUSEZ+g6PeRNcAbFDRJREo9urx+67SLr/0O29p/wUosQFrQdfs
+ G1FQ==
+X-Gm-Message-State: AOAM532mR8e1q+XPwCr5GUoYIpRivjrNEo1a2Y8ZZ+4Sepeeue7jo8ek
+	h8m6MbiBSOVjdQhEHEbOWlN+Waki7NzQuHLXvgI=
+X-Google-Smtp-Source:
+ ABdhPJzJUPCRlQ72xgXYUGrxAowd3PQNqgDTsjxl3xiILGmuemlJGrPs1C4AnwnC+CdRIDpWHwdk+w==
+X-Received: by 2002:a65:6643:: with SMTP id z3mr28810167pgv.16.1630446601230;
+ Tue, 31 Aug 2021 14:50:01 -0700 (PDT)
+Return-Path: dept.chair311@gmail.com
+Received: from [10.21.1.187] ([84.17.45.22]) by smtp.gmail.com with ESMTPSA id
+ g6sm3588567pjs.11.2021.08.31.14.50.00 for <buhule@wisc.edu>
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); Tue,
+ 31 Aug 2021 14:50:00 -0700 (PDT)
+Content-type: multipart/alternative;
+ boundary=Apple-Mail-4F31539E-9397-48AD-8507-6767BDB0F4BE
+Content-transfer-encoding: 7bit
+Date: Tue, 31 Aug 2021 22:49:55 +0100
+Subject: Available, cellphone number?
+Message-id: <FBEF828C-526E-4DD8-97A3-5D872734C8A1@gmail.com>
+To: buhule@wisc.edu
+X-Mailer: iPhone Mail (18D52)
+From: dept.chair311@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 31 Aug 2021 21:50:02.7664
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 724ea420-2b55-48e3-55b7-08d96cc9498a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT041.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 724ea420-2b55-48e3-55b7-08d96cc9498a
+X-MS-TrafficTypeDiagnostic: DM5PR06MB2428:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:849;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 31 Aug 2021 21:50:02.6525
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 724ea420-2b55-48e3-55b7-08d96cc9498a
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT041.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR06MB2428
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2295024
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4478.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?M1Y4akFBRC9SMW02MGZKRG91RzY5RlNNbGNNd0Z0RHR1MlA1cFJuN3VRcnpJ?=
+ =?utf-8?B?NTc3Q0MydmMxK3BpMWNMdG1XOVVNN29FT3lOUEhIM3liZ1NDN0syUU1JUUQz?=
+ =?utf-8?B?VGxTZURib0R1cmlSQWlGaWV0WU0vc3phVEViQVhYMTVaTURGakZ4dld4eVR4?=
+ =?utf-8?B?ek9KT2d0QWNqVkRocGY3VHBzdUJkUmhkL1BNY01MeWJiMDVHdUtuMzdhMDBJ?=
+ =?utf-8?B?VXNxQTNtZlNTalBJa0hVdndFV1l6d250b3g4YkdJSHB6Nk5TNVM4amFZR0NP?=
+ =?utf-8?B?UFQyOGJSQ1pneUIzR09MUk5OdHhFWkV6bHQwL2tVa2dTSWMxUnArUE8yS3Ji?=
+ =?utf-8?B?MlIxUW5wNlIycGp1QmgxM0tHQmpPdEplQTdYSS9LNFFHL21wMlkrQytLS0dN?=
+ =?utf-8?B?d05CNE9MdUtIVWpRcGtuVktNNUhRWC96bnlEOTl6NHpzck9qRElEWHlHdlRp?=
+ =?utf-8?B?WmR0MVgrU3g4bnpuekxzbXZ4QmpiNGtnN2lVd0ZNT1VMRHljRm9CM2x0L2wy?=
+ =?utf-8?B?eUh4Nldid2pqRUJ4MGxxUy9PdG9neWFUNVhqd2lQVzV5Y25sSllxb2lLTm4x?=
+ =?utf-8?B?WTdYaU1JUnZFTFFpbkZ5bmJvTmZ0dXJZYVlMRlpVckhLN2c0UkY1Q25ZYkxT?=
+ =?utf-8?B?NHYzNHRtRkVqaTEzRjlWUVhnOStReE9MclNraEhxa3RLdjZVNXBTWjduNWNM?=
+ =?utf-8?B?cU4ybUlLYS9XV21wenhmM1FzRzMrSFZuTzU4V3piN1J1bVd3dlMxNEdHNDJ4?=
+ =?utf-8?B?NWYvMTFwbVQrcmlZSzB2REZsa29lVU1ZMEJoM3Y4TXVBL3VteEdTcVEvbm9i?=
+ =?utf-8?B?a3hYRW9kNzZTcHVxN3EvTUVUdzBuaWdhR1dQSzNpWVRIUDJPdGY2bld4Myty?=
+ =?utf-8?B?cWdWQmdSVTExU2pOWktXY21RbmdRTHEvTmc4RFFJMUErSXh2OThvcW05aUJ6?=
+ =?utf-8?B?SEUvT2JteTBjaXorT2pNTmU0TmFZQkJUVE9UU3piK09pdFRDQ1ZmaUJTTXVI?=
+ =?utf-8?B?bE5nUVUyN25oTjRheXFHbkljb0lIdXNoNWE0K2tqQ0xCWHlQcEkvbDFNUWdk?=
+ =?utf-8?B?VXU5QTVhTlRpUHlvOWlJQ0kvTFMzdE5yaEFXeGZ5ZTNCN0NZMmV5VDBVQm9p?=
+ =?utf-8?B?L1cvRmN4dktFc3BOdkdickZuR211RXN1Z00zTkZ3ZjQvUW55NG9JRG8rV2lO?=
+ =?utf-8?B?TEZqRmZIdXc0MGQ4T3BCaFdiVnB2d1h3S3NEbUNmM0NkNm9tRVFyaEd3N0xM?=
+ =?utf-8?B?WC9wenBCbWJCdVNKTzdYUTVJbDdLZTJEbXhZRlZxTXU0U2Y4WW5OcWFYRXdM?=
+ =?utf-8?B?OHplcVZKQ1ZDc1FFUWpGUnZlbmxLSjdoVjZnMXFROEtNTnZOQXdKVnRBdkhw?=
+ =?utf-8?B?Si9pK1dMbTRlNkliaFQ2NDM3TjMvS2t1Y3BzOE5UdzV5aGsrMXUrZUdWQ29E?=
+ =?utf-8?B?TXRuWmduN0hELzFnMXVHTTNiVlVieXRva09Ed1Y4WCtiT1l4SnJDL0Y5eEQz?=
+ =?utf-8?B?Q1lySEkvZWxESnQ5SngydzFkSVZYWUw1WEIvMEhQekZlNVhKcWNKcWVkZDNs?=
+ =?utf-8?B?eWUvZGJEL0lZMXJnNmNiS1FGNEI3dUJ2K0ZNYUFoMnNwNmFDNzgvR0E2WXJT?=
+ =?utf-8?B?Sm5Udk9tcTJldkdlZmErSVc2Q0JaZk8ra2lwUmxKRndIYm5qMTFVVldBTHpI?=
+ =?utf-8?B?a091RHA1QWxHdmFtWmYrLzdVL2t5bFpRbE5GWjBBbkdWL3hwejdOTWNMZ1BZ?=
+ =?utf-8?B?SFh5a1hVMVRaUGhOV2R0WDJVVEdqdFAyVVdTZWJjbDNUZUszSFFDcC9YWVVi?=
+ =?utf-8?B?eWtieU01TXZPb284ZDdmNjRNMUluOU0xSzhvL05NMDl1ZkZSSlFRYnFORXoy?=
+ =?utf-8?B?QXdKZmZYZExqa2hZR2ZQQ3FLWm9CR09razR4S0xHM3JrNVJlcTkwdjZBeUF1?=
+ =?utf-8?B?dmNBRDNSYVBPdTBkbHFzWXFqL3hhS1JQTk1oYzlONENJcHhYalphN2xocGk4?=
+ =?utf-8?B?Qkg5dEFBL3JmTUhGT3hLVUJ3SitMMmhnNW5TYkxiRHhidlhBSjlmWlNpNGVB?=
+ =?utf-8?B?MFJTcU5lT2ZncnRPWUdCbHA3UVJ0NVhjS25DTFlmMVhGbzVTRjB3T2NwVFAx?=
+ =?utf-8?B?NjVjcVlOdG1aMGs0Yi9ZTWN4cXB5UWxmYWEvaU0zYzJjWmpLVlBpSC8vK3Ro?=
+ =?utf-8?B?SHlOZE4vb01Dc0ZVdUpZclFIQVh3c2FKNmg2b2MzM0E2VUROOFBUZHBjTUxn?=
+ =?utf-8?B?NytEQk56VlRYUDI0WHQ0aXhGUHVaUjJ6V3RPaUo3MW1VbTRlTWZrMXNzTENv?=
+ =?utf-8?B?bzJaMW5QaHRZMEF6RlpKeFh5VFN5c3NLczRYYUhHa01xTlJPZThmODhDU3Q4?=
+ =?utf-8?B?TUFpeE5ka0lqMngrQUtoSWVxVTlrYnMzSHpRMlQyM3lQQ3FEVVA0T0hubC9W?=
+ =?utf-8?Q?dCOJJ6seXpafY9sTDN2sQg2Jqm2mX7pFURs=3D?=
+MIME-Version: 1.0
+
+--Apple-Mail-4F31539E-9397-48AD-8507-6767BDB0F4BE
+Content-Type: text/plain;
+	charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+
+Best regards 
+
+Michael A. Newton
+Department Chair of Biostatistics and Medical Informatics
+University of Wisconsin-Madison
+--Apple-Mail-4F31539E-9397-48AD-8507-6767BDB0F4BE
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body dir="auto"><br><br><div dir="ltr"><span style="font-size: 17pt;">Best regards&nbsp;</span><div><br></div><div><div><div>Michael A. Newton</div><div>Department Chair of Biostatistics and Medical Informatics</div></div><div>University of Wisconsin-Madison</div></div></div></body></html>
+--Apple-Mail-4F31539E-9397-48AD-8507-6767BDB0F4BE--

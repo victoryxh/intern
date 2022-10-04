@@ -1,0 +1,155 @@
+Received: from BN8PR06MB5507.namprd06.prod.outlook.com (2603:10b6:408:46::23)
+ by DM6PR06MB6235.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 14:20:23 +0000
+Received: from DS7PR03CA0242.namprd03.prod.outlook.com (2603:10b6:5:3b3::7) by
+ BN8PR06MB5507.namprd06.prod.outlook.com (2603:10b6:408:46::23) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.17; Sun, 15 Aug 2021 14:20:22 +0000
+Received: from DM6NAM11FT045.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:3b3:cafe::8e) by DS7PR03CA0242.outlook.office365.com
+ (2603:10b6:5:3b3::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sun, 15 Aug 2021 14:20:22 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ DM6NAM11FT045.mail.protection.outlook.com (10.13.173.123) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 14:20:22 +0000
+Received: from out10.wanadoo.es ([62.36.20.210]) by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTP id <0QXV038LKX5WGSB0@smtp7.wiscmail.wisc.edu> for
+ jacraig@wisc.edu; Sun, 15 Aug 2021 09:20:21 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=24%, Hits= CTYPE_JUST_HTML 0.848,
+ BITLY_URI 0.5, SXL_IP_PROXY_RCVD 0.5, SXL_IP_SPAM_RCVD 0.5, HTML_50_70 0.1,
+ MULTIPLE_RCPTS 0.1, UTF8_SUBJ_OBFU 0.1, KNOWN_FREEWEB_URI 0.05,
+ BODYTEXTH_SIZE_10000_LESS 0, BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, BODY_SIZE_700_799 0,
+ CTE_BASE64 0, HREF_LABEL_TEXT_ONLY 0, LEGITIMATE_SIGNS 0,
+ MULTIPLE_REAL_RCPTS 0, SENDER_NO_AUTH 0, SINGLE_HREF_URI_IN_BODY 0,
+ SINGLE_URI_IN_BODY 0, SPF_NONE 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CP_URI_IN_BODY 0, __CT 0, __CTE 0,
+ __CTYPE_HTML 0, __CTYPE_IS_HTML 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0,
+ __HEADER_ORDER_FROM 0, __HREF_LABEL_TEXT 0, __HREF_LABEL_URI 0,
+ __HTML_AHREF_TAG 0, __HTTPS_URI 0, __KNOWN_FREEWEB_URI2 0, __MIME_HTML 0,
+ __MIME_HTML_ONLY 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0, __MIME_VERSION 0,
+ __MULTIPLE_RCPTS_TO_X2 0, __MULTIPLE_RCPT
+X-Wisc-Doma: ayms@eresmas.com,eresmas.com
+X-Wisc-Env-From-B64: YXltc0BlcmVzbWFzLmNvbQ==
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.140916,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840000,
+ SenderIP=[62.36.20.210]
+X-Spam-Score: *
+Received: from [154.79.251.64] (helo=smtp.wanadoo.es)
+	by out10.wanadoo.es with esmtpa (Exim 4.68)	(envelope-from <ayms@eresmas.com>)
+	id 1mFGzr-0007Ek-N4; Sun, 15 Aug 2021 16:20:20 +0200
+To: jacraig <jacraig@wisc.edu>, Rich <jmc_1973@comcast.net>,
+ Judith Theriault <juditheriault@me.com>, Kyle Blue <kblue4@comcast.net>,
+ Megan Durazo <madurazo@me.com>
+Subject: =?UTF-8?Q?Hey_dear.Could_be_helpful?=
+Message-id: <002b2d21-b75c-48db-Bb7f-28a0b94feeeb@eresmas.com>
+User-Agent: Pigeon for Android
+Content-type: text/html; charset=UTF-8
+From: Brian Carroll <ayms@eresmas.com>
+Date: Sun, 15 Aug 2021 02:20:29 +0000
+Content-transfer-encoding: Base64
+X-login: <ayms@eresmas.com>
+Return-Path: ayms@eresmas.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 14:20:22.2072
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5133760c-fa58-42a1-b7d2-08d95ff7d143
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT045.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5133760c-fa58-42a1-b7d2-08d95ff7d143
+X-MS-TrafficTypeDiagnostic: BN8PR06MB5507:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:398;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 14:20:22.1023
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5133760c-fa58-42a1-b7d2-08d95ff7d143
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT045.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR06MB5507
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1468095
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4394.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ZEo5Wmg4bER1eTBydmxpWW5DVWV0M2NBVEJoTTY0TnNBVkRsTGRhRGV5NytW?=
+ =?utf-8?B?b3VjRmtrMHc0RUpaU3k1eW9mOG0zYkgrbDN0dGpBVy9hOG9oTmpUbDFUdzlw?=
+ =?utf-8?B?dXBlYlY3MFoxV0FVeGdlYjBNOHN3aFEwZjN6UHgxTEVCZWpQcndLTXNFUTQ0?=
+ =?utf-8?B?YzQwSUhEMkJ1d3hlY2JxakFyTDBIUHNVZVVpQ1AybVNYWnYrNk9BczVYVTlD?=
+ =?utf-8?B?dUNrdUkrazdwTjA1d1dtMjl4UGlKR1FuLzBhbXpQUXFycjFnWmkzRzl4cEN4?=
+ =?utf-8?B?WklqZDk5Wm54VDJIUjdOUEt6OGthOTcwUDlUc3pCMDRuYkZRYURwVzZrWGVt?=
+ =?utf-8?B?dWs5TWdrNkNxd2UwQ0hDbXRpOWp3b0FlWCtOWXVIUy9LSVowU1kvMmpEQ1F6?=
+ =?utf-8?B?ZGhBK256NGNDRFNjNUNFYlJuNUJHTks5R09qQkI3U1N3c2VqSC9pK05CV2tp?=
+ =?utf-8?B?SGU0d3JFUlIyL1RGOG9lZFFVWW5Sc2YyWlFrekdHbVV4RDVsWnVaeGRSYjNK?=
+ =?utf-8?B?cmx0REJyVExFcmk5bFNSeUVFN21lUUU5TytlWm5MeEgxQVovTU0wYkhTTnoz?=
+ =?utf-8?B?bjRKZHJkWHFTQTc1dFBXelpkR2ZsV1luMThLSTUxbXVXQzF6MmFNMlc5a3Bw?=
+ =?utf-8?B?c1BtL1ZsbWFQd05LWlJWRytabTNOTkZiWEViNWJqSFhNT25WWkFEajlrZWlQ?=
+ =?utf-8?B?dFZuSVRnalpZMitLcmtLemNCeUFtMEFQRmpnM2dra1dQMEIyS05Jd0dnYjhW?=
+ =?utf-8?B?M0xrNndrYXRkQjhhQmtKenNHUWFKSnhadlNTVnNjaUdyRlhoV2xvK2VzZGxl?=
+ =?utf-8?B?b1VTSXRrS1piK24zOUl2ZXN2anhRbGJnN09heHcwWnI2aGdKcWVqMERUN3NI?=
+ =?utf-8?B?eGN2aTdYZVpndG5sNFJPUGtFME5hOU1aNnNOYmlmUmQweS9zMWtmaUVNM0RV?=
+ =?utf-8?B?L0VUck1TV2lVMURId2VKVjgxWDBLOVUrSU5QR0pwSkplY3dkNldnVldMYU9y?=
+ =?utf-8?B?a0VxbVVxK2NKMmNCc1BNdHY0Qm03Yk1PMms5UTRWd0hVNkRWVWt3K3pqdUhv?=
+ =?utf-8?B?d1pzTzBqbmQvaUN4QU16cmNFamJ6TmIwc084aUU3ank0UElLaEUyRCtFQ2tt?=
+ =?utf-8?B?WmJ4TzhOVkRCVHNSK25TQ0pzdlFaMjBBbnpOQ3NoQ1laQklRMXJWTTVRM0FT?=
+ =?utf-8?B?SFlTR0lWekUyMmE5azlHOFphZDlFNVpxb1dRVTd5aXhoVERXRnJsVzZDeGV1?=
+ =?utf-8?B?WjhmUVhrZGxpdFZFUllBTmZJbHg2K2FRNXYrUnViR3JGY2NpUEQ2OVFnOERK?=
+ =?utf-8?B?TmhaZVpJRWZZS1FueGp4d2pNNmI0OENXOW1MSjlySC9kRFByRjdTZzZYVkVK?=
+ =?utf-8?B?TndodFZiaWZ6MXRDS21vWUhBTWtua1VEMU9CSnVkckMwcnAySENrVzZONDZV?=
+ =?utf-8?B?d2lRTUpOam5kM0JXdlRjRXNBMW8vaU5NaTRrZVVPQnEvNkplcUhpeVg3Vkwy?=
+ =?utf-8?B?bWZwV0FlWDFydVZLR2Rxei9yYlIrRjZDT0ZsN3hZb3N4UHQ3VmdwUW9WbzVD?=
+ =?utf-8?B?U3dNMWU2VnpUbzZkTXFXY1RhUzNLSUxjM01RSkNZbUVzODM4TXFoRExrZkhv?=
+ =?utf-8?B?ZUhuNStZbTd4WDlrRzNWVXBXTHBJUWpEMGFPUkVtMHdQSU05NHRzTHEwb0xk?=
+ =?utf-8?B?Vk1tZXNkbFN2UGdFT2NmV2htQVN6dnNjVE0vOFl4RHpNVURXOVp3b1h1YmVx?=
+ =?utf-8?B?QkFWVitxbXhhZzhNenoxZXd6cThXQTc3aGxvbUtCK1hsM1JIandmU05kdThK?=
+ =?utf-8?B?K05hS3AyOC8yY2M2TTl0cVlpcEVjSURaajNyK3hkWVpybVBlelhIVjZRY1FY?=
+ =?utf-8?B?OFFzTzdQTlJCRzRzV0FXdzg5YnFINGhTbXFDMzF3RzNZWmxHUmJ2YndzakJM?=
+ =?utf-8?B?eDNmczRaRHo1bGhlZ1prZWVMaFR1L2dYMHRoQ0thR3hWSmE4YkhRclVTbFM1?=
+ =?utf-8?B?YTJqVENOdUpHQUVWd3IxNnZ6em5JOTFmV1JkRGVtK09XK0xyS2xMSCtGLy8x?=
+ =?utf-8?B?Sk50NzJNN1Y5MENSeFIrd1BSZkRGMFBVUU40YlMyMGVjUlp0bzMwZ21neThL?=
+ =?utf-8?B?MUFRZHQrRlJJTFM5K1V2MGozRUZuRHdDeDRXZDJHazREVFcydDBHTW0wTEdx?=
+ =?utf-8?B?cEpFa0xFYksvamlIb09TWStSSEpzdVlZZldFeEtxVWYvWVlQUkhsVS9KSXJl?=
+ =?utf-8?B?NjdjRzNGN0ZWbHZyTzU4clM1MTBZMTAvUDl1ZmlZQnRZTVNyNjVtd2hmelFy?=
+ =?utf-8?B?Tk1TQWY1MkRsQi95bGVzQmlQL3A2a1pUdG5LY2xzSk12Y29vSEZPU3ZPZGhT?=
+ =?utf-8?B?Q3JOZFlKR0VyNmpiUE4rSjBVdzc1TGlXZ09VTFNVbzBjUDBpWU1HaHNlN1Jk?=
+ =?utf-8?B?Tkt1UHlUQkd4Tk1JZ0lKdkJpOU9wRFJLM3hoZ2s4VCtuS1VHdDZRTkRLSHRm?=
+ =?utf-8?B?ZEZkM3Z2MlB2SVVsdm5CRVZGalNFYm9lbjRLNjVXN1Nvb3RJcEUvelhUNlY5?=
+ =?utf-8?B?NnNtLzR5VE5sNXorSUl5NXkvOThKMGs3ZGJzZm5IV1YrVGgyRDhOVWJCRDd3?=
+ =?utf-8?B?SVF0QnpEMHFoRWF5ejJaNjFrQTFzMFludE91MUQ5QmgzUWNxRmRxSU9UMWk1?=
+ =?utf-8?B?ZU05cU8rSjYzN1c5M0E5Y2R6OVVuSUhnTGp0NDkyRUNGWEhaWVdUZHN0SWxx?=
+ =?utf-8?B?MTF0R2g0dGdRdjVwOTJ5VEozcTVaOUYwQnpiQW1SdWw0N1VkdlVPdDZ2REs4?=
+ =?utf-8?B?WFFSckt5MUZ1Q1dZWnk3UG9BQjMyZUJYWlRSd1JUd0hSS01IRHRSMmdYQ2Ni?=
+ =?utf-8?B?a0xIWG5WekF0VjcwK09sV2VoVUpIaEwrdndsNFpjWXBaVHQwS3EyZUZTYitB?=
+ =?utf-8?B?RGV1aXRkd25MYXpGWlR6b1hDTk1mZzByY0Q5Rk9uVUhFR2V4QXFkSExMTWIx?=
+ =?utf-8?Q?gcAyK7oXEHiAtU=3D?=
+MIME-Version: 1.0
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRl
+eHQvaHRtbDsgY2hhcnNldD11dGYtOCI+PC9oZWFkPjxib2R5PiA8YSBocmVmPSJodHRwczovL2Jp
+dC5seS8zZlJ3RWxqIj5odHRwczovL2JpdC5seS8zZlJ3RWxqPC9hPiA8YnI+PGJyPjxicj48YnI+
+PGJyPjxicj5CcmlhbiBDYXJyb2xsIDxicj4gRW5qb3ksQnJpYW4gQ2Fycm9sbDxicj48YnI+PGJy
+Pjxicj48YnI+PGJyPjxicj5JJ20gaG9waW5nIHlvdSBhcmUgZW5qb3lpbmcgYSB3b25kZXJmdWwg
+ZGF5dGltZTxicj48YnI+PGJyPjxicj4sQnJpYW4gQ2Fycm9sbCA8YnI+PGJyPjxicj48YnI+PGJy
+Pjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+ID09PT09PT09PT09PT09PT09PT09PU5F
+V1M9PT09PT09PT09PT09PT09PT09PT08YnI+PGJyPjxicj48YnI+IDxicj48YnI+ICA8YnI+PGJy
+Pj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT08L2JvZHk+PC9o
+dG1sPg0K

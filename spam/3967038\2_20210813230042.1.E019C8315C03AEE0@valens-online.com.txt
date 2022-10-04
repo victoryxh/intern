@@ -1,0 +1,327 @@
+Received: from MWHPR06MB2671.namprd06.prod.outlook.com (2603:10b6:300:49::16)
+ by MN2PR06MB5422.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021
+ 23:01:24 +0000
+Received: from MWHPR19CA0077.namprd19.prod.outlook.com (2603:10b6:320:1f::15)
+ by MWHPR06MB2671.namprd06.prod.outlook.com (2603:10b6:300:49::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16; Fri, 13 Aug
+ 2021 23:01:21 +0000
+Received: from CO1NAM11FT061.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:320:1f:cafe::4c) by MWHPR19CA0077.outlook.office365.com
+ (2603:10b6:320:1f::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Fri, 13 Aug 2021 23:01:21 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ CO1NAM11FT061.mail.protection.outlook.com (10.13.175.200) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Fri, 13 Aug 2021 23:01:21 +0000
+Received: from m234-149.mailgun.net ([159.135.234.149])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXS0218DVX4UC60@smtp6.wiscmail.wisc.edu> for
+ ksanchez2@wisc.edu; Fri, 13 Aug 2021 18:01:20 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=12%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_50_70 0.1, MIME_LOWER_CASE 0.05, SUPERLONG_LINE 0.05,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTH_SIZE_3000_MORE 0, BULK_EMAIL_SENDER 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, HREF_LABEL_TEXT_NO_URI 0,
+ HREF_LABEL_TEXT_ONLY 0, KNOWN_MTA_TFX 0, LEGITIMATE_SIGNS 0, LIST_HEADER 0,
+ SPF_PASS 0, STYLE_RATWARE_REF 0, SXL_IP_TFX_ESG 0, SXL_IP_TFX_WM 0,
+ URI_WITH_PATH_ONLY 0, WEBMAIL_SOURCE 0, __ANY_URI 0, __BODY_NO_MAILTO 0,
+ __BODY_TEXT_X4 0, __CASH 0, __CT 0, __CTE 0, __CTYPE_HTML 0,
+ __CTYPE_IS_HTML 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0,
+ __DQ_NEG_IP 0, __FRAUD_MONEY 0, __FRAUD_MONEY_CURRENCY 0,
+ __FRAUD_MONEY_CURRENCY_DOLLAR 0, __FRAUD_MONEY_DENOMINATION 0,
+ __FRAUD_MONEY_VALUE 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_LIST_HEADER 0,
+ __HAS_LIST_ID 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_SENDER 0,
+ __HEADER_ORDER_FROM 0, __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0,
+ __HTML_HREF_TAG_X2 0, __HTML_TAG_DIV 0, __HTML_TAG_TABLE 0,
+X-Wisc-Doma:
+ bounce+8e8524.ad9af5-ksanchez2=wisc.edu@valens-online.com,valens-online.com
+X-Wisc-Env-From-B64:
+ Ym91bmNlKzhlODUyNC5hZDlhZjUta3NhbmNoZXoyPXdpc2MuZWR1QHZhbGVucy1vbmxpbmUuY29t
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.224815,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840001,
+ SenderIP=[159.135.234.149]
+X-Wisc-DKIM-Verify:
+ bounce+8e8524.ad9af5-ksanchez2=wisc.edu@valens-online.com,valens-online.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score: *
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=valens-online.com;
+ q=dns/txt; s=mailo; t=1628895680; h=Content-Transfer-Encoding: To: Message-Id:
+ Mime-Version: Content-Type: Subject: From: Sender: Date: List-Id:
+ List-Unsubscribe; bh=aRqP4GCOIsXPe5cqjtfnxnaI5hSLsEywqZlP1uiWAKw=;
+ b=FXdt42YwDi4WSaghkjLPKPXEN0bwhMYUQcDy5rDNSqw1XB58j4otCWukJ6po9Fk69mC5avXv
+ h0ic/bDHfqzOAA6UTbpT3qfyDZ0g/wsIA4uNgoBtOlw+gsPetdc23az8U5xwAgbICj69DUJ9
+ 6so3pYIyc5nVLdNzQkPaUBbD7eM=
+X-Mailgun-Sending-Ip: 159.135.234.149
+X-Mailgun-Sid: WyJlMjNkNSIsICJrc2FuY2hlejJAd2lzYy5lZHUiLCAiYWQ5YWY1Il0=
+List-Unsubscribe:
+ <mailto:u+mq6wczbzmftdkjtjhuzdamrrga4dcmzsgmydanbsfyys4rjqge4ugobtge2ugmbtifcukmbfgqyhmylmmvxhgllpnzwgs3tffzrw63jgna6tgntdgiygcmbqmztgmmbxhfrtqzjvgq2tinjxgfrwintdmqydomzgnu6tgnbugi4tanrqezzd223tmfxgg2dfpizcknbqo5uxgyzomvshk@valens-online.com>
+Received: by luna.mailgun.net with SMTP X-Mailgun-List-Id=34429060,
+ 8777896532473; Fri, 13 Aug 2021 23:01:20 +0000
+X-Mailgun-List-Id: 34429060
+X-Mailgun-List-Address: monthly-uafrsvsar-rob-d@valens-online.com
+List-Id: <monthly-uafrsvsar-rob-d.valens-online.com>
+Received: by luna.mailgun.net with HTTP; Fri, 13 Aug 2021 13:38:38 +0000
+Date: Fri, 13 Aug 2021 13:38:38 +0000
+Sender: rob.spivey@valens-online.com
+X-Mailgun-Tag: valens
+X-Mailgun-Tag: UAFRSMonthly_d20210813
+X-Mailgun-Tag: UAFRSMonthly_d20210813
+X-Mailgun-Deliver-By: Fri, 13 Aug 2021 23:00:00 -0000
+From: Valens Research <rob.spivey@valens-online.com>
+Subject: PINS, NVDA, and ZTS in focus of Uniform Accounting Rules Highlighting
+ As-Reported Accounting Distortions versus UAFRS
+Content-type: text/html; charset=ascii
+Message-id: <20210813230042.1.E019C8315C03AEE0@valens-online.com>
+To: ksanchez2@wisc.edu
+Content-transfer-encoding: quoted-printable
+Return-Path: bounce+8e8524.ad9af5-ksanchez2=wisc.edu@valens-online.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 23:01:21.3475
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5bbe0410-e1d8-4181-7d69-08d95eae4456
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT061.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 5bbe0410-e1d8-4181-7d69-08d95eae4456
+X-MS-TrafficTypeDiagnostic: MWHPR06MB2671:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 23:01:21.1766
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5bbe0410-e1d8-4181-7d69-08d95eae4456
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT061.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR06MB2671
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.4594503
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4394.027
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?oADNnMn7c+6upLvuzmc74Uv768zyxKQZF8VZy04q7SqYOcMJW3t9H6fM?=
+ =?Windows-1252?Q?EelvojHhOFmRuQEgBPcwZivxzz2fZDHD+u6J9j8H1dHbBXtLWlzxE3oq?=
+ =?Windows-1252?Q?IXukmWzB8NOgXEJ5MnERri+hGmy9NmWqpAwFHkUrlBimRzyl8i2RA3eq?=
+ =?Windows-1252?Q?S/w5ISNo4MHwC6Hw9HGPPzfWkTrthEBQZCH8Q/lUO1nK9Dcs4R6Gxq4/?=
+ =?Windows-1252?Q?ip1AsC8DRocSloBityE1hCzX8Z5YDuqMVKdukYw2XwRiaYWFNt/U/t1S?=
+ =?Windows-1252?Q?ncvG4ucN5JP1zh7vCNNTi7EZdreW/hZbqkfDi9JE/p388E08gVv7uhpd?=
+ =?Windows-1252?Q?yxX2l+SqFKAp9uxX1VJ14x5CWZv2VYZB/6dwx7pSec7FJ0iQ7O2kAXSx?=
+ =?Windows-1252?Q?RRU9LvFEnzqUVANCOLhob/voKUZi+wgG/UD7qvgfbKPBDmSJ6DAIbzyv?=
+ =?Windows-1252?Q?sFz4WENCQUQoSEnpANlRy+89YYs8yBuwokERiV5q9i7eo05IN2UOxxC4?=
+ =?Windows-1252?Q?YOGILLFsvE+ynKUnYWUVhqjS2owQ1Bi+UUNuX5sqwEBbzMVYHyFxEBTQ?=
+ =?Windows-1252?Q?v8qcNt1wKAdgNx/sq7pGQjBdZpa89VAFAnORVH3+0cCPTndFbcCNJL9q?=
+ =?Windows-1252?Q?Ufrtr0eY8wCSj3RTcWQcnqY6tubkkqinKB/Fx6Cp3M7fJlWKBXrMPijc?=
+ =?Windows-1252?Q?5zg2TVCzs/e1OHM8ALFljO5yALoCkR1OJ6K4E+pNdJ2KbKiqiGTd0QTK?=
+ =?Windows-1252?Q?5//5j5NZjl8HOJ+EIbqOD2qhWioWffEP36aqcK0EIFRZ0cz3oIauzxTe?=
+ =?Windows-1252?Q?PvmPa8/rwvF6e0aKMQxdihoaz7wqrC6HB5FevxsjvZ0eKAOd4fAeuJlL?=
+ =?Windows-1252?Q?fhwBw1MXbU0TYZs+r+/s3MAvHa4mrc1pkYwxP0n37mkhNXLUYPJXl42D?=
+ =?Windows-1252?Q?n7rLeSG17aOzzNy4cCUGFKoyj11HWzJbYOkAqmupd3qpZiA0j73OMBkx?=
+ =?Windows-1252?Q?x3VeVIKIhri9MG/3bMBDekNjrtoE55sapssc87Vlg1ECidkL6s0lDa6T?=
+ =?Windows-1252?Q?GOePWW1SG/+ubFuUmMIqkIAQI8PcqBWXqZNjMBFcJ3reAuTxk1FRsJf6?=
+ =?Windows-1252?Q?gPIMuTm79CHgzUZdTgQ0Vo7IQrUcZ9gYfISduhKb/m9CqNJ5Fx1xU65t?=
+ =?Windows-1252?Q?kJEJC5IXebHaKP9aOejtdfLXwtzAlakwDCdWy4YbRpC5nOCO81EcINsP?=
+ =?Windows-1252?Q?h7yFjl5YAtQRCy8Y4203QbWT924p3yBOxa+XOcRvs33VthInCJSF5a76?=
+ =?Windows-1252?Q?rCCwVo1tudN9/QB/jmaKdwZwNrYl1qvHU44F0Fmhz9R1xSUNmxPrONqt?=
+ =?Windows-1252?Q?JMckSSDb3r0+Aaks5fEwqigTXwUN+NsqyvKdKzrcVRH9pcQBFRflazAz?=
+ =?Windows-1252?Q?5KGPHP20xy9rp3LCKGB4fbe7+oVOe+4/GBuSa2lzLEANzOREVI100Pz/?=
+ =?Windows-1252?Q?j2bjI/6isORYN0NXAPSRxj9BMCIFJlGs7aP39m2I3TeFHehyHm0WoEDJ?=
+ =?Windows-1252?Q?dnGZxoDl9wMFB+vQUrR6F6PTXpIu5Ex7jPzrskHzcRN51FtNwEam2Zd6?=
+ =?Windows-1252?Q?fMWuo4RnO2lzcWow8mj4WGvZafERr5FfCE+4bU8mrnSO2Z2BdNhlwIgd?=
+ =?Windows-1252?Q?EOru+a8oR3Ws5rBt1Y89pSGrkmZF377vSDao0cSCK41v4Lt2NEherWMX?=
+ =?Windows-1252?Q?uetCKHkltzA/5zpULxgEOOAqnynlD+mjUMoO0RWGmgXMjHrAcTPZktTF?=
+ =?Windows-1252?Q?U+0wS+z01u6TN2M3UKYGRj9WQZ4zUBq1z2Jhtp5vgnRd3ictb0Xy59dE?=
+ =?Windows-1252?Q?k3/IZPXI7/sU04fjnTbMPREV/YkbsIbUF6FM8ZCzyQWTRZiUVegK6UUw?=
+ =?Windows-1252?Q?buGtjzqI6WXhjJi40g57mg3y2nx/IhXVy+TmTzrk3faDH7spCtLFvvTY?=
+ =?Windows-1252?Q?GBPXFHGZXKd2mBVb+bvCMC/haTg95NRF5t/V4tAVeOnsQZ/TVPH+kVcV?=
+ =?Windows-1252?Q?XTUu0HNe9FYtaBdXkVOg6tcqmTOqh30mBTwbsO7qB46sWGJ6f6bEVk+5?=
+ =?Windows-1252?Q?KpZ/56qy87Mrk2I/+gs4qO9eSkCSIITKwdLxTMYFkpK+HTK5iYXaGR8r?=
+ =?Windows-1252?Q?7cLjH/zs0SpD/tK/weiDVh46n6cqlrlwRDSQoFv3fUuNs5b1FtRSMw?=
+ =?Windows-1252?Q?=3D=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<title>UAFRS vs As Reported EDM</title>
+</head>
+<body>
+<style>
+.ReadMsgBody {width: 100%;}
+.ExternalClass {width: 100%;}
+
+    div {
+        font-family: Calibri;
+        font-size: 14px;
+        text-align: left;
+    }
+
+span.yshortcuts { color:#000; background-color:none; border:none;}
+span.yshortcuts:hover,
+span.yshortcuts:active,
+span.yshortcuts:focus {color:#000; background-color:none; border:none;}
+</style>
+<div style=3D"font-family: Calibri; font-size: 14px; text-align: left;">
+   =20
+    <p>
+    <b>The End of Accounting &#8211; Innovation and R&amp;D are completely =
+mishandled by GAAP and IFRS</b>
+    </p>
+
+
+
+    <p>
+        <strong><a href=3D"https://email.valens-online.com/c/eJx1kEFvwyAMhX=
+9NuBE5kJTkwCGK0tsuXXdGNHFFVAoR0FTdrx_d2uMky7L0_D75eZZ67vS5IYtkwCpoK844QM3Kq=
+hyh6oaWV80AvB9HKGrYtEUXqXd2cVhO_kqMxAYFEyybUNTtjncamtOMJ9HplosGyFXyumYd7IBY=
+aVJaY8H7gu1z6XUtX8yAEXWYzJOalSVuud_0OUS6RaqfC6sPCWfq8B4tpoShYNyv6Ohg9UMd_SV=
+zFFVHg-qr3x8-1RZVH9XhZVQf3iVjH3nlmVWBULwiQV6idpPBb5YD3pc4lTjfSJJ_d-Xhl_X2zu=
+83_Sv8ABloazU">Clay Tokens - The UAFRS vs As Reported Monthly - 2021 07 31<=
+/a></strong>
+    </p>
+
+   =20
+
+    <p>
+    Professor Baruch Lev is one of the foremost academic experts when it co=
+mes to analyzing the impact of deficiencies in corporate financial reportin=
+g.
+    </p>
+    =20
+    <p>
+    His book which has shaken the accounting foundations the world over is =
+appropriately titled The End of Accounting.
+    </p>
+
+    <p>
+    Professor Lev has spent decades instructing up-and-coming business prof=
+essionals about these issues in his role as the Philip Bardes Professor of =
+Accounting and Finance at the renowned NYU Stern School of Business.
+    </p>
+
+    <p>
+    I met with Baruch to discuss our mutually favorite area of research, th=
+e problems with accounting. Over lunch near his home in upper Manhattan, we=
+ discussed a very specific deficiency: the nonsensical global reporting of =
+research and development costs and intangible assets.
+    </p>
+
+
+    <p>
+       <strong>Highlighted UAFRS vs As-Reported&#8482; Dislocations</strong=
+> (Read more about the UAFRS framework <a href=3D"https://email.valens-onli=
+ne.com/c/eJx1T01rwzAU-zXxbebZzynxwYdQ0lsvLTuPV3_g0NQpsdOw_fp5tD0OBBIICckZcp=
+pCy0YjQQroBEoEUJILPoDQ-w5FuwfshwEaBQ-afMofc5rG5LmdbyzWHFEIJLRDBKGURos2dL4lu=
+ROoLbsZVEpq2AGbTCzl3mDfyEPFtm38Vbn47Gmx8a-0OnSZ11J5pbDkymwx10zJRv8j645tzJZ7=
+t7JinvkqPvvD6XycU4nT95d7v_nX-AVY9Etw">here</a>.)
+    </p>
+    <p>
+        <strong>Pinterest, Inc. (<a href=3D"https://email.valens-online.com=
+/c/eJx1UEFugzAQfA3cghbbUDhwQIRIPbSqGuWMVrYpVrGhGFKlr--SkJxayfKOZjyzu1YFqhzb=
+JDQFAxZDFnPGAQSL4qiGOK8yHicV8LKuIRBwxl47vxtcb5yO5GDDrlBZmoMQSfrUIkrMQbVxjEp=
+AxjLBIAltwYVgOaQQ9kU3z2PAy4Ad6OA4RlvkpL3GSXZrKCl0j-iM9oTfnl-PZDkdy4dw2aHD_u=
+LNqm8J-msx880xnsed7HCaA36gbnsesHSh-unRyU7_MFrl23gZabWQ1JJUU6Xn-2szlnqC1QqMI=
+nT_GkiArVGzbfywTFKTZuXGWK3MYonRFk2_kRJpXPPhiD6Vh_djYwc3d_2l0co299hwKv6aLJyL=
+22oEruaXzasexv-EX55qkLc">PINS</a>) &#8211; R&amp;D Distortions et al</stron=
+g><br>
+        PINS&#8217;s Uniform ROA is 15.3%, not -1.3% as-reported
+    </p>
+
+    <p>
+        <strong>NVIDIA Corporation (<a href=3D"https://email.valens-online.=
+com/c/eJx1UMtugzAQ_Bq4BfnF6-ADSojUQ3toml6RY5tiFRuKTar067shJKdWsryjGc_srhUXq=
+hRtGhtOEMGowJRQhBhJcFIjXG4LitMtolVdo4ihs-i185vB9cbpRA427njL2lNWsCI9aUxSlkvS=
+6pzmEJTmuDy1seWUMVKiDMU970IYI1pFZA9HjGOyRk7aazHJ7hoKCtyjcEZ7wC_vuwosx0P1EC4=
+b4UR_8eaqrwn6azbh5hjP40Z2YgoR3UO3HY1INkP99MLJTv8QWOXbeJloNYPUglRDhee7pRnJPM=
+CnNwBGAbp_DUrREhVs44d5kho0K1fGamVmC4y2wvQrKQWMaz4c0Mdq_3po7OBC118arWxzj40n_=
+tdkceC31QAs5ufVqx7G_4RfoOKQsQ">NVDA</a>) &#8211; R&amp;D Distortions et al<=
+/strong><br>
+        NVDA&#8217;s Uniform EPS is $10.99 not $1.76 as-reported
+    </p>
+   =20
+    <p>
+        <strong>Zoetis Inc. (<a href=3D"https://email.valens-online.com/c/e=
+Jx1ULFugzAQ_RrYgowNIR4YUALq0qVpli7oYh_FKjYUQ6r063s0JFMrWb7n9_Te3VnnoCU0aWhy=
+znjMdrHggrGER3FUsljudyJO90wUZcmChF2gQ-c3veuMw0j1NmzzGEBi1jCJaSYxgSRjjUrPmZZ=
+ZJnfnLLS5SBIu2ZaFXd5O0xCIIuAVHRiGaI0c0SOMql1CSaF7AGfQE357PZLjdCwe_HUDDrqrN4=
+u8BuDnbKabYbgMG9XCOAWiomYHEfDtTPXDg1MtfnPa5Mt4FaGeSWpIKgOeckYP8hyWhnzrCT1RN=
+ZrA_XNYypIlbbK17-dRIWlWrYxFbWZLDFow3UoqoInNuyP6VFQvx9r2bmq7a43a1vfYcMz_Gi6c=
+8tt2BH7Nz6tXP4z_CT89IpFt">ZTS</a>) &#8211; Gross and Net PP&amp;E Distortio=
+ns et al
+        </strong><br>
+        ZTS's Uniform ROA is 23.8%, not 11.4% as-reported
+    </p>
+=20
+    <p>
+        To access UAFRS analysis on these companies and over 25,000 more, c=
+lick <a href=3D"https://email.valens-online.com/c/eJx1jzFrwzAUhH-NtVk8PcmOP=
+Ggwwdm6JGQuivxcmTqyseSE5NdHpc1YuOG4g4-73ti-sUPFRoOAArSQKAEUcsE7EM1eS1HtQbZd=
+B4WCm50oxHIO0xiIu_nKvNEk5YBa1yAcOKhQNbCr3YCV2A1CK3Y1UilsoAY2GZ_SEgvZFnjIiuS=
+2lfgfdqVIdnX-B5zLeaFQXijZMo5fYVtyxFbzHW1wnp6Y59zH6Dj1G0vmF5HNuT0cTx9zSH56fP=
+bvU_8WLyDwTYo">here</a>.
+    </p>
+    <strong><a href=3D"https://email.valens-online.com/c/eJx1kEFvwyAMhX9NuB=
+E5kJTkwCGK0tsuXXdGNHFFVAoR0FTdrx_d2uMky7L0_D75eZZ67vS5IYtkwCpoK844QM3Kqhyh6=
+oaWV80AvB9HKGrYtEUXqXd2cVhO_kqMxAYFEyybUNTtjncamtOMJ9HplosGyFXyumYd7IBYaVJa=
+Y8H7gu1z6XUtX8yAEXWYzJOalSVuud_0OUS6RaqfC6sPCWfq8B4tpoShYNyv6Ohg9UMd_SVzFFV=
+Hg-qr3x8-1RZVH9XhZVQf3iVjH3nlmVWBULwiQV6idpPBb5YD3pc4lTjfSJJ_d-Xhl_X2zu83_S=
+v8ABloazU">Click here to read the full monthly report</a></strong>
+<hr>
+<p><strong>VALENS RESEARCH</strong></p>
+<p>
+Valens Research enables investors to use more reliable and comparable finan=
+cial performance and valuation metrics based on Uniform Adjusted Financial =
+Reporting Standards (UAFRS). Under UAFRS, as an alternative to the heavily =
+distorted as-reported financials, over 130 adjustments are made to 35 categ=
+ories of the financial statement elements for over 25,000 companies... Usin=
+g the UAFRS framework Valens provides investors and researchers with more a=
+ccurate numbers that provide a clearer picture for analysis or investment. =
+Subscribers to the database have access to Valens Research Performance &amp=
+; Valuation Prime UAFRS analytics platform, Valens Credit iCDS and Credit C=
+ash Flow Prime debt analytics platform, and the Market Phase Cycle reports =
+- our macroeconomic analysis driven by top-down and aggregate bottoms-up an=
+alysis.
+</p>
+ <br><br>
+    --
+    <p>
+       Robert Spivey<br>
+       Director of Research<br>
+       Valens Research<br>
+       110 Cambridge St.<br>
+       Cambridge, MA 02141<br>
+       W: 646-491-2601<br>
+       Rob.spivey@valens-research.com<br></p>
+<p style=3D"font-size: 11px;"><strong>DISCLAIMER</strong></p>
+<p style=3D"font-size: 10px;">
+This material has been prepared by Valens Research and is provided for info=
+rmation purposes only. The information provided is not intended to provide =
+a sufficient basis on which to make an investment decision. Information and=
+ opinions presented in this material have been obtained or derived from sou=
+rces believed by Valens Research to be reliable, but Valens Research makes =
+no representation as to their accuracy or completeness. Valens Research acc=
+epts no liability for any loss arising from the use of this material. Any r=
+eference to potential asset allocation and potential returns do not represe=
+nt and should not be interpreted as projections.
+</p>
+</div>
+
+<table><tr><td>&nbsp;</td></tr></table>
+<br><img width=3D"1px" height=3D"1px" alt=3D"" src=3D"https://email.valens-=
+online.com/o/eJx1jrEKwjAUAL_GbIb3XtI2HTKUUjcXxVmSvJSWtinYqujXWxBHt4OD49g6Ll=
+2bid4SEIJBRQpAk0TZAJa1UZjVoKqmgZ2GhxtjWvZzGvsUZZgn0VkDFD1jEbnlogDOPeQYA5MBR=
+eS9mKzSmkrIQdzssLgUuvimrfbslyAj38Vqv-ENLtXhdD7Oae3G15V_T3_FB2VQOFY"></body>
+</html>

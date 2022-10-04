@@ -1,0 +1,185 @@
+Received: from SJ0PR06MB7790.namprd06.prod.outlook.com (2603:10b6:a03:3ad::12)
+ by DM6PR06MB4618.namprd06.prod.outlook.com with HTTPS; Tue, 21 Sep 2021
+ 17:07:52 +0000
+Received: from DM5PR04CA0049.namprd04.prod.outlook.com (2603:10b6:3:ef::11) by
+ SJ0PR06MB7790.namprd06.prod.outlook.com (2603:10b6:a03:3ad::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4523.14; Tue, 21 Sep
+ 2021 17:07:52 +0000
+Received: from DM6NAM11FT032.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:3:ef:cafe::8) by DM5PR04CA0049.outlook.office365.com
+ (2603:10b6:3:ef::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4544.13 via Frontend
+ Transport; Tue, 21 Sep 2021 17:07:51 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT032.mail.protection.outlook.com (10.13.173.93) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4523.14 via Frontend Transport; Tue, 21 Sep 2021 17:07:51 +0000
+Received: from mail-il1-f177.google.com ([209.85.166.177])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QZS01CPONKW0JD0@smtp5.wiscmail.wisc.edu> for
+ ztang2@wisc.edu; Tue, 21 Sep 2021 12:07:44 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Michael
+ A Newton <newton1.biostat.wisc.edu@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_NO_HTTP 0.1,
+ LINES_OF_YELLING_3 0.05, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_500_599 0,
+ BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, HTML_BAD_EXTRAS 0,
+ KNOWN_MTA_TFX 0, NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0,
+ NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0,
+ SXL_IP_TFX_WM 0, TEXT_DIRECTION 0, TEXT_DIR_LTR_ONLY 0,
+ TO_DOMAIN_IN_FROM_NOT_SAME 0, WEBMAIL_SOURCE 0, __BODY_NO_MAILTO 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_GMAIL 0, __FROM_NAME_NOT_IN_BODY 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HELO_GMAIL 0, __HEX28_LC_BOUNDARY 0,
+ __HTML_ATTR_DIR 0, __HTML_BAD_END 0
+X-Wisc-Doma: newton1.biostat.wisc.edu@gmail.com,gmail.com
+X-Wisc-Env-From-B64: bmV3dG9uMS5iaW9zdGF0Lndpc2MuZWR1QGdtYWlsLmNvbQ==
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.9.21.170016,
+ AntiVirus-Engine: 5.86.0, AntiVirus-Data: 2021.9.21.5860001,
+ SenderIP=[209.85.166.177]
+X-Wisc-DKIM-Verify:
+ newton1.biostat.wisc.edu@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-il1-f177.google.com with SMTP id m4so23508189ilj.9 for
+ <ztang2@wisc.edu>; Tue, 21 Sep 2021 10:07:44 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;        h=mime-version:from:date:message-id:subject:to;
+ bh=aciu4GU3ozxINS4wKWzjrHQzftGyvEwcZY5NQUEVYX4=;
+ b=jSTxCc/T1zy+1ageac7hwp4gYo8udqC+oKIdp0Exw2rKo+Qt1mt9UcarZ8EM0f+k0I
+ iXvcUBXXwwKoBTI0IhxH82Z0sPz/Frjo7dR9WpErfg/dd3YYXtx8jfgAM9XDHldypTwT
+ 4Lg5UkNSo0t/hZJslL1u4cg1VrxEVCT6/sMogbYIdUu6+52ylnW22DzXqJZIhCOtDlTL
+ ipOCRUGgWHdCUe2Y/e2NPuzwq9npYzlu74L1FrGamzqI0yK7JCMfA8p6q481ClXoGhyS
+ iSRkD36aQwBJO7BCSYyxfMNZhxxoa3ySdwBYVyxCFm2byRhZpGgV9tS8C9OMjD6v0GYa
+ EaBA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=aciu4GU3ozxINS4wKWzjrHQzftGyvEwcZY5NQUEVYX4=;
+ b=V67IM21aaevzOjbchHYhDbGmJ5Fp2blrtvCjM4gkhI3oIV2aXKyiIoFoqq7yn2prw/
+ UeO8nPRTMhaI/MNPfhPyUsGKWSu8iMFn7e5PH7CDO2WFkjOp6WUdG93J9Sfin8yvZtrQ
+ z1tx5eWDzj8BwL9NEiw8UJkRgIjtR+CsM5rYaZT2f/TJuWy8BBrLkpFta/dSMBrtFbGN
+ ZkztsJKV082JL14ns+2Cmnz4Hd6tvs5f+cySTNvnglOMJ1tFyjZMNMAEL9Xbx6JZmTaS
+ DPBVvXRIb4vYb1t/8tIWgMuFJOyhro3KSgFF1QaPwx1vDaop/R6FcavDL67M+wLmpql7
+ PXxg==
+X-Gm-Message-State: AOAM530irNnOfqZwSI5fOZji6MRb6RBYxU/7rWqICHQ2xa9yGhhmug1F
+	urE7tObaS75l2MmYATN1vdUJFKY1PQERiP81FzrR7YiPGDiotA==
+X-Google-Smtp-Source:
+ ABdhPJzsN8EudkAgTzTfIU2/6ZyNrCh3FsZGEnjC+ftnT1p0vL6ar26TtJxin2GxAE2HCMgNKHFRuktgEox67feDNcQ=
+X-Received: by 2002:a05:6e02:1887:: with SMTP id
+ o7mr11808585ilu.12.1632244063830; Tue, 21 Sep 2021 10:07:43 -0700 (PDT)
+Date: Tue, 21 Sep 2021 18:07:31 +0100
+Message-id: <CAEV84VUGvBnvH9dM4-PPTwGq_0P9=HSRCJKfTACzaysBqypQ1Q@mail.gmail.com>
+Subject: What a moment
+To: "ztang2@wisc.edu" <ztang2@wisc.edu>
+Content-type: multipart/alternative; boundary=0000000000009c8bc705cc846f75
+From: newton1.biostat.wisc.edu@gmail.com
+Return-Path: newton1.biostat.wisc.edu@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Sep 2021 17:07:51.9056
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7d98c510-1852-487f-bdee-08d97d2258a2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT032.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7d98c510-1852-487f-bdee-08d97d2258a2
+X-MS-TrafficTypeDiagnostic: SJ0PR06MB7790:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:165;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Sep 2021 17:07:51.8256
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7d98c510-1852-487f-bdee-08d97d2258a2
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT032.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR06MB7790
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0727820
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4478.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(750131)(520011016);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?K2FMV3ZKbkUyY3djaUZUMEFIdFZweG1MdXdFZ0xCVUhwNDNDOU14Rk9vSTAz?=
+ =?utf-8?B?eDVuQ01VSEhJUmZZL3Zuam00OVdFdFZOMUE3dFhXUnB6UkZHTnFTY2RnanRl?=
+ =?utf-8?B?QzZBV0tMM1hUaVFlSEljUjRSTDJoci94Lzc5UXlUWVcxNGFXTDRwS2hjSklU?=
+ =?utf-8?B?bUFaM2JxNTByWVorVG9QUUUvZG16cGo3MXp4YU5uTTQwTGV6QjZDR0hxSDhE?=
+ =?utf-8?B?TzlGMEJneEJoRFh1VVlZNXBNVThUTWxVUFExV041eUZVNUY1OWtUb0h2QVhy?=
+ =?utf-8?B?c2ZMYTdhUVVIS293ZEZkSVptbzV6aUlEV3dja0dEN3NxVFRtQWh1NVl3Vlpi?=
+ =?utf-8?B?eWJrNyt6ZldGMUJMVHNMb2NHSGhGcUI4K3ZwV3poUUxSNG5QNUlNUW53cnVx?=
+ =?utf-8?B?a3hxWXZXdmdhZHl6NGttR2FEZzMraDkwZXdIOGRjVDZ0OVY0VzhQVlRsK2lI?=
+ =?utf-8?B?ZHQ5d0pEL3ZWbUtCenRMU0NWdm5RTTd6WEx1cUlpd2NNWFpjZDVBVk8wQU5w?=
+ =?utf-8?B?Q094U1Q5dG5lZ1ZKQjRYS2tNd2d0M0xwTFBXdVZSdzYwMG1YYXFHRlIrK3pM?=
+ =?utf-8?B?N09kdlBKR0RBWXlvL0FzSzVhdDdrbkdyN0VzVjdxbEd6WHZvTVIzd0x4a2tu?=
+ =?utf-8?B?NVBFRTBiK2hhUVE3K3BkWktYVVp4UDdIOTY1ZE9zdTBncTNRUmhDOGpHeHNm?=
+ =?utf-8?B?eG5tcU1JZ1U4dkxWS1Ywc01ZTE9LRE1COEVSV3JEOHNLQzQ0cVp4WXpYT2V2?=
+ =?utf-8?B?TzRWRHJtN0VrZmJkWVlVUEF1ZU9MbkhXdzJYZG5qYTVDcFNTWE1odjd6VzB4?=
+ =?utf-8?B?aFBJMGFVai9sOUpKOWk5MmQzV3JZQzlFT0hUc2hZb1BkbHZGYTFzK0x1dkNF?=
+ =?utf-8?B?ZEk2SG5vQVo5Q3p1UWNWQVdPZndmZ1plQTEzeWFmcHZPRDhPZEFoNkdwOThz?=
+ =?utf-8?B?elJNYS83aHdremRSS0w1a2R3MDllMENSMWh4ZW9Sc2tGNmtzdGxENzZ0bGd6?=
+ =?utf-8?B?T0lHQVdUTDB0b1ZDdjhWbVRtYW1GbFJPRkJmZkhjNk5SUjZjQk4rZ3hFK2VX?=
+ =?utf-8?B?TEpCSzB0anRReWtXRTdxeDFkVHBsZWo0TVVJeisvVVh0Tll3S24vRGdNb0tZ?=
+ =?utf-8?B?aVJRUDZZVmtFcjlhUGhVZmN1NXpMcmFWVExpZFhsVUVNN2tId3Y3UnVPVlFB?=
+ =?utf-8?B?TFdrWkxnY2IwYUgzNktRN1pCQjlNS1QraHhKQkFjNzFhSVR5LzJsNlhnR3FZ?=
+ =?utf-8?B?S1FvSUNENHRPY3RNdWRMSUMwcmpjYklIUmtZUkRnYm5LcURYbEZ6YjVMUjlh?=
+ =?utf-8?B?WTBobWc0UzVzZXdjWVEwUzdEc25GWDVZYzBtcFpNZ0I0aHVYeXJKNFJHcHU3?=
+ =?utf-8?B?ZDE2SnNDZmlOd2lFOGNnNVVHVTZFdlcycFR6a0hSR2ptMUNOSzNGRWI5b0ow?=
+ =?utf-8?B?ZXJhVWdKZVk4VnZJQkZHOFFZNU5xTHZwR3NDNHptZUlJOVN5QWtoOWhsVHBa?=
+ =?utf-8?B?Wi9aY0QvSldqaXpnLzVHU21GM2ZJK05QajJuWFE2R0FUMk9mUG81ZVhuS3l4?=
+ =?utf-8?B?WGUzUXhKWmRrWXlYd0U2Mm9xbDEraTBTOWFoSVZuMytmeStuNlpFbnFSU00v?=
+ =?utf-8?B?MFBNZUdRNUxEeEVkTStEWlJPcER6VlBLb2RpT2NQZUhKeTNaZTJ2M1hSSURD?=
+ =?utf-8?B?N1ZiNXFlRm5WWmlhYWk1bTBrRXVxMU05dlZJVkJ5dXlzN1BzMGt1TUVHYldP?=
+ =?utf-8?B?NzhGVkw3ejFtSHZ0TU1ZNjYwRDhaU0JPM1VzK0QzUVFQZnVBTDZScElxYUk5?=
+ =?utf-8?B?NUx4Qll3dVZDa011QXByYy91UWNERDk0UDdpT0NKYllmU3grVlJLRTdTLzl6?=
+ =?utf-8?B?aDZTRFpSS1poZk9jNTd1K0I2ZkZiRnJ1aWc4MDBSTzhnVVlKQ0YwTDRQcnhN?=
+ =?utf-8?B?RlIxZVRxTElVMFJDbGs4Vkk2YTlpSXdUTEtnNWFqU2ZKN1E1UTZoelB2c3Vs?=
+ =?utf-8?B?em9DaUg0UjBweVU1TVREODZkd0diNEw2WGYrRklCKzF1TzhBRkQvdUhVMmtP?=
+ =?utf-8?B?dUFubExwN3dxYmg2dVV3WHR2T1RZeFpNVjhib1lUVWFqMjR3SElLKzhYRkR4?=
+ =?utf-8?B?bm8wMDBMY24veUxYeHpsUjdlaGFOWHQ2U0plUERpSFBIUVF0blcvdjl4RTlM?=
+ =?utf-8?B?TzYzSEljSHdmRW5kOUNkSHBDSzRubkk5Ymw4WVZwRTJhYXg2TTlNZktWOG0y?=
+ =?utf-8?B?cG5ydFIralhobjhpU09SUWE4TDNVTmdFL0V5dTRONndydGc5T1Avd1B3bCto?=
+ =?utf-8?B?L0doeVFSM3hjeVhwa3dXM0VOU3F3RUk4aTVjUElvamhqRGtYNzV4N2RYTzJV?=
+ =?utf-8?B?dmExQ0paVVM5OGpuVWwvS0x0S1p3MkFBS0ZXYW42RUlzK251S3NidDNVYXJo?=
+ =?utf-8?B?R29nYkd0aHM5K05EVlJHblQ5bEVSUis0L3BIRzI0Ky9XZGF6clFWT1g0eTZY?=
+ =?utf-8?B?OGxncjg3SWt1RFhCUnJEUzE3ZGxVa0tIRExyUnJUNE5zVGJDMzVTQWs1M1l2?=
+ =?utf-8?B?ajNLVWJPTlR2UEIvQUFYZ0VjdWk0b2RGTk1HNTYyV2NtWmRWbXFWdFk5ZGpM?=
+ =?utf-8?B?Ymt0dERZcmdUbXZ5WkM2d20zODNQTGJBQVJMS2pZRG5VbGRhb0xFaVZaaUwx?=
+ =?utf-8?B?QkpXV1hUNDBZMzN3cHFqRzNLM3FnWGVHWlJpQmUxMDcvUzREOU9RUDhpSWhO?=
+ =?utf-8?B?elZkYUloQVAvdVg4N1dSNUQ0SHVVd2JISVNzMTkrd1FDbGJ0dW92WDZ1Wit6?=
+ =?utf-8?B?Z3pUeFBVeG94RWN4TUVqYmNCYk4zamlLT0xkanZtUkJQNTlHOElsakRoK1RG?=
+ =?utf-8?B?djZUbnhFWnFaQzhkb0sxeWlYOVlHMG9vYVBYQmp3UGVPUysvQXJzdk5UbWpZ?=
+ =?utf-8?Q?lTScHLX1d7Ywnt/3?=
+MIME-Version: 1.0
+
+--0000000000009c8bc705cc846f75
+Content-Type: text/plain; charset="UTF-8"
+
+Available?--
+Michael A. Newton
+
+DEPARTMENT CHAIR AND PROFESSOR, DEPARTMENT OF BIOSTATISTICS & MEDICAL
+INFORMATICS AND DEPARTMENT OF STATISTICS
+
+--0000000000009c8bc705cc846f75
+Content-Type: text/html; charset="UTF-8"
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">Available?-- <br><div dir="ltr" class="gmail_signature" data-smartmail="gmail_signature">Michael A. Newton<br> <br>DEPARTMENT CHAIR AND PROFESSOR, DEPARTMENT OF BIOSTATISTICS &amp; MEDICAL INFORMATICS AND DEPARTMENT OF STATISTICS</div>
+
+--0000000000009c8bc705cc846f75--

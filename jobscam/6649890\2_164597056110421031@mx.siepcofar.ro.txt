@@ -1,0 +1,156 @@
+Received: from MW4PR06MB8346.namprd06.prod.outlook.com (2603:10b6:303:129::19)
+ by MW5PR06MB8931.namprd06.prod.outlook.com with HTTPS; Sun, 27 Feb 2022
+ 14:52:34 +0000
+Received: from MWHPR11CA0017.namprd11.prod.outlook.com (2603:10b6:301:1::27)
+ by MW4PR06MB8346.namprd06.prod.outlook.com (2603:10b6:303:129::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5017.25; Sun, 27 Feb
+ 2022 14:52:34 +0000
+Received: from CO1NAM11FT009.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:301:1:cafe::6f) by MWHPR11CA0017.outlook.office365.com
+ (2603:10b6:301:1::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5017.22 via Frontend
+ Transport; Sun, 27 Feb 2022 14:52:34 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ CO1NAM11FT009.mail.protection.outlook.com (10.13.175.61) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5017.22 via Frontend Transport; Sun, 27 Feb 2022 14:52:33 +0000
+Received: from mx.siepcofar.ro ([91.208.123.5]) by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R7Y03LK5XBJ4K10@smtp6.wiscmail.wisc.edu> for
+ jmmitchell@pharmacy.wisc.edu; Sun, 27 Feb 2022 08:52:32 -0600 (CST)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Thomas Sa"<dona3@farmaciiledona.ro>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=25%, Hits= FRAUD_LITTLE_BODY 2,
+ WEBMAIL_REPLYTO_NOT_FROM 0.5, FRAUD_WEBMAIL_R_NOT_F 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, HTML_00_01 0.05, HTML_00_10 0.05,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_100_199 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0,
+ BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, DKIM_ALIGNS 0, DOMAINKEY_SIG 0,
+ NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0, NO_URI_FOUND 0, NO_URI_HTTPS 0,
+ SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0, __BODY_NO_MAILTO 0,
+ __CSHC_NS_B_FN_FA 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __FRAUD_JOB 0, __FRAUD_PARTNERSHIP 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_REPLYTO 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __HAS_FROM 0, __HAS_MSGID 0, __HAS_REPLYTO 0,
+ __HEADER_ORDER_FROM 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0,
+ __MIME_VERSION 0, __NO_HTML_TAG_RAW 0, __PHISH_SPEAR_STRUCTURE_1 0,
+ __PHISH_SPEAR_STRUCTURE_2 0, __REPLYTO_GMAIL 0,
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: dona3@farmaciiledona.ro,farmaciiledona.ro
+X-Wisc-Env-From-B64: ZG9uYTNAZmFybWFjaWlsZWRvbmEucm8=
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.2.27.144516,
+ AntiVirus-Engine: 5.89.0, AntiVirus-Data: 2022.2.27.5890000,
+ SenderIP=[91.208.123.5]
+X-Wisc-DKIM-Verify: fail
+X-Spam-Score: *
+Received: (qmail 1039 invoked by uid 507); 27 Feb 2022 14:02:41 -0000
+X-Qmail-Scanner-Diagnostics: from 127.0.0.1 by mx.siepcofar.ro (envelope-from
+ <dona3@farmaciiledona.ro>, uid 89) with qmail-scanner-2.10st (clamdscan:
+ 0.97.4/14770. mhr: 1.0. spamassassin: 3.3.1. perlscan: 2.10st.
+ Clear:RC:1(127.0.0.1):. Processed in 0.028312 secs); 27 Feb 2022 14:02:41 -0000
+Comment: DomainKeys? See http://antispam.yahoo.com/domainkeys
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;  s=default;
+ d=farmaciiledona.ro;
+ b=lY0KOXOdxCqBsgtPUeJuq7RtRicLTvGriOCLTHTCuxKsE8aUafaTAh8Btdpxrz+jD5FMgfi2bynk8RCJG5Zj1z0biwMhzA4iHVBvCaxmJFaHjH4RODt6ZC+3ff+Ah5J/DQPZdK4RSqG0G613VPbOv8rIpqAIu7plC4B3oVIwTbM=  ;
+Received: from unknown (HELO ?109.237.103.58?) (127.0.0.1)
+ by localhost with SMTP; 27 Feb 2022 14:02:41 -0000
+Content-type: text/plain; charset=iso-8859-1
+Content-transfer-encoding: quoted-printable
+Content-description: Mail message body
+Subject: Job Offer
+To: jmmitchell@pharmacy.wisc.edu
+Date: Sun, 27 Feb 2022 06:02:47 -0800
+Reply-to: llbeaninc1net@gmail.com
+Message-id: <164597056110421031@mx.siepcofar.ro>
+From: dona3@farmaciiledona.ro
+Return-Path: dona3@farmaciiledona.ro
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Feb 2022 14:52:33.4427
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 709c598f-04d8-4f87-dd8a-08d9fa00c955
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[91.208.123.5];domain=mx.siepcofar.ro
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[91.208.123.5];domain=mx.siepcofar.ro
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT009.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 709c598f-04d8-4f87-dd8a-08d9fa00c955
+X-MS-TrafficTypeDiagnostic: MW4PR06MB8346:EE_
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=109
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:RO;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mx.siepcofar.ro;PTR:mx.farmaciiledona.ro;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Feb 2022 14:52:33.3021
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 709c598f-04d8-4f87-dd8a-08d9fa00c955
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT009.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR06MB8346
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6662186
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5017.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?FlYotAoPqZZH2I3nnuNoCD5+UcNLVmunxHrYS0WE1PH/ru3H+CIhIcrZfn?=
+ =?iso-8859-1?Q?vyQz3tBGZ1r2a7Dsw2WSVWdkP7yrCFBbg+d8GKoXiONbdUugUPLwIotZBq?=
+ =?iso-8859-1?Q?fNr2srGS1mYZICKAMI/Xcang1DjoKWC6+GN856BErjXuVk6DobQtN6nn3y?=
+ =?iso-8859-1?Q?HIlrgmFw8cUiojkQKoAs838MpnfO/+3o0hjCAXINSJGNd4k6sojmYHj/tf?=
+ =?iso-8859-1?Q?U+JjlOMTFkwvY4+FNbyzl1RqNHqsPbct7seBpIS7dAczWp5enlMKwrjiQi?=
+ =?iso-8859-1?Q?gBm2TxqUVSvz/ejdxovra22QwOqsSo3zY8EDmdSxcghylPNm3lFgFoE6IJ?=
+ =?iso-8859-1?Q?qhaiuXmjQOGvPSCQLlp5ujzxggzncwGMvm5DFVm0+uF5fpgGiW8xG1CmTx?=
+ =?iso-8859-1?Q?qzHbbOBRIzhIgqJkqN/xaYQRZkxEJMQeyVziWYRF1SxyM9/kVyppIn8OQX?=
+ =?iso-8859-1?Q?bSPxEN/l3HzJaJ9S1G6M7KVCxkr2VhQMHiGALlRU3bsi6Sz+v8dxxlNGxe?=
+ =?iso-8859-1?Q?xaNarGzsRoTDAaTvWXTJmo6EC5+EGgu0VTg91ClH8sXEEuXokd/1VkbJRq?=
+ =?iso-8859-1?Q?7xgvmKfoKmvX8whjppOXhfYSvmcaEqT4ZsIYzlSTbpqGKnHAkLML8L1yNW?=
+ =?iso-8859-1?Q?78skPUDd7quT8SHFJ4Mh/ipMx7W5TDYXdS9MNEKS31A46EcDhZAmtFAig/?=
+ =?iso-8859-1?Q?mSuh+S2YIJsYswsweN2NqgmmEUDzpydN3XsLPfX1N+WjnlIwi7/ghcPsy6?=
+ =?iso-8859-1?Q?JhL2GmKCzYTnfMjKG5LB2p94n/yRenlgXZ4RBjGusPh49gnRnaowY5fHrT?=
+ =?iso-8859-1?Q?JDQiS/ymYWMD6bJ8+JR+ygdh4TnM8jRNfM5tLI3AayrU2msvl8i3hYUtAT?=
+ =?iso-8859-1?Q?6q6I1vu0douOfcT9eiQUjSYxCSZNE08meC24q3dQdPI+s7hn11ulpVpBFH?=
+ =?iso-8859-1?Q?lyTOKzy7t1TOBXmfr91+T4SU25eIjmoVrvlgvyo7RN0BuNb63p/mWa9bH6?=
+ =?iso-8859-1?Q?pohHF+WyHICU6LOt+lRkV7+xhXBlltWZ4a8g3oIfqElYxyW4h5LW6MeHg7?=
+ =?iso-8859-1?Q?Q1g3+15zqFvHBGCiFHfEjSbxcRWNYIcxUCYw9gQnWE5NoIReRLHGcTOMY3?=
+ =?iso-8859-1?Q?GgivvMGDNsQ8/maG+Td7XMgjI93OwMytKBQXxNAn5SKqo9ymdF8t4+QhA7?=
+ =?iso-8859-1?Q?OUdNAtdKh+wOJyxF2tCs4OH+TTw+2fi0+5/FdXsCw+S7PXrxD5p747H+M8?=
+ =?iso-8859-1?Q?P2wlgVV/4e09bcWbtXyJdgGz7X4wLgh1+9fMDbUFfo1F80YU2d8QtQ/0zq?=
+ =?iso-8859-1?Q?XgTZHFixJiHw+X7hvgtF8Ib+EstmD73tZHTC2QL+4vkzbMlYcQdt5Fz4QM?=
+ =?iso-8859-1?Q?vdgeQ9qPamMhpiJK5BGX23bmByvUx3JggpJrCEMgd/IoGTqRUCoEprYo2O?=
+ =?iso-8859-1?Q?ydohynsK2xubGcwtUvB2apwBxgY14wSQM4W7qSoMYAGcaEv46yPWfpwuCF?=
+ =?iso-8859-1?Q?s5qKPIHQFUE+jAR8xfUzGUEwwqr8tqc4HbDLwBinRza72OTIcHATCQjAag?=
+ =?iso-8859-1?Q?yBe2RBnkZw7UWi/bQa4At43HEYlLBvvqonZkRDwb/0kIlYkeeQDL8zxk2x?=
+ =?iso-8859-1?Q?YPc1wA1RehRtJkHxEEqFdOs4xn7WQ8WevjZikAUjnEbsmVKbqapKKN5MvF?=
+ =?iso-8859-1?Q?cUrzZiWG7nehaqCc6zt7xxWimL1d1kphIA5fYfOjk1lJ0KgcAGzcrqSf6B?=
+ =?iso-8859-1?Q?itOgge2ffxQc9lbgSx7oCG2G1FkoORJUhLvCjq6f8nDibkKaHnmkVQO/FR?=
+ =?iso-8859-1?Q?8naiqrxDm9FM+7nV4Qi05e+NrYVVvAobqDE7e9/mCln0hmiXArGvhLXEJH?=
+ =?iso-8859-1?Q?zy/vSvjRrv7okQ0hPG1MeFBRHIqaqfdfJ0A4MJXzVbPMEW5KkClG0rBZD+?=
+ =?iso-8859-1?Q?mfdMfzSVJWt/mGYG//jp8y7sQqg3Kh90q4F2elAR/jxc5fRDwzdEHategc?=
+ =?iso-8859-1?Q?eWZTaHOkxyCyNX9kKy8yDH67xWOlMtbOubIb4uD7n7S/eNUcRTjByO8W0r?=
+ =?iso-8859-1?Q?B4032dC1CwhsxIsD4YR/MAiACf8dMWzanc5MzYpdZOPmXLD8BNysuf4JWR?=
+ =?iso-8859-1?Q?e8BwioGCNT+kL5rUyWXI666VIVYIngx2VMWe1TZbbGNUfdZ6mzu+gOSSxV?=
+ =?iso-8859-1?Q?RMcyFdapFlIbuFafOHIl/CIuifaUDNsVNmL9z0EpC4Vf+g4DBDEYiFFJh8?=
+ =?iso-8859-1?Q?IDhgeXy6MKdCAU0fveku980blWhZ2pSlL6vd49XN4gBZVoKCmx/dHIlzpn?=
+ =?iso-8859-1?Q?9Q4P8Q92hSg0zYs67qF4AjMJ9nvmTbk7elhA?=
+MIME-Version: 1.0
+
+Be our company representative in the North America Region with an
+attractive commission.
+
+Regards,
+
+Thomas Sa.

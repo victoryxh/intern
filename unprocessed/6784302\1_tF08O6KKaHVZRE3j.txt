@@ -1,0 +1,237 @@
+Received: from CY4PR0601MB3617.namprd06.prod.outlook.com
+ (2603:10b6:910:8e::11) by DM5PR06MB2651.namprd06.prod.outlook.com with HTTPS;
+ Mon, 15 Aug 2022 21:07:53 +0000
+Received: from DM6PR10CA0002.namprd10.prod.outlook.com (2603:10b6:5:60::15) by
+ CY4PR0601MB3617.namprd06.prod.outlook.com (2603:10b6:910:8e::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.14; Mon, 15 Aug
+ 2022 21:07:48 +0000
+Received: from DM6NAM11FT080.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:60:cafe::69) by DM6PR10CA0002.outlook.office365.com
+ (2603:10b6:5:60::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.14 via Frontend
+ Transport; Mon, 15 Aug 2022 21:07:48 +0000
+Authentication-Results: spf=pass (sender IP is 104.193.254.55)
+ smtp.helo=dcacinc.com; dkim=fail (signature did not verify)
+ header.d=gmail.com;dmarc=none action=none header.from=;
+Received-SPF: Pass (protection.outlook.com: domain of dcacinc.com designates
+ 104.193.254.55 as permitted sender) receiver=protection.outlook.com;
+ client-ip=104.193.254.55; helo=dcacinc.com; pr=M
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ DM6NAM11FT080.mail.protection.outlook.com (10.13.173.105) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5546.7 via Frontend Transport; Mon, 15 Aug 2022 21:07:48 +0000
+Received: from dcacinc.com ([104.193.254.55]) by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.16.20220118 64bit (built Jan 18
+ 2022)) with ESMTP id <0RGO02S05DCVQVD0@smtp6.wiscmail.wisc.edu> for
+ guzmnprez@wisc.edu; Mon, 15 Aug 2022 16:07:46 -0500 (CDT)
+X-Wisc-DMARC-Fix: From header replaced to align with DMARC policy.  Old value
+ moved to Reply-to header: Dicks Sporting Goods<guzmnprez@wisc.edu>
+X-Wisc-Spoof-Check: IsSpoof
+X-Spam-Report: IsSpam=no, Probability=20%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_MIME_NO_HTML_TAG 0.8, IMGSPAM_BODY 0.5, HTML_70_90 0.1, AUTH_RES_PASS 0,
+ BODYTEXTH_SIZE_10000_LESS 0, BODY_SIZE_1600_1699 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, CLOUD_WEB_HOSTS 0,
+ CT_ENDS_IN_SEMICOLON 0, DATE_TZ_NA 0, DKIM_SIGNATURE 0, FROM_EDU_TLD 0,
+ FROM_RCPT_DOMAIN_NOT_IN_RCVD 0, FROM_SAME_AS_TO_DOMAIN 0,
+ HREF_LABEL_TEXT_NO_URI 0, HTML_BAD_EXTRAS 0, NO_FUR_HEADER 0, SPF_PASS 0,
+ URI_WITH_PATH_ONLY 0, WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0,
+ __ANY_URI 0, __AUTH_RES_DKIM_PASS 0, __AUTH_RES_DMARC_PASS 0,
+ __AUTH_RES_PASS 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CANPHARM_UNSUB 0,
+ __CLICK_HERE 0, __CP_MEDIA_BODY 0, __CSHC_NS_B_FN_FA 0, __CT 0,
+ __CTYPE_HTML 0, __CTYPE_IS_HTML 0, __FROM_DOMAIN_IN_ANY_TO1 0,
+ __FROM_DOMAIN_IN_RCPT 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HAS_XOIP 0, __HREF_LA
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: ,wisc.edu
+X-Wisc-Env-From-B64:
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.8.15.205424,
+ AntiVirus-Engine: 5.92.0, AntiVirus-Data: 2022.8.15.5920001,
+ SenderIP=[104.193.254.55]
+X-Wisc-DKIM-Verify: ,gmail.com!fail
+X-Spam-Score: *
+Reply-to: Dicks Sporting Goods<guzmnprez@wisc.edu>
+Received: from 10.226.14.43 by atlas107.aol.mail.ne1.yahoo.com with HTTPS; Mon,
+ 15 Aug 2023 13:33:40 +0000
+X-Originating-IP: [209.85.128.182]
+Received-SPF: pass (domain of gmail.com designates 209.85.128.182 as permitted
+ sender)
+Authentication-Results-Original: atlas107.aol.mail.ne1.yahoo.com; dkim=pass
+ header.i=@gmail.com header.s=20210112; spf=pass smtp.mailfrom=gmail.com;
+ dmarc=pass(p=NONE,sp=QUARANTINE) header.from=gmail.com;
+X-Apparently-To: guzmnprez@wisc.edu; Mon, 15 Aug 2023 13:33:40 +0000
+X-YMailISG: nQ6hnj8WLDvJceSwuQIw3b7wwXg56l_DF.cV2iJlpCWWqlMT
+ Uh40ZDs1VEvW5E0A3kiNKyHg8qgfSLZaYbfwgCeXlKpCroJ4vZ6W4PR6dw1H
+ D3snl1OL.kmbIBSXudWqhDsRtlQt5wxTtAvsY189XqLaySlqBJpvbgP53JWM
+ t2KgEghcskjw848SbmwKCR9IIbBvqcqkmowNSutVmFYa.UnnHGfJVpSeSX6P
+ ztM0RQKBxjKULhJ7510zBcRlZ._HcFk7uRtLwZhTjEYlr1eXdke85oJaQ8T2
+ oKaBxDnvSZgj_T5lU0wOH9gTdnQHnBCFzAbe785ja1QuSEmdAxRsOEU9diOw
+ 8kCaSTmLQXZJUVpWL3IDYuxOvXvEHRD.ykTTPH8SMF52Y1ObBIPjTf0YB.CJ
+ 4ppcdgjidRnOgkdgrRmVS8aI.Gp4HLHGQQADlCDpQPfcqZ.TzpQFv2KdQdkv
+ 08f3ubLFLCZZH0X0nw9DiqO_WkPDVAwjaqQxqtY6IqJ4PuUaGVK3B35oyee8
+ h81UFuP2aGy.1yRtBLOP6COdbaDH1A5LL_KCBjUtw0TfCaF_h7z4MEQN9NsV
+ ZRtH3VNsSmvypGVy.uYb3gKggVcE3xLwzdaZibzYvS5d6Rn_QK7mN1ikoAjn
+ KPJ_TUxHZrYPJX7WY67ca8wyNIeloJMo_kGS3Al.KlmCcBEAFTu3mUsH0350
+ S.FUH3DOWeM.eu.n2GZttBGTcGC.PfxjorxJnKJgy9iewoOtPHA2hEj_M6ji
+ F8P4hbXFAG3gmW9yUrbJ1as7Yrojl2WlgA9tCkPs0FG0lrrzYFnJd_fb3R_5
+ vqroHqf09toqt1gREiD97ndDCzFH5WHrhMmdPDswejPlbEneKOQFiCuc2CZU
+ gPwXEMrQgsMSUgp58K578idfVMG.Eqf6cGvk1UOEohXP8TOGKAGX0LIkSNsC
+ whY2DAYFpXEhjFJSe.OrNQndD8GTyAwy0DGxp0Lyz9wz4AN1v2.sx3QxyoYi
+ MpQmzJdN0mGIBY5ctOvS3wnwVjSLgFCqzFw5O5TO2rbMppjv_1Ix_xZrSWK2
+ 6YTAIZARVxJ3vNPkZC.KEWsDuCxBZwuqAQOMFMqaASkv1d1l_nizWHh3IUqX
+ w_oilnEJwHvXvSrl0WchEbvTgN4J2pHHFmpMLTUkrHnNOqV965FRbNcQtzuP DURPxCCE9g--
+Received: from 209.85.128.182 (EHLO mail-yw1-f182.google.com)
+ by 10.226.14.43 with SMTPs (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256)
+ ; Mon, 15 Aug 2023 13:33:40 +0000
+Received: by mail-yw1-f182.google.com with SMTP id
+ 00721157ae682-31f445bd486so72237097b3.13 for <guzmnprez@wisc.edu>; Mon,
+ 15 Aug 2023 06:33:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;
+ h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+ :from:to:cc;        bh=XJgFRqVZnE6ZxDUvCTXGPZwwkOVfx3TjrJ9tNB/K8uc=;
+ b=jZ5dE+BeHFX4ug8/atzdDiZ+FJGNrCJhWzjtXvdX0Hi5/KY5EHuV29xmGzTzBJv14V
+ CsssJ7cRrnrDf/qIRVISct6ppyMY3vzyxMzhbjtS9Pp8GgcMJr2Pt8kllzPCRNXYVRJt
+ CguJEEpiI+d32QdC7DN02pshtuzkx3BHk1Zi89PCfHMVtc+qP4cF+/BolCPyXXzY+dD6
+ LWfGe7I4DarLSYyJStR4x7kWD7xE9Wh4+Jtea5Nv9FGh+fBa/nlJNNpzxbS2bdosC9jX
+ 0HWa0t9qVTYol+l7PAq3HfrpZpxJEonJYnahxXqZiXqaEXu8ckTWHkUQCsWcAYfAub5d
+ v2LA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+ :x-gm-message-state:from:to:cc;
+ bh=XJgFRqVZnE6ZxDUvCTXGPZwwkOVfx3TjrJ9tNB/K8uc=;
+ b=Ale56fQfWEm8wur7gZVk84n/qbVTntd84l6C3lDGidaJP1WoFdXCG9OR55+BKnptlY
+ PGovsfMzO9kCZfM63PUPyFKLlpGTa1bnhtVLsrYbZPACcjlNfFsYCaLJT3w7a69U8vtz
+ 8L+fQSrkS9Y8cEFe0sQLTL9BCNFRDZbGcvDG6MlVz3JmLn7j/ag2zyYwKe7VD1X7nA36
+ dI8Qs+HAoqmscqs1dbp2yr0y8/33isIPo+TYqvnZaeSMKPZHVs5poqshYtUY4fyBzRNi
+ dHbaVETu0vjmT9dTi0YjaNbggvAGpPsm7EP0XkRJsusWb0T/gfIkQEL0njZpqcxPoiWx
+ FXyw==
+X-Gm-Message-State: ACgBeo0WkYEFpntqJSZn3P1ZNldGAWSV2UuFw+C96LqG50hbXgPGwkJo
+	YODwzGSdKCsaBW44C4g9Ap6Dx1l6jBu+5xep/ShuLNpo
+X-Google-Smtp-Source:
+ AA6agR4algzqk9tXvkMrRioTlWNfTiNwNFaqr/vfuQDAPl5uR+DRRS7fhWP9GCC9Yf+0E1zwehYpMqO+NlJaa2bKyK8=
+X-Received: by 2002:a0d:fac4:0:b0:329:88ec:a09c with SMTP id
+ k187-20020a0dfac4000000b0032988eca09cmr12633886ywf.175.1660570419636; Mon,
+ 15 Aug 2023 06:33:39 -0700 (PDT)
+Date: Mon, 15 Aug 2023 06:33:29 -0700
+Message-id: <Yw9J34ZG0Qu93cO+KzRtTElZvZcglm_D17YBouUAIwGLvMgGIZ0@mail.gmail.com>
+To: guzmnprez <guzmnprez@wisc.edu>
+Content-type: text/html;
+From: <>
+Subject: [CAUTION: External] Back In Stock! YETI COOLER..
+Return-Path: <>
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2022 21:07:48.6981
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a33e3e06-229b-4bb3-f095-08da7f023548
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender: ip=[104.193.254.55];domain=dcacinc.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[104.193.254.55];domain=dcacinc.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT080.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: a33e3e06-229b-4bb3-f095-08da7f023548
+X-MS-TrafficTypeDiagnostic: CY4PR0601MB3617:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:dcacinc.com;PTR:.;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2022 21:07:48.6043
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a33e3e06-229b-4bb3-f095-08da7f023548
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT080.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR0601MB3617
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.2408989
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5504.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944611166)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?TKmzAtdyzQRmWz7zx6S+W/TmKuAlmlprWBUsgAYyg9+Kkaox6YEodq9/OG?=
+ =?iso-8859-1?Q?NvgJUh8NRftUqpD5aLC2k2C0oazpFiSKRQ9LsZ7ehagp9mc2xA0DcGmE7z?=
+ =?iso-8859-1?Q?TnK5n8cEzSxmxMbbCl59Kx4r9xLGDPoXZpLjcdlnqMpRmTUPREM33na1xY?=
+ =?iso-8859-1?Q?XabbCbjS1c+26B5JDX0nGL8J0brylOTkxoYCgvfTMPkSzFzurpIbG75M4y?=
+ =?iso-8859-1?Q?DtZgJJDPbslfV9c84gPebTx/TDDviYICSoD6GRxMHq3FpUnVLcfI5hUUUt?=
+ =?iso-8859-1?Q?8fc9XDli22dlY4ar0VsIDPg1y+jQ0AF3+bUA+4U86BBvj3SalabumhyE8o?=
+ =?iso-8859-1?Q?XMlzhrPCv1dnaNZe3tMCAdTAWvxhwcv/+Luc+ImKR4qrizDAK2k/TjoNC2?=
+ =?iso-8859-1?Q?ocu1liNeKl6TdYB7JdleMmaC9etdvehtgBkULxSN9KQnBV8sMaRukFdWBx?=
+ =?iso-8859-1?Q?nVjKAfhz5xfkJmJ21629YJbL9/reT8+WsrlOWFDRolrcZp2gB9JtqD8TSa?=
+ =?iso-8859-1?Q?0jygxWl/Uzfgx+xMrvGoNaxCCBHhpHvRzXeiZIfXYQIzB8ODGOucsD/r85?=
+ =?iso-8859-1?Q?lwRVQhUkTMAYLIVnjVtB2zTb/CvQEe+4u2J4rxmUBuJe5z/WXy5gU1Eemz?=
+ =?iso-8859-1?Q?CWMfcyl6Uu+JnCGSAndls2RZU3QqAiG4Cr9f+zUaUMjMLN7dY7a6S3CEg+?=
+ =?iso-8859-1?Q?26hHUddmikZscYuaLd1Dxky9M2x7rbPdNtkq9ZchF4YRyyOYyggty4Cwoe?=
+ =?iso-8859-1?Q?pu9bSQA3x3UmSM0SlUmPGK7rqBCV+tvJv+sYeAbMNnwaSnZfiS/X5hh9BN?=
+ =?iso-8859-1?Q?0VAmxAaoBeoNVjry4oBvXN29OSW7Otwh+WBsV5UjvK3Oxy6/AaTKQ3g9+E?=
+ =?iso-8859-1?Q?uI30gN8HSALSuzqZWvX0j5Bo5uWULNpOz7hxGVnPOkaGqZQsW6CksTFZVX?=
+ =?iso-8859-1?Q?Zm8oNgtUTNu6WrZFokSlyKj2aErqHYLXChI+QwN0p45bfgGQ4uB3pFLMMJ?=
+ =?iso-8859-1?Q?i/3upVGl3z9oWTeZ+Jbnd/MG5INsJIWbI+zyTgrvs5oaCkpzm/ynSk8TAO?=
+ =?iso-8859-1?Q?Tx/O5T+ju05ZOJze+isfyOdvCjUwGrPFb8uua+NawSPNAiaqID0tsniqOp?=
+ =?iso-8859-1?Q?VkA37kmdLOCtjgasiYoI4wONa8WcxK5+FFcgAVQn0C0s2D9DI39fhk9EYW?=
+ =?iso-8859-1?Q?6BLccJxxdzdXbsZp2903BV5TxSR8yJ5q8WjxdgNHjhJSf1JesTNyrDqn1Y?=
+ =?iso-8859-1?Q?oM77FzCahS/B5tnY+IZ/Sifk6tl4gQtQyonfbR2xG9VdIpicg+rDtXib6d?=
+ =?iso-8859-1?Q?/Bug5aNf0C15xRH5rcjLpWbj8bYo0I0rdlmuHfzbqYXg2yO6QzRP7wliD8?=
+ =?iso-8859-1?Q?RKkga/taijdOSViglLpGSIjWLVKZ2KNK/iJfhvkFHnOYEaBHVYii2wpCxx?=
+ =?iso-8859-1?Q?s8GEIPkXSkijPVAM7TFq5xLVUdxW+h6NpdBhZaNz003UBDTIhSpElmetMs?=
+ =?iso-8859-1?Q?YPNLJlFIEL2o6Xe8P/CyuSJjPNtDjnXECUikrTOo+X20hDbgNpLX6xQnJk?=
+ =?iso-8859-1?Q?D6MeuXdheeWRjlGmjIo/s4RUrZwjQ6CxRTd9J1KQfIgt3DXZN8xqPV1hKZ?=
+ =?iso-8859-1?Q?mQmuspU1C4BktZBcoVrlm9fz+IWj0yP3T6+9S6MTq/DNSmdHXcGvT+c4VM?=
+ =?iso-8859-1?Q?XQmvfTN6ZjK+D6cs12iyQqv0IU/PmspCJU6Jk5dOX3kiuADg8uKZNRtc4u?=
+ =?iso-8859-1?Q?aDIExQdL1/b0bZQb6Fz5OqscZOT7CPC/oCRS1BssZ6eXY/CCGwGaBsCRLc?=
+ =?iso-8859-1?Q?EYhEQZlPN9TQaKtmrVuC2vNzf8VU9TPi5vbm2CmK+cCjbFwy06oqikmJX3?=
+ =?iso-8859-1?Q?UKNd7EqfsnOPedq7jl6pFCPJGwxM1bTsGcXd2I4+eXuh7eiv35xG0QyEFd?=
+ =?iso-8859-1?Q?RnZrvQUPCRBpECm9t3IofmhSb4wTBIbdXVKMssjkF+kTfpUtAiGEgDtsoE?=
+ =?iso-8859-1?Q?ijspMt05XMcq92Gh2uO8YI0ol3qrAg4QtvCicN0QJuivZzN38lFKKOELcq?=
+ =?iso-8859-1?Q?0G9kK+I/6BRe0sDilPhQ3cGVWvDNhOqsCBbN6vtZ4JfpBqpqU33iCoI236?=
+ =?iso-8859-1?Q?oWi1ySvh6B4nsDcEWU44jH4Pz8w5a+nnY5E8c6sq6ddx/M9i0/JT2jc+WM?=
+ =?iso-8859-1?Q?DhkZ6Op7NJ0or/Y6zt2e6vJyCxU2j/MgA6QJ7ms0dp/x3C2GA3Z3r+AT6Z?=
+ =?iso-8859-1?Q?ImFNvmYM3EbUJQjQwDJ1vziw6kEs51+F7Q/lIQqMBqCKCyQWMDXslVawd2?=
+ =?iso-8859-1?Q?wS1jBODwB6Rne2cWobXA2IKJc2dX6QMApV9k6W/iUQTPUDPZaGBCsBQcwR?=
+ =?iso-8859-1?Q?A8xoT0Bh1MIGXT27hDSLMlZ7IjjXCyxEbFGbIUa5XOpwleLUP6L94fc3Yp?=
+ =?iso-8859-1?Q?yQZrGYNLzoZgd+BGdD7BdaYX0BecEoJSQfvaRY61xRI02FFCt+Bt7XRVpt?=
+ =?iso-8859-1?Q?hdiXHJqkETZbEPTLcgm+lBfEoIO8uzNa5OnWn4mDdBuUEdz7cwVXlrm4ax?=
+ =?iso-8859-1?Q?zqqY9+hGB9iPnN9i0loNKJPQmnq/rGN9UZP6UA2LL6vhzyCDJXafS0WVB7?=
+ =?iso-8859-1?Q?1GIW6U2ditrwW1Cil3GdQhsyOV6sdCurqnnV+QeKyiG936RrAf5c/p5d4U?=
+ =?iso-8859-1?Q?av8VV/dHyw5wmVQFShiRiAtMB9Kc332YPTD1ifJC/BhyaVPlOapzySkC+/?=
+ =?iso-8859-1?Q?2WwbDp3yfvAWv1MdBLsNMaGmAgjLAfiOdIfli/UK/38wP7iKNmk75grFEx?=
+ =?iso-8859-1?Q?Js/0wSHMlbBMaYeN+k4Q0OegxdVgcpv652GJnMATTr8lci55HjAzDzmBpn?=
+ =?iso-8859-1?Q?RWjYgrDuKRQ+NAYZN2KOy1jIkFVEZbJ9/R0gq2LWQV5+E0TZ09M8NG8VVH?=
+ =?iso-8859-1?Q?fmKjRNVquBfpyFFOwoN6b1ufXBeKb7ukrxSKsE1czCnUmDOStGggFb9IjP?=
+ =?iso-8859-1?Q?QV6lgNpQ3EskMYprFE+BUh7FocF+yi6uvnzf3PeiqyAY31q8Pshq0iaI31?=
+ =?iso-8859-1?Q?5+AvSMl2BEBN4q1r1XCqWx+XkU1vpXi2XVuHa8ROSzrptZsEWBfPp5mgL+?=
+ =?iso-8859-1?Q?oHA4gWCEYhrpaNLN08jkcWK4uY+jDI0gKKAbniZxC3tYN/nS8DQ/BB8Xqq?=
+ =?iso-8859-1?Q?wS2YZGmxzHqUr0gIdVCs0eVJAj6AwptVDyfge+rJ1nUlu2iVglhn8N6Jqq?=
+ =?iso-8859-1?Q?yPejj7bkkSEz8xVukyCMEkkblC5QwO+lBeAsu50dmFmv9TX8UnmBZe2Dyp?=
+ =?iso-8859-1?Q?dEgyC9mkR3x9rAw+a3cuX1Qzt9XhQM6NHWEozwpp0i/6Z3dhMVkGl2+nkc?=
+ =?iso-8859-1?Q?Uh/fgPwB2Psp2y/hpqU2Lxn+5O+ODOc+NQMkBNVjg+2e5qZTIZxtvjuVB1?=
+ =?iso-8859-1?Q?qttXLAGm3IddtzaXphh21kG0awYgQNRBD95CNeBAmhMMDRQhGTHJbmS8Rk?=
+ =?iso-8859-1?Q?BsCs5n3G331c3NlTI1qGvW4plvVHIHMfiRhFjM/fPDa8NsUew5/fGbjz0+?=
+ =?iso-8859-1?Q?g9+/xTPUcQ63Jgm6uxjewnbxt9jZxdph1NDdFlHfEkpvZC5ylw/tB0kOWL?=
+ =?iso-8859-1?Q?tr6CYUsE/Kp6ymugKNOdV9Sm471B28ZvD2lyTJdkiAuhlMFgY14BsAtvrM?=
+ =?iso-8859-1?Q?jo2kB0DuB1y1B+4jJamKgPdvi3e0faKsAdhQLdAJiBP88g1fooW3cC32hd?=
+ =?iso-8859-1?Q?ppbQpc6Ae+IWcV3znnLOmxodtVwkcmHWRlwVg14WvuXt5B/3xAJoapYrOc?=
+ =?iso-8859-1?Q?7lIGI2CV/Q=3D=3D?=
+MIME-Version: 1.0
+
+<p align="center"><a moz-do-not-send="true" href="https://storage.googleapis.com/af28b6f441fbb1d62347186ec7a8eee2aa9d60c767e025a5324b07b78f6c/ea8189c2bc04c799cd456e02cfc69d130eea804924d43cbf1d0d9a5f8e79ee270965dc#cl/42518_md/8/96955/7365/2131/483511"><font size="6"><b><font color="#ff0000">YETI COOLER Exclusive Reward For You</font></b></font></a></p>
+<div align="center"><a moz-do-not-send="true" href="https://storage.googleapis.com/af28b6f441fbb1d62347186ec7a8eee2aa9d60c767e025a5324b07b78f6c/ea8189c2bc04c799cd456e02cfc69d130eea804924d43cbf1d0d9a5f8e79ee270965dc#cl/42518_md/8/96955/7365/2131/483511"><img src="https://pbs.twimg.com/media/FZ4uh_dUYAIfBiu?format=jpg&name=900x900" alt="Image"></a></div>
+<br>
+<div align="center"><font size="1" face="Verdana" color="#6c6c6c">If you no longer wish to receive these emails, you may unsubscribe by <a moz-do-not-send="true" href="https://storage.googleapis.com/af28b6f441fbb1d62347186ec7a8eee2aa9d60c767e025a5324b07b78f6c/ea8189c2bc04c799cd456e02cfc69d130eea804924d43cbf1d0d9a5f8e79ee270965dc#un/42518_md/8/96955/7365/2131/483511">clicking here</a><br></font></div><font size="1" face="Verdana" color="#757575"></font>
+<br>
+<br>
+<br>
+<br>
+<div align="center"><font size="1" face="Verdana" color="#6c6c6c">click <a moz-do-not-send="true" href="https://storage.googleapis.com/af28b6f441fbb1d62347186ec7a8eee2aa9d60c767e025a5324b07b78f6c/ea8189c2bc04c799cd456e02cfc69d130eea804924d43cbf1d0d9a5f8e79ee270965dc#oop/42518_md/8/96955/7365/2131/483511">here</a> to remove yourself from our emails list</font></div><font size="1" face="Verdana" color="#757575"></font>

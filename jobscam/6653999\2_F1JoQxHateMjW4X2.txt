@@ -1,0 +1,201 @@
+Received: from SN7PR06MB7325.namprd06.prod.outlook.com (2603:10b6:806:109::12)
+ by DM8PR06MB7686.namprd06.prod.outlook.com with HTTPS; Thu, 3 Mar 2022
+ 19:39:32 +0000
+Received: from BN9PR03CA0459.namprd03.prod.outlook.com (2603:10b6:408:139::14)
+ by SN7PR06MB7325.namprd06.prod.outlook.com (2603:10b6:806:109::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5038.14; Thu, 3 Mar
+ 2022 19:39:31 +0000
+Received: from BN8NAM11FT049.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:139:cafe::2) by BN9PR03CA0459.outlook.office365.com
+ (2603:10b6:408:139::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5038.14 via Frontend
+ Transport; Thu, 3 Mar 2022 19:39:31 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ BN8NAM11FT049.mail.protection.outlook.com (10.13.177.157) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5038.14 via Frontend Transport; Thu, 3 Mar 2022 19:39:29 +0000
+Received: from cmx-torrgo002.bell.net ([209.71.212.30])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R8602154P9F2620@smtp7.wiscmail.wisc.edu> for
+ mfquigley@wisc.edu; Thu, 03 Mar 2022 13:39:18 -0600 (CST)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= REPLYTO_FROM_DIFF_ADDY 0.1,
+ HTML_00_01 0.05, HTML_00_10 0.05, MIME_LOWER_CASE 0.05,
+ BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1000_1099 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, KNOWN_MTA_TFX 0,
+ NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0, NO_URI_FOUND 0, NO_URI_HTTPS 0,
+ SENDER_NO_AUTH 0, SPF_NONE 0, SXL_IP_TFX_WM 0, WEBMAIL_SOURCE 0,
+ WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0, __BODY_NO_MAILTO 0,
+ __BOUNCE_CHALLENGE_SUBJ 0, __BOUNCE_NDR_SUBJ_EXEMPT 0, __CT 0, __CTE 0,
+ __CT_TEXT_PLAIN 0, __FRAUD_COMMON 0, __FRAUD_JOB 0, __FRAUD_MONEY 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FRAUD_MONEY_DENOMINATION 0, __FRAUD_MONEY_VALUE 0, __FRAUD_REPLY 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0, __HAS_FROM 0,
+ __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_XOIP 0, __HAS_X_MAILER 0,
+ __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MIME_VERSION 0,
+ __MSGID_DOMAIN_NOT_IN_HDRS 0, __NO_HTML_TAG_RAW 0, __SANE_MSGID 0, __SEO_W
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: impact@kmts.ca,kmts.ca
+X-Wisc-Env-From-B64: aW1wYWN0QGttdHMuY2E=
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.3.3.192716,
+ AntiVirus-Engine: 5.89.0, AntiVirus-Data: 2022.3.3.5890001,
+ SenderIP=[209.71.212.30]
+X-Spam-Score:
+X-RG-CM-BuS: 0
+X-RG-CM-SC: 0
+X-RG-CM: Clean
+X-Originating-IP: [50.115.95.196]
+X-RG-Env-Sender: impact@kmts.ca
+X-RG-Rigid: 621B302200B17D08
+X-CM-Envelope:
+ MS4xfNm8/FsoGINjX5FSYp0tutG1azHIYq9g4DzLom+syI7t4px3KTLlrNfmDTTmoAWM6wM7NTq+35BQ8TXW9p4Z9CN+X09hLi5a08GWYORZ2drqrC80uXua
+ iOVNgk2aXT5rF5JcVbStMtE5uzw+fpO2Es41rAU3PswE4oRH44mvx2BgmuZUCaNa8RNk5jsTsWIGmQ==
+X-CM-Analysis: v=2.4 cv=G99/r/o5 c=1 sm=1 tr=0 ts=6221194e
+ a=YbjtyVK4AtdIlFhtRJuM6g==:117 a=YbjtyVK4AtdIlFhtRJuM6g==:17 a=DBwwDor5xuMA:10
+ a=IkcTkHD0fZMA:10 a=1E9drLYz7aiRmMdVfdEA:9 a=QEXdDO2ut3YA:10
+Received: from tr1rml04-svc (50.115.95.196) by cmx-torrgo002.bell.net (5.8.807)
+ id 621B302200B17D08 for mfquigley@wisc.edu; Thu, 3 Mar 2022 14:38:54 -0500
+Date: Thu, 03 Mar 2022 14:38:54 -0500 (added by postmaster@bell.net)
+From: Zinan Miscia <impact@kmts.ca>
+Subject: RE: Mark Quigley
+Reply-to: zinan.miscia385@audrianaduncan.xyz
+To: mfquigley@wisc.edu
+Content-type: text/plain; charset=utf-8; format=flowed
+Content-transfer-encoding: 8bit
+X-Mailer: Open-Xchange Mailer v7.2.2-Rev14
+Message-id:
+ <2111204263.9810023.1646336334017.open-xchange@webmail.bellaliant.net>
+Return-Path: impact@kmts.ca
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Mar 2022 19:39:29.4325
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 6597210a-bb2f-4e08-6e4c-08d9fd4d8884
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[209.71.212.30];domain=cmx-torrgo002.bell.net
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[209.71.212.30];domain=cmx-torrgo002.bell.net
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT049.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 6597210a-bb2f-4e08-6e4c-08d9fd4d8884
+X-MS-TrafficTypeDiagnostic: SN7PR06MB7325:EE_
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=fail reason=001
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:CA;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:cmx-torrgo002.bell.net;PTR:ErrorRetry;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Mar 2022 19:39:29.3544
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6597210a-bb2f-4e08-6e4c-08d9fd4d8884
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT049.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN7PR06MB7325
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.8858533
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5038.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?aHluS29Iajg3c2dvWUxZYzk1VlBxU3VzOHZ4YjNQV0x1anVoSm9qR0lrS0tU?=
+ =?utf-8?B?ZGVjU1BLZGVWakxYb0trY21vN2RRY2d6bDZ2Q0xWYjh3ZmFSUGNzMWV2VXZr?=
+ =?utf-8?B?cHR6MlBoQ2tjUk9RRTZNdEF5SHNLWGRtU0Z5Zm5rWlp6c29PaHl2c2JjbnNu?=
+ =?utf-8?B?Yk5XUFZHV2tOMVFpYVpBb00vaTA4eGhmS09PVDQ5bzRDU2w4aEJnMUpJNldq?=
+ =?utf-8?B?T3RmK3lDWlZLZzR2Z011aXlUakUwZ0ZKekI2TllXTTFxMzhzT1p0cExCNzJY?=
+ =?utf-8?B?YU9EUmxIV1FMZnBrbUVuKzJYcDRSY3pjbDdRbzJKUmJJQUNjVEp6dU5SMStz?=
+ =?utf-8?B?dEh3VzRwdittcHhRUythN3ExVkdLWUNSOFV5eWdUWHRNeU1HWnhwdmpFNlVo?=
+ =?utf-8?B?Vjk3ZTg4VDRHNjcrby96d0x0S08xMTlUTk9HS0Q4MnZFeTlVb3lWR1hoLzEv?=
+ =?utf-8?B?TXh0U1dVblNlcFh2eEMwUjExSS9OWWwxNnlRczI0VUJESlFaNHAydUpIcnZ0?=
+ =?utf-8?B?WmF1TFBLd202TnZSeUJiNEpFbTVrSnF2dTJDR0hTYmRTY0JrcUpSVVBiYTlF?=
+ =?utf-8?B?VEhrUGZBcERDZFFZWTUwWlU0amhSdHNqbjBSaFdMYVBHWHYrSFpjTFpjQll2?=
+ =?utf-8?B?ZTlFNHJWRmxUYTdQMTVyK2luUldVZlR4RXdGZU4wQ2hNNmJtRXlpb2ZyN3Fa?=
+ =?utf-8?B?eklld0JiTXVDSnFJLzFMWlUrbG53L2o2bHFtKzhYTmcrajdzcTF4YytGTkFP?=
+ =?utf-8?B?L2pOZEdldmQwdDFFM3pjMDlHbWNvSU1FN0dJWEZhVXA2TDZMcUdIRUREaU52?=
+ =?utf-8?B?bnJlWFN5aTkwcDFYWUMvRDF5UGxxM0lVRE9nbkJSMHREdWtrU29PRTd4YjN0?=
+ =?utf-8?B?ejg5eXp3U1hNQzZpREFxbFVHdGsrM3QwdDhXelZ5KzhxRjRrejRUVU5rUllG?=
+ =?utf-8?B?REtJamRLT0djdUZGWVJZMTdjRWZiSFNUV0xGYitGYTdmMG5Tajd0RG9KRWlm?=
+ =?utf-8?B?cTdqdUVLWFVHYWhTWnoyWm1KMVBXTkhiTGpvVEFNYjdxaU9OVHRuaU9iSzJu?=
+ =?utf-8?B?NldPNlh2dmQ5NUpiRWtiL3h6R3JhOXdQZ1NjNVFJdnpCT2QxZ3k0MmRseXVQ?=
+ =?utf-8?B?Y2RMVytxaFdSb295b0dOV0pFMGJZTU1ScTlia0g0azMydVJrODhlNEpEMThq?=
+ =?utf-8?B?N09jMnZmc2pwcjcvRjZYTUdpRUR3TTJOYzVXMlBreDlzWHZIMVpKUTNoeTE0?=
+ =?utf-8?B?aTdxOGJqUE5ydkErdVlhRVB0S29tTnlEekhqS25NKzh6emdxeEh2NzNnRzM5?=
+ =?utf-8?B?SGt6OVhmUDBaNGRub1k5Rlp0NFQwZWNUWGlkbGVTY2t5a2FrZ2hlZjNXVGxO?=
+ =?utf-8?B?SGxocTdTRDg0emRrN3NNcnNnYktzNGpPMDVlMVFYajVnbHVRdWc2QTZCSjl3?=
+ =?utf-8?B?Znc4eHRHVy9maTNXZHNsbytoWVcvQVNWdzRxdHVJYmk5d21kdFJUMDdOS0VN?=
+ =?utf-8?B?VzZwUFl6MzF3emp4UkozK1N6aUJuNEI3UTBwcDBHMFp0S0NSYnptYW5Uc1M1?=
+ =?utf-8?B?L1lyWnhiaFFjM0dqejRHdEUyLzNiWVpkam9xUndwMGpDVkJER2p6TXZmVU84?=
+ =?utf-8?B?MVBuT1lUdi9wNlc3RllUQmh0eWNkRGNLdWFzTkZ0TnFNdGo3M0MvMzhUMDFr?=
+ =?utf-8?B?MnRZejQ4bHRuWFpUR2t2WENBbGFTYUk0TW96MFJURVJNTTJXd1ZxM0xjNUtK?=
+ =?utf-8?B?cGcyM3hKUGJYdDhObzA0Z293ZUV3K0hWYi9zd0xpaTQ2WmdXQWRnenZkbnpn?=
+ =?utf-8?B?L3EvK0lwcDFySjJoV3lQakFXV0dBSUdBejRpa0gvYTRUdzVJM0ozb3FUWU5v?=
+ =?utf-8?B?SkpZa2dZbTFIWGM5U0hRaDZwTXRTOEw2K1dmc1VONzdLSUErSDIrcGNrMEE2?=
+ =?utf-8?B?dFgxdlcyQXRHL0xYQmZzS0lZdXVua3l3SFhaUHB6aG04TUVRa01vRHdDZ242?=
+ =?utf-8?B?Tk0xRWJ0dTZoZnR0QlBNWjFzamdhV2RjOENKN2tDUlF6ZWNrOWtLV3U1d2x1?=
+ =?utf-8?B?U1krR0xQajNxTENseFQwTTZSVGlmTVV5cjZaR2ZUNEg3WjhXMFJ0Y2JmNi9W?=
+ =?utf-8?B?cTh0eXVrclczKzMxL3hnVVhFdkJJWnE3dHZjaFlpNVErQUFGenpuNGJTT1BZ?=
+ =?utf-8?B?dHpxejNJNnIzS1l0d3NVOFJSdHZHZ0UxRGN3WXZoK1RGR0I1S1RUZzNiY1lF?=
+ =?utf-8?B?M01DUFhnUEU1cmxaaVlyUWxDK0ZNS05POWhneGI4R3NTSE5rdHlweG80QXph?=
+ =?utf-8?B?aUxMSGhOSXgxaTN1eEhYK1c3TG9Vcng1VUR5cjEvSzBnb0JYK00yY05tM3pI?=
+ =?utf-8?B?MWFTRE51bldaSW5RRGp1bEFLcWMvNXEzZGtCNHJOUEQ2TmRReXdsZkxFWjZJ?=
+ =?utf-8?B?bHBuVWZUSi9oK3g0emVvM0IvT1pmcUVaUmUvSDA3N2d4OHZQaXE1Z2p4cjBM?=
+ =?utf-8?B?T3dDanBHczNhM2l2dGlDU3pLdUlGSGZVajRIVXBWbFl3NlFLalcySVdPUklk?=
+ =?utf-8?B?cVk0WW9ZdW5INlNXUS9oNUR1YlFMNTdid3VxSmNCSWhLcSsyNmJVSTNWLzc0?=
+ =?utf-8?B?eGxsUVIrY1c1Q0JqMTVDRDRCZTdVVkYxRTZkb3A4b3V0aytYTGNPM29YaDE1?=
+ =?utf-8?B?UkFpbUVqNE9pSTJ3QTNMZ2ZvN2RIendOK3drbTk5OXNzQWtXcStXNHZFWUJp?=
+ =?utf-8?B?QlRPSXd6VkhNeDBrRkFOR1F1eGFjTjAxZTExTjVuMXZteStCWC9DSVg3cHVw?=
+ =?utf-8?B?Z3FtS3lNVmx4OEtMaE5nSlhQOHQyUlVQTGJWY0lXZzloYWxkQUpUajBnMXY2?=
+ =?utf-8?B?cy8wWkU2dFN4cGNmZzVqVkpKNTA4LzRkYzJnQVNMd2FNZG12bjdpb094Ny9J?=
+ =?utf-8?B?TnhqeDlhaWlxaVQwdkZjRDRiZVorWGJKTzd3ajdMbVVJVmhiNFdjaFpFTlZ2?=
+ =?utf-8?B?NnlwSmdRWjJGcndlVzRwRGNsSzRNSGNsOHNsWVpkKzFheXBaVTBrV1JEaERS?=
+ =?utf-8?B?c0VXL25XYmZ6dWlPSStsL3V0c2hPQnhESkpsOXpsT01uSnVZcEl4MGk5SHZW?=
+ =?utf-8?B?dDd6dVFOakk1ZFliZWh3eVZ0NjZRSzB1c2NJMHFFMzlsb3kvdi9rSjRMaTc0?=
+ =?utf-8?B?ZHZlV0FIWmErQjljMHJWSndUZFZBQkFRWVZLNHdIdDYyU2R2WDBVZmE4bnc1?=
+ =?utf-8?B?L2MwVUw0WFhPTnJuaER6SFdoa3JFUTc2SVErK1NuWU96Y3FvVlIxSjg2VkJW?=
+ =?utf-8?B?U09JNUpKUWVXa01zMTZReHlKdVdlQkNlTGdUcmVsYWc3Nm1lNG1zazJYcSsy?=
+ =?utf-8?B?ampDWTFwMzlIY2Z6d09HN05walZ1bXVHeGZqcmk4SmlGdEdJQXorTHJuODVu?=
+ =?utf-8?B?ZmxWcGloUThsdWNNV3hqNmdmNko4aUhwaG5FdEhvTWhIZ2xEV2dCd0krTmNw?=
+ =?utf-8?B?OGl0M0tMYkhESGtNLzZ2dUJlblNMVG83aUd2ZXhLSkRvZG5DcDQ2RGErYjNP?=
+ =?utf-8?B?dEJZUldWeHBKMDVHM05wbUREQWVsYURRSmZvUy9xSWlmbHpWYnFUaTRzSlN6?=
+ =?utf-8?B?Z3JHVDBHSkFyRzB5dlVSbFJXNEh2ejB3QkV4Qm13VitPK204YkUwRmQzOUVG?=
+ =?utf-8?B?a3BWSFM5S3VCSTdCY3JnVThjdVQ5K3dmR2I4QTMyL09oSlUrSENmUkltNEdq?=
+ =?utf-8?B?ZVFCdGV4SlJUUUtrd05xc2JkVHJHbElZdDJkNEtPMW9WcWJ1bHV6cUFSbitD?=
+ =?utf-8?Q?k/2MLu1Q7ePOCV/kxLJMZhuli4?=
+MIME-Version: 1.0
+
+Good day Mark Quigley
+
+
+HLPC Finance, LLC is a big and quickly developing company reviewed your resume and would like to offer you a remote position.
+
+
+Organization has reviewed your application and our HR dept. would like to offer you to apply for a job opening as Customer Service Representative.
+
+
+I bring you here some of the job responsibilities:
+ Processes transactions and currency orders
+ Completes and submits reports to Accounting Department
+ Making an environment of excellent customer service through ensuring client transactions are processed accurately and effectively
+ Guarantee that all transfers are done in accordance to policy and procedure as well as in a timely manner
+ Build and maintain productive business relationships with consumers 
+ Provide service to both future and existing customers 
+
+
+
+Salary: 3,500.00 USD per month plus additional bonuses
+
+
+If you would like to learn more about this position then please do not hesitate to contact us at this e-mail.
+
+Yours sincerely,
+Zinan Miscia

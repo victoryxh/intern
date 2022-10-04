@@ -1,0 +1,160 @@
+Received: from DM6PR06MB4220.namprd06.prod.outlook.com (2603:10b6:5:27::33) by
+ DS7PR06MB6901.namprd06.prod.outlook.com with HTTPS; Fri, 13 Aug 2021 03:35:29
+ +0000
+Received: from CO2PR04CA0160.namprd04.prod.outlook.com (2603:10b6:104:4::14)
+ by DM6PR06MB4220.namprd06.prod.outlook.com (2603:10b6:5:27::33) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.21; Fri, 13 Aug
+ 2021 03:35:28 +0000
+Received: from CO1NAM11FT037.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:104:4:cafe::e4) by CO2PR04CA0160.outlook.office365.com
+ (2603:10b6:104:4::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Fri, 13 Aug 2021 03:35:28 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ CO1NAM11FT037.mail.protection.outlook.com (10.13.174.91) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Fri, 13 Aug 2021 03:35:28 +0000
+Received: from mail.laemchabanghospital.com ([122.154.113.67])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTP id <0QXR03F3KDZ2VM70@smtp6.wiscmail.wisc.edu> for
+ mhp@medicine.wisc.edu; Thu, 12 Aug 2021 22:35:27 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=10%, Hits= NO_MESSAGE_ID 0.3,
+ REPLYTO_FROM_DIFF_ADDY 0.1, SUBJ_1WORD 0.1, HTML_00_01 0.05, HTML_00_10 0.05,
+ SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1100_1199 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DATE_TZ_NA 0, FROM_RCPT_DOMAIN_NOT_IN_RCVD 0, FROM_SAME_AS_TO_DOMAIN 0,
+ NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, RDNS_NXDOMAIN 0,
+ RDNS_SUSP 0, RDNS_SUSP_GENERIC 0, SENDER_NO_AUTH 0, SPF_NONE 0,
+ __BODY_NO_MAILTO 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __FRAUD_COMMON 0,
+ __FRAUD_HIREME 0, __FRAUD_LOC 0, __FROM_DOMAIN_IN_RCPT 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0, __HAS_REPLYTO 0,
+ __HEADER_ORDER_FROM 0, __LINES_OF_YELLING 0, __MIME_TEXT_ONLY 0,
+ __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MIME_VERSION 0,
+ __MSGID_DOMAIN_NOT_IN_HDRS 0, __NO_HTML_TAG_RAW 0, __STOCK_PHRASE_8 0,
+ __TO_DOMAIN_IN_FROM 0, __TO_HOST_IN_FROM 0, __TO_MALFORMED_2 0, __TO_NAME 0,
+ __TO_N
+X-Wisc-Doma: candance.collum@samspal.com,samspal.com
+X-Wisc-Env-From-B64: Y2FuZGFuY2UuY29sbHVtQHNhbXNwYWwuY29t
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.13.32416,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.12.5840002,
+ SenderIP=[122.154.113.67]
+X-Spam-Score:
+Message-id: <0QXR03F3LDZ2VM70@smtp6.wiscmail.wisc.edu>
+Received: from [203.159.80.75] (unknown [192.168.1.252])
+	by mail.laemchabanghospital.com (Postfix) with ESMTP id 0991F687C61;	Fri,
+ 13 Aug 2021 06:42:02 +0700 (+07)
+Content-type: text/plain; charset=iso-8859-1
+Content-transfer-encoding: quoted-printable
+Content-description: Mail message body
+Subject: Hello
+To: Recipients <candance.collum@samspal.com>
+From: "Mr. X" <candance.collum@samspal.com>
+Date: Thu, 12 Aug 2021 16:41:58 -0700
+Reply-to: basilofficegold@finmail.com
+Return-Path: candance.collum@samspal.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Aug 2021 03:35:28.3062
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 2c1cc556-efd2-43ca-7acd-08d95e0b6513
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT037.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 2c1cc556-efd2-43ca-7acd-08d95e0b6513
+X-MS-TrafficTypeDiagnostic: DM6PR06MB4220:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:2043;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Aug 2021 03:35:28.1353
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2c1cc556-efd2-43ca-7acd-08d95e0b6513
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT037.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB4220
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0369601
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4373.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?dSN3c82vz53m/5NGAFzLdWIsBX9VdBola3nrjjFvqsemp0S0pqZqAKNq1U?=
+ =?iso-8859-1?Q?EU1SOaIPXgxElGqL+AojsF+bWmnPMC/f1A/kVDw+S3v+wZKNtNDwRcEy/G?=
+ =?iso-8859-1?Q?B/8KnWvVb+wykWUpBcRfFzENJ/IEzOWDnsCivC3hLqcB7stz2KBdZnMSmf?=
+ =?iso-8859-1?Q?oJL6ZxkoEjzzonuFxRW2ZlP1EBAg6NDnbpSmL4pQBhFydxBSaFqHaTcmwA?=
+ =?iso-8859-1?Q?RCURxw7SCHZmxeg98cIdbS+trrQ/rsLVrpU7/nKn4etLFgDez0F3U3qRpO?=
+ =?iso-8859-1?Q?tARneov07U2Zn1BYIKXTxgEOceSYcgCiSiWm+nuCW7fFR0s4MUjkgwdGgt?=
+ =?iso-8859-1?Q?0Plf5aN+yebCzOlSFghWJ/kQm8QtDEWvDgKOpllSAT/IXmXS2nhYWdhVFW?=
+ =?iso-8859-1?Q?PIekFBJN36e/8tV+8kcSCj6wPkwZJKYJmAavNgEYO9Dm8QLhtAN5iO+Ojk?=
+ =?iso-8859-1?Q?eNkJfoDNvDv/IEgm5E8/up/AXBWFSlhAOWNuO4n/wTUdG4e6pYcOyursOI?=
+ =?iso-8859-1?Q?E39uic8micKBswh7II9VtzmvRHtv7aKiwY877Ym8xE6hCjScgUvP+vKxzY?=
+ =?iso-8859-1?Q?TEMW12nlGrFgho+URid3CFjCzcPeyjSIESEIHA11nT7n2SuPG/lNh6uoet?=
+ =?iso-8859-1?Q?RHvSsZveB4kAirFKBOLYMG554rzGKQFtgPDy/sS9A4orrNq1QPYZK9eVri?=
+ =?iso-8859-1?Q?moASHj6WmjasXO9h8Dc+W7PV+c0UTPAOKKIiV7XZfPqgeDL0or3B9OxFND?=
+ =?iso-8859-1?Q?vXcARWmfAaxziEsB+7IC9Ov1QJqXD9VX6r0w9KV7VgBxYUB5okR7A6JzwM?=
+ =?iso-8859-1?Q?MbQVa0l3I8AFc47LeuZdTwLBVkHLbvV7l/V5o2/aKRe3b5HqTg9tdK16qo?=
+ =?iso-8859-1?Q?Qb5u/67W/2p64v1LMYJka+fogScgVuLzDGbSMy3mId2RJdHQVZm8opMDJ8?=
+ =?iso-8859-1?Q?sK0d9lm0CsFZw9R3tTIWwleZZu8P0BnwRiibAnhYMvvEd0xfJazmNi7kZy?=
+ =?iso-8859-1?Q?8PWH2OC/ym+/d7jzt4bO9B28aBWoWUXChsEyi8SvhT9f5koSmKXbccqcWe?=
+ =?iso-8859-1?Q?8QI/lSmIA4zS9GTwl1f0swBpUcBAumPJLMpR4lKA6I+ve3Y6dDT5zk2adt?=
+ =?iso-8859-1?Q?RFuII8if67B9WVuOBYBZhlMDEcFqBrIoEGImuleOIxVhpCE/WGv4hJQd1/?=
+ =?iso-8859-1?Q?VZWiFv1tyCDfTuMNCJcMheL+TEBNSjV3wjc439I856yKUBEps0r1ZsUIt1?=
+ =?iso-8859-1?Q?BILKOicwR5ZcwCdTjm8f3F25NfWzoiRgbHQGXC52IiTxHSJ2KcwFKwLrad?=
+ =?iso-8859-1?Q?dNVyjy7h87iyKXRCtxN3vfUkKoM2i6PAs/+h1C6jP4F4cwCFTsawoziSv+?=
+ =?iso-8859-1?Q?O6qy8yUqSwC0QYJQ7/MqADdkSDoJve0J7Vff1nA/rtJvzQQIHo7PyBdSpI?=
+ =?iso-8859-1?Q?9zCoGKyZEg+spqEN4jA8pA9eVGG6WHUZF+sUXFEedWuiLVMpxBiSUtmwwf?=
+ =?iso-8859-1?Q?zMoCQ89CS1o7jMbLb7PHQEuNWuy8Pd4RXeQ79idLdZF6iYMxESBUYn8v+e?=
+ =?iso-8859-1?Q?S4N8cJfAEv4spBF1Sfqi2pISW7gJ0HJPrHepWQ/NJCfYSijHnvY7Y6uYzY?=
+ =?iso-8859-1?Q?4SVoAY2wlCEmHORQv7TXfgF+uZZI44Jtfsp34SM7ce+8GZrUXDLuBAqWry?=
+ =?iso-8859-1?Q?n3bdIhfcd8mCVMXMjVH2srVoxUZkNsgt4xSghZJ1MufBkhs2DbT0zbPPsR?=
+ =?iso-8859-1?Q?jxs89l7B/uj2t7WPHFxTjO/qLaA+B3dODJ7QYxth3I1Sl+e2N9GjPLYhd+?=
+ =?iso-8859-1?Q?S+DRCq43eCaZ6XOmL2TtevxcTVMz93czoin6FaWkj/pHsdffRbLKyrPj3Y?=
+ =?iso-8859-1?Q?PDE9TMg6mp5v+fCNoP5xCmT45mkYFCdSE8rAKRmna0l/ZEwK2BNpTZ5BE3?=
+ =?iso-8859-1?Q?VeXfYQeBKTslbVHPzbLfN4o1JSS/3+lCiof+FppVAXknr72M668zERA7L4?=
+ =?iso-8859-1?Q?SSi0ieun2R5JF31TXfMA4W4TQ7Vp3vU50MSl9Cg09oSir6kwu1KTwjzxD5?=
+ =?iso-8859-1?Q?bHs0Nwgjezpksj7+0wCi0/pvA8lfnVJ0RTsbnVRkEXPkCdNidWnGDi3gZZ?=
+ =?iso-8859-1?Q?FY4C4bcwgmknTCrU1yl36isi0DeL0s3CB0jgAzF8hhzLNjjtwiiqzPOrpm?=
+ =?iso-8859-1?Q?GK/dkwhUQhisByGaJ/o8va3QGpX5OHikZlJYDxmmOHZfXQ=3D=3D?=
+MIME-Version: 1.0
+
+Hello=20
+
+We are representative to local miners located in Ghana and other West Afric=
+an states. We trade, sell Gold and Diamonds at very reasonable price discou=
+nts below LME and LBMA / World Market Prices.
+
+We currently have 100 kilograms of Alluvial Gold Bar ready to sell to any p=
+rospective buyer across the World.This can be done on CIF and FOB (Cost Ins=
+urance Freight) terms. We have more than 100 kgs available now and ready to=
+ sell and for export.
+
+As our mining firm is small and needed expansion and increase in productivi=
+ty, We will welcome prospective buyers and potential investors who can assi=
+st us with state of the art equipment's to help boost our production.
+
+WE ALSO PAY A REASONABLE COMMISSION TO OUR AGENTS OR ANY ONE THAT INTRODUCE=
+D A VIABLE BUYER TO US. WE CAN PREPARE A MANDATE LETTER APPOINTMENT FOR OUR=
+ AGENTS WORKING ON COMMISSION BASIS. WE CAN NEGOTIATE AND AGREE ON COMMISSI=
+ON RATES IF OUR  OFFER IS ACCEPTED
+
+We wait for your answers to provide more details.
+
+Best regards,
+
+MR. BASIL OWUSU
+DRAMANCO GLOBAL AGENCY.
+PHONE--+233238103959

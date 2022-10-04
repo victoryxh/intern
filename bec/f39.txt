@@ -1,0 +1,176 @@
+Received: from SJ0PR06MB7759.namprd06.prod.outlook.com (2603:10b6:a03:3ad::20)
+ by DM6PR06MB6426.namprd06.prod.outlook.com with HTTPS; Wed, 29 Sep 2021
+ 17:24:04 +0000
+Received: from BN6PR1201CA0024.namprd12.prod.outlook.com
+ (2603:10b6:405:4c::34) by SJ0PR06MB7759.namprd06.prod.outlook.com
+ (2603:10b6:a03:3ad::20) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4566.14; Wed, 29 Sep
+ 2021 17:24:03 +0000
+Received: from BN8NAM11FT049.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:405:4c:cafe::b) by BN6PR1201CA0024.outlook.office365.com
+ (2603:10b6:405:4c::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4544.15 via Frontend
+ Transport; Wed, 29 Sep 2021 17:24:03 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ BN8NAM11FT049.mail.protection.outlook.com (10.13.177.157) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4566.14 via Frontend Transport; Wed, 29 Sep 2021 17:24:02 +0000
+Received: from mail-ed1-f47.google.com ([209.85.208.47])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R07051DDHNUGO70@smtp7.wiscmail.wisc.edu> for
+ kcaldwell@wisc.edu; Wed, 29 Sep 2021 12:23:55 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Emily
+ Auerbach <executivecommittee5788@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= SUBJ_1WORD 0.1,
+ HTML_00_01 0.05, HTML_00_10 0.05, BODYTEXTP_SIZE_3000_LESS 0,
+ BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0, BODY_SIZE_10_99 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ CT_TEXT_PLAIN_UTF8_CAPS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, KNOWN_MTA_TFX 0,
+ NO_CTA_FOUND 0, NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0, NO_URI_FOUND 0,
+ NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SMALL_BODY 0, SPF_PASS 0, SXL_IP_TFX_WM 0,
+ WEBMAIL_SOURCE 0, __BEC_PHRASE 0, __BODY_NO_MAILTO 0, __CT 0,
+ __CT_TEXT_PLAIN 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0,
+ __DQ_NEG_IP 0, __FRAUD_SUBJ_A 0, __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_GMAIL 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_MSGID 0, __HELO_GMAIL 0,
+ __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MIME_VERSION 0,
+ __NO_HTML_TAG_RAW 0, __PHISH_SPEAR_HTTP_RECEIVED 0,
+ __PHISH_SPEAR_STRUCTURE_1 0, __PHISH_SPEAR_STRUCT
+X-Wisc-Doma: executivecommittee5788@gmail.com,gmail.com
+X-Wisc-Env-From-B64: ZXhlY3V0aXZlY29tbWl0dGVlNTc4OEBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.9.29.171534,
+ AntiVirus-Engine: 5.86.0, AntiVirus-Data: 2021.9.29.5860001,
+ SenderIP=[209.85.208.47]
+X-Wisc-DKIM-Verify:
+ executivecommittee5788@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-ed1-f47.google.com with SMTP id g8so11695148edt.7 for
+ <kcaldwell@wisc.edu>; Wed, 29 Sep 2021 10:23:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;        h=mime-version:from:date:message-id:subject:to;
+ bh=VPsm1dJC8kYT5L3XMGxOrC+XT3Xm9GL67bcvIXkJ/NQ=;
+ b=bvX8hi5Q4rUM2ZOcSUxZTPE0DgPvc2uwysgpbk3d4g0Ww8LLyglMhyuTS8+spPZK9Y
+ bAh9wNpJwhJVCO/n7wA1XUFwTKIsgSgGl/rP5LkdxODA6mQ4+gzZ45yosGfzH9oKjFdq
+ 1DsK1ymbqMu38w7XN2RVpZYgCZ/NMn8cZph7h/x097/AUfB/VsHRrfcclMPqH1WE0LEu
+ nsdrIktsYU+B3hy4MrRXgd5ChFj/pwQHNYzETjt/HFvAPDAMbvj6/Nx0ZNosq5vpWP9Q
+ G87FkYfgugMaOCLOr8vDFiZfzfUYCoWvXRqS/WoLNva8H8tfvzretVkXpN3pSaufWJSA
+ x8gw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=VPsm1dJC8kYT5L3XMGxOrC+XT3Xm9GL67bcvIXkJ/NQ=;
+ b=RJjwWQQB4XhYUjl9m650rSaygqaXRoAE93P00fC04L5YIO5AjByoxjID43LW6XZ+o8
+ aJz4oaXpgC9LVRnsoBC0R/jUcp2icvM49KMI36Qy3IG8a8semHVkw1hF5T8J7rnboNEW
+ yCB2/pK72w4IYEYevhbQMnexkPakRgMzG1jiGptlRDTgCBYcugdl/BExrRf5uMjnDcSl
+ 1vK8RBQ48uothTZ9nm/tC1eMlcwvCArnM1FDA5PpFEw4V1I9vET8QZlY/gn+UKSv57Ur
+ yabhUd0S0J2/+iUDHIUy9TlXYODBZIYxwkcWzF7zYQxJfT33BBhMct68JQ7mDAwyJGBi
+ NVVQ==
+X-Gm-Message-State: AOAM531fdPPj95IUrH2zxmxAmLpMycYBW7WgqGnm/TpXK/f6CQmNJ0Ex
+	1YFTaigtg2TBvgDjS9DWX+ekBfhnoulpIb8mMudM4mnJxGI=
+X-Google-Smtp-Source:
+ ABdhPJx2mAEDQBE6ySVCDCZ7aFDoMau1QBNrj+1W3TJM+6sS5odcOmC4658iXKOP+XZZ2nE1LQKYzZZr8bTPvMtDZeU=
+X-Received: by 2002:a17:906:2cd5:: with SMTP id
+ r21mr1026681ejr.435.1632936234462; Wed, 29 Sep 2021 10:23:54 -0700 (PDT)
+Received: by 2002:a50:ecc:0:0:0:0:0 with HTTP; Wed,
+ 29 Sep 2021 10:23:54 -0700 (PDT)
+Date: Wed, 29 Sep 2021 18:23:54 +0100
+Message-id: <CAPkuf19osa5_VRu7KQZSsNy1re32sEONHwNcgjqO5Z33R2mGZQ@mail.gmail.com>
+Subject: Important
+To: kcaldwell@wisc.edu
+Content-type: text/plain; charset=UTF-8
+From: executivecommittee5788@gmail.com
+Return-Path: executivecommittee5788@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Sep 2021 17:24:03.0871
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 463f0c1f-a20f-4c88-4792-08d9836deecf
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT049.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 463f0c1f-a20f-4c88-4792-08d9836deecf
+X-MS-TrafficTypeDiagnostic: SJ0PR06MB7759:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:2043;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Sep 2021 17:24:02.9672
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 463f0c1f-a20f-4c88-4792-08d9836deecf
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT049.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR06MB7759
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4405846
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4544.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(750132)(520011016);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?enlJU2dXZkNzekFXZExRMkdGamV3ZkNPampTeW91YVpHc1MwaG5BcnlBT3hv?=
+ =?utf-8?B?UytxQldIZ0wzdHVCWW4yTjIwS011bGFlY1UyaHZSRWdjaDhUZlJSRUF6bEsz?=
+ =?utf-8?B?bVlUbVBqcEF5VXZVZWZYTitwaHpobCtKNmNQaHp5MDN4ZVVRVDVRanp6Sk93?=
+ =?utf-8?B?WHZaazl2QVZiMWhCa005ejdRNkxwZXo2ODhlVHFGQnMyRHBBWHVPUC9pQU9J?=
+ =?utf-8?B?emFmenZtODVUb0ZrRG95ZmFhTGpWN1o1VG0yTU1iTWo1ZVI0bzRmb1BIMGZz?=
+ =?utf-8?B?UmZhaStXUGhhc2RFQ1p6U2k2ZUQ5amhpeFlXbWt3NGJRc0dDQ2hBNjdWRkNF?=
+ =?utf-8?B?T1NIMU01OTloTlVva2ZXMWZCa3pHVXJpZy91WklIdnJNZktqTWJ0ZVhKeXMx?=
+ =?utf-8?B?bVpNaUFqTDJ5ZGExeDlqY0s2QWxoQ2ZPSmFqMk1rTFRsUWl1VXJyMkc3djVU?=
+ =?utf-8?B?QmhzNXl0TVMrY1BWc1RqdVFLeVE4SG9WdURpRzhuWHZUSUQyS2N1UUlodmdY?=
+ =?utf-8?B?YjRUa1QzaVhGb1huWUVUNS9aT2NZWXFoSFpPUlhUa242dXp2ckkwMmtzS3l6?=
+ =?utf-8?B?ckUrZHZ3VGJVWnZzbVVURlhrV2FjV0RyNVJnMFpqb3Vpc0RmNm1oYVI2Zi85?=
+ =?utf-8?B?azBtK2dJcHpxdXZ0V1dpeUdnQ29UZlZHeThaUnh0Q2FvTEJZbDFQTGdOYlFY?=
+ =?utf-8?B?RVJua1F3dEVyd3RiNU9semt4OTVLd252VVdnUjBvNzc3aXQyWG5iWEdGQVVL?=
+ =?utf-8?B?OHB4RmhKZTlsc0Zia2lZVVVwa1gvTU9VbGFFOTY5Yk9IbkNmYVJhWFljNGN5?=
+ =?utf-8?B?azZKMGw4cU80amZGVW9pV2ZEVTk1UlZvdHgwWTZaK29TMVZXNEl2WU42c1A3?=
+ =?utf-8?B?bVQ3NjNvdGJpWjVWYzVoV3J6ZWZMZXg3dUdkbUtmbmVkY1BZNFozYys5T0E3?=
+ =?utf-8?B?My9pVXZzT2szc0wzTThsYUd5cFU2Z256bnBtSWhwVDJnYk9OaGxuUTV0cFlr?=
+ =?utf-8?B?SmF6K1R3MVNPSWlYRjEzRHZuc3pDN0wwR2RFbHJrQW1uMVVvdmhpd2VwUW9R?=
+ =?utf-8?B?Y3hyUExFNnUwSytXQWZGbmZ6TFd6QlAxb0daRUdxTHI1eWxZRnB1NEI4OGg5?=
+ =?utf-8?B?aVR1RXdvTkdPVkVKWktvS2RXeFZmYWtkWlJYQnh5dzhiZDVlc2tPS2Zia0xt?=
+ =?utf-8?B?SmMwSlpueUJhNFVwQ21PcC9xd0xheDNyR2NKMVpKU0lDK3E5RUFoYVVRM3NV?=
+ =?utf-8?B?bTJXNXc2R0R5M2JheVgySVAxNlpsbWJ0Q1BiUzd5L3M4MVRiZ25UQjJBMndv?=
+ =?utf-8?B?L3lGTkczNmZrZXdRdngvclcyRUFWVlM1SU9tdTkwNjJTV2k3MWxaaDh6Z1di?=
+ =?utf-8?B?R2xEUHRxdTJPN1M2SzRvVE5BVGNaVTlVUjRvVmlGcXpsNkNMSjd2REt4MWdQ?=
+ =?utf-8?B?YUxXb2hzYXorNDFEelY2WmY2aEFPRzNaUGRwRHYvQ1dJZTNSbVZGVHp5N3d0?=
+ =?utf-8?B?emtGWFJUSEJMR3I4SnduTmQ4aWJJQUp3aWRjZ3JZdmFxRVJJaHFMTzRiQ3Q4?=
+ =?utf-8?B?M0N2Z1FXMFF6ZDllY2JEbTRHS2tOQXNjTHBQR0VER0lGOHdISnRtenFLVW0y?=
+ =?utf-8?B?ZS9CZTFmb3JSK0lPeW44SDN3UXkzcTUrNWIzL3ZuS2pVamlMN0hqSjhobUNi?=
+ =?utf-8?B?VGt6ZDA3OHQxUmJCOFAvY3FjUXhucUtLQStMWHRlckNGOEZud054WGxpaEhX?=
+ =?utf-8?B?YXpBMUtkbDhzT3lCZHFiR0tTb2l2OWFIOHdLdGtJQmwyK0pnTm1OTmFLRGNP?=
+ =?utf-8?B?NzlEVHhJYnd1eWZGdFJVSUJhOE1OR0l5TDZHWDZJWDRQRzUxWlBISjl2d0xP?=
+ =?utf-8?B?T1kzU1dtU2hObUpndUJTSktkUjdGbGIzVzZEelN5THNuOEVxWEEvSVNPdWFy?=
+ =?utf-8?B?NGl6a2hxRDl2REVscHdPbm80dW4xK1ZTZFZqNDluYnhYUmdXY2s0Z0tYZkVZ?=
+ =?utf-8?B?OThvMEFPMkhiWHFhbGUzV1d5bEx3eHBBcjhqelpncWJnYmZjVDRTSG14NXk4?=
+ =?utf-8?B?dnZOZzg2K1ZyVHA3dG9nRDZFNytEd1VCaWhTTHhSWFFZd2R2Zk1MZ3dOZkdu?=
+ =?utf-8?B?WjdXZHVsV2taTjVnL0d2VVZ6WGs2UGQ2YnpIUitUS0kraHJCN1k4NHVKc0ZS?=
+ =?utf-8?B?OUd2RXRzK0I0ejIwM0dZL0sxU1c4TytUVUFzNmN4MFdYK282ZTcvVENnTGp4?=
+ =?utf-8?B?a21rbmdXSmR6VkxrSnRCcXdCZGpiamJIc2dmdlRaTVJuWWprYnkxcE01MFBT?=
+ =?utf-8?B?dEpZdndQdWdaczlBZGhaeW9DaWsvNGk5dTdYRlA1MjFQWGpNM1BWY3d5endm?=
+ =?utf-8?B?Z1BUUWtnTldzZm0xV1VrQ0FhdER0eUV1dWJtb2JERU52UEtEenVWZzgvMlVq?=
+ =?utf-8?B?Uk56VlBNd3pqVnNaQUZrZjB6Nk9ncVhmc3dSWDNjdXEzTUJUZDgyMkEvWFh3?=
+ =?utf-8?B?eVRib0diOUJQSW9SS1E2STB6VE5IU1ZHVzRRdDRtMjcySk9lSjRTZDlpV0JO?=
+ =?utf-8?B?YkZHSVhIbyt6VlBXWUhSZ0tJeVkyb3lNSmlNaVVtUmRpWHBZaXdXNUZoZGNz?=
+ =?utf-8?B?OHdKY040dUNuTzN5eHJIODlLeE5rOFFuenpCRzFPaHpCL2RmT3ZoK2t6c3M3?=
+ =?utf-8?B?UTZrSDhpVGtKKzgxS2ZWOU96Y2IyNDFIcU4vOC9RVHp6dWZyY0R3UkRxWGFp?=
+ =?utf-8?B?engxNkZNNUxqbTR6ekRPbW92d3g5cGpIUUlibE9saXhLT2o4ektVa21GQ0Fx?=
+ =?utf-8?Q?hA9hGKwHt0VoML7EVybqM=3D?=
+MIME-Version: 1.0
+
+Kyrie, are you free at the moment?
+
+
+
+kinds Regards, 	
+Emily Auerbach

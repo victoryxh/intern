@@ -1,0 +1,461 @@
+Received: from CY4PR0601MB3682.namprd06.prod.outlook.com
+ (2603:10b6:910:91::33) by DM5PR06MB2681.namprd06.prod.outlook.com with HTTPS;
+ Fri, 16 Jul 2021 04:30:59 +0000
+Received: from BN9PR03CA0326.namprd03.prod.outlook.com (2603:10b6:408:112::31)
+ by CY4PR0601MB3682.namprd06.prod.outlook.com (2603:10b6:910:91::33) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4308.23; Fri, 16 Jul
+ 2021 04:30:59 +0000
+Received: from BN8NAM11FT010.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:112:cafe::2d) by BN9PR03CA0326.outlook.office365.com
+ (2603:10b6:408:112::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4331.22 via Frontend
+ Transport; Fri, 16 Jul 2021 04:30:58 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ BN8NAM11FT010.mail.protection.outlook.com (10.13.177.53) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4331.21 via Frontend Transport; Fri, 16 Jul 2021 04:30:58 +0000
+Received: from yemeni.1and1.de ([194.15.108.142]) by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTP id <0QWB059IFLVKKN20@smtp8.wiscmail.wisc.edu> for
+ mgingras@wisc.edu; Thu, 15 Jul 2021 23:30:58 -0500 (CDT)
+Date-warning: Invalid date header replaced by smtp8.wiscmail.wisc.edu; original
+ content: [smtp_Date]
+X-Spam-Report: IsSpam=no, Probability=11%, Hits= INVALID_DATE 0.5,
+ HTML_70_90 0.1, HTML_FONT_INVISIBLE 0.1, REPLYTO_FROM_DIFF_ADDY 0.1,
+ BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0, CT_ENDS_IN_SEMICOLON 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, DOMAINKEY_SIG 0, FONT_STYLE_1PT 0,
+ NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, RDNS_NXDOMAIN 0,
+ RDNS_SUSP 0, RDNS_SUSP_GENERIC 0, SENDER_NO_AUTH 0, SPF_NONE 0,
+ STYLE_RATWARE_REF 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CD 0,
+ __CP_NOT_1 0, __CT 0, __CTYPE_HTML 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __FRAUD_SUBJ_A 0, __FRAUD_URGENCY 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HTML_BAD_END 0, __HTML_BOLD 0,
+ __HTML_FONT_RED 0, __HTML_TAG_CENTER 0, __HTML_TAG_TABLE 0,
+ __INVOICE_MULTILINGUAL 0, __MIME_HTML 0, __MIME_HTML_ONLY 0, __MIME_TEXT_H 0,
+ __MIME_TEXT_H1 0, __MIME_VERSION 0, __PHISH_SPEAR_SUBJ_ALERT 0,
+ __REPLYTO_SAMEAS_FROM_DOMAIN 0, __SANE_
+X-Wisc-Doma: JavaMail.app@mail.tryninja.io,w.cima4u.tv
+X-Wisc-Env-From-B64: SmF2YU1haWwuYXBwQG1haWwudHJ5bmluamEuaW8=
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.7.16.42115,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.16.5840000,
+ SenderIP=[194.15.108.142]
+X-Wisc-DKIM-Verify: JavaMail.app@mail.tryninja.io,
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp; d=w.cima4u.tv;
+ h=To:Date:From:Subject:Reply-To:Message-ID:MIME-Version:Content-Type;
+ i=noreply-6769012691995582070276384668192779664824@w.cima4u.tv;
+ bh=UvZz3rxzG+5eKzbn5AaE+lCXBMw=;
+ b=EGUGnGTWfBTmNG3ytn2elJZEwj6fFXp7wZ1yY/iKVl7wF85Z2OhW6Ujj2zzXQecU8x8YRGjEXBb8
+   AnB0YnOrEnNGFVG9yYZeq+r5t5BMfaNOGo+EufqIbHuUnpyqn0tI1GGw58dzHNTh9FsuxtYBiqKu
+   qdanyyV8iYfj+cYqzcQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp; d=w.cima4u.tv;
+ b=c/2Ku3wfrT0JdE3YLovq96SOVNdVXnvEefOCTsqM8496unvWT31eDM5F+wfknKj5N/N2ARKKOfRI
+   ZD0y+JfGWNsmtKt0XxfstLRTs7xboH+pXC/BKAKSsHmTcWUO8JAjROm5UedimS3KvlJZ3ZmqkHfs
+   A35GjgGe2jfpUjKZNo8=;
+To: mgingras@wisc.edu
+Date: Thu, 15 Jul 2021 23:30:58 -0500 (CDT)
+Accept-Language: en-US, en-GB
+Content-language: en-US
+From: Security Center
+ <noreply-6769012691995582070276384668192779664824@w.cima4u.tv>
+Subject: VYour Attention required Please Check Now ASAP !!
+Reply-to: armyU5 <".c.x.mG28wBby2s3hO0pbr92jFTd9lPPI1D0mAZyAjVXa"@w.cima4u.tv>
+Message-id:
+ <zoqvvcrmbfjobhtphvltngzsqdnstgpnnzhhnvtb.kwpliigwzzoeyvaeafxvupnaqnowysuhgabyclbt.4494473234712102316256249828257890604226@w.cima4u.tv>
+Content-disposition: inline
+Content-type: TEXT/HTML
+Return-Path: JavaMail.app@mail.tryninja.io
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Jul 2021 04:30:58.9538
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7d326791-191f-4018-f914-08d9481282ba
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT010.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7d326791-191f-4018-f914-08d9481282ba
+X-MS-TrafficTypeDiagnostic: CY4PR0601MB3682:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:7219;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp8.wiscmail.wisc.edu;PTR:wmmta5.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jul 2021 04:30:58.8619
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7d326791-191f-4018-f914-08d9481282ba
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT010.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR0601MB3682
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0122270
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4331.024
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?yQkMej0y5CS9uTSaG3DRMrd7/4n/Rt3m0h4dZPj6AQgE/Nl4lKyyYEVmco?=
+ =?iso-8859-1?Q?Dsxa++e6RGxlaDbeoKC3nJVJBsK3eN8LYx1xALO/EN4P4kBCIDR8WAKxYX?=
+ =?iso-8859-1?Q?ELqIhvrnl6Sn7UjaPOAEqmWFnNJxztVa0qsvxrwckdC92vM9f+E0INqi8x?=
+ =?iso-8859-1?Q?Rjxge45OXzqezZPknKivUeHrnXt38txb3puYoyQbP8A2OZeIyX9yPvSaRq?=
+ =?iso-8859-1?Q?JKF3IMCuUQMh1JTsohyG2SHpaJirX6G/DFYVCbRvbMFo8hABfZW9oPS4I9?=
+ =?iso-8859-1?Q?wG0NAXwRNsAROy6Y7YDgqb24jQQ4PU4suedyVeRGz7E0kt8z4CfTcAZ89M?=
+ =?iso-8859-1?Q?eGMXYYpC0Me9ljKguJhtLEeTR4piaC1JulHbD0RuTTVJmge2sBMSJuh1z2?=
+ =?iso-8859-1?Q?ajf+T+c4joozW97oQDSMvV93IHgHOzLKD92AkCIzizUWbUyIsmwncHWjNu?=
+ =?iso-8859-1?Q?/dpG0uhc0y7/K1rS2Pck1J7IRtFcGLmnNjZHHMVSy+7i2oVRriKbXiWKsI?=
+ =?iso-8859-1?Q?5xRSUHaljdBS10MSyRa4pFMz6iLQcrNHic+OS0UC0VeYybl0+XkGCJ/BdU?=
+ =?iso-8859-1?Q?/Ocxe6UFDwxxw2Jct/Vz0sHXNb8tBfIfvQ0U2OWLZk+GwS/IJ9UUK3Sm4g?=
+ =?iso-8859-1?Q?AIO6WALY9laDD5gJx1fmLh7cJR5mPv/5R8ieJqcVZFjck605ru0+OfIxMF?=
+ =?iso-8859-1?Q?7QUvY7g3JCDn9COLZuas3wOJz9nI9KJd/lHi12FCaQnzGw9Br1+AbtkHOS?=
+ =?iso-8859-1?Q?dMr49ZaLSOtuJzm01qXZTX7XzVxp3jpxGTcrUHwJ5guVHYIbsZ2rQFjthG?=
+ =?iso-8859-1?Q?+j9jAE1e07kWmyHIzyrjA5wX5FLe38yYiTObINPu7vogU1DdygIvknjUk1?=
+ =?iso-8859-1?Q?G5d+sxyH0qtptdqQIf6ornhH3vcpVtM2eekBIcqugp2Gd2/aWuh6Q4fiTR?=
+ =?iso-8859-1?Q?redA3YCtbXAOc5l0d+wWFUr489j8zn/cYEGNV29GA3/maXpEUnFB1sZG4E?=
+ =?iso-8859-1?Q?f0U8bYVcA23m2SytWynE9lVnIyJToJi4/WwHiysGu2BVDVBy2DHnY0wLfh?=
+ =?iso-8859-1?Q?rJ+DJ+WG5xwp8W38OtCWPFHRT+UWnU3NxJ4I9jzyrDyCNwp2o79ejNMNkE?=
+ =?iso-8859-1?Q?wP8hLjSGxy4KeBvQYMPen+3SLzh8mS0Gsc8mOiHtFYEBWa85d0v3mURTiN?=
+ =?iso-8859-1?Q?j08fRZq6gl7qDg0f8f3GOisHy7a4XKRt+7sKsCV30d7+0Guf5hyQ/i4If7?=
+ =?iso-8859-1?Q?MCvYi/8YR5BbX0JSpa4vUtWdi/VTLZdv/t0FYEp6Fcd/W8JA/1SfgCiDwM?=
+ =?iso-8859-1?Q?FIXwVOunV/NLdZ0LSQrJGClEyPp0jac6troAmaEZ3FIgQiB5k66m9TB2nW?=
+ =?iso-8859-1?Q?zw+JGLWmi9inBOdW8jJSjbEJksEiimmCKWdmb4niX2aKo9fwCghX4wC/NK?=
+ =?iso-8859-1?Q?yb2Pz2+vLLspEd7wfXTqv+hy+kiLjXww1kPnV574s8zGzbihZiJ4NIJuzs?=
+ =?iso-8859-1?Q?GIy44FcLDHurFHnSLBDcQSL3cvHJJ5qS2xxJ1UVmc8AqfoLTKYEmPaWOhA?=
+ =?iso-8859-1?Q?k5SmvZatwYSJQQPyv7EMcPvS/6gynsgMw3CTfAo3bW4//9DrsukjbT80d/?=
+ =?iso-8859-1?Q?Fw8JYDKhhgu82H2CxpPi/3bYjKUz4NyUFj49QvIDqYLt0kNjlVByYY4rWA?=
+ =?iso-8859-1?Q?5CRlIMhY3axAmq98FCQEF4apuKj5salFFbM1JlAnbowXrKCE9FxSEaNeGt?=
+ =?iso-8859-1?Q?ucKIpAcc6GJwCml31eO2SQp6c9Qh5deKuHLq9nX0M72xeN8n7Hy0J6k0r1?=
+ =?iso-8859-1?Q?9/2Eysm7JCI857cA7ECLfNblIbhr8L5zS+PLLm/X5rXkLZ+WrODVluP7O0?=
+ =?iso-8859-1?Q?BFkjLaeS/UiJrP2E5DUgLQFtJBs81NQzWdIaBclIH1Erv3q97SPGrbY3jO?=
+ =?iso-8859-1?Q?859kT0a0xgHcMFzjYGm4d4ssij7uenC7k9jiOFUJfb1D3V/0JO8tGB8ZA2?=
+ =?iso-8859-1?Q?bAuAXhF/eN91s4ftQZtvTtyRrAxNuxtAA+L7GNkrnNkcwBFNUhA/9qSnmy?=
+ =?iso-8859-1?Q?exOnoy6hWoTvHhOuY9EHHQYm6bZegrY3fNmvyWqMmbhlomKL8njs5nIE2l?=
+ =?iso-8859-1?Q?oipI2HBVdXtskdbdfbWIVIL6YcDES0BBVuT/LRMTAJxV5sgQOMqpgc35/s?=
+ =?iso-8859-1?Q?p2PpZDXthR+wbrKa1aSOhYSrsBJzRvRQQXyyFUJvpFw4yGOXpoElP5dHfA?=
+ =?iso-8859-1?Q?LGT72xE3fL555eavkbOc43ngtKJVUqqATn3KT5cTlDVUeTacBHW3H3e35L?=
+ =?iso-8859-1?Q?2Nvr6+Qi95FM8xxg6SZ0vjd0Y5l37w1vJcvZP6urHmLu5PycnKRu/24DSs?=
+ =?iso-8859-1?Q?wjFaZdfoUKydrFOHHpUwrgHgsh+jI9vvcoDFw1G0wmLOfI60w/TUrMnc7g?=
+ =?iso-8859-1?Q?O7orBDhTXI5qGCWyk/WdxxKxaq+p60qH72d3RML8O0RC8ZOp?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+	<title></title>
+	<meta content="width=device-width" name="viewport" />
+	<meta content="text/html; charset=UTF-8" http_equiv="Content-Type" />
+	<style type="text/css">html, body 
+            img {padding:10px 0;}
+            .p {line-height:1.2em}
+            body {background-color: #FFFFFF;}
+            .email_preview {display:none;visibility:hidden;opacity:0;position:fixed;top:-200px;left:-9999px;color:transparent;clip:rect(1px 1px 1px 1px);}
+            td.c3 {background:#f8f8f8;color:#333333;}
+            a.c2 {color:#333333;}
+            td.c1 {background:#ffffff; padding:0 10px;}
+	</style>
+</head>
+<body class="clean-body" style="margin: 0; padding: 0;
+-webkit-text-size-adjust: 100%; background-color: #fff;">
+<table align="center">
+	<tbody>
+		<tr>
+			<td align="left" height="" style="font-family: Arial, Helvetica, sans-serif;font-size:20px;font-weight:bolder;color:#000000;" width="400px">Subscription Information</td>
+		</tr>
+		<tr>
+			<td align="left" height="" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;font-weight:bolder;color:#FF0000;" width="400px">! <span style="color:#000000;">Subscription:</span> Expired</td>
+		</tr>
+	</tbody>
+</table>
+
+<center>
+<table align="center">
+	<tbody>
+		<tr>
+			<td align="center" bgcolor="#222e3a" height="50px" style="font-family:Helvetica;color:#fff;font-size:22px;border-radius:10px;" valign="middle" width="600px">Your Protection From Viruses Has Expired</td>
+		</tr>
+		<!-- <tr>
+                  <td height="10" style="display:block; line-height: 10px; font-size:1px;">&nbsp;</td>
+                </tr> -->
+		<tr>
+			<td>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td valign="top" width="65%">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%"><!-- 1st row (account id) -->
+										<tbody>
+											<tr>
+												<td class="w50" style="
+                                                            background-color: #fffef9;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: left;
+                                                            line-height: 120%;
+                                                            padding: 12px 0px 12px 20px;
+                                                            border-right: 1px solid #d8d8d8;
+                                                        " width="40%">Account ID</td>
+												<td class="align-right-25 w50" style="
+                                                            background-color: #fffef9;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: center;
+                                                            line-height: 120%;
+                                                            padding: 12px 25px 12px 0px;
+                                                        " width="60%"><strong>43698</strong></td>
+											</tr>
+											<!-- 1st row (account id) --><!-- 2nd row (first name) -->
+											<tr>
+												<td class="w50" style="
+                                                            background-color: #eeeeee;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: left;
+                                                            padding: 12px 0px 12px 20px;
+                                                            border-right: 1px solid #d8d8d8;
+                                                        " width="40%">User</td>
+												<td class="align-right-25 w50" style="
+                                                            background-color: #eeeeee;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: center;
+                                                            line-height: 120%;
+                                                            padding: 12px 25px 12px 0px;
+                                                        " width="60%"><strong>mgingras</strong></td>
+											</tr>
+											<!-- 2nd row (first name) --><!-- 3rd row (last name) -->
+											<tr>
+												<td class="w50" style="
+                                                            background-color: #fffef9;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: left;
+                                                            line-height: 120%;
+                                                            padding: 12px 0px 12px 20px;
+                                                            border-right: 1px solid #d8d8d8;
+                                                        " width="40%">Secure status</td>
+												<td class="align-right-25 w50" style="
+                                                            background-color: #fffef9;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: center;
+                                                            line-height: 120%;
+                                                            padding: 12px 25px 12px 0px;
+                                                        " width="60%"><strong>Suspended</strong></td>
+											</tr>
+											<!-- 3rd row (last name) --><!-- 4th row (form of contact) -->
+											<tr>
+												<td class="w50" style="
+                                                            background-color: #eeeeee;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: left;
+                                                            line-height: 120%;
+                                                            padding: 12px 0px 12px 20px;
+                                                            border-right: 1px solid #d8d8d8;
+                                                        " width="40%">Discount</td>
+												<td class="align-right-25 w50" style="
+                                                            background-color: #eeeeee;
+                                                            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                                                            font-size: 14px;
+                                                            font-weight: 400;
+                                                            text-align: center;
+                                                            padding: 12px 25px 12px 0px;
+                                                        " width="60%"><strong>89% Renewal Discount</strong></td>
+											</tr>
+											<!-- 4th row (form of contact) -->
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" bgcolor="#ffffff" height="270px" style="font-family:Helvetica;color:#000000;font-size:14px;padding-left:20px;font-weight:bolder;" valign="middle" width="600px"><br />
+						Your <span style="color: rgb(255, 255, 255); padding: 2px;"><span style="background-color:#FFD700;">Norton 360</span></span> for the Windows subscription has expired on Today 00:00 .<br />
+						<br />
+						Norton subscription is recommended to protect your device. been activated a special discount to be used on 07/15/2021.<br />
+						<br />
+						Once the expiration date has passed, your computer becomes susceptible to many different virus threats.<br />
+						&nbsp;
+						<hr style="border:1px solid #ccc;" /> <span style="color:#53565a;font-size: 16px;font-weight:bolder;">It may not be protected, it could be exposed to viruses and other malware ...</span><br />
+						<br />
+						You are entitled to the discount: <span style="background-color:#1955AA;color:#ffffff;padding: 2px;">89% discount on renewal for 1 year</span><br />
+						<br />
+						The offer expires: <span style="color:#FF0000;">07/15/2021</span><br />
+						&nbsp;
+						<center>&nbsp;</center>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div>
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #ffb901 ; border-radius: 5px;" width="350">
+							<tbody>
+								<tr>
+									<td align="center" class="btn-primary" style="background: linear-gradient(to bottom, #41c400 0%, #3baf01 100%); border-radius: 5px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border:5px solid #fff;font-size: 22px; font-weight: 600; color: #fff; text-align: center; line-height: 29px; padding: 10px 20px; letter-spacing: 1px;"><a href="https://link.dos.lk/oYpTy" style="color: #F6F4EE;text-decoration: none;">Renew membership </a></td>
+								</tr>
+							</tbody>
+						</table>
+						&nbsp;
+
+						<div>&nbsp;</div>
+
+						<div>&nbsp;</div>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<a href="https://link.dos.lk/oYpTy">Unsubsribe </a><br />
+						<br />
+						&nbsp;
+						<p>&nbsp;</p>
+						</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+</body>
+</html>

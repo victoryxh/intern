@@ -1,0 +1,167 @@
+Received: from CO1PR06MB7946.namprd06.prod.outlook.com (2603:10b6:303:fd::8)
+ by BL0PR06MB4628.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 23:18:13 +0000
+Received: from MW4PR03CA0335.namprd03.prod.outlook.com (2603:10b6:303:dc::10)
+ by CO1PR06MB7946.namprd06.prod.outlook.com (2603:10b6:303:fd::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13; Sun, 15 Aug
+ 2021 23:18:12 +0000
+Received: from CO1NAM11FT061.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:303:dc:cafe::e3) by MW4PR03CA0335.outlook.office365.com
+ (2603:10b6:303:dc::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.15 via Frontend
+ Transport; Sun, 15 Aug 2021 23:18:12 +0000
+Received: from smtp4.wiscmail.wisc.edu (144.92.197.233) by
+ CO1NAM11FT061.mail.protection.outlook.com (10.13.175.200) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sun, 15 Aug 2021 23:18:12 +0000
+Received: from mail.krudor.ru ([185.124.228.30]) by smtp4.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXW04A0RM29ZI10@smtp4.wiscmail.wisc.edu> for
+ hastings@wisc.edu; Sun, 15 Aug 2021 18:18:10 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Ms. Ramona Caswell" <ventura@krudor.ru>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=25%, Hits= FRAUD_LITTLE_BODY 2,
+ WEBMAIL_REPLYTO_NOT_FROM 0.5, FRAUD_WEBMAIL_R_NOT_F 0.1, HTML_NO_HTTP 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ BODY_SIZE_900_999 0, FROM_NAME_PHRASE 0, FROM_SAME_AS_TO_DOMAIN 0,
+ NO_CTA_URI_FOUND 0, NO_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0,
+ SMALL_BODY 0, SPF_NONE 0, __BODY_NO_MAILTO 0, __BOUNCE_CHALLENGE_SUBJ 0,
+ __BOUNCE_NDR_SUBJ_EXEMPT 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DATE_TZ_RU 0, __FRAUD_MONEY 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FRAUD_MONEY_DENOMINATION 0, __FRAUD_MONEY_VALUE 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_REPLYTO 0, __FROM_DOMAIN_IN_RCPT 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_ADDR 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HEADER_ORDE
+X-Wisc-Doma: ventura@krudor.ru,krudor.ru
+X-Wisc-Env-From-B64: dmVudHVyYUBrcnVkb3IucnU=
+X-Spam-PmxInfo: Server=avs-10, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.230915,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840001,
+ SenderIP=[185.124.228.30]
+X-Spam-Score: *
+Received: from localhost (localhost [127.0.0.1])	by mail.krudor.ru (Postfix)
+ with ESMTP id 2DFD01B82FA2;	Mon, 16 Aug 2021 05:04:49 +0700 (+07)
+Received: from mail.krudor.ru ([127.0.0.1])
+	by localhost (mail.krudor.ru [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id EMgC7SU5qz1E; Mon, 16 Aug 2021 05:04:39 +0700 (+07)
+Received: from localhost (localhost [127.0.0.1])	by mail.krudor.ru (Postfix)
+ with ESMTP id 3EEFB1B831A8;	Mon, 16 Aug 2021 05:02:49 +0700 (+07)
+X-Virus-Scanned: amavisd-new at krudor.ru
+Received: from mail.krudor.ru ([127.0.0.1])
+	by localhost (mail.krudor.ru [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id dKpBDK8qKwDf; Mon, 16 Aug 2021 05:02:49 +0700 (+07)
+Received: from MAC0957.localdomain (unknown [91.74.186.35])
+	by mail.krudor.ru (Postfix) with ESMTPSA id 2D7511B82D31;	Mon,
+ 16 Aug 2021 05:00:55 +0700 (+07)
+Content-type: multipart/alternative; boundary="===============1570486227=="
+Subject: Re: Shalom@ $13,609,000.00USD!
+To: Recipients <ventura@krudor.ru>
+Date: Mon, 16 Aug 2021 02:00:32 +0400
+Reply-to: r.amona.cawell1@gmail.com
+Message-id: <20210815220056.2D7511B82D31@mail.krudor.ru>
+From: ventura@krudor.ru
+Return-Path: ventura@krudor.ru
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 23:18:12.7326
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 8003a257-ede0-4b66-1cc0-08d96042f3ff
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT061.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 8003a257-ede0-4b66-1cc0-08d96042f3ff
+X-MS-TrafficTypeDiagnostic: CO1PR06MB7946:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:4303;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.233;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp4.wiscmail.wisc.edu;PTR:wmmta1.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 23:18:12.5697
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 8003a257-ede0-4b66-1cc0-08d96042f3ff
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT061.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO1PR06MB7946
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0135946
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?Up2UgzaUz1qXLrbmgoA6UQtmAeIpyhpS03UVbIM+GCvbOf2/PrSPOhc3hH?=
+ =?iso-8859-1?Q?HxpxniDZ/1kFV/gC/KhgF/5bSizsOxe4nxQFw60yq9qWb3OXSUcz42kxtz?=
+ =?iso-8859-1?Q?aa7myCUk7WPZzeGlelHFXzFhiJD0P0BzxkYRLMNdmfwyFdnmjEnyVpMzA2?=
+ =?iso-8859-1?Q?zAO7xRDAL14GHuZcR3nO+cPcWJnM0Y8X6rX5sZ3uMcRP5vb4eBWRQKvcgd?=
+ =?iso-8859-1?Q?WUza14sfVXH0Aove29cYN/SuhXgORZ5jYhQsYukdBTd8a1xc2IuYh5nUwg?=
+ =?iso-8859-1?Q?tPLFC2FMeS+GvNuYNgzXCQcvEGXhd2OjcUY2EbT7e1DHAEYCx2H1hpW0V3?=
+ =?iso-8859-1?Q?LykOhIxoHuNgOZ9BQIJ8GfGfSZLP2IFtBhVTPQRZaKbl4O32AB5116SXjI?=
+ =?iso-8859-1?Q?EBEP0JS/ABPkwnssoZPX2b7YM/S9li2TczjfTObZg0bDvfJkufddxuX33s?=
+ =?iso-8859-1?Q?KLZ3yvNntiyBg5qHIihycF4sN8nrQ9CUvG+Rpj540chqqPThZ0LydEx8Ty?=
+ =?iso-8859-1?Q?o9f3XtaDXduNgkGuDYv5dg5p84146jmLhZsUDSdFNiiGl84tWFD21aykFe?=
+ =?iso-8859-1?Q?D69f8q26Yfvk0CXl/lBfmCExg6KbslcixNqShtLrRo4y82w/SO0VuX7ccp?=
+ =?iso-8859-1?Q?+z6/QPUroscHYH20xVr0mOx1s6HMYuQz7yBrLQZAe12PLxca+8cBvl5g0E?=
+ =?iso-8859-1?Q?A6QOoW6wwsV8xvqwZGGT+QyyRP8AFhzDTj+t7OE7U9clRVVA9GX1Rjw213?=
+ =?iso-8859-1?Q?DCwGBRI7AT/P1rd2Pg8wppXRpx69Y28Ug75VE2T0Tm3p/dRSEgv0T+Po2J?=
+ =?iso-8859-1?Q?9vN260agDyjMvKiyOm5LdgtfAXjnW0azhYMfJ5P58f8FdLHbs0xNJ8KUhr?=
+ =?iso-8859-1?Q?FpvmvyOSRlVK1Z4bxv66d1AxM62whyDH2snSFF4rKO5NARI4+7VL7So1sH?=
+ =?iso-8859-1?Q?ep5yfFaUpbsdcnSEV5cCDB0rxj2N2Q29snjHmwsdL+Xica3H7bbAGEWjdy?=
+ =?iso-8859-1?Q?9iQf1gvV8oVhydgCwvIQWImRixrhEh0XEePYY4SFLi30+c7vtEaWx12+jX?=
+ =?iso-8859-1?Q?vVpqucEDMeDgBMWNBKQWKhwB7zjVEaRR0IMVCboF80HTXKuwAH0lJ5+NBs?=
+ =?iso-8859-1?Q?Hg34lD+gfvQr5f/5cA/B6/X1Kqd0nsl43uFDjQMtQ1PEaCvJnxCJG48fKP?=
+ =?iso-8859-1?Q?n54Ni6JywfUpyPDbXJzEVPkU2WzV7VieTSy4jSu1wwlQYY7XrB2FZZGlzv?=
+ =?iso-8859-1?Q?hd6MR/eA0vW1xfFJTunjmVquYc0bphMvkXQgDJl0qtVgWLefNhdr6tkMaH?=
+ =?iso-8859-1?Q?0cgm8Mge8npeHeYyEi7l1JqQR7ev6D37Mmi6iuabyp0s3m9YiI09+yqdb5?=
+ =?iso-8859-1?Q?S5Hn++9iAa6B5YpInDKbMXOcPRZ0yheIkFPflYNeVNiRAZYVtDeIR0EEu4?=
+ =?iso-8859-1?Q?so3JlMPFlItDK3svdDIS97ZWcJsOjtu+vwtYc6TygVfxRsBTPEOLfY968a?=
+ =?iso-8859-1?Q?0Zhqe4s57U0VafsBd/y2dWP72juB5vrLb2xfRHt7JtNcGQG6cdwVNU8F+y?=
+ =?iso-8859-1?Q?Pc+Ash/3SGADixouiepgSDvDCQtatPVmbgUIOMFvdB3xArCWthd3+oXCYu?=
+ =?iso-8859-1?Q?fHITJ/bGAFvDA41ol2f0xEKLM9j2RjpazX358KTckQ9G597BV8apzTTP5v?=
+ =?iso-8859-1?Q?HikQ6eVeaoTCiIcdq4xvgnl/g4ZbqpE+XXhLwpEuE0IoZQB5mkOKjcUnp3?=
+ =?iso-8859-1?Q?ncWEI+QeGlPYeVE6hEcnk7cVbDc2Srt7HRB7iT5FWEmwTVqBUJmsoVA+4G?=
+ =?iso-8859-1?Q?KvPkTWL0DGq0JXusMCgNlAg/z85ryYPXO1rCaBqd4zLORYIxuFH1enIvpA?=
+ =?iso-8859-1?Q?Ck2QTvqQDPctyEspYr3JDnCO17Jg6kA8c/OdoBamSDbrVOgUrW12bKbJ5T?=
+ =?iso-8859-1?Q?Hny4JxitKrNsL5V2wC44lwCpDn51h9PLu3LEznISM0l5vccMkapNFV4mth?=
+ =?iso-8859-1?Q?Ub0Gv1AYiiLVZKfLzZJswJLk37KHSsLZr/isFals4nh6K8+Qwz0L0exmE4?=
+ =?iso-8859-1?Q?l60zrotV/OFMbI89UCxUtmFEGbzN8ao0mPo3w1jGWETl4DdQR4uY+JPXGv?=
+ =?iso-8859-1?Q?wTGNL4YENYoLhMmxDt6YbDO4N8Dz0EgF68wl/4CwkE2lg1eG55lrwXjDR2?=
+ =?iso-8859-1?Q?940=3D?=
+MIME-Version: 1.0
+
+--===============1570486227==
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+Shalom
+ I have a project for the sum $13,609,000.00USD that I would love to partne=
+r with you. Kindly respond back to me and I will explain in detail to you.
+ Ms. Ramona Caswell
+
+--===============1570486227==
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"></head><body><p>Shalom</p>
+<p>I have a project for the sum $13,609,000.00USD that I would love to part=
+ner with you. Kindly respond back to me and I will explain in detail to you=
+.</p>
+<p>Ms. Ramona Caswell</p></body></html>=
+
+--===============1570486227==--

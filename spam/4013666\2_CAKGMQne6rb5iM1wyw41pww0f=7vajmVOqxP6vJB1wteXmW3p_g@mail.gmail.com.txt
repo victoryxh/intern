@@ -1,0 +1,200 @@
+Received: from SJ0PR06MB8263.namprd06.prod.outlook.com (2603:10b6:a03:38f::19)
+ by BY3PR06MB8113.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 11:09:32 +0000
+Received: from BN8PR15CA0052.namprd15.prod.outlook.com (2603:10b6:408:80::29)
+ by SJ0PR06MB8263.namprd06.prod.outlook.com (2603:10b6:a03:38f::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.21; Sun, 15 Aug
+ 2021 11:09:32 +0000
+Received: from BN8NAM11FT003.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:80:cafe::e2) by BN8PR15CA0052.outlook.office365.com
+ (2603:10b6:408:80::29) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13 via Frontend
+ Transport; Sun, 15 Aug 2021 11:09:32 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ BN8NAM11FT003.mail.protection.outlook.com (10.13.177.90) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 11:09:32 +0000
+Received: from mail-qk1-f195.google.com ([209.85.222.195])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXV05H3NOBS7E20@smtp5.wiscmail.wisc.edu> for
+ hli434@wisc.edu; Sun, 15 Aug 2021 06:09:29 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Abbas
+ Ryan <redexpressdeliveryservice2@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= MULTIPLE_RCPTS 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, HTML_00_01 0.05, HTML_00_10 0.05,
+ BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, BODY_SIZE_700_799 0,
+ CT_TEXT_PLAIN_UTF8_CAPS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, KNOWN_MTA_TFX 0,
+ NO_CTA_URI_FOUND 0, NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SPF_PASS 0,
+ SXL_IP_TFX_WM 0, TO_UNDISCLOSED_RECIPIENTS 0, WEBMAIL_SOURCE 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __CT 0, __CTE 0, __CT_TEXT_PLAIN 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_BODY_WEBMAIL 0,
+ __FRAUD_INTRO 0, __FRAUD_SUBJ_B 0, __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0,
+ __FRAUD_WEBMAIL_REPLYTO 0, __FROM_GMAIL 0, __FROM_NAME_NOT_IN_ADDR 0,
+ __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_MSGID 0, __HAS_REPLYTO 0,
+ __HEADER_ORDER_FROM 0, __HELO_GMAIL 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0,
+ __MIME_TEXT_P1 0, __MIME_VERSION 0, __NO_HTML_TAG_RAW 0, __PHISH_SPEAR_GREETING
+X-Wisc-Doma: redexpressdeliveryservice2@gmail.com,gmail.com
+X-Wisc-Env-From-B64: cmVkZXhwcmVzc2RlbGl2ZXJ5c2VydmljZTJAZ21haWwuY29t
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.110315,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840000,
+ SenderIP=[209.85.222.195]
+X-Wisc-DKIM-Verify:
+ redexpressdeliveryservice2@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-qk1-f195.google.com with SMTP id b207so6449316qkg.9 for
+ <hli434@wisc.edu>; Sun, 15 Aug 2021 04:09:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20161025;        h=mime-version:reply-to:from:date:message-id:subject:to
+     :content-transfer-encoding;
+ bh=5gpfcYNEri1Gngu/LhVU1tq+q/3cwpO5Mu1XrKKNybU=;
+ b=QXoIZa8jK0F/XZHog4XyZf+M+W2b4rSC6BamLvCqDRIVLtx2sgK+rZ5PBpJyXBKdjV
+ HH5odOZLCxSV96ozBspUdBPqHv7qSI+8NUKsimunbYTUuE/dL/JL2NGGDIjm6eEmaekO
+ j+dPHpO7xXSxPiGJ2Q1QV8yQYuIV7U8EpMpY794XM91jD1V2sP1roL7BSl5dUWhuqyrl
+ skt43vVrh4N8z+kmRUWuygRzt/LgEAkKexCs3GX3fmMxO01gvGiuAZqNG53iuHB3PSOE
+ 5fbUlIeHf2OEr1xufAwX72XJzUfnFNnagxW5AjN+F2lk1erabLN3HE4WQM6vITzgFmBo
+ cpPA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:mime-version:reply-to:from:date:message-id
+ :subject:to:content-transfer-encoding;
+ bh=5gpfcYNEri1Gngu/LhVU1tq+q/3cwpO5Mu1XrKKNybU=;
+ b=NQVTaeDdN/m5jhZKY1sUxAs7cVHEhKqqtEWdX/GN2MVotDHTAWp+gqdCz2rn6tJ3HJ
+ Xz602xxG3zyAXPvqndYVG4kTWXYWXUrrE1dEx3B8MapHGYba4qhS93cJOWjwQOA5FIuj
+ h15EL6f157HAFdBjOpzlpCluDhgeGIed8o+oQnsBhGTOK/WwREzRCCnH0r63EwEta9dR
+ CT1wt5/pTmB2MNKkEfFftWJv7WAqjHUJZ1vc/SJxw/LmDSTtRHwBk8IGEhdjqfAfSAxT
+ /OPOCcmv1jZpUjs2rlpJXEcbg0/vVoXhcYOYlSvIrrsCXlODhZf24xiPwfSAvnGEGTxZ
+ H3bg==
+X-Gm-Message-State: AOAM532u8ai84ybt21+KVx3HQJsVbVquCTPMxv76t2nTHXp3X/8GfSjB
+	3/h5VrQ1NY8Cjqx+IpqlBio1UyFbWSp0D7YJl+8=
+X-Google-Smtp-Source:
+ ABdhPJzn8oilxa/DoYOI8tIonov+rUz0MmMYSKnhhDII83Lb5NZEN9B0s72VzTTZ2jqQ7YxjPnvI9C7rvmnwu0cJq64=
+X-Received: by 2002:a37:9e55:: with SMTP id h82mr9805723qke.42.1629025768322;
+ Sun, 15 Aug 2021 04:09:28 -0700 (PDT)
+Received: by 2002:ad4:50d0:0:0:0:0:0 with HTTP; Sun,
+ 15 Aug 2021 04:09:27 -0700 (PDT)
+Reply-to: abbasryan65@gmail.com
+Date: Sun, 15 Aug 2021 12:09:27 +0100
+Message-id: <CAKGMQne6rb5iM1wyw41pww0f=7vajmVOqxP6vJB1wteXmW3p_g@mail.gmail.com>
+Subject: Dear Sir/Madam,
+To: undisclosed-recipients: ;
+Content-type: text/plain; charset=UTF-8
+Content-transfer-encoding: quoted-printable
+Bcc: hli434@wisc.edu
+From: redexpressdeliveryservice2@gmail.com
+Return-Path: redexpressdeliveryservice2@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 11:09:32.2667
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 33dcb5de-8554-4762-731b-08d95fdd2891
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT003.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 33dcb5de-8554-4762-731b-08d95fdd2891
+X-MS-TrafficTypeDiagnostic: SJ0PR06MB8263:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:7691;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 11:09:32.1448
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 33dcb5de-8554-4762-731b-08d95fdd2891
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT003.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR06MB8263
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.8146948
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Mk5WWVRuZHM3NlJ1VkdsWEV1MURDM01sSG1GaUVPcXdwNm5jZWtPSWczSXJO?=
+ =?utf-8?B?YWc4dWROaTF2eGhaVlNVVWUzUFk5b2xiaFN1dEtNQk9GVi9rWjRzRDRmQkdO?=
+ =?utf-8?B?U0l0czU1QUxHNnk2Y0NFRHRVODluQmhLUlpZOGlXMHpYNGZYcTdPaEhYYXh2?=
+ =?utf-8?B?SWx6dGU4R2FzZGZSc3k0a3hxbndvM0I1VXYrSVNyVHMySVJJU0VMQTRNNXY4?=
+ =?utf-8?B?MGdHSVpyaktwUTYzakRyaHlMYVdqamRtVWpqcGZXWjlKMk1qeGY3dHJXaGFi?=
+ =?utf-8?B?K0dQcFE1SW82ei82UDMvR01ybHRlckhrajFDS1NLaWphay82MFV5WlUweldn?=
+ =?utf-8?B?b2cyck5zWTVnT21CZnhrSWpWejA4ZmhzT2owNkh6T1g0b1dlQ2hwWkFoNndM?=
+ =?utf-8?B?TVlVajFsNDV3WXNVZFI0WUFDT29nekY4cmtqeldDSXhGRGh2U0t2RXBwNUMz?=
+ =?utf-8?B?Qm82NU1kMkh6eTFROFpoaWdOQ2t6TzROUmRsOWR2UmIwWUp1N3pQSDRVZFB6?=
+ =?utf-8?B?Qi9xY3F6bnpIc1BWM1ROYnpRbFB3S2l5VnRvcno5OXRFS1RFQ1Vsa3VyTFIz?=
+ =?utf-8?B?d2lveEd4Rm10Mnp4OHNPTDY0SW0ydzRMZms1aWpEN05uTkxkQzFROWplOVY5?=
+ =?utf-8?B?RDc4SGVnNXdNUDFQSXo2UlpxYnhXcE9EY1d4aklPS2VzSzdiaGEwUEJlWHVG?=
+ =?utf-8?B?QlFjMFhvTU4zeWVrUUVhcEhSdkFuYnFMK1U3QVdnMGFxU0RMWlRSQ2x4d0Vw?=
+ =?utf-8?B?YUFYYnloUUFQOFVNc3kzT0RYOUJrNjBncjd5RFlDRUNvditJM2RZYU9hQnl0?=
+ =?utf-8?B?Y3cwUG5FRFdZMHlNU1dvNXhzNHZQMkxXajZyNDQrdGRWN3N0djJMVEVadFox?=
+ =?utf-8?B?NW45Ty95dGNibytEWEVtK0hBZHhVRkxYNFk2Mi8xUzdVMWlEazVKUHlCM0x2?=
+ =?utf-8?B?WEhzVzc3em9IblNqenBxRlk0L3JmQzVXeW1LSEorL0R6NDFUYm4wNSs1elgx?=
+ =?utf-8?B?eCt5Y2hNZGNrSjVsM2ZZQWJiOEZMc2h3cmk0NG9hQnRPOGtONkRhd3NnZ0NP?=
+ =?utf-8?B?SUMvbDk3R1lhN2pWRC9PYmp1bGJudXpwRjNIMmtBK25EZE9tQllMVk94akdV?=
+ =?utf-8?B?NXhhd1dtZlk5UFljeHplY1B2RjQwOWowMkxtZUZ2M2RUdzFodzBTcWx3S0xw?=
+ =?utf-8?B?NFN5eVpMQk9IbzFFNWtSY3RSRDlDUW54YjB5VlNRMjBuaFBhMUdleXAxRXQy?=
+ =?utf-8?B?b041Y1piMjlsaHUxY2xnbFRHRXVLbWExRlR6NVVGKzNEK1Fyb0NwUEozdURQ?=
+ =?utf-8?B?R0U2WmxOSmd1NlZxM0wvTTMrMjBxMld6WFZGWTd2andjTUNBODRlRHRCdm94?=
+ =?utf-8?B?NVArei85V1dKeXY4NDRsWVRoVEhTOFNBMTZ2V002NDFiUDJBRXRsdG9vUXpv?=
+ =?utf-8?B?aDFLYThqQytmY0M5VW50Q0FTOG50RkthbXVpcEhjOFZId0xFTlVsRHpHN2Fk?=
+ =?utf-8?B?dVJXVUI5L0FjTXZKVXhnNVQ0MWIvTG90akpVVjYyNFdRVFZBcTRzZUQ3aDJz?=
+ =?utf-8?B?alF4blM4a0lFaVRUYUcyR01HSXp3MUFMQURmWXdzSnF2dXcvZFlUVjRwTEtQ?=
+ =?utf-8?B?NW9Ha0RxRlc1RmhZTHRIT3ZubDY5TE83R0lScEYwM1Z3ejBYaE1LN0tsRkZO?=
+ =?utf-8?B?M3R0NlNCY1NiRmdsRGNYNFQ3NWw0dy85N0UxTHZMZk8wSzc3TlVZZ0sxRXBu?=
+ =?utf-8?B?RjdWZjlMLzFzNXY1RUl2VHJkYXZkc09LK09vdkJwWkdkQzZIczJOU2toQU9x?=
+ =?utf-8?B?S1R2dlJjZGF6VHFuTTlqd3FGVGVMWHArWEpuemhITnlsV0JqMlFJTi91eWFa?=
+ =?utf-8?B?aUZiczVoUjU5cXJGQ1JYUEtNWVJ5QmNNMlJNWGlvQUVicWwrTFkrY1A0eU8w?=
+ =?utf-8?B?ajJtUTZKN0c4dCtCZXdZbGE1OUZJWXpFanZmZzV6b1pUWm5CSnlERFFTZlhn?=
+ =?utf-8?B?SFdDWm1FVjl6OHk1QzExUUZYTXpWRXBORFRsM2lZeVFkR2FNNW54RkxNWS9s?=
+ =?utf-8?B?YkhMVHRjSksvcWVzaG1zRXAvV2JBUmxIQkkyUENPSFNEaUxnbFdYQzAyN3NI?=
+ =?utf-8?B?ZjQ3VjQ5R3h5bXlObmpham9oQU0wWDY4eGNwbUtxWkF1U2IzSzdzTnVjQnhF?=
+ =?utf-8?B?RW5jSnMxVkVDWEJST1dDMTBGLytLU3dCWnRJOFJSbVRPWmI3MEZaOUxWQWlC?=
+ =?utf-8?B?K3FUQkZXSkptdFpSc0s4aHdObVNXTWxJT1lqako2L1VRcDVZT2RCUFpzZ2I4?=
+ =?utf-8?B?Z0VueXI4WUJnRnlrMkl6TjFhMXpramtQNmZIbEZnbTRvTDNKdzBSL010SStw?=
+ =?utf-8?B?WU5laUFvaWlMTWRHdnRnQjRQVXlabEJZZjIyd1hQdExYQ0RMVHBNOFMxTzdX?=
+ =?utf-8?B?QnkwNzA2d2dXM2dpTkhzYXE4TkJVSUtmTEoxZjF3VFY0YmtmV0J6OElUVWll?=
+ =?utf-8?B?UDlkZlFpOWdOQytLRCtYNHRUcFpYN3FUOGQ0aWtXMWVOYWMwQ3BSSnFUb2pm?=
+ =?utf-8?B?NTNodjcvc0NqVDlSTWlpakNwMU0wVXVIczdET3F1T2pycVREbjQyaXNFZ2pK?=
+ =?utf-8?B?M1RJekk5b05IblUyNzltcDdFb0NjRFNjT08rMWRvQ0tRSk9HL0tseTRWSjQ2?=
+ =?utf-8?B?VmliR1pJRkVQbEkrbXFZWDBlaWVoZnVxMlJEOXNtY0xNbTVocWNaUTBuZEli?=
+ =?utf-8?B?bTQrMjhNdFc0NE9JOXpablR3bFNyZ2J2MTlVS2plZDQ2Q1ZPanR3emtibStu?=
+ =?utf-8?B?VHJhUitsZktyVW10WlRMY0M1SWhFdWxMUmJkbDJ5aUZTS285NlJ5MWdLZ3Fr?=
+ =?utf-8?B?ZjZvMmtPVWZyVXAxeGRra3JUeHdscGhxR1NncUtNYkl5NDZYa1RrdXN0SFd1?=
+ =?utf-8?B?V3cvRHFVY0hiamxMeVBRbGdpZXJtSUcwd2p5T3BKb045eG5kVXdtMm1Xa2cr?=
+ =?utf-8?B?VTZFcmtGUk9KVHI2czYrRzh6ck80eFJnb0JGUFFkWDhnajNzNVV3b2QwZ2ZN?=
+ =?utf-8?B?MS9QL3NUSUJ4Yk9VbUsvQnFMajNMb3daSDBSclFpbUlzMitrdHl0UVBSbHlJ?=
+ =?utf-8?Q?9GmbsPopV?=
+MIME-Version: 1.0
+
+Dear Sir/Madam,
+
+We wish to invite you to our Loan programme, Do you have any lucrative
+projects that require funding? What=E2=80=99s the sector of the project? Do
+you think the project can generate a good ROI?
+
+The Management of Guaranty Financial of Abu Dhabi, will be interested
+to consider a possible collaboration with your firm through project
+development within your area if it proves viable after our review and
+consideration.
+
+We also give reasonable commission to brokers, who brings projects
+from project owners for finance or other opportunities.kindly indicate
+your interest for more details via my private mailbox:
+abbasryan65@gmail.com
+
+Regards
+
+Mr Abbas Ryan
+Guaranty Financial of Abu Dhabi,
+United Arab Emirates

@@ -1,0 +1,282 @@
+Received: from BN8PR06MB6241.namprd06.prod.outlook.com (2603:10b6:408:53::20)
+ by BN6PR06MB3107.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022
+ 20:39:05 +0000
+Received: from BN7PR06CA0050.namprd06.prod.outlook.com (2603:10b6:408:34::27)
+ by BN8PR06MB6241.namprd06.prod.outlook.com (2603:10b6:408:53::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5504.18; Mon, 15 Aug
+ 2022 20:39:01 +0000
+Received: from BN8NAM11FT088.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:34:cafe::d4) by BN7PR06CA0050.outlook.office365.com
+ (2603:10b6:408:34::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5482.16 via Frontend
+ Transport; Mon, 15 Aug 2022 20:39:01 +0000
+Authentication-Results: spf=pass (sender IP is 209.85.167.170)
+ smtp.mailfrom=gmail.com; dkim=pass (signature was verified)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.167.170 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.167.170; helo=mail-oi1-f170.google.com; pr=C
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ BN8NAM11FT088.mail.protection.outlook.com (10.13.177.81) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5546.7 via Frontend Transport; Mon, 15 Aug 2022 20:39:01 +0000
+Received: from mail-oi1-f170.google.com ([209.85.167.170])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.16.20220118 64bit (built Jan 18
+ 2022)) with ESMTPS id <0RGO0237QC0VEZ90@smtp5.wiscmail.wisc.edu> for
+ elton.rodrigues@wisc.edu; Mon, 15 Aug 2022 15:38:56 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_NO_HTTP 0.1,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_4000_4999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ DATE_TZ_NA 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, ECARD_KNOWN_DOMAINS 0,
+ FROM_SAME_AS_TO_DOMAIN 0, HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0,
+ HTML_BAD_EXTRAS 0, KNOWN_MTA_TFX 0, NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0,
+ NO_URI_HTTPS 0, SENDER_NO_AUTH 0, SPF_PASS 0, SXL_IP_TFX_WM 0,
+ TEXT_DIRECTION 0, TEXT_DIR_LTR_ONLY 0, WEBMAIL_SOURCE 0, __ANY_URI 0,
+ __BODY_TEXT_X4 0, __COURIER_PHRASE 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_DOMAIN 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FRAUD_BODY_WEBMAIL 0, __FRAUD_JOB 0, __FRAUD_MONEY 0,
+ __FRAUD_MONEY_BIG_COIN 0, __FRAUD_MONEY_BIG_COIN_DIG 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0,
+ __FRAUD_MONEY_VALUE 0, __FRAUD_PARTNERSHIP 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_FROM 0, _
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: muslimraja392@gmail.com,gmail.com
+X-Wisc-Env-From-B64: bXVzbGltcmFqYTM5MkBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.8.15.202723,
+ AntiVirus-Engine: 5.92.0, AntiVirus-Data: 2022.8.15.5920001,
+ SenderIP=[209.85.167.170]
+X-Wisc-DKIM-Verify:
+ muslimraja392@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-oi1-f170.google.com with SMTP id n133so9825974oib.0 for
+ <elton.rodrigues@wisc.edu>; Mon, 15 Aug 2022 13:38:55 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;        h=to:subject:message-id:date:from:mime-version:from:to:cc;
+       bh=7bQ8FVQbTYDKmyjpUR8JKoZxvrWkL0orGKQxdZBhF/Y=;
+ b=i+y7bwJ73OqZurNBGJycXUWxPJKMwydSZj5fmkl7PByic5dS4I4Cv5lU2rJHQStCEB
+ rQMIEeD85GVM0jnKhrq3rJK0e/SFEtZaweeubwWmgBoxum9oEMKRdISIGdyrMMsusj3T
+ drH9t7zTydWSt3RENm9FtjmGAPanaxwB5wAMfS2a8n6Ig+pZU8ApIeFZrclcr3TaNNsN
+ 6+zWoKMSMLYJC1yALLUUtIIINRQ6udqQA5zdh9bTBZV9br+b/DxwFgLLL1DLc/fr5Nnf
+ Sbdipg5mVlR0RhQ1YkhI3ZTwiZ2u7UO5vpZzYC8p/eTXRVtbBEjLpbzdT0/NBu3qVMv9
+ Rkqw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+ :from:to:cc;        bh=7bQ8FVQbTYDKmyjpUR8JKoZxvrWkL0orGKQxdZBhF/Y=;
+ b=p+yJoN24UWrYNhjVHrzabY5s8ia0W2ZKtFOsPELmUVi2QVD1LgOeKvxIKM0nlkmtm1
+ mELyhb6qxjchQ6Ob2Qpf/SgeK0i7rrbU1PXSiHyewAW/zKaw23S9U103u3/JOlNiglpA
+ NLTUerzto4HN+7hWADqMop7jGXrK9Wt/KxBM9Cg+mkjJMA/g8ykzKiYt4j82piyO5TVx
+ Zds8xrDOVnlLAHliBLXCz2Kunv/5PORhFfJrrmLjO5cXNIlO9rhAUK2dzvao2he0Q3yE
+ yzJpKNeGTJMBZmKYiCFN0t4tGO0AQ5OS3IDI259kzXStX+tA1MZYwnIZYgxH4MD2Xx4C
+ xJsg==
+X-Gm-Message-State: ACgBeo1gJWED6sfGyM3Zb7uvjbmvin1r44eM8XpwGZY52zCOSx7OxYgr
+	6wTAAKmVFCGMbG0OIh/vzW8kro5pn+Weibp8kHM=
+X-Google-Smtp-Source:
+ AA6agR6wb4EORltA4DSTNmVRzvZl+UDnOIYqm6F1Uyiu+T6tkdF2nP51TnK7y7qbskX6vZs9KnG6YgX7kkCDd9Zu8fQ=
+X-Received: by 2002:a05:6808:151f:b0:343:2cbe:ad68 with SMTP id
+ u31-20020a056808151f00b003432cbead68mr7700623oiw.254.1660595935100; Mon,
+ 15 Aug 2022 13:38:55 -0700 (PDT)
+Received: by 2002:a05:6358:52c6:b0:b3:6780:1d79 with HTTP; Mon,
+ 15 Aug 2022 13:38:54 -0700 (PDT)
+From: Muslim Raja <muslimraja392@gmail.com>
+Date: Mon, 15 Aug 2022 13:38:54 -0700
+Message-id: <CALrDEA4wydeUN+RBXy0Mn2aTXS+CYcBbQu+FsuP2HE9WxvD4oA@mail.gmail.com>
+Subject: How have?
+To: geeraycho@gmail.com
+Content-type: multipart/alternative; boundary="000000000000d3c2ba05e64d9e13"
+Bcc: elton.rodrigues@wisc.edu
+Return-Path: muslimraja392@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2022 20:39:01.7859
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 331f51de-665b-4689-0f04-08da7efe2ff7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[209.85.167.170];domain=mail-oi1-f170.google.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[209.85.167.170];domain=mail-oi1-f170.google.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT088.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 331f51de-665b-4689-0f04-08da7efe2ff7
+X-MS-TrafficTypeDiagnostic: BN8PR06MB6241:EE_
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mail-oi1-f170.google.com;PTR:mail-oi1-f170.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2022 20:39:01.6922
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 331f51de-665b-4689-0f04-08da7efe2ff7
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT088.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8PR06MB6241
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.0606158
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5504.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?ZFliNlF6cWlobFhMT2xWWlVSeW9pV09qZW9DMnZDS1dBaWw0cjduRCt2dG9Y?=
+ =?utf-8?B?eGNRcW55U0lEWGhmTU5ONnhpdS9sUjlGVnNIL2tNVWI5SVNmeUkrZHBiUFVu?=
+ =?utf-8?B?SWRuRVloVjkvWXBvenhVSS9Mcy9xVTR6YVhBaHo5TnlaS2EwWGlPT2k1ZWFQ?=
+ =?utf-8?B?UW4xZGc0a05YYUpGZzFJb3RCaWNJbithdWlLVFp0SUVVY29CREpNQTJwZm1B?=
+ =?utf-8?B?ZVlENGJLMG1ldjF2OUM3enB4Q3VuWWd5T1RkWlZoZ0dUeGs1dGI4TUV1RlRY?=
+ =?utf-8?B?K1RsQ3VFajdFRFBOT3RjdzJHRm9oR1Z3VXp3TDk0V2pvNVNpT3RaVUFOWE91?=
+ =?utf-8?B?alEyYzRyd0pLdktDY0lsa0QyQ0dyVWtMTm83QjhvdkR0Zkh5bU42OVllSyty?=
+ =?utf-8?B?Z3F0UUFHY3B0QndWTFE0K0s1TEk0TU41d0dWS3Z2NGtZdUg0TEgzUXFETlhv?=
+ =?utf-8?B?dHlIY3lzUjVwMXlROFpqZVpkTWJRc08yd1RjYkpXdGJxYW5GZzkzRmFyUFpC?=
+ =?utf-8?B?NTQ2TnFleDlOei9Na2tRWmd6MERWQ2Z5Vkg0STlsWmZxNGdWUk5aVE9PSmx5?=
+ =?utf-8?B?ZlpSbGxZd1QzQmxzVlhoQVlBYnJBL2V5NnllQ00vQkwxWUhtU1BWQXdwODFa?=
+ =?utf-8?B?YjFQbmdqYk9ieWRGQ0h3YjEwa2EwM0o3a0N6SnU4Z01aeFZKdjZ3Ynk3NU9x?=
+ =?utf-8?B?eUttZEpKQURsWHZlR2I4Nk1CQ2N3M0ZkU1B5MnVhUnY3Y0NCREpqVjA2QVRn?=
+ =?utf-8?B?MUdnb04vLzNQb2dyMkZwQ2xHWDFoT1lEMTkyK05mK1BmcENtc2hpeVRvV1ZZ?=
+ =?utf-8?B?V0JqVlhhTTJTckdBM3dYbStRbzBUV0hmRW96amNlQXZxdnlJQWtvYy9NTklZ?=
+ =?utf-8?B?bmt0MDI5eUlFOWFKZlh2TGx4d0JEMW5Uc3kvVnk5SmE1WTI2UFUzalVpZlhU?=
+ =?utf-8?B?b0NBQ3RTblZZbFp2VHlXaGdjcU52ZTJFMnVpbnVQbFdBNUI2czh0MnBZb2Rw?=
+ =?utf-8?B?dCtqdUNyMExSUURFMjgvUlVlV0lZaXVLNHYyT0kraUI0OHFGcWYyMnk1YmpD?=
+ =?utf-8?B?REc4cVJQNmU4OGgwYmlSRGZBOGdSYktjNHdsQUZab3pKQTRnbmxWeENERlV4?=
+ =?utf-8?B?MWtWSVk0NW1MRlVVVmhSNTkzc3dzYitsMENkU0xVSU1za3RtVmZDTlBOS1NW?=
+ =?utf-8?B?NldzT09MUElRQUMxU1pPQUVZM2lVMjhxZWdVSUgwWDhtSXdTMW9yWk1TMTR6?=
+ =?utf-8?B?L2F3bnFwQkxsdUNqaTkvRnRFTWVnRkJxQ21XdFhDTXNnMjBsSk53bE53ajFB?=
+ =?utf-8?B?UDZqN0VSUE4vU2ZxTnB1Z1BPTFMvajNzUmlGSUhUVHBxU3pIZWtnMGhaVmoz?=
+ =?utf-8?B?TUFCN1Y1bzNvWlcwZ1FaRTVCdlFRcEhKMkhQUUlLREdmQ3ZaZVRrbThvcGJT?=
+ =?utf-8?B?RkNHTE1pTHpac3hRNmxKSHJpU3MyK0Faczd6Qi9sMjRlN2drNXgxMjBKbXdU?=
+ =?utf-8?B?TjVpV0VOeVlXOXc0dWg1N2JmdVlrOHh0NHA2K2U3WE9JUXNoTmVqOEg2aFho?=
+ =?utf-8?B?S2NGYU1GWENiVVh1ZUVuMjZWWTRSai95SGNEZmtSQk9RMVhVSVJOTi9vY2hC?=
+ =?utf-8?B?NEVjOUF1OXdMUE03eDFBdU43RmMycWN0SHZVdHV5VHZvSnBWclloRlNRenJi?=
+ =?utf-8?B?WU9udDRwY2QyNjhUSW1LaE5KZG92Z1RkRDB1UFVWT2hjK05GaUVFeXVpSW4r?=
+ =?utf-8?B?QlYxTG16Yy8zMUFwUVVPVUE3MmFOOEliNzkxYmp4S1MvdTNsbkp3ZHBqUUZX?=
+ =?utf-8?B?UmJYYzhSMEY0YlEyeXNvTXBaczdqRWs0MEhQbXVya0ppZWFRc2Noam5UQ043?=
+ =?utf-8?B?bjJMK1paWkhFcDRYRFFubGowQnZ2aTcyOS82VUQ1eS9RUWRPL2pjN2dPWWow?=
+ =?utf-8?B?YXVTV0dTSzdrSnVVSUVuazV6MFVqclVzMEs2QktsUEV5UGhBaC9iT1NHdDZT?=
+ =?utf-8?B?enNHY3AvVmNUK010OUNwcWxYQ0lONGJEVGZVdHZtZml1akxuOGtrY0YxWGt3?=
+ =?utf-8?B?aW45N2YrRzhPMVBDcWZzSEk4akx5V1daS3AvTUJ5clJVQ25xNk9iVzd1cWpG?=
+ =?utf-8?B?dng4ZDQ0Mzd5T2VQTUEzY2ZKV2QvbXNxL2Y1YVJrZERnbTlXODA3YUovT1oy?=
+ =?utf-8?B?aStueXVNdzAvckpPdCtHU1U4UXdOMkFGaFNVY0FQRTQrSFVub0ExRXJWajk3?=
+ =?utf-8?B?aUhGbnRHSWJHc3l4VTM1dU1OcHk3ZlczYlVSY0JIM1JweDFVVHNZenlDSU5K?=
+ =?utf-8?B?VTgvaWZlei9zc3NFNHowNTE4TmUzMnQvdGNQc1ZpUlBoRGg2ZGZuOVNuSkRr?=
+ =?utf-8?B?bi90bEV0RGVhajR5NXRMVWdJQlYzem1ibHQzT014eldZaGtaNEk4ZlB3M21D?=
+ =?utf-8?B?OVdKVklwZllzdjY1cjJUSUtUdmluNFEvM0lrUG5jSDJFQmtBRDdpNk53K3J2?=
+ =?utf-8?B?YjhBWDVYMkNHRlNGTDkrUW9VUjJmVDNJeUJENkNDWmx5ZHNJbTJNYVM1ZTY5?=
+ =?utf-8?B?WlM5Q1B1dVhXd1RHODdic1lYdmZLVjhlcUpUczd1ZFpaKzZwYTRGY1I3UFIy?=
+ =?utf-8?B?clBmZ2JrV0tpYnFiTTNNaXY0OWhBc3kvdjFWNE5XczNkQ3dBcU1RT2hRUEVl?=
+ =?utf-8?B?d2pSSC9FdDNTNlVCQkZVcHdLYStqRWtlVTdIdVl4WXJ1TW85ZGxmUDduUy9j?=
+ =?utf-8?B?VnZOZStUZUZaQmVhV2FUOGczSUxlVnREUXNaUlJwcXRMMzgvektZVW0xU3pp?=
+ =?utf-8?B?c21XcEpyY3RZQS9LUTZMNFoxanRYZnU5d1k3TmdlZEluVEpzNGFNTU9hSldn?=
+ =?utf-8?B?ekU4LzRFS0lPOEdWQVpyUEVFMG1yKzNjSlpLVm14NlhpRDlJZVlZbW84WEdk?=
+ =?utf-8?B?TFpWdExIRXFnUVBxanZZblgxcVUxWG1iSVJFa01zektDUjIwcFNCb2Y4eGU5?=
+ =?utf-8?B?S2FXUjg4ekxmRlJob3JiajJybkVNVUpnWmFRRzA1dm1HUEdjcFI3djRleFNz?=
+ =?utf-8?Q?+DIPgL58Ol1+309QgtDhmpahYvmgVb1dQ=3D?=
+MIME-Version: 1.0
+
+--000000000000d3c2ba05e64d9e13
+Content-Type: text/plain; charset="UTF-8"
+
+Position Alert
+---------- Forwarded message ---------
+From:
+Subject: ow haMon, 15 Aug 2022 20:38:48 -0000
+To: geeraycho@gmail.com
+MIME-version: 1.0
+Importance: normal
+Date: Mon, 15 Aug 2022 20:38:48 -0000
+
+Hi,
+
+We found your information and upon receiving it, we discovered that your
+qualifications and knowledge make you a suitable applicant to fulfill one
+of our part-time positions.
+
+Job title: Quality Inspector
+Payment: $3,200 A month
+Position Type: part-time
+
+Knowledge & CompetenciesDemanded:
+- Ability to concentrate
+- Do the job successfully in a team as well as independently
+- Exceptional researching skills.
+- Skill to communicate in the correct manner and positively with all
+customers
+- Excellent documentation skills
+- You must have as minimum 21 years old and legally reside in the U.S.
+
+Main your duties will include: receiving and sending incoming shipments,
+packaging and do pick up of all outgoing goods, maintaining information for
+all shipping & receiving activities.
+
+Responsibilities:
+- Constantly verify and manage stocks
+- Communicate with the team proficiently
+- Independently ensures all activities are done for the sales team so the
+sales unit proceeds maximum productiveness in Order Intake and profitability
+- Receive incoming cargo of goods
+- Verifying that orders are accurately filled by matching up items and
+quantities of goods gathered for delivery against docs.
+
+Our company offers a compensation and packages for the effort such as:
+- Paid training
+- Career advancement , additional bonuses
+- Tuition Reimbursement, life insurance
+- participation in 401k and profit sharing plan
+- Medical, dental benefits, full medical coverage
+
+To occupy our organization, please email us at: tiehartica@yahoo.com
+
+
+Sent from my iPhone
+
+--000000000000d3c2ba05e64d9e13
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv>Position Alert</div><div>
+</div><div>
+</div><div>---------- Forwarded message ---------
+</div><div>From: </div><div>Subject: ow haMon, 15 Aug 2022 20:38:48 -0000</=
+div><div>To: <a href=3D"mailto:geeraycho@gmail.com">geeraycho@gmail.com</a>=
+</div><div>MIME-version: 1.0</div><div>Importance: normal</div><div>Date: M=
+on, 15 Aug 2022 20:38:48 -0000</div><div><br></div><div></div><div>Hi,</div=
+><div><br></div><div>We found your information and upon receiving it, we di=
+scovered that your qualifications and knowledge make you a suitable applica=
+nt to fulfill one of our part-time positions. </div><div><br></div><div>Job=
+ title: Quality Inspector</div><div>Payment: $3,200 A month</div><div>Posit=
+ion Type: part-time</div><div><br></div><div>Knowledge &amp; CompetenciesDe=
+manded:</div><div>- Ability to concentrate</div><div>- Do the job successfu=
+lly in a team as well as independently</div><div>- Exceptional researching =
+skills.</div><div>- Skill to communicate in the correct manner and positive=
+ly with all customers</div><div>- Excellent documentation skills</div><div>=
+- You must have as minimum 21 years old and legally reside in the U.S.</div=
+><div><br></div><div>Main your duties will include: receiving and sending i=
+ncoming shipments, packaging and do pick up of all outgoing goods, maintain=
+ing information for all shipping &amp; receiving activities.</div><div><br>=
+</div><div>Responsibilities:</div><div>- Constantly verify and manage stock=
+s</div><div>- Communicate with the team proficiently</div><div>- Independen=
+tly ensures all activities are done for the sales team so the sales unit pr=
+oceeds maximum productiveness in Order Intake and profitability</div><div>-=
+ Receive incoming cargo of goods</div><div>- Verifying that orders are accu=
+rately filled by matching up items and quantities of goods gathered for del=
+ivery against docs.</div><div><br></div><div>Our company offers a  compensa=
+tion and  packages for the effort such as:</div><div>- Paid training</div><=
+div>- Career advancement , additional bonuses</div><div>- Tuition Reimburse=
+ment, life insurance</div><div>- participation in 401k and profit sharing p=
+lan</div><div>- Medical, dental benefits,  full medical coverage</div><div>=
+<br></div><div>To occupy our organization, please email us at: <a href=3D"m=
+ailto:tiehartica@yahoo.com">tiehartica@yahoo.com</a></div><div><br><br><div=
+ dir=3D"ltr">Sent from my iPhone</div></div>
+
+--000000000000d3c2ba05e64d9e13--

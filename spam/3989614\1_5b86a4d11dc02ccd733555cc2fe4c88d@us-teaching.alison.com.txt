@@ -1,0 +1,956 @@
+Received: from CY4PR06MB3400.namprd06.prod.outlook.com (2603:10b6:910:50::19)
+ by CH2PR06MB6725.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021
+ 19:11:00 +0000
+Received: from BN9PR03CA0872.namprd03.prod.outlook.com (2603:10b6:408:13c::7)
+ by CY4PR06MB3400.namprd06.prod.outlook.com (2603:10b6:910:50::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.17; Sat, 14 Aug
+ 2021 19:10:58 +0000
+Received: from BN8NAM11FT052.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:13c:cafe::5) by BN9PR03CA0872.outlook.office365.com
+ (2603:10b6:408:13c::7) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sat, 14 Aug 2021 19:10:58 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ BN8NAM11FT052.mail.protection.outlook.com (10.13.177.210) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sat, 14 Aug 2021 19:10:57 +0000
+Received: from us-teaching.alison.com ([3.216.97.65])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXU000M0FY8ZFA0@smtp7.wiscmail.wisc.edu> for
+ jchung69@wisc.edu; Sat, 14 Aug 2021 14:10:57 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_90_100 0.1,
+ HTML_95_100 0.1, BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODYTEXTP_SIZE_400_LESS 0, BODY_SIZE_10000_PLUS 0, DKIM_ALIGNS 0,
+ DKIM_SIGNATURE 0, FONT_STYLE_1PT 0, HREF_LABEL_TEXT_NO_URI 0,
+ IMGSPAM_TABLE_1 0, LINK_TO_IMAGE 0, LIST_HEADER 0, OBFUSCATION 0,
+ REPLYTO_SAMEAS_FROM 0, SENDER_NO_AUTH 0, SPF_PASS 0, STYLE_RATWARE_REF 0,
+ URI_ENDS_IN_PHP 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CANPHARM_UNSUB_LINK 0, __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0,
+ __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __FROM_NAME_NOT_IN_BODY 0, __FROM_NOREPLY 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HAS_X_MAILER 0, __HAS_X_PRIORITY 0, __HEADER_ORDER_FROM 0,
+ __HIDDEN_HTML_CONTENT 0, __HIGHBITS 0, __HREF_LABEL_IMG 0,
+ __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0,
+ __HTML_HREF_TAG_X2 0, __HTML_STYLE_DEF_HID
+X-Wisc-Doma: noreply@us-teaching.alison.com,us-teaching.alison.com
+X-Wisc-Env-From-B64: bm9yZXBseUB1cy10ZWFjaGluZy5hbGlzb24uY29t
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.185715,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.14.5840001,
+ SenderIP=[3.216.97.65]
+X-Wisc-DKIM-Verify:
+ noreply@us-teaching.alison.com,us-teaching.alison.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: from ip-172-31-63-120.ec2.internal (us-services-2 [172.31.63.120])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)	by us-teaching.alison.com (Postfix)
+ with ESMTPSA id 509DC381C4F7	for <jchung69@wisc.edu>; Sat,
+ 14 Aug 2021 19:10:56 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;	d=us-teaching.alison.com;
+ s=default; t=1628968256;	bh=KJedPMqyNNXuzEBiYPPicVmkdXwz9QlgxdOYE1G6qso=;
+	h=Date:To:From:Reply-To:Subject:List-Unsubscribe;
+	b=eHLpLfMOxaReOw4s8chLhxWs0mTSo9cKdQ5ed5lIFix+G2g33TVQPJYQpt0h6ls1/
+ AVjk7ykFw3gDmwEg6QHuMoMi+bTEtDTdsz7CpTB81EUg/f/zZ/jHvXVJexYYPJ5Qr4
+ R0VRJO1WdHMewNhE6oVs/LvZT/Xbz0P3ehI5QCYA=
+Date: Sat, 14 Aug 2021 19:10:34 +0000
+To: Joon Chung <jchung69@wisc.edu>
+From: Alison Courses <noreply@us-teaching.alison.com>
+Reply-to: ALISON <noreply@us-teaching.alison.com>
+Message-id: <5b86a4d11dc02ccd733555cc2fe4c88d@us-teaching.alison.com>
+X-Mailer: ALISON Mailer
+List-Unsubscribe:
+ https://alison.com/unsubscribe/?instant=1&lid=20636708&k=amNodW5nNjlAd2lzYy5
+ lZHU=&utm_campaign=4587_itm_sean_nos_singing_tin_whistle&utm_source=outbound
+ +marketing&utm_medium=email&utm_datesent=2021-08-14&utm_emailtype=marketing&
+ utm_segment=550&utm_campaig
+Content-type: multipart/alternative;
+ boundary=b1_ItOdHAwG55p2VNE4Yf0rRDNTeG8xZJn9IHrSnXIUhBQ
+Subject: =?UTF-8?B?4piY77iP?= Traditional Irish Music Courses =?UTF-8?B?4p6c?=
+ Learn =?UTF-8?Q?Sean-n=C3=B3s?= Singing and Tin Whistle! =?UTF-8?B?4pmr?=
+Return-Path: noreply@us-teaching.alison.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 19:10:58.0853
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4773b20c-e33d-432b-d426-08d95f573f71
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT052.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 4773b20c-e33d-432b-d426-08d95f573f71
+X-MS-TrafficTypeDiagnostic: CY4PR06MB3400:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=451
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 19:10:57.9704
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4773b20c-e33d-432b-d426-08d95f573f71
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT052.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR06MB3400
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3623026
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?R0g1TWxtUlhWS0VOR3lHK3pPUVdzenFyWkowQ0hRTlZzY0lZOG1aWGtFOUt5?=
+ =?utf-8?B?bE1Udi9JeUxhU1k2S0Q5VmxNc2FQajJUdGZEYk5BQmVIMERKTGlYOTJsMkkv?=
+ =?utf-8?B?VTVwNXlud2NOWm5UN2ZDQk9BaEF5YkpiOEZkUW9UR2FyMjJwTnptR3R2M2VW?=
+ =?utf-8?B?NENIWll0WDR3andvdGVlZWhGUXNOQ2FqdUoxeDA2YXlobGE5R2c3dFd1eTdE?=
+ =?utf-8?B?djFDZkVWYi9sbkFKZkt3NU51R3RtVHBLZlNKY3Q0YXJ2ODVyLzUrVEEybzl3?=
+ =?utf-8?B?YWlBZzgwaW5XWVR6aDlsMEU5VnBXanJmTC9PSEFCVVJIQlRkR1E1cmoybW1m?=
+ =?utf-8?B?YW9vZXU4cnpJRjBqWVVCaWJyQXBoRGVlaURSZDdzc2treCtyTzNNaC9BdVMr?=
+ =?utf-8?B?TkYzMk9HKzJQTEU2Tmw1TGZsQlBGbHhiamJNSHlYZDJzRXk2MGNCeFg3WVRU?=
+ =?utf-8?B?VXE3UXVCSmJQaFlFTVRPZVhKWE1DTCs1bkFBSEtxUWkvZVBaK2YvdGtLcmc4?=
+ =?utf-8?B?SUVMOXhpbStQWnZsZG16cXNVY0tLdFUwWFp0RFJZV2twV1JXTkJ0OXRJWG5a?=
+ =?utf-8?B?cUxGY2FUeUE0RmhnbzV3a2xBUGI4T09XZmNwM3pPQUJSSFdBNGZJT1ZVMjFR?=
+ =?utf-8?B?UTFrZFZXNGJuTHBHOVBIZnFNcXppUW9teTM5clI5a0IzMTBIdlJoZ2YrWDdu?=
+ =?utf-8?B?aTNYRzNxckx1OTRTVnVWeTExK2x5V29Yelk3bFFsaG1GMkJ1TVgwbVM0c2pP?=
+ =?utf-8?B?RS9aQzA2Smt6S1JmK1R2NHJmOHl2ellNTXFDR09OejRRM3hCdGhyb2pZbW9i?=
+ =?utf-8?B?OHlPSlIzV0tTZlI0QW0rUytpeUhHRGx6VDg5WjBsNmZab2FRaVRkYU9LQVlP?=
+ =?utf-8?B?bHhjMm9aeFlwTnVQY2RZNndkaEJGZWozWTBoRFMrUDhlcFk1cUhlejdjQlJi?=
+ =?utf-8?B?cUg3bm8rWE45cnYra0dLR1lrMW9DTWlnVXZYNGV1dnoydkxWcVloL01wU2dr?=
+ =?utf-8?B?d3k1Y21IR2wzMTNSalNVRGRzOWErSVNUNGxqZC9RenFFSTNPOWMzaTdabTll?=
+ =?utf-8?B?MkJXSmc1RjU0S1NMOS9KdWpzb1VEc2JVVFNZUGpmWjdKT0JLWVdFWHZVY0Fv?=
+ =?utf-8?B?RFd1MmVpY0xsOHV0SUcxK2swQTMvdkRRODJoK2NHa2w1NVlTWVFweHRBU3RR?=
+ =?utf-8?B?RHFFdURkVE84aUJHenVtNS9GU0hZSmsxbk9Sa3hkNG9tUXAyZGN2UW5JNTMz?=
+ =?utf-8?B?SFc4R0QvUGJEQnROb21DN2FMZlRmMTJnNE5HZHg4dlp4MGJHR1RWdDhBWkZz?=
+ =?utf-8?B?ekJMQ3hhWUVvV1BtNnlxaTBNaVNWTytMOTc0WFRvNXZ4OUV5eWdTeVBULzJm?=
+ =?utf-8?B?NklDZjFRdWxPNEtxQmtZOEJLWHRIS0N5ZTVDMGVSNjdxcHdWdmpZYkkybmdu?=
+ =?utf-8?B?OVNEK3FkSU4vcDE4RnQ3UDdkKzM4a3RpcTdJajg0Q2Y1OVA3dHFyR3FHMWd2?=
+ =?utf-8?B?Mnh6Z2t6Q2tmQU8rUUdENTdxcVV4aFBPclJOaDFnNGNVUDIvbzJKQ3k3MUFV?=
+ =?utf-8?B?ZnByc21XcXpLVm9UVy9sMld5QmJnU2haKytRN3RvSGdJSTV3d0VBOVdGRnFw?=
+ =?utf-8?B?QWZ3VGNmZHVBQnFHRzR2OWtMenE0Y1o3RjhzYXcwcWhrdW9VNmk2MUFEWnpG?=
+ =?utf-8?B?dlQzcEE4S3NPekE0Y2U0V21YYXpTU296bDYydDBPcDVZVVorMXp6djVNbnlH?=
+ =?utf-8?B?ZzF4NWJwMkNrdTlud0xCbjFSYUx4L0xpcEdOelBQdm45U29jVDNCRnNSNjF0?=
+ =?utf-8?B?YUU4aWtuWTJKN1FXUXhKMlBqN1cvMW1mWGsvK3R5Y09ObXNGWGJWay82NjRs?=
+ =?utf-8?B?VTVRZEVuRG9QbDJBbVBzbTlCSlJsT0g2dXAxb2VHS3NwMklpUjFzODFXK3Vx?=
+ =?utf-8?B?M1R3ZGpXNGtCTDdtcFBoeTFGSG9qVWMvTm5ub1FFcEcxeGhxOXZ5eXAyZXE3?=
+ =?utf-8?B?b2VDVTA5UkpMTDV4R0xCL25ESUdxZk05WWltREFHYzU0RVE4WnBhcUFRQ2Rm?=
+ =?utf-8?B?KzZwUWJPMVVsRUxoR2Q5dG44TlJaOE9SUXNLZkdVYjlDUjlaOHRsd3dZYlNw?=
+ =?utf-8?B?OHRicW10cE8xZEE5eFhRbTczcXN3ZFlPb2VicGE2b2JpM05KbzNIRkF6aUs5?=
+ =?utf-8?B?OElkZjhBSVFteGEwcktRR0ZtdzA0TVVTbUtZcGxJS0ExUmJ0QlZsdWlXZ0VP?=
+ =?utf-8?B?VnlqbFFheGtnQWRYc1pYZnV5N3crOE5HTUh4KzY5REN4TUJmYWJ3ckQzaStt?=
+ =?utf-8?B?aDlGN0xUdzBlT1lUaFBjY1JKV1pkZWcrT3F2NTI3SVYyQWIzbHg4VTNVb2Rr?=
+ =?utf-8?B?bmpGbFg1UHZjdCtTZlIzbjJVS05KN1BEZVR6YXA0M0hZNFU2V0E3SHk4dzBj?=
+ =?utf-8?B?NWYzcFY2ZFpvZ3pUaFhqa3FQUnRZaVNZZ2lRTGxtODcwVWxNOGlQWU5mcE1k?=
+ =?utf-8?B?dVpNZnU2QnRQaWFTb2x4eHljLzUyZFROY2lkc0pCck5keWZiVlRkVTZPK1Fh?=
+ =?utf-8?B?M2NlM2FEdURXRnhwS0ZBRWVQZ2d0U2RYMzhaR1NYODRESXJ2OEp2YkdjRFR6?=
+ =?utf-8?Q?AyTNeJr5w6pCzmehv2jei6MK6E/Y=3D?=
+MIME-Version: 1.0
+
+--b1_ItOdHAwG55p2VNE4Yf0rRDNTeG8xZJn9IHrSnXIUhBQ
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Unsubscribe:
+https://alison.com/unsubscribe/?instant=3D1&lid=3D20636708&k=3DamNodW5nNjlA=
+d2lzYy5lZHU=3D&utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&utm_sou=
+rce=3Doutbound+marketing&utm_medium=3Demail&utm_datesent=3D2021-08-14&utm_e=
+mailtype=3Dmarketing&utm_segment=3D550&utm_campaigntheme=3Db2c&utm_subjectt=
+one=3Dexciting
+
+--b1_ItOdHAwG55p2VNE4Yf0rRDNTeG8xZJn9IHrSnXIUhBQ
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+	<!-- favicon -->
+	<link rel=3D"icon" type=3D"image/png" href=3D"https://cdn01.alison-static.=
+net/public/html/vendor/img/favicon/favicon-16x16.png" sizes=3D"16x16">
+	<link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https://cdn01.ali=
+son-static.net/public/html/vendor/img/favicon/apple-touch-icon.png">
+	<link rel=3D"icon" type=3D"image/png" sizes=3D"32x32 16x16" href=3D"https:=
+//cdn01.alison-static.net/public/html/vendor/img/favicon/favicon-32x32.png"=
+>
+	<link rel=3D"manifest" href=3D"https://cdn01.alison-static.net/public/html=
+/vendor/img/favicon/manifest.json">
+	<link rel=3D"mask-icon" href=3D"https://cdn01.alison-static.net/public/htm=
+l/vendor/img/favicon/safari-pinned-tab.svg" color=3D"#5bbad5">
+	<meta name=3D"theme-color" content=3D"#ffffff">
+	<!-- end favicon -->
+    <title>=E2=98=98=EF=B8=8F Traditional Irish Music Courses =E2=9E=9C Lea=
+rn Sean-n=C3=B3s Singing and Tin Whistle! =E2=99=AB</title>
+	<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com">
+	<link href=3D"https://fonts.googleapis.com/css2?family=3DRoboto:ital,wght@=
+0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&amp;display=3Dswap" rel=3D"=
+stylesheet">
+    <style type=3D"text/css">
+         div,
+         p,
+         a,
+         li,
+         td {
+         -webkit-text-size-adjust: none;
+         }
+         a img {
+         border: 0
+         }
+         img {
+         border: 0
+         }
+         ul li {
+         text-align: left;
+         }
+         * {
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+         }
+         .ReadMsgBody {
+         width: 100%;
+         background-color: #ffffff;
+         }
+         .ExternalClass {
+         width: 100%;
+         background-color: #ffffff;
+         }
+         body {
+         width: 100%;
+         height: 100%;
+         background-color: #ffffff;
+         margin: 0;
+         padding: 0;
+         -webkit-font-smoothing: antialiased;
+         }
+         @import url('http://fonts.googleapis.com/css?family=3DOpen+Sans:40=
+0,460');
+         p {
+         text-align: left;
+         padding: 0!important;
+         margin-top: 0!important;
+         margin-right: 0!important;
+         margin-bottom: 0!important;
+         margin-left: 0!important;
+         }
+         a:link {
+         text-decoration: none;
+         }
+         a:hover {
+         text-decoration: none;
+         }
+         a:active {
+         text-decoration: none;
+         }
+         a:visited {
+         text-decoration: none;
+         }
+         table[class=3DflowLeft] {
+         float: left!important;
+         width: 50% !important;
+         }
+         td[class=3DflowLeft] {
+         float: left!important;
+         width: 50% !important;
+         }
+         table[class=3DflowRight] {
+         float: right!important;
+         width: 50% !important;
+         }
+         td[class=3DflowRight] {
+         float: right!important;
+         width: 50% !important;
+         }
+         .flowRight {
+         float: right!important;
+         width: 50% !important;
+         }
+         .flowLeft {
+         float: left!important;
+         width: 50% !important;
+         }
+      </style>
+      <!-- @media only screen and (max-width: 640px) {*/-->
+      <style type=3D"text/css">
+         @media only screen and (max-width: 640px) {
+         body {
+         width: auto!important;
+         }
+         table[class=3Dfull] {
+         width: 100%!important;
+         clear: both;
+         }
+         table[class=3Dmobile] {
+         /*width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+         table[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         }
+         td[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         }
+         img[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         height: auto;
+         }
+         .left{
+         width: 100%!important;
+         text-align: center!important;
+         float: left;
+         }
+         td[class=3Dleft] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         float: left;
+         }
+         .disappear{
+         display: none;
+         }
+         .disappearMob {
+         display: none;
+         }
+         }
+      </style>
+      <!--@media only screen and (max-width: 479px) {-->
+      <style type=3D"text/css">
+         @media only screen and (max-width: 479px) {
+         body {
+         width: auto!important;
+         }
+         table[class=3Dfull] {
+         width: 100%!important;
+         clear: both;
+         }
+         table[class=3Dmobile] {
+         /*width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+         td[class=3DmobileTXT] {
+         text-align: center!important;
+         vertical-align: middle!important;
+         }
+         .mobile {/*
+         width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+        table[class=3DbuttonResize]{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         float: none!important;
+         } =20
+        td[class=3DbuttonResize]{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         }
+         .buttonResize{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         }  =20
+         table[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         td[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         .fullCenter {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         img[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         height: auto!important;
+         }
+         table[class=3DflowLeft] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center;
+         padding-bottom: 15px;  =20
+         }
+         td[class=3DflowLeft] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         table[class=3DflowRight] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         td[class=3DflowRight] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         .flowRight {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         .flowLeft {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+        .disappear {
+         display: none;  =20
+         }
+         .disappearMob {
+         display: none;
+         }
+         .title{
+          padding-top: 15px!important;
+          background-color: #0093c9!important;
+         }
+        .left{float:left; width:100% }
+         }
+         }
+      </style>
+   </head>
+
+<body leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginheight=3D"0"=
+ style=3D"background-color: #ffffff;">
+=09
+	<!-- GOOGLE SNIPPET -->
+    <div style=3D"display:none;font-size:1px;color:#333333;line-height:1px;=
+max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Alison=E2=80=99s T=
+raditional Irish Music Courses -  Week 2: Focus on Sean-nos Singing and Tin=
+ Whistle!</div>
+    <!-- END GOOGLE SNIPPET -->
+
+    <!-- View in Browser Section -->
+	<table id=3D"view-in-browser-container" style=3D" border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt; width: 620px;" width=3D"620" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" class=3D"=
+fullCenter">
+		<tbody>
+			<tr>
+				<!-- Left Column -->
+				<td width=3D"310" align=3D"left" style=3D"vertical-align: middle;">
+					<a href=3D"https://alison.com/messages/3093/-traditional-irish-music-c=
+ourses--learn-sean-ns-singing-and-tin-whistle-" id=3D"view-in-browser-ancho=
+r" target=3D"_blank" style=3D"text-align: center; font-family: Helvetica, A=
+rial, sans-serif; font-size: 15px; color: #0088cc; line-height: 22px; text-=
+decoration: none;">View in web browser</a>
+				</td>
+				<td width=3D"310" align=3D"right" style=3D"vertical-align: middle;">
+					<span valign=3D"middle" style=3D"vertical-align: top;text-align: cente=
+r; font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #2d39=
+42; line-height: 22px;">Share on social </span>
+					<span>
+						<a href=3D"https://www.facebook.com/sharer.php?s=3D100&amp;u=3Dhttps:=
+//alison.com/messages/3093/-traditional-irish-music-courses--learn-sean-ns-=
+singing-and-tin-whistle-" target=3D"_blank" style=3D"outline: none; border:=
+ none; text-decoration: none;">
+							<img src=3D"https://cdn.alison-static.net/mail/2018/generic/generic-=
+small-share-facebook.png" alt=3D"Share on Facebook">
+						</a>
+						<a href=3D"https://twitter.com/share?url=3Dhttps://alison.com/message=
+s/3093/-traditional-irish-music-courses--learn-sean-ns-singing-and-tin-whis=
+tle-" target=3D"_blank" style=3D"outline: none; border: none; text-decorati=
+on: none;">
+							<img src=3D"https://cdn.alison-static.net/mail/2018/generic/generic-=
+small-share-twitter.png" alt=3D"Share on Twitter">
+						</a>
+						<a href=3D"http://www.linkedin.com/shareArticle?url=3Dhttps://alison.=
+com/messages/3093/-traditional-irish-music-courses--learn-sean-ns-singing-a=
+nd-tin-whistle-" target=3D"_blank" style=3D"outline: none; border: none; te=
+xt-decoration: none;">
+							<img src=3D"https://cdn.alison-static.net/mail/2018/generic/generic-=
+small-share-linkedin.png" alt=3D"Share on Linkedin">
+						</a>
+					</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- End View in Browser Section -->
+
+    <!-- HEADER AREA -->
+    <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" class=3D"full">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"background-size:cover; -moz-b=
+ackground-size: cover; -webkit-background-size: cover; -o-background-size: =
+cover;" bgcolor=3D"#ffffff">
+
+                    <!-- Width Enforcer -->
+                    <table width=3D"620" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" align=3D"center" class=3D"fullCenter">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src=3D"https://cdn01.alison-static=
+.net/mail/2018/email/transparent100.png" alt=3D"">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- END Width Enforcer -->
+                   =20
+                    <table align=3D"center" width=3D"620" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0">
+                        <tbody>
+                            <tr>
+                                <!-- Alison Logo -->
+                                <td width=3D"310" height=3D"100" style=3D"v=
+ertical-align: middle; text-align: left;">
+                                    <a href=3D"https://alison.com?utm_campa=
+ign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm_source=3Doutbound+marke=
+ting&amp;utm_medium=3Demail&amp;utm_datesent=3D2021-08-14&amp;utm_emailtype=
+=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaigntheme=3Db2c&amp;utm_subj=
+ecttone=3Dexciting" target=3D"_blank" style=3D"text-decoration: none;">
+                                        <img src=3D"https://cdn01.alison-st=
+atic.net/mail/2018/automated/14d-new-alison-logo.png" alt=3D"Alison">
+                                    </a>
+                                </td>
+                                <!-- End Alison Logo -->
+
+                                <!-- Alison Links -->
+                                <td width=3D"310" height=3D"100" style=3D"v=
+ertical-align: middle; text-align: right;">
+                                    <a style=3D"text-decoration: none; disp=
+lay: block; color: #0093c9; font-family: 'Open Sans', sans-serif; font-size=
+: 14px; line-height: 22px;" href=3D"https://alison.com/courses/categories?u=
+tm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm_source=3Doutbou=
+nd+marketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021-08-14&amp;utm_e=
+mailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaigntheme=3Db2c&amp;=
+utm_subjecttone=3Dexciting" target=3D"_blank">Explore Course Categories</a>
+                                    <a style=3D"text-decoration: none; disp=
+lay: block; color: #0093c9; font-family: 'Open Sans', sans-serif; font-size=
+: 14px; line-height: 22px;" href=3D"https://alison.com/my-courses?utm_campa=
+ign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm_source=3Doutbound+marke=
+ting&amp;utm_medium=3Demail&amp;utm_datesent=3D2021-08-14&amp;utm_emailtype=
+=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaigntheme=3Db2c&amp;utm_subj=
+ecttone=3Dexciting" target=3D"_blank">Login to My Courses</a>
+                                </td>
+                                <!-- End Alison Links -->
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END HEADER AREA -->
+
+    <table width=3D"620" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" a=
+lign=3D"center">
+         <tbody>
+            <tr>
+               <td align=3D"center" valign=3D"top" bgcolor=3D"#f3f5f7">
+				   <!-- MAIL INNER WRAPPER -->
+                <table width=3D"620" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"center" class=3D"fullCenter" bgcolor=3D"#f3f5f7" style=
+=3D"color: #f3f5f7;">
+                    <tbody>
+				   <!-- Banner image -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/tag/traditional-irish-music?utm_c=
+ampaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm_source=3Doutbound+m=
+arketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021-08-14&amp;utm_email=
+type=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaigntheme=3Db2c&amp;utm_=
+subjecttone=3Dexciting" target=3D"_blank" style=3D"outline: none; text-deco=
+ration: none;"><img src=3D"https://cdn01.alison-static.net/mail/2021/email/=
+itm-header-updated.jpg" width=3D"620" height=3D"auto" alt=3D"Traditional Ir=
+ish Music Courses! - Week 2: Focus on Sean-nos Singing and Tin Whistle"></a=
+>
+											</td>
+										</tr>
+										<!-- End Banner image -->
+				   <!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+				   <!-- Banner image -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/tag/traditional-irish-music?utm_c=
+ampaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm_source=3Doutbound+m=
+arketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021-08-14&amp;utm_email=
+type=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaigntheme=3Db2c&amp;utm_=
+subjecttone=3Dexciting" target=3D"_blank" style=3D"outline: none; text-deco=
+ration: none;"><img src=3D"https://cdn01.alison-static.net/mail/2021/email/=
+itm-bio1-updated1.jpg" width=3D"620" height=3D"auto" alt=3D"Meet Nell N=C3=
+=AD Chr=C3=B3in=C3=ADn, a Sean-n=C3=B3s singer from the M=C3=BAscra=C3=AD G=
+aeltacht in County Cork. Nell=E2=80=99s mastery of her art has seen her rec=
+ognised as one of the country=E2=80=99s top Sean-n=C3=B3s singers. She has =
+won prizes at Fleadh Cheoil na h=C3=89ireann, an Irish music festival in 20=
+05 and 2006. She was also named the Musician of the Year at TG4=E2=80=99s M=
+usic Awards in 2012! Nell=E2=80=99s expertise and commitment to keeping Sea=
+n-n=C3=B3s singing alive and well makes her the perfect teacher to learn fr=
+om."></a>
+											</td>
+										</tr>
+										<!-- End Banner image -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Paragraphs -->
+						  <tr>
+                            <td style=3D"text-align: center; background: #f=
+3f5f7;">
+                                <div style=3D"padding-left: 25px; padding-r=
+ight: 25px;">
+										<p style=3D"text-align: left; color: #1D355E; font-family: 'Open =
+Sans', sans-serif; font-size: 18px; line-height: 26px;">Sean-n=C3=B3s means=
+ old-style and this form of unaccompanied singing has been passed down thro=
+ugh the generations through Irish music's oral tradition. Sean-n=C3=B3s sin=
+gers use ornamentation to express emotion.</p>
+                                </div>
+                            </td>
+                        </tr>
+						<!-- End Paragraphs -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Course 1 -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/course/traditional-irish-sean-nos=
+-singing-beginner-1?utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&am=
+p;utm_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=
+=3D2021-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_c=
+ampaigntheme=3Db2c&amp;utm_subjecttone=3Dexciting" target=3D"_blank" style=
+=3D"outline: none; text-decoration: none;"><img src=3D"https://cdn01.alison=
+-static.net/mail/2021/email/itm-block1-email2.jpg" width=3D"620" height=3D"=
+auto" alt=3D"Traditional Irish Sean-n=C3=B3s Singing | Beginner 1"></a>
+											</td>
+										</tr>
+										<!-- End Course 1 -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Course 2 -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/course/traditional-irish-sean-nos=
+-singing-beginner-2?utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&am=
+p;utm_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=
+=3D2021-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_c=
+ampaigntheme=3Db2c&amp;utm_subjecttone=3Dexciting" target=3D"_blank" style=
+=3D"outline: none; text-decoration: none;"><img src=3D"https://cdn01.alison=
+-static.net/mail/2021/email/itm-block2-email2.jpg" width=3D"620" height=3D"=
+auto" alt=3D"Traditional Irish Sean-n=C3=B3s Singing | Beginner 2"></a>
+											</td>
+										</tr>
+										<!-- End Course 2 -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Course 3 -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/course/traditional-irish-sean-nos=
+-singing-intermediate?utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&=
+amp;utm_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=
+=3D2021-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_c=
+ampaigntheme=3Db2c&amp;utm_subjecttone=3Dexciting" target=3D"_blank" style=
+=3D"outline: none; text-decoration: none;"><img src=3D"https://cdn01.alison=
+-static.net/mail/2021/email/itm-block3-email2.jpg" width=3D"620" height=3D"=
+auto" alt=3D"Traditional Irish Sean-n=C3=B3s Singing | Intermediate"></a>
+											</td>
+										</tr>
+										<!-- End Course 3 -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+				   <!-- Banner image -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/tag/traditional-irish-music?utm_c=
+ampaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm_source=3Doutbound+m=
+arketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021-08-14&amp;utm_email=
+type=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaigntheme=3Db2c&amp;utm_=
+subjecttone=3Dexciting" target=3D"_blank" style=3D"outline: none; text-deco=
+ration: none;"><img src=3D"https://cdn01.alison-static.net/mail/2021/email/=
+itm-bio2-updated2.jpg" width=3D"620" height=3D"auto" alt=3D"Meet Brian O'Lo=
+ughlin, who teaches our Tin Whistle courses. Brian hails from Corofin, in C=
+ounty Clare, an area known for its set dancing. He first learned to play th=
+e Tin Whistle as a young child. His natural ability and dedication have bee=
+n rewarded with multiple awards in national Fleadh Cheoil competitions, bot=
+h as a solo performer and as a member of the top Ceili bands, the Inis =C3=
+=93g C=C3=A9il=C3=AD Band as a youth, and more recently, the highly regarde=
+d Shandrum Ceili Band."></a>
+											</td>
+										</tr>
+										<!-- End Banner image -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Paragraphs -->
+						  <tr>
+                            <td style=3D"text-align: center; background: #f=
+3f5f7;">
+                                <div style=3D"padding-left: 25px; padding-r=
+ight: 25px;">
+										<p style=3D"text-align: left; color: #1D355E; font-family: 'Open =
+Sans', sans-serif; font-size: 18px; line-height: 26px;">The Tin or Penny Wh=
+istle is the gateway to traditional Irish music for many musicians. The whi=
+stle is the perfect beginner=E2=80=99s instrument as it is inexpensive, acc=
+essible, and portable, but most importantly, it trains the ear for music.</=
+p>
+                                </div>
+                            </td>
+                        </tr>
+						<!-- End Paragraphs -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Course 1 -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/course/traditional-irish-tin-whis=
+tle-beginner-1?utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm=
+_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021=
+-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaign=
+theme=3Db2c&amp;utm_subjecttone=3Dexciting" target=3D"_blank" style=3D"outl=
+ine: none; text-decoration: none;"><img src=3D"https://cdn01.alison-static.=
+net/mail/2021/email/itm-block4-email2.jpg" width=3D"620" height=3D"auto" al=
+t=3D"Traditional Irish Tin Whistle | Beginner 1"></a>
+											</td>
+										</tr>
+										<!-- End Course 1 -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Course 2 -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/course/traditional-irish-tin-whis=
+tle-beginner-2?utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm=
+_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021=
+-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaign=
+theme=3Db2c&amp;utm_subjecttone=3Dexciting" target=3D"_blank" style=3D"outl=
+ine: none; text-decoration: none;"><img src=3D"https://cdn01.alison-static.=
+net/mail/2021/email/itm-block5-email2.jpg" width=3D"620" height=3D"auto" al=
+t=3D"Traditional Irish Tin Whistle | Beginner 2"></a>
+											</td>
+										</tr>
+										<!-- End Course 2 -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+						<!-- Course 3 -->
+										<tr>
+											<td style=3D"text-align:center; background-color: #f3f5f7;">
+												<a href=3D"https://alison.com/course/traditional-irish-tin-whis=
+tle-intermediate?utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;u=
+tm_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=3D20=
+21-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_campai=
+gntheme=3Db2c&amp;utm_subjecttone=3Dexciting" target=3D"_blank" style=3D"ou=
+tline: none; text-decoration: none;"><img src=3D"https://cdn01.alison-stati=
+c.net/mail/2021/email/itm-block6-email2.jpg" width=3D"620" height=3D"auto" =
+alt=3D"Traditional Irish Tin Whistle | Intermediate"></a>
+											</td>
+										</tr>
+										<!-- End Course 3 -->
+						<!-- Spacer/Divider -->
+                        <tr>
+                            <td style=3D"height: 30px; background: #f3f5f7;=
+"></td>
+                        </tr>
+                        <!-- End Spacer/Divider -->
+                    </tbody>
+                </table>
+                <!-- END MAIL INNER WRAPPER -->
+				</td>
+			 </tr>
+         </tbody>
+      </table>
+
+    <!-- FOOTER AREA -->
+=09
+    <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" class=3D"full" bgcolor=3D"#ffffff">
+        <tr>
+            <td width=3D"100%" valign=3D"top">
+                <table width=3D"620" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"center">
+                    <tr>
+                        <td align=3D"center">
+                            <!-- Space -->
+                            <table width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" class=3D"full">
+                                <tr>
+                                    <td width=3D"100%" height=3D"25"></td>
+                                </tr>
+                            </table>
+                            <!-- End Space -->
+
+                            <table width=3D"600" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" class=3D"full">
+                                <tr>
+                                    <td width=3D"100%" height=3D"20"></td>
+                                </tr>
+                                <tr>
+                                    <td width=3D"100%">
+                                        <!-- Centered Text -->
+                                        <table width=3D"600" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class=3D"fullCente=
+r">
+                                            <!-- SOCIAL MEDIA ICONS -->
+                                            <p style=3D"text-align: center;=
+ color: #5d666d; font-family: 'Open Sans', sans-serif; font-size: 13px; lin=
+e-height: 44px;">
+                                                Connect with us on social m=
+edia
+                                            </p>
+                                            <tr>
+                                                <td valign=3D"top" width=3D=
+"100%" style=3D"text-align: center; font-family: Helvetica, Arial, sans-ser=
+if; font-size: 14px; color: rgb(186, 186, 186); line-height: 22px;">
+                                                    <a href=3D"https://www.=
+facebook.com/AlisonCourses/" target=3D"_blank" style=3D"text-decoration: no=
+ne;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-ne=
+w-facebook-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Find us on Fa=
+cebook" border=3D"0"></a>
+                                                    <a href=3D"http://www.t=
+witter.com/alisoncourses" target=3D"_blank" style=3D"text-decoration: none;=
+"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-new-t=
+witter-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on Twit=
+ter" border=3D"0"></a>
+                                                    <a href=3D"https://www.=
+linkedin.com/company/alison" target=3D"_blank" style=3D"text-decoration: no=
+ne;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-ne=
+w-linkedin-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on =
+LinkedIn" border=3D"0"></a>
+                                                    <a href=3D"https://www.=
+instagram.com/alisoncourses/" target=3D"_blank" style=3D"text-decoration: n=
+one;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-n=
+ew-instagram-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us o=
+n Instagram" border=3D"0"></a>
+													<a href=3D"https://www.tiktok.com/@alison_courses" target=3D"_=
+blank" style=3D"text-decoration: none;"><img src=3D"https://cdn01.alison-st=
+atic.net/mail/2018/automated/14d-new-tiktok-footer-icon.png" width=3D"38" h=
+eight=3D"38" alt=3D"Follow us on TikTok" border=3D"0"></a>
+                                                </td>
+                                            </tr>
+                                            <!-- END SOCIAL MEDIA ICONS -->
+                                            <tr id=3D"unsubscribe-container=
+">
+                                                <td valign=3D"middle" width=
+=3D"100%" style=3D"text-align: center; font-family: 'Open Sans', Arial, san=
+s-serif; font-size: 12px; color: #596273; line-height: 22px;" class=3D"full=
+Center">
+                                                    <!--[if !mso]><!-->
+                                                    <!--<![endif]-->
+                                                    <!--[if !mso]><!--><br>=
+<span style=3D"font-family: 'Open Sans', Helvetica ; font-weight: normal;">=
+<!--<![endif]-->No longer want to receive emails from Alison? Simply <span =
+style=3D"color: rgb(28, 186, 200);"><!--subscribe--><a href=3D"https://alis=
+on.com/unsubscribe/?instant=3D1&amp;lid=3D20636708&amp;k=3DamNodW5nNjlAd2lz=
+Yy5lZHU=3D&amp;utm_campaign=3D4587_itm_sean_nos_singing_tin_whistle&amp;utm=
+_source=3Doutbound+marketing&amp;utm_medium=3Demail&amp;utm_datesent=3D2021=
+-08-14&amp;utm_emailtype=3Dmarketing&amp;utm_segment=3D550&amp;utm_campaign=
+theme=3Db2c&amp;utm_subjecttone=3Dexciting" style=3D"text-decoration: none;=
+ color: #0088cc;">Unsubscribe</a><!--unsub--></span>.
+                                                    <!--[if !mso]><!-->
+                                                    </span>
+                                                    <!--<![endif]-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign=3D"middle" width=
+=3D"100%" style=3D"text-align: center; font-family: 'Open Sans', Arial, san=
+s-serif; font-size: 12px; color: #596273; line-height: 22px;" class=3D"full=
+Center">
+                                                    <!--[if !mso]><!--><spa=
+n style=3D"font-family: 'Open Sans', Helvetica; font-weight: normal;"><!--<=
+![endif]-->Level One Building, Galway Technology Park, Parkmore, Galway, Ir=
+eland.<br>=C2=A9 2021 Alison</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td width=3D"100%" height=
+=3D"25"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- END FOOTER AREA -->
+    <img src=3D"http://www.google-analytics.com/collect?v=3D1&amp;tid=3DUA-=
+54502782-1&amp;cid=3D20636708&amp;t=3Devent&amp;ni=3D1&amp;cs=3Doutbound+ma=
+rketing&amp;ea=3Dopen&amp;ec=3Demail&amp;cm=3Demail&amp;cn=3D4587_itm_sean_=
+nos_singing_tin_whistle&amp;el=3D4587_itm_sean_nos_singing_tin_whistle">
+<img src=3D"https://alison.com/email/marketing?u=3D20636708&amp;j=3D4587&am=
+p;h=3Df4fbe61406db87550602"></body>
+</html>
+
+--b1_ItOdHAwG55p2VNE4Yf0rRDNTeG8xZJn9IHrSnXIUhBQ--

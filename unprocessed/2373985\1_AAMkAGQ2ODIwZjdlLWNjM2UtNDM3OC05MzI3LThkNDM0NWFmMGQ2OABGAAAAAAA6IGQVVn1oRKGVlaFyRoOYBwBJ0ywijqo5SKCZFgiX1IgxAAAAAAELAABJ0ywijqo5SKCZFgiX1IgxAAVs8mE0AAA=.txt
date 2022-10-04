@@ -1,0 +1,445 @@
+Received: from DM5PR06MB3547.namprd06.prod.outlook.com (2603:10b6:208:160::23)
+ by MN2PR06MB6558.namprd06.prod.outlook.com with HTTPS via
+ MN2PR13CA0010.NAMPRD13.PROD.OUTLOOK.COM; Thu, 16 Jan 2020 05:53:53 +0000
+Received: from DM6PR06CA0024.namprd06.prod.outlook.com (2603:10b6:5:120::37)
+ by DM5PR06MB3547.namprd06.prod.outlook.com (2603:10b6:3:11f::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2623.9; Thu, 16 Jan
+ 2020 05:53:52 +0000
+Received: from DM6NAM11FT065.eop-nam11.prod.protection.outlook.com
+ (2a01:111:f400:7eaa::209) by DM6PR06CA0024.outlook.office365.com
+ (2603:10b6:5:120::37) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2644.18 via Frontend
+ Transport; Thu, 16 Jan 2020 05:53:52 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT065.mail.protection.outlook.com (10.13.172.109) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2644.19 via Frontend Transport; Thu, 16 Jan 2020 05:53:51 +0000
+Received: from mail-pj1-f65.google.com ([209.85.216.65])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.0.2.4.20190812 64bit (built Aug 12
+ 2019)) with ESMTPS id <0Q4602QZIR1QZD60@smtp5.wiscmail.wisc.edu> for
+ ccapitini@pediatrics.wisc.edu; Wed, 15 Jan 2020 23:53:51 -0600 (CST)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTH_SIZE_3000_MORE 0, BODY_SIZE_10000_PLUS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, HTML_BAD_EXTRAS 0,
+ IN_REP_TO 0, KNOWN_MTA_TFX 0, LEGITIMATE_SIGNS 0, LINK_TO_IMAGE 0,
+ MSG_THREAD 0, REFERENCES 0, SENDER_NO_AUTH 0, SPF_PASS 0, SXL_IP_TFX_WM 0,
+ URI_ENDS_IN_PHP 0, URI_WITH_PATH_ONLY 0, WEBMAIL_SOURCE 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __BOUNCE_CHALLENGE_SUBJ 0,
+ __BOUNCE_NDR_SUBJ_EXEMPT 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_MIXED 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FORWARDED_MSG 0, __FUR_RDNS_GMAIL 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_REFERENCES 0, __HELO_GMAIL 0,
+ __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_BAD_START 0,
+ __HTML_TAG_DIV 0, __HTTPS_URI 0, __HTTP_IMAGE_TAG 0, __IN_REP_TO 0,
+ __MAIL_CHAIN 0, __MIME_HTML 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0,
+ __MIME_TEXT_H2 0, __MIME
+X-Wisc-Doma: smith5@mail.mrajournal.org,mail.mrajournal.org
+X-Wisc-Env-From-B64: c21pdGg1QG1haWwubXJham91cm5hbC5vcmc=
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.7.2805085,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2020.1.16.54218,
+ AntiVirus-Engine: 5.70.0, AntiVirus-Data: 2020.1.16.5700001,
+ SenderIP=[209.85.216.65]
+X-Wisc-DKIM-Verify:
+ smith5@mail.mrajournal.org,mail-mrajournal-org.20150623.gappssmtp.com!pass
+X-Spam-Score:
+Received: by mail-pj1-f65.google.com with SMTP id m13so1038821pjb.2 for
+ <ccapitini@pediatrics.wisc.edu>; Wed, 15 Jan 2020 21:53:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mail-mrajournal-org.20150623.gappssmtp.com; s=20150623;
+ h=mime-version:subject:from:to:date:message-id:references:in-reply-to;
+ bh=EPr/dsmErG2MHq0laW4P1ZcvcMpZp8ia2O7OXQQvrsg=;
+ b=PgDnHr7WjlRNB7sTCluYwPdncibrWWpe1LTliCKcvy3SuzNZPaQkK75ProySwA3+VQ
+ k36lHmUTsdHz9f95Iy3/WekgwuvRnbLbOt0b1965hMxKWIdEECtAI8iGquIb7t4j1JFp
+ K5JPai6Jtz4pnPO/QUMdXWGc7OHLV8at2lTdKEDYenVS88Py1igjLinIlXSy+uzIJ564
+ wtlJDKrkMhc2ch2a15fl2Kf3rP88Ud+g8on5sd9mne/VYg4thnBlpmQR5Zex3oh8HEdD
+ 2rXnkasFs4SucTMkx6h8K25GfHbOj9gILWJc2CCHibJr0a/NRoJOrUd9beyPhTN0+Ra/
+ Cavg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:mime-version:subject:from:to:date:message-id
+ :references:in-reply-to;
+ bh=EPr/dsmErG2MHq0laW4P1ZcvcMpZp8ia2O7OXQQvrsg=;
+ b=EbCOyGgsDhtHOL1Jd+S13gUVPPfzn81OILJ8+rtuYifB/8iIe9HD4w6nlZEYolP0Jc
+ 9hHVanoab6i9Rti8uvQe+ViOpdsCemGUVViv4tOuOyBrjJDhAebVkFznWmIHau3Nk//g
+ APMkt41PzQHiW5tbSfvfcrj8lWzKsVY2dxSBNkOxj6WwE9hFKE6enVvlMqqisg9ghj6f
+ xRpHml/v1D+3OvsTwLJzh3fd895V02WwxpEPk9x04r7H4LNWdqGS/zpTK48xJvVYLWrT
+ o+9PGrCN5MkRQ+7kZPvEUSePhQUkZcocjUyhdN4avsea+pLVME/3S5yKFDOADaXAawSq
+ OTng==
+X-Gm-Message-State: APjAAAXIvulWBFKZnR+1W+RTvRcuo9UULfBMj+NtgbH73VYLtxiqlFXE
+	8qIYneNeYQVqLKq7t1DikaUU5C6CHn4=
+X-Google-Smtp-Source:
+ APXvYqzZN6nNhQr4zgXL3dssVGuKr0DYkGNC/feAlviogtgJ68LX3ZAczLV2t3HQEkBpjZeDSwa0Sg==
+X-Received: by 2002:a17:902:8497:: with SMTP id
+ c23mr31709124plo.59.1579154029339; Wed, 15 Jan 2020 21:53:49 -0800 (PST)
+Return-Path: smith5@mail.mrajournal.org
+Received: from smtpgw.close.com
+ (ec2-52-32-48-248.us-west-2.compute.amazonaws.com. [52.32.48.248])
+ by smtp.gmail.com with ESMTPSA id g16sm22655522pgj.1.2020.01.15.21.53.48 for
+ <ccapitini@pediatrics.wisc.edu>
+ (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Wed,
+ 15 Jan 2020 21:53:48 -0800 (PST)
+Content-type: multipart/mixed; boundary="===============5485117819281433359=="
+Subject: Re: question about your leukemia work
+From: L Smith <smith5@mail.mrajournal.org>
+To: "Capitini, Christian" <ccapitini@pediatrics.wisc.edu>
+Date: Thu, 16 Jan 2020 05:53:48 +0000
+Message-id: <157915402764.36846.9852492045026717410@smtpgw.close.com>
+X-CLOSEIO-EMAIL-ID: acti_Iqvy5sfvHs0k9Zt5vXSX5JZWl1nvxXLFHsDPSuQ1Epr
+References: <157819064053.4314.15165487030045932354@smtpgw.close.com>
+ <157848155319.16944.258481659530147802@smtpgw.close.com>
+ <157883617718.71898.4565212013147957935@smtpgw.close.com>
+In-reply-to: <157883617718.71898.4565212013147957935@smtpgw.close.com>
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Jan 2020 05:53:51.8052
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 11992c0a-d55b-4f63-a132-08d79a4876d2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Office365-Filtering-HT: Tenant
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;IPV:CAL;SCL:-1;CTRY:US;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:DM5PR06MB3547;H:smtp5.wiscmail.wisc.edu;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT065.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 11992c0a-d55b-4f63-a132-08d79a4876d2
+X-MS-TrafficTypeDiagnostic: DM5PR06MB3547:
+Authentication-Results: compauth=pass reason=106
+X-MS-Oob-TLC-OOBClassifiers: OLM:9508;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jan 2020 05:53:51.7313
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 11992c0a-d55b-4f63-a132-08d79a4876d2
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR06MB3547
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3968309
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2644.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?dWhMbzJwZC8rOEswTlQyb3E5TFQ2MTd6ZVBaZE80aEZtdjJVcEk3ZnEwMCsx?=
+ =?utf-8?B?YnM2cHFkV28ybWFmUW9UMUlTemJWUTRBdVNQeDlFNUFtVWZqMzdGM0Job3VS?=
+ =?utf-8?B?bGphR21zY0EzUGJYYnJpTCszYzgyUzBoTnRield2bmpzZDFkY3lUTjhTSHps?=
+ =?utf-8?B?NVVReW1laVNQWXpXWnFVQmpZbDJML0J6T2k1eVFObXF3S3ZCd2VVTTk1eTl0?=
+ =?utf-8?B?eTBsUTBvaVlub0ZkNTNzRkhQeHRQYjQ3NlhqV3NGL2FVTTZrNTdPcDJBc3Fh?=
+ =?utf-8?B?N3ZSUlFLSjZaZWJKQ2ZuVmxHK0pLWmdudkIzemY5dk1NeXNjcXA2VDhtd1I2?=
+ =?utf-8?B?RmxPbkcxWXVheDI5d25PclExeFUzM2JLempLMUFVSDBYQ3NvOHFjRUVmZENn?=
+ =?utf-8?B?NEgrWVQvV3phblNrV1BsU01tQW9IQ1d5VVYrYjJHZFNlL3pWZ3FZMzk4WWJY?=
+ =?utf-8?B?ZkRyWkVSZUFWSjFDU0pRMlh3MFFZTDRJblpxWVlaRkp2UmhYanMwN3lJei9m?=
+ =?utf-8?B?ZmMzd0hVVWl2bUF4ZTgvWVhaTENGdDN6cmNvUURZMFBQdGx4bDhvOC84QW5U?=
+ =?utf-8?B?dW9IcmhjOVpaZGdvMEM0RVFRejdhMU40WFYxSE95ODJFWjV3T0ZCbExyTDVk?=
+ =?utf-8?B?a1dJdmE1WkQrLzlTVks2TXpvcnJwcUc1ZWhzaDd5L3g2SlB2WS9VMENWQkhY?=
+ =?utf-8?B?VldpRldid3BpTklvL2Z2ZmxsNGJXSGFoc3FUUEVEbEd3LzJhd1RCd1B2U0lV?=
+ =?utf-8?B?aGRtOUhIYThlbks3TldNbVNQTFJTZVlBQ2FDODBMbHJFbFRpS0UvSGJQMlpF?=
+ =?utf-8?B?M3EwbVNhYWlnanpRdUVLenVCRGk4ZnFKY1V5WHZsMmRvWjhxemM5UHAzcENa?=
+ =?utf-8?B?SDlHdEFkZUF6TTJBV2V2VXh4clpKc09MUC9mbGQ5MWhDaGpIY2xyYnpBclo2?=
+ =?utf-8?B?UXpKbVg0bkkwMWEya0hxK1Q4V3VZVG9Uc29OMVR6bGdQUXprSy9admticXNU?=
+ =?utf-8?B?NEh0Z2VoT3pheEMzWkRXWnBLRHZNeDJQMFIxU0R3V3lxZFI4N1NMaFQxK21j?=
+ =?utf-8?B?bVdVYWxidVVKYnJhWVRmZ2FtTnlYRW1uMUo0U0d5YmVrVytqUE41TS9Od3Br?=
+ =?utf-8?B?YXlwN1N2a2JxWURNNStteUpFUElZRkV0cS8zY3RqdXN6bjFSV0E5N2pVS0dt?=
+ =?utf-8?B?OFFhRmpKeWhpL3piVTRMeDMxU0RNaWgxMEFhdmxBaCtIaFdwR3dnMFlQOTRr?=
+ =?utf-8?B?VzdIZC9XbnFEakhGcVFYZURVUExyRmJhQ2lPRzVFbEVhUHpCTTZkVEZHVjBu?=
+ =?utf-8?B?OEltZFJZMGROTGIzU2Vtbjczc1c5Uk9TMU5GZnEzNDI1MEREOFViV2U0YVhT?=
+ =?utf-8?B?T3RRU0ZnYStieXZEWjdEYm5EWnk0ajVuUzFkalBQMHVQdXRYUDVRSUZBV1dr?=
+ =?utf-8?B?eEl5cEttQ25BWEs4L3ZlcHBMQWd6VUxwQytqWUMvV0ZHajRLMFJSdEFRSGJC?=
+ =?utf-8?B?eGpIMWF2QjZZL1dKZmFGTGRiM05KbFpxT2ZHK0d0cDFvYUlmU2NWa2IzeHlC?=
+ =?utf-8?B?c0syNVhjT1E3OGRFaTJNUzFmc1BrZEhGTDRFemt3aGhrUHpqZnBjM3pZUWVt?=
+ =?utf-8?B?cDVPMG1aV0JrZGNGbG1uV0h3bTZlZmkwVnNhTWowZVo5M3RDOVdvKzEzNU1G?=
+ =?utf-8?B?MnF0MU4wWmRoWGhSeXFoYnNHR0RvZGxiMUFGbjNGMzBYU3VxTjhZUnpQMlNp?=
+ =?utf-8?Q?7cGYv6jkhrmhs68Pi4=3D?=
+MIME-Version: 1.0
+
+--===============5485117819281433359==
+Content-Type: multipart/alternative;
+ boundary="===============4385814313329743039=="
+
+--===============4385814313329743039==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dr. Christian,  =
+
+  =
+
+Do you think that you would be able to prepare a research article using the
+results of your study for the special issue on leukemia? A review article
+would also be an option.  =
+
+  =
+
+  =
+
+Best Regards,  =
+
+  =
+
+ _  L. Smith, M.D._  =
+
+  =
+
+On Jan 12, 2020, at 02:36 PM, L Smith <smith5@mail.mrajournal.org> wrote:  =
+
+
+> I tried to read more about your current projects on your University Of
+Wisconsin-Madison pages but couldn't find much information.  =
+
+>  =
+
+> Are you still researching leukemia?  =
+
+>  =
+
+> Best Regards,  =
+
+>  =
+
+>  _  L. Smith, M.D._  =
+
+>  =
+
+> [Medical Research Archives](https://journals.ke-i.org/index.php/mra/) (MR=
+AJ)  =
+
+> 612-524-5565  =
+
+> Print ISSN: 2375-1916  =
+
+> Online ISSN: 2375-1924  =
+
+> PubMed ID: 101668511  =
+
+> DOI Prefix: [doi.org/10.18103/mra](//doi.org/10.18103/mra)  =
+
+>  =
+
+> On Jan 08, 2020, at 12:05 PM, L Smith <smith5@mail.mrajournal.org> wrote:=
+  =
+
+>
+
+>
+
+>> Dear Dr. Christian,  =
+
+>  =
+
+> I have been taking notes on what topics would be nice to include in the
+theme issue on leukemia and was hoping to get your input.  =
+
+>  =
+
+> I was also wondering if you could tell me more about your project
+"Inhibiting Stat1 As A Novel Graft-Versus-Host/Graft-Versus-Leukemia Therap=
+y".
+Is this research still ongoing?  =
+
+>  ** **  =
+
+>  Have you thought about the idea of contributing an article?  =
+
+> You would be welcome to have a colleague or student co-author the article
+with you.  =
+
+>  =
+
+>  =
+
+> Best Regards,  =
+
+>  =
+
+> L. Smith, M.D.  =
+
+>  =
+
+> Medical Research Archives (MRAJ)  =
+
+> 612-524-5565  =
+
+> Print ISSN: 2375-1916  =
+
+> Online ISSN: 2375-1924  =
+
+> PubMed ID: 101668511  =
+
+> DOI
+Prefix:[doi.org/10.18103/mra](https://www.freelancer.com/users/l.php?url=3D=
+http:%2F%2Fdoi.org%2F10.18103%2Fmra&sig=3D53a30bb0efb8a93554c65e89008292f31=
+38830453fa342e1a23edaf245c2b1a6)  =
+
+> Notice: This message and any attachments sent with it are only to be used=
+ by
+the person or business to whom they are addressed. If you have received this
+message by error or do not wish to receive further emails from this sender
+please notify us by replying to this email, or via mail at #340 S Lemon Ave=
+nue
+Walnut California ZIP Code 91789 USA. If you are not the named addressee you
+should not read, share, or copy this message.  =
+
+>  =
+
+> On Jan 05, 2020, at 03:17 AM, L Smith <smith5@mail.mrajournal.org> wrote:=
+  =
+
+>
+
+>>
+
+>>> Dear Dr. Christian,  =
+
+>  =
+
+> I'm hoping we can discuss your research on leukemia. I understand that you
+started a project on this not long ago, is that correct?  =
+
+>  =
+
+> The reason I ask is because I am organizing a special theme issue on
+leukemia and am currently in the process of deciding on the scope of the is=
+sue
+and the main topics on which it will focus. This is not my main area of
+expertise and I was hoping to get some input from you regarding which topics
+would be the most relevant and important for the issue given the advancemen=
+ts
+in this field over the last couple of years.  =
+
+>  =
+
+> Perhaps you would also be open to discussing the idea of preparing an
+article to be included in the special issue.  =
+
+>  =
+
+>  =
+
+> Could you share your thoughts on this?  =
+
+>  =
+
+>  =
+
+> Best Regards,  =
+
+>  =
+
+> L. Smith, M.D.  =
+
+>  =
+
+> Medical Research Archives (MRAJ)  =
+
+> 612-524-5565  =
+
+> Print ISSN: 2375-1916  =
+
+> Online ISSN: 2375-1924  =
+
+> PubMed ID: 101668511  =
+
+> DOI Prefix:
+[doi.org/10.18103/mra](https://www.freelancer.com/users/l.php?url=3Dhttp:%2=
+F%2Fdoi.org%2F10.18103%2Fmra&sig=3D53a30bb0efb8a93554c65e89008292f313883045=
+3fa342e1a23edaf245c2b1a6)  =
+
+> Notice: This message and any attachments sent with it are only to be used=
+ by
+the person or business to whom they are addressed. If you have received this
+message by error or do not wish to receive further emails from this sender
+please notify us by replying to this email, or via mail at #340 S Lemon Ave=
+nue
+Walnut California ZIP Code 91789 USA. If you are not the named addressee you
+should not read, share, or copy this message.
+--===============4385814313329743039==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">Dr=
+. Christian,<br><br>Do you think that you would be able to prepare a resear=
+ch article using the results of your study for the special issue on leukemi=
+a? A review article would also be an option.<br><br><br>Best Regards,<br><b=
+r><em>&nbsp;L. Smith, M.D.</em><br><br>On Jan 12, 2020, at 02:36 PM, L Smit=
+h &lt;smith5@mail.mrajournal.org&gt; wrote:<br><blockquote type=3D"cite">I =
+tried to read more about your current projects on your University Of Wiscon=
+sin-Madison pages but couldn't find much information.<br><br>Are you still =
+researching leukemia?<br><br>Best Regards,<br><br><em>&nbsp;L. Smith, M.D.<=
+/em><br><br><a href=3D"https://journals.ke-i.org/index.php/mra/" target=3D"=
+_blank">Medical Research Archives</a> (MRAJ)<br>612-524-5565<br>Print ISSN:=
+ 2375-1916<br>Online ISSN: 2375-1924<br>PubMed ID: 101668511<br>DOI Prefix:=
+ <a href=3D"//doi.org/10.18103/mra" rel=3D"noopener noreferrer" target=3D"_=
+blank">doi.org/10.18103/mra</a><br><br>On Jan 08, 2020, at 12:05 PM, L Smit=
+h &lt;smith5@mail.mrajournal.org&gt; wrote:<br><blockquote type=3D"cite"><s=
+pan data-color=3D"dark" data-line-break=3D"false" data-size=3D"detail" data=
+-style=3D"normal" data-weight=3D"normal">Dear Dr. Christian,<br><br>I have =
+been taking notes on what topics would be nice to include in the theme issu=
+e on leukemia and was hoping to get your input.</span><br><br><span data-co=
+lor=3D"dark" data-line-break=3D"false" data-size=3D"detail" data-style=3D"n=
+ormal" data-weight=3D"normal">I was also wondering if you could tell me mor=
+e about your project &quot;Inhibiting Stat1 As A Novel Graft-Versus-Host/Gr=
+aft-Versus-Leukemia Therapy&quot;. Is this research still ongoing?<br><stro=
+ng>&nbsp;</strong><br>Have you thought about the idea of contributing an ar=
+ticle?<br>You would be welcome to have a colleague or student co-author the=
+ article with you.<br><br><br>Best Regards,<br><br>L. Smith, M.D.<br><br>Me=
+dical Research Archives (MRAJ)<br>612-524-5565<br>Print ISSN: 2375-1916<br>=
+Online ISSN: 2375-1924<br>PubMed ID: 101668511<br>DOI Prefix:</span><a href=
+=3D"https://www.freelancer.com/users/l.php?url=3Dhttp:%2F%2Fdoi.org%2F10.18=
+103%2Fmra&amp;sig=3D53a30bb0efb8a93554c65e89008292f3138830453fa342e1a23edaf=
+245c2b1a6" rel=3D"noopener" target=3D"_blank"><div data-icon=3D"false" data=
+-icon-position=3D"left">doi.org/10.18103/mra</div></a><span data-color=3D"d=
+ark" data-line-break=3D"false" data-size=3D"detail" data-style=3D"normal" d=
+ata-weight=3D"normal"><br>Notice: This message and any attachments sent wit=
+h it are only to be used by the person or business to whom they are address=
+ed. If you have received this message by error or do not wish to receive fu=
+rther emails from this sender please notify us by replying to this email, o=
+r via mail at #340 S Lemon Avenue Walnut California ZIP Code 91789 USA. If =
+you are not the named addressee you should not read, share, or copy this me=
+ssage.</span>&nbsp;<br><br>On Jan 05, 2020, at 03:17 AM, L Smith &lt;smith5=
+@mail.mrajournal.org&gt; wrote:<br><blockquote type=3D"cite"><span data-col=
+or=3D"dark" data-line-break=3D"false" data-size=3D"detail" data-style=3D"no=
+rmal" data-weight=3D"normal">Dear Dr. Christian,</span><br><br><span data-c=
+olor=3D"dark" data-line-break=3D"false" data-size=3D"detail" data-style=3D"=
+normal" data-weight=3D"normal">I'm hoping we can discuss your research on l=
+eukemia. I understand that you started a project on this not long ago, is t=
+hat correct?<br><br>The reason I ask is because I am organizing a special t=
+heme issue on leukemia and am currently in the process of deciding on the s=
+cope of the issue and the main topics on which it will focus. This is not m=
+y main area of expertise and I was hoping to get some input from you regard=
+ing which topics would be the most relevant and important for the issue giv=
+en the advancements in this field over the last couple of years.</span><br>=
+<br><span data-color=3D"dark" data-line-break=3D"false" data-size=3D"detail=
+" data-style=3D"normal" data-weight=3D"normal">Perhaps you would also be op=
+en to discussing the idea of preparing an article to be included in the spe=
+cial issue.</span><br><span data-color=3D"dark" data-line-break=3D"false" d=
+ata-size=3D"detail" data-style=3D"normal" data-weight=3D"normal"><br><br>Co=
+uld you share your thoughts on this?</span><span data-color=3D"dark" data-l=
+ine-break=3D"false" data-size=3D"detail" data-style=3D"normal" data-weight=
+=3D"normal"><br><br><br>Best Regards,<br><br>L. Smith, M.D.<br><br>Medical =
+Research Archives (MRAJ)<br>612-524-5565<br>Print ISSN: 2375-1916<br>Online=
+ ISSN: 2375-1924<br>PubMed ID: 101668511<br>DOI Prefix: </span><a href=3D"h=
+ttps://www.freelancer.com/users/l.php?url=3Dhttp:%2F%2Fdoi.org%2F10.18103%2=
+Fmra&amp;sig=3D53a30bb0efb8a93554c65e89008292f3138830453fa342e1a23edaf245c2=
+b1a6" rel=3D"noopener" target=3D"_blank"><div data-icon=3D"false" data-icon=
+-position=3D"left">doi.org/10.18103/mra</div></a><span data-color=3D"dark" =
+data-line-break=3D"false" data-size=3D"detail" data-style=3D"normal" data-w=
+eight=3D"normal"><br>Notice: This message and any attachments sent with it =
+are only to be used by the person or business to whom they are addressed. I=
+f you have received this message by error or do not wish to receive further=
+ emails from this sender please notify us by replying to this email, or via=
+ mail at #340 S Lemon Avenue Walnut California ZIP Code 91789 USA. If you a=
+re not the named addressee you should not read, share, or copy this message=
+.</span>&nbsp;</blockquote></blockquote></blockquote><img src=3D"https://ap=
+p.close.com/email_opened/eyJlbWFpbF9pZCI6ICJhY3RpX0lxdnk1c2Z2SHMwazladDV2WF=
+NYNUpaV2wxbnZ4WExGSHNEUFN1UTFFcHIiLCAiZW1haWxfYWRkcmVzcyI6ICJcIkNhcGl0aW5pL=
+CBDaHJpc3RpYW5cIiA8Y2NhcGl0aW5pQHBlZGlhdHJpY3Mud2lzYy5lZHU%2BIn0%3D/trackin=
+g.png" alt=3D"" width=3D"1" height=3D"1">=
+
+--===============4385814313329743039==--
+
+--===============5485117819281433359==--

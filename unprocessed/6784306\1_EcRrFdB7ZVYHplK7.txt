@@ -1,0 +1,272 @@
+Received: from DM5PR06MB3178.namprd06.prod.outlook.com (2603:10b6:4:41::25) by
+ DM5PR06MB3019.namprd06.prod.outlook.com with HTTPS; Mon, 15 Aug 2022 15:54:19
+ +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=fail;
+ b=Gf6UKMdMiWQnSAUVRb5itHEvA1KZAqEGoWQ3GbQGeIORkw2pSw+iuMEKO3teRD6kWtXK6+UNMvTF0D034xsKMLu9Z98yfy/Rhw8aZoghhedB8CNdafe0OulVrVtxxEJCn3vKcLvBl/ln2xCayoIcX5c+khm5r3A8b5p5QLxADV90reyYCtZ6HDrSfjPbxCg5jPhjv8rLBjwoeevuPXqFVAAZ0wnU9/+oI9w1hq8rghKJ5+SLYbvCp11ibSgYYU7bPbi/gV3qSgdvrjXXBejcyhG1JAqVSinU9W4DO7iyEgQS8xZE01o4F5gJdY+OxZxp5q0OLZ4yStjgqTpkaktoDA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=YaD7DZLAwXcnUKqTAPYbwmJq+QOihiEwq+Mp936SvYU=;
+ b=X3L1E5SQiDJp0GltZ/uKfEuybUUYEYnmdsRM5bvQyF9reoyatjcCXkPDfsFhP9YDPWEMqjJjnTxWzXnDUY8H3sgkfyBDZ8bcWe6EXfaS2KOX+VTdBHgwuz8B3M1bz9UP3bApZ9lG7UypYyg/oycUXhfDGOIbbBkeoLUOH38Vr3gdk/3AIT3O4Hb1RZ9nWZeaKhk3WS6yHDFm4d+FD0cpbFUBncKNPztlRdJruUpi7zVVC3Oo6UcipLwQWbbzhX92xidg1C46eK7XTMOJhLCryb4vmNc6836+tSMnqBEQQyoGoUPk8JpgeLsoQmd7fLCl1FtN4nu4XOEjL0PpkEd6xg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.107.239.46) smtp.rcpttodomain=wisc.edu
+ smtp.mailfrom=geek-squadupdates47.co; dmarc=bestguesspass action=none
+ header.from=geek-squadupdates47.co; dkim=none (message not signed); arc=fail
+ (48)
+Received: from DM6PR06CA0045.namprd06.prod.outlook.com (2603:10b6:5:54::22) by
+ DM5PR06MB3178.namprd06.prod.outlook.com (2603:10b6:4:41::25) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5504.14; Mon, 15 Aug 2022 15:54:19 +0000
+Received: from DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:54:cafe::5d) by DM6PR06CA0045.outlook.office365.com
+ (2603:10b6:5:54::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5525.19 via Frontend
+ Transport; Mon, 15 Aug 2022 15:54:19 +0000
+Authentication-Results: spf=pass (sender IP is 40.107.239.46)
+ smtp.mailfrom=geek-squadupdates47.co; dkim=none (message not signed)
+ header.d=none;dmarc=bestguesspass action=none
+ header.from=geek-squadupdates47.co;compauth=pass reason=109
+Received-SPF: Pass (protection.outlook.com: domain of geek-squadupdates47.co
+ designates 40.107.239.46 as permitted sender)
+ receiver=protection.outlook.com; client-ip=40.107.239.46;
+ helo=IND01-BMX-obe.outbound.protection.outlook.com; pr=C
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT047.mail.protection.outlook.com (10.13.172.139) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5525.11 via Frontend Transport; Mon, 15 Aug 2022 15:54:18 +0000
+Received: from IND01-BMX-obe.outbound.protection.outlook.com ([40.107.239.46])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.16.20220118 64bit (built Jan 18
+ 2022)) with ESMTPS id <0RGN05AJZYUE8V00@smtp5.wiscmail.wisc.edu> for
+ RFLOREK@WISC.EDU; Mon, 15 Aug 2022 10:54:17 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= FROM_CO_TLD 0.1,
+ HTML_50_70 0.1, HTML_NO_HTTP 0.1, SUPERLONG_LINE 0.05,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0,
+ BODY_SIZE_4000_4999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ ECARD_WORD 0, HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0,
+ KNOWN_MTA_TFX 0, NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0, NO_URI_HTTPS 0,
+ SPF_PASS 0, SXL_IP_TFX_WM 0, TRANSACTIONAL 0, WEBMAIL_SOURCE 0, __ANY_URI 0,
+ __ARCAUTH_DKIM_PASSED 0, __ARCAUTH_DMARC_PASSED 0, __ARCAUTH_PASSED 0,
+ __ARC_SEAL_MICROSOFT 0, __ARC_SIGNATURE_MICROSOFT 0, __BODY_TEXT_X4 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DQ_NEG_DOMAIN 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_INTRO 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0, __FRAUD_SUBJ_A 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FUR_RDNS_OUTLOOK 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_MSGID 0, __HAS_X_FF_ASR 0, __HAS_X_FF_ASR_CAT 0, __HAS_X_FF_ASR_SFV 0,
+ __HREF_LABEL_TEXT 0, __HTML_AHREF_
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: care@geek-squadupdates47.co,geek-squadupdates47.co
+X-Wisc-Env-From-B64: Y2FyZUBnZWVrLXNxdWFkdXBkYXRlczQ3LmNv
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.8.15.154518,
+ AntiVirus-Engine: 5.92.0, AntiVirus-Data: 2022.8.15.5920000,
+ SenderIP=[40.107.239.46]
+X-Spam-Score:
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=Llx10R/1lQFX7ARvKuFtSSgkcWIODnyWavCl3LAU1LSJengbEZUMdj8grJNRn17k4ekzzechaWY/7LYGKF4a8RVxp09Dz17U7UNilf7+Uhvm7k1UKPC48F60DPZ5DrP1wm5qc+6v0M22qiB2hca6zFe3DodR15h7yOH5bVEfXXMlNNNpOXKP7HImOvtmurkHNXIOirBHU1lOuMLwOuVtaN10RV5tz3F8hbvqGpxsL83Z8sy9IFnvOatWTR2hWjWUmlItU4GTqyvJNz14HLNe0ik3sHxdqvNuG+8Z4cu+4rF1ecximauAyVjBkYtAWXP3HVlpfdvkS155dsOx0r6MEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=YaD7DZLAwXcnUKqTAPYbwmJq+QOihiEwq+Mp936SvYU=;
+ b=JLxtOCpJSw3KTBx6CbfFdUCF1M1IlCLLsb3FR9O9RFWifdrROx3BgO4FUsZjkRrXxF6i6Vw5SUX3inJGrDX4p0AJ/V/jWhIVqeQIXYNsGFUTPBWCdbtYOFfp+5/7yhHm+rj6RuNf6bXeflzSQHxc/8Jwqvm8bI0NSMqoa1GJEefcgcEFsxpESUt3gtP7RUW3CSg9sM/rlfi01SV1ApGr60gA+0NJW8U7XtEcTm4mtwDDFApFm6hY13ZO2wNeHdncv6bpjrDcy00CcwTiQeejvo+yS+IrB2DukTPLawBdSuEFmwhP0NYZeuTROE91pJiHvU4zzIQ7TuCgXhqxxNhs0Q==
+ARC-Authentication-results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=geek-squadupdates47.co; dmarc=pass action=none
+ header.from=geek-squadupdates47.co; dkim=pass header.d=geek-squadupdates47.co;
+ arc=none
+Received: from PN3PR01MB7696.INDPRD01.PROD.OUTLOOK.COM (2603:1096:c01:cd::5)
+ by MA0PR01MB7788.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:2e::9)
+ with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)
+ id 15.20.5525.10; Mon, 15 Aug 2022 15:54:08 +0000
+Received: from PN3PR01MB7696.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::e9fa:ad4d:a8f7:d3c8]) by PN3PR01MB7696.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::e9fa:ad4d:a8f7:d3c8%4]) with mapi id 15.20.5504.028; Mon,
+ 15 Aug 2022 15:54:08 +0000
+From: Order Status <care@geek-squadupdates47.co>
+To: "RFLOREK@WISC.EDU" <RFLOREK@WISC.EDU>
+Subject: Important! Renewal update for #GEEK15-RE-13940760
+Thread-topic: Important! Renewal update for #GEEK15-RE-13940760
+Thread-index: AQHYsL27czCzBLKH0Eemz5IwvTJ4/g==
+Date: Mon, 15 Aug 2022 15:43:15 +0000
+Message-id: <fafa6448-81b9-83f4-34aa-fd166bc8a7ef@geek-squadupdates47.co>
+Accept-Language: en-US
+Content-language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Authentication-Results-Original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=geek-squadupdates47.co;
+X-MS-Office365-Filtering-Correlation-Id: d94bad4c-1bc5-4f20-0991-08da7ed669d4
+x-ms-traffictypediagnostic:
+ MA0PR01MB7788:EE_|DM6NAM11FT047:EE_|DM5PR06MB3178:EE_
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ ZONgm9RfUzROkEPpgX1LIyz8EpouhitixTVi95xkYuujRhxf1sxOw1PabHz41DmNYfFAjkuMXhR3V87YrSPcinT4KQ+2k5wc07Lhb/7bywC9J0+xtb/O4PGve06ZD72uuE8yLzfXMKao+EmMznv2UzZAEuOVAphHa578FpAgFRTR8ydtUNGKXWmaig/CLPYwWaYzkyqnIM9o+erY06pqMmSKOMXFhB4iECkSswLcrYIUjPLBQGBf/isNwngwK6E/Qgf9TQYkiUNsPwN5wCpC5EySi5RHa9iX38QSbDXo5HDtWGrM2OZedAHytLef0rECfVdnJ3wNKjqJ5csqHKwCVtzJH+QbDRNpLmvhDkiM5OfGh1z8sxPw3Mxkdu9WEW0/ITpdumxB3xQiuqY09O1FnJEAaEnfmlg1aNM9/AwqTrIybQ7q+UJswhDxHtOu89bGRHc726Pii92uTyCrGCWs5ORNF9DkITVnL24J5X80S7WnB3sm4T4/J33jttQ7cjFXUbk69EGLHUoethDot6y4x9x8YA8Nup8V2rpTur5hyi/9nHqdf+0lRMhNiBZQR4X3DO2bqCOEpMMGsR9N/7fBaK2t9UBoOOaGs60lzt0vNJpld3IjnGXIF22rnil7VtghjPRZxMWWg6fboSpGhyxEIAOEPKZxfdQl7jBnTy0fyS0z5A7xY4T9mX4gQhDlqfGSXu6amR+1hvVtzCD3UmxHZyrMl6fsrGSRystd1JYDPn1D8XsenbUUlBE/mOSIMu8E6J8sBt12js/13NEkIVb7gWGtULvP5afQZ8Gb1f30A56M2dGM5d55al6eLzXeuXQv
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PN3PR01MB7696.INDPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230016)(136003)(346002)(376002)(366004)(39850400004)(34096005)(396003)(448600002)(38070700005)(5660300002)(296002)(38610400001)(91956017)(6666004)(66556008)(6916009)(41300700001)(76116006)(64756008)(31696002)(15650500001)(66476007)(86362001)(6506007)(40140700001)(4744005)(36756003)(8676002)(6512007)(122000001)(31686004)(2906002)(66946007)(8936002)(26005)(66446008)(83380400001)(186003)(2616005)(38100700002)(586005)(71200400001)(6486002)(45980500001);DIR:OUT;SFP:1101;
+Content-type: multipart/alternative;
+ boundary=_000_fafa644881b983f434aafd166bc8a7efgeeksquadupdates47co_
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MA0PR01MB7788
+Return-Path: care@geek-squadupdates47.co
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2022 15:54:18.9951
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d94bad4c-1bc5-4f20-0991-08da7ed669d4
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[40.107.239.46];domain=IND01-BMX-obe.outbound.protection.outlook.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[40.107.239.46];domain=IND01-BMX-obe.outbound.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ e212af13-85e4-4957-f888-08da7ed663ae
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:IN;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:IND01-BMX-obe.outbound.protection.outlook.com;PTR:mail-bmxind01on2046.outbound.protection.outlook.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2022 15:54:18.8857
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d94bad4c-1bc5-4f20-0991-08da7ed669d4
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT047.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR06MB3178
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.7242789
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5504.028
+X-Message-Flag: Flag for follow up
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?a2hGVTZOaCtoTWdQeDByVDNHejd0TVFVT0xnaTVHNG51amxTOTJRT09IdWFF?=
+ =?utf-8?B?cHJrL0htUks3M1F1a0U5TXdRZWpWT3VjOXFQS2U2QmsrdEQxMUFwaFAvNzQr?=
+ =?utf-8?B?aUJCSUdCNDdiem9mR3k2Z2E4NWNvSGY0STZxQVFkc295SzdhRU5vc0VhVnh3?=
+ =?utf-8?B?L1AxdTBpYlMvYzZ2aWkxMitqRkJZL3duQkxmNzNxVUs2QWQ4a1prOVlWS2tF?=
+ =?utf-8?B?Vitqdjc3bW1Wb0ZKbGRmOC90UFNxUjZRS2RIYThLM2lSR1cwNS85UVplV1Bn?=
+ =?utf-8?B?NHV0bUVnc1lQcjhNMHpVYUhYM2VDbC9jU2t3Z0F4UzdVc0ltYnNJTmh0QUFy?=
+ =?utf-8?B?dHFTY2pVamRMVllzeGdualpjN3JOcEkwSnEyZmJHd09TTWl3cFhYMzZLcWIz?=
+ =?utf-8?B?cFpmYk9NS1JYRWJIc0UyMitmM2k5N1V5Nks5RFpCUjRpU3ROdzFiR1lXNERN?=
+ =?utf-8?B?ZVhnbExpTmN6czFNcVA0ekI0R3VaUHlIZTk0QTJkSzVxL0lqbjlBYWRDUWRB?=
+ =?utf-8?B?ZWZCa2tNQ3NXeHVYSHlBR0t1V0s5S0VhVTlwNXhyaFV1VUpYWWJCNkoxckFO?=
+ =?utf-8?B?L29VYS8xelpMUzZvSEFHeFRsaVNRZCs5cUVYVTY1MTFiMFF2Y3JDOW05UTRw?=
+ =?utf-8?B?VVBBUGVUNnNlV1NBRmRkT083S2NSaGZ1cGtVQjVQU2Z4YTZTK0wyUmViS2lp?=
+ =?utf-8?B?dmhXTHAwK1FkeUd6cnhWL3R0QTk4WTFKeFJSa3VrNFo4aGhIKytQaUEvSVpF?=
+ =?utf-8?B?aWFrYm45aDJwSllHYUFVc3cvUDh0WlNIRkFrZ2p3c0tya25QUEE3VUpMckFB?=
+ =?utf-8?B?dEc0bzN3ZjhQdHdSTThGVTVvYml0VWNEcmV5QTluKzBnZkxKb0MrTEpBd2JG?=
+ =?utf-8?B?ZkFqUkZOOWpmUFlXRXlpYnRFMjV2aHk0ZU44cGpvOVVSTkRtSEZSRDJaUHky?=
+ =?utf-8?B?Z3UxQU9YdUMrZ2dscDVpeTZ5MDJLQjl6NmhWSjlJWFIrQVpJUk8wdUh2NTUy?=
+ =?utf-8?B?UG9yRkttKys5bXBYTlRlR2oxTkt0cExweC9OWmpnbzcxOU92MGtwam1KMVRx?=
+ =?utf-8?B?NXl4QVhuVUkvREZHQzZXTlFhOElDMTFsTGVtK2Yrb1ZlUXRsOFZYbTJEOXVr?=
+ =?utf-8?B?Qi9DcWsvREpVcktrZWlneTI4Wmt5Sm9hbkFOeTE4UkhyS3Vjd0VGNzlyc3pt?=
+ =?utf-8?B?YlgxTTJ4U3hlMExnV1pZSEcrakpYMzlwaG1tSzlRZHZ0SjVKOGhRVUdsdUJS?=
+ =?utf-8?B?L1MxVUt2NXgrYXRsTGFlSlBPREZSSDRhOEpvSkV6NUgyNzdiT0lSZXRuc1lt?=
+ =?utf-8?B?TXJYMU1lZUJHMURTVG5GM2VROFFJcWlTZEtYZEt5RzcwK0w4VnRYdHNsd09r?=
+ =?utf-8?B?VnIyQjNOdFpabk9FTldGdUUyMlp6MFlOdEFqMnU0N2d3aVpIWHEwWjBydkZk?=
+ =?utf-8?B?RHhJbkNVM3A3UDA3R0xKWXg1bDdibStqZzVIKzNqMEJOODliMWU2VTBSaGFL?=
+ =?utf-8?B?NDJURmdUUy90SnlTNXk3R05TaWdmbHZGa0lSTDhiZkgyVGg4K0lVUzJjWURO?=
+ =?utf-8?B?d2d2N1lQbi82c0ZhVFpBc1FkSjVqOS8rTU9hT0djWnRDSWZrRS9mQjNMZXVB?=
+ =?utf-8?B?TUxnKzQ2RFp2Y2VpR2RsZVlNd1V1NndvSkZnWVFaUU1YUW5JQ3ZLdVlheTNl?=
+ =?utf-8?B?U3JKMSs5UElqc2Z4T3ZNWFZ2YnZuSUVZNGQ2ZjR4Mkc1djg0L01UbEZIcStw?=
+ =?utf-8?B?TzNGc0ovVE1HOG1hd2dGaEovb0RlWGVlcElJTTBtNlFYNkNQVWlXVktxTUxW?=
+ =?utf-8?B?eXRkc1B1dEdiTEs3U2NDQWMvRHFYdFZ6ZTdCV2NRTWxaK2FhS0NGY2Y0dWRr?=
+ =?utf-8?B?K0lrcmFlSDUzamNlTkRNSlBPTXM3L3l2MGJ0d3NxdzFjVStmajBPOERSeExU?=
+ =?utf-8?B?MUdUZHVCSHhTMCtERXdzaHFzQjNheU1lRHhyVTM4YmZsMWJIbitJR1FrUm1Y?=
+ =?utf-8?B?WDNYNVdKamRjc09UVTdwZk13RGNhR01JcHNJeW5qSlkvZ09DUU93ZDhDNlky?=
+ =?utf-8?B?VFdJT2gxbE9zbmF1M3l3ZlVUcFhBYUdma1RzaDRQUm5VYVVzOUx1dUVVcDhN?=
+ =?utf-8?B?N1R5aDZuaysweUN5VVQ5OCtjMUNWaHpNOUxiMWVDZzVLUktTdTZSaG5xNlNP?=
+ =?utf-8?B?dG14OTd2NnVsU29PamNVMCtIcGpyQ29IV045YWdXT2xMdWxLZm1XMmZYeExO?=
+ =?utf-8?B?Q2VLR2xtUVYvSFZhUkhTbEhaTkk5TmpXZ09ad1BDanRndzI3NnoybEpIUjEz?=
+ =?utf-8?B?RXFRSlplY3ZuOFlWSFhZWEFZU1h0ZVhwRUpaMmMxaXdjd0k2U3ZoSUk3blR0?=
+ =?utf-8?B?YXBxeWpLV1QvajAzV0lpcmtucmUxZThxMVBYWGx4YWF0UHd3K0RGd25TSmIz?=
+ =?utf-8?B?OCtEWWd3Y0dCU0ZQTnRYRkttWlVuemZVdnNvSHRqdlFYMVFwZ203UmEwTzA3?=
+ =?utf-8?B?bXh0Y1A3TmlIdGgydmpsUW1SdmlhWlBCSnBXK2FjMTV2U3J5RFRPazF3eXhV?=
+ =?utf-8?B?dkF6NHVEbzA0dFJvblhPejAxVEExdnNabDZiVWFqemZmbWZGZXJoWnRmUngw?=
+ =?utf-8?B?UThDOEJPaFh1b1oxYzA4S1l1NkxMa2ZkaVZkbHpnazJEZjBpcDdrM3Jqd0VK?=
+ =?utf-8?B?QkYzY2ZheUM4R3lQS0NJYlVkejB5clVhTk9abURjZnMzclZIamNraUdxeUF5?=
+ =?utf-8?B?ZWI5M29xRFFtK2krazJKclE1bVlMb01rRWJDa3QwS3VyK1JaMDhXNUJwQ21G?=
+ =?utf-8?B?dEs4OTl5MEQ3bjhyVXpsZlBDRzkyYWJCaXRhNTFvWndjdTlhT3hOaFhhbzAv?=
+ =?utf-8?B?dTg2MjB3NlJObUdEVFhyZ0hiZW0rSnZpTG9STWNheXNTZjg1U0I4T2lET2ZR?=
+ =?utf-8?B?ZFltMHFXZzVtdjR6TnY0L09jV1p6WmV0R0Fxb3U4bWQyblprY3o4NVh1NENn?=
+ =?utf-8?B?eGkzekpUTkNTVTRUSUgzcTd2Y1JaS2tpQlBuVjVaa1lnQXIwWE14bFU5MG5z?=
+ =?utf-8?B?RjhNNjMyNmxLdUZnPT0=?=
+MIME-Version: 1.0
+
+--_000_fafa644881b983f434aafd166bc8a7efgeeksquadupdates47co_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+DQoNCkZyb206ICAgIEdlZWsgU3F1YWQgPGluZm9AZ2Vla3NxdWFkLmNvbT48bWFpbHRvOmJpbGxp
+bmdAZ2Vla3NxdWFkLmNvbT4NClRvOiAgICAgIFJGTE9SRUtAV0lTQy5FRFU8bWFpbHRvOlJGTE9S
+RUtAV0lTQy5FRFU+DQoNCg0KV2VsY29tZSB0byBHZWVrIFNxdWFkDQoNCkhpIFVzZXIsDQoNClRo
+aXMgZW1haWwgaXMgdG8gaW5mb3JtIHlvdSBhYm91dCB0aGUgcmVuZXdhbCBvZiB5b3VyIGFubnVh
+bCBzdWJzY3JpcHRpb24gd2l0aCB1cy4gWW91ciBzZXJ2aWNlcyB3aWxsIGJlIGF1dG8gcmVuZXdl
+ZCBmb3IgbmV4dCBvbmUgeWVhciBhcyB5b3UgaGF2ZSBvcHRlZCBmb3IgYXV0by1kZWJpdC4gQW1v
+dW50IHdpbGwgYmUgZGVkdWN0ZWQgZnJvbSB5b3VyIHNhdmVkIGNhcmQgdW5kZXIgeW91ciBhY2Nv
+dW50Lg0KV2UgdHJpZWQgdG8gcmVhY2ggeW91IHNldmVyYWwgdGltZXMgb3ZlciBwaG9uZSBidXQg
+d2VyZSB1bmFibGUgdG8gY29udGFjdCB5b3UuIElmIHlvdSB3aXNoIHRvIHN0b3AgdGhpcyBzdWJz
+Y3JpcHRpb24gcmVuZXdhbCBnZXQgaW4gdG91Y2ggd2l0aCBvdXIgSGVscC1EZXNrIG51bWJlci4N
+Cg0KWW91ciBzdWJzY3JpcHRpb24gZGV0YWlsczoNCg0KUmVnaXN0ZXJlZCBFbWFpbDogUkZMT1JF
+S0BXSVNDLkVEVTxtYWlsdG86UkZMT1JFS0BXSVNDLkVEVT4NCg0KUGxhbjogMSB5ZWFyDQoNClBy
+aWNlOiAzODQuNTkgVVNEIChTYXZlIDM1JSB3aXRoIHRoZSAwMyB5ZWFyIHBsYW4pDQoNClBheW1l
+bnQgbWV0aG9kOiBDYXJkDQoNCk5leHQgUmVuZXdhbDogIEF1Z3VzdCAxNSwgMjAyMw0KDQpSZW5l
+d2FsIElEOiAgR0VFSzE1LVJFLTEzOTQwNzYwDQoNCkhlbHAtRGVzazogKzEgKDgwOCkgODY3LTk0
+NzQNCg0KVGhhbmtzDQpHLVNxdWFkIFRlYW0NCg0K
+
+--_000_fafa644881b983f434aafd166bc8a7efgeeksquadupdates47co_
+Content-Type: text/html; charset="utf-8"
+Content-ID: <DC057192C3FDEF4BAF0C0218930BAC65@INDPRD01.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRl
+eHQvaHRtbDsgY2hhcnNldD11dGYtOCI+DQo8L2hlYWQ+DQo8Ym9keT4NCjxkaXYgY2xhc3M9Im1v
+ei10ZXh0LWh0bWwiIGxhbmc9IngtdW5pY29kZSI+DQo8ZGl2IGNsYXNzPSJtb3otdGV4dC1odG1s
+IiBsYW5nPSJ4LXVuaWNvZGUiPjxicj4NCjxkaXYgY2xhc3M9Im1vei1mb3J3YXJkLWNvbnRhaW5l
+ciI+DQo8ZGl2IGNsYXNzPSJtb3otZm9yd2FyZC1jb250YWluZXIiPg0KPGRpdiBjbGFzcz0ibW96
+LWZvcndhcmQtY29udGFpbmVyIj48YnI+DQo8dGFibGUgY2xhc3M9Im1vei1lbWFpbC1oZWFkZXJz
+LXRhYmxlIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiIGJvcmRlcj0iMCI+DQo8dGJv
+ZHk+DQo8dHI+DQo8dGggdmFsaWduPSJCQVNFTElORSIgbm93cmFwPSJub3dyYXAiIGFsaWduPSJS
+SUdIVCI+RnJvbTogPC90aD4NCjx0ZD4mbmJzcDtHZWVrIFNxdWFkIDxhIGNsYXNzPSJtb3otdHh0
+LWxpbmstcmZjMjM5NkUiIGhyZWY9Im1haWx0bzpiaWxsaW5nQGdlZWtzcXVhZC5jb20iPg0KJmx0
+O2luZm9AZ2Vla3NxdWFkLmNvbSZndDs8L2E+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGggdmFsaWdu
+PSJCQVNFTElORSIgbm93cmFwPSJub3dyYXAiIGFsaWduPSJSSUdIVCI+VG86IDwvdGg+DQo8dGQ+
+Jm5ic3A7PGEgY2xhc3M9Im1vei10eHQtbGluay1hYmJyZXZpYXRlZCIgaHJlZj0ibWFpbHRvOlJG
+TE9SRUtAV0lTQy5FRFUiPlJGTE9SRUtAV0lTQy5FRFU8L2E+PC90ZD4NCjwvdHI+DQo8L3Rib2R5
+Pg0KPC90YWJsZT4NCjxicj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0ibW96LWZvcndhcmQtY29udGFp
+bmVyIj48YnI+DQo8L2Rpdj4NCjxkaXYgY2xhc3M9Im1vei1mb3J3YXJkLWNvbnRhaW5lciI+PGI+
+PGZvbnQgc2l6ZT0iKzIiPldlbGNvbWUgdG8gR2VlayBTcXVhZDwvZm9udD48L2I+PGJyPg0KJm5i
+c3A7Jm5ic3A7IDxicj4NCkhpIFVzZXIsPGJyPg0KJm5ic3A7Jm5ic3A7IDxicj4NClRoaXMgZW1h
+aWwgaXMgdG8gaW5mb3JtIHlvdSBhYm91dCB0aGUgcmVuZXdhbCBvZiB5b3VyIGFubnVhbCBzdWJz
+Y3JpcHRpb24gd2l0aCB1cy4gWW91ciBzZXJ2aWNlcyB3aWxsIGJlIGF1dG8gcmVuZXdlZCBmb3Ig
+bmV4dCBvbmUgeWVhciBhcyB5b3UgaGF2ZSBvcHRlZCBmb3IgYXV0by1kZWJpdC4gQW1vdW50IHdp
+bGwgYmUgZGVkdWN0ZWQgZnJvbSB5b3VyIHNhdmVkIGNhcmQgdW5kZXIgeW91ciBhY2NvdW50Ljxi
+cj4NCldlIHRyaWVkIHRvIHJlYWNoIHlvdSBzZXZlcmFsIHRpbWVzIG92ZXIgcGhvbmUgYnV0IHdl
+cmUgdW5hYmxlIHRvIGNvbnRhY3QgeW91LiBJZiB5b3Ugd2lzaCB0byBzdG9wIHRoaXMgc3Vic2Ny
+aXB0aW9uIHJlbmV3YWwgZ2V0IGluIHRvdWNoIHdpdGggb3VyIEhlbHAtRGVzayBudW1iZXIuPGJy
+Pg0KJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IDxicj4NCjxmb250IHNpemU9IisxIj48Yj5Zb3Vy
+IHN1YnNjcmlwdGlvbiBkZXRhaWxzOjwvYj48L2ZvbnQ+PGJyPg0KPGJyPg0KUmVnaXN0ZXJlZCBF
+bWFpbDogPGEgY2xhc3M9Im1vei10eHQtbGluay1hYmJyZXZpYXRlZCIgaHJlZj0ibWFpbHRvOlJG
+TE9SRUtAV0lTQy5FRFUiPg0KUkZMT1JFS0BXSVNDLkVEVTwvYT48YnI+DQombmJzcDsmbmJzcDsg
+PGJyPg0KUGxhbjogMSB5ZWFyPGJyPg0KJm5ic3A7Jm5ic3A7IDxicj4NClByaWNlOiAzODQuNTkg
+VVNEIChTYXZlIDM1JSB3aXRoIHRoZSAwMyB5ZWFyIHBsYW4pPGJyPg0KJm5ic3A7Jm5ic3A7IDxi
+cj4NClBheW1lbnQgbWV0aG9kOiBDYXJkPGJyPg0KJm5ic3A7Jm5ic3A7IDxicj4NCk5leHQgUmVu
+ZXdhbDombmJzcDsgQXVndXN0IDE1LCAyMDIzPGJyPg0KJm5ic3A7Jm5ic3A7IDxicj4NClJlbmV3
+YWwgSUQ6Jm5ic3A7IEdFRUsxNS1SRS0xMzk0MDc2MDxicj4NCjxicj4NCjxmb250IGNvbG9yPSIj
+OTcxYTFkIj48Yj48Zm9udCBzaXplPSIrMSI+SGVscC1EZXNrOiArMSAoODA4KSA4NjctOTQ3NDwv
+Zm9udD48L2I+PC9mb250Pjxicj4NCjxicj4NClRoYW5rczxicj4NCkctU3F1YWQgVGVhbTxicj4N
+Cjxicj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2JvZHk+DQo8
+L2h0bWw+DQo=
+
+--_000_fafa644881b983f434aafd166bc8a7efgeeksquadupdates47co_--

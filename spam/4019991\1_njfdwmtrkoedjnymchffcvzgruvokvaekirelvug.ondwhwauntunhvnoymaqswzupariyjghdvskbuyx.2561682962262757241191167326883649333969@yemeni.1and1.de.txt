@@ -1,0 +1,162 @@
+Received: from MWHPR0601MB3754.namprd06.prod.outlook.com
+ (2603:10b6:301:7d::19) by DM5PR06MB2681.namprd06.prod.outlook.com with HTTPS;
+ Fri, 16 Jul 2021 14:17:27 +0000
+Received: from MWHPR2201CA0059.namprd22.prod.outlook.com
+ (2603:10b6:301:16::33) by MWHPR0601MB3754.namprd06.prod.outlook.com
+ (2603:10b6:301:7d::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4331.26; Fri, 16 Jul
+ 2021 14:17:26 +0000
+Received: from CO1NAM11FT040.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:301:16:cafe::ea) by MWHPR2201CA0059.outlook.office365.com
+ (2603:10b6:301:16::33) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4331.21 via Frontend
+ Transport; Fri, 16 Jul 2021 14:17:26 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ CO1NAM11FT040.mail.protection.outlook.com (10.13.174.140) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4331.21 via Frontend Transport; Fri, 16 Jul 2021 14:17:25 +0000
+Received: from yemeni.1and1.de ([194.15.108.142]) by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTP id <0QWC046SDD0VMO50@smtp6.wiscmail.wisc.edu> for
+ mgingras@wisc.edu; Fri, 16 Jul 2021 09:17:23 -0500 (CDT)
+Date-warning: Invalid date header replaced by smtp6.wiscmail.wisc.edu; original
+ content: [smtp_Date]
+X-Spam-Report: IsSpam=no, Probability=14%, Hits= IMGSPAM_BODY 0.5,
+ INVALID_DATE 0.5, FROM_NAME_ALLCAPS 0.1, HTML_70_90 0.1,
+ REPLYTO_FROM_DIFF_ADDY 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODY_SIZE_1000_LESS 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_200_299 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, CS_IMG_CTA 0,
+ CT_ENDS_IN_SEMICOLON 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, DOMAINKEY_SIG 0,
+ HREF_LABEL_IMG_ONLY 0, OBFUSCATION 0, RDNS_NXDOMAIN 0, RDNS_SUSP 0,
+ RDNS_SUSP_GENERIC 0, SENDER_NO_AUTH 0, SINGLE_HREF_URI_IN_BODY 0,
+ SMALL_BODY 0, SPF_NONE 0, TRANSACTIONAL 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __CD 0, __CT 0, __CTYPE_HTML 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __FRAUD_URGENCY 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __FROM_NAME_USPS 0,
+ __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_REPLYTO 0,
+ __HIDDEN_HTML_CONTENT 0, __HREF_LABEL_IMG 0, __HTML_AHREF_TAG 0,
+ __HTTPS_URI 0, __HTTP_IMAGE_TAG 0, __IMGSPAM_BODY 0, __MIME_HTML 0, __MIME_HTML
+X-Wisc-Doma: JavaMail.app@mail.tryninja.io,yemeni.1and1.de
+X-Wisc-Env-From-B64: SmF2YU1haWwuYXBwQG1haWwudHJ5bmluamEuaW8=
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.7.16.140616,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.16.5840001,
+ SenderIP=[194.15.108.142]
+X-Wisc-DKIM-Verify: JavaMail.app@mail.tryninja.io,
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=smtp; d=yemeni.1and1.de;
+ h=To:Date:From:Subject:Reply-To:Message-ID:MIME-Version:Content-Type;
+ i=noreply-9926870865802580189124064576526375764201@yemeni.1and1.de;
+ bh=8voIza8Tl4OYbR1EW9Hk7qckvbc=;
+ b=alAM3NfCjI9a7bhHnJOGtBT0AV3PB7dTxHRJtSQpc9JVKqjLUJKFqxdcpM+3W2BUnQdxaB6hJDU7
+   xKsQrqicgsHHzXELYrnfburzkpoKYK1e95vvHCtgavoM9oUg9LcOQyt4xhQq4WSbo/vOXaLRUzf8
+   lsrr8LIqRsXHzrZkKY0=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=smtp; d=yemeni.1and1.de;
+ b=WykyjuNr8T5x11jJyoLs80DWaI12qPhtJT5lk9FqwfAP7eZvRiYk4hEWnxrOayuzh7WZoDVuf6QB
+   OiKPyvsFMHbKQIsOfXE9dppkSczu1bv8JWbIeYnt7UK/J7009GtCfoyZ/nV9dnxHBEOV8T+Q6OsT
+   Uib5arvzpSsvbV4ZCtc=;
+To: mgingras@wisc.edu
+Date: Fri, 16 Jul 2021 09:17:23 -0500 (CDT)
+Accept-Language: en-US, en-GB
+Content-language: en-US
+From: USPS SERVICE
+ <noreply-9926870865802580189124064576526375764201@yemeni.1and1.de>
+Subject: Your Pack Ready Now Confirm ASAP !!
+Reply-to: armyU5
+ <".c.x.xbld5EfkKufcReuF393jfvdFhTwxgMlxU9IdJtjE"@yemeni.1and1.de>
+Message-id:
+ <njfdwmtrkoedjnymchffcvzgruvokvaekirelvug.ondwhwauntunhvnoymaqswzupariyjghdvskbuyx.2561682962262757241191167326883649333969@yemeni.1and1.de>
+Content-disposition: inline
+Content-type: TEXT/HTML
+Return-Path: JavaMail.app@mail.tryninja.io
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Jul 2021 14:17:26.1111
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 71bf7dc2-eb47-4ad5-1411-08d948646fe9
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 71bf7dc2-eb47-4ad5-1411-08d948646fe9
+X-MS-TrafficTypeDiagnostic: MWHPR0601MB3754:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:1728;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jul 2021 14:17:25.9712
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 71bf7dc2-eb47-4ad5-1411-08d948646fe9
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MWHPR0601MB3754
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3702351
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4331.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?hof+MlvBcSuKbsppgWzXQnz0V8VtW2DmBclhfQCis1WQrPpCzi9fKWR7To?=
+ =?iso-8859-1?Q?XFTwKPcNy1y9VK+nmnJIipcGTKpRkdVrDgW1ODEqd+hEl0cxvxA0078Cay?=
+ =?iso-8859-1?Q?7hY8rEiGUNAny0rGVjBuC/r2Bqz61p5vCZPsAAtQPvMmEbNyGHy6SnWb2E?=
+ =?iso-8859-1?Q?3c1+mDXCoVW7qLsgw3EgDAipjmYz/dZhwKx/NGftEJMtM9nBPwhgoOJciE?=
+ =?iso-8859-1?Q?gxbv9igYbHKhuYTGx2GKYYw/xTheDUpHUOcGyohAeAt3k7aZLVC1sP1uSq?=
+ =?iso-8859-1?Q?UEie0JIe1X4Eqa/jUOWxGn++4KPluN+Q925hyLjRV/DxPi2YjMKCpbvCut?=
+ =?iso-8859-1?Q?GqZ0mIUgEP/KyR9MyHvwH2g3o682HcJgwLweku6BhrV6H4WOXaD734XOlx?=
+ =?iso-8859-1?Q?NZKRAVidgSmGdhpCgNKwPz3pKYJdzKguAyiDoY+fdNgafHM4zp9BKAO+er?=
+ =?iso-8859-1?Q?9W/L63iiVNmp333mYiovEopfEErR+VpKA/CqNGc1ddmLL5/OGmFnRH9Cfa?=
+ =?iso-8859-1?Q?IDyfIEZyTC574WHQofPc5QFiZpBmYsNv81ikRcSxfCFFCL4jjIHktZMrji?=
+ =?iso-8859-1?Q?lwwAbZFRPh4hWPuMWa5GUdKpWT3x9BHb5w3z8/9HZpch3J5z4b1r01+bNk?=
+ =?iso-8859-1?Q?HJRAdBZ7Dl2qzIawt5e0OrnP46HeV8PhU/r0ZYDtUVPlYkL1sAM26FdldC?=
+ =?iso-8859-1?Q?H+7/9qoZrV5w4hXevCSpt8Du/SgmP425zXNUj9SIDHlB6cB1/6zTgNlSwN?=
+ =?iso-8859-1?Q?95ZJV1xkXVJTEllEJYklkVtjZKS9h6bMUNy6sQ1vkXgyM/VXq78/7YU+yt?=
+ =?iso-8859-1?Q?vl/oxRKHtGVGAHI+DznJqAb8nPfnJy0Cs1tWbi/ZZzLhdxa3RKPi3LFjnN?=
+ =?iso-8859-1?Q?rwKFpmVv0siQkUl87GFNC2L8u2VmYa3t5h6CboCo8pCeIKw7JI+EKxlN17?=
+ =?iso-8859-1?Q?g+tzTdr3vBRrbT8TtGFq+Q4m/fOw3HRHkeNpF+IX8csXLF4CvbeoslvS3Z?=
+ =?iso-8859-1?Q?xOBmmV7eEGgFMF8do7zCbtQP7c26dk7Z0p+UCalqA6CnpBk2GX70KA167h?=
+ =?iso-8859-1?Q?GPXM5JkqYsycoTyxqAITWk0u63LkQjB0G2UvZ/Y3l7GVmbBUg5erDMSSGp?=
+ =?iso-8859-1?Q?j+C5bw2E8pf27AXgEEobF/nYQBnHX7u2V8QRpSPYFV6Bv9JQgCI1m2t8Ou?=
+ =?iso-8859-1?Q?qCFpmXxcl74FYMCy4Gs2HCCEsSqSkrHd1SoMKMT5G72SWqb1d/xM7Ei2wd?=
+ =?iso-8859-1?Q?xSJrJues656DOZ04hzW43a5VaLEybj505x/L/qZMSiVqqUB0T2AaXhaZPn?=
+ =?iso-8859-1?Q?bTsCfsZORbwUVK6LaPqcCNwfXmb0OKyDmXl5pWMHY6XQklLstVlPizLOnq?=
+ =?iso-8859-1?Q?7Y7E24l8KBR82o9c/DXTK+vmmT4H78HYswM2gRfOMeANV6PedldISpFXy/?=
+ =?iso-8859-1?Q?xsW6LaAFeJIYjslYMEYs2sXKhdr2OHUv2+VUc18I+rNyfgXVMplJeuXsJ1?=
+ =?iso-8859-1?Q?mVfaEoL/yWkg6SV/tQ5/qtyOaB8S2mPNOO8MeX9suywnO3bov/jE8RAB9f?=
+ =?iso-8859-1?Q?qMSj4hE7iOa7Fbqe8uTcgk0F/vRN7TJTBVyghq6stAyKhCfp7Va4x4c9+d?=
+ =?iso-8859-1?Q?TvZ5UN+8cT1pQ5bO8zfDySAmsW6ljMD7f/cAgrPLzkUVYcjVcT6pz1qqtk?=
+ =?iso-8859-1?Q?wyYtXvNTTgR+Rfsgm2nEGcFERIhzkWWN2nLWcEwfJM2wmZjUmPLkHWIqwV?=
+ =?iso-8859-1?Q?merWQtGswKWBxGWjB2eukimpVIu7b561auricsjTy5/whuvTfmuftQWAR8?=
+ =?iso-8859-1?Q?DUF7iZoMWwnwxVHJnUQ3j5QIyBMRUAPahKPPDMXVtJYu+acAqba9iAFReD?=
+ =?iso-8859-1?Q?Ec6I+0t9CcmMr7j9MOLVNoavRyB0Kz2ySF2YaXpI9pZWpzNAuSeZW1sDlk?=
+ =?iso-8859-1?Q?NMMntokoHD7pGbZ/Ha5/OMFGz3i2/tCWu5sRO7gaSp8TmGrjkTfIXm1h2b?=
+ =?iso-8859-1?Q?Gh0VdvOeDn10iBmTOWyGd8VkYkIN76rtH9QlSsx7ojQvpDKwr7TrvAP39Y?=
+ =?iso-8859-1?Q?X7oXffkLzJEYuOj8SioU8d6GjNU3us3Ir1dyOeZhf9u0zzRUQV3jJL7Alp?=
+ =?iso-8859-1?Q?LqAgpt2/3qz1WC+cJBD8WBc7TCFyOe5CN4yy1yX2eaQtDlR3jSYiT+ZLwZ?=
+ =?iso-8859-1?Q?qWws4xc6QkeDts1CI/0XC7ttp/AEOKntJoM3NDE4YcOJjbe1axVTMiHjtQ?=
+ =?iso-8859-1?Q?rvw1DZx2GZirVe2cf/JK3vJaKx0ah7tCSSAEJ9UazYAK1E4wd6j/wXyEHF?=
+ =?iso-8859-1?Q?uwBRSMKm2EVI+BLuZ2OiJLY2lji1J+8gbpO2yDobm75UBFPYc58Yo1EuCW?=
+ =?iso-8859-1?Q?aYZ8BvdSlDvyVY7fmvOX29qn84LHObli/kVHOV1T2C/e+Zp6zYtqT9exJY?=
+ =?iso-8859-1?Q?or99hQzTPxI2MeAjEPW26/bvWmc=3D?=
+MIME-Version: 1.0
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<span style="font-size:0.00000000px;">TCKIKTXH0V
+
+<p style="text-align: center;"><a href="https://4uid.com/u0d">
+  <img alt="" src="https://4uid.com/ZHp"/></a></p>
+
+</body>
+</html>

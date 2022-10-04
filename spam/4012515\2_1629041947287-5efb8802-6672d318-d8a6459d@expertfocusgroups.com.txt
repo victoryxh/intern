@@ -1,0 +1,192 @@
+Received: from BL0PR06MB4339.namprd06.prod.outlook.com (2603:10b6:208:45::25)
+ by BY5PR06MB6578.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 15:39:15 +0000
+Received: from MWHPR15CA0026.namprd15.prod.outlook.com (2603:10b6:300:ad::12)
+ by BL0PR06MB4339.namprd06.prod.outlook.com (2603:10b6:208:45::25) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.19; Sun, 15 Aug
+ 2021 15:39:14 +0000
+Received: from CO1NAM11FT060.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:ad:cafe::4c) by MWHPR15CA0026.outlook.office365.com
+ (2603:10b6:300:ad::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.13 via Frontend
+ Transport; Sun, 15 Aug 2021 15:39:14 +0000
+Received: from smtp6.wiscmail.wisc.edu (144.92.197.244) by
+ CO1NAM11FT060.mail.protection.outlook.com (10.13.175.132) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 15:39:14 +0000
+Received: from mail-il1-f172.google.com ([209.85.166.172])
+ by smtp6.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXW0075A0T8RP30@smtp6.wiscmail.wisc.edu> for
+ nseltzer@wisc.edu; Sun, 15 Aug 2021 10:39:09 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=20%, Hits= CTYPE_JUST_HTML 0.848,
+ HTML_MIME_NO_HTML_TAG 0.8, IMGSPAM_BODY 0.5, REPLYTO_FROM_DIFF_ADDY 0.1,
+ BODYTEXTH_SIZE_10000_LESS 0, BODY_SIZE_1400_1499 0, BODY_SIZE_2000_LESS 0,
+ BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_IMG_ONLY 0, HTML_BAD_EXTRAS 0, KNOWN_MTA_TFX 0, LINK_TO_IMAGE 0,
+ SENDER_NO_AUTH 0, SINGLE_HREF_URI_IN_BODY 0, SINGLE_URI_IN_BODY 0, SPF_PASS 0,
+ SXL_IP_TFX_WM 0, URI_WITH_PATH_ONLY 0, WEBMAIL_SOURCE 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CASH 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTE 0, __CTYPE_HTML 0, __CTYPE_IS_HTML 0, __DKIM_ALIGNS_1 0,
+ __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_MONEY_CURRENCY 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FUR_RDNS_GMAIL 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_MSGID 0, __HAS_REPLYTO 0, __HAS_X_MAILER 0, __HELO_GMAIL 0,
+ __HREF_LABEL_IMG 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_BAD_START 0,
+ __HTTPS_URI 0, __HTTP_IMAGE_TAG 0, __IMGSPAM_BODY
+X-Wisc-Doma: nicholas@expertfocusgroups.com,expertfocusgroups.com
+X-Wisc-Env-From-B64: bmljaG9sYXNAZXhwZXJ0Zm9jdXNncm91cHMuY29t
+X-Spam-PmxInfo: Server=avs-12, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.153016,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840000,
+ SenderIP=[209.85.166.172]
+X-Wisc-DKIM-Verify:
+ nicholas@expertfocusgroups.com,expertfocusgroups.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score: *
+Received: by mail-il1-f172.google.com with SMTP id u7so16074491ilk.7 for
+ <nseltzer@wisc.edu>; Sun, 15 Aug 2021 08:39:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=expertfocusgroups.com; s=google;
+ h=from:to:reply-to:subject:message-id:content-transfer-encoding:date
+ :mime-version;        bh=werfJ5OILbtY5xbKUgDUGT3HJ/YBb1e+kQo5e7T8+Nk=;
+ b=E4LKIwlFifqVlBPqrgqtlrk4DhMv07wZFplHxc3QMpMuYfQhZnz87Rs02+3GugFUKJ
+ kwb6IqcaxE73Ug9jfbdRqDioal5OEm/B9msWEhv8gdi3qnduGBhczZ6N5euJtj19hLCb
+ GnKzt/YLzDmI6gaf+RCW0I7IVNub0lHpI3vWDNgJttyE8vWk+lX+wKK1UrnHH/a1q6fL
+ LauOdMJ/2lZ8MkSIoTGPWbp6kKoLG6mksLkOKgyD9aeinTLghTyZdPuXjIYrwFHJRjq+
+ aarz+OBo8RtzOR+p2MwOZiGTDNZc2xKURfq09YKqlGxCHIco565doKA5ahuI5Cw5wZqa
+ hz1g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:from:to:reply-to:subject:message-id
+ :content-transfer-encoding:date:mime-version;
+ bh=werfJ5OILbtY5xbKUgDUGT3HJ/YBb1e+kQo5e7T8+Nk=;
+ b=nkFi+04GqWsiewYSqaopog8cmiQf/U1YRcmcxvpod7B+Z0YrZEa9/DVPNekcwQrijR
+ GXCCLOmn0u7I9Zs9BmbDLQz9dYkY9t6nZYyUxJrIAoSS1FIeKYRDUhYaCNavMgfk9IDu
+ SEQhUD+fPk8i2OCXarqnPdMrYisq0APNN9Ql3HiZNhDIJD30n6pJ4SFoEtUWN8I0Q0CK
+ ibr6QwN/cxsHudDYh0s0KP0eB9A6H4H9z/CiP1423tooJkQz7cx38ny+idEIw4GoH0fD
+ YyYLXg32iYTL+LIXeIJy9GqS/4/ZFvP4LLTD8Crb18A15XjBABD7iiuJqrwaoQ0D8uRX
+ AtCQ==
+X-Gm-Message-State: AOAM533iOfI6zkgowk84RZJaVgVXhd31O6bKMY+tip1v9nsaep8YYRUG
+	c1iZyCCF/9ptcd0MfWGbABCTKlPkf2LYAw==
+X-Google-Smtp-Source:
+ ABdhPJyBw6k3htVMWNE9c6ldB9mcLTeLoSrH3LhatgL04KtfNpCKMKScbO+uo+rNuwuDcfAJb1yj/w==
+X-Received: by 2002:a05:6e02:d06:: with SMTP id
+ g6mr7581210ilj.153.1629041948407; Sun, 15 Aug 2021 08:39:08 -0700 (PDT)
+Return-Path: nicholas@expertfocusgroups.com
+Received: from [127.0.0.1]
+ (64.216.178.107.bc.googleusercontent.com. [107.178.216.64])
+ by smtp.gmail.com with ESMTPSA id 12sm4077780iog.38.2021.08.15.08.39.07 for
+ <nseltzer@wisc.edu>
+ (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Sun,
+ 15 Aug 2021 08:39:07 -0700 (PDT)
+Content-type: text/html
+From: Nicholas Kwan <nicholas@expertfocusgroups.com>
+To: nseltzer@wisc.edu
+Reply-to: staffing@expertfocusgroups.com
+Subject: CPG Leaders Wanted
+Message-id: <1629041947287-5efb8802-6672d318-d8a6459d@expertfocusgroups.com>
+X-Mailer: nodemailer (2.2.1; +http://nodemailer.com/; SMTP
+ (pool)/2.5.1[client:2.3.1])
+Content-transfer-encoding: quoted-printable
+Date: Sun, 15 Aug 2021 15:39:07 +0000
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 15:39:14.3387
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 62de01b0-e3c2-45b3-ac9a-08d96002d5d5
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT060.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 62de01b0-e3c2-45b3-ac9a-08d96002d5d5
+X-MS-TrafficTypeDiagnostic: BL0PR06MB4339:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-MS-Oob-TLC-OOBClassifiers: OLM:8273;
+X-Microsoft-Antispam: BCL:5;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.244;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp6.wiscmail.wisc.edu;PTR:wmmta3.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 15:39:14.1688
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 62de01b0-e3c2-45b3-ac9a-08d96002d5d5
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT060.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR06MB4339
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5761558
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?th8dHy+dAReLE4WHatjV5I+7CPeViO2z885D4kAhUmJlCGkW4xDPUeLagN?=
+ =?iso-8859-1?Q?tgfMIUw7wc3UjCdwrPrhJjc5FESdTuVcb6Dj5v6rAX/uIxEt8i4eCJG0XD?=
+ =?iso-8859-1?Q?aj/+NA+zNnMcoFrXBUvC+N6I+SE+I+xIgXbvrqYFgTVcTzliMSmYsDWuTv?=
+ =?iso-8859-1?Q?k0DSREtoxp+nPwhUFBgo6WlqRNZIodWwyRkF1PaZF6vqHot9a4Mb3XeStF?=
+ =?iso-8859-1?Q?ilOANWf1VVPJiicH0YP/GWifG3KG7qtrtr0vB6KjTa+Ugnx4lD4GvbytE5?=
+ =?iso-8859-1?Q?VZLIk24OCRaMGYzueYyZa9dVh50uoNCtl9JuCaw2O/+mRv24IU4YKWdpjl?=
+ =?iso-8859-1?Q?u6iX48wj09naEfrDQCNjWEQBR/6ehyvvvFV060qo6g/OGWcZQP/u2Sqrpb?=
+ =?iso-8859-1?Q?Qkw2b54NMHftBy4dzk7FGoKQEcngbTnzHazokQLILLhtpWp8GOfatSpUmE?=
+ =?iso-8859-1?Q?+SOJ4NKWCDj8wfWDgJo7iBw555QANEConwfde34hw/fhesa8wlkEDBT9G+?=
+ =?iso-8859-1?Q?sv0/CvTebCtPTLWvQjLl1iFJMedOxY40olDS/cIFVatjpXK7HjRso4LD4R?=
+ =?iso-8859-1?Q?ex3yH3Z+lkvyaeFl9ZuufwGkK8ne826TlNB9SknH5lUOA4NklmtglivPuV?=
+ =?iso-8859-1?Q?uRR5GgnNlDtDoAjGMUby9gCvVcOmJiqUDWCmqSuxgjdoPxF3U7BX2T/Yre?=
+ =?iso-8859-1?Q?fvdx5iN9H5DgDIf0Ej8i2xlvc9Xyaitg2B7ovKXNFIRXbVr0G3ZH1I9NO9?=
+ =?iso-8859-1?Q?h0hoAhqhXIk/TEWkqKaOjJBDe4e3jhLHy4GoDKrWOGOuX9i3xqNyLw9f60?=
+ =?iso-8859-1?Q?/6jJQsBoso2OBWDXcSbVnExYeJxkrGGK0WXHctU54IQkwdhMrNDiUhuR39?=
+ =?iso-8859-1?Q?hLcH44fCbM4Seo+U09jfYCU5VfF+FuKirUpNFQFJ/DGtdFTfgZlaKuNMPw?=
+ =?iso-8859-1?Q?6YIMQFvaazQ7yCjDZCDcc74pGRkb+DiR1QomxROXuLU9ndcS27jpSkgGOu?=
+ =?iso-8859-1?Q?NDsmxBbRprRnnqVSrG3pRae8P4vER951cGRbHxWwiALOe6sHGpK0cf4shV?=
+ =?iso-8859-1?Q?wvwo+1PkEg4eD4ZCVDFK7g7opKQgbsTZltVXq/fnfsfW0rdOMMpX7NZhWA?=
+ =?iso-8859-1?Q?rDyG/gikW5FkHYEuJbl7udr7OWluJuudjTXX4SSdmyL6dObdcdHsJbIFx/?=
+ =?iso-8859-1?Q?ASrofBFzTCExngv3eD4aUS6mhjFlwChhOibmJ2CJqDDI6EIBQhthj1oFhw?=
+ =?iso-8859-1?Q?cNEU28xIAAIn4nOzVmjLLLYLYG+j8U4pL6iZ/oxAIYvabx/FbxCfvoXVXE?=
+ =?iso-8859-1?Q?etnyns3ZTQiPaKwjycmlhbh9ZwGhrk5w5Nh92Hhh0xAyLhGsIN9EWAogL9?=
+ =?iso-8859-1?Q?/Z8bMpvmw6Y+GRck1rHG5qs9y5VemkaBoLSlhqjPH3lhax0IEr3gGsJqkQ?=
+ =?iso-8859-1?Q?/VVaEP11HEFj4iTlhPQVtRJlDVXio6UysvdroT8HSp0T0Xgk5YdxyWiU0h?=
+ =?iso-8859-1?Q?QSm8m9dS/1JnNnF66ugLDajGojScrWVsXgZh1FmzpC9W81LJuC93qOdbM6?=
+ =?iso-8859-1?Q?29KKcpSROcNb6dmUKiyGaJr7DUZNjUkvk9OXTb59U0yrJ+SGJVGYHhbe4g?=
+ =?iso-8859-1?Q?b3Q579CmDxdmQOZv2kAsKLBlHvEyCDUV5mfMVvsqtDKlDsoJJ2jv5yTC+p?=
+ =?iso-8859-1?Q?3stwYtCso3Osn1m6TIefRzYaI7qiIQA6L8nbBH+i4o6HNKN8SPqTYFQzKi?=
+ =?iso-8859-1?Q?RM0OUHmSQiViL95ipYbY6A82Vf14utX8/uxRIvF55tarH2g3y2Si/7G28R?=
+ =?iso-8859-1?Q?mA9uN7dCNac5edGRtxiREalqmPBBbPhxcujyLluQfsGA+SjdYr/oa/r03G?=
+ =?iso-8859-1?Q?j6zrGMYaFHlkeL1p8HnNYryowXuYOyggmNyxT2ARDu6YPTIY5GGd/UMbqC?=
+ =?iso-8859-1?Q?UPwGOAllKK7md/158gec39qqUcN12WDQTMysiN5hyf+IEgxVY+war4GBiV?=
+ =?iso-8859-1?Q?5+8ev0sxHPtrqPj0DoDfa84n0OGKDYuOMQ3pb4dA8dyioxZaGCwyoe6bS0?=
+ =?iso-8859-1?Q?Ekuz1qu1mQ5eRac/2LyKEgrMVYF8X9Jes/jUHx8wykNMl44z5q4zdNeybo?=
+ =?iso-8859-1?Q?1AOe+pKm23nAvPxDBAg2KIiEowOq5NYjZbS5K5oEMEH7KnOC18cGa10G2h?=
+ =?iso-8859-1?Q?R4VSeI4G4KIbe+hTdJ9Ptzd53D9iOWd8/Yf9uS6KQs/w13PZOUEPpDLXi+?=
+ =?iso-8859-1?Q?SqSFc5WcJQ0OZ2uq9/dxmX5Cynvsyd29HXqga2moRa9tjNRHHD2iUSQAXJ?=
+ =?iso-8859-1?Q?4AgsbH4CTTttWaVsAV7v/lESXim6ylAk0NHNTPCIqKpzYzI+Alz/Aqhgdp?=
+ =?iso-8859-1?Q?C8/t7HzymfWvt2o8dReTfzXHdHRG96J03ZZyH2Wh582aWWxiCIh6l+kbX5?=
+ =?iso-8859-1?Q?px3K1wLVW8mAeBJSDuBV5nkHulE=3D?=
+MIME-Version: 1.0
+
+<a href=3D"https://currnt.com/viewinbrowser?pceid=3D46389678"><img =
+src=3D"https://currnt.com/emailview.gif?pceid=3D46389678"></a>Hi Nathan,<br=
+ /><br />We want to invite you to an online group of CPG leaders from mid =
+to large size enterprises. After a FREE, quick and easy sign-up you can =
+access many opportunities to learn and grow on this topic. <br =
+/>Journalists that want to interview you<br />Gig opportunities for you to =
+get paid<br />Curated articles to read and discuss<br />Swap your ideas and=
+ best practices with the other members<br />You can also request to become =
+a Creator for the group. Creators help shape the content and get more =
+rewards<br />Recognition as a thought leader on the topic<br />Earn =
+redeemable points for cash<br />You will also earn 10% bonus points on =
+anyone you invite, for life<br /><br />Join us here: https://currnt.=
+com/topics/cpgtrends?utm_source=3Dcurrnt&utm_medium=3Demail&utm_campaign=3D=
+1539v3<br /><br />Hope to see you there, and always open to feedback on how=
+ we can improve.<br /><br />--<br/>
+Nicholas Kwan<br/>
+Currnt<br/>
++1 855 878 2871<br /><br />If you are not interested in participating in =
+this public Currnt or in private online advisory panels, click the link =
+below and we will opt you out from any further contact.<br /><br =
+/>https://currnt.com/donotcontact?p=3D4251370&email=3Dnseltzer@wisc.=
+edu&pc=3D36652

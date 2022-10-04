@@ -1,0 +1,307 @@
+Received: from SN6PR06MB4942.namprd06.prod.outlook.com (2603:10b6:805:bd::33)
+ by DM6PR06MB5531.namprd06.prod.outlook.com with HTTPS; Mon, 28 Feb 2022
+ 06:10:08 +0000
+Received: from MWHPR11CA0046.namprd11.prod.outlook.com (2603:10b6:300:115::32)
+ by SN6PR06MB4942.namprd06.prod.outlook.com (2603:10b6:805:bd::33) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5017.25; Mon, 28 Feb
+ 2022 06:10:06 +0000
+Received: from CO1NAM11FT067.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:115:cafe::cd) by MWHPR11CA0046.outlook.office365.com
+ (2603:10b6:300:115::32) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5017.21 via Frontend
+ Transport; Mon, 28 Feb 2022 06:10:05 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ CO1NAM11FT067.mail.protection.outlook.com (10.13.174.212) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5017.22 via Frontend Transport; Mon, 28 Feb 2022 06:10:05 +0000
+Received: from mail-yb1-f172.google.com ([209.85.219.172])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R8002XP83SRHV60@smtp5.wiscmail.wisc.edu> for
+ cmperez4@wisc.edu; Mon, 28 Feb 2022 00:10:04 -0600 (CST)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: James
+ Frogget <jamesfrogget0099@gmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_70_90 0.1,
+ MULTIPLE_RCPTS 0.1, KNOWN_FREEWEB_URI 0.05, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0, CLOUD_WEB_HOSTS 0,
+ DATE_TZ_NA 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0, ECARD_KNOWN_DOMAINS 0,
+ FONT_STYLE_0PT 0, HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0,
+ HTML_BAD_EXTRAS 0, KNOWN_MTA_TFX 0, NO_FUR_HEADER 0, OBFUSCATION 0,
+ SENDER_NO_AUTH 0, SPF_PASS 0, SXL_IP_TFX_WM 0, TEXT_DIRECTION 0,
+ TEXT_DIR_LTR_ONLY 0, TO_UNDISCLOSED_RECIPIENTS 0, URI_WITH_PATH_ONLY 0,
+ WEBMAIL_SOURCE 0, __ANY_URI 0, __BEC_PHRASE 0, __BODY_NO_MAILTO 0,
+ __BODY_TEXT_X4 0, __CANPHARM_COPYRIGHT 0, __CP_URI_IN_BODY 0, __CT 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DATING_PHRASE 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __DQ_NEG_HEUR 0,
+ __DQ_NEG_IP 0, __FRAUD_CONTACT_AGE 0, __FRAUD_CONTACT_SEX 0, __FRAUD_JOB 0,
+ __FRAUD_MONEY_CURRENCY 0, __FRAUD_MONEY_CURRENCY_DOLLAR 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_WEBMAIL_FROM
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: jamesfrogget0099@gmail.com,gmail.com
+X-Wisc-Env-From-B64: amFtZXNmcm9nZ2V0MDA5OUBnbWFpbC5jb20=
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.2.28.60017,
+ AntiVirus-Engine: 5.89.0, AntiVirus-Data: 2022.2.27.5890001,
+ SenderIP=[209.85.219.172]
+X-Wisc-DKIM-Verify:
+ jamesfrogget0099@gmail.com,gmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+Received: by mail-yb1-f172.google.com with SMTP id w63so18370361ybe.10 for
+ <cmperez4@wisc.edu>; Sun, 27 Feb 2022 22:10:03 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com;
+ s=20210112;        h=mime-version:from:date:message-id:subject:to;
+ bh=z7teK9lwLPhHKCqRNqJ6KFQgLJlN1DySYET64UbmY10=;
+ b=JACvwfGjFk014UQEIjSBbsWbbvqiDe2DWi9g963dyDT4gg9JGExpRObw03/OJzSxkl
+ sCgLvXkniMhTy9JZ43Gnm1A1bodhyosWbs71RYT1pT564/hNujse8jH4UJyhocom34By
+ jt2aA8freWxodY8v9Wz/0BdYvLaoHZ+uOfcvLC93Rl08PoJcOhiNPu8ag0aBtmaZaWHR
+ n6xclUJ9NbpdCZrIinIcurxfTz/bNoLQKZ+t4z9gHbKXyhNr0ocbY1f4h/cOPNKmW0Ur
+ s5UYR5HG5qahasNeo2Fe96v3WV4QJMkhSNvcBa42qjY2fCuap19wiPLB2d+J+GuvB7/Q
+ 9jfw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20210112;
+ h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+ bh=z7teK9lwLPhHKCqRNqJ6KFQgLJlN1DySYET64UbmY10=;
+ b=gAdCHFK/oZNJgFtLjx/Ves9034/fY/w3wG2awP3F5jpTvaVgpfYmUZhkwQcNz/yr8P
+ Ifpy4Qex24cFsTVgYN0AD24u3WoA+i1qmrQzLKwWV8CuRyuitvJ/U1N7zkiSxFksNLDL
+ HAvaw0g2OWIAptPvvIYXwEZaMC7wq03NNYMt8+ftuI+xgjIGpJiwCzaHjiZhFi+jtn6F
+ OuSq9whPFrVByq9ekOvGx0LaDfoQEzKobN4Sj1EupbeZmczwHgaFcnvrajfbf4dMOsg0
+ BdFkp6H7Pe5aAxAyIQMzLyyFrPEuCwjOUaTY+Jz8Khqg9u6rv0smJjw6kGCN+1AAL8WF
+ fhTQ==
+X-Gm-Message-State: AOAM5319T8iqWRxuU3uD+3bA9jlyHa9mE7fMik9RrgrQYNQY5OnEwhgT
+	ZStTVobx+/6WW7dliBWPs3ddMRwAM3P4Cu9s2RVvA2HahqeL3Q==
+X-Google-Smtp-Source:
+ ABdhPJyVfFTjO4gm+CYJUZvwHAd4imDug8Hx0wr5PkOFj4zajIFyX/LYJux7c4Ow1c91+KlpZxEccaymrfEcHDDjOvo=
+X-Received: by 2002:a81:5d02:0:b0:2d1:41bb:38b1 with SMTP id
+ r2-20020a815d02000000b002d141bb38b1mr18871053ywb.5.1646028592854; Sun,
+ 27 Feb 2022 22:09:52 -0800 (PST)
+Date: Sun, 27 Feb 2022 23:09:40 -0700
+Message-id: <CAH36a7nP6Z9yMZVWoXT77r56cqocgvE6ZmOSaG7QkNGr1jUJNw@mail.gmail.com>
+Subject: Personal Assistant
+To: undisclosed-recipients:;
+Content-type: multipart/alternative; boundary="000000000000913a6105d90de528"
+Bcc: cmperez4@wisc.edu
+From: jamesfrogget0099@gmail.com
+Return-Path: jamesfrogget0099@gmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Feb 2022 06:10:05.9218
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 192200dc-93f4-42bf-87ca-08d9fa80f72b
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[209.85.219.172];domain=mail-yb1-f172.google.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[209.85.219.172];domain=mail-yb1-f172.google.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT067.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 192200dc-93f4-42bf-87ca-08d9fa80f72b
+X-MS-TrafficTypeDiagnostic: SN6PR06MB4942:EE_
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mail-yb1-f172.google.com;PTR:mail-yb1-f172.google.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Feb 2022 06:10:05.7656
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 192200dc-93f4-42bf-87ca-08d9fa80f72b
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT067.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN6PR06MB4942
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6884967
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5017.026
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?eTJxTTY3dzh0Z2paczM1K0hhSW1MZStjeW84Z3RzbjRIUnJLcEJoNU9ucTFR?=
+ =?utf-8?B?TDZXM3llM2QyOGNlR1lhdzBabkc2b2pNUHNtdVFWY2tMZlNzdjlaYmN1YW9H?=
+ =?utf-8?B?STBkcjhFdWN2eXl2KytSQzVaMFd6dElLczc1bVIzSkpnMVJIOER1NFJONk8w?=
+ =?utf-8?B?TjhSeE1DbkpsMWptM1NUSUh5S1V6cXQ2bUxGNm5ITmdJYzZibWtvbmJUTno5?=
+ =?utf-8?B?ZndocC9DbEZvcGowb2U3SGlYS3hIK1FQNU9wcDFrTCtaZ2hjMEhka3BMcE0x?=
+ =?utf-8?B?THFlTzhTZEYyM21DYnpYMlQxekMrbVZ4b3RmS2R4cTJpWXpISkxPSnU4YUhD?=
+ =?utf-8?B?RDdGeXMxMEZwUnFkRGF5ZDRTdzltTzRnc3JLWmZKdGFOMjNXU2gxSE1UQ0Z4?=
+ =?utf-8?B?WTVrcm1KNGlhSlZ6R0x0NXBxNnA0TGdnQXg3alllbzlZTFVnUUtJa01ZT2Vy?=
+ =?utf-8?B?MXJ1eEQvaFZKVEYrOVRZQSt3VWx4YkloaW50NkJXR1VKNGY2UG1jQTVVcGJw?=
+ =?utf-8?B?RUtXT2NIeXAwcUdCU2UrTEJJSWo4NVNrZ1pQRU10SUl5aElWUWpGamtuZm9Y?=
+ =?utf-8?B?b0hXQUNHQVVCWEU4eXFxdVcxM2pEYVNubnlsbXN6YUEzVnNSUGhqNjhlaXRZ?=
+ =?utf-8?B?T2NuOGd6dDdlUUNiRUtuTEFSUzMyTFhML0l4MERxS0dRckNka0o4Zng5Q29F?=
+ =?utf-8?B?ZXpURDVuMiswYWFEYjJ3b2lYOXVOYkFGYitibWpBbEN4N2Y3RCsrQmxxSjAw?=
+ =?utf-8?B?dnNGK1o3cEJBR092M2VrZys1WFR2ZWd5QXNYbUNoTGszRWZlQW1JeWh3TFlE?=
+ =?utf-8?B?cWhYR2ZMME1IRnRJK2pTMkNIanE5a1MvZ015T2o4cHArUFB0OCtuQ003L0dX?=
+ =?utf-8?B?YUpCT1JiVE9oQTRWVXhPWDAyeFhhRC8zcWc3M0liRGs2Y2tocXp6dytOQlh2?=
+ =?utf-8?B?d1JTOVdGRko0MnVybnZzT1hWTFNPeThPd3BZQUwrbnA1WHZTN3dGWUVQUnZ4?=
+ =?utf-8?B?aFA2dndkRTFxWm9qdlRKd2dOMHEyVFJIajhMcDdwY0d6VEdQZjJDMEFrcXdH?=
+ =?utf-8?B?UTV2K2RIUTRDeGNJOHU5V0VSVklQWTB6V21HTUU4bEI5WWNBVU0wRHRCY2FT?=
+ =?utf-8?B?V295NFJUSlJNRG5yUDR4YU5WSzdOQ0ZKL0pMM1lIc3hhdVkzaTE0Z1d4VEEr?=
+ =?utf-8?B?U1MzdnJUbytVQ3RTeFRlN2pKRW1DK3pDNWNqYkpsNXorOXFnT2NUM2pDeGVa?=
+ =?utf-8?B?Ukxmd0s4eUNpOVZzcGZZMGNaRG9wWnVjbDVpSmZYNmtQaW8zK3NHc041dzBO?=
+ =?utf-8?B?dE9UbitBM3FPZFNMNS9RWGxaelBaNXZudEpETEVxdWVONnQzT0U2cUZXaTNW?=
+ =?utf-8?B?NDhHZE5xWnhnK2hBa1hkMHlTZlRUWW5EOEFiZnJtUE5iSU1ibCtnM2NWRVVH?=
+ =?utf-8?B?S2x3K1RyZ20wWXZKZkRHb0R0QVE0anAwS1hsYTk3RTlRTzlTRjlQTmpDOXFX?=
+ =?utf-8?B?eEtJU3ZyWVVLZ3c5anBrdGprRGEzTW1obFRGdG0wRVd1d3A0eDRLckpKYnhm?=
+ =?utf-8?B?Q3pGbTlnb3Q1UXdNSlU4ZzFFTG52S0I0VkxiK0RFcmQza3hXWDZURVgyYmw0?=
+ =?utf-8?B?QVdPUVBCVXZmL05HcUgxVWUyMTA4cWVzbDZqUS9uNWdsQ2tUeU5qZW5BUUlW?=
+ =?utf-8?B?ZEZCdmx3TmJMQTVWaGlkbTRWMnZobFE5RWVNUWxsRGlIZzVFRnZUS0FtVGFL?=
+ =?utf-8?B?ZTVhbkZkQ3U3ekEzTU95amxoN1RxV2JGaFp2Y2ZxUjVzZVh6c25OY2tydGpL?=
+ =?utf-8?B?bjJOU1ZsdFNSYVN4R3dOeGxWOHo1SFhlL3lyaDNPVjJvTjRPckdlMGNHdzBi?=
+ =?utf-8?B?aWw4Vm9KYTdtOGlXRStKY1R1NG13b3pkazdUS2p2NFpBRFI3VjNuSkVnYUpC?=
+ =?utf-8?B?VXlaYS8wVk93YWs0SGlIb3NXMkhGUUZ2YitEMHBhY3ZINzZvTzZQV0xqajRY?=
+ =?utf-8?B?aDh0Rkw3YjVCa3dRRWp6YUhDdkxnbzJDTm5DUjhVWUx5QjN0MVJhWXNVZWdl?=
+ =?utf-8?B?QStOWUNFeTZRQUFKanJtL3JLeWhIU0dHVjlMYUt0QzhYZi9TcE93bXQ3TVpl?=
+ =?utf-8?B?WWYrRFRvc1NTZkFCRVVZcndoeHNtLzk4bzFHMkN4TENJZjNjVGdmNE05V3ov?=
+ =?utf-8?B?T1YzSFNmWDgvUkE2bmRQUXF5V0xGWVNCZHRRNGxJOFRyNzVWeDgzTFZveitR?=
+ =?utf-8?B?aGpqRlRhUUlaNm9BL3dhdDNNWHVkdHBlK3dEVGdWS2lOaENoRnBVakFaQ1lD?=
+ =?utf-8?B?S1F1R0FHZXNuSytVWjRoODVQU2Z4bnNkaGF4ZGRUYWFzRHBUWG1Bc01BSXFh?=
+ =?utf-8?B?cnlicFVBUlBvUWVrdmdhWUVQVnNzTmo5MXVoRFlqemZsZ0Z0d2drN3l0T3dK?=
+ =?utf-8?B?TGU5WGQ4Q0hWa2hrVzJwR0p3dEU4ZlJBNS9ycG5qMU1HSm00QlhKb0Q1WEZN?=
+ =?utf-8?B?Y2t5RGtwd1Y2UkN1ZmsreldNZWZtRE9JcEFiV1NKTDN2LzlHT05tK1lOK0li?=
+ =?utf-8?B?ZnE1enN2R0c3YnRod3FmRTJGWlc5cXAvOFZ3ODh5RGFlNVM0d2tERnJzSUc0?=
+ =?utf-8?B?QW1rWW54eXppSUVDOHFySERXT2Nzbzc0bjJqSyszYXMyL0FVcEw5WWc3WFMx?=
+ =?utf-8?B?NTlXSjIwWGRYL0E2Nzc0VjRXR3VHaVVvNzQyb2VFeGRpZUdjK0JjMkJ0VEF1?=
+ =?utf-8?B?cm5vRHRoUW5LaDROdzJxU2VMWmVxN0xKUkhGSERRdnVocGx1ZjRycVFPUU1i?=
+ =?utf-8?B?UEVGYzZsaGcwS1R4VW91U3lVeENTakswMmkxekhvMC9qTjZNbHFrdnM0QXd2?=
+ =?utf-8?B?S1J2L21pWE1ZS20xK24wQmtscmY0SVYzNnRZd1ZUTnlic0VRbUZ1a3JPSFo0?=
+ =?utf-8?B?WEFDLzRKbXM1dHlCcjFTb0J0NUVqQUd0UHlaL01MSzBUMXpIekNIWkZWZmRq?=
+ =?utf-8?B?SHpHaDYxNmo4cEltMTczTmRnK3RqZFh4MVY4SC9pWUxxditJYVRCa3podUtI?=
+ =?utf-8?B?TkFxaFBkYjArVE5hWU1lWEE4Slp6clBVSk52bEF5M1VzWmNHUDBhRllSUG5h?=
+ =?utf-8?B?OTNCMW5BdWU4YjdpMVA1K3EzSVZ4SzhwRGJaMlQ2QT09?=
+MIME-Version: 1.0
+
+--000000000000913a6105d90de528
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello, how are you doing? An administrative assistant to perform various
+administrative tasks like making or receiving payment and sending gifts,
+keeping record and processing paperwork when necessary with a good weekly
+pay is needed, please find the position and some basic information below
+
+Position: Personal Assistant
+Type: Part-Time Job
+Pay: $500 weekly
+Hours: Average of 11hrs weekly
+
+This position will be home-based and it's a flexible part time job, you can
+be working from home, School or any location.  Apply Now
+<https://docs.google.com/forms/d/e/1FAIpQLSczn9IvsnFr1TpmZSgIGlkcZWvpqeTfkm=
+-PirrlXiHVW6O3pg/viewform>
+for
+further details or to sign up.
+ccc
+
+Job Placement & Student Service
+University of Wisconsin Madison
+Copyright =C2=AE 2021 MUSD. All rights reserved.
+
+
+University of Wisconsin Madison has an established policy of equal academic
+and employment opportunity. This policy is applied to all qualified
+students, employees and applicants for admission or employment, in all
+University programs and activities, without unlawful discrimination based
+on race, color, national origin, religion, sex, age, disability or military
+or veteran status.
+
+Charity foundation Employment Opportunity for Students and Staff, work from
+home, work at your convenience as a Personal Assistant/Errands and earn
+$350 weekly.  Apply Now
+<https://docs.google.com/forms/d/e/1FAIpQLScvW6hxAo1fMVePmdHEPuLaeOCkSssKVi=
+YvqC42tg9BUxWvzw/viewform>
+for
+further details or to sign up.
+
+
+Job Placement & Student Services
+University of Wisconsin Madison
+Copyright =C2=A9 2021 WISC All rights reserved
+
+--000000000000913a6105d90de528
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv dir=3D"ltr"><div class=3D"gmail-adn gmail-ads" style=3D"border-left:none=
+;padding:0px;display:flex;font-family:Roboto,RobotoDraft,Helvetica,Arial,sa=
+ns-serif;font-size:medium"><div class=3D"gmail-gs" style=3D"margin:0px;padd=
+ing:0px 0px 20px;width:1190.68px"><div class=3D"gmail-"><div id=3D"gmail-:1=
+6x" class=3D"gmail-ii gmail-gt" style=3D"direction:ltr;margin:8px 0px 0px;p=
+adding:0px;font-size:0.875rem"><div id=3D"gmail-:16w" class=3D"gmail-a3s gm=
+ail-aiL" style=3D"font-variant-numeric:normal;font-variant-east-asian:norma=
+l;font-stretch:normal;font-size:small;line-height:1.5;font-family:Arial,Hel=
+vetica,sans-serif;overflow:hidden"><div dir=3D"ltr">Hello, how are you doin=
+g? An administrative assistant to perform various administrative tasks like=
+ making or receiving payment and sending gifts, keeping record and processi=
+ng paperwork when necessary with a good weekly pay is needed, please find t=
+he position and some basic information below<br>&nbsp;<br>Position: Persona=
+l Assistant<br>Type: Part-Time Job<br>Pay: $500 weekly<br>Hours: Average of=
+ 11hrs weekly<br><br>This position will be home-based and it's a flexible p=
+art time job, you can be working from home, School or any location.&nbsp;&n=
+bsp;<a href=3D"https://docs.google.com/forms/d/e/1FAIpQLSczn9IvsnFr1TpmZSgI=
+GlkcZWvpqeTfkm-PirrlXiHVW6O3pg/viewform" target=3D"_blank">Apply Now</a>&nb=
+sp;for further details or to sign up.<br>ccc<br><br>Job Placement &amp; Stu=
+dent Service<div>University of Wisconsin Madison<br>Copyright =C2=AE 2021 M=
+USD. All rights reserved.<br><div><br></div><div><br></div><div>University =
+of Wisconsin Madison<span style=3D"color:rgb(0,0,0);font-family:Calibri,Ari=
+al,Helvetica,sans-serif;font-size:16px">&nbsp;has an established policy of =
+equal academic and employment opportunity. This policy is applied to all qu=
+alified students, employees and applicants for admission or employment, in =
+all University programs and activities, without unlawful discrimination bas=
+ed on race, color, national origin, religion, sex, age, disability or milit=
+ary or veteran status.</span><div style=3D"margin:0px;padding:0px;border:0p=
+x none;font-variant-numeric:inherit;font-variant-east-asian:inherit;font-st=
+retch:inherit;font-size:16px;line-height:inherit;font-family:Calibri,Arial,=
+Helvetica,sans-serif;vertical-align:baseline;color:rgb(0,0,0)"><br></div><d=
+iv style=3D"margin:0px;padding:0px;border:0px none;font-variant-numeric:inh=
+erit;font-variant-east-asian:inherit;font-stretch:inherit;font-size:16px;li=
+ne-height:inherit;font-family:Calibri,Arial,Helvetica,sans-serif;vertical-a=
+lign:baseline;color:rgb(0,0,0)">Charity foundation Employment Opportunity f=
+or Students and Staff, work from home, work at your convenience as a Person=
+al Assistant/Errands and earn $350 weekly.&nbsp;&nbsp;<a href=3D"https://do=
+cs.google.com/forms/d/e/1FAIpQLScvW6hxAo1fMVePmdHEPuLaeOCkSssKViYvqC42tg9BU=
+xWvzw/viewform" target=3D"_blank" style=3D"margin:0px;padding:0px;border:0p=
+x none;font-style:inherit;font-variant:inherit;font-weight:inherit;font-str=
+etch:inherit;font-size:small;line-height:inherit;font-family:Arial,Helvetic=
+a,sans-serif;vertical-align:baseline">Apply Now</a>&nbsp;for further detail=
+s or to sign up.</div><div style=3D"margin:0px;padding:0px;border:0px none;=
+font-variant-numeric:inherit;font-variant-east-asian:inherit;font-stretch:i=
+nherit;font-size:16px;line-height:inherit;font-family:Calibri,Arial,Helveti=
+ca,sans-serif;vertical-align:baseline;color:rgb(0,0,0)"><br></div><div styl=
+e=3D"margin:0px;padding:0px;border:0px none;font-variant-numeric:inherit;fo=
+nt-variant-east-asian:inherit;font-stretch:inherit;font-size:16px;line-heig=
+ht:inherit;font-family:Calibri,Arial,Helvetica,sans-serif;vertical-align:ba=
+seline;color:rgb(0,0,0)"><br></div><div style=3D"margin:0px;padding:0px;bor=
+der:0px none;font-variant-numeric:inherit;font-variant-east-asian:inherit;f=
+ont-stretch:inherit;font-size:16px;line-height:inherit;font-family:Calibri,=
+Arial,Helvetica,sans-serif;vertical-align:baseline;color:rgb(0,0,0)">Job Pl=
+acement &amp; Student Services</div><div style=3D"margin:0px;padding:0px;bo=
+rder:0px none;font-variant-numeric:inherit;font-variant-east-asian:inherit;=
+font-stretch:inherit;font-size:16px;line-height:inherit;font-family:Calibri=
+,Arial,Helvetica,sans-serif;vertical-align:baseline;color:rgb(0,0,0)">Unive=
+rsity of Wisconsin Madison</div><span style=3D"color:rgb(0,0,0);font-family=
+:Calibri,Arial,Helvetica,sans-serif;font-size:16px">Copyright =C2=A9 2021 W=
+ISC All rights reserved</span></div></div></div><div class=3D"gmail-yj6qo">=
+</div><div class=3D"gmail-adL"></div></div></div><div class=3D"gmail-hi" st=
+yle=3D"border-bottom-left-radius:1px;border-bottom-right-radius:1px;padding=
+:0px;width:auto;background:rgb(242,242,242);margin:0px"></div></div></div><=
+div class=3D"gmail-ajx" style=3D"clear:both"></div></div><div class=3D"gmai=
+l-gA gmail-gt gmail-acV" style=3D"font-size:0.875rem;padding:0px;width:auto=
+;border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top:no=
+ne;margin:0px;background-image:initial;background-position:initial;backgrou=
+nd-size:initial;background-repeat:initial;background-origin:initial;backgro=
+und-clip:initial;font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif"=
+><div class=3D"gmail-gB gmail-xu" style=3D"border-top:0px;padding:0px"><div=
+ class=3D"gmail-ip gmail-iq" style=3D"clear:both;margin:0px;padding:16px 0p=
+x;border-top:none"><br class=3D"gmail-Apple-interchange-newline"></div></di=
+v></div></div>
+
+--000000000000913a6105d90de528--

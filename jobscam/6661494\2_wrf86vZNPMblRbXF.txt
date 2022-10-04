@@ -1,0 +1,275 @@
+Received: from DM6PR06MB5420.namprd06.prod.outlook.com (2603:10b6:5:3d::18) by
+ DS7PR06MB6968.namprd06.prod.outlook.com with HTTPS; Mon, 14 Mar 2022 14:31:01
+ +0000
+Received: from MWHPR11CA0028.namprd11.prod.outlook.com (2603:10b6:300:115::14)
+ by DM6PR06MB5420.namprd06.prod.outlook.com (2603:10b6:5:3d::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5061.21; Mon, 14 Mar
+ 2022 14:31:01 +0000
+Received: from CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:115:cafe::61) by MWHPR11CA0028.outlook.office365.com
+ (2603:10b6:300:115::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5061.22 via Frontend
+ Transport; Mon, 14 Mar 2022 14:31:01 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ CO1NAM11FT050.mail.protection.outlook.com (10.13.174.79) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5061.22 via Frontend Transport; Mon, 14 Mar 2022 14:31:00 +0000
+Received: from mta-253-211-5.smtp-out.sparkpostmail.com ([147.253.211.5])
+ by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R8Q02QA7OBM1880@smtp8.wiscmail.wisc.edu> for
+ tomartens@wisc.edu; Mon, 14 Mar 2022 09:31:00 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_70_90 0.1,
+ HTML_FONT_INVISIBLE 0.1, BODYTEXTH_SIZE_10000_LESS 0,
+ BODYTEXTH_SIZE_3000_MORE 0, BODYTEXTP_SIZE_3000_LESS 0, BULK_EMAIL_SENDER 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, FONT_STYLE_0PT 0, HREF_LABEL_TEXT_NO_URI 0,
+ HREF_LABEL_TEXT_ONLY 0, IMGSPAM_TABLE_1 0, LEGITIMATE_SIGNS 0,
+ LINK_TO_IMAGE 0, LIST_HEADER 0, NO_FUR_HEADER 0, OBFUSCATION 0,
+ RDNS_BULK_EMAIL 0, REPLYTO_SAMEAS_FROM 0, SPF_PASS 0, TEXT_DIRECTION 0,
+ TEXT_DIR_LTR_ONLY 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BEC_PHRASE 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CASH 0, __CP_MEDIA_BODY 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_MONEY_CURRENCY 0, __FREE_IMAGE_HOST 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FUR_RDNS_SPARKPOST 0, __HAS_FROM 0, __HAS_HTML 0,
+ __HAS_LIST_HEADER 0, __HAS_LIST_ID 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0,
+ __HAS_REPLYTO 0, __HEADER_O
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma:
+ msprvs1=19072S1EfB5zo=bounces-280172-104@bounces.freshprints.com,freshprints.com
+X-Wisc-Env-From-B64:
+ bXNwcnZzMT0xOTA3MlMxRWZCNXpvPWJvdW5jZXMtMjgwMTcyLTEwNEBib3VuY2VzLmZyZXNocHJp
+ bnRzLmNvbQ==
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.3.14.141820,
+ AntiVirus-Engine: 5.89.0, AntiVirus-Data: 2022.3.11.5890002,
+ SenderIP=[147.253.211.5]
+X-Wisc-DKIM-Verify:
+ msprvs1=19072S1EfB5zo=bounces-280172-104@bounces.freshprints.com,freshprints.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+X-MSFBL: f9M6JRRNZRr09KlFFsnMTyvSpP3WfIZxs3htnjmIg3Y=|eyJ0ZW5hbnRfaWQiOiJ
+	zcGMiLCJzdWJhY2NvdW50X2lkIjoiMTA0IiwibWVzc2FnZV9pZCI6IjYyMmFhMDU
+	xMmY2MjUwODEzMzA4IiwiciI6InRvbWFydGVuc0B3aXNjLmVkdSIsImN1c3RvbWV
+	yX2lkIjoiMjgwMTcyIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=freshprints.com;
+	s=scph0121; t=1647268256; i=@freshprints.com;
+	bh=vGCEiiFdg2d6XWEl0XnJl5iuX0gATRkAoOWy6lZiXgk=;
+	h=To:Message-ID:Date:Content-Type:Subject:From;
+	b=OJyE7oPvPb/TwV7VXRnZ2BzS7sNpX0o/+E0cE/R1mM1+r2NrSYnZLhEtbouyHP1+F
+ xYXeI65JPr5ZAjK5l1KtdDA6UrKmt5ZXOcwVSt7FKRosbvh8a8yNz2Cq9GzshaIjJf
+ JK/kGUpIRFirzQPH1Sj3s3Dwf2MjNggxlPIRL5Zk=
+To: tomartens@wisc.edu
+Message-id: <33.80.48640.0A15F226@at.mta1vrest.cc.prd.sparkpost>
+Date: Mon, 14 Mar 2022 14:30:56 +0000
+Content-type: multipart/alternative;
+ boundary="_----dDQiSgJKTtQ0HKKRUxM1+Q===_03/80-48640-0A15F226"
+Reply-to: sales@freshprints.com
+Subject: Calling all campus influencers!
+X-Campaign-ID: 3872386
+From: "Anish Sundaram" <sales@freshprints.com>
+X-Message-ID: 184e7962d4f044d38cfd23b3d08e7bf3
+X-Feedback-ID: 5275764:3872386:39449:iterable
+Feedback-ID: 5275764:3872386:39449:iterable
+List-Unsubscribe:
+ <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:xaLPBfTkGFG4EPgTq_wDSvr729ONJHUHx80pxg_Bhso~|eyAicmNwdF90byI6ICJ0b21hcnRlbnNAd2lzYy5lZHUiLCAidGVuYW50X2lkIjogInNwYyIsICJjdXN0b21lcl9pZCI6ICIyODAxNzIiLCAibWVzc2FnZV9pZCI6ICI2MjJhYTA1MTJmNjI1MDgxMzMwOCIsICJzdWJhY2NvdW50X2lkIjogIjEwNCIgfQ~~>
+List-Id: <spc.280172.104.sparkpostmail.com>
+Return-Path: msprvs1=19072S1EfB5zo=bounces-280172-104@bounces.freshprints.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Mar 2022 14:31:00.9821
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 44400898-97f4-4709-4858-08da05c7432a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[147.253.211.5];domain=mta-253-211-5.smtp-out.sparkpostmail.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[147.253.211.5];domain=mta-253-211-5.smtp-out.sparkpostmail.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 44400898-97f4-4709-4858-08da05c7432a
+X-MS-TrafficTypeDiagnostic: DM6PR06MB5420:EE_
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-Microsoft-Antispam: BCL:5;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mta-253-211-5.smtp-out.sparkpostmail.com;PTR:mta-253-211-5.smtp-out.sparkpostmail.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Mar 2022 14:31:00.8259
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 44400898-97f4-4709-4858-08da05c7432a
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT050.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR06MB5420
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.0890110
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5061.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?RjB6cmNoT2ZjcGJWb2FpT3h0Y2JZRFJ2c1lPWmJNQUVmejNSczdwN0krYU9S?=
+ =?utf-8?B?U3QrVmw3WVlxa1FqOEpYMXEyOHF2aDZTSk5ocTZvVU1VVHM1cWpPenhFMm5Q?=
+ =?utf-8?B?UDdXTk5GKzVVRlpCRC94elVwZC9wem01L3ZvR3FJdFd4WC85R2VMVWZZUHlZ?=
+ =?utf-8?B?OVdPcEtUamlBWXZXVDZJbmplQUNqd3pSVWpVbnI2M1phaVY5OS9reVA1eUx3?=
+ =?utf-8?B?Ujd3UWpuNGFlblR3aXAxMjZBaWpLY1gxVmhNU0NGMHZyMGdqNGVRK2lDaWgx?=
+ =?utf-8?B?VjkzbzkrUlhPTE1jc3Fqb0hhYjNQWVV4aXpVelZUdkV2UWIwc0NqL25TbUxL?=
+ =?utf-8?B?Ry9IT1JuOTlEZTFYOVNid0Qxc1BmRHRDOE1MQUFXVDk3NWlCelZTVERIMEls?=
+ =?utf-8?B?TDlWSFpCZ0xPemsyamkzZEVkc0YwSmp0UWtWME5TQ1hyV29wM3BPemNhckNG?=
+ =?utf-8?B?WEdkQlJteDIvVFJxN2JaaXpPSEdvdmRNWk15VjNOcC9GYngyR1VSVlNCZXJj?=
+ =?utf-8?B?WUF4YWlYaWhrVThYd21yTTRRaGpoN1AwS0l5STBwVS82TjhFVU9USldDSUZK?=
+ =?utf-8?B?NVZDanNjRndWWUVjUmRhVEhrVTlIclV6SC90S1hXM3FMcGZBaEhYWmU2WGNz?=
+ =?utf-8?B?K0NnaVNIdVJ6R0FMcVJWNk1KSElJUk0vdkhlNU9CY2NIaDJ4YXhWb0dhQTR5?=
+ =?utf-8?B?WXFQSzc1aElNb1hLTXhBYVJuU1pEYTU1aFZ1NWFmcUpEMGFVNmlGMmZqeloz?=
+ =?utf-8?B?T3pwTjhZQ2dmTUh5Zlo2cUcyN3R0MlVDODBpaEIzTFZtY3NsTWI3dmUxV2lh?=
+ =?utf-8?B?WnNLVHZwcm1HTytidm9qZ05pRmU1dmdGZjV2eE03Mlc1aDAybkVKdk54NHEw?=
+ =?utf-8?B?aTU1OU5QY1U2UmFKc3IyUStSOXNNZlpFUWxSZ1hMTHBmdktjNVR3NTU5TEk5?=
+ =?utf-8?B?dEpmRnVEVzByMVQ2YVYwMk9pYW5RNC9hYjRQTnJWUFJYalhyeW85dm5jOWpL?=
+ =?utf-8?B?a0xqM000WnlJVnlhZm5scjFJOXppK01uOURCU3hqUTlSVmZhQkFjakMzL2t4?=
+ =?utf-8?B?d2w1TjRFekM5Z0VPN3owOVJtM2cyQ2JJMHpGdUpRY3lFRnNHOXlOaWg2K3ZK?=
+ =?utf-8?B?a0ZWWFpLYksvSkFhYUJrUDBUUGo2Z25PUzVHNHZXckdHQTdBWmpmSlNzaU1E?=
+ =?utf-8?B?NG5naUtYMTNkQjBrRW1xV2Mxam9GL1FXeFE5K0FhTUhuK2tVWFFTd0VYc1lX?=
+ =?utf-8?B?Y0pXZU1RYWZiUnQ3TVRqN1ZmL1hUUktzMlY1UDBmUm1FS09OYnFqaTg3d0hr?=
+ =?utf-8?B?QmloUnFuS0o0UzJoMFhJTDNtLzRoMUdWNUI5RWpHV1FHVzhiUXZKUUV3enpF?=
+ =?utf-8?B?bk1kNWdBMkEvRnRBY1VQQjRldlowM0pkTVVvc29sR1dKWG56d29qUWdDR3Iz?=
+ =?utf-8?B?TSt2SlUvOE9tU0lad0NkQjhsSDBJU2syY3pwUG9MNVEzcFpQNUc5RWQyYzB0?=
+ =?utf-8?B?OStHa05LWFUxOVFGMnByRVJ3WVNtZDFJTDFWbjRCTWRVSXFhcE8za2NTTzBQ?=
+ =?utf-8?B?Nm9Jd3FHV3hhSGlDdFlERCtaQ050THBySU50cjcvejlva29mTVNSalBTdHd4?=
+ =?utf-8?B?cTdVN095ZTk1cC9DK1hZbXhZVGdub1lLNFRrSm8rRWNmcTBFeFI0QmZsbnV5?=
+ =?utf-8?B?bkFiNVhVQ2E3MzNjMDNKMDR5Uk5VYWJYOTI2VUNRWC9rMjM0REpHSVdrUmhG?=
+ =?utf-8?B?NXNncCs0YkZmZXdySVRrdmxISXk5bWVhL3VudHdsZjhkRzMyUnNSc2ZVODBN?=
+ =?utf-8?B?d1pZT1lUdTlpeHllalpVLzVXQkNFd0xBWnA4blE3Mzg2L2diM3dkd1N6cDdt?=
+ =?utf-8?B?TUs1U1VsdFJTMXoxMFp1M25qYWVYcHVNU3R2dHova2xBSjk0MkhPeSt1Y1NS?=
+ =?utf-8?B?bnBlNllnWUsyUXFGU1EwT1lIQ2hTMVR5bDEwVW04ZHZUOTdnZng2SkkxaXE2?=
+ =?utf-8?B?VjJ1aDd6NHRUY2JLbmtrVmdKVFhiNnJMYU5XRktlK0dKaGFPRVY3N09kSENR?=
+ =?utf-8?B?RHdUN1VuZjVreTF0TXI1RW0yVzYwQWM3TnJWRDdaMTVpVDV1VUdTK0pkd2xL?=
+ =?utf-8?B?b1drOVhWMHVXNGRpeUxzKzluMFZxcGJpdkRZOXlDTzlEbzVlNVdjRHpQVDdH?=
+ =?utf-8?B?OG9wWGZOQmlZWjUyMTZocnUwYmt1VTJsOGxwNnpnSUpYV21ZUU9xdUtGVlox?=
+ =?utf-8?B?WFVBdFF5NjNVQVE4L0tDTUtORW8wNzVDOHp3YVYzN3g0MTBnczBJckZ5YzJ3?=
+ =?utf-8?B?ay9ObGNLSy8wR3o0clc0Ni9YVGxYNk82d3JDRHdPZnY5Yzd2L3lUc0xsWFBr?=
+ =?utf-8?B?NzZjdFBMTWpYMDRMTE1ZQmxlWnlCaDhHQm12RkEzM0pXVkRDSll1MWcwancy?=
+ =?utf-8?B?RGFqWkNKZzRWMW5JUXV2SXJyOHhramZBeVdtTFRHOU8xaFZ1eFFhdy9zZktD?=
+ =?utf-8?B?S0YyaHRDRlBjQzkwN3c2TGYrN3NqZEdHdm14YUROV2dzU09iT1NQdnI3WlFW?=
+ =?utf-8?B?WTdLbUhKTzY3SDF0R2hYdHhnMVpKRFVEbS9QTytuTmZicWtTTUV1TnlyS0l4?=
+ =?utf-8?B?TE1DRlNPcUt4aGxoQXBUOXQyanpGNHVZNkJmbkNWdmZQeVVtQ2lkOTdmRkUy?=
+ =?utf-8?B?WFRXNGk2QWFRWEZJMWtnN0M1bTd6bEEyNUswMzNnNUtGdDNOMnlkVUNwc2xu?=
+ =?utf-8?B?K0l5TlBscTZHYjRoZS9pOEpCcDVBNUhWUW9BemtocHBadkxWdE8wVTBUS3hW?=
+ =?utf-8?B?MEpjYTEvaEJkUCtQNStJLzJNZllyUTNrTllQdEtrdDB0SzVwaG9aVmhTbDJS?=
+ =?utf-8?B?WDBuVjNxcGM2Y1UrL2ZkMjJ2dkhIUysxaFNIeS9NNCtQUmVEVGdEelpYbldU?=
+ =?utf-8?B?ZXpyd01XQ3Rub3VCYS9WMVhxRnRKcUhkVXFrdlFjd2VBMjRBYm1CTDUvWWo0?=
+ =?utf-8?B?SGR2ME80WjYwb2ZsODNqeUFBc1htZ2FwUmFPTDJ1V0lqLzJKY2s0ZkppbVkr?=
+ =?utf-8?B?T0krcy9PTng5cDdBPT0=?=
+MIME-Version: 1.0
+
+--_----dDQiSgJKTtQ0HKKRUxM1+Q===_03/80-48640-0A15F226
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Tara -=C2=A0 =0AI=E2=80=99m Anish, a marketing coordinator at Fresh Prints,=
+ the leading (and =0Atrendiest!) collegiate custom apparel company. We=E2=
+=80=99re looking for students who =0Awant to be Campus Influencers.=C2=A0=
+=0A=0AWe=E2=80=99d send you 1 or 2 pre-release outfits that=E2=80=99ll be f=
+eatured in our Fall 2022 =0ALookbook.=C2=A0=0A=0AYou=E2=80=99d take pics or=
+ create video content and then - once the lookbook launches =0A- post the c=
+ontent on your Instagram or Tiktok (tagging us of course). We pay =0Ain fre=
+e merch or cash.=C2=A0=0A=0A If you=E2=80=99d like to apply, please fill ou=
+t this quick form =0A<https://form.jotform.com/220603877775465> by this Fri=
+day, March 18th. We=E2=80=99ll =0Areach out if it=E2=80=99s a good fit.=C2=
+=A0=0A=0AThanks,=0A Anish=0A=0AP.S. If you don't want to hear from us, just=
+ let me know by clicking here =0A<https://links.freshprints.com/e/encrypted=
+Unsubscribe=3F_r=3D63d5b907ccb84015b086bf43bfa06fef&_s=3D184e7962d4f044d38c=
+fd23b3d08e7bf3&_t=3DeZBrxs89BIkxsEfnNjsvTZANWlFNB4c9buYaaseMJNhnetyLEE6wY51=
+yJtanWyzErca8iUdvS2NpLnf6ycrMaA7B9Qv0xYyoWj67IdLVprw6lWXhTew_4oBAhee8rOepnc=
+1eCw73MRo1xpdV0SsoIYs1aqb6pMQ1IlTXzfgN8zE%3D>=0A.=0A=0A=0A=0A =C2=A0 =0A <>=
+ =0A=0AAnish Sundaram=C2=A0=0AMarketing Coordinator=0A(917) 720-7465=0AFoll=
+ow us @shirtjustgotcrazy <>  <>
+--_----dDQiSgJKTtQ0HKKRUxM1+Q===_03/80-48640-0A15F226
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta http-equiv=3D"Content-Style-Type" content=3D"text/css"> <title></title>=
+ <meta name=3D"Generator" content=3D"Cocoa HTML Writer"><meta name=3D"Cocoa=
+Version" content=3D"1894.5"> <style type=3D"text/css"> </style> </head> <bo=
+dy data-new-gr-c-s-check-loaded=3D"14.991.0" data-gr-ext-installed=3D"" dat=
+a-new-gr-c-s-loaded=3D"14.992.0">
+<div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;b=
+order:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!im=
+portant;display:none!important;line-height:0px!important;"><img border=3D"0=
+" width=3D"1" height=3D"1" src=3D"http://post.spmailtechnolo.com/q/4ddsKAVA=
+IfgTFXTClxlWOg~~/AARGbAA~/RgRkEdagPVcDc3BjQgpiKqBRL2JQgTMIUhJ0b21hcnRlbnNAd=
+2lzYy5lZHVYBAAAAGg~" alt=3D""></div>
+<span style=3D"color:transparent;visibility:hidden;display:none;opacity:0;h=
+eight:0;width:0;font-size:0;"></span><img src=3D"https://links.freshprints.=
+com/e/eo?_t=3D63d5b907ccb84015b086bf43bfa06fef&amp;_m=3D184e7962d4f044d38cf=
+d23b3d08e7bf3&amp;_e=3DeZBrxs89BIkxsEfnNjsvTZANWlFNB4c9buYaaseMJNhnetyLEE6w=
+Y51yJtanWyzErca8iUdvS2NpLnf6ycrMaA7B9Qv0xYyoWj67IdLVprw6lWXhTew_4oBAhee8rOe=
+pnc1eCw73MRo1xpdV0SsoIYs1aqb6pMQ1IlTXzfgN8zE%3D" style=3D"border:0;width:1p=
+x;height:1px;border-width:0px!important;display:none!important;line-height:=
+0!important;" width=3D"1" height=3D"1"><span style=3D"font-family:Arial,Hel=
+vetica,sans-serif;">Tara -&nbsp;</span> <p dir=3D"ltr"><span style=3D"font-=
+family:Arial,Helvetica,sans-serif;">I=E2=80=99m Anish, a marketing coordina=
+tor at Fresh Prints, the leading (and trendiest!) collegiate custom apparel=
+ company. We=E2=80=99re looking for students who want to be Campus Influenc=
+ers.&nbsp;</span></p> <p dir=3D"ltr"><span style=3D"font-family:Arial,Helve=
+tica,sans-serif;">We=E2=80=99d send you 1 or 2 pre-release outfits that=E2=
+=80=99ll be featured in our Fall 2022 Lookbook.&nbsp;</span></p> <p dir=3D"=
+ltr"><span style=3D"font-family:Arial,Helvetica,sans-serif;">You=E2=80=99d =
+take pics or create video content and then - once the lookbook launches - p=
+ost the content on your Instagram or Tiktok (tagging us of course). We pay =
+in free merch or cash.&nbsp;<br> <br> If you=E2=80=99d like to apply, pleas=
+e fill out this quick <a target=3D"_blank" href=3D"https://links.freshprint=
+s.com/u/click?_t=3D63d5b907ccb84015b086bf43bfa06fef&amp;_m=3D184e7962d4f044=
+d38cfd23b3d08e7bf3&amp;_e=3Dgyad2OqnrNaluqh6Q1k6joYJAxEa5S82vt7n0zYgPG2SNBS=
+6WzFqGVRrRUMJL4IeYvak1p1dqF-J7ZpUBnZdoIxUPGp7GaiL1GQEI_NymLU5MI8vD5udKLMZf8=
+5MppbEOL1ahnwOq198N6mKGBW-x9eTEjb7V9DowJ-fefrADsFsX9IMvcUGlfLjAzZLZ33LIxPmB=
+7uX3rwpkJi_k90YGC7lsutlJ0CtHRkb6wdHvm1Pl-M1QuGwHtzAaBOea61sNplsAOARUD075YaV=
+YCjmb7ol2DEfbbLVwSSPr1gaA7MoD9GH1I27TcAZ1_zf8iEcZOlmWeumFzbpa5ZJuduRbs4ZADF=
+9pGIUE8oBChxtynBLeeeYXkl0owh5KT0Qv7au">form</a> by this Friday, March 18th.=
+ We=E2=80=99ll reach out if it=E2=80=99s a good fit.&nbsp;</span></p> <p di=
+r=3D"ltr"><span style=3D"font-family:Arial,Helvetica,sans-serif;">Thanks,<b=
+r> Anish</span></p> <br> <span style=3D"font-family:Arial,Helvetica,sans-se=
+rif;">P.S. If you don't want to hear from us, just let me know by clicking =
+<a target=3D"_blank" href=3D"https://links.freshprints.com/e/encryptedUnsub=
+scribe?_r=3D63d5b907ccb84015b086bf43bfa06fef&amp;_s=3D184e7962d4f044d38cfd2=
+3b3d08e7bf3&amp;_t=3DeZBrxs89BIkxsEfnNjsvTZANWlFNB4c9buYaaseMJNhnetyLEE6wY5=
+1yJtanWyzErca8iUdvS2NpLnf6ycrMaA7B9Qv0xYyoWj67IdLVprw6lWXhTew_4oBAhee8rOepn=
+c1eCw73MRo1xpdV0SsoIYs1aqb6pMQ1IlTXzfgN8zE%3D">here</a>.</span><br> <br> <b=
+r> <br> &nbsp; <div style=3D"float: left;"> <table width=3D"100" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0"> <tbody> <tr> <td style=3D"text-alig=
+n:left;padding-bottom:0px;"><span style=3D"font-family:Arial,Helvetica,sans=
+-serif;"><a href=3D""><img style=3D"border:none; padding:5px; background-co=
+lor: #ffffff; border-radius: 5px;" height=3D"100px" alt=3D"" src=3D"https:/=
+/imgur.com/eXM3eJa.png"></a></span></td> </tr> </tbody> </table> </div> <sp=
+an style=3D"font-family:Arial,Helvetica,sans-serif;"> </span> <div style=3D=
+"float: left; padding-left: 10px;"> <table width=3D"400" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0"> <tbody> <tr> </tr> <tr> <td style=3D"vertic=
+al-align: top; padding: 15px 20px 10px 0px; border-radius: 0px 0px 5px 5px;=
+ text-align: left;"><font color=3D"#337ab7" face=3D"Lato, helvetica, arial"=
+><span style=3D"font-size: 14px;"><b>Anish Sundaram</b></span></font><span =
+style=3D"font-size: 12px;"><font face=3D"Arial, Helvetica, sans-serif">&nbs=
+p;</font><br> <font color=3D"#626262" face=3D"Lato, helvetica, arial">Marke=
+ting Coordinator</font><br> <span style=3D"font: 10px / 16px Lato, helvetic=
+a, arial; color: rgb(51, 122, 183);"><span style=3D"color:#337ab7">(917) 72=
+0-7465</span></span><br> <span style=3D"font: 10px / 16px Lato, helvetica, =
+arial; color: rgb(98, 98, 98);">Follow us <a style=3D"text-decoration: none=
+;" href=3D""><span style=3D"color: #337ab7">@shirtjustgotcrazy</span></a></=
+span><a style=3D"font-family: Arial, Helvetica, sans-serif; text-decoration=
+: none;" href=3D""> </a><font face=3D"Arial, Helvetica, sans-serif"> &nbsp;=
+</font><br> <font face=3D"Arial, Helvetica, sans-serif">&nbsp; </font></spa=
+n></td> </tr> </tbody> </table> </div> <br> &nbsp;
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://post.spma=
+iltechnolo.com/q/oBWUsSIrHzYFc-lvNYzCbQ~~/AARGbAA~/RgRkEdagPlcDc3BjQgpiKqBR=
+L2JQgTMIUhJ0b21hcnRlbnNAd2lzYy5lZHVYBAAAAGg~">
+</body> </html>=
+
+--_----dDQiSgJKTtQ0HKKRUxM1+Q===_03/80-48640-0A15F226--

@@ -1,0 +1,160 @@
+Received: from BN6PR06MB3076.namprd06.prod.outlook.com (2603:10b6:405:42::16)
+ by DM8PR06MB7733.namprd06.prod.outlook.com with HTTPS; Sun, 15 Aug 2021
+ 19:15:01 +0000
+Received: from DS7PR03CA0281.namprd03.prod.outlook.com (2603:10b6:5:3ad::16)
+ by BN6PR06MB3076.namprd06.prod.outlook.com (2603:10b6:405:42::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.21; Sun, 15 Aug
+ 2021 19:15:01 +0000
+Received: from DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:5:3ad:cafe::c2) by DS7PR03CA0281.outlook.office365.com
+ (2603:10b6:5:3ad::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.16 via Frontend
+ Transport; Sun, 15 Aug 2021 19:15:01 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ DM6NAM11FT004.mail.protection.outlook.com (10.13.172.217) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.14 via Frontend Transport; Sun, 15 Aug 2021 19:15:00 +0000
+Received: from out12.wanadoo.es ([62.36.20.208]) by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTP id <0QXW04PG2ASZTL10@smtp5.wiscmail.wisc.edu> for
+ djdurant@wisc.edu; Sun, 15 Aug 2021 14:15:00 -0500 (CDT)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value:
+ "Jason Schaeffer" <sierraalvarez@wanadoo.es>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=19%, Hits= CTYPE_JUST_HTML 0.848,
+ BITLY_URI 0.5, SXL_IP_PROXY_RCVD 0.5, MULTIPLE_RCPTS 0.1, UTF8_SUBJ_OBFU 0.1,
+ KNOWN_FREEWEB_URI 0.05, BODYTEXTH_SIZE_10000_LESS 0, BODY_SIZE_1000_LESS 0,
+ BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0,
+ BODY_SIZE_700_799 0, HREF_LABEL_TEXT_ONLY 0, SENDER_NO_AUTH 0,
+ SINGLE_HREF_URI_IN_BODY 0, SINGLE_URI_IN_BODY 0, SPF_PASS 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTE 0, __CTYPE_HTML 0, __CTYPE_IS_HTML 0,
+ __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0, __FROM_DOMAIN_NOT_IN_BODY 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0,
+ __HEADER_ORDER_FROM 0, __HREF_LABEL_TEXT 0, __HREF_LABEL_URI 0,
+ __HTML_AHREF_TAG 0, __HTTPS_URI 0, __KNOWN_FREEWEB_URI2 0, __MIME_HTML 0,
+ __MIME_HTML_ONLY 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0, __MIME_VERSION 0,
+ __MULTIPLE_RCPTS_TO_X2 0, __MULTIPLE_RCPTS_TO_X5 0, __RCVD_FROM_DOMAIN 0,
+ __SANE_MSGID 0, __S
+X-Wisc-Doma: sierraalvarez@wanadoo.es,wanadoo.es
+X-Wisc-Env-From-B64: c2llcnJhYWx2YXJlekB3YW5hZG9vLmVz
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.15.190616,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.15.5840001,
+ SenderIP=[62.36.20.208]
+X-Spam-Score: *
+Received: from [123.20.236.152] (helo=smtp.wanadoo.es)
+	by out12.wanadoo.es with esmtpa (Exim 4.68)
+	(envelope-from <sierraalvarez@wanadoo.es>)	id 1mFLb0-0002ZH-ED; Sun,
+ 15 Aug 2021 21:14:59 +0200
+Date: Sun, 15 Aug 2021 07:15:07 +0000
+User-Agent: Kaiten Mail
+Subject: =?UTF-8?Q?Yo!.Excellent_solution?=
+Content-type: text/html; charset=UTF-8
+Message-id: <e0dc856173e1$4d369e53$fe1b3ec8$@wanadoo.es>
+To: acwa nj <acwa-nj@juno.com>, czwwrestling <czwwrestling@comcast.net>,
+ Diana Durant <djdurant@wisc.edu>, jbcoole <jbcoole@excite.com>,
+ Jeff <Jeff1608@charter.net>
+Content-transfer-encoding: quoted-printable
+X-login: <sierraalvarez@wanadoo.es>
+From: sierraalvarez@wanadoo.es
+Return-Path: sierraalvarez@wanadoo.es
+X-MS-Exchange-Organization-ExpirationStartTime: 15 Aug 2021 19:15:00.8021
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 2523213f-0c20-4e80-38cb-08d96020fa87
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 2523213f-0c20-4e80-38cb-08d96020fa87
+X-MS-TrafficTypeDiagnostic: BN6PR06MB3076:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:466;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 Aug 2021 19:15:00.6972
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2523213f-0c20-4e80-38cb-08d96020fa87
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT004.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR06MB3076
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.2997809
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.022
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VnB6Z294MTFGRU00clBEZG9uT2J2aTNtV3lYRUZVK21zYjIzaGw4dFVUZjFF?=
+ =?utf-8?B?dTk3b0RET3lsOVUzSG1RWkw2TUR4cW1USm1iU00zWFgwNEpHY3BDZlNaWUlp?=
+ =?utf-8?B?Q3VyaGdGOHNiTStrQ0ZLWFhLSHpBbEsrWHhsc01tNVdLMTl0ZHo4M2E3bG41?=
+ =?utf-8?B?ZnhwUDY0dEZNMzV0U1dpdHN3Q0dQN3hTVjBRajJHbjZlaXJTV0dMaTRERWJr?=
+ =?utf-8?B?MzlabnAxMER5cHM2TXN0OWlGQzd6ZkxUdGhhUHhFVEVpUnNidjdiYTdmZDIx?=
+ =?utf-8?B?OUpLKzdqVjNtcDh2R0dZS21oY1piT3g4dHk4UHIzd1g5Nyt0R3JHRlRIaDlN?=
+ =?utf-8?B?WXZIelYydExhQlJLaGdrQU5nV3BDb05PTnRlVUxQdzVDNkpOVm5pYzd0MzhQ?=
+ =?utf-8?B?TmYyaUxTZW9INHlWMXo5d3FZenZWVHUrVjMwU0NmQmlETHJLVldmQ3g0bTBm?=
+ =?utf-8?B?WkMzbFI1bWtmeUh5WExWV3F4STIycUo0YkRpdFRmaDRacnpId3RnTXByQmpN?=
+ =?utf-8?B?aE84OEozRFgxNVlUYldDT1dKUmFUdFRjTVNPeWwxUlpucGFzTTlNb1ZDTTZR?=
+ =?utf-8?B?Nmc1c2Z5K3FJSGIraTZjYkNWc0E5M0FYRHNjc2dkL3lSUUVsSGFBOGlEUzlW?=
+ =?utf-8?B?YyswZzNBc3Z6Sy9mdUszZ05uZ3dSUmlDMnlIa2kxTDJxWFZJcDlsaG53ZXpS?=
+ =?utf-8?B?ZmtTRVQ4aWlwd3EvczROUGhvQVRJYThUWEpDSURCaEF6SjBiRUl1UWUzVFM1?=
+ =?utf-8?B?c09LWDRsQkNMN2RtTWtSbnpTbVVUenFuYjlLSWk0S091M0UxUTNJVk9zMSt5?=
+ =?utf-8?B?bEtSOFVNdUtlYXZvZzkwWXdLdVZLdlZFcXZ2S01EQy9raFdpU0tUcHhuc2pM?=
+ =?utf-8?B?cHphcU9CaWo3MjV3SkUxZFd3SHdNTWRDdkNqVHRqNStMaktoS243OWMwRE02?=
+ =?utf-8?B?REM5SzFxcFdCaVlpZmxzcDVCL294N2E0MnFDLzZmSWpPcVZKWnZmSzBaY0V0?=
+ =?utf-8?B?TXVrMnkxUTJpM3J5aVpaUnBtVTNyYXVwWHVUSU5wSUFNd0J6RStDdytEZXA1?=
+ =?utf-8?B?Z2ozU09GMUFWOWt1T3dZL3RXaGpLcGNjUXJyamRDTGNSYXhQTWZKNDRHN2Jt?=
+ =?utf-8?B?eXdGMmlTTTh1OHhKVHZrZkdncEhVcW9aRjlhM3BiSjdXQWRHTVBmYm53T2NQ?=
+ =?utf-8?B?Y2NHeG8rcFF1c1dQdHFBUER3czZQZ05jUldpT0REckxZZ3ZqSlI3dXBhY3VY?=
+ =?utf-8?B?cisyVml6bVBKR3BiUU9IeXUzWkVkTDhmY29OV29Sc25uT25FTFZXYUlKaStL?=
+ =?utf-8?B?dUxwQkdxcDNQM1Nic3pJVFdZM1BsdGZmQmdFOFpyV2FrVmd4OHpSdG5lUmgz?=
+ =?utf-8?B?K0tIRWVGakdQV1I1MkJYWkplVDZ6Q0ZhUE1USWRkNVVnSnVMTDM2ZW9jSHY4?=
+ =?utf-8?B?SU9vc2g2SmF4VE9EL3BTNGxXRnhPaERvN1Z2MDY3NC8yRlJkTUlUR2hCd2NZ?=
+ =?utf-8?B?QjVkOWV3T2s5MHlVUm9nNlNFT0grMDNrTHZFWVdnSENnNXVvT1Y0SFoxcThE?=
+ =?utf-8?B?dUo3dnlKYldENDRMYmdML1IrYXRlN1NLMEVVd1R6WnlkeU5tTmhWTVBYa25P?=
+ =?utf-8?B?MkJtL1duUUVXc0lzM3NRZmtyMm9OTk01ZjJ2RHE3bWVlSDBtdkh0RUg4WW1J?=
+ =?utf-8?B?aWNLMjRPbW9UUFgwajFXZStUUTVUQ3psS1FaSFBGbG5LeTIyTlpzcVhoZklL?=
+ =?utf-8?B?eXg3ajZuK0pIc1ZUQ1lHTlBmckwzRnJkMWlKM0V6SUsxbC8wN2g4Y1I2c0kw?=
+ =?utf-8?B?REhFaHhwUlJVS0ZublZBcWhLdVhYd3BEdXZ2VkdSb2hhWHp4RlRYZFhERWNa?=
+ =?utf-8?B?SE9rdThUREhmYzBwc2Rrb1NWMS96b1NoZm9vd2xKbVVjQkZMYUx4bml1L3A5?=
+ =?utf-8?B?N3VlS0FLZ3dNWUUzZTBGVG9WaGtPUHhNVjBzeEx5elpGWUNoMk9DSTdrOFIz?=
+ =?utf-8?B?RnhkUFlMaGREZGpPb2pCYlFqSGpVOE1jb0lDUy9oVDl5ZUtzczdDTSt2SURG?=
+ =?utf-8?B?bWxqY3hVYStvanJYM0tXcHVla01CQnFFVGJpSGZGeDJoT2NJblk5SXU2K1dH?=
+ =?utf-8?B?cmtGWGdWSDZRMkJVcUlTNjc0TE8rSVVYTW5HdUxGQWFrTS9JZld3cnQ4bnhP?=
+ =?utf-8?B?cEZVWTJGMm0ydy9oUWMxUXk4aGxaNEpoNmtSZ0JlRjc5R0FORm41ajEyQ2xh?=
+ =?utf-8?B?aTVYVFRKOWZ1emlxb1JIUzlhRVNOOHhyYzRDbkx1THNUUWovdU54YVBVdXJv?=
+ =?utf-8?B?ZHEwa3BrVHp2NUJjM3RtbG9tU1F2ZjJhS2dFT0RpSmlGY3Z5OWdSMVVjY2gy?=
+ =?utf-8?B?Ym50K01OQmRXYlUyaEJjNHY3YzhXS1NBOFQ4eDdyRDUwanRQT3FHU21WV29z?=
+ =?utf-8?B?QmZDSnRtYWkyWjllQzlpYnB2cW9NL1VPYk5sQmh5L3VlZld5RWF2Wk1CdjZL?=
+ =?utf-8?B?ZzVlTWRERzU5NEdNb3pZVE5Bb0dzdG9OT1ljYzV6VS9jQWFoaXVGanc0YTRX?=
+ =?utf-8?B?bzFKR2FLTnFiaGRaM2NxRis3emFIVWlNN2NSYVN4RWpUZVYzakZGNVlQcmoz?=
+ =?utf-8?B?WjU1MTE2V3ljQS9RT2tHQm14ajJPNW9JMUNWcDhQVWlOa3NsK1VKQkZRakxV?=
+ =?utf-8?B?N3hzdldIakdHUmJlS2VxK1VZWmFjRGpxQXYvTE02K2NEdFlYOTJmdkxRaWdu?=
+ =?utf-8?B?SHkra0ZHWmp6SU1SNTlKTlA4eXhkOGZ0N2l6Z1kydUJyNmVGY1ZHZ0M3OXdk?=
+ =?utf-8?B?dXV1aGI4THd6NXg0RzcyN2xBaDFHTkFsSVNJQVdTQkVENUpVcms4MG1tUzR1?=
+ =?utf-8?B?NE1sdjFjRzNSN0FpSXpwcW4zV1JWNlowUWc3M1BwUFdUVllqTThsTSt5VHFU?=
+ =?utf-8?B?MWdRbkp2ZS9KZkk1V0FkV1o4MVlBS1kxQ2JDVzVrUnI0WktsSlE9PQ==?=
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body> <a href=3D"https://bit.ly/3CJEoQf">https://bit.ly/3CJEoQf</a> <=
+br><br><br><br>Jason Schaeffer <br> Until next time,Jason Schaeffer<br><br>=
+<br><br><br><br><br>I am hoping you are enjoying an enjoyable working day<b=
+r><br>,Jason Schaeffer <br><br><br><br><br><br><br><br><br><br><br><br><br>=
+<br><br><br> =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3DNEWS=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<br><=
+br><br><br> <br><br>  <br><br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D</body></html>

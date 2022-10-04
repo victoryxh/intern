@@ -1,0 +1,663 @@
+Received: from BYAPR06MB4408.namprd06.prod.outlook.com (2603:10b6:a03:13::11)
+ by DM5PR06MB3034.namprd06.prod.outlook.com with HTTPS; Fri, 4 Mar 2022
+ 10:51:15 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=fail;
+ b=QO3lM1sK/Ti60YdUa0D6gcVtEs/V0rx0uRU6WqI8gplYlRz+FOsH7KyGZoLnari2kBmsYR6WSWAIhWSOeN6JJjStHlm8x5vmC7wjf0/SzobpNHfAXytIuk9wFCcoBOVuO2M3rdHdPYmKbxtzZ398S9T2NWnrP+5LCh4PSvzc+mrTR+YKlQ6Z6osU0IwNyQ/rvawlCAKavcCmEuZpH8mmZ0J8C1vrbT3F7sEIvywNvHYE7PEaBPFUQITiRTuKBGx/xwSIu44H3qLzu5MB1K0Kv6DKgGdQm63ngF3RxuXbVeKgr1XO9uYyjjv7gpQl89SAXLsmjKb0GrOtjNu4ULzajg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=1qrCTAkfCLWInz0fchfIayZhJgi8UD8VFr+PcHyYvwA=;
+ b=O4QFNhsndLf8DAL8T5FT6n9UZmCx3imk25uXmKY7ebW8cwB8XW+1F6usTJrtU9BAmGfWJQvI+ihl4C2B/W9ZeAD7KwJCGeYBK3j/NbFGG15nmzIuX6ckhnN+imrGu3YuQQ5ciFu9W6Up5+thjvSoMQHXJb+Fjy8qEndCOFEO4N9V2eBowdQRxnpY2ABWKjEAc10J4OoST/LJgJFPIyHV4LrH/0a6Ggszpr7DCgVAS0OvO3upyvV5nx6/bKY0+MSXdcNXWqjod4SatMNpN+T9uvqzKhEAwkHH7NG23ElHd83tVzikHuwR8n7KfYbiWAXS4umsnuGqO3Yg3ASt+caaLA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.92.65.68) smtp.rcpttodomain=wisc.edu smtp.mailfrom=hotmail.com; dmarc=pass
+ (p=none sp=none pct=100) action=none header.from=hotmail.com; dkim=fail
+ (signature did not verify) header.d=hotmail.com; arc=fail (48)
+Received: from DM5PR19CA0005.namprd19.prod.outlook.com (2603:10b6:3:151::15)
+ by BYAPR06MB4408.namprd06.prod.outlook.com (2603:10b6:a03:13::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5038.14; Fri, 4 Mar
+ 2022 10:51:14 +0000
+Received: from DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:3:151:cafe::39) by DM5PR19CA0005.outlook.office365.com
+ (2603:10b6:3:151::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5038.13 via Frontend
+ Transport; Fri, 4 Mar 2022 10:51:14 +0000
+Received: from smtp8.wiscmail.wisc.edu (144.92.197.146) by
+ DM6NAM11FT040.mail.protection.outlook.com (10.13.173.133) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5038.14 via Frontend Transport; Fri, 4 Mar 2022 10:51:14 +0000
+Received: from EUR01-HE1-obe.outbound.protection.outlook.com ([40.92.65.68])
+ by smtp8.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0R8700DOHVGZ2570@smtp8.wiscmail.wisc.edu> for
+ akakpo@wisc.edu; Fri, 04 Mar 2022 04:51:13 -0600 (CST)
+X-Wisc-Scam: From header replaced because of possible scam.  Old value: Ariana
+ Gaga <Ariana_Gaga10@hotmail.com>
+X-Wisc-Scam: Possible scam
+X-Spam-Report: IsSpam=no, Probability=9%, Hits= HTML_90_100 0.1,
+ HTML_NO_HTTP 0.1, SUPERLONG_LINE 0.05, BODYTEXTH_SIZE_3000_MORE 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_10000_PLUS 0, BODY_SIZE_25K_PLUS 0,
+ DKIM_ALIGNS 0, DKIM_SIGNATURE 0, KNOWN_MTA_TFX 0, MISSING_HEADERS 0,
+ NO_CTA_URI_FOUND 0, NO_FUR_HEADER 0, NO_URI_HTTPS 0, OBFUSCATION 0,
+ SENDER_NO_AUTH 0, SEO_OFFER 0, SEO_OFFER2 0, SPF_PASS 0, SXL_IP_TFX_WM 0,
+ TEXT_DIRECTION 0, TEXT_DIR_LTR_ONLY 0, TO_MALFORMED 0, WEBMAIL_SOURCE 0,
+ __ANY_URI 0, __ARCAUTH_DKIM_NONE 0, __ARCAUTH_DMARC_NONE 0, __ARCAUTH_NONE 0,
+ __ARC_SEAL_MICROSOFT 0, __ARC_SIGNATURE_MICROSOFT 0, __BODY_NO_MAILTO 0,
+ __BODY_TEXT_X4 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0,
+ __DQ_NEG_HEUR 0, __DQ_NEG_IP 0, __FRAUD_BODY_WEBMAIL 0, __FRAUD_CONTACT_AGE 0,
+ __FRAUD_CONTACT_JOB 0, __FRAUD_CONTACT_NAME 0, __FRAUD_MONEY_CURRENCY 0,
+ __FRAUD_MONEY_CURRENCY_DOLLAR 0, __FRAUD_PARTNERSHIP 0, __FRAUD_WEBMAIL 0,
+ __FRAUD_
+X-Wisc-spamhausDBL: false
+X-Wisc-spamhausHBL: false
+X-Wisc-Doma: Ariana_Gaga10@hotmail.com,hotmail.com
+X-Wisc-Env-From-B64: QXJpYW5hX0dhZ2ExMEBob3RtYWlsLmNvbQ==
+X-Spam-PmxInfo: Server=avs-14, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2022.3.4.104216,
+ AntiVirus-Engine: 5.89.0, AntiVirus-Data: 2022.3.3.5890002,
+ SenderIP=[40.92.65.68]
+X-Wisc-DKIM-Verify:
+ Ariana_Gaga10@hotmail.com,hotmail.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=h3YvJiI5bUcn+KWe6E7jwJY/efK0afBXydkt/1eidVA+k+ijhOG39UDS/RIbFts6k0+i/hDEY+Zure342PI1jQdF2oPCGoq88OJ4+Ml/c3AgKQcOYXnwvbQqSojZ64mSZ54Q0+Uj8AKE2xTmf/o/zBggYdtnFiTYfJlfKQTKbMojRtqnRZ1RUlq/2qfTiWVKyKk1Gl0DhBebYz2PI4bnGB7b5dZYjiRdu0DbxgQXyddVXxV30tK6zGdbK6/uL/hVxBYaU8dENkLdOURkS/nDrLNFtj+s5oN1565ALTWu9YTRaKOfXCDTo4RftNEq3Di5RbUxAAj4WD7mFpjmzBPbEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=1qrCTAkfCLWInz0fchfIayZhJgi8UD8VFr+PcHyYvwA=;
+ b=FaORjeOpThlp5WJ5fGty8hB9SI7h8sORXK3cItmhjElWxnbP+ALdSuBuz0Yl575DnPHxPsi87La1kdo3f4HoZ6eKBj06w6SKGfJVDW9Yq6ufn3v+fiZwPnVKbX2wJnz/QPC6YF/4MuTZTPKdbCtQCbl0eqN5lxjIu71N04mv9iMq9EEyPaO7sS+QREI8uJ1Vt2JMWpez4/Ss8GI+o8xtSkPGs2iADTpBi5QJieth862F0LNxEXIjINF4+AtALXa09sU3YqqGEfBmcvAeVsOlUOdEalzbzk+eD/szIhN1yKrWGjf1lyaUVJEYdW/FN6QBSP9jbJvtGDgS6D9/YdDL5w==
+ARC-Authentication-results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=1qrCTAkfCLWInz0fchfIayZhJgi8UD8VFr+PcHyYvwA=;
+ b=lUGvpNhEptGbGwcb3h2I2Ml+j1E2KDK5cuUIvnsLXSHNghGdn+yxka3DgTlkOSGHQpdd73e3VEVhD2Qxh3mGSeRciKpuTGNSxiF/p3u/BcEm3PLWj+dhWtfrDxbs+7ke2qJ1WjICiMf6n0qu8InQFZu8Jxjly5lwVmKtDwInxLxjZcy2gZz5vKbLdVBHA8W+KEcV+MfSgEdN8Uzyu40MBrJ8+mdZywJsX5z0VN+htfzVNdUcQhxvMCba5Sq5yiIt0hqSxEi2O4jALNaw/Ae49k+ln2U7NMQAkV8g+YwgbmiRatWnCzz+/pgpM7Igo/9lo1feas+Lxy+J9mT84S6tHA==
+Received: from VI1PR10MB3584.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:800:137::9)
+ by AS4PR10MB5248.EURPRD10.PROD.OUTLOOK.COM (2603:10a6:20b:4b7::8)
+ with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)
+ id 15.20.5038.17; Fri, 4 Mar 2022 10:50:55 +0000
+Received: from VI1PR10MB3584.EURPRD10.PROD.OUTLOOK.COM
+ ([fe80::1c77:c598:1305:6914]) by VI1PR10MB3584.EURPRD10.PROD.OUTLOOK.COM
+ ([fe80::1c77:c598:1305:6914%9]) with mapi id 15.20.5038.017; Fri,
+ 4 Mar 2022 10:50:55 +0000
+Subject: Nursing Home Survey Application
+Thread-topic: Nursing Home Survey Application
+Thread-index: AQHYL7V0C8+U4dNjFEW6cofMVnVJ+g==
+Date: Fri, 4 Mar 2022 10:50:55 +0000
+Message-id:
+ <VI1PR10MB3584A081353D8816B0E2F5A485059@VI1PR10MB3584.EURPRD10.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+suggested_attachment_session_id: 7c105047-adce-73a8-97d1-d39cb10620cf
+x-tmn: [nKPRjgXpXAF2iPsAb6c+7n2tmdceqCFA]
+X-MS-Office365-Filtering-Correlation-Id: 5a321e7a-7e72-4290-afa2-08d9fdcce70c
+x-ms-traffictypediagnostic:
+ AS4PR10MB5248:EE_|DM6NAM11FT040:EE_|BYAPR06MB4408:EE_
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ qzEVgT/sY1cvDQF9JbkAz/yHZPJfQjc4K/b4GMtThOLm3dkmPLkfnICboE+OYCuYaHfqMqlGGRM32lfcPnTo+ATtHX/YNzIBLFQSUg7RUfkN78897r6yK8Sz/5CeUH6qnCA40ctsPKDFKrPdklD9QRoIUQFT6fWZry/cSop5EdJbKKgQQL93F4U4d37KhvwWm07t4laAIVaS547lK/lIe1cSmNG4TtEkO8gCF8oLn7+TPNLTnCD6QlAOpLjihTiF/jwFIBcjajTrOLei91UTJFNrytW3MoscoySJj0zK9wtL6PWg3rF+jY28JzfYdtLz46jisKwgrBStELeydAcRa0RGr9kiFlaWTjlyzVUqZAL66Y22G7YxC10LVf0CXKG6+4EdSrNd17M6ghmH6pI+9dKKQh1S8P/4geVhwz3MZWfYSqnJB0kOwevp0MhFvqoEA/laAkHARjlWuWFQH1+J3zc0/xKDVudL5U2e6n+CqSTXbIKn1DIrMINQ1EjDgljwGxWFyv6wjlclRhnboiibX6/oQicRkuLfa7iSl3RIo/TTeKSDX9anlHfU9Aftt11uZCiiRLBPT2cgH3r60+CrVA==
+Content-type: multipart/alternative;
+	boundary="_000_VI1PR10MB3584A081353D8816B0E2F5A485059VI1PR10MB3584EURP_"
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS4PR10MB5248
+From: Ariana_Gaga10@hotmail.com
+To: Undisclosed recipients:;
+Return-Path: Ariana_Gaga10@hotmail.com
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Mar 2022 10:51:14.1159
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5a321e7a-7e72-4290-afa2-08d9fdcce70c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[40.92.65.68];domain=EUR01-HE1-obe.outbound.protection.outlook.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[40.92.65.68];domain=EUR01-HE1-obe.outbound.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 277177b1-ad6f-447a-54bf-08d9fdccdc25
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=pass reason=100
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.146;CTRY:FI;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:EUR01-HE1-obe.outbound.protection.outlook.com;PTR:mail-oln040092065068.outbound.protection.outlook.com;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Mar 2022 10:51:14.0378
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5a321e7a-7e72-4290-afa2-08d9fdcce70c
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ DM6NAM11FT040.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BYAPR06MB4408
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6535741
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5038.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?ka9xDIzXIn14lajD79beTt9AVoU+ohJ95fRmP4SnRPhU7Ey4ALo3U27xr0?=
+ =?iso-8859-1?Q?PcQfw1Oru5A+ew8JogAmRaqx7cq6e2/RQEJKZrvhHhPhOnVVpt5Yj+XRS0?=
+ =?iso-8859-1?Q?bvu2D9/LPncwsiEqQWkNZ9fsINXmt7SXWDzr61yl18TFV4gnx/YcMdgwm3?=
+ =?iso-8859-1?Q?TLv+kPS+3d7Sm7EDmXCVAiWGX4BKDRIJtOLI5rrdGW7ydEk7VrDEhRWLVG?=
+ =?iso-8859-1?Q?F1JPtAooXmlWjd/VqD8mV2TvMl25K9xp/DGlwDt1/93AqypV4UgGEHumDf?=
+ =?iso-8859-1?Q?Rn4svilPQwPCJ161LmnCI2J1FkwjUkOCkc3vCrjYgDj91fpHWAziOdIIbF?=
+ =?iso-8859-1?Q?k895pv/zM7qe0ct+40hfDNh1n8MTDnbIBbOqRlxpTD99V1oP+H8ZUnZypo?=
+ =?iso-8859-1?Q?tdgqrEl2eSLhQL6g5AKAN8clXjMTZLr/WDWVa8xgfSIyf+lTyB/Sw4HLT+?=
+ =?iso-8859-1?Q?R1DUUf27RsNfyXru91HmdxTYP8WXykwWRl4ZP0BPXcLtzExbba3GWzXOUr?=
+ =?iso-8859-1?Q?hkCHfKIxeut9Ifsr8IqavAa4ig36NAGD1QtLq0sbU7n9K3KA6iWnCSDUaD?=
+ =?iso-8859-1?Q?go0nFOvOpvzE+2n4+aQB2/XY+SyT6jnjOmzKnhVTQM1N8aWgiuV+CEjyaO?=
+ =?iso-8859-1?Q?PnB5Nkz6ikkdjo/6+LhWaxL8oQXeilZuY+IH38sonDLc9SiAjwYGXDciSH?=
+ =?iso-8859-1?Q?aXukv1FhRJwF/h5nAwigolOvpY/TARCq3/pPvi8Ld12xiBiL6KUOdtpsAO?=
+ =?iso-8859-1?Q?Ml7CfuSTLDGn3tqUJG9iE62dRDoAUslbZABpJ04y2xNpCIvKoD8xCOysL+?=
+ =?iso-8859-1?Q?+SUWuH8lyBh+B+pfhctYIMTFA96iCHTa8egUIy1ndteISU+bLkPW0Vs72u?=
+ =?iso-8859-1?Q?roN3wGQMmUQ8okIORNhKXSrb8G/RqZSp91YGE+BmHSEYOSEq0qATnAy7w1?=
+ =?iso-8859-1?Q?A6O2pt2GmIvLDzeFlNsMYq2C4/jz4X7WhsEf2HgDSQvkwPOU2j826wDlbh?=
+ =?iso-8859-1?Q?2WU7GgUqGarVu+CQ3RuGgI36auEWz8e7jfkI+yKKotrl0uKjtmvR7ettBs?=
+ =?iso-8859-1?Q?yKauXv93UVVszKvpbdd0Szgxj2YnU9QokxDQw6GuidwAW0PYqVDGAUHE62?=
+ =?iso-8859-1?Q?8MSjwZqxlQW2fip8swV3L00nedI0vT0QlaYv7B11VbBozIk7jsqyXegsOP?=
+ =?iso-8859-1?Q?+vqF4p1aQOnsy0lbaC2RbXvQsO0nhwil8gCAqGeIU3g87IkksfMHhxiMiC?=
+ =?iso-8859-1?Q?O7NB/00joTCMxzX6t0EvUeaqRLYMxCmgRhKtE9zK2Tn0wJuEvhvnxABsez?=
+ =?iso-8859-1?Q?I8ctfbOBYxKi8NXTB/n6nh42mJQMQDaG8wfosfxWGNdU8ReZDs/e7f0Arn?=
+ =?iso-8859-1?Q?QBr9F9S7rwjE7eVnlPm3+5Hug9w2nb3h40VKgOlqNTtvK9N0V8cyuFhcKy?=
+ =?iso-8859-1?Q?uXzW5eW4b/JfxU0eApXdbibk16IeBOMdUZiQA39h5dMWTMM4lY8E/rPkH+?=
+ =?iso-8859-1?Q?ck794yz3bQVe0kK1q02Y1QKV+z2tjjZd8MH/h/7BAI/CW1Ur1bh6o2P+ff?=
+ =?iso-8859-1?Q?tlZ0ZfTAcbms1azKTDio1bX7AFelNQKqiFrMVyRg2nhRRlzVZuQJCRuwMD?=
+ =?iso-8859-1?Q?QqxSaCYFV3AUheGCBUTwEvivuMgqau8+DD9RG/91bAKyT7LWV9fEt60G6n?=
+ =?iso-8859-1?Q?nhcJ2ko/nS4Xc1NR/rTKn4GAdzmhHvyzgPzzLQdjtDPX2EbO3lFKcWbZGr?=
+ =?iso-8859-1?Q?O1hIhIha2l4x6/zMslX5n1uYKsiOCWHw08W95yySWoAYakn2eetitbvZmT?=
+ =?iso-8859-1?Q?vYkEcMT69Bi4+RqUy7ld/+qPyO9FNGg99b2M5s3+hEkNYbfauCkMJpOBOU?=
+ =?iso-8859-1?Q?r3iU60QaVXxfXYZZxoEglVxSaTdEYCIr6gl1fd/fZ+fGHdwKd7Dl5o1KZS?=
+ =?iso-8859-1?Q?NubtmKXmkAZK4FPUR+8LVtQX2huKgIcxEPjPI4t7SxHFIiIuBLa7HDaVoF?=
+ =?iso-8859-1?Q?BmUsKNkO4bIVIMbktH3QxTuO9djx5YHdFEQPOoTl9qqfUJ3sG/B1blspcB?=
+ =?iso-8859-1?Q?BmvRWKR3jFWGVGHEKy/DmTG9CJgcNKiaptJW58qswPH+WZHiu+ooRIqgDM?=
+ =?iso-8859-1?Q?R4gjYqBeu+TOvq16f3PsUEvZBTjvFGkstzH9i4ALghPW2bKiswWFDYb2RX?=
+ =?iso-8859-1?Q?7tn2pGIE68xmq5S9I8M3ZIDSTP2DtuPk73n3wj+YD8JeF9M2Aq55AI6XZC?=
+ =?iso-8859-1?Q?2gHWdiFrQbTymQbyxHTU4nQSYE5x2ZKcxR+RV1o/AO69rpvdCSzAY2hNgL?=
+ =?iso-8859-1?Q?mk8xdb4g6pcROx9i6X9pPnbtRf6YpAmz+WFvQdkYUAyEJkUY7FzP7K2irA?=
+ =?iso-8859-1?Q?=3D=3D?=
+MIME-Version: 1.0
+
+--_000_VI1PR10MB3584A081353D8816B0E2F5A485059VI1PR10MB3584EURP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+Take a COVID-19 survey and evaluate the services of a few local outlets on =
+how they adhere to COVID-19 protective protocols and get paid $150 1 hr:20 =
+minutes every week. This will be done at your own leisure time within the w=
+eek.
+
+Johnny Carson Foundation Survey, we offer survey evaluation services to var=
+ious shopping outlets and, in view of the recent COVID-19 outbreak, we eval=
+uate how the general public are protecting themselves against being infecte=
+d and what preventive measures they are taking at their workplaces.
+
+The information collated by the Johnny Carson Foundation Survey reaches cli=
+ents and encourages them to protect themselves and also make protective equ=
+ipment available for as many who cannot afford it.
+
+The Johnny Carson Foundation Survey Is one of the most popular paid survey =
+panels in the United States. It provides a variety of interesting surveys, =
+including product reviews, service reviews and opinion poll taking.
+
+Survey/Job Description:
+-Buy some COVID-19 face masks respirators.
+-Evaluate how few the public are protecting themselves.
+-When you visit local outlets, observe how many employees are wearing nose =
+masks.
+-Evaluate the protective measures employees are taking to protect themselve=
+s.
+
+Your employment packets include businesses/stores evaluation (Banks, Wal-Ma=
+rt, CVS, Best Buy and many more). You will be evaluating the services rende=
+red at these outlets.
+
+
+Assignment instructions will be sent to you via email after you must have r=
+eceived the payment for the purchases of face mask and protective equipment=
+. Payment for the purchases and your wages would be sent to you by Certifie=
+d Check or a Money Order.
+NOTE: You are dropping off the items at Nursing home and homes for the elde=
+rly weekly and these nursing homes are within the radius of your location.
+
+If you would like to be considered for this survey assignment, please fill =
+out the application below and email us your details to: survey_Application_=
+Online@outlook.com
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Full Name:
+Current Address:
+City:
+State:
+Zip Code:
+Cell Phone:
+Age:
+Alternative email address:
+Preferred Time to Call:
+Occupation:
+How often can you check your email daily?
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Best Regards
+Dylan Shields
+
+--_000_VI1PR10MB3584A081353D8816B0E2F5A485059VI1PR10MB3584EURP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<div style=3D"font-size:12pt">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div dir=3D"ltr">
+<div style=3D"color:black !important">
+<div style=3D"display:block">
+<div style=3D"min-height:258px">
+<div>
+<div style=3D"min-height:298px">
+<div>
+<div style=3D"min-height:298px" dir=3D"ltr"><span><span dir=3D"ltr" style=
+=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;margin:0"><spa=
+n style=3D"margin:0"><span style=3D"font-family:Calibri, Arial, Helvetica, =
+sans-serif;margin:0;border-width:0;border-style:none"><span style=3D"margin=
+:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0=
+;border-width:0;border-style:none">Hi</span>,</span><span style=3D"margin:0=
+;border-width:0;border-style:none"></span></span><span style=3D"font-family=
+:Calibri, Arial, Helvetica, sans-serif;margin:0"></span></span></span><span=
+ style=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif"></span>=
+</span>
+<div style=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;marg=
+in:0">
+<div style=3D"font-family:Calibri, Arial, Helvetica, sans-serif;margin:0;bo=
+rder-width:0;border-style:none">
+<div style=3D"margin:0;border-width:0;border-style:none"><br>
+</div>
+<div style=3D"margin:0;border-width:0;border-style:none">
+<div style=3D"font-family:Calibri, Arial, Helvetica, sans-serif, serif, Emo=
+jiFont;margin:0;border-width:0;border-style:none">
+<div style=3D"margin:0;border-width:0;border-style:none">
+<div><span style=3D"margin:0;border-width:0;border-style:none"><span style=
+=3D"margin:0;border-width:0;border-style:none"><span style=3D"font-size:14p=
+t;margin:0;border-width:0;border-style:none">Take&nbsp;</span></span><span =
+style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">a&nbsp;<=
+/span><span style=3D"margin:0;border-width:0;border-style:none"><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">COVID</span><=
+/span><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:no=
+ne">-19
+ survey and&nbsp;</span><span style=3D"margin:0;border-width:0;border-style=
+:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:n=
+one">evaluate&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;bor=
+der-width:0;border-style:none">the&nbsp;</span><span style=3D"margin:0;bord=
+er-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border=
+-width:0;border-style:none">services&nbsp;</span></span><span style=3D"font=
+-size:14pt;margin:0;border-width:0;border-style:none">of
+ a few local outlets on how they&nbsp;</span><span style=3D"margin:0;border=
+-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-w=
+idth:0;border-style:none">adhere&nbsp;</span></span><span style=3D"font-siz=
+e:14pt;margin:0;border-width:0;border-style:none">to&nbsp;</span><span styl=
+e=3D"margin:0;border-width:0;border-style:none"><span style=3D"font-size:14=
+pt;margin:0;border-width:0;border-style:none">COVID-</span></span><span sty=
+le=3D"font-size:14pt;margin:0;border-width:0;border-style:none">19
+ protective protocols and get paid&nbsp;<b>$150</b> 1 hr:</span><span style=
+=3D"margin:0;border-width:0;border-style:none"><span style=3D"font-size:14p=
+t;margin:0;border-width:0;border-style:none">20 minutes every week</span></=
+span><span style=3D"margin:0;border-width:0;border-style:none"><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">.
+ This&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-widt=
+h:0;border-style:none">will be&nbsp;</span><span style=3D"margin:0;border-w=
+idth:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-wid=
+th:0;border-style:none">done&nbsp;</span></span><span style=3D"font-size:14=
+pt;margin:0;border-width:0;border-style:none">at
+ your own leisure time within the&nbsp;</span><span style=3D"margin:0;borde=
+r-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-=
+width:0;border-style:none">week</span></span><span style=3D"font-size:14pt;=
+margin:0;border-width:0;border-style:none">.</span><br>
+</span></div>
+<div><span style=3D"margin:0;border-width:0;border-style:none"><br>
+</span></div>
+<div style=3D"margin:0"><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none"><b><span style=3D"margin:0"><span style=3D"margin:0;b=
+order-width:0;border-style:none"><span style=3D"margin:0;border-width:0;bor=
+der-style:none"><span style=3D"margin:0">Johnny
+ Carson Foundation Survey</span></span></span></span></b>, we offer</span><=
+span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">&nb=
+sp;survey evaluation services to various shopping outlets and, in&nbsp;</sp=
+an><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none"=
+>view&nbsp;</span><span style=3D"font-size:14pt;margin:0;border-width:0;bor=
+der-style:none">of
+ the recent&nbsp;</span><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none">COVID-19&nbsp;</span><span style=3D"font-size:14pt;ma=
+rgin:0;border-width:0;border-style:none">outbreak, we&nbsp;</span><span sty=
+le=3D"font-size:14pt;margin:0;border-width:0;border-style:none">evaluate&nb=
+sp;</span><span style=3D"font-size:14pt;margin:0;border-width:0;border-styl=
+e:none">how
+ the&nbsp;</span><span style=3D"font-size:14pt;margin:0;border-width:0;bord=
+er-style:none">general public&nbsp;</span><span style=3D"font-size:14pt;mar=
+gin:0;border-width:0;border-style:none">are protecting themselves against b=
+eing&nbsp;</span><span style=3D"font-size:14pt;margin:0;border-width:0;bord=
+er-style:none">infected&nbsp;</span><span style=3D"font-size:14pt;margin:0;=
+border-width:0;border-style:none">and
+ what preventive measures they are&nbsp;</span><span style=3D"font-size:14p=
+t;margin:0;border-width:0;border-style:none">taking&nbsp;</span><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">at their&nbsp=
+;</span><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:=
+none">workplaces</span><span style=3D"font-size:14pt;margin:0;border-width:=
+0;border-style:none">.</span><br>
+</div>
+<div><span style=3D"margin:0;border-width:0;border-style:none"><br>
+</span></div>
+<div dir=3D"ltr" style=3D"margin:0"><span style=3D"font-size:14pt;margin:0;=
+border-width:0;border-style:none">The&nbsp;</span><span style=3D"margin:0;b=
+order-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;bor=
+der-width:0;border-style:none">information&nbsp;</span></span><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">collated
+ by the&nbsp;<b>Johnny Carson</b><span style=3D"margin:0"><span style=3D"ma=
+rgin:0;border-width:0;border-style:none"><span style=3D"margin:0;border-wid=
+th:0;border-style:none"><span style=3D"margin:0"><b>&nbsp;Foundation Survey=
+</b>&nbsp;reaches clients</span></span></span></span></span><span style=3D"=
+margin:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;ma=
+rgin:0;border-width:0;border-style:none"></span></span><span style=3D"font-=
+size:14pt;margin:0;border-width:0;border-style:none">&nbsp;and&nbsp;</span>=
+<span style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fo=
+nt-size:14pt;margin:0;border-width:0;border-style:none">encourages&nbsp;</s=
+pan></span><span style=3D"font-size:14pt;margin:0;border-width:0;border-sty=
+le:none">them
+ to&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none"><=
+span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">pro=
+tect&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none">themselves and&nbsp;</span><span style=3D"margin:0;bo=
+rder-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;bord=
+er-width:0;border-style:none">also&nbsp;</span></span><span style=3D"font-s=
+ize:14pt;margin:0;border-width:0;border-style:none">make
+ protective equipment available for as many who cannot&nbsp;</span><span st=
+yle=3D"margin:0;border-width:0;border-style:none"><span style=3D"font-size:=
+14pt;margin:0;border-width:0;border-style:none">afford&nbsp;</span></span><=
+span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">it.=
+</span></div>
+<div dir=3D"ltr"><br>
+</div>
+<div style=3D"margin:0"><b><span style=3D"font-size:14pt;margin:0;border-wi=
+dth:0;border-style:none">The Johnny Carson</span></b><span style=3D"margin:=
+0;border-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;=
+border-width:0;border-style:none"><span style=3D"margin:0"><b>&nbsp;Foundat=
+ion
+ Survey</b>&nbsp;Is</span>&nbsp;one</span></span><span style=3D"font-size:1=
+4pt;margin:0;border-width:0;border-style:none">&nbsp;of the most popular pa=
+id&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none"><s=
+pan style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">surv=
+ey&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-width:0=
+;border-style:none">panels
+ in the United States. It provides</span><span style=3D"margin:0;border-wid=
+th:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none">&nbsp;</span></span><span style=3D"font-size:14pt;mar=
+gin:0;border-width:0;border-style:none">a&nbsp;</span><span style=3D"margin=
+:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0=
+;border-width:0;border-style:none">variety&nbsp;</span></span><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">of
+ interesting&nbsp;</span><span style=3D"margin:0;border-width:0;border-styl=
+e:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:=
+none">surveys</span></span><span style=3D"font-size:14pt;margin:0;border-wi=
+dth:0;border-style:none">, including product&nbsp;</span><span style=3D"mar=
+gin:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;margi=
+n:0;border-width:0;border-style:none">reviews</span></span><span style=3D"f=
+ont-size:14pt;margin:0;border-width:0;border-style:none">,
+ service&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:no=
+ne"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none=
+">reviews&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-=
+width:0;border-style:none">and opinion poll&nbsp;</span><span style=3D"marg=
+in:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;margin=
+:0;border-width:0;border-style:none">taking</span></span><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">.</span></div>
+<div dir=3D"ltr"><br>
+<b><span style=3D"margin:0;border-width:0;border-style:none"><span style=3D=
+"font-size:14pt;margin:0;border-width:0;border-style:none">Survey</span></s=
+pan><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none=
+">/Job Description:</span></b><br>
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">-<=
+/span><span style=3D"margin:0;border-width:0;border-style:none"><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">Buy&nbsp;</sp=
+an></span><span style=3D"font-size:14pt;margin:0;border-width:0;border-styl=
+e:none">some&nbsp;</span><span style=3D"margin:0;border-width:0;border-styl=
+e:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:=
+none">COVID-19&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;bo=
+rder-width:0;border-style:none">face
+ masks respirators.</span><br>
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">-<=
+/span><span style=3D"margin:0;border-width:0;border-style:none"><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">Evaluate&nbsp=
+;</span></span><span style=3D"font-size:14pt;margin:0;border-width:0;border=
+-style:none">how
+ few the public</span><span style=3D"margin:0;border-width:0;border-style:n=
+one"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:non=
+e">&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-width:=
+0;border-style:none">are&nbsp;</span><span style=3D"margin:0;border-width:0=
+;border-style:none"><span style=3D"font-size:14pt;margin:0;border-width:0;b=
+order-style:none">protecting&nbsp;</span></span><span style=3D"font-size:14=
+pt;margin:0;border-width:0;border-style:none">themse</span><span style=3D"m=
+argin:0;border-width:0;border-style:none"></span><span style=3D"font-size:1=
+4pt;margin:0;border-width:0;border-style:none">lves.</span><br>
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">-<=
+/span><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:no=
+ne">When you visit local outlets, observe how many employees are wearing no=
+se masks.</span><br>
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">-<=
+/span><span style=3D"margin:0;border-width:0;border-style:none"><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">Evaluate&nbsp=
+;</span></span><span style=3D"font-size:14pt;margin:0;border-width:0;border=
+-style:none">the
+ protective measures employees are taking</span><span style=3D"margin:0;bor=
+der-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;borde=
+r-width:0;border-style:none">&nbsp;</span></span><span style=3D"font-size:1=
+4pt;margin:0;border-width:0;border-style:none">to&nbsp;</span><span style=
+=3D"margin:0;border-width:0;border-style:none"><span style=3D"font-size:14p=
+t;margin:0;border-width:0;border-style:none">protect&nbsp;</span></span><sp=
+an style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">thems=
+elves.</span><br>
+<br>
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">Yo=
+ur employment packets include</span><span style=3D"margin:0;border-width:0;=
+border-style:none"><span style=3D"font-size:14pt;margin:0;border-width:0;bo=
+rder-style:none">&nbsp;</span><span style=3D"font-size:14pt;margin:0;border=
+-width:0;border-style:none">businesses</span></span><span style=3D"font-siz=
+e:14pt;margin:0;border-width:0;border-style:none">/</span><span style=3D"ma=
+rgin:0;border-width:0;border-style:none"></span><span style=3D"font-size:14=
+pt;margin:0;border-width:0;border-style:none">stores
+ evaluation&nbsp;</span><span style=3D"margin:0;border-width:0;border-style=
+:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:n=
+one">(Banks, Wal-Mart, CVS, Best Buy and many more)</span></span><span styl=
+e=3D"font-size:14pt;margin:0;border-width:0;border-style:none">.
+ You</span><span style=3D"margin:0;border-width:0;border-style:none"><span =
+style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">&nbsp;</=
+span></span><span style=3D"font-size:14pt;margin:0;border-width:0;border-st=
+yle:none">will be&nbsp;</span><span style=3D"margin:0;border-width:0;border=
+-style:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-s=
+tyle:none">evaluating&nbsp;</span></span><span style=3D"font-size:14pt;marg=
+in:0;border-width:0;border-style:none">the&nbsp;</span><span style=3D"margi=
+n:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;margin:=
+0;border-width:0;border-style:none">services&nbsp;</span><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">rende</span><span st=
+yle=3D"margin:0;border-width:0;border-style:none"></span><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">red&nbsp;</span></sp=
+an><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none"=
+>at
+ these&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none=
+"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">=
+outlets</span></span><span style=3D"font-size:14pt;margin:0;border-width:0;=
+border-style:none">.</span><br>
+<br>
+<br>
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">As=
+signment instructions will be&nbsp;</span><span style=3D"margin:0;border-wi=
+dth:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-widt=
+h:0;border-style:none">sent&nbsp;</span></span><span style=3D"font-size:14p=
+t;margin:0;border-width:0;border-style:none">to&nbsp;</span><span style=3D"=
+margin:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;ma=
+rgin:0;border-width:0;border-style:none">you&nbsp;</span></span><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">via&nbsp;</sp=
+an><span style=3D"margin:0;border-width:0;border-style:none"><span style=3D=
+"font-size:14pt;margin:0;border-width:0;border-style:none">email&nbsp;</spa=
+n></span><span style=3D"font-size:14pt;margin:0;border-width:0;border-style=
+:none">after&nbsp;</span><span style=3D"margin:0;border-width:0;border-styl=
+e:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:=
+none">yo</span><span style=3D"margin:0;border-width:0;border-style:none"></=
+span><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:non=
+e">u&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none">must
+ have&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none"=
+><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">r=
+eceived&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-wi=
+dth:0;border-style:none">the&nbsp;</span><span style=3D"margin:0;border-wid=
+th:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none">payment&nbsp;</span></span><span style=3D"font-size:1=
+4pt;margin:0;border-width:0;border-style:none">for
+ the&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none">=
+<span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">pu=
+rchases&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-wi=
+dth:0;border-style:none">of face mask and protective
+ equipment.&nbsp;</span><span style=3D"margin:0;border-width:0;border-style=
+:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:n=
+one">Payment&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;bord=
+er-width:0;border-style:none">for the&nbsp;</span><span style=3D"margin:0;b=
+order-width:0;border-style:none"><span style=3D"font-size:14pt;margin:0;bor=
+der-width:0;border-style:none">purchases&nbsp;</span></span><span style=3D"=
+font-size:14pt;margin:0;border-width:0;border-style:none">and
+ your&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none"=
+><span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">w=
+ages&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-width=
+:0;border-style:none">would be&nbsp;</span><span style=3D"margin:0;border-w=
+idth:0;border-style:none"><span style=3D"font-size:14pt;margin:0;border-wid=
+th:0;border-style:none">sent&nbsp;</span></span><span style=3D"font-size:14=
+pt;margin:0;border-width:0;border-style:none">to&nbsp;</span><span style=3D=
+"margin:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;m=
+argin:0;border-width:0;border-style:none">you&nbsp;</span></span><span styl=
+e=3D"font-size:14pt;margin:0;border-width:0;border-style:none">by
+ Certified Check or a Money Order.</span><font size=3D"5"><span style=3D"ma=
+rgin:0;border-width:0;border-style:none"></span><br>
+</font></div>
+<div><font size=3D"5"><b><font face=3D"courier new,courier,monaco,monospace=
+,sans-serif">NOTE: You are dropping off the items at Nursing home and homes=
+ for the elderly weekly and these nursing homes are within the radius of yo=
+ur location.</font></b></font></div>
+<div dir=3D"ltr"><br>
+</div>
+<div dir=3D"ltr" style=3D"margin:0"><span style=3D"font-size:14pt;margin:0;=
+border-width:0;border-style:none">If you would&nbsp;</span><span style=3D"m=
+argin:0;border-width:0;border-style:none"><span style=3D"font-size:14pt;mar=
+gin:0;border-width:0;border-style:none">like&nbsp;</span></span><span style=
+=3D"font-size:14pt;margin:0;border-width:0;border-style:none">to
+ be&nbsp;</span><span style=3D"margin:0;border-width:0;border-style:none"><=
+span style=3D"font-size:14pt;margin:0;border-width:0;border-style:none">con=
+sidered&nbsp;</span></span><span style=3D"font-size:14pt;margin:0;border-wi=
+dth:0;border-style:none">for this survey assignment,
+ please fill out the&nbsp;</span><span style=3D"margin:0;border-width:0;bor=
+der-style:none"><span style=3D"font-size:14pt;margin:0;border-width:0;borde=
+r-style:none">application&nbsp;</span></span><span style=3D"font-size:14pt;=
+margin:0;border-width:0;border-style:none">below
+ and email us your&nbsp;</span><span style=3D"margin:0;border-width:0;borde=
+r-style:none"><span style=3D"font-size:14pt;margin:0;border-width:0;border-=
+style:none">details&nbsp;</span></span><span style=3D"font-size:14pt;margin=
+:0;border-width:0;border-style:none">to:</span><font size=3D"3"><b>&nbsp;<f=
+ont face=3D"bookman old style,new york,times,serif"><span>survey_Applicatio=
+n_Online@outlook.com</span></font></b></font><span style=3D"margin:0;border=
+-width:0;border-style:none"></span></div>
+</div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span><b><span style=
+=3D"color:rgb(32, 31, 30) !important;font-size:15px;margin:0px;border-width=
+:0px;border-style:none"></span></b></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><br>
+</div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Full Name:</span></d=
+iv>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Current Address:</sp=
+an></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">City:<br>
+</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">State:</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Zip Code:</span></di=
+v>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Cell Phone:</span></=
+div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Age:</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Alternative email ad=
+dress:</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Preferred Time to Ca=
+ll:</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Occupation:</span></=
+div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">How often can you ch=
+eck your email daily?</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none" dir=3D"ltr"><span =
+style=3D"font-size:14pt;margin:0;border-width:0;border-style:none"><span><s=
+pan style=3D"margin:0;border-width:0;border-style:none">=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</span></span>
+<br>
+</span></div>
+<div style=3D"margin:0;border-width:0;border-style:none"><br>
+</div>
+<div style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fon=
+t-size:14pt;margin:0;border-width:0;border-style:none">Best Regards&nbsp;</=
+span></div>
+<span style=3D"margin:0;border-width:0;border-style:none"><span style=3D"fo=
+nt-size:14pt;margin:0;border-width:0;border-style:none"><span style=3D"marg=
+in:0"><span style=3D"margin:0">Dylan Shields</span></span></span></span></d=
+iv>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_VI1PR10MB3584A081353D8816B0E2F5A485059VI1PR10MB3584EURP_--

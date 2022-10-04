@@ -1,0 +1,545 @@
+Received: from DM5PR06MB3276.namprd06.prod.outlook.com (2603:10b6:4:3f::29) by
+ BN8PR06MB5442.namprd06.prod.outlook.com with HTTPS; Sat, 14 Aug 2021 05:08:57
+ +0000
+Received: from BN9PR03CA0156.namprd03.prod.outlook.com (2603:10b6:408:f4::11)
+ by DM5PR06MB3276.namprd06.prod.outlook.com (2603:10b6:4:3f::29) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4394.21; Sat, 14 Aug
+ 2021 05:08:55 +0000
+Received: from BN8NAM11FT057.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:408:f4:cafe::84) by BN9PR03CA0156.outlook.office365.com
+ (2603:10b6:408:f4::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4415.14 via Frontend
+ Transport; Sat, 14 Aug 2021 05:08:55 +0000
+Received: from smtp5.wiscmail.wisc.edu (144.92.197.234) by
+ BN8NAM11FT057.mail.protection.outlook.com (10.13.177.49) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4415.16 via Frontend Transport; Sat, 14 Aug 2021 05:08:55 +0000
+Received: from pmta556.dedicated.bmsend.com ([12.174.236.91])
+ by smtp5.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QXT00E7WCYLYQ30@smtp5.wiscmail.wisc.edu> for
+ pmclean@wisc.edu; Sat, 14 Aug 2021 00:08:46 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=14%, Hits= REPLY_TO_EMPTY 1.2,
+ HTML_70_90 0.1, SUPERLONG_LINE 0.05, BODYTEXTH_SIZE_3000_MORE 0,
+ BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_10000_PLUS 0, BULK_EMAIL_SENDER 0,
+ DATE_TZ_NA 0, DKIM_SIGNATURE 0, FONT_STYLE_0PT 0, FONT_STYLE_1PT 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, LEGITIMATE_SIGNS 0,
+ LINK_TO_IMAGE 0, LIST_HEADER 0, OBFUSCATION 0, SINGLE_HREF_URI_IN_BODY 0,
+ SPF_PASS 0, SXL_IP_TFX_ESG 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0,
+ __BODY_NO_MAILTO 0, __BODY_TEXT_X4 0, __CANPHARM_UNSUB 0, __COURIER_PHRASE 0,
+ __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0,
+ __CTYPE_MULTIPART_ALT 0, __DC_PHRASE 0, __DQ_NEG_HEUR 0, __DQ_NEG_IP 0,
+ __FRAUD_INTRO 0, __FRAUD_URGENCY 0, __FREE_IMAGE_HOST 0,
+ __FROM_NAME_NOT_IN_ADDR 0, __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_LIST_HEADER 0, __HAS_LIST_ID 0, __HAS_LIST_UNSUBSCRIBE 0,
+ __HAS_MSGID 0, __HAS_SENDER 0, __HAS_X_MAILER 0, __HIDDEN_HTML_CONTENT 0,
+ __HREF_LABEL_TEXT 0, __HTM
+X-Wisc-Doma:
+ BOUNCE.C2B5B5.679369D8.11C1536.EF69F.bme@pmta556.dedicated.bmsend.com,trocglobal.com
+X-Wisc-Env-From-B64:
+ Qk9VTkNFLkMyQjVCNS42NzkzNjlEOC4xMUMxNTM2LkVGNjlGLmJtZUBwbXRhNTU2LmRlZGljYXRl
+ ZC5ibXNlbmQuY29t
+X-Spam-PmxInfo: Server=avs-11, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.8.14.50016,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.8.13.5840002,
+ SenderIP=[12.174.236.91]
+X-Wisc-DKIM-Verify:
+ BOUNCE.C2B5B5.679369D8.11C1536.EF69F.bme@pmta556.dedicated.bmsend.com,bmsend.com!pass
+X-Spam-Score: *
+DKIM-Signature: v=1; a=rsa-sha256; d=pmta556.dedicated.bmsend.com; s=bmdeda;
+	c=relaxed/relaxed; i=emaza=trocglobal.com@pmta556.dedicated.bmsend.com;
+	t=1628917727;
+	h=subject:from:reply-to:to:date:message-id:list-unsubscribe:sender:
+	content-type:mime-version;	bh=XXB+VYy/bNMjtrb3t8PvTLL4bW1q2EV67zqvuLbeosA=;
+	b=BhMNe+of+3nlEOIz1ZmT3N6NQ/XQd8jOfVmO7n2sDG6pH5zJC+69m2XOffyAIeipMjzU4xNDGy+
+	7FDkVwUXBwjQ99P8PwNjMKmiJ0N0FfJlyL4KznIjXHVz18cyYk0ip0o0CLdnCrOiJYaIQ96cU092W
+	n4aDA4xjOLvd6A29u+w=
+DKIM-Signature: v=1; a=rsa-sha256; d=bmsend.com; s=bmdeda; c=relaxed/relaxed;
+	t=1628917727;
+	h=subject:from:reply-to:to:date:message-id:feedback-id:list-unsubscribe:
+	sender:content-type:mime-version;
+	bh=XXB+VYy/bNMjtrb3t8PvTLL4bW1q2EV67zqvuLbeosA=;
+	b=qJ1jlIaIETJo1V4r2gRy6TwI2lt+C9gljL9DfZdoMxiWpW2ivnANZtipOnaSJX4YJI7TV3gP68h
+	gHPcpvTPKQeIMq+3tBrJJrv+ZVV1pbXsT/s0KjMkQxLmbW99Rf2/vEKLjZPFkxUP31N5ULHUvrR6Z
+	gsv7+TbP5ShXLZpkrlw=
+From: "[Alert]" <emaza@trocglobal.com>
+Date: Sat, 14 Aug 2021 01:08:47 -0400
+Subject: We were unable to deliver your package.
+Message-id: <d363ea05976d46dbb805b64ac8b48146@pmta556.dedicated.bmsend.com>
+Reply-to:
+X-Identify: <12760501_1737714136@bmsend.com>
+X-CMC: 11C1536.679369D8
+X-Campaignid: 12760501
+X-SentFromRelay: pmta556.dedicated.bmsend.com
+X-SentFromServer: 12.174.236.91
+X-Report-Abuse:
+ =?us-ascii?q?http=3A=2F=2Ftrocglobal=2Ebmetrack=2Ecom=2FAbuse=3F9tSN8Jgb1CbYSXLPStZ9AC8p?=
+ =?us-ascii?q?1SBpMc4VtEKnvVYjh2PMmI6DskktTxui%2Bq%2BQ%2BRSjq%2BY0UTwzGiU%3?=
+ =?us-ascii?q?D?=
+X-BM-User: EF69F
+Feedback-ID: 980639:12760501:us:benchmarkemail
+X-Mailer: BME Mailer - **BME12760501-980639-1737714136**
+List-Id: 1737714136BM list <1737714136.980639@bmsend.com>
+List-Unsubscribe:
+ =?us-ascii?q?=3Chttp=3A=2F=2Ftrocglobal=2Ebmetrack=2Ecom=2Fud=3F9tSN8Jgb1CbYSXLPStZ9AC8p1S?=
+ =?us-ascii?q?BpMc4VtEKnvVYjh2PMmI6DskktTxui%2Bq%2BQ%2BRSjq%2BY0UTwzGiU%3D=3E?=
+ =?us-ascii?q?=2C?=
+ <mailto:unsub.12760501.1737714136@unsub.bmesrv.com?subject=unsubscribe
+ 12760501.1737714136>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+To: pmclean@wisc.edu
+Sender: "[Alert]" <emaza=trocglobal.com@pmta556.dedicated.bmsend.com>
+Content-type: multipart/alternative; boundary="=-zaiKNBd+2jv5zXer297JVw=="
+Return-Path:
+ BOUNCE.C2B5B5.679369D8.11C1536.EF69F.bme@pmta556.dedicated.bmsend.com
+X-MS-Exchange-Organization-ExpirationStartTime: 14 Aug 2021 05:08:55.7868
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f7943239-0801-40a4-dd5f-08d95ee19dce
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT057.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: f7943239-0801-40a4-dd5f-08d95ee19dce
+X-MS-TrafficTypeDiagnostic: DM5PR06MB3276:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.234;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp5.wiscmail.wisc.edu;PTR:wmmta2.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 14 Aug 2021 05:08:55.6649
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f7943239-0801-40a4-dd5f-08d95ee19dce
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN8NAM11FT057.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR06MB3276
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3961917
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4415.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?SzhnMmxySjlHaTJCNG45ZUhHVEpaT1Fxdzh5eng4bUlKMkRWbUs5MFBIR0h5?=
+ =?utf-8?B?WFpnbDlkYjRJQTRZd20yVlNBcTMyVndhMkZPaFFoUjBDalhPeThSTTg4SDcw?=
+ =?utf-8?B?SVI4VEsrRWkxQWo4VjZKcDNFUHBZUTdKbVdQakJiQ2dDUUh1Q2lEdGxWTDdq?=
+ =?utf-8?B?bGVXdFV6QzRvZS9WTTcrWDdhTEhhVHFHaW14V1RqMUxyZjZKVVU1M003WC9R?=
+ =?utf-8?B?OGlCRFAydDFOaTZQZVIxUWFIMEFlZ2M5ZlNHbTFXSlovbkNaTFBSeDR1dUM4?=
+ =?utf-8?B?ekk2VG40SU5Tdkc4enhyYnAzWE5VaGJncmFEQlYzNmVMUFBHdUZhR29YbVJD?=
+ =?utf-8?B?SW0xdmxtR2phbE51RSsxbWtQbkZUbDE5WmtoNjg3cGtNczVKK3Z6ak1aN09i?=
+ =?utf-8?B?MGdEWEdXaERVdWp2RER6L2ZPUkFzZGFEdEliU2dvWlkxTncvTzlsc1lJYzVh?=
+ =?utf-8?B?RWxPVkhIZGJxZHl3WFJ0S1creEpiWllmeDk5U0FNRkFIR1FsM2VWOVJsb2hT?=
+ =?utf-8?B?UTZsZ29VTW9oYW1VeTh2Ui9lNVZnQWdINlRWUWJwYXR0cEpBSkNhL0lheWxt?=
+ =?utf-8?B?aUVzYlQxbUZZNDBtS2ZCSWh1VFhUT2lmR3o2WnMvZ21IWUZOdnpPNm1Xc3dZ?=
+ =?utf-8?B?c0tZODBPUFVuVVEwdXVycXFJWXIxa0w4UVU5cG9xdk9xSjFWQzA4THg5R3lw?=
+ =?utf-8?B?RUk5bTNuaEk0ZXFiVndreDlyZnROU1JWeVBWckFtMmM5aTMwSVRBN1krLzJS?=
+ =?utf-8?B?K1QxcEZvNXhBd3JJRHJySklHellxclJiRFpPVXZGN3hhTjA4aHBWYWFDNys3?=
+ =?utf-8?B?VWlSS3ZGTG9rbEtrS0IzWW5wNklIakdsM2R1TExCWUJwY0VRRmt0UHAzN25V?=
+ =?utf-8?B?WFJudWFlRC9OSWRpbFNiNzJSRzEwZU45RHg4S0ZhSjhHRFdlaDUyWUpMa0RL?=
+ =?utf-8?B?ZndnYlBFZnZ1ZVJ3M0FmUmVmYUlVWXQzRy8zYkprK2dsaDFoOXFQSzdDSko3?=
+ =?utf-8?B?Vm4wamRZa2duSVh4b2FSTjJKVnlVcFZaWStvRjlONVNhcG1wL2hIajNpSzBk?=
+ =?utf-8?B?azdsMTc2OVhPV2RIWEZ2Q3JVYTcwazlaT1ZrVklkR0dTTmYrWE1FYjUzQ1E5?=
+ =?utf-8?B?WU5UUW9GaldHYXpROWQxaW9NbTRONHRhLzRzdmFWTFdqbzUzQmFsUFU5eWVB?=
+ =?utf-8?B?K2hrYTNvYlBDTmdRejlUaEUvVEVWTTBsUGFzUUl5ZnNCRjNiYXRaWldCTVUw?=
+ =?utf-8?B?cW13ZHpxQS9PRi9paU9uTG9WSC9mNTE2Ly9XekJHZDU1SklSL1RCRXdRU0Zk?=
+ =?utf-8?B?NXU2YlA1R0E5ZmhIWFN3RkcvTXZXYnIrUnFjcXZZQjlQRXlTT1hSQkpwbUla?=
+ =?utf-8?B?aHdsdGczcGY1bHdPcFV6c1ExeDRTWElHMDFsTmV4OFkxSy9FMEgzVVlyem81?=
+ =?utf-8?B?Z3ZJcGtrUW9xdW1ubjg1YzBkVTE5NWc4cWQwRFBKZWxRT2FQd2RNKy96OFdt?=
+ =?utf-8?B?ZEVxcWZ4UTBEWXNUNXc5VUVwR3kvSFBvcUhSV0FZcFBqVlZEdk84b0J3dzFC?=
+ =?utf-8?B?bEhsblMwWkpMRWtDTmhNY01hMWVlTEdUYUx3YndRcmMvSUhqaHRCb0pyMjlC?=
+ =?utf-8?B?UUlKRGQ0MHYyVnFzaW50ZW9Bd3FEeDdJNnVSTzFjVmpoVjQ5R3FoNmJKcXBH?=
+ =?utf-8?B?c2crU2Q1ZjVIQnJmVmpIV3N6Z2JGQ20vSjJWbEdmcUw2T3lMTjVkNzRkYXha?=
+ =?utf-8?B?L0FxckY5Ly8xYUl1NVozdFlyb1djVHY2Zi9YWDJFU1ZUTWRhVElhT2w1RUZC?=
+ =?utf-8?B?dnY2TFpKL1F1WmxEdjRMK01BOEJtWjRDSGpYTnppWkVWM0JwUWE3cjByS3Ev?=
+ =?utf-8?B?cVQ2ZjB2cFdvMlY1WEIwYXBLWUdTU093TkhpTXhRSUVPNVhBcGhjdUZDOUU3?=
+ =?utf-8?B?UlhMWjAvMzdNaGQ4WHh5dFhWUWhQU1g1U2U1TUZVYTd5a2ZDM3FZYVBTOVNR?=
+ =?utf-8?B?aGpsRCs3TGlyN0hlaDFBY25OOG5UbGVnY0pSSUd0bHgrbXI0clZYQS8vVy9w?=
+ =?utf-8?B?aEJ5dXRIQXBoTGYwUm9qNDI1SWl2cC94ZFZwTjhHakZObXhjdEtqbjRvRnB4?=
+ =?utf-8?B?VTdVbUlIemd6eFZZNzlSeUUzeE1QcVlZT0w4TjZSRGdJZnBBWFE4RWlhM3lE?=
+ =?utf-8?B?Sy94TkVXSnZadkFTVzBIWXZlaGNXNzRHRWtTOGZCc3g0RWFPK0xiMHd2Wkx0?=
+ =?utf-8?B?UTc0U3JkMXU4TWxmTWI2SWN5MXV1K2N4STNpOVJaUEhsU2dLUjF5b2plbzR4?=
+ =?utf-8?B?TVZUVlcya0pNUERwRUV2Q3h5RzU4NDhPNkF4TERGQnNYMEhsVE0yNVlhTmsx?=
+ =?utf-8?B?bnVQejUyWkFQUVRmTTU2UVA2WVhpcEJOSy9ISFlBbFBhZmJrN3pLdVBSb212?=
+ =?utf-8?B?WmpGL2VSSzlmQUFZVlNQVGhuK3M5QzdKWEFIdlMzeEk3TUlRVmhZVmhkaXNO?=
+ =?utf-8?B?bVgvNUtnNGhjcDhJL1FHRkYzZSs1TUE0TGRBSytGVmc2L3hHL0lhRVFYUk0z?=
+ =?utf-8?B?ekE0YUprTFlvaGE2RWRZUWQvVm1zVGw5RFhoMlY4eVdjcCtWTEwyMWJ0am9K?=
+ =?utf-8?B?cE5WejdtUG1xZU9BSTIvcXpja2RiNUhQZlFtakhkNitONDNEOGovRWgycUZW?=
+ =?utf-8?B?MjFXYktxMWMyZ09yT3c2ekd5bUNrMUNFdFhBSnpWeWhKNU54V3ZLQTF6b3I2?=
+ =?utf-8?B?SW9WLzN0Ni9TcjFVRTBYc3BYWVVleEFFRlFuUnQvQ0xDS3pyWTlyQWJGSVY2?=
+ =?utf-8?B?Mm42L25maFZMV2Y3OENDNEJ6Wm1jR1E3M3dnR2pCL2xCWHpYSEpOVys0dUhB?=
+ =?utf-8?B?dmR4MzhmTXh5QWFLZUJZNHFsL2dabi9Ld2krUkxpWVpBMm9KTkErRTcrZXRp?=
+ =?utf-8?Q?naZTAYOU/xuNOVsb?=
+MIME-Version: 1.0
+
+--=-zaiKNBd+2jv5zXer297JVw==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+dear client,
+  we want to make sure you're the owner of this account.
+
+ 	dear customer ,
+
+  we're sorry to let you know that your package which arrived on 13/08=
+/2021 will be sent back ,
+this may happen when the receiver's address is incorrect !
+to submit a redelivery request for this package please fill out the fo=
+rm in our website.
+
+[1] check this now
+
+notice:
+please note, that if a redelivery is not scheduled within 48 hours wil=
+l be refunded.
+
+
+ References:
+
+1. u=3Dcaadaa9   =20
+   =20
+View this email in your browser:    =20
+   =20
+https://trocglobal.bmetrack.com/c/v?e=3D12E1832&c=3DEF69F&l=3D679369D8=
+&email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&relid=3DCAEEC5B   =20
+   =20
+You are receiving this email because of your relationship with T-ROC. =
+Please reconfirm your interest in receiving emails from us.   If you d=
+o not wish to receive any more emails, you can unsubscribe here.   =20
+   =20
+https://trocglobal.bmetrack.com/c/opt?e=3D12E1832&c=3DEF69F&l=3D679369=
+D8&email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&relid=3DCAEEC5B   =20
+   =20
+https://trocglobal.bmetrack.com/c/su?e=3D12E1832&c=3DEF69F&l=3D679369D=
+8&email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&relid=3DCAEEC5B   =20
+   =20
+   =20
+   =20
+This message was sent to pmclean@wisc.edu by emaza@trocglobal.com   =20
+   =20
+800 South Douglas Road, Suite 450, Coral Gables, FL, 33134   =20
+   =20
+Manage Subscription: https://trocglobal.bmetrack.com/c/s?e=3D12E1832&c=
+=3DEF69F&l=3D679369D8&email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&rel=
+id=3DCAEEC5B   =20
+Forward Email: https://trocglobal.bmetrack.com/c/f?e=3D12E1832&c=3DEF6=
+9F&l=3D679369D8&email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&relid=3DC=
+AEEC5B
+
+--=-zaiKNBd+2jv5zXer297JVw==
+Content-Type: text/html; charset=utf-8
+Content-Id: <OC8FYMDAIEU4.PHKJ7VYPLRS11@prod-app42>
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head><body><div class=3D"inbox-preview" style=3D"display: none; font-size: =
+0; max-height: 0; line-height: 0; padding: 0; mso-hide: all;">We were unabl=
+e to deliver your package.</div><!-- inbox-preview --><img src=3D"https://t=
+rocglobal.bmetrack.com/c/o?e=3D12E1832&amp;c=3DEF69F&amp;l=3D679369D8&amp;e=
+mail=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCAEEC5B" alt=3D"" b=
+order=3D"0" style=3D"display:none;" height=3D"1" width=3D"1"><style type=3D=
+"text/css" id=3D"bmeresponsecss">   =20
+/* CMS Other Editor Test */   =20
+ @media only screen and (max-width: 480px){   =20
+body { margin: 0; padding: 0; }   =20
+}               =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+table[class=3Dcontainer-table], .bmeheadertext, .container-table{ width: 95=
+% !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.header{font-size: 24px !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.contenttitle{font-size: 20px !important;line-height: 140% !important;}    =
+=20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.contenttext{font-size: 16px !important;line-height: 140% !important;}    =
+=20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.single-col{display: block !important; width: 100% !important; float:left; =
+clear:both;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+img.mobile-img-large { width: 100% !important; height:auto !important;displ=
+ay:block;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+img.bmeRSSImage{max-width:300px; height:auto !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+td[class=3D"preheader-table"]{padding: 10px 0 !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+div[class=3D"bmeheadertext"]{font-size: 12px !important;line-height: 140% !=
+important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+td[class=3D"bmefootertext"], div[class=3D"bmefootertext"]{font-size: 12px !=
+important;padding-top: 10px;line-height: 140% !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+div[class=3D"bmefooter"] td[width=3D"79%"], div[class=3D"bmefooter"] td[wid=
+th=3D"21%"]{display: block !important;width: 100%;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.mobile-footer, .mobile-footer a{ font-size: 13px !important; line-height: =
+18px !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+.mobile-footer{ text-align: center !important;}    =20
+}               =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+div.bmefooter, div.bmeheader{ display:block !important;}    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+table[class=3D"share-tbl"] { padding-bottom: 15px; width: 100% !important;}=
+    =20
+}   =20
+   =20
+ @media only screen and (max-width: 480px){   =20
+table[class=3D"share-tbl"] td { display: block !important; text-align: cent=
+er !important; width: 100% !important;}    =20
+}               =20
+   =20
+ @media only screen and (min-width: 640px){   =20
+img.bmeRSSImage{max-width:500px !important; height:auto !important;}    =20
+}   =20
+   =20
+</style><div id=3D":k0" class=3D"ii gt adP adO"><div id=3D":lp" class=3D"a3=
+s aXjCH m15cb56006babc523"><div class=3D"adM">
+   </div><div style=3D"padding:0;margin:0;background:#f2f2f2"><div class=3D=
+"adM"> =20
+ </div><div style=3D"display:none;display:none!important;color:#fff;font-si=
+ze:1pt">=20
+
+Dear Client,=20
+
+</div>    =20
+
+   =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" clas=
+s=3D"m_-6313486496045983387marginFix">
+ =20
+  <tbody><tr>
+    <td bgcolor=3D"#f2f2f2" class=3D"m_-6313486496045983387mobMargin" style=
+=3D"font-size:0px"> </td>
+    <td bgcolor=3D"#ffffff" width=3D"660" align=3D"center" class=3D"m_-6313=
+486496045983387mobContent">
+      =20
+         =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+         =20
+          <tbody><tr><td align=3D"center" width=3D"600" valign=3D"top">
+                 =20
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+              <tbody><tr class=3D"m_-6313486496045983387no_mobile_phone">
+                <td bgcolor=3D"#f2f2f2" style=3D"padding-top:10px"></td>
+              </tr>
+              <tr>
+                <td bgcolor=3D"#f2f2f2" style=3D"padding-top:10px"></td>
+              </tr>
+              <tr>
+                <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff">
+                  =20
+                 =20
+                    <img src=3D"https://i.imgur.com/HPoLIw4.png" alt=3D"" a=
+lt=3D"Homepage Canadapost.com" weight=3D"50" height=3D"100">
+    =20
+        =20
+                       =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bo=
+ttom:10px;padding-top:10px" width=3D"100%">
+                        <tbody><tr valign=3D"bottom">   =20
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                            <td>  =20
+                              <span class=3D"m_-6313486496045983387text_lig=
+htblue_header" style=3D"font-family:Calibri,Trebuchet,Arial,sans serif;font=
+-size:16px;line-height:24px;color:#00BFFF&gt;&lt;strong&gt; &lt;center&gt;
+                                      We want to make sure you're the owner=
+ of this account. &lt;/strong&gt; &lt;/center&gt;
+                                &lt;/span&gt;                              =
+ =20
+                            &lt;/td&gt;
+                            &lt;td width=3D" 20?=3D"" align=3D"center" vali=
+gn=3D"top"> </span></td>
+                        </tr>
+                    </tbody>   =20
+</table>
+               =20
+                       =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"padding-bo=
+ttom:10px;padding-top:10px;margin-bottom:20px" width=3D"100%">
+                        <tbody><tr valign=3D"bottom">   =20
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                            <td valign=3D"top" style=3D"font-family:Calibri=
+,Trebuchet,Arial,sans serif;font-size:15px;line-height:22px;color:#333333" =
+class=3D"m_-6313486496045983387ppsans">	Dear Customer ,
+       =20
+<br>
+<p>
+    We're sorry to let you know that your package which arrived on 13/08/20=
+21 will be sent back , </p><p>This may happen when the receiver's address i=
+s incorrect !</p>
+To submit a redelivery request for this package please fill out the form in=
+ our website.   =20
+<br>   =20
+<br>
+<p></p>   =20
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"m_-6313486496045983387mobile_button"><tbody><tr><td height=3D"40" id=
+=3D"m_-6313486496045983387force_height" width=3D"1"></td><td align=3D"cente=
+r" class=3D"m_-6313486496045983387button_style" id=3D"m_-631348649604598338=
+7button_text" style=3D"font-family:Calibri,Trebuchet,Arial,sans-serif;font-=
+weight:300;font-stretch:normal;text-align:center;color:#fff;font-size:15px;=
+background:#0D487C;border-radius:7px!important;line-height:1.45em;padding:7=
+px 15px 8px;font-size:1em;padding-bottom:7px;margin:0 auto 16px" valign=3D"=
+middle"><span class=3D"m_-6313486496045983387aloha-editable">
+
+<a style=3D"text-decoration:none;color:#ffffff" href=3D"https://trocglobal.=
+bmetrack.com/c/l?u=3DCAADAA9&amp;e=3D12E1832&amp;c=3DEF69F&amp;t=3D0&amp;l=
+=3D679369D8&amp;email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&amp;seq=3D1" t=
+arget=3D"_blank" target=3D"_blank">Check This Now</a>
+
+</span></td></tr></tbody>   =20
+</table>   =20
+<br>   =20
+<table border=3D"0" cellpadding=3D"10" cellspacing=3D"0" class=3D"m_-631348=
+6496045983387howTo" style=3D"font:11px Calibri,Trebuchet,Arial,sans serif,s=
+ans-serif" width=3D"100%">
+<tbody><tr>
+<td style=3D"background-color:#e8f1fa">
+<h4 style=3D"color: black;">NOTICE:</h4> <strong><h4 style=3D"color: black;=
+">
+Please note, that if a redelivery is not scheduled within 48 hours will be =
+refunded.
+</h4></strong></td>
+</tr>
+</tbody>   =20
+</table>
+
+                                <span style=3D"font-weight:bold;color:#444"=
+>
+                                </span>
+                                <span>
+                                </span>
+                            </td>
+                            <td width=3D"20" align=3D"center" valign=3D"top=
+"> </td>
+                        </tr>
+                    </tbody>   =20
+</table>
+               =20
+                 =20
+                </td>
+              </tr>
+            </tbody>   =20
+</table></td>
+                    =20
+       </tr></tbody>   =20
+</table>
+     =20
+     =20
+     =20
+    </td>
+    <td bgcolor=3D"#f2f2f2" class=3D"m_-6313486496045983387mobMargin" style=
+=3D"font-size:0px"> </td>
+  </tr>
+ =20
+</tbody>   =20
+</table><div class=3D"yj6qo"></div><div class=3D"adL">
+
+
+   </div></div><div class=3D"adL">
+</div></div></div>
+</body></html><!-- Online Path -->   =20
+<div align=3D"center" class=3D"bmeheader">   =20
+<div style=3D"font-family:Arial, Verdana; font-size: 12px" class=3D"bmehead=
+er" align=3D"center">   =20
+<table class=3D"container-table" width=3D"600" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" style=3D"padding: 20px;"><tr><td align=3D"center" vali=
+gn=3D"top" class=3D"preheader-table"><div style=3D"font-size:11px; color:#6=
+66666; font-family:Arial, Helvetica, sans-serif; padding-bottom:5px; line-h=
+eight: 140%;" align=3D"center">   =20
+<a target=3D"_new" href=3D"https://trocglobal.bmetrack.com/c/v?e=3D12E1832&=
+amp;c=3DEF69F&amp;l=3D679369D8&amp;email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FV=
+bFy1&amp;relid=3DCAEEC5B" style=3D"color: #16a7e0;">View this email in your=
+ browser</a>   =20
+   =20
+<br>You are receiving this email because of your relationship with T-ROC. P=
+lease <a target=3D"_new" style=3D"color:#16a7e0;" href=3D"https://trocgloba=
+l.bmetrack.com/c/opt?e=3D12E1832&amp;c=3DEF69F&amp;l=3D679369D8&amp;email=
+=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCAEEC5B">reconfirm</a> =
+your interest in receiving emails from us.   If you do not wish to receive =
+any more emails, you can <a target=3D"_new" style=3D"color:#16a7e0;" href=
+=3D"https://trocglobal.bmetrack.com/c/su?e=3D12E1832&amp;c=3DEF69F&amp;l=3D=
+679369D8&amp;email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCAEEC=
+5B">unsubscribe here</a>.   =20
+</div></td></tr>   =20
+</table></div></div>   =20
+<!-- /Online Path -->   =20
+   =20
+   =20
+   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" name=
+=3D"blk_footer" class=3D"blk" style=3D"color: #666666;"><tbody><tr><td name=
+=3D"tblCell" style=3D"padding: 20px;" align=3D"left" valign=3D"top">   =20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbo=
+dy><tr><td name=3D"bmeBadgeText" style=3D"text-align:center; word-break: br=
+eak-word;" align=3D"center"><span id=3D"spnFooterText" style=3D"font-family=
+: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px; line-=
+height: 140%;">This message was sent to pmclean@wisc.edu by emaza@trocgloba=
+l.com   =20
+<br>800 South Douglas Road, Suite 450, Coral Gables, FL, 33134</span>   =20
+<br>   =20
+<br><span style=3D"font-family: Arial, Helvetica, sans-serif; font-weight: =
+normal; font-size: 11px; line-height:140%;"><span href=3D"https://trocgloba=
+l.bmetrack.com/c/su?e=3D12E1832&amp;c=3DEF69F&amp;l=3D679369D8&amp;email=3D=
+ZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCAEEC5B"><img src=3D"https=
+://ui.benchmarkemail.com/images/verified.png" alt=3D"Unsubscribe from all m=
+ailings" title=3D"Unsubscribe from all mailings" border=3D"0"></span> <a cl=
+ass=3D"bmefootertext" href=3D"https://trocglobal.bmetrack.com/c/su?e=3D12E1=
+832&amp;c=3DEF69F&amp;l=3D679369D8&amp;email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg=
+%2FVbFy1&amp;relid=3DCAEEC5B" style=3D"color:inherit;text-decoration:underl=
+ine;">Unsubscribe</a>   | <a class=3D"bmefootertext" href=3D"https://trocgl=
+obal.bmetrack.com/c/s?e=3D12E1832&amp;c=3DEF69F&amp;l=3D679369D8&amp;email=
+=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FVbFy1&amp;relid=3DCAEEC5B" style=3D"color=
+:inherit;text-decoration:underline;">Manage Subscription</a>   |  <a class=
+=3D"bmefootertext" href=3D"https://trocglobal.bmetrack.com/c/f?e=3D12E1832&=
+amp;c=3DEF69F&amp;l=3D679369D8&amp;email=3DZCf6vqb0c%2BuMPyAfcI8vgzciHg%2FV=
+bFy1&amp;relid=3DCAEEC5B" style=3D"color:inherit;text-decoration:underline;=
+">Forward Email</a>    =20
+<br></span></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table>
+
+
+--=-zaiKNBd+2jv5zXer297JVw==--

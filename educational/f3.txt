@@ -1,0 +1,511 @@
+Received: from PH0PR06MB7510.namprd06.prod.outlook.com (2603:10b6:510:5a::23)
+ by SJ0PR06MB8245.namprd06.prod.outlook.com with HTTPS; Wed, 28 Jul 2021
+ 13:24:06 +0000
+Received: from MWHPR1601CA0007.namprd16.prod.outlook.com
+ (2603:10b6:300:da::17) by PH0PR06MB7510.namprd06.prod.outlook.com
+ (2603:10b6:510:5a::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4352.26; Wed, 28 Jul
+ 2021 13:24:05 +0000
+Received: from CO1NAM11FT023.eop-nam11.prod.protection.outlook.com
+ (2603:10b6:300:da:cafe::56) by MWHPR1601CA0007.outlook.office365.com
+ (2603:10b6:300:da::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4373.17 via Frontend
+ Transport; Wed, 28 Jul 2021 13:24:05 +0000
+Received: from smtp7.wiscmail.wisc.edu (144.92.197.245) by
+ CO1NAM11FT023.mail.protection.outlook.com (10.13.175.35) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.4373.18 via Frontend Transport; Wed, 28 Jul 2021 13:24:05 +0000
+Received: from m238-30.mailgun.net ([159.135.238.30])
+ by smtp7.wiscmail.wisc.edu
+ (Oracle Communications Messaging Server 8.1.0.8.20210105 64bit (built Jan  5
+ 2021)) with ESMTPS id <0QWY01C2OIIO1D50@smtp7.wiscmail.wisc.edu> for
+ hfwang@wisc.edu; Wed, 28 Jul 2021 08:24:04 -0500 (CDT)
+X-Spam-Report: IsSpam=no, Probability=8%, Hits= HTML_90_100 0.1,
+ BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTH_SIZE_3000_MORE 0,
+ BODY_SIZE_10000_PLUS 0, DKIM_ALIGNS 0, DKIM_SIGNATURE 0,
+ HREF_LABEL_TEXT_NO_URI 0, HREF_LABEL_TEXT_ONLY 0, KNOWN_MTA_TFX 0,
+ LINK_TO_IMAGE 0, LIST_HEADER 0, OBFUSCATION 0, SENDER_NO_AUTH 0,
+ SINGLE_HREF_URI_IN_BODY 0, SPF_PASS 0, STYLE_RATWARE_REF 0, SXL_IP_TFX_WM 0,
+ URI_WITH_PATH_ONLY 0, __ANY_URI 0, __BODY_NO_MAILTO 0, __CT 0, __CTE 0,
+ __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0,
+ __DKIM_ALIGNS_1 0, __DKIM_ALIGNS_2 0, __FRAUD_AIRLINE 0,
+ __FROM_DOMAIN_NOT_IN_BODY 0, __FROM_NAME_NOT_IN_BODY 0, __HAS_FROM 0,
+ __HAS_HTML 0, __HAS_MSGID 0, __HAS_SENDER 0, __HIDDEN_HTML_CONTENT 0,
+ __HREF_LABEL_TEXT 0, __HTML_AHREF_TAG 0, __HTML_BAD_END 0, __HTML_BOLD 0,
+ __HTML_TAG_CENTER 0, __HTML_TAG_DIV 0, __HTML_TAG_IMG_X2 0,
+ __HTML_TAG_TABLE 0, __HTTPS_URI 0, __HTTP_IMAGE_TAG 0, __IMG_THEN_TEXT 0,
+ __MIME_HTML 0, __MIME_TEXT_H 0, __MIME_TEXT_H1 0, __MIME_TEXT_H2 0, __MIME_
+X-Wisc-Doma: bounce+b40106.9b8b7-hfwang=wisc.edu@emailblox.com,emailblox.com
+X-Wisc-Env-From-B64:
+ Ym91bmNlK2I0MDEwNi45YjhiNy1oZndhbmc9d2lzYy5lZHVAZW1haWxibG94LmNvbQ==
+X-Spam-PmxInfo: Server=avs-13, Version=6.4.9.2830568,
+ Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2021.7.28.131215,
+ AntiVirus-Engine: 5.84.0, AntiVirus-Data: 2021.7.28.5840000,
+ SenderIP=[159.135.238.30]
+X-Wisc-DKIM-Verify:
+ bounce+b40106.9b8b7-hfwang=wisc.edu@emailblox.com,emailblox.com!pass,DKIM_PASS_ALIGNED_WITH_FROM
+X-Spam-Score:
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=emailblox.com;
+ q=dns/txt; s=mx; t=1627478643; h=Subject: Content-Transfer-Encoding:
+ Content-Type: MIME-Version: Message-ID: Date: sender: To: From;
+ bh=uOL6vh0PdyhwR7UMIfEwTcS4cR2EKv4tPX9CIDDe/ns=;
+ b=ONbOQLAYK8z1N1m6nMYi/eKvAUTkdpXLktQjhF+ZQdIne2uHcDcn3NLJ/EdlL8vcK2YYHhlm
+ eTi0/ZVcVxYxSaOfzH2xk8ejzl2782CvzTjDCT9qAMFqfc4cfz2GoOmBmEfKqD1BF0+2IATT
+ dRNf4Z36f4WnrPgPt2hLers/s54=
+X-Mailgun-Sending-Ip: 159.135.238.30
+X-Mailgun-Sid: WyJmNDAxOCIsICJoZndhbmdAd2lzYy5lZHUiLCAiOWI4YjciXQ==
+Received: from securityiq.infosecinstitute.com
+ (ec2-34-202-49-109.compute-1.amazonaws.com [34.202.49.109])
+ by smtp-out-n04.prod.us-east-1.postgun.com with SMTP id
+ 61015a69b653fbdadddcff41 (version=TLS1.3, cipher=TLS_AES_128_GCM_SHA256); Wed,
+ 28 Jul 2021 13:23:53 GMT
+From: Delta Airlines <delta-noreply@emailblox.com>
+To: HERBERT WANG <hfwang@wisc.edu>
+X-PHISH: This is a security awareness phishing simulation test from InfoSec
+ Institute that has been authorized by the recipient organization
+Sender: Delta Airlines <delta-noreply@emailblox.com>
+Date: Wed, 28 Jul 2021 13:23:53 +0000
+Message-id:
+ <dd21b886-69a0-4e37-981d-3c127b211bd0@securityiq.infosecinstitute.com>
+Content-type: multipart/alternative; boundary=96fcdfc72182e1010858b5e96c4b3a1d
+Content-transfer-encoding: 8bit
+X-Report-Abuse-To: abuse-siq@infosecinstitute.com
+Subject: Free airline tickets for Educators!
+Return-Path: bounce+b40106.9b8b7-hfwang=wisc.edu@emailblox.com
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Jul 2021 13:24:05.3255
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 29640e79-47f9-4364-f5b9-08d951caf90c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 2ca68321-0eda-4908-88b2-424a8cb4b0f9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ CO1NAM11FT023.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 29640e79-47f9-4364-f5b9-08d951caf90c
+X-MS-TrafficTypeDiagnostic: PH0PR06MB7510:
+X-MS-Exchange-Organization-SCL: -1
+Authentication-Results: compauth=none reason=405
+X-MS-Oob-TLC-OOBClassifiers: OLM:5797;
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:144.92.197.245;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:CAL;SFV:NSPM;H:smtp7.wiscmail.wisc.edu;PTR:wmmta4.doit.wisc.edu;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Jul 2021 13:24:05.1816
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 29640e79-47f9-4364-f5b9-08d951caf90c
+X-MS-Exchange-CrossTenant-Id: 2ca68321-0eda-4908-88b2-424a8cb4b0f9
+X-MS-Exchange-CrossTenant-AuthSource:
+ CO1NAM11FT023.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR06MB7510
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.9071828
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.4352.033
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(20160514016)(750129)(520011016)(944506458)(944626604);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?N0lzbHMwcDFOcENaRzY2ZEo5WWFqd21uMXRRTElFMXYwV3l2WkprWFpodXpJ?=
+ =?utf-8?B?OStFeGVhZ0QyKzRScG8zSzNUUmJEUnhQWHVzVzZZVHRVNlp1SVJhMDc4Y3JN?=
+ =?utf-8?B?STNCamJOWEovMkRNeUlGWmxPcEhxUVhodFRqc1I0UUtSMWtnK21zdStpeFZC?=
+ =?utf-8?B?NTN4TXZlSVZjYWdIVzNoQm5jTjB0UlphMFdyclRVbHlWRml6Y0xtNi9SMzI2?=
+ =?utf-8?B?MjY1b3RIcERrSGlhQ01jT2VoNkltNjFTdDM4S2wzNW50NWZYR2I2UjQyWHox?=
+ =?utf-8?B?M1JFSkhma0hKUjYzV0lrQ1pESDNyaUsreVVBUysyMkdzWGlnbmpXQWNqTlUy?=
+ =?utf-8?B?UXRXcjF0c2dsZHBzVndKRTY5M3MyOU41VGtwY1dEYTR4am00QTc0MmJVNWp4?=
+ =?utf-8?B?ZVI4MWh5a053Nk9XTDFtNnVPRzNTVDMyZDFQUmVTQXZhMXBGK2xwSE15RXZB?=
+ =?utf-8?B?aUFIRFprQzE0b1NWSGZZQy9wZVdId0lDQTRsZ2lKR0l1ZkxmVTJJR0V5TFdG?=
+ =?utf-8?B?VVhVK0FmZVM3WXdjWDhBLzF3N1p3SG9iRU9yN21QK3ltOG1jTGx3bTZ4MHpX?=
+ =?utf-8?B?VGxFYUhiNjZDZ01GQmFVcFZqS2hjbDdrYTZKMVZMbHdxOUQxUEFUY2kxUFpN?=
+ =?utf-8?B?M3VhZEVUbjlMOUhhVWUvV25jbG1nSXQrczlmUGxIZi96SDRPaGVwblQrcEJj?=
+ =?utf-8?B?bHdiZ0kyTWlXSDh4YjBuSWJvejRHSzJScGF3Q2duTnZaU21rWXpnbjlzVkhr?=
+ =?utf-8?B?UVhIZFZrR3BMYmdsU09ZMVJ3VUxxNjBYeGIxS1N2WGRRVWp6aTdSK0RSc0kr?=
+ =?utf-8?B?Wm9meEhoTGF5Z3RYTDhnRk5jbGw1ampvNERCYnZqRzZrK3pSSWlzdXVjY091?=
+ =?utf-8?B?aEVYV3o5a0poWEN0VmlncnJCZ2hhcytSSWVwa0EwK3AvenJUSXBpeDBGWUFm?=
+ =?utf-8?B?eElvYjNYNmc1bWtoL0ZzQWtkQUNVdUZocWozNzNCK2lzb1BlSlJ6Mlh4Q0Jk?=
+ =?utf-8?B?SkJhK1YvNUYwa0Q1MFg0Yk9EVXVkbUdJVUNWc2p5SHJGS2dvaEhPQXc3Z1Ux?=
+ =?utf-8?B?eExXeW9JdGtTUExQbHNXUkl6TkkzZXBWNE0vWVZ6aUFmOGpDWGlMNDlrM3I2?=
+ =?utf-8?B?WFVIMnR4c2oraFVaeG9Hd3NBamVYVHYvbmxhSWlnZzRLMHdoRWNLMHJ1ZEFj?=
+ =?utf-8?B?OUVGRmxPTGpkRTBsTHZNL2tPaFhpOUhacEhZTTUvQjF4cmtOOWQvMjIyRG10?=
+ =?utf-8?B?N1J1bVlCTHZqUERaajhnUVhaKzNNZE5EYS9kMDJSZ0VCazVYbkhsM25rb0Ev?=
+ =?utf-8?B?NnVyWlA0cHpjRkV1amNYVVJEais2TGQwYXZ0Zmo0REgzOUJBSitLcGtGNmpK?=
+ =?utf-8?B?UTBtWWs4SytYYU8zR1NaU21scmdUejNGZndESDdXSnFvQUVrY29CclRvWXZ4?=
+ =?utf-8?B?NmhoSXpGZmsyZ3kvbW00eEROUFcvaWM0aFlxbm9QbDY0b2RVSytRdFBHMGpO?=
+ =?utf-8?B?bHVlbDNCTEZZazg0Nm05Z2RTb2k3K0huRVVMU21Dek1TWjBBL3RoNVBBSS9i?=
+ =?utf-8?B?UkU5R2tXTG1QMG1xUGJiZWs2em1NbC9kdjR1MWlWVmFEQit4NDJxRmh3YlBQ?=
+ =?utf-8?B?OHVGcmRNeXdqKzdrRy9SNTZHUlFzOFpsZitkVnovbWdWMjhELzJSd1FVZEtI?=
+ =?utf-8?B?Rno1ei9QN1BXZU95QnZHNXBxQzBvU0pHMlJVNGhUL0pJUjlZV0VOZzkza1FY?=
+ =?utf-8?B?TWtDa1FQL1RnbFN3dHpmdmdUeG1ka0gvdzRtd0ZLbFpOVmROdzFubUdSYjVn?=
+ =?utf-8?B?bkRrWFh5TWpXaUZPMFVQR2x0ZzRHMnJ6UG9CdjhSWHFwSmc2bDBaTk0rM01o?=
+ =?utf-8?B?UTVJMHFzcEFleGRObXdHa2NZREp3elpZajdwQ2E5TmRSOGdMS3FTdzBwVjVs?=
+ =?utf-8?B?TE9xTjlKTWVFYU1ja2JNUXVrV1RBRkMvZW9PNlpveW10VjV1TVRnLzd5YXdq?=
+ =?utf-8?B?QnVjK1BaQWhMOHZLQ1ZtUE9yUzlBd3BKRWFLVDB2TUVDOVFHWHRiMXlFaVFT?=
+ =?utf-8?B?US9IeTdjZjd3bitkbFhqR20rVU9EWCtGbVdHdll4dUprWmR0clZKQVlwajRF?=
+ =?utf-8?B?OEpkTmZORk90RXVSTDdBcW4xMHF3aC80ZkxpRmtJT3FmNzZPQkllWm0zZjF2?=
+ =?utf-8?B?cTZKRzhNYnJvMjhCUWpMekFTbktsK2U5WW50N25HeGdnbk0vOWtudHlEckxK?=
+ =?utf-8?B?TWxVTTVJb0pjd3ZoZUh6OHJyc2JTMTJqbmpSMW8zQUhxM2tVaXMrTTFLdy9v?=
+ =?utf-8?B?T0V5TkRKTFpySHp1Ync1cndGYmZ2TmYyTmNPR2RJemhWWDRnY3lmaSsvL01h?=
+ =?utf-8?B?K1lSOTRzMVhEbEcxelhjQUFNc0wyUkxraFgvMU43S2lpV1c1ZVlBZTlzWlRn?=
+ =?utf-8?B?dHJZczlNRU5nUm04ZGRyWHR5ZmJ2eEFPOGgvZzk2WERYVnpnNXJlcmJqbzFi?=
+ =?utf-8?B?bTFSZWpUOVhGaFhwWnMzVC9JNDIvdlNQQWNveml4STRaZ0RENDNuaUNPZkNF?=
+ =?utf-8?B?QS9DWnQvTGJ3MmJRVXFBM2RQYjM2U2ZETC9HWDluU2Y5dStwSVVwczF4UmlB?=
+ =?utf-8?B?MTR1QkNlUGlvVTRaNE1jUW55c3o5S2tkdVljWXhhdG8vTzlDZ0dHQ01rNTVu?=
+ =?utf-8?B?N0NEUjgvUDFQUG5GQmU1a3BZTzd0K05UandRUDJpT29lZzdNNW93ekN0N1VV?=
+ =?utf-8?B?Z3NkOFByMjQyWHZFUkJoSTFWMTBaM2pxRlNkNjdOZHdIZzdBVEROTmo0NkFs?=
+ =?utf-8?B?aUpGODYzK09XYWZiOWtTS2hQYXdGOXExeXBjM2NtTTUrdnlyWWhDNEV4RWpx?=
+ =?utf-8?B?ZlFERVA4QXU1NUY0K0pEbGVEM3l0VzJTK2g1WFdQeXk4MDRjczNnUUVPYlNj?=
+ =?utf-8?B?SDBZZlczcGx5YUhiT2NUenVndWlkRUNHRjdYOWtlMStkbFplMkFjeG1ZZXYr?=
+ =?utf-8?B?RGRyb3FZNTBSZUNFSmxYOGswS0RvdXlCK3JTZ0QrREorZGpaRzVzNWYvTytH?=
+ =?utf-8?B?b2o4ODVUdEdZdTB1bStCR1ZWU2RRV3h1MlVTbjJKL2JUR0FJQVptUWVoalB6?=
+ =?utf-8?B?cWRmaHFUZUszQWh5ZEdsWTZCY0lNNHh2SFAwdXROQUJtODJaOU1nUldkZkxp?=
+ =?utf-8?B?NkRVc0N1bWZWcmpJdlMzSEdXdzI2VTBVY0dndGxFbWZRQzQ0QzFHZVVtWXdz?=
+ =?utf-8?B?REt3OWsxN0ZkNmtqNXZ3QlNaK0VGaVFndWZqK2hkWThCRVJYdm93SXlIRjJG?=
+ =?utf-8?B?c1Y0MC83d0I2cWphcG5hUUZHZ0RJSG5IVHUvdmtnNm1JekRCeHZSZkVFNXM5?=
+ =?utf-8?B?cFp3L204QVRvdzNtMEF5djE3Yjg1VEhRVmR1NHRUeHl3VFlWVTZZTmFqZzN0?=
+ =?utf-8?B?a2xtZEhJRU5xeE1TV2JxUTUwRWZMcDNNUXdvRXE3SkNzWDBhVTllNm12dkpl?=
+ =?utf-8?B?N2RLL2dRT2YyYm4wZnpLb2ZiWjdTV2FCelJSL2FQWXNyL2dYeU9YdUUzeVN1?=
+ =?utf-8?B?N0hpNDhmMGx6MjBjYmFtNUpRVVBrNnpvL1VoWnM1Z3ZRaDhvaUhKRHZpaVlE?=
+ =?utf-8?Q?mIUt7/8qtPfk=3D?=
+MIME-Version: 1.0
+
+--96fcdfc72182e1010858b5e96c4b3a1d
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 520px) {
+  .u-row {
+    width: 500px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 500px !important;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+</style>
+  
+  
+
+</head>
+
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-color: transparent">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0;font-family:arial,helvetica,sans-serif;" align="left">
+        
+  <div>
+    <table style="border-collapse:collapse;background-color:#003366;" width="100%" border="0" align="center"><tbody><tr><td style="padding:20px;">
+<table style="font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;border-collapse:collapse;max-width:600px;line-height:1.4em;" width="100%" border="0" align="center"><tbody><tr style="background-color:#fff;"><td style="padding:20px;text-align:center;border-bottom:2px solid #C01933;"><img alt="T Mobile" src="https://s3.us-east-2.amazonaws.com/cdn29/delta-logo-small.png" style="height:25px;"></td>
+</tr><tr><td style="padding:20px;background-color:#fff;">
+<p>Hi, HERBERT WANG:</p>
+<p>As a person in the Education field, Delta would like to show their appreciation by giving you two free airline tickets.</p>
+</td>
+</tr><tr><td style="padding:20px;background-color:#fff;">
+<p>To grab your two free tickets, take this short quiz. Tickets will be mailed 10 days after you submit your quiz.</p>
+</td>
+</tr><tr><td style="padding:15px 20px;background-color:#fff;">
+<table style="border-collapse:collapse;background-color:#c01933;" class="main-button" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td style="display:block;text-align:center;text-decoration:none;padding:14px 24px 14px 24px;" class="button-width" valign="top" align="center"><a href="http://safemessaging.org/landing/form/dd21b886-69a0-4e37-981d-3c127b211bd0" style="color:#fff;display:block;font-size:16px;font-weight:bold;line-height:125%;letter-spacing:0px;text-align:center;font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;text-decoration:none;"> Take the Quiz and get 2 FREE Tickets!</a></td>
+</tr></tbody></table></td>
+</tr><tr><td style="padding:20px;background-color:#fff;border-bottom:2px solid #C01933;">
+<p>Hurry! The offer ends at the end of this month.</p>
+</td>
+</tr><tr><td style="padding:20px;background-color:#fff;font-size:10px;line-height:1.5em;">
+<p>&nbsp;</p>
+</td>
+</tr></tbody></table></td>
+</tr></tbody></table>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
+</body>
+
+</html>
+<img id="siq-image" data-id="dd21b886-69a0-4e37-981d-3c127b211bd0" style="height: 1px; width: 1px;" src="http://safemessaging.org/phished/opened/dd21b886-69a0-4e37-981d-3c127b211bd0" alt=""/>
+
+
+--96fcdfc72182e1010858b5e96c4b3a1d
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
+      table, td { color: #000000; } a { color: #0000ee; text-decoration: underline; }
+@media only screen and (min-width: 520px) {
+  .u-row {
+    width: 500px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 500px !important;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: calc(100% - 40px) !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+</style>
+  
+  
+
+</head>
+
+<body class="clean-body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #FFFFFF;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-color: transparent">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 500px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:500px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="500" style="width: 500px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div class="u-col u-col-100" style="max-width: 320px;min-width: 500px;display: table-cell;vertical-align: top;">
+  <div style="width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div style="padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table style="font-family:arial,helvetica,sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0;font-family:arial,helvetica,sans-serif;" align="left">
+        
+  <div>
+    <table style="border-collapse:collapse;background-color:#003366;" width="100%" border="0" align="center"><tbody><tr><td style="padding:20px;">
+<table style="font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;border-collapse:collapse;max-width:600px;line-height:1.4em;" width="100%" border="0" align="center"><tbody><tr style="background-color:#fff;"><td style="padding:20px;text-align:center;border-bottom:2px solid #C01933;"><img alt="T Mobile" src="https://s3.us-east-2.amazonaws.com/cdn29/delta-logo-small.png" style="height:25px;"></td>
+</tr><tr><td style="padding:20px;background-color:#fff;">
+<p>Hi, HERBERT WANG:</p>
+<p>As a person in the Education field, Delta would like to show their appreciation by giving you two free airline tickets.</p>
+</td>
+</tr><tr><td style="padding:20px;background-color:#fff;">
+<p>To grab your two free tickets, take this short quiz. Tickets will be mailed 10 days after you submit your quiz.</p>
+</td>
+</tr><tr><td style="padding:15px 20px;background-color:#fff;">
+<table style="border-collapse:collapse;background-color:#c01933;" class="main-button" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td style="display:block;text-align:center;text-decoration:none;padding:14px 24px 14px 24px;" class="button-width" valign="top" align="center"><a href="http://safemessaging.org/landing/form/dd21b886-69a0-4e37-981d-3c127b211bd0" style="color:#fff;display:block;font-size:16px;font-weight:bold;line-height:125%;letter-spacing:0px;text-align:center;font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;text-decoration:none;"> Take the Quiz and get 2 FREE Tickets!</a></td>
+</tr></tbody></table></td>
+</tr><tr><td style="padding:20px;background-color:#fff;border-bottom:2px solid #C01933;">
+<p>Hurry! The offer ends at the end of this month.</p>
+</td>
+</tr><tr><td style="padding:20px;background-color:#fff;font-size:10px;line-height:1.5em;">
+<p>&nbsp;</p>
+</td>
+</tr></tbody></table></td>
+</tr></tbody></table>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
+</body>
+
+</html>
+<img id="siq-image" data-id="dd21b886-69a0-4e37-981d-3c127b211bd0" style="height: 1px; width: 1px;" src="http://safemessaging.org/phished/opened/dd21b886-69a0-4e37-981d-3c127b211bd0" alt="">
+
+
+
+--96fcdfc72182e1010858b5e96c4b3a1d--
