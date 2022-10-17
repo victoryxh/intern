@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Parser for messages in email attachments. 
-# Command line syntax: 'parser.py arg1 arg2' where arg1 is the directory to be parsed,
+# Parser for messages in email attachments. Individual file version. 
+# Command line syntax: 'parser.py arg1 arg2' where arg1 is the name of file to be parsed,
 # and arg2 selects which portion of the text to be viewed (0 for header and 1 for plain version of the content)
 
 import nltk, re, pprint, sys, os
@@ -52,11 +52,11 @@ if mixed in tokens:
 elif alternative in tokens:
     print('ALTERNATIVE')
     
-    boundary_id = tokens[tokens.index(alternative) + 4]
+    boundary_id = tokens[tokens.index(alternative) + 6]
     index_list =  [ i for i in range(len(tokens)) if tokens[i] == boundary_id ]
     breakpoint = index_list[0] + 5
     inner_breakpoint_1 = index_list[1] + 1
-    inner_breakpoint_2 = index_list[2] + 1
+    inner_breakpoint_2 = index_list[2] - 1
     
     header = to_vocab(tokens[:breakpoint])
     inner_plain = to_vocab(tokens[inner_breakpoint_1:inner_breakpoint_2])
