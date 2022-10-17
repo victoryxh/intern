@@ -52,15 +52,17 @@ if mixed in tokens:
 elif alternative in tokens:
     print('ALTERNATIVE')
     
-    boundary_id = tokens[tokens.index(alternative) + 4]
-    index_list =  [ i for i in range(len(tokens)) if tokens[i] == boundary_id ]
-    breakpoint = index_list[0] + 5
-    inner_breakpoint_1 = index_list[1] + 1
-    inner_breakpoint_2 = index_list[2] + 1
+    boundary_str = tokens[tokens.index(alternative) + 2]
     
-    header = to_vocab(tokens[:breakpoint])
-    inner_plain = to_vocab(tokens[inner_breakpoint_1:inner_breakpoint_2])
-    inner_html = tokens[inner_breakpoint_2:]
+    boundary_id = boundary_str[9:]
+    index_list =  [ i for i in range(len(tokens)) if tokens[i] == boundary_id ]
+
+    breakpoint_1 = index_list[0] + 1
+    breakpoint_2 = index_list[1] - 2
+    
+    header = to_vocab(tokens[:breakpoint_1])
+    inner_plain = to_vocab(tokens[breakpoint_1:breakpoint_2])
+    inner_html = tokens[breakpoint_2:]
 
     if sys.argv[2] == '0':
         print(header)
