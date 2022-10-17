@@ -55,9 +55,8 @@ elif alternative in tokens:
     boundary_str = tokens[tokens.index(alternative) + 2]
     
     boundary_id = boundary_str[9:]
-    print(boundary_id)
+
     index_list =  [ i for i in range(len(tokens)) if tokens[i] == boundary_id ]
-    print(index_list)
 
     breakpoint_1 = index_list[0] + 1
     breakpoint_2 = index_list[1] - 2
