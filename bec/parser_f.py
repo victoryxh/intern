@@ -53,7 +53,7 @@ elif alternative in tokens:
     print('ALTERNATIVE')
     
     boundary_str = tokens[tokens.index(alternative) + 2]
-    print('boundary_str')
+    print(boundary_str)
     
     boundary_id = boundary_str[9:]
     index_list =  [ i for i in range(len(tokens)) if tokens[i] == boundary_id ]
