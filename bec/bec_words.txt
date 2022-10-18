@@ -1,31 +1,31 @@
-['available', 'best', 'cell', 'chair', 'corbae', 'dean', 'finance', 'in', 'number', 'of', 'phone', 'professor', 'regardsz', 'sellery', 'trukenbrod', 'university', 'william']
-['available', 'best', 'buccini', 'cell', 'chair', 'department', 'italian', 'number', 'of', 'phone', 'professor', 'regardsz', 'stefania', 'university']
-['chair', 'department', 'quintana', 'steve']
-['available', 'best', 'cell', 'chair', 'number', 'of', 'phone', 'professor', 'regardsz', 'seppalainen', 'timo', 'university']
-['anja', 'available', 'cell', 'chair', 'department', 'english', 'number', 'of', 'phone', 'university', 'wanner', 'wisconsin']
-['ananth', 'available', 'cell', 'chair', 'department', 'economics', 'number', 'of', 'phone', 'seshsdri', 'university', 'wisconsin']
-['anja', 'available', 'cell', 'chair', 'department', 'english', 'number', 'of', 'phone', 'university', 'wanner', 'wisconsin']
-['and', 'available', 'best', 'breeding', 'cell', 'chair', 'department', 'genetics', 'kent', 'number', 'of', 'phone', 'professor', 'regardsz', 'university', 'weigel']
-['ananth', 'available', 'cell', 'chair', 'department', 'economics', 'number', 'of', 'phone', 'seshsdri', 'university', 'wisconsin']
-['ananth', 'available', 'cell', 'chair', 'department', 'economics', 'number', 'of', 'phone', 'seshsdri', 'university', 'wisconsin']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'carter', 'for', 'libraries', 'lisa', 'me', 'number', 'provost', 'send', 'text', 'university', 'vice', 'your']
-['and', 'available', 'best', 'cell', 'chair', 'daniel', 'henry', 'number', 'of', 'phaneuf', 'phone', 'professor', 'regardsz', 'taylor', 'university']
-['available', 'best', 'cellphone', 'chair', 'chemistry', 'clark', 'department', 'landis', 'number', 'of', 'regards', 'university']
-['and', 'best', 'biology', 'cell', 'chair', 'deneen', 'department', 'of', 'regards', 'regenerative', 'university', 'wellik']
-['and', 'best', 'biostatistics', 'chair', 'department', 'informatics', 'medical', 'michael', 'newton', 'of', 'regards', 'university']
-['and', 'available', 'best', 'cellphone', 'chair', 'cook', 'department', 'medical', 'nigel', 'number', 'of', 'professor', 'regards', 'sciences']
-['available', 'best', 'cellphone', 'chair', 'department', 'lynn', 'medicine', 'number', 'of', 'regards', 'schnapp', 'university']
-['best', 'chair', 'department', 'lynn', 'medicine', 'of', 'regards', 'schnapp', 'university']
-['atty', 'better', 'board', 'can', 'cheryl', 'daniels', 'done', 'email', 'explain', 'for', 'furstace', 'get', 'hello', 'i', 'me', 'more', 'please', 'regards', 'so', 'something', 'the', 'today', 'you']
-['available', 'best', 'cell', 'chair', 'chris', 'kucharik', 'number', 'of', 'phone', 'professor', 'regardsz', 'university']
-['and', 'available', 'biostatistics', 'chair', 'department', 'informatics', 'medical', 'michael', 'newton', 'of', 'professor']
-['are', 'at', 'auerbach', 'emily', 'free', 'kinds', 'kyrie', 'moment', 'regards', 'the', 'you']
-['a', 'action', 'also', 'and', 'android', 'arial', 'auto', 'available', 'background', 'because', 'below', 'block', 'body', 'calc', 'center', 'choices', 'click', 'collapse', 'color', 'dashed', 'dates', 'display', 'div', 'doctype', 'doodle', 'elena', 'endif', 'ffffff', 'fixed', 'focus', 'for', 'from', 'gte', 'has', 'have', 'head', 'height', 'helvetica', 'hl', 'hours', 'html', 'http', 'https', 'ie', 'if', 'img', 'immediate', 'important', 'inherit', 'invited', 'is', 'left', 'link', 'margin', 'media', 'meeting', 'meta', 'ms', 'mso', 'must', 'nbsp', 'needed', 'neue', 'next', 'none', 'normal', 'now', 'o', 'of', 'office', 'officedocumentsettings', 'on', 'only', 'open', 'p', 'padding', 'participate', 'pixelsperinch', 'planning', 'please', 'poll', 'presentation', 'provided', 'public', 'receipt', 'recieved', 'remain', 'remainder', 'respond', 'review', 'roboto', 'robotodraft', 's', 'sans', 'screen', 'so', 'solid', 'specify', 'staff', 'style', 'supervisor', 'table', 'tbody', 'td', 'that', 'the', 'this', 'times', 'title', 'to', 'top', 'tr', 'transitional', 'transparent', 'underline', 'urn', 'via', 'viewport', 'vml', 'week', 'width', 'will', 'xhtml', 'xml', 'xmlns', 'year', 'you', 'your']
-['and', 'available', 'best', 'cell', 'chair', 'daniel', 'henry', 'number', 'of', 'phaneuf', 'phone', 'professor', 'regardsz', 'taylor', 'university']
+available best cell chair corbae dean finance in number of phone professor regardsz sellery trukenbrod university william
+available best buccini cell chair department italian number of phone professor regardsz stefania university
+chair department quintana steve
+available best cell chair number of phone professor regardsz seppalainen timo university
+anja available cell chair department english number of phone university wanner wisconsin
+ananth available cell chair department economics number of phone seshsdri university wisconsin
+anja available cell chair department english number of phone university wanner wisconsin
+and available best breeding cell chair department genetics kent number of phone professor regardsz university weigel
+ananth available cell chair department economics number of phone seshsdri university wisconsin
+ananth available cell chair department economics number of phone seshsdri university wisconsin
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available carter for libraries lisa me number provost send text university vice your
+and available best cell chair daniel henry number of phaneuf phone professor regardsz taylor university
+available best cellphone chair chemistry clark department landis number of regards university
+and best biology cell chair deneen department of regards regenerative university wellik
+and best biostatistics chair department informatics medical michael newton of regards university
+and available best cellphone chair cook department medical nigel number of professor regards sciences
+available best cellphone chair department lynn medicine number of regards schnapp university
+best chair department lynn medicine of regards schnapp university
+atty better board can cheryl daniels done email explain for furstace get hello i me more please regards so something the today you
+available best cell chair chris kucharik number of phone professor regardsz university
+and available biostatistics chair department informatics medical michael newton of professor
+are at auerbach emily free kinds kyrie moment regards the you
+a action also and android arial auto available background because below block body calc center choices click collapse color dashed dates display div doctype doodle elena endif ffffff fixed focus for from gte has have head height helvetica hl hours html http https ie if img immediate important inherit invited is left link margin media meeting meta ms mso must nbsp needed neue next none normal now o of office officedocumentsettings on only open p padding participate pixelsperinch planning please poll presentation provided public receipt recieved remain remainder respond review roboto robotodraft s sans screen so solid specify staff style supervisor table tbody td that the this times title to top tr transitional transparent underline urn via viewport vml week width will xhtml xml xmlns year you your
+and available best cell chair daniel henry number of phaneuf phone professor regardsz taylor university
