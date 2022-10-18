@@ -3,6 +3,7 @@
 # Parser for messages in email attachments. Individual file version. 
 # Command line syntax: 'parser.py arg1 arg2' where arg1 is the name of file to be parsed,
 # and arg2 selects which portion of the text to be viewed (0 for header and 1 for plain version of the content)
+# This version of the parser is built specifically for f32.txt in the bec folder.
 
 import nltk, re, pprint, sys, os
 from nltk import word_tokenize
