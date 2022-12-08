@@ -24,8 +24,8 @@ ascii_2 = 'charset=us-ascii'
 
 # check if the message is multipart/mixed
 if mixed in tokens: 
-    print('MIXED')
-
+    # print('MIXED')
+    
     # type-specific way of determining boundary_id
     boundary_id = tokens[tokens.index(mixed) + 4]
 
@@ -56,36 +56,39 @@ if mixed in tokens:
         print(inner_plain)
 # check if the message only has alternative part
 elif alternative in tokens:
-    print('ALTERNATIVE')
+    # print('ALTERNATIVE')
+    
+    # get specific boundary string
+    boundary_str = tokens[tokens.index(alternative) + 2]
     
     # type-specific way of determining boundary_id
-    boundary_id = tokens[tokens.index(alternative) + 4]
+    boundary_id = boundary_str[9:]
 
     # locate where boundary_id appear in the list
     index_list =  [ i for i in range(len(tokens)) if tokens[i] == boundary_id ]
 
     # calculate breakpoints where contents are separated
-    breakpoint = index_list[0] + 5
-    inner_breakpoint_1 = index_list[1] + 1
-    inner_breakpoint_2 = index_list[2] + 1
-
+    breakpoint_1 = index_list[0] + 1
+    breakpoint_2 = index_list[1] - 2
+    
     # get header as vocabulary
-    header = to_vocab(tokens[:breakpoint])
+    header = to_vocab(tokens[:breakpoint_1])
 
     # get inner plain content as vocabulary
-    inner_plain = to_vocab(tokens[inner_breakpoint_1:inner_breakpoint_2])
+    inner_plain = to_vocab(tokens[breakpoint_1:breakpoint_2])
 
     # get inner html (not used)
-    inner_html = tokens[inner_breakpoint_2:]
+    inner_html = tokens[breakpoint_2:]
 
     # output the result
     if sys.argv[2] == '0':
         print(header)
     elif sys.argv[2] == '1':
         print(inner_plain)
+
 # check if the message has ascii encoding
 elif ascii or ascii_2 in tokens:
-    print('ASCII')
+    # print('ASCII')
 
     # locate content (there's no header since the message is not multipart)
     index = tokens.index('MIME-Version') + 3

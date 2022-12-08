@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
+# 
 # Parser for messages in email attachments. Individual file version. 
 # Command line syntax: 'parser.py arg1 arg2' where arg1 is the file to be parsed,
 # and arg2 selects which portion of the text to be viewed (0 for header and 1 for plain version of the content)
@@ -24,8 +24,8 @@ ascii_2 = 'charset=us-ascii'
 
 # check if the message is multipart/mixed
 if mixed in tokens: 
-    print('MIXED')
-
+    # print('MIXED')
+    
     # type-specific way of determining boundary_id
     boundary_id = tokens[tokens.index(mixed) + 4]
 
@@ -56,7 +56,7 @@ if mixed in tokens:
         print(inner_plain)
 # check if the message only has alternative part
 elif alternative in tokens:
-    print('ALTERNATIVE')
+    # print('ALTERNATIVE')
     
     # type-specific way of determining boundary_id
     boundary_id = tokens[tokens.index(alternative) + 4]
@@ -68,8 +68,8 @@ elif alternative in tokens:
     breakpoint = index_list[0] + 5
     inner_breakpoint_1 = index_list[1] + 1
     inner_breakpoint_2 = index_list[2] + 1
-
-    # get header as vocabulary
+    
+    # get header as vocabulary  
     header = to_vocab(tokens[:breakpoint])
 
     # get inner plain content as vocabulary
@@ -85,7 +85,7 @@ elif alternative in tokens:
         print(inner_plain)
 # check if the message has ascii encoding
 elif ascii or ascii_2 in tokens:
-    print('ASCII')
+    # print('ASCII')
 
     # locate content (there's no header since the message is not multipart)
     index = tokens.index('MIME-Version') + 3
